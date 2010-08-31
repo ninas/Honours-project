@@ -1,0 +1,519 @@
+Ttesting
+v7
+r0
+t304937325.483082
+cCheck dependencies
+cProcessInfoPlistFile /Users/NSchiff/Documents/testing/build/Debug-iphonesimulator/testing.app/Info.plist testing-Info.plist
+cCompileXIB /Users/NSchiff/Documents/testing/MainWindow.xib
+cProcessPCH /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/testing_Prefix-cvtyfunmssxsraerguezcpxlxluu/testing_Prefix.pch.gch testing_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/testing.build/Debug-iphonesimulator/testing.build/Objects-normal/i386/main.o /Users/NSchiff/Documents/testing/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/testing.build/Debug-iphonesimulator/testing.build/Objects-normal/i386/testingAppDelegate.o /Users/NSchiff/Documents/testing/Classes/testingAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/testing.build/Debug-iphonesimulator/testing.build/Objects-normal/i386/testingViewController.o /Users/NSchiff/Documents/testing/Classes/testingViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/testing.build/Debug-iphonesimulator/testing.build/Objects-normal/i386/testingView.o /Users/NSchiff/Documents/testing/Classes/testingView.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/testing.build/Debug-iphonesimulator/testing.build/Objects-normal/i386/feature.o /Users/NSchiff/Documents/testing/Classes/feature.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/NSchiff/Documents/testing/build/Debug-iphonesimulator/testing.app/testing normal i386
+cGenerateDSYMFile /Users/NSchiff/Documents/testing/build/Debug-iphonesimulator/testing.app.dSYM /Users/NSchiff/Documents/testing/build/Debug-iphonesimulator/testing.app/testing
+cTouch /Users/NSchiff/Documents/testing/build/Debug-iphonesimulator/testing.app
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk
+c000000004B69B45C00000000000000EE
+t1265218652
+s238
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004B2B4CC3000000000026EE30
+t1261128899
+s2551344
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004B2B4DC8000000000027E880
+t1261129160
+s2615424
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004B2B4DAE0000000000001355
+t1261129134
+s4949
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004B2B61620000000000000788
+t1261134178
+s1928
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004B2B62B500000000016721E0
+t1261134517
+s23536096
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/usr/include/math.h
+c000000004748A10600000000000004B7
+t1195942150
+s1207
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/usr/include/stdio.h
+c000000004748A1330000000000003D1D
+t1195942195
+s15645
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/usr/include/unistd.h
+c000000004748A13300000000000053FF
+t1195942195
+s21503
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/limits.h
+c000000004748AF950000000000000C7E
+t1195945877
+s3198
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk
+c000000004C1650370000000000000110
+t1276530743
+s272
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004BA03AB3000000000026F020
+t1268791987
+s2551840
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004B9F1DE40000000000289C20
+t1268719076
+s2661408
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004B9F1DD60000000000001355
+t1268719062
+s4949
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004BA6CAEC000000000000098F
+t1269222124
+s2447
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004BA6CB31000000000214E400
+t1269222193
+s34923520
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/usr/include/math.h
+c000000004748A10600000000000004B7
+t1195942150
+s1207
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/usr/include/stdio.h
+c000000004748A1330000000000003D1D
+t1195942195
+s15645
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/usr/include/unistd.h
+c000000004748A13300000000000053FF
+t1195942195
+s21503
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/limits.h
+c000000004748AF950000000000000C7E
+t1195945877
+s3198
+
+N/Users/NSchiff/Documents/testing/Classes/feature.h
+c000000004C558B320000000000000368
+t1280674610
+s872
+
+N/Users/NSchiff/Documents/testing/Classes/feature.m
+c000000004C558B3E000000000000075F
+t1280674622
+s1887
+i"feature.h"
+
+N/Users/NSchiff/Documents/testing/Classes/testingAppDelegate.h
+c000000004C1A285500000000000001D4
+t1276782677
+s468
+i<UIKit/UIKit.h>
+
+N/Users/NSchiff/Documents/testing/Classes/testingAppDelegate.m
+c000000004C1A28B0000000000000032D
+t1276782768
+s813
+i"testingAppDelegate.h"
+i"testingViewController.h"
+
+N/Users/NSchiff/Documents/testing/Classes/testingView.h
+c000000004C55A39500000000000006F7
+t1280680853
+s1783
+i<UIKit/UIKit.h>
+i"feature.h"
+
+N/Users/NSchiff/Documents/testing/Classes/testingView.m
+c000000004C7CC1E90000000000004AB7
+t1283244521
+s19127
+i"testingView.h"
+i"limits.h"
+i"math.h"
+i<stdio.h>
+i<unistd.h>
+
+N/Users/NSchiff/Documents/testing/Classes/testingViewController.h
+c000000004C5190D4000000000000016E
+t1280413908
+s366
+i<UIKit/UIKit.h>
+i"testingView.h"
+
+N/Users/NSchiff/Documents/testing/Classes/testingViewController.m
+c000000004C5FEBEF0000000000001138
+t1281354735
+s4408
+i"testingViewController.h"
+
+N/Users/NSchiff/Documents/testing/Classes/untitled.xcconfig
+c000000004C33489B0000000000000090
+t1278429339
+s144
+
+N/Users/NSchiff/Documents/testing/MainWindow.xib
+c000000004C1A26230000000000002108
+t1276782115
+s8456
+
+N/Users/NSchiff/Documents/testing/build/Debug-iphonesimulator/testing.app
+t1283244525
+s238
+
+N/Users/NSchiff/Documents/testing/build/Debug-iphonesimulator/testing.app.dSYM
+t1283244525
+s102
+
+N/Users/NSchiff/Documents/testing/build/Debug-iphonesimulator/testing.app/Info.plist
+t1283242979
+s593
+
+N/Users/NSchiff/Documents/testing/build/Debug-iphonesimulator/testing.app/MainWindow.nib
+t1283242980
+s1360
+
+N/Users/NSchiff/Documents/testing/build/Debug-iphonesimulator/testing.app/PkgInfo
+t1283242979
+s8
+
+N/Users/NSchiff/Documents/testing/build/Debug-iphonesimulator/testing.app/testing
+t1283244525
+s47060
+
+N/Users/NSchiff/Documents/testing/build/Debug-iphonesimulator/testing.app/untitled.xcconfig
+t2
+s0
+
+N/Users/NSchiff/Documents/testing/build/Debug-iphonesimulator/testing.app/v.strings
+t1279878804
+s42
+
+N/Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/Objects-normal/i386/feature.o
+t1283242981
+s16192
+
+N/Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/Objects-normal/i386/main.o
+t1283242981
+s5936
+
+N/Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/Objects-normal/i386/testing.LinkFileList
+c000000004C3DCF99000000000000026D
+t1279119257
+s621
+
+N/Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/Objects-normal/i386/testingAppDelegate.o
+t1283242981
+s39448
+
+N/Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/Objects-normal/i386/testingView.o
+t1283244525
+s58264
+
+N/Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/Objects-normal/i386/testingViewController.o
+t1283242981
+s37340
+
+N/Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/StaticAnalyzer/normal/i386/feature.plist
+t1280481440
+s275
+
+N/Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/StaticAnalyzer/normal/i386/main.plist
+t1279897206
+s275
+
+N/Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/StaticAnalyzer/normal/i386/testingAppDelegate.plist
+t1280481440
+s275
+
+N/Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/StaticAnalyzer/normal/i386/testingView.plist
+t1280481442
+s1699
+
+N/Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/StaticAnalyzer/normal/i386/testingViewController.plist
+t1280481440
+s7947
+
+N/Users/NSchiff/Documents/testing/main.m
+c000000004C1A2623000000000000016B
+t1276782115
+s363
+i<UIKit/UIKit.h>
+
+N/Users/NSchiff/Documents/testing/testing_Prefix.pch
+c000000004C1A262300000000000000B7
+t1276782115
+s183
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/NSchiff/Documents/testing/v.strings
+c000000004C49667E0000000000000084
+t1279878782
+s132
+
+N/var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/testing_Prefix-bukmismitglefsdbyibnnibafxva/testing_Prefix.pch.gch
+t1277736735
+s13805456
+
+N/var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/testing_Prefix-cvtyfunmssxsraerguezcpxlxluu/testing_Prefix.pch.gch
+t1276782209
+s13026768
+
+N/var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/testing_Prefix-dnlugfslsnsbomdcjtrgjlwfnobn/testing_Prefix.pch.pth
+t1279897205
+s1825760
+
+Ntesting-Info.plist
+c000000004C1A2623000000000000038D
+t1276782115
+s909
+
+CAnalyze /Users/NSchiff/Documents/testing/Classes/feature.m
+s302174240.364765
+e302174240.467162
+r1
+xAnalyze
+x/Users/NSchiff/Documents/testing/Classes/feature.m
+lSLF07#2@58"Analyze /Users/NSchiff/Documents/testing/Classes/feature.m302174240#302174240#0(0"0(0#0#50"/Users/NSchiff/Documents/testing/Classes/feature.m4300911832#1814"    cd /Users/NSchiff/Documents/testing    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fasm-blocks -mmacosx-version-min=10.5 -gdwarf-2 -fvisibility=hidden -iquote /Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/testing-generated-files.hmap -I/Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/testing-own-target-headers.hmap -I/Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/testing-all-target-headers.hmap -iquote /Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/testing-project-headers.hmap -F/Users/NSchiff/Documents/testing/build/Debug-iphonesimulator -I/Users/NSchiff/Documents/testing/build/Debug-iphonesimulator/include -I/Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/DerivedSources/i386 -I/Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/DerivedSources -include /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/testing_Prefix-dnlugfslsnsbomdcjtrgjlwfnobn/testing_Prefix.pch --analyze /Users/NSchiff/Documents/testing/Classes/feature.m -o /Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/StaticAnalyzer/normal/i386/feature.plist0#
+
+CAnalyze /Users/NSchiff/Documents/testing/Classes/testingAppDelegate.m
+s302174239.969497
+e302174240.268667
+r1
+xAnalyze
+x/Users/NSchiff/Documents/testing/Classes/testingAppDelegate.m
+lSLF07#2@69"Analyze /Users/NSchiff/Documents/testing/Classes/testingAppDelegate.m302174239#302174240#0(0"0(0#0#61"/Users/NSchiff/Documents/testing/Classes/testingAppDelegate.m4300911832#1836"    cd /Users/NSchiff/Documents/testing    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fasm-blocks -mmacosx-version-min=10.5 -gdwarf-2 -fvisibility=hidden -iquote /Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/testing-generated-files.hmap -I/Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/testing-own-target-headers.hmap -I/Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/testing-all-target-headers.hmap -iquote /Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/testing-project-headers.hmap -F/Users/NSchiff/Documents/testing/build/Debug-iphonesimulator -I/Users/NSchiff/Documents/testing/build/Debug-iphonesimulator/include -I/Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/DerivedSources/i386 -I/Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/DerivedSources -include /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/testing_Prefix-dnlugfslsnsbomdcjtrgjlwfnobn/testing_Prefix.pch --analyze /Users/NSchiff/Documents/testing/Classes/testingAppDelegate.m -o /Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/StaticAnalyzer/normal/i386/testingAppDelegate.plist0#
+
+CAnalyze /Users/NSchiff/Documents/testing/Classes/testingView.m
+s302174240.326889
+e302174242.368432
+r1
+xAnalyze
+x/Users/NSchiff/Documents/testing/Classes/testingView.m
+o/Users/NSchiff/Documents/testing/Classes/testingView.m:122:11:{122:20-122:37}: warning: Value stored to 'offset' during its initialization is never read
+o                 CGPoint offset = CGPointMake(0, 0);
+o                         ^        ~~~~~~~~~~~~~~~~~
+o1 diagnostic generated.
+lSLF07#2@62"Analyze /Users/NSchiff/Documents/testing/Classes/testingView.m302174240#302174242#0(282"/Users/NSchiff/Documents/testing/Classes/testingView.m:122:11:{122:20-122:37}: warning: Value stored to 'offset' during its initialization is never read                 CGPoint offset = CGPointMake(0, 0);                         ^        ~~~~~~~~~~~~~~~~~1 diagnostic generated.1(0@64"Value stored to 'offset' during its initialization is never read302174242#18446744073709551615#0#1(21@64"Value stored to 'offset' during its initialization is never read302174242#18446744073709551615#0#0(6@54"/Users/NSchiff/Documents/testing/Classes/testingView.m302110116#122#11#0#0#0"1(6@54"/Users/NSchiff/Documents/testing/Classes/testingView.m302110116#122#20#122#36#64"Value stored to 'offset' during its initialization is never read6@54"/Users/NSchiff/Documents/testing/Classes/testingView.m302110116#122#11#0#0#10"Dead store0(19"Dead initialization0#0#54"/Users/NSchiff/Documents/testing/Classes/testingView.m4300911832#1822"    cd /Users/NSchiff/Documents/testing    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fasm-blocks -mmacosx-version-min=10.5 -gdwarf-2 -fvisibility=hidden -iquote /Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/testing-generated-files.hmap -I/Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/testing-own-target-headers.hmap -I/Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/testing-all-target-headers.hmap -iquote /Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/testing-project-headers.hmap -F/Users/NSchiff/Documents/testing/build/Debug-iphonesimulator -I/Users/NSchiff/Documents/testing/build/Debug-iphonesimulator/include -I/Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/DerivedSources/i386 -I/Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/DerivedSources -include /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/testing_Prefix-dnlugfslsnsbomdcjtrgjlwfnobn/testing_Prefix.pch --analyze /Users/NSchiff/Documents/testing/Classes/testingView.m -o /Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/StaticAnalyzer/normal/i386/testingView.plist0#
+
+CAnalyze /Users/NSchiff/Documents/testing/Classes/testingViewController.m
+s302174240.268777
+e302174240.326516
+r1
+xAnalyze
+x/Users/NSchiff/Documents/testing/Classes/testingViewController.m
+o/Users/NSchiff/Documents/testing/Classes/testingViewController.m:52:23: warning: Potential leak of an object allocated on line 52 and stored into 'ignore'
+o         UIButton * ignore = [[UIButton buttonWithType:UIButtonTypeRoundedRect]retain];
+o                              ^
+o/Users/NSchiff/Documents/testing/Classes/testingViewController.m:91:2: warning: UIView  may not respond to 'averageFeatures'
+o         [self.view averageFeatures];
+o         ^
+o/Users/NSchiff/Documents/testing/Classes/testingViewController.m:102:2: warning: UIView  may not respond to 'removeGesture'
+o         [self.view removeGesture];
+o         ^
+o3 diagnostics generated.
+lSLF07#2@72"Analyze /Users/NSchiff/Documents/testing/Classes/testingViewController.m302174240#302174240#0(645"/Users/NSchiff/Documents/testing/Classes/testingViewController.m:52:23: warning: Potential leak of an object allocated on line 52 and stored into 'ignore'         UIButton * ignore = [[UIButton buttonWithType:UIButtonTypeRoundedRect]retain];                              ^/Users/NSchiff/Documents/testing/Classes/testingViewController.m:91:2: warning: UIView  may not respond to 'averageFeatures'         [self.view averageFeatures];         ^/Users/NSchiff/Documents/testing/Classes/testingViewController.m:102:2: warning: UIView  may not respond to 'removeGesture'         [self.view removeGesture];         ^3 diagnostics generated.1(0@73"Potential leak of an object allocated on line 52 and stored into 'ignore'302174240#18446744073709551615#0#7(17@0"302174240#18446744073709551615#0#0(6@64"/Users/NSchiff/Documents/testing/Classes/testingViewController.m302106872#0#0#0#0#0"0(6@64"/Users/NSchiff/Documents/testing/Classes/testingViewController.m302106872#0#0#0#0#1(3@6@64"/Users/NSchiff/Documents/testing/Classes/testingViewController.m302106872#28#2#28#2#6@64"/Users/NSchiff/Documents/testing/Classes/testingViewController.m302106872#52#2#52#2#17@0"302174240#18446744073709551615#0#0(6@64"/Users/NSchiff/Documents/testing/Classes/testingViewController.m302106872#0#0#0#0#0"0(6@64"/Users/NSchiff/Documents/testing/Classes/testingViewController.m302106872#0#0#0#0#1(3@6@64"/Users/NSchiff/Documents/testing/Classes/testingViewController.m302106872#52#2#52#2#6@64"/Users/NSchiff/Documents/testing/Classes/testingViewController.m302106872#52#23#52#71#21@82"Method returns an Objective-C object with a +0 retain count (non-owning reference)302174240#18446744073709551615#0#0(6@64"/Users/NSchiff/Documents/testing/Classes/testingViewController.m302106872#52#23#0#0#0"1(6@64"/Users/NSchiff/Documents/testing/Classes/testingViewController.m302106872#52#23#52#71#82"Method returns an Objective-C object with a +0 retain count (non-owning reference)17@0"302174240#18446744073709551615#0#0(6@64"/Users/NSchiff/Documents/testing/Classes/testingViewController.m302106872#0#0#0#0#0"0(6@64"/Users/NSchiff/Documents/testing/Classes/testingViewController.m302106872#0#0#0#0#1(3@6@64"/Users/NSchiff/Documents/testing/Classes/testingViewController.m302106872#52#23#52#71#6@64"/Users/NSchiff/Documents/testing/Classes/testingViewController.m302106872#52#22#52#78#21@65"Reference count incremented. The object now has a +1 retain count302174240#18446744073709551615#0#0(6@64"/Users/NSchiff/Documents/testing/Classes/testingViewController.m302106872#52#22#0#0#0"2(6@64"/Users/NSchiff/Documents/testing/Classes/testingViewController.m302106872#52#22#52#78#6@64"/Users/NSchiff/Documents/testing/Classes/testingViewController.m302106872#52#23#52#71#65"Reference count incremented. The object now has a +1 retain count17@0"302174240#18446744073709551615#0#0(6@64"/Users/NSchiff/Documents/testing/Classes/testingViewController.m302106872#0#0#0#0#0"0(6@64"/Users/NSchiff/Documents/testing/Classes/testingViewController.m302106872#0#0#0#0#1(3@6@64"/Users/NSchiff/Documents/testing/Classes/testingViewController.m302106872#52#22#52#78#6@64"/Users/NSchiff/Documents/testing/Classes/testingViewController.m302106872#84#1#84#1#21@138"Object allocated on line 52 and stored into 'ignore' is no longer referenced after this point and has a retain count of +1 (object leaked)302174240#18446744073709551615#0#0(6@64"/Users/NSchiff/Documents/testing/Classes/testingViewController.m302106872#84#1#0#0#0"1(6@64"/Users/NSchiff/Documents/testing/Classes/testingViewController.m302106872#84#1#84#1#138"Object allocated on line 52 and stored into 'ignore' is no longer referenced after this point and has a retain count of +1 (object leaked)6@64"/Users/NSchiff/Documents/testing/Classes/testingViewController.m302106872#84#1#0#0#36"Memory (Core Foundation/Objective-C)0(23"Leak of returned object0#0#64"/Users/NSchiff/Documents/testing/Classes/testingViewController.m4300911832#1842"    cd /Users/NSchiff/Documents/testing    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fasm-blocks -mmacosx-version-min=10.5 -gdwarf-2 -fvisibility=hidden -iquote /Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/testing-generated-files.hmap -I/Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/testing-own-target-headers.hmap -I/Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/testing-all-target-headers.hmap -iquote /Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/testing-project-headers.hmap -F/Users/NSchiff/Documents/testing/build/Debug-iphonesimulator -I/Users/NSchiff/Documents/testing/build/Debug-iphonesimulator/include -I/Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/DerivedSources/i386 -I/Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/DerivedSources -include /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/testing_Prefix-dnlugfslsnsbomdcjtrgjlwfnobn/testing_Prefix.pch --analyze /Users/NSchiff/Documents/testing/Classes/testingViewController.m -o /Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/StaticAnalyzer/normal/i386/testingViewController.plist0#
+
+CAnalyze /Users/NSchiff/Documents/testing/main.m
+s301590005.978179
+e301590006.059685
+r1
+xAnalyze
+x/Users/NSchiff/Documents/testing/main.m
+lSLF07#2@47"Analyze /Users/NSchiff/Documents/testing/main.m301590005#301590006#0(0"0(0#0#39"/Users/NSchiff/Documents/testing/main.m4300911832#1800"    cd /Users/NSchiff/Documents/testing    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fasm-blocks -mmacosx-version-min=10.5 -gdwarf-2 -fvisibility=hidden -iquote /Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/testing-generated-files.hmap -I/Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/testing-own-target-headers.hmap -I/Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/testing-all-target-headers.hmap -iquote /Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/testing-project-headers.hmap -F/Users/NSchiff/Documents/testing/build/Debug-iphonesimulator -I/Users/NSchiff/Documents/testing/build/Debug-iphonesimulator/include -I/Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/DerivedSources/i386 -I/Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/DerivedSources -include /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/testing_Prefix-dnlugfslsnsbomdcjtrgjlwfnobn/testing_Prefix.pch --analyze /Users/NSchiff/Documents/testing/main.m -o /Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/StaticAnalyzer/normal/i386/main.plist0#
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies304937325#304937325#0(0"0(0#1#0"4300911832#0"0#
+
+CCompileC build/testing.build/Debug-iphonesimulator/testing.build/Objects-normal/i386/feature.o /Users/NSchiff/Documents/testing/Classes/feature.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s304935781.740930
+e304935781.845502
+r1
+xCompileC
+xbuild/testing.build/Debug-iphonesimulator/testing.build/Objects-normal/i386/feature.o
+x/Users/NSchiff/Documents/testing/Classes/feature.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@58"Compile /Users/NSchiff/Documents/testing/Classes/feature.m304935781#304935781#0(0"0(0#0#50"/Users/NSchiff/Documents/testing/Classes/feature.m4300911832#1807"    cd /Users/NSchiff/Documents/testing    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/testing-generated-files.hmap -I/Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/testing-own-target-headers.hmap -I/Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/testing-all-target-headers.hmap -iquote /Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/testing-project-headers.hmap -F/Users/NSchiff/Documents/testing/build/Debug-iphonesimulator -I/Users/NSchiff/Documents/testing/build/Debug-iphonesimulator/include -I/Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/DerivedSources/i386 -I/Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/DerivedSources -include /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/testing_Prefix-cvtyfunmssxsraerguezcpxlxluu/testing_Prefix.pch -c /Users/NSchiff/Documents/testing/Classes/feature.m -o /Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/Objects-normal/i386/feature.o0#
+
+CCompileC build/testing.build/Debug-iphonesimulator/testing.build/Objects-normal/i386/main.o /Users/NSchiff/Documents/testing/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s304935780.410791
+e304935781.535044
+r1
+xCompileC
+xbuild/testing.build/Debug-iphonesimulator/testing.build/Objects-normal/i386/main.o
+x/Users/NSchiff/Documents/testing/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@47"Compile /Users/NSchiff/Documents/testing/main.m304935780#304935781#0(0"0(0#0#39"/Users/NSchiff/Documents/testing/main.m4300911832#1793"    cd /Users/NSchiff/Documents/testing    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/testing-generated-files.hmap -I/Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/testing-own-target-headers.hmap -I/Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/testing-all-target-headers.hmap -iquote /Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/testing-project-headers.hmap -F/Users/NSchiff/Documents/testing/build/Debug-iphonesimulator -I/Users/NSchiff/Documents/testing/build/Debug-iphonesimulator/include -I/Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/DerivedSources/i386 -I/Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/DerivedSources -include /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/testing_Prefix-cvtyfunmssxsraerguezcpxlxluu/testing_Prefix.pch -c /Users/NSchiff/Documents/testing/main.m -o /Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/Objects-normal/i386/main.o0#
+
+CCompileC build/testing.build/Debug-iphonesimulator/testing.build/Objects-normal/i386/testingAppDelegate.o /Users/NSchiff/Documents/testing/Classes/testingAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s304935780.412249
+e304935781.643298
+r1
+xCompileC
+xbuild/testing.build/Debug-iphonesimulator/testing.build/Objects-normal/i386/testingAppDelegate.o
+x/Users/NSchiff/Documents/testing/Classes/testingAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@69"Compile /Users/NSchiff/Documents/testing/Classes/testingAppDelegate.m304935780#304935781#0(0"0(0#0#61"/Users/NSchiff/Documents/testing/Classes/testingAppDelegate.m4300911832#1829"    cd /Users/NSchiff/Documents/testing    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/testing-generated-files.hmap -I/Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/testing-own-target-headers.hmap -I/Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/testing-all-target-headers.hmap -iquote /Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/testing-project-headers.hmap -F/Users/NSchiff/Documents/testing/build/Debug-iphonesimulator -I/Users/NSchiff/Documents/testing/build/Debug-iphonesimulator/include -I/Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/DerivedSources/i386 -I/Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/DerivedSources -include /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/testing_Prefix-cvtyfunmssxsraerguezcpxlxluu/testing_Prefix.pch -c /Users/NSchiff/Documents/testing/Classes/testingAppDelegate.m -o /Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/Objects-normal/i386/testingAppDelegate.o0#
+
+CCompileC build/testing.build/Debug-iphonesimulator/testing.build/Objects-normal/i386/testingView.o /Users/NSchiff/Documents/testing/Classes/testingView.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s304937325.069711
+e304937325.330115
+r1
+xCompileC
+xbuild/testing.build/Debug-iphonesimulator/testing.build/Objects-normal/i386/testingView.o
+x/Users/NSchiff/Documents/testing/Classes/testingView.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@62"Compile /Users/NSchiff/Documents/testing/Classes/testingView.m304937325#304937325#0(0"0(0#0#54"/Users/NSchiff/Documents/testing/Classes/testingView.m4300911832#1815"    cd /Users/NSchiff/Documents/testing    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/testing-generated-files.hmap -I/Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/testing-own-target-headers.hmap -I/Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/testing-all-target-headers.hmap -iquote /Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/testing-project-headers.hmap -F/Users/NSchiff/Documents/testing/build/Debug-iphonesimulator -I/Users/NSchiff/Documents/testing/build/Debug-iphonesimulator/include -I/Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/DerivedSources/i386 -I/Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/DerivedSources -include /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/testing_Prefix-cvtyfunmssxsraerguezcpxlxluu/testing_Prefix.pch -c /Users/NSchiff/Documents/testing/Classes/testingView.m -o /Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/Objects-normal/i386/testingView.o0#
+
+CCompileC build/testing.build/Debug-iphonesimulator/testing.build/Objects-normal/i386/testingViewController.o /Users/NSchiff/Documents/testing/Classes/testingViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s304935781.535222
+e304935781.740822
+r1
+xCompileC
+xbuild/testing.build/Debug-iphonesimulator/testing.build/Objects-normal/i386/testingViewController.o
+x/Users/NSchiff/Documents/testing/Classes/testingViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/NSchiff/Documents/testing/Classes/testingViewController.m: In function '-[testingViewController savePressed:]':
+o/Users/NSchiff/Documents/testing/Classes/testingViewController.m:91: warning: 'UIView' may not respond to '-averageFeatures'
+o/Users/NSchiff/Documents/testing/Classes/testingViewController.m:91: warning: (Messages without a matching method signature
+o/Users/NSchiff/Documents/testing/Classes/testingViewController.m:91: warning: will be assumed to return 'id' and accept
+o/Users/NSchiff/Documents/testing/Classes/testingViewController.m:91: warning: '...' as arguments.)
+o/Users/NSchiff/Documents/testing/Classes/testingViewController.m: In function '-[testingViewController ignorePressed:]':
+o/Users/NSchiff/Documents/testing/Classes/testingViewController.m:105: warning: 'UIView' may not respond to '-removeGesture'
+lSLF07#2@72"Compile /Users/NSchiff/Documents/testing/Classes/testingViewController.m304935781#304935781#0(832"/Users/NSchiff/Documents/testing/Classes/testingViewController.m: In function '-[testingViewController savePressed:]':/Users/NSchiff/Documents/testing/Classes/testingViewController.m:91: warning: 'UIView' may not respond to '-averageFeatures'/Users/NSchiff/Documents/testing/Classes/testingViewController.m:91: warning: (Messages without a matching method signature/Users/NSchiff/Documents/testing/Classes/testingViewController.m:91: warning: will be assumed to return 'id' and accept/Users/NSchiff/Documents/testing/Classes/testingViewController.m:91: warning: '...' as arguments.)/Users/NSchiff/Documents/testing/Classes/testingViewController.m: In function '-[testingViewController ignorePressed:]':/Users/NSchiff/Documents/testing/Classes/testingViewController.m:105: warning: 'UIView' may not respond to '-removeGesture'3(22@46"'UIView' may not respond to '-averageFeatures'304935781#119#125#0(6@64"/Users/NSchiff/Documents/testing/Classes/testingViewController.m303047535#91#0#91#0#26"'*' may not respond to '*'0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)304935781#244#124#0(6@64"/Users/NSchiff/Documents/testing/Classes/testingViewController.m303047535#91#0#91#0#0"0(22@44"'UIView' may not respond to '-removeGesture'304935781#708#124#0(6@64"/Users/NSchiff/Documents/testing/Classes/testingViewController.m303047535#105#0#105#0#26"'*' may not respond to '*'0(0#0#64"/Users/NSchiff/Documents/testing/Classes/testingViewController.m4300911832#1835"    cd /Users/NSchiff/Documents/testing    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/testing-generated-files.hmap -I/Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/testing-own-target-headers.hmap -I/Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/testing-all-target-headers.hmap -iquote /Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/testing-project-headers.hmap -F/Users/NSchiff/Documents/testing/build/Debug-iphonesimulator -I/Users/NSchiff/Documents/testing/build/Debug-iphonesimulator/include -I/Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/DerivedSources/i386 -I/Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/DerivedSources -include /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/testing_Prefix-cvtyfunmssxsraerguezcpxlxluu/testing_Prefix.pch -c /Users/NSchiff/Documents/testing/Classes/testingViewController.m -o /Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/Objects-normal/i386/testingViewController.o0#
+
+CCompileXIB /Users/NSchiff/Documents/testing/MainWindow.xib
+s304935779.532511
+e304935780.410467
+r1
+xCompileXIB
+x/Users/NSchiff/Documents/testing/MainWindow.xib
+oCouldn't open shared capabilities memory GSCapabilities (No such file or directory)
+lSLF07#2@25"CompileXIB MainWindow.xib304935779#304935780#0(84"Couldn't open shared capabilities memory GSCapabilities (No such file or directory)0(0#0#47"/Users/NSchiff/Documents/testing/MainWindow.xib4300911832#464"    cd /Users/NSchiff/Documents/testing    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.1.3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/NSchiff/Documents/testing/build/Debug-iphonesimulator/testing.app/MainWindow.nib /Users/NSchiff/Documents/testing/MainWindow.xib0#
+
+CCopyStringsFile /Users/NSchiff/Documents/testing/build/Debug-iphonesimulator/testing.app/v.strings v.strings
+s301571604.186198
+e301571604.434470
+r1
+xCopyStringsFile
+x/Users/NSchiff/Documents/testing/build/Debug-iphonesimulator/testing.app/v.strings
+xv.strings
+lSLF07#2@14"Copy v.strings301571604#301571604#0(0"0(0#0#42"/Users/NSchiff/Documents/testing/v.strings4300911832#445"    cd /Users/NSchiff/Documents/testing    setenv ICONV /usr/bin/iconv    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copystrings --validate --inputencoding utf-8 --outputencoding binary v.strings --outdir /Users/NSchiff/Documents/testing/build/Debug-iphonesimulator/testing.app0#
+
+CCpResource build/Debug-iphonesimulator/testing.app/untitled.xcconfig Classes/untitled.xcconfig
+r0
+
+CGenerateDSYMFile /Users/NSchiff/Documents/testing/build/Debug-iphonesimulator/testing.app.dSYM /Users/NSchiff/Documents/testing/build/Debug-iphonesimulator/testing.app/testing
+s304937325.372952
+e304937325.480240
+r1
+xGenerateDSYMFile
+x/Users/NSchiff/Documents/testing/build/Debug-iphonesimulator/testing.app.dSYM
+x/Users/NSchiff/Documents/testing/build/Debug-iphonesimulator/testing.app/testing
+lSLF07#2@109"GenerateDSYMFile build/Debug-iphonesimulator/testing.app.dSYM build/Debug-iphonesimulator/testing.app/testing304937325#304937325#0(0"0(0#0#80"/Users/NSchiff/Documents/testing/build/Debug-iphonesimulator/testing.app/testing4300911832#365"    cd /Users/NSchiff/Documents/testing    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/NSchiff/Documents/testing/build/Debug-iphonesimulator/testing.app/testing -o /Users/NSchiff/Documents/testing/build/Debug-iphonesimulator/testing.app.dSYM0#
+
+CLd /Users/NSchiff/Documents/testing/build/Debug-iphonesimulator/testing.app/testing normal i386
+s304937325.330221
+e304937325.372837
+r1
+xLd
+x/Users/NSchiff/Documents/testing/build/Debug-iphonesimulator/testing.app/testing
+xnormal
+xi386
+lSLF07#2@85"Link /Users/NSchiff/Documents/testing/build/Debug-iphonesimulator/testing.app/testing304937325#304937325#0(0"0(0#0#0"4300911832#834"    cd /Users/NSchiff/Documents/testing    setenv MACOSX_DEPLOYMENT_TARGET 10.5    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -L/Users/NSchiff/Documents/testing/build/Debug-iphonesimulator -F/Users/NSchiff/Documents/testing/build/Debug-iphonesimulator -filelist /Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/Objects-normal/i386/testing.LinkFileList -mmacosx-version-min=10.5 -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/NSchiff/Documents/testing/build/Debug-iphonesimulator/testing.app/testing0#
+
+CProcessInfoPlistFile /Users/NSchiff/Documents/testing/build/Debug-iphonesimulator/testing.app/Info.plist testing-Info.plist
+s304935779.528378
+e304935779.532429
+r1
+xProcessInfoPlistFile
+x/Users/NSchiff/Documents/testing/build/Debug-iphonesimulator/testing.app/Info.plist
+xtesting-Info.plist
+lSLF07#2@26"Process testing-Info.plist304935779#304935779#0(0"0(0#0#51"/Users/NSchiff/Documents/testing/testing-Info.plist4300911832#461"    cd /Users/NSchiff/Documents/testing    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility testing-Info.plist -genpkginfo /Users/NSchiff/Documents/testing/build/Debug-iphonesimulator/testing.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/NSchiff/Documents/testing/build/Debug-iphonesimulator/testing.app/Info.plist0#
+
+CProcessPCH /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/testing_Prefix-bukmismitglefsdbyibnnibafxva/testing_Prefix.pch.gch testing_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s299429534.443299
+e299429535.830908
+r1
+xProcessPCH
+x/var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/testing_Prefix-bukmismitglefsdbyibnnibafxva/testing_Prefix.pch.gch
+xtesting_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@29"Precompile testing_Prefix.pch299429534#299429535#0(0"0(0#0#51"/Users/NSchiff/Documents/testing/testing_Prefix.pch4300911832#1689"    cd /Users/NSchiff/Documents/testing    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/testing-generated-files.hmap -I/Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/testing-own-target-headers.hmap -I/Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/testing-all-target-headers.hmap -iquote /Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/testing-project-headers.hmap -F/Users/NSchiff/Documents/testing/build/Debug-iphonesimulator -I/Users/NSchiff/Documents/testing/build/Debug-iphonesimulator/include -I/Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/DerivedSources/i386 -I/Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/DerivedSources -c /Users/NSchiff/Documents/testing/testing_Prefix.pch -o /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/testing_Prefix-bukmismitglefsdbyibnnibafxva/testing_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/testing_Prefix-cvtyfunmssxsraerguezcpxlxluu/testing_Prefix.pch.gch testing_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s298475008.784449
+e298475009.903350
+r1
+xProcessPCH
+x/var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/testing_Prefix-cvtyfunmssxsraerguezcpxlxluu/testing_Prefix.pch.gch
+xtesting_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@29"Precompile testing_Prefix.pch298475008#298475009#0(0"0(0#0#51"/Users/NSchiff/Documents/testing/testing_Prefix.pch4300911832#1691"    cd /Users/NSchiff/Documents/testing    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/testing-generated-files.hmap -I/Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/testing-own-target-headers.hmap -I/Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/testing-all-target-headers.hmap -iquote /Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/testing-project-headers.hmap -F/Users/NSchiff/Documents/testing/build/Debug-iphonesimulator -I/Users/NSchiff/Documents/testing/build/Debug-iphonesimulator/include -I/Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/DerivedSources/i386 -I/Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/DerivedSources -c /Users/NSchiff/Documents/testing/testing_Prefix.pch -o /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/testing_Prefix-cvtyfunmssxsraerguezcpxlxluu/testing_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/testing_Prefix-dnlugfslsnsbomdcjtrgjlwfnobn/testing_Prefix.pch.pth testing_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.analyzer
+s301590005.442279
+e301590005.921047
+r1
+xProcessPCH
+x/var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/testing_Prefix-dnlugfslsnsbomdcjtrgjlwfnobn/testing_Prefix.pch.pth
+xtesting_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.analyzer
+lSLF07#2@29"Precompile testing_Prefix.pch301590005#301590005#0(0"0(0#0#51"/Users/NSchiff/Documents/testing/testing_Prefix.pch4300911832#1680"    cd /Users/NSchiff/Documents/testing    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fasm-blocks -mmacosx-version-min=10.5 -gdwarf-2 -fvisibility=hidden -iquote /Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/testing-generated-files.hmap -I/Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/testing-own-target-headers.hmap -I/Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/testing-all-target-headers.hmap -iquote /Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/testing-project-headers.hmap -F/Users/NSchiff/Documents/testing/build/Debug-iphonesimulator -I/Users/NSchiff/Documents/testing/build/Debug-iphonesimulator/include -I/Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/DerivedSources/i386 -I/Users/NSchiff/Documents/testing/build/testing.build/Debug-iphonesimulator/testing.build/DerivedSources -c /Users/NSchiff/Documents/testing/testing_Prefix.pch -o /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/testing_Prefix-dnlugfslsnsbomdcjtrgjlwfnobn/testing_Prefix.pch.pth0#
+
+CTouch /Users/NSchiff/Documents/testing/build/Debug-iphonesimulator/testing.app
+s304937325.480342
+e304937325.483039
+r1
+xTouch
+x/Users/NSchiff/Documents/testing/build/Debug-iphonesimulator/testing.app
+lSLF07#2@78"Touch /Users/NSchiff/Documents/testing/build/Debug-iphonesimulator/testing.app304937325#304937325#0(0"0(0#0#0"4300911832#266"    cd /Users/NSchiff/Documents/testing    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/NSchiff/Documents/testing/build/Debug-iphonesimulator/testing.app0#
+
