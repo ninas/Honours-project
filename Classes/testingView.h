@@ -29,7 +29,7 @@
 	CGPoint startPos; 
 	
 	// Values used in regression calculation
-	float xy,n,x,y,x2,x3,x4,x2y,cumulError,a,b,c;
+	float xy,n,x,y,x2,x3,x4,x2y,cumulError,a,b,c,xy2,y2,y3,xc,yc,radius;
 	// Calculated y values
 	float startY,endY;
 	// Size of rolling error window
@@ -59,8 +59,14 @@
 	UIButton * showDiscon;
 	BOOL disconnect;
 	
+	
+	float xSum;
+	float ySum;
+	
 }
 - (void) recognition:(CGPoint)point;
+- (void) recognitionSumSquares:(CGPoint)point;
+- (void) recognitionArc:(CGPoint)point;
 - (void) addFeature:(CGPoint)point;
 - (void) removeGesture;
 - (void) averageFeatures;
