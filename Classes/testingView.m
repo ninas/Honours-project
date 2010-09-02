@@ -146,8 +146,8 @@
 		}
 		
 		CGContextFillEllipseInRect(context, CGRectMake(xc+start.x, yc+start.y, 10, 10));
-		CGContextMoveToPoint(context, xc+start.x, yc+start.y);
-		CGContextAddLineToPoint(context, xc + start.x + radius, yc +start.y+radius);
+		CGContextMoveToPoint(context, xc, yc);
+		CGContextAddLineToPoint(context, xc  + radius, yc +radius);
 		CGContextSetLineWidth(context, 4.0); 
 		
 		CGContextStrokePath(context);
@@ -346,7 +346,7 @@
 - (void) recognitionArc:(CGPoint)point{
 	point.x -=start.x;
 	point.y -=start.y;
-	
+	//point.y = 1050 - point.y;
 	
 	n+=1.0;
 	x+=point.x;
@@ -831,6 +831,7 @@
 	UITouch *touch = [touches anyObject];
 	CGPoint pt = [touch locationInView:self];
 	distance=0;
+	pt.y = 1050 - pt.y;
 	start = pt;
 	[offsetVals addObject:[NSValue valueWithCGPoint:CGPointMake(start.x, start.y)]];
 	pt.x=0;
@@ -873,7 +874,7 @@
 	UITouch *touch = [touches anyObject];
 	
 	CGPoint pt = [touch locationInView:self];
-	
+	pt.y = 1050-pt.y;
 	[touchesArray addObject: [NSValue valueWithCGPoint:CGPointMake(pt.x, pt.y)]];
 	[self setNeedsDisplay];
 	[self recognitionArc:pt];
