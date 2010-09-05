@@ -1,5 +1,7 @@
 #!/usr/bin/python
-
+"""
+	Parabolic least squares regression
+"""
 from Tkinter import *
 from math import sqrt
 

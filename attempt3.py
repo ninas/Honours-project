@@ -1,4 +1,8 @@
 #!/usr/bin/python
+"""
+	Circle fitting using least squares
+	Nina Schiff
+"""
 
 from Tkinter import *
 from math import sqrt

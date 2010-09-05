@@ -1,7 +1,11 @@
 #!/usr/bin/python
+"""
+	Home brewed feature extraction
+	Nina Schiff
+"""
 
 from Tkinter import *
-from math import sqrt
+from math import sqrt, tan, degrees
 
 root = Tk()
 
@@ -9,251 +13,140 @@ root.title("Simple Graph")
 
 root.resizable(0,0)
 
-points = []
 
-spline = 0
 startPos = [0.0, 0.0]
 previous = [0.0, 0.0]
 
-countPlace = 0
+
+xDir=5
+yDir=5
+prevDistance = 0.0
 
 
 
-cumulError=0.0
-rollingError=[]
-rollback=[]
+currentAngle = 0.0
 
-soFar=[]
-cE=0.0
-a=0.0
-b=0.0
-function = lambda val: cE - (val - a)*(val - a)
-vertical = False
-vertCounter=0
-finalVals=[]
-startY=0.0
-endY=0.0
+featureList = []
 
-lineVals = []
-distanceLine=0.0
-distances=[]
-tag1 = "theline"
 def recog(event):
 	
-	global startPos,finalVals, startY, endY, cumulError, rollback, rollingError,function, vertical, vertCounter,distanceLine, countPlace
+	global startPos,finalVals, startY, endY, cumulError, rollback, rollingError,function, vertical, vertCounter,distanceLine, countPlace, xDir, yDir,prevDistance, featureList, currentAngle
 	
-	countPlace+=1
+	secX = previous[0] - event.x
+	secY = previous[1] - event.y
+	prevDistance += sqrt((event.x - previous[0])*(event.x - previous[0]) + (event.y - previous[1])*(event.y - previous[1]))
+	tempX = 5
+	tempY = 5
 	
-	if countPlace <20:
-		return
-	
-	
-	
-	distanceLine+=sqrt((event.x-previous[0])*(event.x-previous[0]) + (endY-previous[1])*(endY-previous[1]))
+	if secX > 2:
+		tempX = 1
+	elif secX < -2:
+		tempX = -1
+	else:
+		tempX = 0
 		
+	if secY > 2:
+		tempY = 1
+	elif secY < -2:
+		tempY = -1
+	else:
+		tempY = 0
 	
 	
 	
-	cumulError += event.y-endY
-	rollingError.append(event.y-endY)
-	#print a,b,cE
-	soFar.append(event)
 	
-	if len(rollingError) > 5:
-		cumulError-=rollingError[0]
-		rollingError.pop(0)
+	
+	
+	if not (xDir == tempX and yDir == tempY):
+		if prevDistance > 100:
+			tempAngle = degrees(tan((startPos[1] - event.y)/float(startPos[0] - event.x)))
+			if abs(currentAngle - tempAngle) > 10:
+				featureList.append([startPos[0], startPos[1], event.x, event.y])
+				
+			elif len(featureList) > 0:
+				featureList[len(featureList)-1][2] = event.x
+				featureList[len(featureList)-1][3] = event.y
+				print 'Joined'
+			else:
+				featureList.append([startPos[0], startPos[1], event.x, event.y])
+			c.create_oval(event.x, event.y, event.x+5, event.y+5, fill="green")
+			print 'X: ',event.x,'Y: ',event.y, 'PrevX: ',previous[0],'PrevY: ',previous[1]
+			print 'X: ',tempX,'Y: ',tempY,'xDir: ',xDir,'yDir: ',yDir
+			prevDistance=0.0
+			
+			currentAngle = tempAngle
+			xDir = tempX
+			yDir = tempY
+			startPos[0] = event.x
+			startPos[1]= event.y
+		else:
+			print 'Didn\'t break'
+			xDir = tempX
+			yDir = tempY
+	
 	previous[0] = event.x
-	previous[1]= endY
-	
-	print 'error:',(cumulError/len(rollingError))
+	previous[1]= event.y
 	
 	
-	if abs(cumulError/len(rollingError)) > 15.0:
-		print 'error:',(cumulError/len(rollingError))
-		
-		print 'Values: ',a,b,cE
-		finalVals.extend([startPos[0], startY,event.x,endY])
-		lineVals.append([a,b,cE, startPos[0],startY, event.x, endY])
-		distances.append(distanceLine)
-		distanceLine=0.0
-		for i in soFar:
-			newY = function(i.x)
-			if newY < 0:
-				print 'continueing'
-				continue
-			multiplier = 1;
-			if i.y  <  b:
-				multiplier=-1;
-				print 'setting -1'
-			newY=multiplier*sqrt(newY)+b
-			c.create_oval(i.x, newY, i.x+5, newY+5, fill="green")
-		
-		soFar = []
-		startPos[0] = event.x
-		startPos[1]= event.y
-		
-		xy=event.x*event.y
-		n=1.0
-		x=event.x
-		y=event.y
-		x2=event.x*event.x
-		x3=x2*x
-		x2y=x2*y
-		x4=x3*x
-		y2=y*y
-		y3=y2*y
-		xy2=xy*y
-		
-		for i in soFar[-5:]:
-			xy+=i.x*i.y
-			n+=1.0
-			x+=i.x
-			y+=i.y
-			x2+=i.x*i.x
-			x3+=i.x*i.x*i.x
-			x2y+=i.x*i.x*i.y
-			x4+=i.x*i.x*i.x*i.x
-			y2+=i.y*i.y
-			y3+=i.y*i.y*i.y
-			xy2+=i.x*i.y*i.y
-		cumulError=0.0
-		second = rollback[:]
-		rollback=[]
-		
-		rollingError=[]
-		print 'RESET'
+	
+	
 		
 	
 
 
 def start(event):
-	global xy,n,x,y,x2,startPos,previous, cumulError, finalVals,x3,x2y,x4,y2,y3,xy2, lineVals, vertical, vertCounter,distanceLine, distances, soFar
-	#event.x  = 0.0
-	#event.y=0.0
-	distances=[]
-	finalVals=[]
-	distanceLine=0.0
-	lineVals=[]
-	vertical=False
-	vertCounter=0
+	global startPos,previous, prevDistance, featureList, currentAngle
+		
 	c.delete('all')
 	c.create_oval(event.x, event.y, event.x+5, event.y+5, fill="black")
 	startPos[0] = event.x
 	startPos[1]= event.y
 	previous[0] = event.x
 	previous[1]= event.y
-	soFar=[]
-	xy=event.x*event.y
-	n=1.0
-	x=event.x
-	y=event.y
-	x2=event.x*event.x
-	x3=x2*x
-	x2y=x2*y
-	x4=x3*x
-	y2=y*y
-	y3=y2*y
-	xy2=xy*y
-	cumulError=0.0
-	recog(event)
+	prevDistance = 0.0
+	featureList=[]
+	currentAngle=0.0
 	
-	xs = [0.5,1,1.5,2,2.5,3]
-	ys= [0.25,1,2.25,4,6.25,9]
-	
-	"""for i in range(len(xs)):
-		event.x = xs[i]
-		event.y= ys[i]
-		c.create_oval(event.x, event.y, event.x+5, event.y+5, fill="black")
-		points.append(event.x)
-		points.append(event.y)
-		previous[0] = event.x
-		previous[1]= event.y
-		recog(event)"""
 	
 def end(event):
-	global soFar,cE,a,b,function, startPos
-	point(event)
-	#c.create_line(startPos[0], startY, event.x, endY)
-	coords=[]
-	for i in soFar:
-			newY = function(i.x)
-			if newY < 0:
-				print 'continueing'
-				continue
-			multiplier = 1;
-			if i.y  <  b:
-				multiplier=-1;
-				print 'setting -1'
-			newY=multiplier*sqrt(newY)+b
-			c.create_oval(i.x, newY, i.x+5, newY+5, fill="green")
+	global soFar,cE,a,b,function, startPos, currentAngle, featureList, prevDistance
 	
-	soFar = []
-	finalVals.extend([startPos[0], startY,event.x,endY])
-	lineVals.append([a,b,cE, startPos[0],startY, event.x, endY])
-	distances.append(distanceLine)
+	tempAngle = degrees(tan((startPos[1] - event.y)/float(startPos[0] - event.x)))
+	if abs(currentAngle - tempAngle) > 10:
+		featureList.append([startPos[0], startPos[1], event.x, event.y])
+		
+	elif len(featureList) > 0:
+		featureList[len(featureList)-1][2] = event.x
+		featureList[len(featureList)-1][3] = event.y
+		print 'Joined'
+	else:
+		featureList.append([startPos[0], startPos[1], event.x, event.y])
+	c.create_oval(event.x, event.y, event.x+5, event.y+5, fill="green")
+	
+	
+	
+	
 	
 def point(event):
 	global previous
 	distance = sqrt((event.x - previous[0])*(event.x - previous[0]) + (event.y - previous[1])*(event.y - previous[1]))
-	#print distance,(event.x - previous[0]),(event.y - previous[1]), event.x, previous[0], event.y, previous[1]
-	if distance != 0.0:
+	
+	if distance > 10.0:
 		c.create_oval(event.x, event.y, event.x+5, event.y+5, fill="black")
-		points.append(event.x)
-		points.append(event.y)
-		previous[0] = event.x
-		previous[1]= event.y
+		
+		
 		recog(event)
-	return points
+	
 
-def canxy(event):
-	print event.x, event.y
 
 def graph(event):
-	print lineVals
+	global featureList
 	
-	
-	print distances
-	"""newVals=[]
-	gradients=[]
-	for i in range(len(finalVals)/2):
-		#c.create_oval(finalVals[i*2], finalVals[i*2+1], finalVals[i*2]+5, finalVals[i*2+1]+5, fill="red")
-		if i%2 != 0:
-			#print i,i*2,i*2-2,i*2+1,i*2-1
-			distance = sqrt((finalVals[i*2] - finalVals[i*2-2])*(finalVals[i*2] - finalVals[i*2-2]) + (finalVals[i*2+1] - finalVals[i*2-1])*(finalVals[i*2+1] - finalVals[i*2-1]))
-			#print 'Distance: ',distance
-			bottom = (finalVals[i*2] - finalVals[i*2-2])
-			if bottom == 0:
-				bottom = 0.0000000001
-			gradient = (finalVals[i*2+1] - finalVals[i*2-1])/bottom
-			#print 'Gradient: ',gradient
-			#print newVals,gradients
-			if distance >20.0:
-				if len(newVals)!=0 and abs(gradient - gradients[len(gradients)-1]) <0.5:
-					newVals[len(newVals)-1] = finalVals[i*2+1]
-					newVals[len(newVals)-2] = finalVals[i*2]
-				else:
-					newVals.extend([finalVals[i*2-2], finalVals[i*2-1],finalVals[i*2], finalVals[i*2+1]])
-					gradients.append(gradient)
-	for i in range(len(newVals)/4):
+	for i in featureList:
+		c.create_line(i[0], i[1], i[2], i[3], fill="red")
 		
-			c.create_line(newVals[i*4], newVals[i*4+1], newVals[i*4+2], newVals[i*4+3], fill="red") """
-	
-	
 			
-	
 
-def toggle(event):
-	#print finalVals
-	for i in range(len(finalVals)/2):
-		c.create_oval(finalVals[i*2], finalVals[i*2+1], finalVals[i*2]+5, finalVals[i*2+1]+5, fill="red")
-		if i%2 != 0:
-			#print i,i*2,i*2-2,i*2+1,i*2-1
-
-			#print 'Distance: ',sqrt((finalVals[i*2] - finalVals[i*2-2])*(finalVals[i*2] - finalVals[i*2-2]) + (finalVals[i*2+1] - finalVals[i*2-1])*(finalVals[i*2+1] - finalVals[i*2-1]))
-			bottom = (finalVals[i*2] - finalVals[i*2-2])
-			if bottom == 0:
-				bottom = 0.0000000001
-			#print 'Gradient: ',(finalVals[i*2+1] - finalVals[i*2-1])/bottom
 
 c = Canvas(root, bg="white", width=600, height= 600)
 
@@ -268,6 +161,6 @@ c.bind("<ButtonRelease-1>", end)
 
 c.bind("<Button-3>", graph)
 
-c.bind("<Button-2>", toggle)
+
 
 root.mainloop()
