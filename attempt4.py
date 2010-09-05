@@ -16,13 +16,15 @@ root.resizable(0,0)
 
 startPos = [0.0, 0.0]
 previous = [0.0, 0.0]
-
+sumSquares = 0.0
+degFreedom = 0.0
 
 xDir=5
 yDir=5
 prevDistance = 0.0
 
-
+x=0.0
+x2=0.0
 
 currentAngle = 0.0
 
@@ -30,13 +32,16 @@ featureList = []
 
 def recog(event):
 	
-	global startPos,finalVals, startY, endY, cumulError, rollback, rollingError,function, vertical, vertCounter,distanceLine, countPlace, xDir, yDir,prevDistance, featureList, currentAngle
+	global startPos, xDir, yDir,prevDistance, featureList, currentAngle, sumSquares, degFreedom,x,x2
 	
 	secX = previous[0] - event.x
 	secY = previous[1] - event.y
 	prevDistance += sqrt((event.x - previous[0])*(event.x - previous[0]) + (event.y - previous[1])*(event.y - previous[1]))
 	tempX = 5
 	tempY = 5
+	degFreedom+=1
+	x+=event.x
+	x2+=event.x*event.x
 	
 	if secX > 2:
 		tempX = 1
@@ -58,7 +63,17 @@ def recog(event):
 	
 	
 	if not (xDir == tempX and yDir == tempY):
+		"""print 'Sum squares =',x2 - 2*x*(x/degFreedom)+(x/degFreedom)*(x/degFreedom)
+		print 'Normalised sum squares =',(x2 - 2*x*(x/degFreedom)+(x/degFreedom)*(x/degFreedom))/float(degFreedom-1.0)
+		x=event.x
+		x2=event.x*event.x
+		degFreedom=1.0"""
+		
 		if prevDistance > 100:
+			chordLength = sqrt((event.x - startPos[0])*(event.x - startPos[0]) + (event.y - startPos[1])*(event.y - startPos[1])) 
+			print 'Chord length: ',chordLength, 'Arc length: ',prevDistance
+			print 'Curvature: ',sqrt(24*(prevDistance - chordLength)/(chordLength*chordLength*chordLength))
+		
 			tempAngle = degrees(tan((startPos[1] - event.y)/float(startPos[0] - event.x)))
 			if abs(currentAngle - tempAngle) > 10:
 				featureList.append([startPos[0], startPos[1], event.x, event.y])
@@ -110,7 +125,10 @@ def start(event):
 	
 def end(event):
 	global soFar,cE,a,b,function, startPos, currentAngle, featureList, prevDistance
-	
+	chordLength = sqrt((event.x - startPos[0])*(event.x - startPos[0]) + (event.y - startPos[1])*(event.y - startPos[1])) 
+	print 'Chord length: ',chordLength, 'Arc length: ',prevDistance
+	print 'Curvature: ',sqrt(24*(prevDistance - chordLength)/(chordLength*chordLength*chordLength))
+			
 	tempAngle = degrees(tan((startPos[1] - event.y)/float(startPos[0] - event.x)))
 	if abs(currentAngle - tempAngle) > 10:
 		featureList.append([startPos[0], startPos[1], event.x, event.y])
@@ -122,6 +140,7 @@ def end(event):
 	else:
 		featureList.append([startPos[0], startPos[1], event.x, event.y])
 	c.create_oval(event.x, event.y, event.x+5, event.y+5, fill="green")
+	print '____________________________________________________________________________________'
 	
 	
 	
