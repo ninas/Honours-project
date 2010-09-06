@@ -96,37 +96,85 @@
 	/* Draw features */
 	if (averagePos == -1){
 		int counter = 0;
-		//if (currentFeature.count > 1){
+		if (currentFeature.count > 1){
 			
-			/*for (int i=0; i<currentFeature.count-1; i++){
+			for (int i=0; i<currentFeature.count-1; i++){
 				
 				NSMutableArray * temp = [currentFeature objectAtIndex:(NSUInteger)i];
 				float tempA, tempB, tempC;
-				NSLog(@"Loop: %d",i);
-				NSLog(@"currentFeature: %d",currentFeature.count);
-				NSLog(@"lineValue: %d",lineValues.count);
+				//NSLog(@"Loop: %d",i);
+				//NSLog(@"currentFeature: %d",currentFeature.count);
+				//NSLog(@"lineValue: %d",lineValues.count);
 				tempA = [[lineValues objectAtIndex:(NSUInteger)counter*3] floatValue];
 				tempB = [[lineValues objectAtIndex:(NSUInteger)counter*3+1] floatValue];
 				tempC = [[lineValues objectAtIndex:(NSUInteger)counter*3+2] floatValue];
 				
 				CGPoint offset = [[offsetVals objectAtIndex:i] CGPointValue];
-				
-				float val = ([[temp objectAtIndex:(NSUInteger)0] CGPointValue]).x ;
-				float newY =tempC *val*val + tempB*val + tempA ;
-				CGContextMoveToPoint(context, val+ offset.x, newY+offset.y);
-				
-				for(int j=1; j<temp.count; j++){
-					val = ([[temp objectAtIndex:(NSUInteger)j] CGPointValue]).x;
-					newY =tempC *val*val + tempB*val + tempA;
-					
-					CGContextAddLineToPoint(context, val + offset.x, newY+offset.y);
+				int place =0;
+				float newY = -1;
+				float val;
+				while (newY < 0) {
+					val = ([[temp objectAtIndex:(NSUInteger)place] CGPointValue]).x ;
+					newY = tempC*tempC - (val - tempA)*(val - tempA);
+					place++;
 				}
-				counter++;
 				
-				CGContextSetLineWidth(context, 4.0); 
-				
-				CGContextStrokePath(context);
-				
+				if (newY >= 0){
+					NSLog(@"In");
+					float multiplier = 1;
+					if (([[temp objectAtIndex:(NSUInteger)0] CGPointValue]).y < tempB){
+						
+						multiplier=-1;
+					}
+					
+					newY = multiplier*sqrtf(newY) + tempB;
+					CGContextMoveToPoint(context, val+ offset.x, newY+offset.y);
+					
+					for(int j=place; j<temp.count; j++){
+						val = ([[temp objectAtIndex:(NSUInteger)j] CGPointValue]).x ;
+						newY = tempC*tempC - (val - tempA)*(val - tempA);
+						if (newY < 0){
+							NSLog(@"Returning");
+							continue;
+						}
+						float multiplier = 1;
+						if (([[temp objectAtIndex:(NSUInteger)j] CGPointValue]).y < tempB){
+							
+							multiplier=-1;
+						}
+						
+						newY = multiplier*sqrtf(newY) + tempB;
+						
+						CGContextAddLineToPoint(context, val + offset.x, newY+offset.y);
+						
+					}
+					counter++;
+					
+					CGContextSetLineWidth(context, 4.0); 
+					
+					CGContextStrokePath(context);
+					for(int j=place; j<temp.count; j++){
+						val = ([[temp objectAtIndex:(NSUInteger)j] CGPointValue]).x ;
+						newY = tempC*tempC - (val - tempA)*(val - tempA);
+						if (newY < 0){
+							NSLog(@"Returning");
+							continue;
+						}
+						float multiplier = 1;
+						if (([[temp objectAtIndex:(NSUInteger)j] CGPointValue]).y < tempB){
+							
+							multiplier=-1;
+						}
+						
+						newY = multiplier*sqrtf(newY) + tempB;
+						
+						
+						CGContextFillEllipseInRect(context, CGRectMake(val + offset.x, newY+offset.y, 15, 15));
+					}
+				}
+				else{
+					NSLog(@"Ooops");
+				}
 			}
 		}
 		
@@ -145,12 +193,7 @@
 			}
 		}
 		
-		CGContextFillEllipseInRect(context, CGRectMake(xc+start.x, yc+start.y, 10, 10));
-		CGContextMoveToPoint(context, xc, yc);
-		CGContextAddLineToPoint(context, xc  + radius, yc +radius);
-		CGContextSetLineWidth(context, 4.0); 
-		
-		CGContextStrokePath(context);
+				CGContextStrokePath(context);
 	}
 	else{
 		NSMutableArray * data = [averaged objectAtIndex:averagePos];
@@ -240,7 +283,7 @@
 		
 	}
 	
-		c = (x2y*n*j - y*x2*j - n*xy*k + y*x*k)/bottom;
+	c = (x2y*n*j - y*x2*j - n*xy*k + y*x*k)/bottom;
 	
 	bottom = j;
 	if (bottom == 0.0){
@@ -249,7 +292,7 @@
 		
 	}
 	
-		b = (n*xy - y*x - c*k)/bottom;
+	b = (n*xy - y*x - c*k)/bottom;
 	
 	bottom = n;
 	if (bottom == 0.0){
@@ -260,7 +303,7 @@
 	
 	
 	NSLog(@"Vals: c - %f   b- %f   a - %f",c,b,a);
-		a = (y - b*x - c*x2)/bottom;
+	a = (y - b*x - c*x2)/bottom;
 	
 	// Predicted y values
 	startY = c*startPos.x*startPos.x + b*startPos.x + a;
@@ -296,8 +339,8 @@
 		if (distance > 100.0){
 			// Add as gesture feature
 			[self addFeature:point];
-		
-		
+			
+			
 			// For drawing
 			[lineValues addObject:[NSNumber numberWithFloat:a]];
 			[lineValues addObject:[NSNumber numberWithFloat:b]];
@@ -317,7 +360,7 @@
 		else {
 			[[currentFeature lastObject] removeAllObjects];
 		}
-
+		
 		/* Reset values for new feature */
 		point.x = 0;
 		point.y = 0;
@@ -344,66 +387,12 @@
 }
 
 - (void) recognitionArc:(CGPoint)point{
-	point.x -=start.x;
-	point.y -=start.y;
-	//point.y = 1050 - point.y;
-	
-	n+=1.0;
-	x+=point.x;
-	y+=point.y;
-	x2+=point.x*point.x;
-	x3+=point.x*point.x*point.x;
-	y2+=point.y*point.y;
-	y3+=point.y*point.y*point.y;
-	xy+=point.x*point.y;
-	xy2+=point.x*point.y*point.y;
-	x2y+=point.x*point.x*point.y;
-	
-	float meanX = x/n;
-	float meanY = y/n;
-	float Suu = x2 - 2*x*meanX + meanX*meanX*n;
-	float Svv = y2 - 2*y*meanY + meanY*meanY*n;
-		
-	float Suv = xy - x*meanY - y*meanX + meanX*meanY*n;
-	
-	float Suuu = x3 - 3*x2*meanX + 3*x*meanX*meanX - meanX*meanX*meanX*n;
-	float Svvv = y3 - 3*y2*meanY + 3*y*meanY*meanY - meanY*meanY*meanY*n;
-	
-	float Suvv = xy2 - y2*meanX - 2*xy*meanY + 2*y*meanX*meanY + meanY*meanY*x - meanY*meanY*meanX*n;
-	float Svuu = x2y - x2*meanY - 2*xy*meanX + 2*x*meanX*meanY + meanX*meanX*y - meanX*meanX*meanY*n;
-	
-	
-	
-	float vc = (Svvv*Suu + Svuu*Suu - Suuu*Suv - Suvv*Suv)/(2*(Suu*Svv - Suv*Suv));
-	float uc = (Suuu +Suvv - 2*vc*Suv)/(2*Suu);
-	
-	float rad = uc*uc + vc*vc + (Suu + Svv)/n;
-	
-	
-	radius = sqrtf(rad);
-	xc = uc+meanX;
-	yc = vc+meanY;
-	
-	NSLog(@"x: %f   y: %f   radius:%f",xc,yc,radius);
-	NSLog(@"Points - x:  %f   y:%f",point.x,point.y);
-	NSLog(@"Components:  rad - %f   (x-a)^2 - %f   minus - %f    sqrt - %f    yc - %f",rad,(point.x - xc)*(point.x - xc),rad - (point.x - xc)*(point.x - xc),sqrtf(rad - (point.x - xc)*(point.x - xc)),yc);
-	
-	float newX = sqrtf(rad - (point.y - yc)*(point.y - yc)) + xc;
-	NSLog(@"Original x: %f   newX: %f",point.x,newX);
-	
-	
-	
-}
-
-- (void) recognitionSumSquares:(CGPoint)point{
-	
-	
 	// Offset to origin
 	point.x -=start.x;
 	point.y -=start.y;
 	
-	// Regression values
-	/*xy+=point.x*point.y;
+	
+	xy+=point.x*point.y;
 	n+=1.0;
 	x+=point.x;
 	y+=point.y;
@@ -411,50 +400,67 @@
 	x3+=point.x*point.x*point.x;
 	x2y+=point.x*point.x*point.y;
 	x4+=point.x*point.x*point.x*point.x;
+	y2 += point.y*point.y;
+	y3 += point.y*point.y*point.y;
+	xy2 += point.x*point.y*point.y;
 	
-	float j=x2*n - x*x;
-	float k = x3*n - x*x2;
+	float xBar = x/(float)n;
+	float yBar = y/(float)n;
 	
-	// Calculate equation of line
-	float bottom = (x4*n-x2*x2)*j - k*k;
-	if (bottom == 0.0){
+	float Suu = x2 - 2*x*xBar + xBar*xBar*n;
+	float Svv = y2 - 2*y*yBar + yBar*yBar*n;
+	float Suv = xy - x*yBar - y*xBar +n*xBar*yBar;
+	
+	
+	float Suuu = x3 - 3*x2*xBar + 3*x*xBar*xBar - xBar*xBar*xBar*n;
+	float Svvv = y3 - 3*y2*yBar + 3*y*yBar*yBar - yBar*yBar*yBar*n;
+	float Suvv = xy2 - 2*xy*yBar + x*yBar*yBar - xBar*y2 + 2*yBar*y*xBar - xBar*yBar*yBar*n;
+	float Svuu = x2y - 2*xy*xBar + y*xBar*xBar - x2*yBar + 2*yBar*x*xBar - yBar*xBar*xBar*n;
+	
+	
+	
+	float bottom = 2.0*(Svv*Suu - Suv*Suv);
+	if (2.0*(Svv*Suu - Suv*Suv) == 0){
 		bottom = FLT_MIN;
-		NSLog(@"Zero c");
+	}
+	float vc = (Svvv*Suu + Svuu*Suu - Suv*Suuu - Suv*Suvv)/bottom;
+	
+	bottom = (2.0*Suu);
+	if (bottom == 0){
+		bottom = FLT_MIN;
+	}
+	float uc = (Suuu + Suvv - 2*vc*Suv)/bottom;
+	
+	
+	float rad = uc*uc + vc*vc + (Suu+Svv)/n;
+	radius = sqrtf(rad);
+	xc = uc + xBar;
+	yc = vc + yBar;
+	
+	
+	
+	endY = rad - (point.x - xc)*(point.x - xc);
+			
+	
+	
+	
+	if (endY < 0){
+		//NSLog(@"Returning");
+		return;
+	}
+	float multiplier = 1;
+	if (point.y < yc){
 		
+		multiplier=-1;
 	}
 	
-	c = (x2y*n*j - y*x2*j - n*xy*k + y*x*k)/bottom;
-	
-	bottom = j;
-	if (bottom == 0.0){
-		bottom = FLT_MIN;
-		NSLog(@"Zero b");
-		
-	}
-	
-	b = (n*xy - y*x - c*k)/bottom;
-	
-	bottom = n;
-	if (bottom == 0.0){
-		bottom = FLT_MIN;
-		NSLog(@"Zero a");
-		
-	}
+	endY = multiplier*sqrtf(endY) + yc;
 	
 	
-	NSLog(@"Vals: c - %f   b- %f   a - %f",c,b,a);
-	a = (y - b*x - c*x2)/bottom;
 	
-	// Predicted y values
-	startY = c*startPos.x*startPos.x + b*startPos.x + a;
-	endY = c*point.x*point.x + b*point.x + a;
-	
-	// Distance between current point and previous added to distance of rest of feature	*/
 	distance+=sqrtf((point.x-previous.x)*(point.x-previous.x) + (endY-previous.y)*(endY-previous.y));
 	previous = point;
-	NSLog(@"Distance: %f",distance);
 	
-	/* Error checking 
 	cumulError += point.y-endY;
 	if (rollPlace >= 5){
 		rollPlace=0;
@@ -472,20 +478,20 @@
 	
 	// To draw feature
 	[[currentFeature objectAtIndex:(NSUInteger)(currentFeature.count-1)] addObject: [NSValue valueWithCGPoint:CGPointMake(point.x, point.y)]];
-	
-	/* If error too large, end feature and create next feature 
-	if (fabs(cumulError/(float)rolErrSize) > 5.0){
-		
+	//NSLog(@"Error: %f",fabs(cumulError/(float)rolErrSize));
+	/* If error too large, end feature and create next feature */
+	if (fabs(cumulError/(float)rolErrSize) > 15.0){
+		NSLog(@"New feature");
 		// If length of current feature is not too small
-		if (distance > 100.0){
+		if (distance > 200.0){
 			// Add as gesture feature
 			[self addFeature:point];
 			
 			
 			// For drawing
-			[lineValues addObject:[NSNumber numberWithFloat:a]];
-			[lineValues addObject:[NSNumber numberWithFloat:b]];
-			[lineValues addObject:[NSNumber numberWithFloat:c]];
+			[lineValues addObject:[NSNumber numberWithFloat:xc]];
+			[lineValues addObject:[NSNumber numberWithFloat:yc]];
+			[lineValues addObject:[NSNumber numberWithFloat:radius]];
 			
 			// Unoffset points
 			start.x += point.x;
@@ -497,33 +503,198 @@
 			// CURVATURE
 			//float curvature = fabs(2*a) / powf((powf(2*a*point.x/2 + b, 2) + 1), 1.5);
 			//NSLog(@"Curvature: %f", curvature);
+			
+			/* Reset values for new feature */
+			point.x = 0;
+			point.y = 0;
+			
+			
+			startPos.x = point.x;
+			startPos.y= point.y;
+			[[currentFeature objectAtIndex:(NSUInteger)(currentFeature.count-1)] addObject: [NSValue valueWithCGPoint:CGPointMake(point.x, point.y)]];
+			
+			xy=point.x*point.y;
+			n=1.0;
+			x=point.x;
+			y=point.y;
+			x2=point.x*point.x;
+			x3=x2*x;
+			x2y=x2*y;
+			x4=x3*x;
+			
+			y2=y*y;
+			y3=y2*y;
+			xy2=xy*y;
+			cumulError=0.0;
+			distance = 0.0;
+			rolErrSize = 0;
 		}
 		else {
-			[[currentFeature lastObject] removeAllObjects];
+			//[[currentFeature lastObject] removeAllObjects];
 		}
 		
-		/* Reset values for new feature 
+		
+		
+	}			
+	
+	
+	
+	/*
+	 
+	 
+	 
+	 for i in soFar[-5:]:
+	 xy+=i.x*i.y
+	 n+=1.0
+	 x+=i.x
+	 y+=i.y
+	 x2+=i.x*i.x
+	 x3+=i.x*i.x*i.x
+	 x2y+=i.x*i.x*i.y
+	 x4+=i.x*i.x*i.x*i.x
+	 y2+=i.y*i.y
+	 y3+=i.y*i.y*i.y
+	 xy2+=i.x*i.y*i.y
+	 cumulError=0.0
+	 second = rollback[:]
+	 rollback=[]
+	 
+	 rollingError=[]
+	 print 'RESET'*/
+	
+	
+	
+}
+
+- (void) recognitionSumSquares:(CGPoint)point{
+	
+	
+	// Offset to origin
+	point.x -=start.x;
+	point.y -=start.y;
+	
+	// Regression values
+	/*xy+=point.x*point.y;
+	 n+=1.0;
+	 x+=point.x;
+	 y+=point.y;
+	 x2+=point.x*point.x;
+	 x3+=point.x*point.x*point.x;
+	 x2y+=point.x*point.x*point.y;
+	 x4+=point.x*point.x*point.x*point.x;
+	 
+	 float j=x2*n - x*x;
+	 float k = x3*n - x*x2;
+	 
+	 // Calculate equation of line
+	 float bottom = (x4*n-x2*x2)*j - k*k;
+	 if (bottom == 0.0){
+	 bottom = FLT_MIN;
+	 NSLog(@"Zero c");
+	 
+	 }
+	 
+	 c = (x2y*n*j - y*x2*j - n*xy*k + y*x*k)/bottom;
+	 
+	 bottom = j;
+	 if (bottom == 0.0){
+	 bottom = FLT_MIN;
+	 NSLog(@"Zero b");
+	 
+	 }
+	 
+	 b = (n*xy - y*x - c*k)/bottom;
+	 
+	 bottom = n;
+	 if (bottom == 0.0){
+	 bottom = FLT_MIN;
+	 NSLog(@"Zero a");
+	 
+	 }
+	 
+	 
+	 NSLog(@"Vals: c - %f   b- %f   a - %f",c,b,a);
+	 a = (y - b*x - c*x2)/bottom;
+	 
+	 // Predicted y values
+	 startY = c*startPos.x*startPos.x + b*startPos.x + a;
+	 endY = c*point.x*point.x + b*point.x + a;
+	 
+	 // Distance between current point and previous added to distance of rest of feature	*/
+	distance+=sqrtf((point.x-previous.x)*(point.x-previous.x) + (endY-previous.y)*(endY-previous.y));
+	previous = point;
+	NSLog(@"Distance: %f",distance);
+	
+	/* Error checking 
+	 cumulError += point.y-endY;
+	 if (rollPlace >= 5){
+	 rollPlace=0;
+	 }
+	 
+	 if (rolErrSize<5){ 
+	 rolErrSize++;
+	 }
+	 
+	 if (rolErrSize == 5){
+	 cumulError-=rollingError[rollPlace];
+	 }
+	 rollingError[rollPlace] = point.y-endY;	
+	 rollPlace++;
+	 
+	 // To draw feature
+	 [[currentFeature objectAtIndex:(NSUInteger)(currentFeature.count-1)] addObject: [NSValue valueWithCGPoint:CGPointMake(point.x, point.y)]];
+	 
+	 /* If error too large, end feature and create next feature 
+	 if (fabs(cumulError/(float)rolErrSize) > 5.0){
+	 
+	 // If length of current feature is not too small
+	 if (distance > 100.0){
+	 // Add as gesture feature
+	 [self addFeature:point];
+	 
+	 
+	 // For drawing
+	 [lineValues addObject:[NSNumber numberWithFloat:a]];
+	 [lineValues addObject:[NSNumber numberWithFloat:b]];
+	 [lineValues addObject:[NSNumber numberWithFloat:c]];
+	 
+	 // Unoffset points
+	 start.x += point.x;
+	 start.y += point.y;
+	 [offsetVals addObject:[NSValue valueWithCGPoint:CGPointMake(start.x, start.y)]];
+	 [currentFeature addObject: [[[NSMutableArray alloc]init] autorelease]];
+	 
+	 
+	 // CURVATURE
+	 //float curvature = fabs(2*a) / powf((powf(2*a*point.x/2 + b, 2) + 1), 1.5);
+	 //NSLog(@"Curvature: %f", curvature);
+	 }
+	 else {
+	 [[currentFeature lastObject] removeAllObjects];
+	 }
+	 
+	 /* Reset values for new feature 
 	 point.x = 0;
-		point.y = 0;
-		
-		
-		startPos.x = point.x;
-		startPos.y= point.y;
-		[[currentFeature objectAtIndex:(NSUInteger)(currentFeature.count-1)] addObject: [NSValue valueWithCGPoint:CGPointMake(point.x, point.y)]];
-		
-		xy=point.x*point.y;
-		n=1.0;
-		x=point.x;
-		y=point.y;
-		x2=point.x*point.x;
-		x3=x2*x;
-		x2y=x2*y;
-		x4=x3*x;
-		cumulError=0.0;
-		distance = 0.0;
-		rolErrSize = 0;
-		
-	}		*/	
+	 point.y = 0;
+	 
+	 
+	 startPos.x = point.x;
+	 startPos.y= point.y;
+	 [[currentFeature objectAtIndex:(NSUInteger)(currentFeature.count-1)] addObject: [NSValue valueWithCGPoint:CGPointMake(point.x, point.y)]];
+	 
+	 xy=point.x*point.y;
+	 n=1.0;
+	 x=point.x;
+	 y=point.y;
+	 x2=point.x*point.x;
+	 x3=x2*x;
+	 x2y=x2*y;
+	 x4=x3*x;
+	 cumulError=0.0;
+	 distance = 0.0;
+	 rolErrSize = 0;
+	 
+	 }		*/	
 	
 }
 
@@ -534,7 +705,7 @@
 	
 	feature * newFeature = [[feature alloc] init];
 	
-	[newFeature setLine:a andB:b andC:c];
+	[newFeature setLine:xc andB:yc andC:radius];
 	[newFeature setChange:CGPointMake(point.x, endY)];
 	
 	// If first feature of gesture
@@ -784,7 +955,7 @@
 
 - (void) sepFeatures:(id)sender{
 	if (disconnect){
-			[showDiscon setTitle:@"Seperate features" forState:UIControlStateNormal];
+		[showDiscon setTitle:@"Seperate features" forState:UIControlStateNormal];
 		disconnect = NO;
 	}
 	else{
@@ -808,7 +979,7 @@
 		for (int i=0; i<buttons.count; i++) {
 			UIButton * button = [buttons objectAtIndex:i];
 			button.hidden = YES;
-			}
+		}
 		[buttons removeAllObjects];
 	}
 	if (touchesArray.count > 0){
@@ -831,7 +1002,7 @@
 	UITouch *touch = [touches anyObject];
 	CGPoint pt = [touch locationInView:self];
 	distance=0;
-	pt.y = 1050 - pt.y;
+	
 	start = pt;
 	[offsetVals addObject:[NSValue valueWithCGPoint:CGPointMake(start.x, start.y)]];
 	pt.x=0;
@@ -841,14 +1012,14 @@
 	startPos.y= pt.y;
 	
 	/*xy=pt.x*pt.y;
-	n=1.0;
-	x=pt.x;
-	y=pt.y;
-	x2=pt.x*pt.x;
-	x3=x2*x;
-	x2y=x2*y;
-	x4=x3*x;
-	cumulError=0.0;*/
+	 n=1.0;
+	 x=pt.x;
+	 y=pt.y;
+	 x2=pt.x*pt.x;
+	 x3=x2*x;
+	 x2y=x2*y;
+	 x4=x3*x;
+	 cumulError=0.0;*/
 	n=1.0;
 	x=pt.x;
 	y=pt.y;
@@ -874,7 +1045,7 @@
 	UITouch *touch = [touches anyObject];
 	
 	CGPoint pt = [touch locationInView:self];
-	pt.y = 1050-pt.y;
+	
 	[touchesArray addObject: [NSValue valueWithCGPoint:CGPointMake(pt.x, pt.y)]];
 	[self setNeedsDisplay];
 	[self recognitionArc:pt];
@@ -890,12 +1061,13 @@
 	pt.x = pt.x - start.x;
 	pt.y = pt.y-start.y;
 	[touchesArray addObject: [NSValue valueWithCGPoint:CGPointMake(pt.x, pt.y)]];
-	
+	NSLog(@"End distance %f",distance);
 	// End feature	
-	if (distance > 100.0){
-		[lineValues addObject:[NSNumber numberWithFloat:a]];
-		[lineValues addObject:[NSNumber numberWithFloat:b]];
-		[lineValues addObject:[NSNumber numberWithFloat:c]];
+	if (distance > 200.0){
+		NSLog(@"adding end");
+		[lineValues addObject:[NSNumber numberWithFloat:xc]];
+		[lineValues addObject:[NSNumber numberWithFloat:yc]];
+		[lineValues addObject:[NSNumber numberWithFloat:radius]];
 		
 		[currentFeature addObject: [[[NSMutableArray alloc]init] autorelease]];
 		[self addFeature:pt];
@@ -904,8 +1076,8 @@
 	// Set size of gesture
 	if (gestureList.count > 0) {
 		
-	
-	[[gestureList objectAtIndex:gestureList.count-1] setMaxNum:(*previousFeature).step+1];
+		
+		[[gestureList objectAtIndex:gestureList.count-1] setMaxNum:(*previousFeature).step+1];
 	}
 	previousFeature = nil;
 	
