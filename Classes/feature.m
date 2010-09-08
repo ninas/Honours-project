@@ -14,32 +14,49 @@
 @synthesize step;
 @synthesize scale;
 @synthesize endPos;
+@synthesize previous;
+@synthesize startDist;
+@synthesize chordAngle;
+@synthesize maxNum;
 
 - (id) init {
 	if ((self = [super init])){
 		previous = nil;
 		next = nil;
 		maxNum=-1;
+		chordAngle = 500;
 	}
 	return self;
 }
 
-- (void) setLine:(float)tempA andB:(float)tempB andC:(float)tempC{
-	a = tempA;
-	b = tempB;
-	c = tempC;
+- (void) setAngles:(CGPoint)secEnd{
+	
+	
+	chordAngle = 180 + (atan2f(secEnd.y-startPos.y,  startPos.x - secEnd.x))*180/3.1415926;
+	
+	
+	
 }
 
 - (void) setMaxNum:(int)num{
 	maxNum = num;
 }
 
-- (void) setChange:(CGPoint)end{
-	endPos= end;
+- (void) setChange:(CGPoint)start andEnd:(CGPoint)end{
+	endPos.x=end.x-start.x;
+	endPos.y = end.y - start.y;
+	
+	startPos= start;
+	
+	featureAngle = 180 + (atan2f(endPos.y,  0 - endPos.x))*180/3.1415926;
 }
 
 - (void) setNext:(feature *)tempNext{
 	next = tempNext;
+	
+	if (chordAngle == 500) {
+		chordAngle = featureAngle;
+	}
 	
 }
 
@@ -50,10 +67,12 @@
 - (void) setScaleD:(float)tempDistance{
 	distance = tempDistance;
 	if (previous != nil){
-		scale = distance / (*previous).distance;
+		startDist = previous.startDist;
+		scale = distance / startDist;
  	}
 	else{
 		scale = 1.0;
+		startDist = distance;
 	}
 }
 
@@ -63,35 +82,48 @@
 
 /* Used in averaging */
 - (void) incrementAll:(NSArray*) array{
-	a+=[[array objectAtIndex:0] floatValue] ;
-	b+=[[array objectAtIndex:1] floatValue];
-	c+=[[array objectAtIndex:2] floatValue];
-	scale+=[[array objectAtIndex:3] floatValue];
-	endPos.x+=[[array objectAtIndex:4] CGPointValue].x;
-	endPos.y+=[[array objectAtIndex:4] CGPointValue].y;
+	
+	
+	endPos.x+=[[array objectAtIndex:0] floatValue];
+	endPos.y+=[[array objectAtIndex:1] floatValue];
+	scale+=[[array objectAtIndex:2] floatValue];
+	chordAngle+=[[array objectAtIndex:3] floatValue];
 	
 }
 
 /* Returns all defining values packed into a NSArray */
 - (NSArray*) getValues{
-	NSArray * vals = [NSArray arrayWithObjects:[NSNumber numberWithFloat:a], [NSNumber numberWithFloat:b], [NSNumber numberWithFloat:c],[NSNumber numberWithFloat:scale],[NSValue valueWithCGPoint:endPos],nil];
+	NSArray * vals = [NSArray arrayWithObjects:[NSNumber numberWithFloat:endPos.x],[NSNumber numberWithFloat:endPos.y],[NSNumber numberWithFloat:scale],[NSNumber numberWithFloat:chordAngle],nil];
 	return vals;
 }
 
 /* Average values */
 - (void) divideValues:(int)num{
-	a/=num;
-	b/=num;
-	c/=num;
+	
 	scale/=num;
 	endPos.x/=num;
 	endPos.y/=num;
+	chordAngle/=num;
 }
 
 - (void) printValues{
-	NSLog(@"\ta: %f\n\tb: %f\n\tc: %f\n\tscale: %f\n\tEnd point: (%f, %f)\n",a,b,c,scale,endPos.x,endPos.y);
+	NSLog(@"\tEnd point: (%f, %f)\t Scale: %f\t Chordangle: %f\n",endPos.x,endPos.y,scale,chordAngle);
 }
-
+- (void) resetEnd:(CGPoint)end andDist:(float)dist{
+	endPos.x = end.x - startPos.x;
+	endPos.y = end.y - startPos.y;
+	featureAngle = 180 + (atan2f(endPos.y,  0 - endPos.x))*180/3.1415926;
+	
+	distance+=dist;
+	if (previous != nil){
+		
+		scale = distance / startDist;
+ 	}
+	else{
+		
+		startDist = distance;
+	}
+}
 - (void) dealloc{
 	[super dealloc];
 	

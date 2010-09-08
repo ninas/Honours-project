@@ -62,6 +62,20 @@
 	ignore.adjustsImageWhenHighlighted = YES;
 	[self.view addSubview:ignore];
 	
+	
+	UIButton * clearF = [[UIButton buttonWithType:UIButtonTypeRoundedRect]retain];
+	
+	clearF.frame = CGRectMake(340, 980, 200, 50);
+	
+	[clearF setTitle:@"Clear gesture file" forState:UIControlStateNormal];
+	
+	clearF.backgroundColor = [UIColor clearColor];
+	
+	[clearF addTarget:self action:@selector(clearPressed:) forControlEvents:UIControlEventTouchUpInside];
+	
+	clearF.adjustsImageWhenHighlighted = YES;
+	[self.view addSubview:clearF];
+	
 	//set the position of the label
 	//frame = CGRectMake(50, 170, 200, 100);
 	
@@ -104,6 +118,27 @@
 		
 	[self.view removeGesture];
     //self.delegateRef.view2Controller.label.text = self.textField.text;
+	
+}
+
+-(void)clearPressed:(id)sender 
+{
+	
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+	NSString *documentsDirectory = [paths objectAtIndex:0];
+	
+	// CHANGE FILE NAME FOR DIFFERENT GESTURES ----------------------------------------------------------------------
+	NSString *appFile = [documentsDirectory stringByAppendingPathComponent:@"w.txt"];
+	
+	
+	if (appFile){
+		NSData *theData = [@"" dataUsingEncoding:NSUTF8StringEncoding];
+		
+		// Write to file
+		
+		[theData writeToFile:appFile atomically:YES];
+		
+	}
 	
 }
 

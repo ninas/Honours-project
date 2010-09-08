@@ -11,21 +11,23 @@
 
 @interface feature : NSObject {
 @public
-	float a;
-	float b;
-	float c;
+	
 	float scale;
 	float distance;
 	CGPoint endPos;
+	CGPoint startPos;
 	int step;
 	feature * next;
 	feature * previous;
 	int maxNum;
+	float featureAngle;
+	float chordAngle;
+	float startDist;
 
 }
 
-- (void) setLine:(float)tempA andB:(float)tempB andC:(float)tempC;
-- (void) setChange:(CGPoint)end;
+
+- (void) setChange:(CGPoint) start andEnd:(CGPoint)end;
 - (void) setPrevious:(feature*)tempPrevious;
 - (void) setNext:(feature *)tempNext;
 - (void) setScaleD:(float)tempDistance;
@@ -35,10 +37,16 @@
 - (NSArray*) getValues;
 - (void) divideValues:(int)num;
 - (void) printValues;
+- (void) setAngles:(CGPoint)secEnd;
+- (void) resetEnd:(CGPoint)end andDist:(float)dist;
 
 @property (nonatomic, retain) feature * next;
+@property (nonatomic, retain) feature * previous;
 @property int step;
 @property float scale;
 @property CGPoint endPos;
+@property float startDist;
+@property float chordAngle;
+@property int maxNum;
 
 @end

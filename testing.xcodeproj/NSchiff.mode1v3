@@ -329,18 +329,18 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>0FEA97E01237C33A007FA78C</string>
+										<string>0FEA98791237FCBF007FA78C</string>
 										<key>history</key>
 										<array>
 											<string>0F96A5D311EE0E6400ADA48F</string>
 											<string>0F96A5D411EE0E6400ADA48F</string>
-											<string>0F921F69120AE6E00065AF5D</string>
-											<string>0F921F6A120AE6E00065AF5D</string>
 											<string>0FEA9423122CF3B3007FA78C</string>
 											<string>0FEA9424122CF3B3007FA78C</string>
 											<string>0FEA942E122CF44C007FA78C</string>
-											<string>0FEA97DE1237C33A007FA78C</string>
-											<string>0FEA97DF1237C33A007FA78C</string>
+											<string>0FEA98241237F4D0007FA78C</string>
+											<string>0FEA984C1237F7FC007FA78C</string>
+											<string>0FEA986E1237FBB7007FA78C</string>
+											<string>0FEA986F1237FBB7007FA78C</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -538,7 +538,7 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>0FEA97E11237C33A007FA78C</string>
+		<string>0FEA987A1237FCBF007FA78C</string>
 		<string>0FEA94DF122D56F3007FA78C</string>
 		<string>0FEA94E0122D56F3007FA78C</string>
 		<string>1CD10A99069EF8BA00B06720</string>
@@ -895,7 +895,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {1091, 532}}</string>
 								<key>RubberWindowFrame</key>
-								<string>280 277 1091 573 0 0 1920 1058 </string>
+								<string>170 445 1091 573 0 0 1920 1058 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXDebugCLIModule</string>
@@ -924,7 +924,7 @@
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.consoleV3</string>
 			<key>WindowString</key>
-			<string>280 277 1091 573 0 0 1920 1058 </string>
+			<string>170 445 1091 573 0 0 1920 1058 </string>
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
