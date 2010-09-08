@@ -197,48 +197,7 @@
 	<key>Notifications</key>
 	<array/>
 	<key>OpenEditors</key>
-	<array>
-		<dict>
-			<key>Content</key>
-			<dict>
-				<key>PBXProjectModuleGUID</key>
-				<string>0FEA95D212350FBC007FA78C</string>
-				<key>PBXProjectModuleLabel</key>
-				<string>testingView.m</string>
-				<key>PBXSplitModuleInNavigatorKey</key>
-				<dict>
-					<key>Split0</key>
-					<dict>
-						<key>PBXProjectModuleGUID</key>
-						<string>0FEA95D312350FBC007FA78C</string>
-						<key>PBXProjectModuleLabel</key>
-						<string>testingView.m</string>
-						<key>_historyCapacity</key>
-						<integer>0</integer>
-						<key>bookmark</key>
-						<string>0FEA967512352FDA007FA78C</string>
-						<key>history</key>
-						<array>
-							<string>0FEA95CC12350F79007FA78C</string>
-						</array>
-					</dict>
-					<key>SplitCount</key>
-					<string>1</string>
-				</dict>
-				<key>StatusBarVisibility</key>
-				<true/>
-			</dict>
-			<key>Geometry</key>
-			<dict>
-				<key>Frame</key>
-				<string>{{0, 20}, {750, 461}}</string>
-				<key>PBXModuleWindowStatusBarHidden2</key>
-				<false/>
-				<key>RubberWindowFrame</key>
-				<string>348 254 750 502 0 0 1920 1058 </string>
-			</dict>
-		</dict>
-	</array>
+	<array/>
 	<key>PerspectiveWidths</key>
 	<array>
 		<integer>-1</integer>
@@ -370,7 +329,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>0FEA967412352FDA007FA78C</string>
+										<string>0FEA97E01237C33A007FA78C</string>
 										<key>history</key>
 										<array>
 											<string>0F96A5D311EE0E6400ADA48F</string>
@@ -380,8 +339,8 @@
 											<string>0FEA9423122CF3B3007FA78C</string>
 											<string>0FEA9424122CF3B3007FA78C</string>
 											<string>0FEA942E122CF44C007FA78C</string>
-											<string>0FEA95CF12350FBC007FA78C</string>
-											<string>0FEA95D012350FBC007FA78C</string>
+											<string>0FEA97DE1237C33A007FA78C</string>
+											<string>0FEA97DF1237C33A007FA78C</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -579,14 +538,13 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>0FEA967612352FDA007FA78C</string>
+		<string>0FEA97E11237C33A007FA78C</string>
 		<string>0FEA94DF122D56F3007FA78C</string>
 		<string>0FEA94E0122D56F3007FA78C</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>0F4E045811CA71AD0038827E</string>
-		<string>0FEA95D212350FBC007FA78C</string>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/NSchiff/Documents/testing/testing.xcodeproj</string>
+		<string>1C78EAAD065D492600B07095</string>
 	</array>
 	<key>WindowString</key>
 	<string>0 146 1920 912 0 0 1920 1058 </string>
@@ -681,7 +639,7 @@
 			<key>WindowToolGUID</key>
 			<string>0F4E045811CA71AD0038827E</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>FirstTimeWindowDisplayed</key>
@@ -937,7 +895,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {1091, 532}}</string>
 								<key>RubberWindowFrame</key>
-								<string>184 343 1091 573 0 0 1920 1058 </string>
+								<string>280 277 1091 573 0 0 1920 1058 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXDebugCLIModule</string>
@@ -966,7 +924,7 @@
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.consoleV3</string>
 			<key>WindowString</key>
-			<string>184 343 1091 573 0 0 1920 1058 </string>
+			<string>280 277 1091 573 0 0 1920 1058 </string>
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>

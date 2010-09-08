@@ -59,13 +59,18 @@
 	UIButton * showDiscon;
 	BOOL disconnect;
 	
-	
+	float currentAngle;
 	float xSum;
 	float ySum;
+	int xDir, yDir;
+	
+	NSMutableArray * directionArray;
+	NSMutableArray * gradients;
+	int gradientCounter;
 	
 }
 - (void) recognition:(CGPoint)point;
-- (void) recognitionSumSquares:(CGPoint)point;
+- (void) recognitionDirection:(CGPoint)point;
 - (void) recognitionArc:(CGPoint)point;
 - (void) addFeature:(CGPoint)point;
 - (void) removeGesture;

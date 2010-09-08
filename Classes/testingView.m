@@ -55,7 +55,10 @@
 		rollingError = malloc(5*sizeof(float));
 		
 		gestureList = [[NSMutableArray alloc] init];
+		directionArray = [[NSMutableArray alloc] init];
 		previousFeature = nil;
+		gradients = [[NSMutableArray alloc] init];
+		gradientCounter = 0;
 		
 		clear = NO;
 		drawAverage = NO;
@@ -95,7 +98,42 @@
 	
 	/* Draw features */
 	if (averagePos == -1){
-		int counter = 0;
+		if (directionArray.count > 1){
+			CGPoint offset = [[offsetVals objectAtIndex:0] CGPointValue];
+			CGPoint val = [[directionArray objectAtIndex:0] CGPointValue];
+			CGContextMoveToPoint(context, val.x, val.y);
+			
+			val = [[directionArray objectAtIndex:1] CGPointValue];
+			
+			CGContextAddLineToPoint(context, val.x , val.y);
+			
+			for (int i=1; i<directionArray.count/2; i++) {
+				//offset = [[offsetVals objectAtIndex:i] CGPointValue];
+				val = [[directionArray objectAtIndex:i*2] CGPointValue];
+				CGContextAddLineToPoint(context, val.x , val.y);
+				
+				val = [[directionArray objectAtIndex:i*2+1] CGPointValue];
+				//CGContextFillEllipseInRect(context, CGRectMake(val.x+offset.x, val.y+offset.y, 15, 15));
+				CGContextAddLineToPoint(context, val.x , val.y);
+				
+				
+				
+				
+				
+			}
+			CGContextSetLineWidth(context, 4.0); 
+			CGContextStrokePath(context);
+			NSLog(@"Number in draw array: %d",directionArray.count);
+			
+			for (int i=0; i<directionArray.count; i++) {
+				//offset = [[offsetVals objectAtIndex:i] CGPointValue];
+				val = [[directionArray objectAtIndex:i] CGPointValue];
+
+				CGContextFillEllipseInRect(context, CGRectMake(val.x, val.y, 15, 15));
+			}
+			
+		}
+		/*int counter = 0;
 		if (currentFeature.count > 1){
 			
 			for (int i=0; i<currentFeature.count-1; i++){
@@ -176,7 +214,7 @@
 					NSLog(@"Ooops");
 				}
 			}
-		}
+		}*/
 		
 		/* Point drawing */	
 		CGContextSetRGBStrokeColor(context, 0.0, 1.0, 0, 1.0);
@@ -193,7 +231,7 @@
 			}
 		}
 		
-				CGContextStrokePath(context);
+		CGContextStrokePath(context);
 	}
 	else{
 		NSMutableArray * data = [averaged objectAtIndex:averagePos];
@@ -440,7 +478,7 @@
 	
 	
 	endY = rad - (point.x - xc)*(point.x - xc);
-			
+	
 	
 	
 	
@@ -539,163 +577,129 @@
 	
 	
 	
-	/*
-	 
-	 
-	 
-	 for i in soFar[-5:]:
-	 xy+=i.x*i.y
-	 n+=1.0
-	 x+=i.x
-	 y+=i.y
-	 x2+=i.x*i.x
-	 x3+=i.x*i.x*i.x
-	 x2y+=i.x*i.x*i.y
-	 x4+=i.x*i.x*i.x*i.x
-	 y2+=i.y*i.y
-	 y3+=i.y*i.y*i.y
-	 xy2+=i.x*i.y*i.y
-	 cumulError=0.0
-	 second = rollback[:]
-	 rollback=[]
-	 
-	 rollingError=[]
-	 print 'RESET'*/
+	
 	
 	
 	
 }
 
-- (void) recognitionSumSquares:(CGPoint)point{
+- (void) recognitionDirection:(CGPoint)point{
 	
 	
 	// Offset to origin
-	point.x -=start.x;
-	point.y -=start.y;
+	//point.x -=start.x;
+	//point.y -=start.y;
+	if (gradientCounter == 3) {
+		[gradients addObject:[NSValue valueWithCGPoint:CGPointMake(point.x, point.y)]];
+	}
 	
-	// Regression values
-	/*xy+=point.x*point.y;
-	 n+=1.0;
-	 x+=point.x;
-	 y+=point.y;
-	 x2+=point.x*point.x;
-	 x3+=point.x*point.x*point.x;
-	 x2y+=point.x*point.x*point.y;
-	 x4+=point.x*point.x*point.x*point.x;
-	 
-	 float j=x2*n - x*x;
-	 float k = x3*n - x*x2;
-	 
-	 // Calculate equation of line
-	 float bottom = (x4*n-x2*x2)*j - k*k;
-	 if (bottom == 0.0){
-	 bottom = FLT_MIN;
-	 NSLog(@"Zero c");
-	 
-	 }
-	 
-	 c = (x2y*n*j - y*x2*j - n*xy*k + y*x*k)/bottom;
-	 
-	 bottom = j;
-	 if (bottom == 0.0){
-	 bottom = FLT_MIN;
-	 NSLog(@"Zero b");
-	 
-	 }
-	 
-	 b = (n*xy - y*x - c*k)/bottom;
-	 
-	 bottom = n;
-	 if (bottom == 0.0){
-	 bottom = FLT_MIN;
-	 NSLog(@"Zero a");
-	 
-	 }
-	 
-	 
-	 NSLog(@"Vals: c - %f   b- %f   a - %f",c,b,a);
-	 a = (y - b*x - c*x2)/bottom;
-	 
-	 // Predicted y values
-	 startY = c*startPos.x*startPos.x + b*startPos.x + a;
-	 endY = c*point.x*point.x + b*point.x + a;
-	 
-	 // Distance between current point and previous added to distance of rest of feature	*/
-	distance+=sqrtf((point.x-previous.x)*(point.x-previous.x) + (endY-previous.y)*(endY-previous.y));
-	previous = point;
-	NSLog(@"Distance: %f",distance);
+	float secX = previous.x - point.x;
+	float secY = previous.y - point.y;
+	distance+=sqrtf((point.x-previous.x)*(point.x-previous.x) + (point.y-previous.y)*(point.y-previous.y));
+	int tempX = 5.0;
+	int tempY = 5.0;
+	n+=1;
+	x+=point.x;
+	x2+=point.x*point.x;
 	
-	/* Error checking 
-	 cumulError += point.y-endY;
-	 if (rollPlace >= 5){
-	 rollPlace=0;
-	 }
-	 
-	 if (rolErrSize<5){ 
-	 rolErrSize++;
-	 }
-	 
-	 if (rolErrSize == 5){
-	 cumulError-=rollingError[rollPlace];
-	 }
-	 rollingError[rollPlace] = point.y-endY;	
-	 rollPlace++;
-	 
-	 // To draw feature
-	 [[currentFeature objectAtIndex:(NSUInteger)(currentFeature.count-1)] addObject: [NSValue valueWithCGPoint:CGPointMake(point.x, point.y)]];
-	 
-	 /* If error too large, end feature and create next feature 
-	 if (fabs(cumulError/(float)rolErrSize) > 5.0){
-	 
-	 // If length of current feature is not too small
-	 if (distance > 100.0){
-	 // Add as gesture feature
-	 [self addFeature:point];
-	 
-	 
-	 // For drawing
-	 [lineValues addObject:[NSNumber numberWithFloat:a]];
-	 [lineValues addObject:[NSNumber numberWithFloat:b]];
-	 [lineValues addObject:[NSNumber numberWithFloat:c]];
-	 
-	 // Unoffset points
-	 start.x += point.x;
-	 start.y += point.y;
-	 [offsetVals addObject:[NSValue valueWithCGPoint:CGPointMake(start.x, start.y)]];
-	 [currentFeature addObject: [[[NSMutableArray alloc]init] autorelease]];
-	 
-	 
-	 // CURVATURE
-	 //float curvature = fabs(2*a) / powf((powf(2*a*point.x/2 + b, 2) + 1), 1.5);
-	 //NSLog(@"Curvature: %f", curvature);
-	 }
-	 else {
-	 [[currentFeature lastObject] removeAllObjects];
-	 }
-	 
-	 /* Reset values for new feature 
-	 point.x = 0;
-	 point.y = 0;
-	 
-	 
-	 startPos.x = point.x;
-	 startPos.y= point.y;
-	 [[currentFeature objectAtIndex:(NSUInteger)(currentFeature.count-1)] addObject: [NSValue valueWithCGPoint:CGPointMake(point.x, point.y)]];
-	 
-	 xy=point.x*point.y;
-	 n=1.0;
-	 x=point.x;
-	 y=point.y;
-	 x2=point.x*point.x;
-	 x3=x2*x;
-	 x2y=x2*y;
-	 x4=x3*x;
-	 cumulError=0.0;
-	 distance = 0.0;
-	 rolErrSize = 0;
-	 
-	 }		*/	
+	if (secX > 10.0){
+		tempX = 1;
+	}
+	else if (secX < -10.0){
+		tempX = -1;
+	}
+	else{
+		tempX = 0;
+	}
 	
+	if (secY > 10.0){
+		tempY = 1;
+	}
+	else if (secY < -10.0){
+		tempY = -1;
+	}
+	else{
+		tempY = 0;
+	}					
+	
+	NSLog(@"xDir:  %d    yDir:  %d",xDir, yDir);
+	NSLog(@"secX:  %f    secY:  %f",secX, secY);
+	NSLog(@"temX:  %d    temY:  %d",tempX, tempY);
+	
+	
+	
+	if (!(xDir == tempX && yDir == tempY)){
+		
+		
+		if (distance > 100){
+			NSLog(@"Distance : %f", distance);
+			float chordLength = sqrt((point.x - startPos.x)*(point.x - startPos.x) + (point.y - startPos.y)*(point.y - startPos.y)) ;
+			//print 'Chord length: ',chordLength, 'Arc length: ',prevDistance
+			NSLog(@"Curvature: %f",sqrtf(24*(distance - chordLength)/(chordLength*chordLength*chordLength)));
+			
+			float tempAngle = 180 + (atan2f(point.y-startPos.y,  startPos.x - point.x))*180/3.1415926;
+			NSLog(@"Temp angle: %f   prev angle: %f", tempAngle, currentAngle);
+			if (fabs(currentAngle - tempAngle) > 20 && fabs(currentAngle - (tempAngle + 360)) > 20 && fabs(tempAngle - (currentAngle + 360)) > 20 ){
+				//featureList.append([startPos[0], startPos[1], event.x, event.y])
+				
+				
+				[directionArray addObject:[NSValue valueWithCGPoint:CGPointMake(startPos.x, startPos.y)]];
+				[directionArray addObject:[NSValue valueWithCGPoint:CGPointMake(point.x, point.y)]];
+				NSLog(@"New");
+				
+				start.x += point.x;
+				start.y += point.y;
+				[offsetVals addObject:[NSValue valueWithCGPoint:CGPointMake(start.x, start.y)]];
+				currentAngle = tempAngle;
+				distance=0.0;
+				startPos.x = point.x;
+				startPos.y= point.y;
+				gradientCounter = 0;
+				
+				NSLog(@"Number in gradients: %d", gradients.count);
+			}
+			else if ([directionArray count] > 1){
+				[directionArray replaceObjectAtIndex:directionArray.count-1 withObject:[NSValue valueWithCGPoint:CGPointMake(point.x, point.y)]];
+				NSLog(@"Extended");
+				CGPoint first = [[directionArray objectAtIndex:directionArray.count-2] CGPointValue];
+				CGPoint second = [[directionArray lastObject] CGPointValue];
+				currentAngle = 180 + (atan2f(second.y-first.y,  first.x - second.x))*180/3.1415926;
+				startPos.x = point.x;
+				startPos.y = point.y;
+				distance = 0.0;
+			}
+			else{
+				[directionArray addObject:[NSValue valueWithCGPoint:CGPointMake(startPos.x, startPos.y)]];
+				[directionArray addObject:[NSValue valueWithCGPoint:CGPointMake(point.x, point.y)]];
+				NSLog(@"New");
+				start.x += point.x;
+				start.y += point.y;
+				[offsetVals addObject:[NSValue valueWithCGPoint:CGPointMake(start.x, start.y)]];
+				currentAngle = tempAngle;
+				distance=0.0;
+				startPos.x = point.x;
+				startPos.y= point.y;
+				gradientCounter = 0;
+			}
+			
+			
+			
+			xDir = tempX;
+			yDir = tempY;
+			
+		}
+		else{
+			
+			xDir = tempX;
+			yDir = tempY;
+		}
+	}
+	previous.x = point.x;
+	previous.y= point.y;
+	
+	gradientCounter++;
+
+
 }
 
 
@@ -1005,12 +1009,14 @@
 	
 	start = pt;
 	[offsetVals addObject:[NSValue valueWithCGPoint:CGPointMake(start.x, start.y)]];
-	pt.x=0;
-	pt.y=0;
+	//pt.x=0;
+	//pt.y=0;
 	previous = pt;
 	startPos.x = pt.x;
 	startPos.y= pt.y;
-	
+	currentAngle = 0.0;
+	[directionArray removeAllObjects];
+	gradientCounter = 1;
 	/*xy=pt.x*pt.y;
 	 n=1.0;
 	 x=pt.x;
@@ -1048,7 +1054,7 @@
 	
 	[touchesArray addObject: [NSValue valueWithCGPoint:CGPointMake(pt.x, pt.y)]];
 	[self setNeedsDisplay];
-	[self recognitionArc:pt];
+	[self recognitionDirection:pt];
 	
 }
 
@@ -1058,12 +1064,20 @@
 	
 	UITouch *touch = [touches anyObject];
 	CGPoint pt = [touch locationInView:self];
-	pt.x = pt.x - start.x;
-	pt.y = pt.y-start.y;
+	CGPoint offset;
+	if (directionArray.count > 1){
+	 offset = [[offsetVals objectAtIndex:offsetVals.count - 2] CGPointValue];
+	}
+	else {
+		offset = start;
+	}
+
+	//pt.x = pt.x - offset.x;
+	//pt.y = pt.y-offset.y;
 	[touchesArray addObject: [NSValue valueWithCGPoint:CGPointMake(pt.x, pt.y)]];
 	NSLog(@"End distance %f",distance);
 	// End feature	
-	if (distance > 200.0){
+	/*if (distance > 200.0){
 		NSLog(@"adding end");
 		[lineValues addObject:[NSNumber numberWithFloat:xc]];
 		[lineValues addObject:[NSNumber numberWithFloat:yc]];
@@ -1079,7 +1093,45 @@
 		
 		[[gestureList objectAtIndex:gestureList.count-1] setMaxNum:(*previousFeature).step+1];
 	}
-	previousFeature = nil;
+	previousFeature = nil;*/
+	NSLog(@"Initial last value: (%f, %f)", ([[directionArray lastObject] CGPointValue]).x, ([[directionArray lastObject] CGPointValue]).y);
+	float tempAngle = 180 + (atan2f(pt.y-startPos.y, startPos.x - pt.x))*180/3.1415926;
+	NSLog(@"Temp angle: %f  prev angle: %f", tempAngle, currentAngle); 
+	if (distance < 100) {
+		[directionArray replaceObjectAtIndex:directionArray.count-1 withObject:[NSValue valueWithCGPoint:CGPointMake(pt.x, pt.y)]];
+		NSLog(@"replaced1");
+	}
+	
+	else if (fabs(currentAngle - tempAngle) > 20 && fabs(currentAngle - (tempAngle + 360)) > 20 && fabs(tempAngle - (currentAngle + 360)) > 20){
+		//featureList.append([startPos[0], startPos[1], event.x, event.y])
+		
+		
+		[directionArray addObject:[NSValue valueWithCGPoint:CGPointMake(startPos.x, startPos.y)]];
+		[directionArray addObject:[NSValue valueWithCGPoint:CGPointMake(pt.x, pt.y)]];
+		
+		NSLog(@"Added1");
+		
+	}
+	else if ([directionArray count] > 1){
+		[directionArray replaceObjectAtIndex:directionArray.count-1 withObject:[NSValue valueWithCGPoint:CGPointMake(pt.x, pt.y)]];
+		NSLog(@"replaced2");
+		
+	}
+	else{
+		[directionArray addObject:[NSValue valueWithCGPoint:CGPointMake(startPos.x, startPos.y)]];
+		[directionArray addObject:[NSValue valueWithCGPoint:CGPointMake(pt.x, pt.y)]];
+		NSLog(@"Added2");
+		
+		
+	}
+	NSLog(@"Final last value: (%f, %f)", ([[directionArray lastObject] CGPointValue]).x, ([[directionArray lastObject] CGPointValue]).y);
+	
+	if (directionArray.count/2 != gradients.count) {
+		[gradients addObject:[NSValue valueWithCGPoint:CGPointMake(pt.x, pt.y)]];
+	}
+	
+	NSLog(@"Number in gradients array: %d", gradients.count);
+	NSLog(@"____________________________________________________________________________");
 	
 	[self setNeedsDisplay];
 }
