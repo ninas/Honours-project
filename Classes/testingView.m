@@ -149,6 +149,7 @@
 					 * prevAngle - angle of line
 					 * prevCAngle - angle of starting gradient
 					 */
+					
 				}
 				
 				
@@ -183,6 +184,7 @@
 				startPos.x = point.x;
 				startPos.y= point.y;
 				gradientCounter = 0;
+				cAngle = 500;
 				
 			}
 			else if ([directionArray count] > 1){ 
@@ -207,6 +209,7 @@
 				startPos.y = point.y;
 				distance = 0.0;
 				gradientCounter = 0;
+				cAngle = 500;
 			}
 			else{
 				// if this is the first feature found
@@ -243,6 +246,7 @@
 				startPos.y= point.y;
 				
 				gradientCounter = 0;
+				cAngle = 500;
 				
 			}
 			// reset direction values
@@ -332,7 +336,6 @@
 		 * prevAngle - angle of line
 		 * prevCAngle - angle of starting gradient
 		 */
-		
 		if (distance > 100){
 			
 			// for drawing
@@ -368,7 +371,6 @@
 			 * prevAngle - angle of line
 			 * prevCAngle - angle of starting gradient
 			 */
-			
 		}
 		
 	}
@@ -439,9 +441,7 @@
 		 * prevAngle - angle of line
 		 * prevCAngle - angle of starting gradient
 		 */
-		
 	}
-	
 	[self setNeedsDisplay];
 }
 
