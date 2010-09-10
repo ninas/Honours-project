@@ -20,11 +20,39 @@
     if ((self = [super initWithFrame:frame])) {
         // Initialization code
 		touchesArray = [[NSMutableArray alloc]init];
-		distance = 0.0;
-		directionArray = [[NSMutableArray alloc] init];
-		gradientCounter = 0;
-		cAngle = 500;
+		for (int i=0; i<3; i++) {
+			[touchesArray addObject:[[NSMutableArray alloc] init]];
+		}
 		
+		directionArray = [[NSMutableArray alloc] init];
+		for (int i=0; i<3; i++) {
+			[directionArray addObject:[[NSMutableArray alloc] init]];
+		}
+		
+		touch1 = nil;
+		touch2 = nil;
+		touch3 = nil;
+		
+		recognition1 = [[recognition alloc] init];
+		recognition2 = [[recognition alloc] init];
+		recognition3 = [[recognition alloc] init];
+		
+		[recognition1 setDirArray:[directionArray objectAtIndex:0]];
+		[recognition2 setDirArray:[directionArray objectAtIndex:1]];
+		[recognition3 setDirArray:[directionArray objectAtIndex:2]];
+		
+		numTouches = 0;
+		endCount = 0;
+		
+		packed1 = [[NSMutableArray alloc] init];
+		packed2 = [[NSMutableArray alloc] init];
+		packed3 = [[NSMutableArray alloc] init];
+		
+		ended1 = YES;
+		ended2 = YES;
+		ended3 = YES;
+		
+		[self setMultipleTouchEnabled:YES];
     }
     return self;
 }
@@ -35,237 +63,63 @@
 	CGContextRef context = UIGraphicsGetCurrentContext();
 	
 	CGContextSetRGBStrokeColor(context, 0.0, 1.0, 0, 1.0);
-	
+	NSArray * array;
 	/* Draw features */
-	
-	if (directionArray.count > 1){
+	for (int i=0; i<3; i++) {
 		
-		CGPoint val = [[directionArray objectAtIndex:0] CGPointValue];
-		CGContextMoveToPoint(context, val.x, val.y);
-		
-		val = [[directionArray objectAtIndex:1] CGPointValue];
-		
-		CGContextAddLineToPoint(context, val.x , val.y);
-		
-		for (int i=1; i<directionArray.count/2; i++) {
+		array = [directionArray objectAtIndex:i];
+		if (array.count > 1){
 			
-			val = [[directionArray objectAtIndex:i*2] CGPointValue];
-			CGContextAddLineToPoint(context, val.x , val.y);
+			CGPoint val = [[array objectAtIndex:0] CGPointValue];
+			CGContextMoveToPoint(context, val.x, val.y);
 			
-			val = [[directionArray objectAtIndex:i*2+1] CGPointValue];
+			val = [[array objectAtIndex:1] CGPointValue];
 			
 			CGContextAddLineToPoint(context, val.x , val.y);
 			
-		}
-		CGContextSetLineWidth(context, 4.0); 
-		CGContextStrokePath(context);
-		
-		for (int i=0; i<directionArray.count; i++) {
-			//offset = [[offsetVals objectAtIndex:i] CGPointValue];
-			val = [[directionArray objectAtIndex:i] CGPointValue];
+			for (int i=1; i<array.count/2; i++) {
+				
+				val = [[array objectAtIndex:i*2] CGPointValue];
+				CGContextAddLineToPoint(context, val.x , val.y);
+				
+				val = [[array objectAtIndex:i*2+1] CGPointValue];
+				
+				CGContextAddLineToPoint(context, val.x , val.y);
+				
+			}
+			CGContextSetLineWidth(context, 4.0); 
+			CGContextStrokePath(context);
 			
-			CGContextFillEllipseInRect(context, CGRectMake(val.x, val.y, 15, 15));
+			for (int i=0; i<array.count; i++) {
+				//offset = [[offsetVals objectAtIndex:i] CGPointValue];
+				val = [[array objectAtIndex:i] CGPointValue];
+				
+				CGContextFillEllipseInRect(context, CGRectMake(val.x, val.y, 15, 15));
+			}
+			
 		}
-		
 	}
-	
 	/* Point drawing */	
 	CGContextSetRGBStrokeColor(context, 0.0, 1.0, 0, 1.0);
 	CGContextSetLineWidth(context, 0.5);
 	
-	if (touchesArray.count > 0){
-		CGPoint pt;
-		NSValue *val;
-		for (int i = 0; i < touchesArray.count; i++){
-			val = [touchesArray objectAtIndex:(NSUInteger)i];
-			pt = [val CGPointValue];
-			
-			CGContextFillEllipseInRect(context, CGRectMake(pt.x, pt.y, 5, 5));
+	for (int i=0; i<3; i++) {
+		array = [touchesArray objectAtIndex:i];
+		if (array.count > 0){
+			CGPoint pt;
+			NSValue *val;
+			for (int i = 0; i < array.count; i++){
+				val = [array objectAtIndex:(NSUInteger)i];
+				pt = [val CGPointValue];
+				
+				CGContextFillEllipseInRect(context, CGRectMake(pt.x, pt.y, 5, 5));
+			}
 		}
 	}
-	
 	CGContextStrokePath(context);
 	
 }
 
-/* Handles feature segmentation according to changes in direction */
-- (void) recognitionDirection:(CGPoint)point{
-	
-	
-	// set initial gradient for feature - gives indication of curve
-	if (gradientCounter == 3 && cAngle == 500) {
-		cAngle = 180 + (atan2f(point.y-startPos.y,  startPos.x - point.x))*180/3.1415926;
-	}
-	
-	// Determine current direction
-	float secX = previous.x - point.x;
-	float secY = previous.y - point.y;
-	
-	distance+=sqrtf((point.x-previous.x)*(point.x-previous.x) + (point.y-previous.y)*(point.y-previous.y));
-	
-	int tempX = 5.0;
-	int tempY = 5.0;
-	
-	// Determine which quadrant the line falls in
-	// -10 -> 10 is considered to be a straight line
-	if (secX > 10.0){
-		tempX = 1;
-	}
-	else if (secX < -10.0){
-		tempX = -1;
-	}
-	else{
-		tempX = 0;
-	}
-	
-	if (secY > 10.0){
-		tempY = 1;
-	}
-	else if (secY < -10.0){
-		tempY = -1;
-	}
-	else{
-		tempY = 0;
-	}					
-	
-	// If there has been a change in direction
-	if (!(xDir == tempX && yDir == tempY)){
-		
-		// If the distance is large enough to warrant a new feature
-		if (distance > 100){
-			
-			//float chordLength = sqrt((point.x - startPos.x)*(point.x - startPos.x) + (point.y - startPos.y)*(point.y - startPos.y)) ;
-			// Determine the angle the new feature would have when drawn from the origin		
-			float tempAngle = 180 + (atan2f(point.y-startPos.y,  startPos.x - point.x))*180/3.1415926;
-			
-			// if there is enough difference between this angle and the angle of the previous feature, create a new feature
-			if (fabs(currentAngle - tempAngle) > 20 && fabs(currentAngle - (tempAngle + 360)) > 20 && fabs(tempAngle - (currentAngle + 360)) > 20 ){
-				
-				if (prevEnd.x != 0 && prevEnd.y != 0) {
-					/*  FUNCTION CALL GOES HERE  */
-					/* Values to use are:
-					 * prevEnd - end values
-					 * prevScale - scale
-					 * prevAngle - angle of line
-					 * prevCAngle - angle of starting gradient
-					 */
-					
-				}
-				
-				
-				// for drawing
-				[directionArray addObject:[NSValue valueWithCGPoint:CGPointMake(startPos.x, startPos.y)]];
-				[directionArray addObject:[NSValue valueWithCGPoint:CGPointMake(point.x, point.y)]];
-				
-				// update current feature
-				
-				prevStart = CGPointMake(startPos.x, startPos.y);
-				prevEnd.x = point.x - startPos.x;
-				prevEnd.y = point.y - startPos.y;
-				
-				if (startDist != -1) {
-					prevScale = distance / startDist;
-				}
-				else {
-					startDist = distance;
-					prevScale = 1;
-				}
-				
-				prevAngle = tempAngle;
-				if (cAngle != 500) {
-					prevCAngle = cAngle;
-				}
-				else{
-					prevCAngle = prevAngle;
-				}
-				
-				currentAngle = tempAngle;
-				distance=0.0;
-				startPos.x = point.x;
-				startPos.y= point.y;
-				gradientCounter = 0;
-				cAngle = 500;
-				
-			}
-			else if ([directionArray count] > 1){ 
-				// otherwise extend the previous feature
-				// this helps counter the effect of small outliers
-				[directionArray replaceObjectAtIndex:directionArray.count-1 withObject:[NSValue valueWithCGPoint:CGPointMake(point.x, point.y)]];
-				prevEnd = CGPointMake(point.x - prevStart.x, point.y - prevStart.y);
-				if (prevScale != 1) {
-					prevScale += distance / startDist;
-				}
-				else {
-					startDist += distance;
-					
-				}
-				
-				CGPoint first = [[directionArray objectAtIndex:directionArray.count-2] CGPointValue];
-				CGPoint second = [[directionArray lastObject] CGPointValue];
-				currentAngle = 180 + (atan2f(second.y-first.y,  first.x - second.x))*180/3.1415926;
-				prevAngle = currentAngle;
-				
-				startPos.x = point.x;
-				startPos.y = point.y;
-				distance = 0.0;
-				gradientCounter = 0;
-				cAngle = 500;
-			}
-			else{
-				// if this is the first feature found
-				// for drawing
-				[directionArray addObject:[NSValue valueWithCGPoint:CGPointMake(startPos.x, startPos.y)]];
-				[directionArray addObject:[NSValue valueWithCGPoint:CGPointMake(point.x, point.y)]];
-				
-				// update current feature
-				
-				prevStart = CGPointMake(startPos.x, startPos.y);
-				prevEnd.x = point.x - startPos.x;
-				prevEnd.y = point.y - startPos.y;
-				
-				if (startDist != -1) {
-					prevScale = distance / startDist;
-				}
-				else {
-					startDist = distance;
-					prevScale = 1;
-				}
-				
-				prevAngle = tempAngle;
-				if (cAngle != 500) {
-					prevCAngle = cAngle;
-				}
-				else{
-					prevCAngle = prevAngle;
-				}
-				
-				currentAngle = tempAngle;
-				
-				distance=0.0;
-				startPos.x = point.x;
-				startPos.y= point.y;
-				
-				gradientCounter = 0;
-				cAngle = 500;
-				
-			}
-			// reset direction values
-			xDir = tempX;
-			yDir = tempY;
-			
-		}
-		else{
-			
-			xDir = tempX;
-			yDir = tempY;
-		}
-	}
-	previous.x = point.x;
-	previous.y= point.y;
-	
-	gradientCounter++;
-	
-}
 
 
 /* Built in touch methods --------------------------------------------------------------------------- */
@@ -273,30 +127,124 @@
 - (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
 	
 	[super touchesBegan:touches withEvent:event];	
+	NSLog(@"Touches began");
 	
-	// Reset values
-	if (touchesArray.count > 0){
-		[touchesArray removeAllObjects];
+	NSArray * array = [touches allObjects];
+	for (int i=0; i<array.count; i++) {
+		UITouch *touch = [array objectAtIndex:i];
+		CGPoint pt = [touch locationInView:self];
+		
+		if (touch1 == nil && touch!= touch2 && touch!= touch3) {
+			touch1=touch;
+			if ([[touchesArray objectAtIndex:0] count] > 0){
+				[[touchesArray objectAtIndex:0] removeAllObjects];
+			}
+			if ([[directionArray objectAtIndex:0] count] > 0){
+				[[directionArray objectAtIndex:0] removeAllObjects];
+			}
+			if (packed1.count > 0) {
+				[packed1 removeAllObjects];
+			}
+			[recognition1 reset:pt];
+			[[touchesArray objectAtIndex:0] addObject: [NSValue valueWithCGPoint:CGPointMake(pt.x, pt.y)]];
+			numTouches++;
+			ended1 = NO;
+			
+		}
+		else if (touch2 == nil && touch!= touch1 && touch!= touch3) {
+			touch2=touch;
+			if ([[touchesArray objectAtIndex:1] count] > 0){
+				[[touchesArray objectAtIndex:1] removeAllObjects];
+			}
+			if ([[directionArray objectAtIndex:1] count] > 0){
+				[[directionArray objectAtIndex:1] removeAllObjects];
+			}
+			if (packed2.count > 0) {
+				[packed2 removeAllObjects];
+			}
+			
+			[recognition2 reset:pt];
+			[[touchesArray objectAtIndex:1] addObject: [NSValue valueWithCGPoint:CGPointMake(pt.x, pt.y)]];
+			numTouches++;
+			ended2 = NO;
+			
+		}
+		else if (touch3 == nil && touch!= touch1 && touch!= touch2) {
+			touch3=touch;
+			if ([[touchesArray objectAtIndex:2] count] > 0){
+				[[touchesArray objectAtIndex:2] removeAllObjects];
+			}
+			if ([[directionArray objectAtIndex:2] count] > 0){
+				[[directionArray objectAtIndex:2] removeAllObjects];
+			}
+			if (packed3.count > 0) {
+				[packed3 removeAllObjects];
+			}
+			
+			[recognition3 reset:pt];
+			[[touchesArray objectAtIndex:2] addObject: [NSValue valueWithCGPoint:CGPointMake(pt.x, pt.y)]];
+			numTouches++;
+			ended3 = NO;
+			
+		}
+		
 	}
-	if (directionArray.count > 0){
-		[directionArray removeAllObjects];
+	
+	
+	
+	
+	if (touch1 == nil ) {
+		
+		if ([[touchesArray objectAtIndex:0] count] > 0){
+			[[touchesArray objectAtIndex:0] removeAllObjects];
+		}
+		if ([[directionArray objectAtIndex:0] count] > 0){
+			[[directionArray objectAtIndex:0] removeAllObjects];
+		}
+		if (packed1.count > 0) {
+			[packed1 removeAllObjects];
+		}
+		
+		
+	}
+	if (touch2 == nil ) {
+		
+		if ([[touchesArray objectAtIndex:1] count] > 0){
+			[[touchesArray objectAtIndex:1] removeAllObjects];
+		}
+		if ([[directionArray objectAtIndex:1] count] > 0){
+			[[directionArray objectAtIndex:1] removeAllObjects];
+		}
+		if (packed2.count > 0) {
+			[packed2 removeAllObjects];
+		}
+		
+		
+	}
+	if (touch3 == nil ) {
+		
+		if ([[touchesArray objectAtIndex:2] count] > 0){
+			[[touchesArray objectAtIndex:2] removeAllObjects];
+		}
+		if ([[directionArray objectAtIndex:2] count] > 0){
+			[[directionArray objectAtIndex:2] removeAllObjects];
+		}
+		if (packed3.count > 0) {
+			[packed3 removeAllObjects];
+		}
+		
+		
 	}
 	
-	UITouch *touch = [touches anyObject];
-	CGPoint pt = [touch locationInView:self];
-	distance=0;
 	
-	previous = pt;
-	startPos.x = pt.x;
-	startPos.y= pt.y;
-	currentAngle = 0.0;
 	
-	gradientCounter = 1;
-	cAngle = 500;
-	startDist = -1;
-	prevEnd = CGPointMake(0.0, 0.0);
 	
-	[touchesArray addObject: [NSValue valueWithCGPoint:CGPointMake(pt.x, pt.y)]];
+	
+	
+	
+	
+	
+	
 	
 	[self setNeedsDisplay];
 }
@@ -305,13 +253,220 @@
 - (void) touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
 	[super touchesMoved:touches withEvent:event];
 	
-	UITouch *touch = [touches anyObject];
 	
-	CGPoint pt = [touch locationInView:self];
+	NSArray * array = [touches allObjects];
+	for (int i=0; i<array.count; i++) {
+		UITouch *touch = [array objectAtIndex:i];
+		CGPoint pt = [touch locationInView:self];
+		
+		if (touch1 == touch) {
+			
+			[[touchesArray objectAtIndex:0] addObject: [NSValue valueWithCGPoint:CGPointMake(pt.x, pt.y)]];
+			if([recognition1 recognitionDirection:CGPointMake(pt.x, pt.y)]){
+				[packed1 addObject:[recognition1 getFeature]];
+				if (numTouches == 1) {
+					/* FUNCTION CALL GOES HERE
+					 * Data is in packed1 array
+					 * [0] (CGPoint)	endPoint
+					 * [1] (float)		scale
+					 * [2] (float)		angle
+					 * [3] (float)		gradient angle
+					 */
+					
+					[packed1 removeObjectAtIndex:0];
+					NSLog(@"One touch 1");
+				}
+				else if (numTouches == 2 && packed2.count != 0 && packed3.count == 0){
+					/* FUNCTION CALL GOES HERE
+					 * Data is in packed1 and packed2 arrays
+					 * 
+					 * [0] (CGPoint)	endPoint
+					 * [1] (float)		scale
+					 * [2] (float)		angle
+					 * [3] (float)		gradient angle
+					 */
+					
+					[packed1 removeObjectAtIndex:0];
+					[packed2 removeObjectAtIndex:0];
+					NSLog(@"Two touches 1, 2");
+				}
+				else if (numTouches == 2 && packed3.count != 0 && packed2.count == 0){
+					/* FUNCTION CALL GOES HERE
+					 * Data is in packed1 and packed3 arrays
+					 * 
+					 * [0] (CGPoint)	endPoint
+					 * [1] (float)		scale
+					 * [2] (float)		angle
+					 * [3] (float)		gradient angle
+					 */
+					
+					[packed1 removeObjectAtIndex:0];
+					[packed3 removeObjectAtIndex:0];
+					NSLog(@"Two touches 1, 3");
+				}
+				else if (numTouches == 3 && packed3.count != 0 && packed2.count != 0){
+					/* FUNCTION CALL GOES HERE
+					 * Data is in packed1, packed2 and packed3 arrays
+					 * 
+					 * [0] (CGPoint)	endPoint
+					 * [1] (float)		scale
+					 * [2] (float)		angle
+					 * [3] (float)		gradient angle
+					 */
+					
+					[packed1 removeObjectAtIndex:0];
+					[packed2 removeObjectAtIndex:0];
+					[packed3 removeObjectAtIndex:0];
+					NSLog(@"Three touches 1, 2, 3");
+				}
+				else{
+					NSLog(@"Ignored for now 1");
+				}
+			}
+			
+		}
+		else if (touch2 == touch) {
+			
+			[[touchesArray objectAtIndex:1] addObject: [NSValue valueWithCGPoint:CGPointMake(pt.x, pt.y)]];
+			if([recognition2 recognitionDirection:CGPointMake(pt.x, pt.y)]){
+				[packed2 addObject:[recognition2 getFeature]];
+				if (numTouches == 1) {
+					/* FUNCTION CALL GOES HERE
+					 * Data is in packed1 array
+					 * [0] (CGPoint)	endPoint
+					 * [1] (float)		scale
+					 * [2] (float)		angle
+					 * [3] (float)		gradient angle
+					 */
+					
+					[packed2 removeObjectAtIndex:0];
+					NSLog(@"One touch 2");
+				}
+				else if (numTouches == 2 && packed1.count != 0 && packed3.count == 0){
+					/* FUNCTION CALL GOES HERE
+					 * Data is in packed1 and packed2 arrays
+					 * 
+					 * [0] (CGPoint)	endPoint
+					 * [1] (float)		scale
+					 * [2] (float)		angle
+					 * [3] (float)		gradient angle
+					 */
+					
+					[packed1 removeObjectAtIndex:0];
+					[packed2 removeObjectAtIndex:0];
+					NSLog(@"Two touches 2, 1");
+				}
+				else if (numTouches == 2 && packed3.count != 0 && packed1.count == 0){
+					/* FUNCTION CALL GOES HERE
+					 * Data is in packed1 and packed3 arrays
+					 * 
+					 * [0] (CGPoint)	endPoint
+					 * [1] (float)		scale
+					 * [2] (float)		angle
+					 * [3] (float)		gradient angle
+					 */
+					
+					[packed2 removeObjectAtIndex:0];
+					[packed3 removeObjectAtIndex:0];
+					NSLog(@"Two touches 2, 3");
+				}
+				else if (numTouches == 3 && packed3.count != 0 && packed1.count != 0){
+					/* FUNCTION CALL GOES HERE
+					 * Data is in packed1, packed2 and packed3 arrays
+					 * 
+					 * [0] (CGPoint)	endPoint
+					 * [1] (float)		scale
+					 * [2] (float)		angle
+					 * [3] (float)		gradient angle
+					 */
+					
+					[packed1 removeObjectAtIndex:0];
+					[packed2 removeObjectAtIndex:0];
+					[packed3 removeObjectAtIndex:0];
+					NSLog(@"Three touches 2, 1, 3");
+				}
+				else{
+					NSLog(@"Ignored for now 2");
+				}
+			}
+			
+		}
+		else if (touch3 == touch) {
+			
+			[[touchesArray objectAtIndex:2] addObject: [NSValue valueWithCGPoint:CGPointMake(pt.x, pt.y)]];
+			if([recognition3 recognitionDirection:CGPointMake(pt.x, pt.y)]){
+				[packed3 addObject: [recognition3 getFeature]];
+				if (numTouches == 1) {
+					/* FUNCTION CALL GOES HERE
+					 * Data is in packed1 array
+					 * [0] (CGPoint)	endPoint
+					 * [1] (float)		scale
+					 * [2] (float)		angle
+					 * [3] (float)		gradient angle
+					 */
+					
+					[packed3 removeObjectAtIndex:0];
+					NSLog(@"One touch 3");
+				}
+				else if (numTouches == 2 && packed2.count != 0 && packed1.count == 0){
+					/* FUNCTION CALL GOES HERE
+					 * Data is in packed1 and packed2 arrays
+					 * 
+					 * [0] (CGPoint)	endPoint
+					 * [1] (float)		scale
+					 * [2] (float)		angle
+					 * [3] (float)		gradient angle
+					 */
+					
+					[packed2 removeObjectAtIndex:0];
+					[packed3 removeObjectAtIndex:0];
+					NSLog(@"Two touches 3, 2");
+				}
+				else if (numTouches == 2 && packed1.count != 0 && packed2.count == 0){
+					/* FUNCTION CALL GOES HERE
+					 * Data is in packed1 and packed3 arrays
+					 * 
+					 * [0] (CGPoint)	endPoint
+					 * [1] (float)		scale
+					 * [2] (float)		angle
+					 * [3] (float)		gradient angle
+					 */
+					
+					[packed1 removeObjectAtIndex:0];
+					[packed3 removeObjectAtIndex:0];
+					NSLog(@"Two touches 3, 1");
+				}
+				else if (numTouches == 3 && packed1.count != 0 && packed2.count != 0){
+					/* FUNCTION CALL GOES HERE
+					 * Data is in packed1, packed2 and packed3 arrays
+					 * 
+					 * [0] (CGPoint)	endPoint
+					 * [1] (float)		scale
+					 * [2] (float)		angle
+					 * [3] (float)		gradient angle
+					 */
+					
+					[packed1 removeObjectAtIndex:0];
+					[packed2 removeObjectAtIndex:0];
+					[packed3 removeObjectAtIndex:0];
+					NSLog(@"Three touches 3, 2, 1");
+				}
+				else{
+					NSLog(@"Ignored for now 3");
+				}
+			}
+			
+		}
+		
+	}
 	
-	[touchesArray addObject: [NSValue valueWithCGPoint:CGPointMake(pt.x, pt.y)]];
+	
+	
+	
+	
+	
 	[self setNeedsDisplay];
-	[self recognitionDirection:pt];
+	//[self recognitionDirection:pt];
 	
 }
 
@@ -319,129 +474,349 @@
 - (void) touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
 	[super touchesEnded:touches withEvent:event];
 	
-	UITouch *touch = [touches anyObject];
-	CGPoint pt = [touch locationInView:self];
-	
-	[touchesArray addObject: [NSValue valueWithCGPoint:CGPointMake(pt.x, pt.y)]];
-	
-	float tempAngle = 180 + (atan2f(pt.y-startPos.y, startPos.x - pt.x))*180/3.1415926;
-	
-	// does much the same stuff as in recognitionDirection
-	if (fabs(currentAngle - tempAngle) > 20 && fabs(currentAngle - (tempAngle + 360)) > 20 && fabs(tempAngle - (currentAngle + 360)) > 20 ){
-		
-		/*  FUNCTION CALL GOES HERE  */
-		/* Values to use are:
-		 * prevEnd - end values
-		 * prevScale - scale
-		 * prevAngle - angle of line
-		 * prevCAngle - angle of starting gradient
-		 */
-		if (distance > 100){
+	NSArray * array = [touches allObjects];
+	for (int i=0; i<array.count; i++) {
+		UITouch *touch = [array objectAtIndex:i];
+		CGPoint pt = [touch locationInView:self];
+		if (touch1 == touch) {
 			
-			// for drawing
-			[directionArray addObject:[NSValue valueWithCGPoint:CGPointMake(startPos.x, startPos.y)]];
-			[directionArray addObject:[NSValue valueWithCGPoint:CGPointMake(pt.x, pt.y)]];
+			endCount++;
 			
-			// update current feature
-			
-			prevStart = CGPointMake(startPos.x, startPos.y);
-			prevEnd.x = pt.x - startPos.x;
-			prevEnd.y = pt.y - startPos.y;
-			
-			if (startDist != -1) {
-				prevScale = distance / startDist;
+			[[touchesArray objectAtIndex:0] addObject: [NSValue valueWithCGPoint:CGPointMake(pt.x, pt.y)]];
+			[packed1 addObject: [recognition1 end:CGPointMake(pt.x, pt.y)]];
+			NSArray * temp = [recognition1 getSecond];
+			if (temp != nil) {
+				[packed1 addObject:temp];
 			}
-			else {
-				startDist = distance;
-				prevScale = 1;
+			if (numTouches == 1) {
+				/* FUNCTION CALL GOES HERE
+				 * Data is in packed1 array
+				 * [0] (CGPoint)	endPoint
+				 * [1] (float)		scale
+				 * [2] (float)		angle
+				 * [3] (float)		gradient angle
+				 */
+				
+				[packed1 removeObjectAtIndex:0];
+				NSLog(@"One touch 1");
 			}
-			
-			prevAngle = tempAngle;
-			if (cAngle != 500) {
-				prevCAngle = cAngle;
+			else if (numTouches == 2 && packed2.count != 0 && packed3.count == 0){
+				/* FUNCTION CALL GOES HERE
+				 * Data is in packed1 and packed2 arrays
+				 * 
+				 * [0] (CGPoint)	endPoint
+				 * [1] (float)		scale
+				 * [2] (float)		angle
+				 * [3] (float)		gradient angle
+				 */
+				
+				[packed1 removeObjectAtIndex:0];
+				[packed2 removeObjectAtIndex:0];
+				NSLog(@"Two touches 1, 2");
+			}
+			else if (numTouches == 2 && packed3.count != 0 && packed2.count == 0){
+				/* FUNCTION CALL GOES HERE
+				 * Data is in packed1 and packed3 arrays
+				 * 
+				 * [0] (CGPoint)	endPoint
+				 * [1] (float)		scale
+				 * [2] (float)		angle
+				 * [3] (float)		gradient angle
+				 */
+				
+				[packed1 removeObjectAtIndex:0];
+				[packed3 removeObjectAtIndex:0];
+				NSLog(@"Two touches 1, 3");
+			}
+			else if (numTouches == 3 && packed3.count != 0 && packed2.count != 0){
+				/* FUNCTION CALL GOES HERE
+				 * Data is in packed1, packed2 and packed3 arrays
+				 * 
+				 * [0] (CGPoint)	endPoint
+				 * [1] (float)		scale
+				 * [2] (float)		angle
+				 * [3] (float)		gradient angle
+				 */
+				
+				[packed1 removeObjectAtIndex:0];
+				[packed2 removeObjectAtIndex:0];
+				[packed3 removeObjectAtIndex:0];
+				NSLog(@"Three touches 1, 2, 3");
 			}
 			else{
-				prevCAngle = prevAngle;
+				NSLog(@"Ignored for now 1");
 			}
 			
-			/*  FUNCTION CALL GOES HERE  */
-			/* Values to use are:
-			 * prevEnd - end values
-			 * prevScale - scale
-			 * prevAngle - angle of line
-			 * prevCAngle - angle of starting gradient
-			 */
+			
 		}
-		
-	}
-	else if ([directionArray count] > 1 ){
-		
-		[directionArray replaceObjectAtIndex:directionArray.count-1 withObject:[NSValue valueWithCGPoint:CGPointMake(pt.x, pt.y)]];
-		prevEnd = CGPointMake(pt.x - prevStart.x, pt.y - prevStart.y);
-		if (prevScale != 1) {
-			prevScale += distance / startDist;
+		else if (touch2 == touch) {
+			
+			endCount++;
+			
+			[[touchesArray objectAtIndex:1] addObject: [NSValue valueWithCGPoint:CGPointMake(pt.x, pt.y)]];
+			
+			[packed2 addObject: [recognition2 end:CGPointMake(pt.x, pt.y)]];
+			NSArray * temp = [recognition2 getSecond];
+			if (temp != nil) {
+				[packed2 addObject:temp];
+			}
+			
+			if (numTouches == 1) {
+				/* FUNCTION CALL GOES HERE
+				 * Data is in packed1 array
+				 * [0] (CGPoint)	endPoint
+				 * [1] (float)		scale
+				 * [2] (float)		angle
+				 * [3] (float)		gradient angle
+				 */
+				
+				[packed2 removeObjectAtIndex:0];
+				NSLog(@"One touch 2");
+			}
+			else if (numTouches == 2 && packed1.count != 0 && packed3.count == 0){
+				/* FUNCTION CALL GOES HERE
+				 * Data is in packed1 and packed2 arrays
+				 * 
+				 * [0] (CGPoint)	endPoint
+				 * [1] (float)		scale
+				 * [2] (float)		angle
+				 * [3] (float)		gradient angle
+				 */
+				
+				[packed1 removeObjectAtIndex:0];
+				[packed2 removeObjectAtIndex:0];
+				NSLog(@"Two touches 2, 1");
+			}
+			else if (numTouches == 2 && packed3.count != 0 && packed1.count == 0){
+				/* FUNCTION CALL GOES HERE
+				 * Data is in packed1 and packed3 arrays
+				 * 
+				 * [0] (CGPoint)	endPoint
+				 * [1] (float)		scale
+				 * [2] (float)		angle
+				 * [3] (float)		gradient angle
+				 */
+				
+				[packed2 removeObjectAtIndex:0];
+				[packed3 removeObjectAtIndex:0];
+				NSLog(@"Two touches 2, 3");
+			}
+			else if (numTouches == 3 && packed3.count != 0 && packed1.count != 0){
+				/* FUNCTION CALL GOES HERE
+				 * Data is in packed1, packed2 and packed3 arrays
+				 * 
+				 * [0] (CGPoint)	endPoint
+				 * [1] (float)		scale
+				 * [2] (float)		angle
+				 * [3] (float)		gradient angle
+				 */
+				
+				[packed1 removeObjectAtIndex:0];
+				[packed2 removeObjectAtIndex:0];
+				[packed3 removeObjectAtIndex:0];
+				NSLog(@"Three touches 2, 1, 3");
+			}
+			else{
+				NSLog(@"Ignored for now 2");
+			}			
+			
 		}
-		else {
-			startDist += distance;
+		else if (touch3 == touch) {
+			
+			endCount++;
+			[[touchesArray objectAtIndex:2] addObject: [NSValue valueWithCGPoint:CGPointMake(pt.x, pt.y)]];
+			
+			[packed3 addObject: [recognition3 end:CGPointMake(pt.x, pt.y)]];
+			NSArray * temp = [recognition3 getSecond];
+			if (temp != nil) {
+				[packed3 addObject:temp];
+			}
+			if (numTouches == 1) {
+				/* FUNCTION CALL GOES HERE
+				 * Data is in packed1 array
+				 * [0] (CGPoint)	endPoint
+				 * [1] (float)		scale
+				 * [2] (float)		angle
+				 * [3] (float)		gradient angle
+				 */
+				
+				[packed3 removeObjectAtIndex:0];
+				NSLog(@"One touch 3");
+			}
+			else if (numTouches == 2 && packed2.count != 0 && packed1.count == 0){
+				/* FUNCTION CALL GOES HERE
+				 * Data is in packed1 and packed2 arrays
+				 * 
+				 * [0] (CGPoint)	endPoint
+				 * [1] (float)		scale
+				 * [2] (float)		angle
+				 * [3] (float)		gradient angle
+				 */
+				
+				[packed2 removeObjectAtIndex:0];
+				[packed3 removeObjectAtIndex:0];
+				NSLog(@"Two touches 3, 2");
+			}
+			else if (numTouches == 2 && packed1.count != 0 && packed2.count == 0){
+				/* FUNCTION CALL GOES HERE
+				 * Data is in packed1 and packed3 arrays
+				 * 
+				 * [0] (CGPoint)	endPoint
+				 * [1] (float)		scale
+				 * [2] (float)		angle
+				 * [3] (float)		gradient angle
+				 */
+				
+				[packed1 removeObjectAtIndex:0];
+				[packed3 removeObjectAtIndex:0];
+				NSLog(@"Two touches 3, 1");
+			}
+			else if (numTouches == 3 && packed1.count != 0 && packed2.count != 0){
+				/* FUNCTION CALL GOES HERE
+				 * Data is in packed1, packed2 and packed3 arrays
+				 * 
+				 * [0] (CGPoint)	endPoint
+				 * [1] (float)		scale
+				 * [2] (float)		angle
+				 * [3] (float)		gradient angle
+				 */
+				
+				[packed1 removeObjectAtIndex:0];
+				[packed2 removeObjectAtIndex:0];
+				[packed3 removeObjectAtIndex:0];
+				NSLog(@"Three touches 3, 2, 1");
+			}
+			else{
+				NSLog(@"Ignored for now 3");
+			}
+			
 			
 		}
 		
-		CGPoint first = [[directionArray objectAtIndex:directionArray.count-2] CGPointValue];
-		CGPoint second = [[directionArray lastObject] CGPointValue];
-		prevAngle = 180 + (atan2f(second.y-first.y,  first.x - second.x))*180/3.1415926;
-		
-		/*  FUNCTION CALL GOES HERE  */
-		/* Values to use are:
-		 * prevEnd - end values
-		 * prevScale - scale
-		 * prevAngle - angle of line
-		 * prevCAngle - angle of starting gradient
-		 */
-		
 	}
-	else{
-		/*  FUNCTION CALL GOES HERE  */
-		/* Values to use are:
-		 * prevEnd - end values
-		 * prevScale - scale
-		 * prevAngle - angle of line
-		 * prevCAngle - angle of starting gradient
-		 */
-		
-		// for drawing
-		[directionArray addObject:[NSValue valueWithCGPoint:CGPointMake(startPos.x, startPos.y)]];
-		[directionArray addObject:[NSValue valueWithCGPoint:CGPointMake(pt.x, pt.y)]];
-		
-		// update current feature
-		
-		prevStart = CGPointMake(startPos.x, startPos.y);
-		prevEnd.x = pt.x - startPos.x;
-		prevEnd.y = pt.y - startPos.y;
-		
-		if (startDist != -1) {
-			prevScale = distance / startDist;
+	
+	if (endCount == numTouches && endCount!=0) {
+		numTouches = 0;
+		endCount = 0;
+		touch1 = nil;
+		touch2 = nil;
+		touch3 = nil;
+		NSLog(@"Removing last ones   %d", endCount);
+		// send remaining features - there may be backlog
+		if (packed1.count > 0 && packed2.count > 0 && packed3.count > 0) {
+			// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Take EVERYTHING in the arrays !!!!!!!!!!!!!!!!!!!!!!!!!!
+			/* FUNCTION CALL GOES HERE
+			 * Data is in packed1, packed2 and packed3 arrays
+			 * 
+			 * [0] (CGPoint)	endPoint
+			 * [1] (float)		scale
+			 * [2] (float)		angle
+			 * [3] (float)		gradient angle
+			 */
+			[packed1 removeAllObjects];
+			[packed2 removeAllObjects];
+			[packed3 removeAllObjects];
 		}
-		else {
-			startDist = distance;
-			prevScale = 1;
+		if (packed1.count > 0 && packed2.count > 0 ) {
+			// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Take EVERYTHING in the arrays !!!!!!!!!!!!!!!!!!!!!!!!!!
+			/* FUNCTION CALL GOES HERE
+			 * Data is in packed1, packed2 and packed3 arrays
+			 * 
+			 * [0] (CGPoint)	endPoint
+			 * [1] (float)		scale
+			 * [2] (float)		angle
+			 * [3] (float)		gradient angle
+			 */
+			[packed1 removeAllObjects];
+			[packed2 removeAllObjects];
+			
 		}
-		
-		prevAngle = tempAngle;
-		if (cAngle != 500) {
-			prevCAngle = cAngle;
+		if (packed1.count > 0  && packed3.count > 0) {
+			// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Take EVERYTHING in the arrays !!!!!!!!!!!!!!!!!!!!!!!!!!
+			/* FUNCTION CALL GOES HERE
+			 * Data is in packed1, packed2 and packed3 arrays
+			 * 
+			 * [0] (CGPoint)	endPoint
+			 * [1] (float)		scale
+			 * [2] (float)		angle
+			 * [3] (float)		gradient angle
+			 */
+			[packed1 removeAllObjects];
+			
+			[packed3 removeAllObjects];
 		}
-		else{
-			prevCAngle = prevAngle;
+		if (packed2.count > 0 && packed3.count > 0) {
+			// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Take EVERYTHING in the arrays !!!!!!!!!!!!!!!!!!!!!!!!!!
+			/* FUNCTION CALL GOES HERE
+			 * Data is in packed1, packed2 and packed3 arrays
+			 * 
+			 * [0] (CGPoint)	endPoint
+			 * [1] (float)		scale
+			 * [2] (float)		angle
+			 * [3] (float)		gradient angle
+			 */
+			
+			[packed2 removeAllObjects];
+			[packed3 removeAllObjects];
 		}
-		
-		/*  FUNCTION CALL GOES HERE  */
-		/* Values to use are:
-		 * prevEnd - end values
-		 * prevScale - scale
-		 * prevAngle - angle of line
-		 * prevCAngle - angle of starting gradient
-		 */
+		if (packed1.count > 0 ) {
+			// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Take EVERYTHING in the arrays !!!!!!!!!!!!!!!!!!!!!!!!!!
+			/* FUNCTION CALL GOES HERE
+			 * Data is in packed1, packed2 and packed3 arrays
+			 * 
+			 * [0] (CGPoint)	endPoint
+			 * [1] (float)		scale
+			 * [2] (float)		angle
+			 * [3] (float)		gradient angle
+			 */
+			[packed1 removeAllObjects];
+			
+		}
+		if (packed2.count > 0 ) {
+			// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Take EVERYTHING in the arrays !!!!!!!!!!!!!!!!!!!!!!!!!!
+			/* FUNCTION CALL GOES HERE
+			 * Data is in packed1, packed2 and packed3 arrays
+			 * 
+			 * [0] (CGPoint)	endPoint
+			 * [1] (float)		scale
+			 * [2] (float)		angle
+			 * [3] (float)		gradient angle
+			 */
+			
+			[packed2 removeAllObjects];
+			
+		}
+		if (packed3.count > 0) {
+			// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Take EVERYTHING in the arrays !!!!!!!!!!!!!!!!!!!!!!!!!!
+			/* FUNCTION CALL GOES HERE
+			 * Data is in packed1, packed2 and packed3 arrays
+			 * 
+			 * [0] (CGPoint)	endPoint
+			 * [1] (float)		scale
+			 * [2] (float)		angle
+			 * [3] (float)		gradient angle
+			 */
+			
+			[packed3 removeAllObjects];
+		}
 	}
+	else {
+		if (packed1.count == 0 && touch1 != nil) {
+			numTouches--;
+			endCount--;
+		}
+		if (packed2.count == 0 && touch2 != nil) {
+			numTouches--;
+			endCount--;
+		}
+		if (packed3.count == 0 && touch3 != nil) {
+			numTouches--;
+			endCount--;
+		}
+	}
+
+	
+	
 	[self setNeedsDisplay];
 }
 
@@ -453,6 +828,6 @@
 	[touchesArray autorelease];
 	[directionArray autorelease];
 	
-    [super dealloc];
+	[super dealloc];
 }
 @end

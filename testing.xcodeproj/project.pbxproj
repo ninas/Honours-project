@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0F42A6F311E20814000523D8 /* testingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F42A6F211E20814000523D8 /* testingView.m */; };
 		0F4E044511CA5E790038827E /* testingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F4E044411CA5E790038827E /* testingViewController.m */; };
+		0FEA99C81239221B007FA78C /* recognition.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEA99C71239221B007FA78C /* recognition.m */; };
 		1D3623260D0F684500981E51 /* testingAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* testingAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -22,6 +23,8 @@
 		0F42A6F211E20814000523D8 /* testingView.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.objc; path = testingView.m; sourceTree = "<group>"; tabWidth = 4; usesTabs = 1; };
 		0F4E044311CA5E790038827E /* testingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testingViewController.h; sourceTree = "<group>"; };
 		0F4E044411CA5E790038827E /* testingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testingViewController.m; sourceTree = "<group>"; };
+		0FEA99C61239221B007FA78C /* recognition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = recognition.h; sourceTree = "<group>"; };
+		0FEA99C71239221B007FA78C /* recognition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = recognition.m; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* testingAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testingAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* testingAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testingAppDelegate.m; sourceTree = "<group>"; };
@@ -57,6 +60,8 @@
 				0F4E044411CA5E790038827E /* testingViewController.m */,
 				0F42A6F111E20814000523D8 /* testingView.h */,
 				0F42A6F211E20814000523D8 /* testingView.m */,
+				0FEA99C61239221B007FA78C /* recognition.h */,
+				0FEA99C71239221B007FA78C /* recognition.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -166,6 +171,7 @@
 				1D3623260D0F684500981E51 /* testingAppDelegate.m in Sources */,
 				0F4E044511CA5E790038827E /* testingViewController.m in Sources */,
 				0F42A6F311E20814000523D8 /* testingView.m in Sources */,
+				0FEA99C81239221B007FA78C /* recognition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

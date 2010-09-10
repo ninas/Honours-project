@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "recognition.h"
 
 @interface testingView : UIView {
 	/*** For drawing ***/
@@ -16,56 +16,33 @@
 	// Holds features
 	NSMutableArray * directionArray;
 	
-	/*** Feature extraction ***/
-	// Previous point in order to determine distance
-	CGPoint previous;
-	// Previous point in regression line	
-	CGPoint startPos; 
+		
+	recognition * recognition1;
+	recognition * recognition2;
+	recognition * recognition3;
 	
-	// Holds length of current feature
-	float distance;
+	UITouch * touch1;
+	UITouch * touch2;
+	UITouch * touch3;
 	
-	// The angle of the current feature	
-	float currentAngle;
+	int numTouches;
 	
-	// current direction in X
-	// Can be one of:
-	// 0  - No change
-	// 1  - Increasing
-	// -1 - Decreasing
-	float xDir;
+	NSMutableArray * packed1;
+	NSMutableArray * packed2;
+	NSMutableArray * packed3;
 	
-	// current direction in Y
-	// Can be one of:
-	// 0  - No change
-	// 1  - Increasing
-	// -1 - Decreasing
-	float yDir;
+	BOOL ended1;
+	BOOL ended2;
+	BOOL ended3;
 	
-	// Angle made by line connection startPos to third point in feature - the differance between this and 
-	// currentAngle gives an indication of curvature and the direction of the arc (above or below line)
-	float cAngle;
-	
-	// Used to determine when to sample angle for curvature approximation
-	int gradientCounter;
-	
-	// Length of first feature - used in scaling the rest
-	float startDist;
-	
-	// Due to the fact that features can be extended, the feature is only passed once a new one is created
-	// These variables hold state of previous feature before it is passed to gesture machine
-	CGPoint prevEnd;
-	CGPoint prevStart;
-	float prevAngle;
-	float prevScale;
-	float prevCAngle;
+	int endCount;
 	
 	
 	
 	
 }
 
-- (void) recognitionDirection:(CGPoint)point;
+
 
 
 @property (nonatomic, retain) NSMutableArray *touchesArray;
