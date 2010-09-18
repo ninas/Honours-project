@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 #import <QuartzCore/QuartzCore.h>
 
-#import "ESRenderer.h"
+#import "ES1Renderer.h"
+#import "block.h"
 
 // This class wraps the CAEAGLLayer from CoreAnimation into a convenient UIView subclass.
 // The view content is basically an EAGL surface you render your OpenGL scene into.
@@ -18,7 +19,7 @@
 {  
 	CGPoint lastPos;
 @private
-    id <ESRenderer> renderer;
+    ES1Renderer * renderer;
 
     BOOL animating;
     BOOL displayLinkSupported;
@@ -33,6 +34,21 @@
 	CGPoint startPos;
 	CGPoint endPos;
 	float maxDist;
+	NSMutableArray * blockArray;
+	block **** blockPlace;
+	CGPoint  lastDist;
+	float counter;
+	float xRot;
+	float yRot;
+	CGPoint startArray;
+	
+	float xTotal;
+	float yTotal;
+	float zTotal;
+	int yAxis [3];
+	int xAxis [3];
+	int zAxis[3];
+	NSMutableArray * rotations;
 }
 
 @property (readonly, nonatomic, getter=isAnimating) BOOL animating;
@@ -44,6 +60,8 @@
 - (void)startAnimation;
 - (void)stopAnimation;
 - (void)drawView:(id)sender;
+- (void)rowLeft;
+- (block *) getBlock:(int)x andY:(int)y andZ:(int)z;
 //- (void) calcRotation;
 
 @end

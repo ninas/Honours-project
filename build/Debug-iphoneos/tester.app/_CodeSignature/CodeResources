@@ -6,7 +6,7 @@
 	<dict>
 		<key>MainWindow.nib</key>
 		<data>
-		w+cJsAxmGwxAZWua6Y91WxSIx0k=
+		R9RKtKp+0b4kJ1jtGi42tBil6nE=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -19,6 +19,10 @@
 		<key>Shader.vsh</key>
 		<data>
 		ie8TZAOQPYk6e21iU2kiK3Ok/1s=
+		</data>
+		<key>ViewController.nib</key>
+		<data>
+		qHkNEcqHRhALVqY0pHN5Wuhrg/w=
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>

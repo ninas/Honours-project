@@ -1,24 +1,27 @@
 Ttester
 v7
 r0
-t304940394.129452
+t306411576.947868
 cCheck dependencies
-cCpResource build/Debug-iphoneos/tester.app/ResourceRules.plist /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk/ResourceRules.plist
+cCpResource build/Debug-iphoneos/tester.app/ResourceRules.plist /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/ResourceRules.plist
 cProcessInfoPlistFile /Users/NSchiff/Documents/tester/build/Debug-iphoneos/tester.app/Info.plist tester-Info.plist
 cCpResource build/Debug-iphoneos/tester.app/Shader.fsh Shaders/Shader.fsh
 cCpResource build/Debug-iphoneos/tester.app/Shader.vsh Shaders/Shader.vsh
 cCompileXIB /Users/NSchiff/Documents/tester/MainWindow.xib
-cProcessPCH /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/tester_Prefix-bbpkezfzaljxmjcpywtoiixshosd/tester_Prefix.pch.gch tester_Prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileXIB /Users/NSchiff/Documents/tester/Classes/ViewController.xib
+cProcessPCH /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/tester_Prefix-fwygyqduoujagdhbitiptjoqwtfs/tester_Prefix.pch.gch tester_Prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/tester.build/Debug-iphoneos/tester.build/Objects-normal/armv6/main.o /Users/NSchiff/Documents/tester/main.m normal armv6 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/tester.build/Debug-iphoneos/tester.build/Objects-normal/armv6/testerAppDelegate.o /Users/NSchiff/Documents/tester/Classes/testerAppDelegate.m normal armv6 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/tester.build/Debug-iphoneos/tester.build/Objects-normal/armv6/EAGLView.o /Users/NSchiff/Documents/tester/Classes/EAGLView.m normal armv6 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/tester.build/Debug-iphoneos/tester.build/Objects-normal/armv6/ES1Renderer.o /Users/NSchiff/Documents/tester/Classes/ES1Renderer.m normal armv6 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/tester.build/Debug-iphoneos/tester.build/Objects-normal/armv6/ES2Renderer.o /Users/NSchiff/Documents/tester/Classes/ES2Renderer.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/tester.build/Debug-iphoneos/tester.build/Objects-normal/armv6/block.o /Users/NSchiff/Documents/tester/Classes/block.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/tester.build/Debug-iphoneos/tester.build/Objects-normal/armv6/ViewController.o /Users/NSchiff/Documents/tester/Classes/ViewController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
 cLd /Users/NSchiff/Documents/tester/build/Debug-iphoneos/tester.app/tester normal armv6
 cGenerateDSYMFile /Users/NSchiff/Documents/tester/build/Debug-iphoneos/tester.app.dSYM /Users/NSchiff/Documents/tester/build/Debug-iphoneos/tester.app/tester
 cProcessProductPackaging "/Users/NSchiff/Library/MobileDevice/Provisioning Profiles/F29FFEF1-25C9-457A-942C-5C2FE04C8216.mobileprovision" /Users/NSchiff/Documents/tester/build/Debug-iphoneos/tester.app/embedded.mobileprovision
 cTouch /Users/NSchiff/Documents/tester/build/Debug-iphoneos/tester.app
-cProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk/Entitlements.plist /Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/tester.xcent
+cProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/Entitlements.plist /Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/tester.xcent
 cCodeSign /Users/NSchiff/Documents/tester/build/Debug-iphoneos/tester.app
 
 N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk
@@ -106,34 +109,130 @@ c000000004B2B564700000000000019F9
 t1261131335
 s6649
 
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk
+c000000004BA82B910000000000000110
+t1269312401
+s272
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/Entitlements.plist
+c000000004B9F103D00000000000000DD
+t1268715581
+s221
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/ResourceRules.plist
+c000000004B9F103D00000000000001E5
+t1268715581
+s485
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004B9F26D2000000000036A650
+t1268721362
+s3581520
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004B9F26B90000000000001355
+t1268721337
+s4949
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/EAGL.h
+c000000004B9F289E000000000000094F
+t1268721822
+s2383
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/EAGLDrawable.h
+c000000004B9F289E0000000000000A61
+t1268721822
+s2657
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES1/gl.h
+c000000004B9F289E0000000000009369
+t1268721822
+s37737
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES1/glext.h
+c000000004B9F289E0000000000002A42
+t1268721822
+s10818
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES2/gl.h
+c000000004B9F289E00000000000082AD
+t1268721822
+s33453
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES2/glext.h
+c000000004B9F289E0000000000001617
+t1268721822
+s5655
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/OpenGLES.framework/OpenGLES
+c000000004B9F28AB000000000003C2B0
+t1268721835
+s246448
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.h
+c000000004B9F28EE000000000000007D
+t1268721902
+s125
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+c000000004B9F2A1500000000002215A0
+t1268722197
+s2233760
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004B9F318D000000000000098F
+t1268724109
+s2447
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004B9F32090000000002703230
+t1268724233
+s40907312
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/usr/include/Availability.h
+c000000004B9F27C60000000000001A1A
+t1268721606
+s6682
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/usr/include/math.h
+c000000004B9F12D800000000000004F1
+t1268716248
+s1265
+
 N/Users/NSchiff/Documents/tester/Classes/EAGLView.h
-c000000004C22005000000000000005B1
-t1277296720
-s1457
+c000000004C9243F100000000000006AB
+t1284654065
+s1707
 i<UIKit/UIKit.h>
 i<QuartzCore/QuartzCore.h>
-i"ESRenderer.h"
+i"ES1Renderer.h"
+i"block.h"
 
 N/Users/NSchiff/Documents/tester/Classes/EAGLView.m
-c000000004C29EE7900000000000017D4
-t1277816441
-s6100
+c000000004C9345880000000000002933
+t1284720008
+s10547
 i"EAGLView.h"
 i"ES1Renderer.h"
 i"ES2Renderer.h"
+i"block.h"
+i<math.h>
 
 N/Users/NSchiff/Documents/tester/Classes/ES1Renderer.h
-c000000004C21FEC500000000000004E3
-t1277296325
-s1251
+c000000004C90CC9000000000000005E4
+t1284557968
+s1508
 i"ESRenderer.h"
+i<OpenGLES/EAGL.h>
+i<OpenGLES/EAGLDrawable.h>
 i<OpenGLES/ES1/gl.h>
 i<OpenGLES/ES1/glext.h>
+i"block.h"
 
 N/Users/NSchiff/Documents/tester/Classes/ES1Renderer.m
-c000000004C7CCDDF0000000000003055
-t1283247583
-s12373
+c000000004C90FE740000000000003E36
+t1284570740
+s15926
 i"ES1Renderer.h"
 
 N/Users/NSchiff/Documents/tester/Classes/ES2Renderer.h
@@ -158,23 +257,54 @@ i<QuartzCore/QuartzCore.h>
 i<OpenGLES/EAGL.h>
 i<OpenGLES/EAGLDrawable.h>
 
-N/Users/NSchiff/Documents/tester/Classes/testerAppDelegate.h
-c000000004C16537900000000000001A7
-t1276531577
-s423
+N/Users/NSchiff/Documents/tester/Classes/ViewController.h
+c000000004C90E9F4000000000000013D
+t1284565492
+s317
 i<UIKit/UIKit.h>
 
-N/Users/NSchiff/Documents/tester/Classes/testerAppDelegate.m
-c000000004C21FF990000000000000335
-t1277296537
-s821
-i"testerAppDelegate.h"
+N/Users/NSchiff/Documents/tester/Classes/ViewController.m
+c000000004C90EDAC00000000000005F2
+t1284566444
+s1522
+i"ViewController.h"
 i"EAGLView.h"
 
+N/Users/NSchiff/Documents/tester/Classes/ViewController.xib
+c000000004C90EA60000000000000421F
+t1284565600
+s16927
+
+N/Users/NSchiff/Documents/tester/Classes/block.h
+c000000004C924B40000000000000020E
+t1284655936
+s526
+i<Foundation/Foundation.h>
+
+N/Users/NSchiff/Documents/tester/Classes/block.m
+c000000004C924B00000000000000045F
+t1284655872
+s1119
+i"block.h"
+i<math.h>
+
+N/Users/NSchiff/Documents/tester/Classes/testerAppDelegate.h
+c000000004C90E86C00000000000001E4
+t1284565100
+s484
+i<UIKit/UIKit.h>
+i"ViewController.h"
+
+N/Users/NSchiff/Documents/tester/Classes/testerAppDelegate.m
+c000000004C90E8750000000000000394
+t1284565109
+s916
+i"testerAppDelegate.h"
+
 N/Users/NSchiff/Documents/tester/MainWindow.xib
-c000000004C1654EE000000000000498B
-t1276531950
-s18827
+c000000004C90EC810000000000005238
+t1284566145
+s21048
 
 N/Users/NSchiff/Documents/tester/Shaders/Shader.fsh
 c000000004C16537900000000000000DB
@@ -187,27 +317,27 @@ t1276531577
 s353
 
 N/Users/NSchiff/Documents/tester/build/Debug-iphoneos/tester.app
-t1283247594
-s408
+t1284718776
+s442
 
 N/Users/NSchiff/Documents/tester/build/Debug-iphoneos/tester.app.dSYM
-t1283247593
+t1284718776
 s102
 
 N/Users/NSchiff/Documents/tester/build/Debug-iphoneos/tester.app/Info.plist
-t1281195328
-s710
+t1284717397
+s706
 
 N/Users/NSchiff/Documents/tester/build/Debug-iphoneos/tester.app/MainWindow.nib
-t1281195329
-s1574
+t1284717400
+s1126
 
 N/Users/NSchiff/Documents/tester/build/Debug-iphoneos/tester.app/PkgInfo
-t1281195328
+t1284717397
 s8
 
 N/Users/NSchiff/Documents/tester/build/Debug-iphoneos/tester.app/ResourceRules.plist
-t1281195328
+t1284464352
 s485
 
 N/Users/NSchiff/Documents/tester/build/Debug-iphoneos/tester.app/Shader.fsh
@@ -218,41 +348,53 @@ N/Users/NSchiff/Documents/tester/build/Debug-iphoneos/tester.app/Shader.vsh
 t1281195328
 s353
 
+N/Users/NSchiff/Documents/tester/build/Debug-iphoneos/tester.app/ViewController.nib
+t1284717400
+s847
+
 N/Users/NSchiff/Documents/tester/build/Debug-iphoneos/tester.app/embedded.mobileprovision
 t1283247519
 s7162
 
 N/Users/NSchiff/Documents/tester/build/Debug-iphoneos/tester.app/tester
-t1283247593
-s44232
+t1284718776
+s76816
 
 N/Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/Objects-normal/armv6/EAGLView.o
-t1281195329
-s28276
+t1284718776
+s43128
 
 N/Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/Objects-normal/armv6/ES1Renderer.o
-t1283247593
-s22676
+t1284717401
+s27204
 
 N/Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/Objects-normal/armv6/ES2Renderer.o
-t1281195329
-s27144
+t1284464355
+s27124
+
+N/Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/Objects-normal/armv6/ViewController.o
+t1284717401
+s38928
+
+N/Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/Objects-normal/armv6/block.o
+t1284717401
+s14420
 
 N/Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/Objects-normal/armv6/main.o
-t1281195329
-s6492
+t1284464355
+s6484
 
 N/Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/Objects-normal/armv6/tester.LinkFileList
-c000000004C5D7D400000000000000236
-t1281195328
-s566
+c000000004C933B550000000000000317
+t1284717397
+s791
 
 N/Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/Objects-normal/armv6/testerAppDelegate.o
-t1281195329
-s20992
+t1284717401
+s44444
 
 N/Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/tester.xcent
-t1281195330
+t1284717402
 s319
 
 N/Users/NSchiff/Documents/tester/main.m
@@ -283,6 +425,10 @@ N/var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/Shared
 t1281195329
 s8380600
 
+N/var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/tester_Prefix-fwygyqduoujagdhbitiptjoqwtfs/tester_Prefix.pch.gch
+t1284464354
+s8950420
+
 Ntester-Info.plist
 c000000004C16537900000000000003B4
 t1276531577
@@ -290,19 +436,19 @@ s948
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies304940393#304940393#0(0"0(0#1#0"4300911832#0"0#
+lSLF07#2@18"Check dependencies306411576#306411576#0(179"[BWARN]warning: building for SDK 'Device - iPhone OS 3.2' requires an armv7 architecture.[BWARN]warning: building for deployment target '3.2' should omit the armv6 architecture.2(22@82"warning: building for SDK 'Device - iPhone OS 3.2' requires an armv7 architecture.306411576#18446744073709551615#0#0(1@0"0(22@81"warning: building for deployment target '3.2' should omit the armv6 architecture.306411576#18446744073709551615#0#0(1@0"0(0#1#0"4300911832#0"0#
 
 CCodeSign /Users/NSchiff/Documents/tester/build/Debug-iphoneos/tester.app
-s304940393.664842
-e304940394.129403
+s306411576.796907
+e306411576.947820
 r1
 xCodeSign
 x/Users/NSchiff/Documents/tester/build/Debug-iphoneos/tester.app
-lSLF07#2@40"CodeSign build/Debug-iphoneos/tester.app304940393#304940394#0(0"0(0#0#63"/Users/NSchiff/Documents/tester/build/Debug-iphoneos/tester.app4300911832#633"    cd /Users/NSchiff/Documents/tester    setenv IGNORE_CODESIGN_ALLOCATE_RADAR_7181968 /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/codesign -f -s "iPhone Developer: Nina Schiff (R7BF4VLQTL)" --resource-rules=/Users/NSchiff/Documents/tester/build/Debug-iphoneos/tester.app/ResourceRules.plist --entitlements /Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/tester.xcent /Users/NSchiff/Documents/tester/build/Debug-iphoneos/tester.app0#
+lSLF07#2@40"CodeSign build/Debug-iphoneos/tester.app306411576#306411576#0(0"0(0#0#63"/Users/NSchiff/Documents/tester/build/Debug-iphoneos/tester.app4300911832#633"    cd /Users/NSchiff/Documents/tester    setenv IGNORE_CODESIGN_ALLOCATE_RADAR_7181968 /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/codesign -f -s "iPhone Developer: Nina Schiff (R7BF4VLQTL)" --resource-rules=/Users/NSchiff/Documents/tester/build/Debug-iphoneos/tester.app/ResourceRules.plist --entitlements /Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/tester.xcent /Users/NSchiff/Documents/tester/build/Debug-iphoneos/tester.app0#
 
 CCompileC build/tester.build/Debug-iphoneos/tester.build/Objects-normal/armv6/EAGLView.o /Users/NSchiff/Documents/tester/Classes/EAGLView.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-s302888129.761697
-e302888129.878511
+s306411576.551533
+e306411576.743876
 r1
 xCompileC
 xbuild/tester.build/Debug-iphoneos/tester.build/Objects-normal/armv6/EAGLView.o
@@ -312,12 +458,12 @@ xarmv6
 xobjective-c
 xcom.apple.compilers.gcc.4_2
 o/Users/NSchiff/Documents/tester/Classes/EAGLView.m: In function '-[EAGLView touchesMoved:withEvent:]':
-o/Users/NSchiff/Documents/tester/Classes/EAGLView.m:164: warning: unused variable 'currentMovementPosition'
-lSLF07#2@58"Compile /Users/NSchiff/Documents/tester/Classes/EAGLView.m302888129#302888129#0(210"/Users/NSchiff/Documents/tester/Classes/EAGLView.m: In function '-[EAGLView touchesMoved:withEvent:]':/Users/NSchiff/Documents/tester/Classes/EAGLView.m:164: warning: unused variable 'currentMovementPosition'1(22@41"Unused variable 'currentMovementPosition'302888129#103#107#0(6@50"/Users/NSchiff/Documents/tester/Classes/EAGLView.m299509241#164#0#164#0#19"unused variable '*'0(0#0#50"/Users/NSchiff/Documents/tester/Classes/EAGLView.m4300911832#1647"    cd /Users/NSchiff/Documents/tester    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk -fvisibility=hidden -gdwarf-2 -miphoneos-version-min=3.1.3 -iquote /Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/tester-generated-files.hmap -I/Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/tester-own-target-headers.hmap -I/Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/tester-all-target-headers.hmap -iquote /Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/tester-project-headers.hmap -F/Users/NSchiff/Documents/tester/build/Debug-iphoneos -I/Users/NSchiff/Documents/tester/build/Debug-iphoneos/include -I/Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/DerivedSources/armv6 -I/Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/DerivedSources -include /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/tester_Prefix-bbpkezfzaljxmjcpywtoiixshosd/tester_Prefix.pch -c /Users/NSchiff/Documents/tester/Classes/EAGLView.m -o /Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/Objects-normal/armv6/EAGLView.o0#
+o/Users/NSchiff/Documents/tester/Classes/EAGLView.m:300: warning: unused variable 'currentMovementPosition'
+lSLF07#2@58"Compile /Users/NSchiff/Documents/tester/Classes/EAGLView.m306411576#306411576#0(210"/Users/NSchiff/Documents/tester/Classes/EAGLView.m: In function '-[EAGLView touchesMoved:withEvent:]':/Users/NSchiff/Documents/tester/Classes/EAGLView.m:300: warning: unused variable 'currentMovementPosition'1(22@41"Unused variable 'currentMovementPosition'306411576#103#107#0(6@50"/Users/NSchiff/Documents/tester/Classes/EAGLView.m306411560#300#0#300#0#19"unused variable '*'0(0#0#50"/Users/NSchiff/Documents/tester/Classes/EAGLView.m4300911832#1643"    cd /Users/NSchiff/Documents/tester    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -miphoneos-version-min=3.2 -iquote /Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/tester-generated-files.hmap -I/Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/tester-own-target-headers.hmap -I/Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/tester-all-target-headers.hmap -iquote /Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/tester-project-headers.hmap -F/Users/NSchiff/Documents/tester/build/Debug-iphoneos -I/Users/NSchiff/Documents/tester/build/Debug-iphoneos/include -I/Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/DerivedSources/armv6 -I/Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/DerivedSources -include /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/tester_Prefix-fwygyqduoujagdhbitiptjoqwtfs/tester_Prefix.pch -c /Users/NSchiff/Documents/tester/Classes/EAGLView.m -o /Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/Objects-normal/armv6/EAGLView.o0#
 
 CCompileC build/tester.build/Debug-iphoneos/tester.build/Objects-normal/armv6/ES1Renderer.o /Users/NSchiff/Documents/tester/Classes/ES1Renderer.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-s304940393.158663
-e304940393.321478
+s306410201.221062
+e306410201.442348
 r1
 xCompileC
 xbuild/tester.build/Debug-iphoneos/tester.build/Objects-normal/armv6/ES1Renderer.o
@@ -327,12 +473,12 @@ xarmv6
 xobjective-c
 xcom.apple.compilers.gcc.4_2
 o/Users/NSchiff/Documents/tester/Classes/ES1Renderer.m: In function '-[ES1Renderer renderByRotatingAroundX:rotatingAroundY:]':
-o/Users/NSchiff/Documents/tester/Classes/ES1Renderer.m:152: warning: unused variable 'currentZ'
-lSLF07#2@61"Compile /Users/NSchiff/Documents/tester/Classes/ES1Renderer.m304940393#304940393#0(221"/Users/NSchiff/Documents/tester/Classes/ES1Renderer.m: In function '-[ES1Renderer renderByRotatingAroundX:rotatingAroundY:]':/Users/NSchiff/Documents/tester/Classes/ES1Renderer.m:152: warning: unused variable 'currentZ'1(22@26"Unused variable 'currentZ'304940393#126#95#0(6@53"/Users/NSchiff/Documents/tester/Classes/ES1Renderer.m304940383#152#0#152#0#19"unused variable '*'0(0#0#53"/Users/NSchiff/Documents/tester/Classes/ES1Renderer.m4300911832#1653"    cd /Users/NSchiff/Documents/tester    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk -fvisibility=hidden -gdwarf-2 -miphoneos-version-min=3.1.3 -iquote /Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/tester-generated-files.hmap -I/Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/tester-own-target-headers.hmap -I/Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/tester-all-target-headers.hmap -iquote /Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/tester-project-headers.hmap -F/Users/NSchiff/Documents/tester/build/Debug-iphoneos -I/Users/NSchiff/Documents/tester/build/Debug-iphoneos/include -I/Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/DerivedSources/armv6 -I/Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/DerivedSources -include /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/tester_Prefix-bbpkezfzaljxmjcpywtoiixshosd/tester_Prefix.pch -c /Users/NSchiff/Documents/tester/Classes/ES1Renderer.m -o /Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/Objects-normal/armv6/ES1Renderer.o0#
+o/Users/NSchiff/Documents/tester/Classes/ES1Renderer.m:177: warning: unused variable 'cubePosition'
+lSLF07#2@61"Compile /Users/NSchiff/Documents/tester/Classes/ES1Renderer.m306410201#306410201#0(225"/Users/NSchiff/Documents/tester/Classes/ES1Renderer.m: In function '-[ES1Renderer renderByRotatingAroundX:rotatingAroundY:]':/Users/NSchiff/Documents/tester/Classes/ES1Renderer.m:177: warning: unused variable 'cubePosition'1(22@30"Unused variable 'cubePosition'306410201#126#99#0(6@53"/Users/NSchiff/Documents/tester/Classes/ES1Renderer.m306263540#177#0#177#0#19"unused variable '*'0(0#0#53"/Users/NSchiff/Documents/tester/Classes/ES1Renderer.m4300911832#1649"    cd /Users/NSchiff/Documents/tester    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -miphoneos-version-min=3.2 -iquote /Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/tester-generated-files.hmap -I/Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/tester-own-target-headers.hmap -I/Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/tester-all-target-headers.hmap -iquote /Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/tester-project-headers.hmap -F/Users/NSchiff/Documents/tester/build/Debug-iphoneos -I/Users/NSchiff/Documents/tester/build/Debug-iphoneos/include -I/Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/DerivedSources/armv6 -I/Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/DerivedSources -include /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/tester_Prefix-fwygyqduoujagdhbitiptjoqwtfs/tester_Prefix.pch -c /Users/NSchiff/Documents/tester/Classes/ES1Renderer.m -o /Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/Objects-normal/armv6/ES1Renderer.o0#
 
 CCompileC build/tester.build/Debug-iphoneos/tester.build/Objects-normal/armv6/ES2Renderer.o /Users/NSchiff/Documents/tester/Classes/ES2Renderer.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-s302888129.878631
-e302888129.964125
+s306157155.208768
+e306157155.316143
 r1
 xCompileC
 xbuild/tester.build/Debug-iphoneos/tester.build/Objects-normal/armv6/ES2Renderer.o
@@ -344,11 +490,42 @@ xcom.apple.compilers.gcc.4_2
 o/Users/NSchiff/Documents/tester/Classes/ES2Renderer.m:325: warning: incomplete implementation of class 'ES2Renderer'
 o/Users/NSchiff/Documents/tester/Classes/ES2Renderer.m:325: warning: method definition for '-renderByRotatingAroundX:rotatingAroundY:' not found
 o/Users/NSchiff/Documents/tester/Classes/ES2Renderer.m:325: warning: class 'ES2Renderer' does not fully implement the 'ESRenderer' protocol
-lSLF07#2@61"Compile /Users/NSchiff/Documents/tester/Classes/ES2Renderer.m302888129#302888129#0(400"/Users/NSchiff/Documents/tester/Classes/ES2Renderer.m:325: warning: incomplete implementation of class 'ES2Renderer'/Users/NSchiff/Documents/tester/Classes/ES2Renderer.m:325: warning: method definition for '-renderByRotatingAroundX:rotatingAroundY:' not found/Users/NSchiff/Documents/tester/Classes/ES2Renderer.m:325: warning: class 'ES2Renderer' does not fully implement the 'ESRenderer' protocol3(22@48"Incomplete implementation of class 'ES2Renderer'302888129#0#117#0(6@53"/Users/NSchiff/Documents/tester/Classes/ES2Renderer.m298565123#325#0#325#0#38"incomplete implementation of class '*'0(22@75"Method definition for '-renderByRotatingAroundX:rotatingAroundY:' not found302888129#117#144#0(6@53"/Users/NSchiff/Documents/tester/Classes/ES2Renderer.m298565123#325#0#325#0#35"method definition for '*' not found0(22@70"Class 'ES2Renderer' does not fully implement the 'ESRenderer' protocol302888129#261#139#0(6@53"/Users/NSchiff/Documents/tester/Classes/ES2Renderer.m298565123#325#0#325#0#51"class '*' does not fully implement the '*' protocol0(0#0#53"/Users/NSchiff/Documents/tester/Classes/ES2Renderer.m4300911832#1653"    cd /Users/NSchiff/Documents/tester    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk -fvisibility=hidden -gdwarf-2 -miphoneos-version-min=3.1.3 -iquote /Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/tester-generated-files.hmap -I/Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/tester-own-target-headers.hmap -I/Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/tester-all-target-headers.hmap -iquote /Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/tester-project-headers.hmap -F/Users/NSchiff/Documents/tester/build/Debug-iphoneos -I/Users/NSchiff/Documents/tester/build/Debug-iphoneos/include -I/Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/DerivedSources/armv6 -I/Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/DerivedSources -include /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/tester_Prefix-bbpkezfzaljxmjcpywtoiixshosd/tester_Prefix.pch -c /Users/NSchiff/Documents/tester/Classes/ES2Renderer.m -o /Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/Objects-normal/armv6/ES2Renderer.o0#
+lSLF07#2@61"Compile /Users/NSchiff/Documents/tester/Classes/ES2Renderer.m306157155#306157155#0(400"/Users/NSchiff/Documents/tester/Classes/ES2Renderer.m:325: warning: incomplete implementation of class 'ES2Renderer'/Users/NSchiff/Documents/tester/Classes/ES2Renderer.m:325: warning: method definition for '-renderByRotatingAroundX:rotatingAroundY:' not found/Users/NSchiff/Documents/tester/Classes/ES2Renderer.m:325: warning: class 'ES2Renderer' does not fully implement the 'ESRenderer' protocol3(22@48"Incomplete implementation of class 'ES2Renderer'306157155#0#117#0(6@53"/Users/NSchiff/Documents/tester/Classes/ES2Renderer.m298565123#325#0#325#0#38"incomplete implementation of class '*'0(22@75"Method definition for '-renderByRotatingAroundX:rotatingAroundY:' not found306157155#117#144#0(6@53"/Users/NSchiff/Documents/tester/Classes/ES2Renderer.m298565123#325#0#325#0#35"method definition for '*' not found0(22@70"Class 'ES2Renderer' does not fully implement the 'ESRenderer' protocol306157155#261#139#0(6@53"/Users/NSchiff/Documents/tester/Classes/ES2Renderer.m298565123#325#0#325#0#51"class '*' does not fully implement the '*' protocol0(0#0#53"/Users/NSchiff/Documents/tester/Classes/ES2Renderer.m4300911832#1649"    cd /Users/NSchiff/Documents/tester    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -miphoneos-version-min=3.2 -iquote /Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/tester-generated-files.hmap -I/Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/tester-own-target-headers.hmap -I/Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/tester-all-target-headers.hmap -iquote /Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/tester-project-headers.hmap -F/Users/NSchiff/Documents/tester/build/Debug-iphoneos -I/Users/NSchiff/Documents/tester/build/Debug-iphoneos/include -I/Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/DerivedSources/armv6 -I/Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/DerivedSources -include /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/tester_Prefix-fwygyqduoujagdhbitiptjoqwtfs/tester_Prefix.pch -c /Users/NSchiff/Documents/tester/Classes/ES2Renderer.m -o /Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/Objects-normal/armv6/ES2Renderer.o0#
+
+CCompileC build/tester.build/Debug-iphoneos/tester.build/Objects-normal/armv6/ViewController.o /Users/NSchiff/Documents/tester/Classes/ViewController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+s306410201.490246
+e306410201.568101
+r1
+xCompileC
+xbuild/tester.build/Debug-iphoneos/tester.build/Objects-normal/armv6/ViewController.o
+x/Users/NSchiff/Documents/tester/Classes/ViewController.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/NSchiff/Documents/tester/Classes/ViewController.m: In function '-[ViewController viewDidLoad]':
+o/Users/NSchiff/Documents/tester/Classes/ViewController.m:29: warning: 'UIView' may not respond to '-startAnimation'
+o/Users/NSchiff/Documents/tester/Classes/ViewController.m:29: warning: (Messages without a matching method signature
+o/Users/NSchiff/Documents/tester/Classes/ViewController.m:29: warning: will be assumed to return 'id' and accept
+o/Users/NSchiff/Documents/tester/Classes/ViewController.m:29: warning: '...' as arguments.)
+lSLF07#2@64"Compile /Users/NSchiff/Documents/tester/Classes/ViewController.m306410201#306410201#0(538"/Users/NSchiff/Documents/tester/Classes/ViewController.m: In function '-[ViewController viewDidLoad]':/Users/NSchiff/Documents/tester/Classes/ViewController.m:29: warning: 'UIView' may not respond to '-startAnimation'/Users/NSchiff/Documents/tester/Classes/ViewController.m:29: warning: (Messages without a matching method signature/Users/NSchiff/Documents/tester/Classes/ViewController.m:29: warning: will be assumed to return 'id' and accept/Users/NSchiff/Documents/tester/Classes/ViewController.m:29: warning: '...' as arguments.)2(22@45"'UIView' may not respond to '-startAnimation'306410201#103#116#0(6@56"/Users/NSchiff/Documents/tester/Classes/ViewController.m306259244#29#0#29#0#26"'*' may not respond to '*'0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)306410201#219#116#0(6@56"/Users/NSchiff/Documents/tester/Classes/ViewController.m306259244#29#0#29#0#0"0(0#0#56"/Users/NSchiff/Documents/tester/Classes/ViewController.m4300911832#1655"    cd /Users/NSchiff/Documents/tester    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -miphoneos-version-min=3.2 -iquote /Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/tester-generated-files.hmap -I/Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/tester-own-target-headers.hmap -I/Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/tester-all-target-headers.hmap -iquote /Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/tester-project-headers.hmap -F/Users/NSchiff/Documents/tester/build/Debug-iphoneos -I/Users/NSchiff/Documents/tester/build/Debug-iphoneos/include -I/Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/DerivedSources/armv6 -I/Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/DerivedSources -include /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/tester_Prefix-fwygyqduoujagdhbitiptjoqwtfs/tester_Prefix.pch -c /Users/NSchiff/Documents/tester/Classes/ViewController.m -o /Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/Objects-normal/armv6/ViewController.o0#
+
+CCompileC build/tester.build/Debug-iphoneos/tester.build/Objects-normal/armv6/block.o /Users/NSchiff/Documents/tester/Classes/block.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+s306410201.442622
+e306410201.519784
+r1
+xCompileC
+xbuild/tester.build/Debug-iphoneos/tester.build/Objects-normal/armv6/block.o
+x/Users/NSchiff/Documents/tester/Classes/block.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@55"Compile /Users/NSchiff/Documents/tester/Classes/block.m306410201#306410201#0(0"0(0#0#47"/Users/NSchiff/Documents/tester/Classes/block.m4300911832#1637"    cd /Users/NSchiff/Documents/tester    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -miphoneos-version-min=3.2 -iquote /Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/tester-generated-files.hmap -I/Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/tester-own-target-headers.hmap -I/Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/tester-all-target-headers.hmap -iquote /Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/tester-project-headers.hmap -F/Users/NSchiff/Documents/tester/build/Debug-iphoneos -I/Users/NSchiff/Documents/tester/build/Debug-iphoneos/include -I/Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/DerivedSources/armv6 -I/Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/DerivedSources -include /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/tester_Prefix-fwygyqduoujagdhbitiptjoqwtfs/tester_Prefix.pch -c /Users/NSchiff/Documents/tester/Classes/block.m -o /Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/Objects-normal/armv6/block.o0#
 
 CCompileC build/tester.build/Debug-iphoneos/tester.build/Objects-normal/armv6/main.o /Users/NSchiff/Documents/tester/main.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-s302888129.712858
-e302888129.761586
+s306157154.900926
+e306157155.028989
 r1
 xCompileC
 xbuild/tester.build/Debug-iphoneos/tester.build/Objects-normal/armv6/main.o
@@ -357,11 +534,11 @@ xnormal
 xarmv6
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@46"Compile /Users/NSchiff/Documents/tester/main.m302888129#302888129#0(0"0(0#0#38"/Users/NSchiff/Documents/tester/main.m4300911832#1631"    cd /Users/NSchiff/Documents/tester    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk -fvisibility=hidden -gdwarf-2 -miphoneos-version-min=3.1.3 -iquote /Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/tester-generated-files.hmap -I/Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/tester-own-target-headers.hmap -I/Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/tester-all-target-headers.hmap -iquote /Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/tester-project-headers.hmap -F/Users/NSchiff/Documents/tester/build/Debug-iphoneos -I/Users/NSchiff/Documents/tester/build/Debug-iphoneos/include -I/Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/DerivedSources/armv6 -I/Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/DerivedSources -include /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/tester_Prefix-bbpkezfzaljxmjcpywtoiixshosd/tester_Prefix.pch -c /Users/NSchiff/Documents/tester/main.m -o /Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/Objects-normal/armv6/main.o0#
+lSLF07#2@46"Compile /Users/NSchiff/Documents/tester/main.m306157154#306157155#0(0"0(0#0#38"/Users/NSchiff/Documents/tester/main.m4300911832#1627"    cd /Users/NSchiff/Documents/tester    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -miphoneos-version-min=3.2 -iquote /Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/tester-generated-files.hmap -I/Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/tester-own-target-headers.hmap -I/Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/tester-all-target-headers.hmap -iquote /Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/tester-project-headers.hmap -F/Users/NSchiff/Documents/tester/build/Debug-iphoneos -I/Users/NSchiff/Documents/tester/build/Debug-iphoneos/include -I/Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/DerivedSources/armv6 -I/Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/DerivedSources -include /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/tester_Prefix-fwygyqduoujagdhbitiptjoqwtfs/tester_Prefix.pch -c /Users/NSchiff/Documents/tester/main.m -o /Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/Objects-normal/armv6/main.o0#
 
 CCompileC build/tester.build/Debug-iphoneos/tester.build/Objects-normal/armv6/testerAppDelegate.o /Users/NSchiff/Documents/tester/Classes/testerAppDelegate.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-s302888129.714008
-e302888129.788662
+s306410200.147148
+e306410201.220942
 r1
 xCompileC
 xbuild/tester.build/Debug-iphoneos/tester.build/Objects-normal/armv6/testerAppDelegate.o
@@ -370,16 +547,23 @@ xnormal
 xarmv6
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@67"Compile /Users/NSchiff/Documents/tester/Classes/testerAppDelegate.m302888129#302888129#0(0"0(0#0#59"/Users/NSchiff/Documents/tester/Classes/testerAppDelegate.m4300911832#1665"    cd /Users/NSchiff/Documents/tester    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk -fvisibility=hidden -gdwarf-2 -miphoneos-version-min=3.1.3 -iquote /Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/tester-generated-files.hmap -I/Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/tester-own-target-headers.hmap -I/Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/tester-all-target-headers.hmap -iquote /Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/tester-project-headers.hmap -F/Users/NSchiff/Documents/tester/build/Debug-iphoneos -I/Users/NSchiff/Documents/tester/build/Debug-iphoneos/include -I/Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/DerivedSources/armv6 -I/Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/DerivedSources -include /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/tester_Prefix-bbpkezfzaljxmjcpywtoiixshosd/tester_Prefix.pch -c /Users/NSchiff/Documents/tester/Classes/testerAppDelegate.m -o /Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/Objects-normal/armv6/testerAppDelegate.o0#
+lSLF07#2@67"Compile /Users/NSchiff/Documents/tester/Classes/testerAppDelegate.m306410200#306410201#0(0"0(0#0#59"/Users/NSchiff/Documents/tester/Classes/testerAppDelegate.m4300911832#1661"    cd /Users/NSchiff/Documents/tester    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -miphoneos-version-min=3.2 -iquote /Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/tester-generated-files.hmap -I/Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/tester-own-target-headers.hmap -I/Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/tester-all-target-headers.hmap -iquote /Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/tester-project-headers.hmap -F/Users/NSchiff/Documents/tester/build/Debug-iphoneos -I/Users/NSchiff/Documents/tester/build/Debug-iphoneos/include -I/Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/DerivedSources/armv6 -I/Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/DerivedSources -include /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/tester_Prefix-fwygyqduoujagdhbitiptjoqwtfs/tester_Prefix.pch -c /Users/NSchiff/Documents/tester/Classes/testerAppDelegate.m -o /Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/Objects-normal/armv6/testerAppDelegate.o0#
+
+CCompileXIB /Users/NSchiff/Documents/tester/Classes/ViewController.xib
+s306410197.568818
+e306410200.146809
+r1
+xCompileXIB
+x/Users/NSchiff/Documents/tester/Classes/ViewController.xib
+lSLF07#2@37"CompileXIB Classes/ViewController.xib306410197#306410200#0(0"0(0#0#58"/Users/NSchiff/Documents/tester/Classes/ViewController.xib4300911832#460"    cd /Users/NSchiff/Documents/tester    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/NSchiff/Documents/tester/build/Debug-iphoneos/tester.app/ViewController.nib /Users/NSchiff/Documents/tester/Classes/ViewController.xib0#
 
 CCompileXIB /Users/NSchiff/Documents/tester/MainWindow.xib
-s302888128.909885
-e302888129.187255
+s306410197.567788
+e306410200.146393
 r1
 xCompileXIB
 x/Users/NSchiff/Documents/tester/MainWindow.xib
-oCouldn't open shared capabilities memory GSCapabilities (No such file or directory)
-lSLF07#2@25"CompileXIB MainWindow.xib302888128#302888129#0(84"Couldn't open shared capabilities memory GSCapabilities (No such file or directory)0(0#0#46"/Users/NSchiff/Documents/tester/MainWindow.xib4300911832#446"    cd /Users/NSchiff/Documents/tester    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.1.3    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/NSchiff/Documents/tester/build/Debug-iphoneos/tester.app/MainWindow.nib /Users/NSchiff/Documents/tester/MainWindow.xib0#
+lSLF07#2@25"CompileXIB MainWindow.xib306410197#306410200#0(0"0(0#0#46"/Users/NSchiff/Documents/tester/MainWindow.xib4300911832#444"    cd /Users/NSchiff/Documents/tester    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/NSchiff/Documents/tester/build/Debug-iphoneos/tester.app/MainWindow.nib /Users/NSchiff/Documents/tester/MainWindow.xib0#
 
 CCpResource build/Debug-iphoneos/tester.app/ResourceRules.plist /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk/ResourceRules.plist
 s302888128.901419
@@ -389,6 +573,15 @@ xCpResource
 xbuild/Debug-iphoneos/tester.app/ResourceRules.plist
 x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk/ResourceRules.plist
 lSLF07#2@96"Copy /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk/ResourceRules.plist302888128#302888128#0(0"0(0#0#91"/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk/ResourceRules.plist4300911832#467"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk/ResourceRules.plist /Users/NSchiff/Documents/tester/build/Debug-iphoneos/tester.app0#
+
+CCpResource build/Debug-iphoneos/tester.app/ResourceRules.plist /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/ResourceRules.plist
+s306157152.456707
+e306157152.558917
+r1
+xCpResource
+xbuild/Debug-iphoneos/tester.app/ResourceRules.plist
+x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/ResourceRules.plist
+lSLF07#2@94"Copy /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/ResourceRules.plist306157152#306157152#0(0"0(0#0#89"/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/ResourceRules.plist4300911832#465"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/ResourceRules.plist /Users/NSchiff/Documents/tester/build/Debug-iphoneos/tester.app0#
 
 CCpResource build/Debug-iphoneos/tester.app/Shader.fsh Shaders/Shader.fsh
 s302888128.908383
@@ -409,32 +602,32 @@ xShaders/Shader.vsh
 lSLF07#2@23"Copy Shaders/Shader.vsh302888128#302888128#0(0"0(0#0#50"/Users/NSchiff/Documents/tester/Shaders/Shader.vsh4300911832#426"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/NSchiff/Documents/tester/Shaders/Shader.vsh /Users/NSchiff/Documents/tester/build/Debug-iphoneos/tester.app0#
 
 CGenerateDSYMFile /Users/NSchiff/Documents/tester/build/Debug-iphoneos/tester.app.dSYM /Users/NSchiff/Documents/tester/build/Debug-iphoneos/tester.app/tester
-s304940393.558352
-e304940393.661552
+s306411576.775700
+e306411576.793894
 r1
 xGenerateDSYMFile
 x/Users/NSchiff/Documents/tester/build/Debug-iphoneos/tester.app.dSYM
 x/Users/NSchiff/Documents/tester/build/Debug-iphoneos/tester.app/tester
-lSLF07#2@92"GenerateDSYMFile build/Debug-iphoneos/tester.app.dSYM build/Debug-iphoneos/tester.app/tester304940393#304940393#0(0"0(0#0#70"/Users/NSchiff/Documents/tester/build/Debug-iphoneos/tester.app/tester4300911832#338"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/NSchiff/Documents/tester/build/Debug-iphoneos/tester.app/tester -o /Users/NSchiff/Documents/tester/build/Debug-iphoneos/tester.app.dSYM0#
+lSLF07#2@92"GenerateDSYMFile build/Debug-iphoneos/tester.app.dSYM build/Debug-iphoneos/tester.app/tester306411576#306411576#0(0"0(0#0#70"/Users/NSchiff/Documents/tester/build/Debug-iphoneos/tester.app/tester4300911832#338"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/NSchiff/Documents/tester/build/Debug-iphoneos/tester.app/tester -o /Users/NSchiff/Documents/tester/build/Debug-iphoneos/tester.app.dSYM0#
 
 CLd /Users/NSchiff/Documents/tester/build/Debug-iphoneos/tester.app/tester normal armv6
-s304940393.321589
-e304940393.558062
+s306411576.743981
+e306411576.775582
 r1
 xLd
 x/Users/NSchiff/Documents/tester/build/Debug-iphoneos/tester.app/tester
 xnormal
 xarmv6
-lSLF07#2@75"Link /Users/NSchiff/Documents/tester/build/Debug-iphoneos/tester.app/tester304940393#304940393#0(0"0(0#0#0"4300911832#806"    cd /Users/NSchiff/Documents/tester    setenv IPHONEOS_DEPLOYMENT_TARGET 3.1.3    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -arch armv6 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk -L/Users/NSchiff/Documents/tester/build/Debug-iphoneos -F/Users/NSchiff/Documents/tester/build/Debug-iphoneos -filelist /Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/Objects-normal/armv6/tester.LinkFileList -dead_strip -miphoneos-version-min=3.1.3 -framework Foundation -framework UIKit -framework OpenGLES -framework QuartzCore -o /Users/NSchiff/Documents/tester/build/Debug-iphoneos/tester.app/tester0#
+lSLF07#2@75"Link /Users/NSchiff/Documents/tester/build/Debug-iphoneos/tester.app/tester306411576#306411576#0(0"0(0#0#0"4300911832#800"    cd /Users/NSchiff/Documents/tester    setenv IPHONEOS_DEPLOYMENT_TARGET 3.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -arch armv6 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -L/Users/NSchiff/Documents/tester/build/Debug-iphoneos -F/Users/NSchiff/Documents/tester/build/Debug-iphoneos -filelist /Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/Objects-normal/armv6/tester.LinkFileList -dead_strip -miphoneos-version-min=3.2 -framework Foundation -framework UIKit -framework OpenGLES -framework QuartzCore -o /Users/NSchiff/Documents/tester/build/Debug-iphoneos/tester.app/tester0#
 
 CProcessInfoPlistFile /Users/NSchiff/Documents/tester/build/Debug-iphoneos/tester.app/Info.plist tester-Info.plist
-s302888128.902303
-e302888128.905899
+s306410197.544208
+e306410197.567322
 r1
 xProcessInfoPlistFile
 x/Users/NSchiff/Documents/tester/build/Debug-iphoneos/tester.app/Info.plist
 xtester-Info.plist
-lSLF07#2@25"Process tester-Info.plist302888128#302888128#0(0"0(0#0#49"/Users/NSchiff/Documents/tester/tester-Info.plist4300911832#530"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility tester-Info.plist -genpkginfo /Users/NSchiff/Documents/tester/build/Debug-iphoneos/tester.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -resourcerulesfile /Users/NSchiff/Documents/tester/build/Debug-iphoneos/tester.app/ResourceRules.plist -o /Users/NSchiff/Documents/tester/build/Debug-iphoneos/tester.app/Info.plist0#
+lSLF07#2@25"Process tester-Info.plist306410197#306410197#0(0"0(0#0#49"/Users/NSchiff/Documents/tester/tester-Info.plist4300911832#530"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility tester-Info.plist -genpkginfo /Users/NSchiff/Documents/tester/build/Debug-iphoneos/tester.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -resourcerulesfile /Users/NSchiff/Documents/tester/build/Debug-iphoneos/tester.app/ResourceRules.plist -o /Users/NSchiff/Documents/tester/build/Debug-iphoneos/tester.app/Info.plist0#
 
 CProcessPCH /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/tester_Prefix-bbpkezfzaljxmjcpywtoiixshosd/tester_Prefix.pch.gch tester_Prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
 s302888129.187390
@@ -448,6 +641,19 @@ xarmv6
 xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@28"Precompile tester_Prefix.pch302888129#302888129#0(0"0(0#0#49"/Users/NSchiff/Documents/tester/tester_Prefix.pch4300911832#1537"    cd /Users/NSchiff/Documents/tester    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk -fvisibility=hidden -gdwarf-2 -miphoneos-version-min=3.1.3 -iquote /Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/tester-generated-files.hmap -I/Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/tester-own-target-headers.hmap -I/Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/tester-all-target-headers.hmap -iquote /Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/tester-project-headers.hmap -F/Users/NSchiff/Documents/tester/build/Debug-iphoneos -I/Users/NSchiff/Documents/tester/build/Debug-iphoneos/include -I/Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/DerivedSources/armv6 -I/Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/DerivedSources -c /Users/NSchiff/Documents/tester/tester_Prefix.pch -o /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/tester_Prefix-bbpkezfzaljxmjcpywtoiixshosd/tester_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/tester_Prefix-fwygyqduoujagdhbitiptjoqwtfs/tester_Prefix.pch.gch tester_Prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
+s306157153.753547
+e306157154.900736
+r1
+xProcessPCH
+x/var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/tester_Prefix-fwygyqduoujagdhbitiptjoqwtfs/tester_Prefix.pch.gch
+xtester_Prefix.pch
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@28"Precompile tester_Prefix.pch306157153#306157154#0(0"0(0#0#49"/Users/NSchiff/Documents/tester/tester_Prefix.pch4300911832#1533"    cd /Users/NSchiff/Documents/tester    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -miphoneos-version-min=3.2 -iquote /Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/tester-generated-files.hmap -I/Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/tester-own-target-headers.hmap -I/Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/tester-all-target-headers.hmap -iquote /Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/tester-project-headers.hmap -F/Users/NSchiff/Documents/tester/build/Debug-iphoneos -I/Users/NSchiff/Documents/tester/build/Debug-iphoneos/include -I/Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/DerivedSources/armv6 -I/Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/DerivedSources -c /Users/NSchiff/Documents/tester/tester_Prefix.pch -o /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/tester_Prefix-fwygyqduoujagdhbitiptjoqwtfs/tester_Prefix.pch.gch0#
 
 CProcessProductPackaging "/Users/NSchiff/Library/MobileDevice/Provisioning Profiles/5292314F-1909-492C-A7B8-1CE59C4EE045.mobileprovision" /Users/NSchiff/Documents/tester/build/Debug-iphoneos/tester.app/embedded.mobileprovision
 s302888130.005117
@@ -476,11 +682,20 @@ x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk/Entitle
 x/Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/tester.xcent
 lSLF07#2@174"ProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk/Entitlements.plist build/tester.build/Debug-iphoneos/tester.build/tester.xcent302888130#302888130#0(0"0(0#0#91"/Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/tester.xcent4300911832#417"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk/Entitlements.plist -entitlements -format xml -o /Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/tester.xcent0#
 
+CProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/Entitlements.plist /Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/tester.xcent
+s306410202.082272
+e306410202.105085
+r1
+xProcessProductPackaging
+x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/Entitlements.plist
+x/Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/tester.xcent
+lSLF07#2@172"ProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/Entitlements.plist build/tester.build/Debug-iphoneos/tester.build/tester.xcent306410202#306410202#0(0"0(0#0#91"/Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/tester.xcent4300911832#415"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/Entitlements.plist -entitlements -format xml -o /Users/NSchiff/Documents/tester/build/tester.build/Debug-iphoneos/tester.build/tester.xcent0#
+
 CTouch /Users/NSchiff/Documents/tester/build/Debug-iphoneos/tester.app
-s304940393.661777
-e304940393.664672
+s306411576.794089
+e306411576.796735
 r1
 xTouch
 x/Users/NSchiff/Documents/tester/build/Debug-iphoneos/tester.app
-lSLF07#2@69"Touch /Users/NSchiff/Documents/tester/build/Debug-iphoneos/tester.app304940393#304940393#0(0"0(0#0#0"4300911832#249"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/NSchiff/Documents/tester/build/Debug-iphoneos/tester.app0#
+lSLF07#2@69"Touch /Users/NSchiff/Documents/tester/build/Debug-iphoneos/tester.app306411576#306411576#0(0"0(0#0#0"4300911832#249"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/NSchiff/Documents/tester/build/Debug-iphoneos/tester.app0#
 

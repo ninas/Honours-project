@@ -1,0 +1,2 @@
+/Users/NSchiff/Documents/tester/Classes/EAGLView.m: In function '-[EAGLView touchesMoved:withEvent:]':
+/Users/NSchiff/Documents/tester/Classes/EAGLView.m:300: warning: unused variable 'currentMovementPosition'

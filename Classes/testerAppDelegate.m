@@ -7,15 +7,20 @@
 //
 
 #import "testerAppDelegate.h"
-#import "EAGLView.h"
+
 
 @implementation testerAppDelegate
 
 @synthesize window;
-@synthesize glView;
+@synthesize viewController;
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+	[window addSubview:viewController.view];
+	
+    [window makeKeyAndVisible];
+	
     //[glView startAnimation];
     return YES;
 }
@@ -38,8 +43,8 @@
 - (void)dealloc
 {
     [window release];
-    [glView release];
-
+    //[glView release];
+	[viewController release];
     [super dealloc];
 }
 

@@ -7,16 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ViewController.h"
 
-@class EAGLView;
+
 
 @interface testerAppDelegate : NSObject <UIApplicationDelegate> {
     UIWindow *window;
-    EAGLView *glView;
+    //EAGLView *glView;
+	ViewController * viewController;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
-@property (nonatomic, retain) IBOutlet EAGLView *glView;
+@property (nonatomic, retain) IBOutlet ViewController *viewController;
 
 @end
 
