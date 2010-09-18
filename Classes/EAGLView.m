@@ -59,7 +59,7 @@
         animationTimer = nil;
 		blockArray = [[NSMutableArray alloc] init];
 		blockPlace = (block****) malloc(11*sizeof(block***));
-		rotations = [[NSMutableArray alloc] init];
+		//rotations = [[NSMutableArray alloc] init];
 		for (int x=-5; x<6; x++) {
 			blockPlace[x+5] = (block***)malloc(11*sizeof(block**));
 			for (int y=-5; y<6; y++) {
@@ -86,6 +86,9 @@
 		zAxis[0]=0;
 		zAxis[1]=0;
 		zAxis[2] = 1;
+		
+		
+		
 		
 		[renderer setBlockArray:blockArray];
 		
@@ -205,79 +208,6 @@
 - (void) rowLeft{
 	
 	
-	/*block * swap = blockPlace[10][(int)startArray.y+5][10];
-	 int startX = swap.x;
-	 int startY = swap.y;
-	 int startZ = swap.z;
-	 NSLog(@" and swap: (%d, %d, %d)", swap.x, swap.y, swap.z);
-	 for (int i=9; i>=0; i--) {
-	 block * temp = blockPlace[i][(int)startArray.y+5][10];
-	 NSLog(@"In loop: %d   %d", i, (int)(startArray.y+5));
-	 blockPlace[i][(int)startArray.y+5][10] = swap;
-	 NSLog(@" and swap: (%d, %d, %d)", swap.rotX, swap.rotY, swap.rotZ);
-	 NSLog(@" and swap: (%d, %d, %d)", swap.x, swap.y, swap.z);
-	 swap.x = temp.x;
-	 swap.y = temp.y;
-	 swap.z = temp.z;
-	 
-	 swap.rotX = temp.rotX;
-	 swap.rotY = temp.rotY;
-	 swap.rotZ = temp.rotZ;
-	 NSLog(@" and swap: (%d, %d, %d)", swap.rotX, swap.rotY, swap.rotZ);
-	 NSLog(@" and swap: (%d, %d, %d)", swap.x, swap.y, swap.z);
-	 swap = temp;
-	 }
-	 
-	 for (int i=9; i>=0; i--) {
-	 block * temp = blockPlace[0][(int)startArray.y+5][i];
-	 
-	 blockPlace[0][(int)startArray.y+5][i] = swap;
-	 swap.x = temp.x;
-	 swap.y = temp.y;
-	 swap.z = temp.z;
-	 
-	 swap.rotX = temp.rotX;
-	 swap.rotY = temp.rotY;
-	 swap.rotZ = temp.rotZ;
-	 
-	 swap = temp;
-	 }
-	 
-	 for (int i=1; i<=10; i++) {
-	 
-	 block * temp = blockPlace[i][(int)startArray.y+5][0];
-	 
-	 blockPlace[i][(int)startArray.y+5][0] = swap;
-	 swap.x = temp.x;
-	 swap.y = temp.y;
-	 swap.z = temp.z;
-	 
-	 swap.rotX = temp.rotX;
-	 swap.rotY = temp.rotY;
-	 swap.rotZ = temp.rotZ;
-	 
-	 swap = temp;
-	 }
-	 
-	 for (int i=1; i<=10; i++) {
-	 block * temp = blockPlace[10][(int)startArray.y+5][i];
-	 
-	 blockPlace[10][(int)startArray.y+5][i] = swap;
-	 swap.x = temp.x;
-	 swap.y = temp.y;
-	 swap.z = temp.z;
-	 
-	 swap.rotX = temp.rotX;
-	 swap.rotY = temp.rotY;
-	 swap.rotZ = temp.rotZ;
-	 
-	 swap = temp;
-	 }*/
-	
-	/*blockPlace[startX+5][startY+5][startZ+5] = swap;
-	 swap.x = startX;
-	 swap.y = startY;
-	 swap.z = startZ;*/
 	NSLog(@"Swapping");
 	 block * swap = [self getBlock:5 andY:startArray.y andZ:5];
 	 int startX = swap.x;
@@ -333,51 +263,19 @@
 	
 }
 
+
 - (block*) getBlock:(int)x andY:(int)y andZ:(int)z{
 	
 	
 	if (x > 5 || x < -5 || y > 5 || y < -5) {
 		return nil;
 	}
-	
-	int newX = x, newY=y, newZ = z;
-	
-	
-	for (int i=rotations.count-1; i>=0; i--) {
+	int newX = x*xAxis[0] + y*xAxis[1] + z*xAxis[2];
+	int newY = x*yAxis[0] + y*yAxis[1] + z*yAxis[2];	
+	int newZ = x*zAxis[0] + y*zAxis[1] + z*zAxis[2];	
 		
-		newX = x;
-		newY= y;
-		newZ = z;
-		
-		
-		float xAngle = ([[rotations objectAtIndex:i] CGPointValue]).x;
-		float yAngle = ([[rotations objectAtIndex:i] CGPointValue]).y;
-		NSLog(@"Rotating around:  %f %f",xAngle,yAngle);
-		float radianX = xAngle*M_PI/180.0;
-		float radianY = yAngle*M_PI/180.0;
-		
-		if (xAngle > 0 || xAngle < 0) {
-			newX = roundf(z*sinf(radianX) + x*cosf(radianX));
-			newZ = roundf(z*cosf(radianX) - x*sinf(radianX));
-		}
-		
-		if (yAngle > 0 || yAngle < 0) {
-			y = roundf(newY*cosf(radianY) - newZ*sinf(radianY));
-			x = newX;
-			z = roundf(newY*sinf(radianY) + newZ*cosf(radianY));
-		}
-		else {
-			x = newX;
-			y=newY;
-			z=newZ;
-			//NSLog(@"In here");
-		}
-	}
+		return blockPlace[newX+5][newY+5][newZ+5];
 	
-	
-	//NSLog(@"Adjusted positions from (%f, %f, %f) to (%d, %d, %d)",pos.x,pos.y,5.0,x,y,z);
-	return blockPlace[x+5][y+5][z+5];
-	//NSLog(@"Adjusted positions from (%f, %f, %f) to (%d, %d, %d)",xPos,yPos,5.0,x,y,z);
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
@@ -391,23 +289,17 @@
 	
 	startArray.x = roundf((startPos.x - 512)/512*15*1024/768/2.0);
 	startArray.y = roundf((startPos.y- 384)/384*-15/2.0);
-	//NSLog(@"Position:  (%f,%f)",xPos,yPos);
-	NSLog(@"StartArray: (%f, %f)",startArray.x, startArray.y);
-	//[[blockArray objectAtIndex:0] setPosition:xPos andY:yPos andZ:0];
+	
 }
 
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event;
 {
 	CGPoint currentMovementPosition = [[touches anyObject] locationInView:self];
-	//[renderer renderByRotatingAroundX:(currentMovementPosition.x - lastPos.x) rotatingAroundY:(currentMovementPosition.y - lastPos.y)];
-	//lastPos = currentMovementPosition;
-}
+	}
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event 
 {
-	//NSMutableSet *remainingTouches = [[[event touchesForView:self] mutableCopy] autorelease];
-    //[remainingTouches minusSet:touches];
-	//[renderer renderByRotatingAroundX:(startPos.x - lastPos.x)/320.0*180.0 rotatingAroundY:(startPos.y - lastPos.y)/480.0*180.0];
+	
 	lastPos = [[touches anyObject] locationInView:self];
 	
 	block * tester = blockPlace[0][0][0];
@@ -485,46 +377,20 @@
 		NSLog(@"                     Z axis:  %d  %d  %d",zAxis[0], zAxis[1], zAxis[2]);
 		int z = 0;
 		
-		xTotal += -x;
-		yTotal += -y;
-		
-		
-		//NSLog(@"angle:   %f", angle);
-		NSLog(@"x:  %f   y:%f   z:%d",x,y,z);
 		
 		lastDist = CGPointMake(x, y);
 		counter=0;
 		xRot=0.0;
 		yRot=0.0;
-		
-		
-		
-		
-		if (xTotal >= 360) {
-			xTotal -= 360;
-		}
-		else if (xTotal <= -360){
-			xTotal+=360;
-		}
-		if (yTotal >= 360 ) {
-			yTotal -=360;
-		}
-		else if (yTotal <= -360){
-			yTotal+=360;
-		}
-		[rotations addObject:[NSValue valueWithCGPoint:CGPointMake(-x, -y)]];
-		/*for (int i=0; i<blockArray.count; i++) {
-		 [[blockArray objectAtIndex:i] rotatePos:x andY:-y];
-		 }*/
+				
 	}
 	else{
 		[self rowLeft];
 		block * temp = [self getBlock:(int)startArray.x andY:startArray.y andZ:5];// [(int)startArray.x+5][(int)startArray.y+5][10];
+		
+		//		block * temp = blockPlace[(int)startArray.x+5][(int)startArray.y+5][10];
 		NSLog(@"Block touched: (%d, %d, %d)      from (%f  %f  %d)",temp.x, temp.y, temp.z,startArray.x, startArray.y, 5);
 	}
-	NSLog(@"xTotal %f    yTotal %f   zTotal %f", xTotal, yTotal,zTotal);
-	//[renderer renderByRotatingAroundX:(lastPos.x - startPos.x) rotatingAroundY:(lastPos.y - startPos.y)];
-	//[renderer renderByRotatingAroundX:(90) rotatingAroundY:(90)];
 	
 	
 }
@@ -535,20 +401,7 @@
     [self touchesEnded:touches withEvent:event];
 }
 
-/*- (void) calcRotation {
- float hypot = sqrtf(powf(startPos.x - endPos.x,2.0f) + powf(startPos.y - endPos.y, 2));
- float yLen = endPos.y - startPos.y;
- float xLen = endPos.x - startPos.x;
- float mover = 0.0f;
- 
- mover = hypot/(sqrtf(320.0f*320.0f+480.0f*480.0f))*360.0f;
- //maxDist = (xLen/320.0f)*180.0f;
- NSLog(@"Hypot: %f    x: %f     y: %f", mover, maxDist, yLen);
- [renderer setVals:mover andRot:((float)abs(xLen))/hypot andDist:(xLen/320.0f)*180.0f andDist2:(yLen/480.0f)*180.0f];
- mover-=0.1f;
- [self drawView:nil];
- 
- }*/
+
 
 
 @end

@@ -13,7 +13,7 @@
 	int x,y,z;
 	int rotX, rotY, rotZ;
 	int colour;
-	block * neighbours [8];
+	
 	
 }
 

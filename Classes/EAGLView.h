@@ -48,7 +48,13 @@
 	int yAxis [3];
 	int xAxis [3];
 	int zAxis[3];
-	NSMutableArray * rotations;
+	
+	
+	
+	
+	
+	
+	
 }
 
 @property (readonly, nonatomic, getter=isAnimating) BOOL animating;
@@ -62,6 +68,7 @@
 - (void)drawView:(id)sender;
 - (void)rowLeft;
 - (block *) getBlock:(int)x andY:(int)y andZ:(int)z;
+
 //- (void) calcRotation;
 
 @end
