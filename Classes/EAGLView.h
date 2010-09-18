@@ -67,6 +67,13 @@
 - (void)stopAnimation;
 - (void)drawView:(id)sender;
 - (void)rowLeft;
+
+- (void)rowRight;
+- (void) columnUp;
+- (void) columnDown;
+- (void) zForward;
+- (void) zBackward;
+- (void) swapBlocks:(int)direction;
 - (block *) getBlock:(int)x andY:(int)y andZ:(int)z;
 
 //- (void) calcRotation;
