@@ -38,11 +38,7 @@
         eaglLayer.opaque = TRUE;
         eaglLayer.drawableProperties = [NSDictionary dictionaryWithObjectsAndKeys:
                                         [NSNumber numberWithBool:FALSE], kEAGLDrawablePropertyRetainedBacking, kEAGLColorFormatRGBA8, kEAGLDrawablePropertyColorFormat, nil];
-		NSLog(@"pooooo");
-        /*renderer = [[ES2Renderer alloc] init];
-		 
-		 if (!renderer)
-		 {*/
+		// OpenGL        
 		renderer = [[ES1Renderer alloc] init];
 		
 		if (!renderer)
@@ -50,16 +46,18 @@
 			[self release];
 			return nil;
 		}
-        //}
-		
+        
+		// Game loop variables
         animating = FALSE;
         displayLinkSupported = FALSE;
         animationFrameInterval = 1;
         displayLink = nil;
         animationTimer = nil;
+		
+		// Init 
 		blockArray = [[NSMutableArray alloc] init];
 		blockPlace = (block****) malloc(11*sizeof(block***));
-		//rotations = [[NSMutableArray alloc] init];
+		
 		for (int x=-5; x<6; x++) {
 			blockPlace[x+5] = (block***)malloc(11*sizeof(block**));
 			for (int y=-5; y<6; y++) {
@@ -72,9 +70,11 @@
 				}
 			}
 		}
-		xTotal = 0;
-		yTotal = 0;
-		zTotal = 0;
+		
+		counter = 0;
+		totalCounter = 0;
+		
+		// Axes for rotations
 		yAxis[0] = 0;
 		yAxis[1] = 1;
 		yAxis [2] = 0;
@@ -86,9 +86,6 @@
 		zAxis[0]=0;
 		zAxis[1]=0;
 		zAxis[2] = 1;
-		
-		
-		
 		
 		[renderer setBlockArray:blockArray];
 		
@@ -103,12 +100,13 @@
     return self;
 }
 
+/*
+ * Game loop
+ */
 - (void)drawView:(id)sender
 {
-    //[renderer renderByRotatingAroundX:0 rotatingAroundY:0];
-	//[renderer renderByRotatingAroundX:14 rotatingAroundY:14];
-	xRot = lastDist.x/40;
-	yRot = lastDist.y/40;
+    float xRot = lastDist.x/40;
+	float yRot = lastDist.y/40;
 	
 	if (xRot != 0 || yRot !=0) {
 		counter+=1;
@@ -119,6 +117,7 @@
 		lastDist.x=0;
 		lastDist.y=0;
 		counter=0;
+		totalCounter-=40;
 		xRot=0.0;
 		yRot=0.0;
 	}
@@ -205,68 +204,69 @@
     [super dealloc];
 }
 
+/*
+ * Rotates a row left
+ */
 - (void) rowLeft{
 	
+	block * swap = [self getBlock:5 andY:startArray.y andZ:5];
+	int startX = swap.x;
+	int startY = swap.y;
+	int startZ = swap.z;
 	
-	NSLog(@"Swapping");
-	 block * swap = [self getBlock:5 andY:startArray.y andZ:5];
-	 int startX = swap.x;
-	 int startY = swap.y;
-	 int startZ = swap.z;
-	 
-	 
-	 for (int j=4; j>=-5; j--) {
-	 block * temp = [self getBlock:j andY:startArray.y andZ:5];
-	 blockPlace[temp.x+5][temp.y+5][temp.z+5] = swap;
-	 swap.x = temp.x;
-	 swap.y = temp.y;
-	 swap.z = temp.z;
-	 
-	 swap = temp;
-	 }
-	 
-	 for (int j=4; j>=-5; j--) {
-	 block * temp = [self getBlock:-5 andY:startArray.y andZ:j];
-	 blockPlace[temp.x+5][temp.y+5][temp.z+5] = swap;
-	 swap.x = temp.x;
-	 swap.y = temp.y;
-	 swap.z = temp.z;
-	 
-	 swap = temp;
-	 }
-	 
-	 for (int j=-4; j<=5; j++) {
-	 block * temp = [self getBlock:j andY:startArray.y andZ:-5];
-	 blockPlace[temp.x+5][temp.y+5][temp.z+5] = swap;
-	 swap.x = temp.x;
-	 swap.y = temp.y;
-	 swap.z = temp.z;
-	 
-	 swap = temp;
-	 }
-	 
-	 for (int j=-4; j<=5; j++) {
-	 block * temp = [self getBlock:5 andY:startArray.y andZ:j];
-	 blockPlace[temp.x+5][temp.y+5][temp.z+5] = swap;
-	 swap.x = temp.x;
-	 swap.y = temp.y;
-	 swap.z = temp.z;
-	 
-	 swap = temp;
-	 }
-	 
-	 blockPlace[startX+5][startY+5][startZ+5] = swap;
-	 swap.x = startX;
-	 swap.y = startY;
-	 swap.z = startZ;
-	 NSLog(@"start pos:  (%d, %d, %d)",swap.x,swap.y,swap.z);	
 	
+	for (int j=4; j>=-5; j--) {
+		block * temp = [self getBlock:j andY:startArray.y andZ:5];
+		blockPlace[temp.x+5][temp.y+5][temp.z+5] = swap;
+		swap.x = temp.x;
+		swap.y = temp.y;
+		swap.z = temp.z;
+		
+		swap = temp;
+	}
+	
+	for (int j=4; j>=-5; j--) {
+		block * temp = [self getBlock:-5 andY:startArray.y andZ:j];
+		blockPlace[temp.x+5][temp.y+5][temp.z+5] = swap;
+		swap.x = temp.x;
+		swap.y = temp.y;
+		swap.z = temp.z;
+		
+		swap = temp;
+	}
+	
+	for (int j=-4; j<=5; j++) {
+		block * temp = [self getBlock:j andY:startArray.y andZ:-5];
+		blockPlace[temp.x+5][temp.y+5][temp.z+5] = swap;
+		swap.x = temp.x;
+		swap.y = temp.y;
+		swap.z = temp.z;
+		
+		swap = temp;
+	}
+	
+	for (int j=-4; j<=4; j++) {
+		block * temp = [self getBlock:5 andY:startArray.y andZ:j];
+		blockPlace[temp.x+5][temp.y+5][temp.z+5] = swap;
+		swap.x = temp.x;
+		swap.y = temp.y;
+		swap.z = temp.z;
+		
+		swap = temp;
+	}
+	
+	blockPlace[startX+5][startY+5][startZ+5] = swap;
+	swap.x = startX;
+	swap.y = startY;
+	swap.z = startZ;
+		
 }
 
+/*
+ * Rotates a row right
+ */
 - (void) rowRight{
 	
-	
-	NSLog(@"Swapping");
 	block * swap = [self getBlock:-5 andY:startArray.y andZ:5];
 	int startX = swap.x;
 	int startY = swap.y;
@@ -303,7 +303,7 @@
 		swap = temp;
 	}
 	
-	for (int j=4; j>=5; j--) {
+	for (int j=4; j>=-4; j--) {
 		block * temp = [self getBlock:5 andY:startArray.y andZ:j];
 		blockPlace[temp.x+5][temp.y+5][temp.z+5] = swap;
 		swap.x = temp.x;
@@ -317,14 +317,13 @@
 	swap.x = startX;
 	swap.y = startY;
 	swap.z = startZ;
-	NSLog(@"start pos:  (%d, %d, %d)",swap.x,swap.y,swap.z);	
-	
 }
 
+/*
+ * Rotates column up
+ */
 - (void) columnUp{
 	
-	
-	NSLog(@"Swapping");
 	block * swap = [self getBlock:startArray.x andY:-5 andZ:5];
 	int startX = swap.x;
 	int startY = swap.y;
@@ -361,7 +360,7 @@
 		swap = temp;
 	}
 	
-	for (int j=-4; j<=5; j++) {
+	for (int j=-4; j<=4; j++) {
 		block * temp = [self getBlock:startArray.x andY:-5 andZ:j];
 		blockPlace[temp.x+5][temp.y+5][temp.z+5] = swap;
 		swap.x = temp.x;
@@ -375,14 +374,14 @@
 	swap.x = startX;
 	swap.y = startY;
 	swap.z = startZ;
-	NSLog(@"start pos:  (%d, %d, %d)",swap.x,swap.y,swap.z);	
 	
 }
 
+/*
+ * Rotates column down
+ */
 - (void) columnDown{
 	
-	
-	NSLog(@"Swapping");
 	block * swap = [self getBlock:startArray.x andY:5 andZ:5];
 	int startX = swap.x;
 	int startY = swap.y;
@@ -419,7 +418,7 @@
 		swap = temp;
 	}
 	
-	for (int j=4; j>=-5; j--) {
+	for (int j=4; j>=-4; j--) {
 		block * temp = [self getBlock:startArray.x andY:-5 andZ:j];
 		blockPlace[temp.x+5][temp.y+5][temp.z+5] = swap;
 		swap.x = temp.x;
@@ -433,21 +432,21 @@
 	swap.x = startX;
 	swap.y = startY;
 	swap.z = startZ;
-	NSLog(@"start pos:  (%d, %d, %d)",swap.x,swap.y,swap.z);	
 	
 }
 
+/*
+ * Moves blocks forward along z. Frontmost block is wrapped around to the back
+ */
 - (void) zForward{
 	
-	
-	NSLog(@"Swapping");
 	block * swap = [self getBlock:startArray.x andY:startArray.y andZ:-5];
 	int startX = swap.x;
 	int startY = swap.y;
 	int startZ = swap.z;
 	
 	
-	for (int j=-4; j<=5; j++) {
+	for (int j=-4; j<=4; j++) {
 		block * temp = [self getBlock:startArray.x andY:startArray.y andZ:j];
 		blockPlace[temp.x+5][temp.y+5][temp.z+5] = swap;
 		swap.x = temp.x;
@@ -461,21 +460,21 @@
 	swap.x = startX;
 	swap.y = startY;
 	swap.z = startZ;
-	NSLog(@"start pos:  (%d, %d, %d)",swap.x,swap.y,swap.z);	
 	
 }
 
+/*
+ * Moves blocks backward along z. Backmost block is wrapped around to the front
+ */
 - (void) zBackward{
 	
-	
-	NSLog(@"Swapping");
 	block * swap = [self getBlock:startArray.x andY:startArray.y andZ:5];
 	int startX = swap.x;
 	int startY = swap.y;
 	int startZ = swap.z;
 	
 	
-	for (int j=4; j>=-5; j--) {
+	for (int j=4; j>=-4; j--) {
 		block * temp = [self getBlock:startArray.x andY:startArray.y andZ:j];
 		blockPlace[temp.x+5][temp.y+5][temp.z+5] = swap;
 		swap.x = temp.x;
@@ -489,15 +488,18 @@
 	swap.x = startX;
 	swap.y = startY;
 	swap.z = startZ;
-	NSLog(@"start pos:  (%d, %d, %d)",swap.x,swap.y,swap.z);	
 	
 }
 
+/*
+ * Swaps to blocks with each other
+ * direction: specifies which direction to swap in
+ */
 - (void) swapBlocks:(int)direction{
 	block * swap = [self getBlock:startArray.x andY:startArray.y andZ:5];
 	block * second;
-	// swap left
-	if (direction == 0) {
+	
+	if (direction == 0) { // left
 		int x = startArray.x - 1;
 		int z = 5;
 		if (x < -5) {
@@ -534,19 +536,21 @@
 		second = [self getBlock:startArray.x andY:y andZ:z];
 	}
 	/*else if (direction == 4) { // forward
-		int y = startArray.y - 1;
-		int z = 5;
-		if (y < -5) {
-			y = -5;
-			z = 4;
-		}
-		second = [self getBlock:startArray.x andY:y andZ:z];
-	}*/
+	 int y = startArray.y - 1;
+	 int z = 5;
+	 if (y < -5) {
+	 y = -5;
+	 z = 4;
+	 }
+	 second = [self getBlock:startArray.x andY:y andZ:z];
+	 }*/
 	
 	//TODO: add for z
 }
 
-
+/*
+ * Determines block position within array (as cube gets rotated)
+ */
 - (block*) getBlock:(int)x andY:(int)y andZ:(int)z{
 	
 	
@@ -556,10 +560,12 @@
 	int newX = x*xAxis[0] + y*xAxis[1] + z*xAxis[2];
 	int newY = x*yAxis[0] + y*yAxis[1] + z*yAxis[2];	
 	int newZ = x*zAxis[0] + y*zAxis[1] + z*zAxis[2];	
-		
-		return blockPlace[newX+5][newY+5][newZ+5];
+	
+	return blockPlace[newX+5][newY+5][newZ+5];
 	
 }
+
+/* ----------------------------------- These methods will be moved to feature extraction ----------------------------------- */
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
@@ -578,7 +584,7 @@
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event;
 {
 	CGPoint currentMovementPosition = [[touches anyObject] locationInView:self];
-	}
+}
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event 
 {
@@ -662,13 +668,13 @@
 		
 		
 		lastDist = CGPointMake(x, y);
-		counter=0;
-		xRot=0.0;
-		yRot=0.0;
-				
+		
+		totalCounter+=40;
+		
+		
 	}
 	else{
-		[self zForward];
+		[self rowLeft];
 		block * temp = [self getBlock:(int)startArray.x andY:startArray.y andZ:5];// [(int)startArray.x+5][(int)startArray.y+5][10];
 		
 		//		block * temp = blockPlace[(int)startArray.x+5][(int)startArray.y+5][10];

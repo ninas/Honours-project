@@ -11,20 +11,17 @@
 
 @interface block : NSObject {
 	int x,y,z;
-	int rotX, rotY, rotZ;
+	
 	int colour;
 	
 	
 }
 
 - (void) setPosition:(int)tempX andY:(int)tempY andZ:(int)tempZ;
-- (void) rotatePos:(float)xRot andY:(float)yRot;
-- (void) moveRow:(int)minX andY:(int)minY andZ:(int)minZ;
+
 @property int x;
 @property int y;
 @property int z;
-@property int rotX;
-@property int rotY;
-@property int rotZ;
+
 @property int colour;
 @end

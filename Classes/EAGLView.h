@@ -38,13 +38,10 @@
 	block **** blockPlace;
 	CGPoint  lastDist;
 	float counter;
-	float xRot;
-	float yRot;
+	int totalCounter;
 	CGPoint startArray;
 	
-	float xTotal;
-	float yTotal;
-	float zTotal;
+	
 	int yAxis [3];
 	int xAxis [3];
 	int zAxis[3];
@@ -74,6 +71,7 @@
 - (void) zForward;
 - (void) zBackward;
 - (void) swapBlocks:(int)direction;
+//- (void) removeBlocks;
 - (block *) getBlock:(int)x andY:(int)y andZ:(int)z;
 
 //- (void) calcRotation;
