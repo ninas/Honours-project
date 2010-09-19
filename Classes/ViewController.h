@@ -7,10 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GestureStateMachine.h"
+#import "recognition.h"
 
 @class EAGLView;
 @interface ViewController : UIViewController {
 	EAGLView * glView;
+	
+	
 }
+
 @property (nonatomic, retain) IBOutlet EAGLView * glView;
+
+
 @end

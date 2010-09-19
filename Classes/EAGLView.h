@@ -11,6 +11,10 @@
 
 #import "ES1Renderer.h"
 #import "block.h"
+#import "GameMechanics.h"
+#import "GestureStateMachine.h"
+#import "recognition.h"
+
 
 // This class wraps the CAEAGLLayer from CoreAnimation into a convenient UIView subclass.
 // The view content is basically an EAGL surface you render your OpenGL scene into.
@@ -31,22 +35,45 @@
     id displayLink;
     NSTimer *animationTimer;
 	
-	CGPoint startPos;
-	CGPoint endPos;
 	float maxDist;
-	NSMutableArray * blockArray;
-	block **** blockPlace;
+	//NSMutableArray * blockArray;
+	
 	CGPoint  lastDist;
 	float counter;
 	int totalCounter;
-	CGPoint startArray;
+	
+	GameMechanics * mechanics;
 	
 	
-	int yAxis [3];
-	int xAxis [3];
-	int zAxis[3];
+		
+	/*** For drawing ***/
+	// Holds all points recieved
+	NSMutableArray *touchesArray;
+	// Holds features
+	NSMutableArray * directionArray;
+    
+    
+	recognition * recognition1;
+	recognition * recognition2;
+	recognition * recognition3;
+    
+	UITouch * touch1;
+	UITouch * touch2;
+	UITouch * touch3;
+    
+	int numTouches;
+    
+	NSMutableArray * packed1;
+	NSMutableArray * packed2;
+	NSMutableArray * packed3;
+    
+	BOOL ended1;
+	BOOL ended2;
+	BOOL ended3;
+    
+	int endCount;
 	
-	
+	GestureStateMachine *stateMachine;
 	
 	
 	
@@ -56,24 +83,12 @@
 
 @property (readonly, nonatomic, getter=isAnimating) BOOL animating;
 @property (nonatomic) NSInteger animationFrameInterval;
-@property (nonatomic) CGPoint startPos;
-@property (nonatomic) CGPoint endPos;
+
 @property (nonatomic) float maxDist;
+@property (nonatomic, retain) NSMutableArray *touchesArray;
 
 - (void)startAnimation;
 - (void)stopAnimation;
 - (void)drawView:(id)sender;
-- (void)rowLeft;
-
-- (void)rowRight;
-- (void) columnUp;
-- (void) columnDown;
-- (void) zForward;
-- (void) zBackward;
-- (void) swapBlocks:(int)direction;
-//- (void) removeBlocks;
-- (block *) getBlock:(int)x andY:(int)y andZ:(int)z;
-
-//- (void) calcRotation;
 
 @end

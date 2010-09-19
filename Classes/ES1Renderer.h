@@ -33,6 +33,7 @@
 	
 	BOOL check;
 	float blockSize;
+	NSMutableArray * touchesArray;
 @public
 	/*float rotationAngleX;
 	float rotationAngleY;
@@ -58,4 +59,5 @@
 - (void)renderByRotatingAroundX:(float)xRotation rotatingAroundY:(float)yRotation;
 - (void)convert3DTransform:(CATransform3D *)transform3D toMatrix:(GLfloat *)matrix;
 - (void) setBlockArray:(NSMutableArray*)array;
+- (void) setTouchesArray:(NSMutableArray*)touches;
 @end

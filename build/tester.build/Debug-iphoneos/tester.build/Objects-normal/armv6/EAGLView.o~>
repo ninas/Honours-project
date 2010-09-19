@@ -1,6 +1,0 @@
-/Users/NSchiff/Documents/tester/Classes/EAGLView.m: In function '-[EAGLView swapBlocks:]':
-/Users/NSchiff/Documents/tester/Classes/EAGLView.m:496: warning: unused variable 'swap'
-/Users/NSchiff/Documents/tester/Classes/EAGLView.m: In function '-[EAGLView touchesMoved:withEvent:]':
-/Users/NSchiff/Documents/tester/Classes/EAGLView.m:579: warning: unused variable 'currentMovementPosition'
-/Users/NSchiff/Documents/tester/Classes/EAGLView.m: In function '-[EAGLView touchesEnded:withEvent:]':
-/Users/NSchiff/Documents/tester/Classes/EAGLView.m:660: warning: unused variable 'z'

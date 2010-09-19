@@ -75,6 +75,10 @@
 	blocks = array;
 	NSLog(@"Array set    %d", blocks.count);
 }
+
+- (void) setTouchesArray:(NSMutableArray*)touches{
+	touchesArray = touches;
+}
 /*
  * Render function
  */
@@ -244,7 +248,51 @@
 		glDrawElements(GL_TRIANGLE_STRIP, 14, GL_UNSIGNED_SHORT, cubeIndices);
 		
 	}
+	glDisableClientState(GL_VERTEX_ARRAY);
+	glDisableClientState(GL_COLOR_ARRAY);
 	
+	NSMutableArray * drawingArray;
+	/*draw user interactions */
+    for (int i = 0; i < 3 ; i++){
+        
+        drawingArray = [touchesArray objectAtIndex:i];
+        
+        if ([drawingArray count] > 0){
+			//NSLog(@"In     %d", drawingArray.count);
+			for (int i = 0; i < drawingArray.count; i++){
+                float interactionPoints[[drawingArray count]*2];
+                GLubyte interactionColors[[drawingArray count]*4];
+                for (int i = 0; i < [drawingArray count]; i++){
+                    CGPoint pt = [[drawingArray objectAtIndex:(NSUInteger)i] CGPointValue];
+					
+					
+					
+					interactionPoints[i*2] = (pt.x - 512)/512*15*1024/768;
+					interactionPoints[i * 2 +1] = (pt.y- 384)/384*-15;
+					
+                    
+                    interactionColors[i*4]      = 255;
+                    interactionColors[i*4 + 1]  = 255;
+                    interactionColors[i*4 + 2]  = 255;
+                    interactionColors[i*4 + 3]  = 255;
+                }
+                glLoadIdentity();
+                glTranslatef(0, 0,15);
+               
+                glLineWidth(20);                
+                glVertexPointer(2, GL_FLOAT, 0, interactionPoints);
+                glEnableClientState(GL_VERTEX_ARRAY);
+                glColorPointer(4, GL_UNSIGNED_BYTE, 0, interactionColors);
+                 glEnableClientState(GL_COLOR_ARRAY);
+                
+                
+                glDrawArrays(GL_LINE_STRIP, 0, [drawingArray count]);      
+                
+                glDisableClientState(GL_VERTEX_ARRAY);
+                glDisableClientState(GL_COLOR_ARRAY);
+			}
+        }
+    }
 	
 	glBindRenderbufferOES(GL_RENDERBUFFER_OES, colorRenderbuffer);
 	[context presentRenderbuffer:GL_RENDERBUFFER_OES];
