@@ -26,12 +26,17 @@ init
 		current = NULL;
         
         // Initialization code
-        [self canReadGestureFile:@"spiralout"];         
-        [self canReadGestureFile:@"2down"];
-        [self canReadGestureFile:@"3down"];           
-		[self canReadGestureFile:@"z"];
-        [self canReadGestureFile:@"v"];
-        [self canReadGestureFile:@"u"];
+		[self canReadGestureFile:@"right"];		
+		[self canReadGestureFile:@"left"];	
+		[self canReadGestureFile:@"up"];	
+		[self canReadGestureFile:@"down"];	
+        //[self canReadGestureFile:@"spiralout"];         
+        //[self canReadGestureFile:@"2down"];
+        //[self canReadGestureFile:@"3down"];           
+        //[self canReadGestureFile:@"v"];
+
+
+        //[self canReadGestureFile:@"u"];
         
         
 		
@@ -143,16 +148,16 @@ print_gestures: (StateMachineNode*) node
     int touches = [node getTouches];
     int numAngles = [node getNumAngles];
     for (int i = 0; i < touches * numAngles; i+=touches){
-        //NSLog(@"touches: %d", touches);
+        NSLog(@"touches: %d", touches);
         for (int j = 0; j < touches; j++){
-            //NSLog(@"angles: %f", angles[i+j]);
+            NSLog(@"angles: %f", angles[i+j]);
         }
     }
     if ([node getClosure]){
-        //NSLog(@"Node: %s [CLOSURE]", [node id_ch]);        
+        NSLog(@"Node: %s [CLOSURE]", [node id_ch]);        
     }
     
-	//NSLog(@"Amount of children: %d", [[node getChildren] count]);
+	NSLog(@"Amount of children: %d", [[node getChildren] count]);
     
     
 	for (int i = 0; i < [[node getChildren] count]; i++){

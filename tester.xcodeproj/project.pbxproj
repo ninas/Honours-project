@@ -12,10 +12,13 @@
 		0F93857B124658BE00C3AB0A /* StateMachineNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F938579124658BE00C3AB0A /* StateMachineNode.m */; };
 		0F93858512465A6100C3AB0A /* GameMechanics.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F93858412465A6100C3AB0A /* GameMechanics.m */; };
 		0F9385BA12465F5C00C3AB0A /* v.gesture in Resources */ = {isa = PBXBuildFile; fileRef = 0F9385B812465F5C00C3AB0A /* v.gesture */; };
-		0F9385BB12465F5C00C3AB0A /* z.gesture in Resources */ = {isa = PBXBuildFile; fileRef = 0F9385B912465F5C00C3AB0A /* z.gesture */; };
 		0F93868412466B9500C3AB0A /* 2down.gesture in Resources */ = {isa = PBXBuildFile; fileRef = 0F93868112466B9500C3AB0A /* 2down.gesture */; };
 		0F93868512466B9500C3AB0A /* 3down.gesture in Resources */ = {isa = PBXBuildFile; fileRef = 0F93868212466B9500C3AB0A /* 3down.gesture */; };
 		0F93868612466B9500C3AB0A /* spiralout.gesture in Resources */ = {isa = PBXBuildFile; fileRef = 0F93868312466B9500C3AB0A /* spiralout.gesture */; };
+		0F9386B4124677C600C3AB0A /* left.gesture in Resources */ = {isa = PBXBuildFile; fileRef = 0F9386B3124677C200C3AB0A /* left.gesture */; };
+		0F9386E012467D4E00C3AB0A /* right.gesture in Resources */ = {isa = PBXBuildFile; fileRef = 0F9386DA12467CB000C3AB0A /* right.gesture */; };
+		0F938710124680DC00C3AB0A /* up.gesture in Resources */ = {isa = PBXBuildFile; fileRef = 0F93870F124680DA00C3AB0A /* up.gesture */; };
+		0F93871B124681A100C3AB0A /* down.gesture in Resources */ = {isa = PBXBuildFile; fileRef = 0F938711124680F300C3AB0A /* down.gesture */; };
 		0FEA949E122D105D007FA78C /* block.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEA949D122D105D007FA78C /* block.m */; };
 		0FEAA1B512412152007FA78C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEAA1B312412152007FA78C /* ViewController.m */; };
 		0FEAA1B612412152007FA78C /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FEAA1B412412152007FA78C /* ViewController.xib */; };
@@ -43,10 +46,13 @@
 		0F93858312465A6100C3AB0A /* GameMechanics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameMechanics.h; sourceTree = "<group>"; };
 		0F93858412465A6100C3AB0A /* GameMechanics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameMechanics.m; sourceTree = "<group>"; };
 		0F9385B812465F5C00C3AB0A /* v.gesture */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = v.gesture; sourceTree = "<group>"; };
-		0F9385B912465F5C00C3AB0A /* z.gesture */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = z.gesture; sourceTree = "<group>"; };
 		0F93868112466B9500C3AB0A /* 2down.gesture */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 2down.gesture; sourceTree = "<group>"; };
 		0F93868212466B9500C3AB0A /* 3down.gesture */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 3down.gesture; sourceTree = "<group>"; };
 		0F93868312466B9500C3AB0A /* spiralout.gesture */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = spiralout.gesture; sourceTree = "<group>"; };
+		0F9386B3124677C200C3AB0A /* left.gesture */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = left.gesture; sourceTree = "<group>"; };
+		0F9386DA12467CB000C3AB0A /* right.gesture */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = right.gesture; sourceTree = "<group>"; };
+		0F93870F124680DA00C3AB0A /* up.gesture */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = up.gesture; sourceTree = "<group>"; };
+		0F938711124680F300C3AB0A /* down.gesture */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = down.gesture; sourceTree = "<group>"; };
 		0FEA949C122D105D007FA78C /* block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = block.h; sourceTree = "<group>"; };
 		0FEA949D122D105D007FA78C /* block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = block.m; sourceTree = "<group>"; };
 		0FEAA1B212412152007FA78C /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -163,10 +169,13 @@
 				0F93868212466B9500C3AB0A /* 3down.gesture */,
 				0F93868312466B9500C3AB0A /* spiralout.gesture */,
 				0F9385B812465F5C00C3AB0A /* v.gesture */,
-				0F9385B912465F5C00C3AB0A /* z.gesture */,
 				0FEAA1B412412152007FA78C /* ViewController.xib */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* tester-Info.plist */,
+				0F9386B3124677C200C3AB0A /* left.gesture */,
+				0F9386DA12467CB000C3AB0A /* right.gesture */,
+				0F93870F124680DA00C3AB0A /* up.gesture */,
+				0F938711124680F300C3AB0A /* down.gesture */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -229,10 +238,13 @@
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
 				0FEAA1B612412152007FA78C /* ViewController.xib in Resources */,
 				0F9385BA12465F5C00C3AB0A /* v.gesture in Resources */,
-				0F9385BB12465F5C00C3AB0A /* z.gesture in Resources */,
 				0F93868412466B9500C3AB0A /* 2down.gesture in Resources */,
 				0F93868512466B9500C3AB0A /* 3down.gesture in Resources */,
 				0F93868612466B9500C3AB0A /* spiralout.gesture in Resources */,
+				0F9386B4124677C600C3AB0A /* left.gesture in Resources */,
+				0F9386E012467D4E00C3AB0A /* right.gesture in Resources */,
+				0F938710124680DC00C3AB0A /* up.gesture in Resources */,
+				0F93871B124681A100C3AB0A /* down.gesture in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -57,7 +57,7 @@
 		//blockArray = [[NSMutableArray alloc] init];
 		//blockPlace = (block****) malloc(11*sizeof(block***));
 		
-				
+		
 		counter = 0;
 		totalCounter = 0;
 		
@@ -224,127 +224,127 @@
 /* ----------------------------------- These methods will be moved to feature extraction ----------------------------------- */
 
 /*- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
-{
-    NSMutableSet *currentTouches = [[[event touchesForView:self] mutableCopy] autorelease];
-    [currentTouches minusSet:touches];
-	
-	// New touches are not yet included in the current touches for the view
-	startPos = [[touches anyObject] locationInView:self];
-	//[[blockArray objectAtIndex:0] setPosition:(startPos.x-160)/160 andY:(startPos.y-240)/240 andZ:0];
-	
-	startArray.x = roundf((startPos.x - 512)/512*15*1024/768/2.0);
-	startArray.y = roundf((startPos.y- 384)/384*-15/2.0);
-	
-}
-
-- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event;
-{
-	CGPoint currentMovementPosition = [[touches anyObject] locationInView:self];
-}
-
-- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event 
-{
-	
-	lastPos = [[touches anyObject] locationInView:self];
-	
-	block * tester = blockPlace[0][0][0];
-	NSLog(@"Origin: (%d, %d, %d)",tester.x, tester.y, tester.z);
-	
-	
-	//lastDist = CGPointMake(lastPos.x - startPos.x, lastPos.y-startPos.y);
-	float x = lastPos.x - startPos.x;
-	float y = lastPos.y - startPos.y;
-	
-	if (sqrtf(x*x+y*y) > 50) {
-		
-		float angle = atan2f(y,x)*180/M_PI;
-		if (fabs(angle) < 45 || fabs(angle) > 135 ) {
-			if (x < 0) {
-				x = -90;
-			}
-			else {
-				x = 90;
-			}
-			y=0;
-			
-			
-			float tempX = x*M_PI/180.0;
-			//NSLog(@"xRot:    %f",xRot);
-			float newX = yAxis[2]*sinf(tempX) + yAxis[0]*cosf(tempX);
-			float newZ = yAxis[2]*cosf(tempX) - yAxis[0]*sinf(tempX);
-			yAxis[0] = roundf(newX);
-			yAxis[2] = roundf(newZ);
-			
-			newX = xAxis[2]*sinf(tempX) + xAxis[0]*cosf(tempX);
-			newZ = xAxis[2]*cosf(tempX) - xAxis[0]*sinf(tempX);
-			xAxis[0] = roundf(newX);
-			xAxis[2] = roundf(newZ);
-			
-			newX = zAxis[2]*sinf(tempX) + zAxis[0]*cosf(tempX);
-			newZ = zAxis[2]*cosf(tempX) - zAxis[0]*sinf(tempX);
-			zAxis[0] = roundf(newX);
-			zAxis[2] = roundf(newZ);
-			
-			
-		}
-		else if (fabs(angle) > 45 && fabs(angle) < 135 ) {
-			if (y < 0) {
-				y = -90;
-			}
-			else {
-				y = 90;
-			}
-			x=0;
-			
-			
-			float tempY = y*M_PI/180.0;
-			
-			float newY = xAxis[1]*cosf(tempY) - xAxis[2]*sinf(tempY);
-			float newZ = xAxis[1]*sinf(tempY) + xAxis[2]*cosf(tempY);
-			xAxis[1] = roundf(newY);
-			xAxis[2]= roundf(newZ);
-			
-			newY = yAxis[1]*cosf(tempY) - yAxis[2]*sinf(tempY);
-			newZ = yAxis[1]*sinf(tempY) + yAxis[2]*cosf(tempY);
-			yAxis[1] = roundf(newY);
-			yAxis[2]= roundf(newZ);
-			
-			newY = zAxis[1]*cosf(tempY) - zAxis[2]*sinf(tempY);
-			newZ = zAxis[1]*sinf(tempY) + zAxis[2]*cosf(tempY);
-			zAxis[1] = roundf(newY);
-			zAxis[2]= roundf(newZ);
-			
-		}
-		
-		
-		NSLog(@"                     X axis:  %d  %d  %d",xAxis[0], xAxis[1], xAxis[2]);
-		NSLog(@"                     Y axis:  %d  %d  %d",yAxis[0], yAxis[1], yAxis[2]);
-		NSLog(@"                     Z axis:  %d  %d  %d",zAxis[0], zAxis[1], zAxis[2]);
-		int z = 0;
-		
-		
-		lastDist = CGPointMake(x, y);
-		
-		totalCounter+=40;
-		
-		
-	}
-	else{
-		[self rowLeft];
-		block * temp = [self getBlock:(int)startArray.x andY:startArray.y andZ:5];// [(int)startArray.x+5][(int)startArray.y+5][10];
-		
-		//		block * temp = blockPlace[(int)startArray.x+5][(int)startArray.y+5][10];
-		NSLog(@"Block touched: (%d, %d, %d)      from (%f  %f  %d)",temp.x, temp.y, temp.z,startArray.x, startArray.y, 5);
-	}
-	
-	
-}
-
-- (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event 
-{
-	// Handle touches canceled the same as as a touches ended event
-    [self touchesEnded:touches withEvent:event];
-}*/
+ {
+ NSMutableSet *currentTouches = [[[event touchesForView:self] mutableCopy] autorelease];
+ [currentTouches minusSet:touches];
+ 
+ // New touches are not yet included in the current touches for the view
+ startPos = [[touches anyObject] locationInView:self];
+ //[[blockArray objectAtIndex:0] setPosition:(startPos.x-160)/160 andY:(startPos.y-240)/240 andZ:0];
+ 
+ startArray.x = roundf((startPos.x - 512)/512*15*1024/768/2.0);
+ startArray.y = roundf((startPos.y- 384)/384*-15/2.0);
+ 
+ }
+ 
+ - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event;
+ {
+ CGPoint currentMovementPosition = [[touches anyObject] locationInView:self];
+ }
+ 
+ - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event 
+ {
+ 
+ lastPos = [[touches anyObject] locationInView:self];
+ 
+ block * tester = blockPlace[0][0][0];
+ NSLog(@"Origin: (%d, %d, %d)",tester.x, tester.y, tester.z);
+ 
+ 
+ //lastDist = CGPointMake(lastPos.x - startPos.x, lastPos.y-startPos.y);
+ float x = lastPos.x - startPos.x;
+ float y = lastPos.y - startPos.y;
+ 
+ if (sqrtf(x*x+y*y) > 50) {
+ 
+ float angle = atan2f(y,x)*180/M_PI;
+ if (fabs(angle) < 45 || fabs(angle) > 135 ) {
+ if (x < 0) {
+ x = -90;
+ }
+ else {
+ x = 90;
+ }
+ y=0;
+ 
+ 
+ float tempX = x*M_PI/180.0;
+ //NSLog(@"xRot:    %f",xRot);
+ float newX = yAxis[2]*sinf(tempX) + yAxis[0]*cosf(tempX);
+ float newZ = yAxis[2]*cosf(tempX) - yAxis[0]*sinf(tempX);
+ yAxis[0] = roundf(newX);
+ yAxis[2] = roundf(newZ);
+ 
+ newX = xAxis[2]*sinf(tempX) + xAxis[0]*cosf(tempX);
+ newZ = xAxis[2]*cosf(tempX) - xAxis[0]*sinf(tempX);
+ xAxis[0] = roundf(newX);
+ xAxis[2] = roundf(newZ);
+ 
+ newX = zAxis[2]*sinf(tempX) + zAxis[0]*cosf(tempX);
+ newZ = zAxis[2]*cosf(tempX) - zAxis[0]*sinf(tempX);
+ zAxis[0] = roundf(newX);
+ zAxis[2] = roundf(newZ);
+ 
+ 
+ }
+ else if (fabs(angle) > 45 && fabs(angle) < 135 ) {
+ if (y < 0) {
+ y = -90;
+ }
+ else {
+ y = 90;
+ }
+ x=0;
+ 
+ 
+ float tempY = y*M_PI/180.0;
+ 
+ float newY = xAxis[1]*cosf(tempY) - xAxis[2]*sinf(tempY);
+ float newZ = xAxis[1]*sinf(tempY) + xAxis[2]*cosf(tempY);
+ xAxis[1] = roundf(newY);
+ xAxis[2]= roundf(newZ);
+ 
+ newY = yAxis[1]*cosf(tempY) - yAxis[2]*sinf(tempY);
+ newZ = yAxis[1]*sinf(tempY) + yAxis[2]*cosf(tempY);
+ yAxis[1] = roundf(newY);
+ yAxis[2]= roundf(newZ);
+ 
+ newY = zAxis[1]*cosf(tempY) - zAxis[2]*sinf(tempY);
+ newZ = zAxis[1]*sinf(tempY) + zAxis[2]*cosf(tempY);
+ zAxis[1] = roundf(newY);
+ zAxis[2]= roundf(newZ);
+ 
+ }
+ 
+ 
+ NSLog(@"                     X axis:  %d  %d  %d",xAxis[0], xAxis[1], xAxis[2]);
+ NSLog(@"                     Y axis:  %d  %d  %d",yAxis[0], yAxis[1], yAxis[2]);
+ NSLog(@"                     Z axis:  %d  %d  %d",zAxis[0], zAxis[1], zAxis[2]);
+ int z = 0;
+ 
+ 
+ lastDist = CGPointMake(x, y);
+ 
+ totalCounter+=40;
+ 
+ 
+ }
+ else{
+ [self rowLeft];
+ block * temp = [self getBlock:(int)startArray.x andY:startArray.y andZ:5];// [(int)startArray.x+5][(int)startArray.y+5][10];
+ 
+ //		block * temp = blockPlace[(int)startArray.x+5][(int)startArray.y+5][10];
+ NSLog(@"Block touched: (%d, %d, %d)      from (%f  %f  %d)",temp.x, temp.y, temp.z,startArray.x, startArray.y, 5);
+ }
+ 
+ 
+ }
+ 
+ - (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event 
+ {
+ // Handle touches canceled the same as as a touches ended event
+ [self touchesEnded:touches withEvent:event];
+ }*/
 
 
 /* Built in touch methods --------------------------------------------------------------------------- */
@@ -361,6 +361,7 @@
         
 		if (touch1 == nil && touch!= touch2 && touch!= touch3) {
 			touch1=touch;
+			[mechanics setStart:pt.x andY:pt.y];
 			if ([[touchesArray objectAtIndex:0] count] > 0){
 				[[touchesArray objectAtIndex:0] removeAllObjects];
 			}
@@ -378,6 +379,7 @@
 		}
 		else if (touch2 == nil && touch!= touch1 && touch!= touch3) {
 			touch2=touch;
+			[mechanics setStart:pt.x andY:pt.y];
 			if ([[touchesArray objectAtIndex:1] count] > 0){
 				[[touchesArray objectAtIndex:1] removeAllObjects];
 			}
@@ -396,6 +398,7 @@
 		}
 		else if (touch3 == nil && touch!= touch1 && touch!= touch2) {
 			touch3=touch;
+			[mechanics setStart:pt.x andY:pt.y];
 			if ([[touchesArray objectAtIndex:2] count] > 0){
 				[[touchesArray objectAtIndex:2] removeAllObjects];
 			}
@@ -456,9 +459,18 @@
 		}
 	}
 	
-	
-    
-    [stateMachine startOfGestureStateRecogniser];
+	if (numTouches != 3) {
+		
+		
+			
+		[stateMachine startOfGestureStateRecogniser];
+	}
+	else {
+		CGPoint point = [[[touchesArray objectAtIndex:0] objectAtIndex:0] CGPointValue];
+		[mechanics setStart: point.x andY:point.y];
+		[stateMachine endOfGestureStateRecogniser];
+	}
+
 	//[self setNeedsDisplay];
 }
 
@@ -535,11 +547,12 @@
 					 * [2] (float)		angle
 					 * [3] (float)		gradient angle
 					 */
-                    float angles[3];
+                    /*float angles[3];
                     angles[0] = [[[packed1 objectAtIndex:0] objectAtIndex:2] floatValue];
                     angles[1] = [[[packed2 objectAtIndex:0] objectAtIndex:2] floatValue];
                     angles[2] = [[[packed3 objectAtIndex:0] objectAtIndex:2] floatValue];
-                    [stateMachine doesGestureStateExistWithAngle:angles AndTouch:3];
+                    [stateMachine doesGestureStateExistWithAngle:angles AndTouch:3];*/
+					[stateMachine endOfGestureStateRecogniser];
 					[packed1 removeObjectAtIndex:0];
 					[packed2 removeObjectAtIndex:0];
 					[packed3 removeObjectAtIndex:0];
@@ -613,11 +626,12 @@
 					 * [2] (float)		angle
 					 * [3] (float)		gradient angle
 					 */
-                    float angles[3];
+                    /*float angles[3];
                     angles[0] = [[[packed1 objectAtIndex:0] objectAtIndex:2] floatValue];
                     angles[1] = [[[packed2 objectAtIndex:0] objectAtIndex:2] floatValue];
                     angles[2] = [[[packed3 objectAtIndex:0] objectAtIndex:2] floatValue];
-                    [stateMachine doesGestureStateExistWithAngle:angles AndTouch:3];                    
+                    [stateMachine doesGestureStateExistWithAngle:angles AndTouch:3];*/   
+					[stateMachine endOfGestureStateRecogniser];
 					[packed1 removeObjectAtIndex:0];
 					[packed2 removeObjectAtIndex:0];
 					[packed3 removeObjectAtIndex:0];
@@ -692,11 +706,12 @@
 					 * [2] (float)		angle
 					 * [3] (float)		gradient angle
 					 */
-                    float angles[3];
+                    /*float angles[3];
                     angles[0] = [[[packed1 objectAtIndex:0] objectAtIndex:2] floatValue];
                     angles[1] = [[[packed2 objectAtIndex:0] objectAtIndex:2] floatValue];
                     angles[2] = [[[packed3 objectAtIndex:0] objectAtIndex:2] floatValue];
-                    [stateMachine doesGestureStateExistWithAngle:angles AndTouch:3];                    
+                    [stateMachine doesGestureStateExistWithAngle:angles AndTouch:3]; */  
+					[stateMachine endOfGestureStateRecogniser];
 					[packed1 removeObjectAtIndex:0];
 					[packed2 removeObjectAtIndex:0];
 					[packed3 removeObjectAtIndex:0];
@@ -793,11 +808,25 @@
 				 * [2] (float)		angle
 				 * [3] (float)		gradient angle
 				 */
-                float angles[3];
+                /*float angles[3];
                 angles[0] = [[[packed1 objectAtIndex:0] objectAtIndex:2] floatValue];
                 angles[1] = [[[packed2 objectAtIndex:0] objectAtIndex:2] floatValue];
                 angles[2] = [[[packed3 objectAtIndex:0] objectAtIndex:2] floatValue];
-                [stateMachine doesGestureStateExistWithAngle:angles AndTouch:3];                
+                [stateMachine doesGestureStateExistWithAngle:angles AndTouch:3];  */
+				
+				/*float totalX= (([[[packed1 lastObject] objectAtIndex:0] CGPointValue]).x +
+							   ([[[packed2 lastObject] objectAtIndex:0] CGPointValue]).x +
+							   ([[[packed3 lastObject] objectAtIndex:0] CGPointValue]).x)/3.0;
+				
+				float totalY= (([[[packed1 lastObject] objectAtIndex:0] CGPointValue]).y +
+							   ([[[packed2 lastObject] objectAtIndex:0] CGPointValue]).y +
+							   ([[[packed3 lastObject] objectAtIndex:0] CGPointValue]).y)/3.0;*/
+				
+				[mechanics setEnd:([[[packed1 lastObject] objectAtIndex:0] CGPointValue]).x andY:([[[packed1 lastObject] objectAtIndex:0] CGPointValue]).y];
+				
+				lastDist = [mechanics rotateCube];
+				
+				
 				[packed1 removeObjectAtIndex:0];
 				[packed2 removeObjectAtIndex:0];
 				[packed3 removeObjectAtIndex:0];
@@ -880,11 +909,16 @@
 				 * [2] (float)		angle
 				 * [3] (float)		gradient angle
 				 */
-                float angles[3];
+               /* float angles[3];
                 angles[0] = [[[packed1 objectAtIndex:0] objectAtIndex:2] floatValue];
                 angles[1] = [[[packed2 objectAtIndex:0] objectAtIndex:2] floatValue];
                 angles[2] = [[[packed3 objectAtIndex:0] objectAtIndex:2] floatValue];
-                [stateMachine doesGestureStateExistWithAngle:angles AndTouch:3];                  
+                [stateMachine doesGestureStateExistWithAngle:angles AndTouch:3];   */
+				[mechanics setEnd:([[[packed1 lastObject] objectAtIndex:0] CGPointValue]).x andY:([[[packed1 lastObject] objectAtIndex:0] CGPointValue]).y];
+				
+				lastDist = [mechanics rotateCube];
+								
+				
 				[packed1 removeObjectAtIndex:0];
 				[packed2 removeObjectAtIndex:0];
 				[packed3 removeObjectAtIndex:0];
@@ -963,11 +997,18 @@
 				 * [2] (float)		angle
 				 * [3] (float)		gradient angle
 				 */
-                float angles[3];
+                /*float angles[3];
                 angles[0] = [[[packed1 objectAtIndex:0] objectAtIndex:2] floatValue];
                 angles[1] = [[[packed2 objectAtIndex:0] objectAtIndex:2] floatValue];
                 angles[2] = [[[packed3 objectAtIndex:0] objectAtIndex:2] floatValue];
-                [stateMachine doesGestureStateExistWithAngle:angles AndTouch:3];                  
+                [stateMachine doesGestureStateExistWithAngle:angles AndTouch:3];  */
+                
+				
+				[mechanics setEnd:([[[packed1 lastObject] objectAtIndex:0] CGPointValue]).x andY:([[[packed1 lastObject] objectAtIndex:0] CGPointValue]).y];
+				
+				lastDist = [mechanics rotateCube];
+				
+				
 				[packed1 removeObjectAtIndex:0];
 				[packed2 removeObjectAtIndex:0];
 				[packed3 removeObjectAtIndex:0];
@@ -983,12 +1024,13 @@
 	}
     
 	if (endCount == numTouches && endCount!=0) {
+		NSLog(@"Removing last ones   %d", endCount);
 		numTouches = 0;
 		endCount = 0;
 		touch1 = nil;
 		touch2 = nil;
 		touch3 = nil;
-		NSLog(@"Removing last ones   %d", endCount);
+		
 		// send remaining features - there may be backlog
 		if (packed1.count > 0 && packed2.count > 0 && packed3.count > 0) {
 			// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Take EVERYTHING in the arrays !!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -1000,11 +1042,17 @@
 			 * [2] (float)		angle
 			 * [3] (float)		gradient angle
 			 */
-            float angles[3];
+            /*float angles[3];
             angles[0] = [[[packed1 objectAtIndex:0] objectAtIndex:2] floatValue];
             angles[1] = [[[packed2 objectAtIndex:0] objectAtIndex:2] floatValue];
             angles[2] = [[[packed3 objectAtIndex:0] objectAtIndex:2] floatValue];
-            [stateMachine doesGestureStateExistWithAngle:angles AndTouch:3];               
+            [stateMachine doesGestureStateExistWithAngle:angles AndTouch:3];   */
+            
+			[mechanics setEnd:([[[packed1 lastObject] objectAtIndex:0] CGPointValue]).x andY:([[[packed1 lastObject] objectAtIndex:0] CGPointValue]).y];
+			
+			lastDist = [mechanics rotateCube];
+			
+			
 			[packed1 removeAllObjects];
 			[packed2 removeAllObjects];
 			[packed3 removeAllObjects];
@@ -1129,6 +1177,21 @@
     [stateMachine endOfGestureStateRecogniser];
 	char* type = [stateMachine getGestureType];
 	NSLog(@"%s found", type);
+	
+	if (type != NULL && numTouches!=3){
+		if(strcmp(type, "left") == 0) {
+		[mechanics rowLeft];
+		}
+		else if (strcmp(type, "right") == 0){
+			[mechanics rowRight];
+		}
+		else if (strcmp(type, "up") == 0){
+			[mechanics columnUp];
+		}
+		else if (strcmp(type, "down") == 0){
+			[mechanics columnDown];
+		}
+	}
 	//[self setNeedsDisplay];
 }
 

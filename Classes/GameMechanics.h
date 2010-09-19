@@ -48,8 +48,10 @@
 - (void) zForward;
 - (void) zBackward;
 - (void) swapBlocks:(int)direction;
-- (void) setStart:(CGPoint)start;
-- (void) setEnd:(CGPoint)end;
+- (void) setStart:(float)x andY:(float)y;
+
+- (void) setEnd:(float)x andY:(float)y;
+- (CGPoint) rotateCube;
 //- (void) removeBlocks;
 - (block *) getBlock:(int)x andY:(int)y andZ:(int)z;
 @end

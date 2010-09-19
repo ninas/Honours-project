@@ -32,13 +32,29 @@
 		<data>
 		qHkNEcqHRhALVqY0pHN5Wuhrg/w=
 		</data>
+		<key>down.gesture</key>
+		<data>
+		iC06FkDqxNpp8WtxBZN55scbamU=
+		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
 		XHsrQr5uTqKQhWkz3u3Y6PVJ+ho=
 		</data>
+		<key>left.gesture</key>
+		<data>
+		agdbDrfmrggN2xLcL2GK0QkyK2Y=
+		</data>
+		<key>right.gesture</key>
+		<data>
+		FdrHxYFf1rN7bYAgL2f3hBipqfg=
+		</data>
 		<key>spiralout.gesture</key>
 		<data>
 		YaHnc/UFWtmACynK42HQt6RSO0o=
+		</data>
+		<key>up.gesture</key>
+		<data>
+		v2+hGji2HRsSRWI8b1CNZw5wyVs=
 		</data>
 		<key>v.gesture</key>
 		<data>

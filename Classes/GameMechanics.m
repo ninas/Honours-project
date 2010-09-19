@@ -68,7 +68,12 @@
  */
 - (void) rowLeft{
 	
-	block * swap = [self getBlock:5 andY:startArray.y andZ:5];
+	block * swap = [self getBlock:startArray.x andY:startArray.y andZ:5];
+	if (swap==nil) {
+		return;
+	}
+	swap = [self getBlock:5 andY:startArray.y andZ:5];
+	
 	int startX = swap.x;
 	int startY = swap.y;
 	int startZ = swap.z;
@@ -126,7 +131,12 @@
  */
 - (void) rowRight{
 	
-	block * swap = [self getBlock:-5 andY:startArray.y andZ:5];
+	block * swap = [self getBlock:startArray.x andY:startArray.y andZ:5];
+	if (swap==nil) {
+		return;
+	}
+	swap = [self getBlock:-5 andY:startArray.y andZ:5];
+	
 	int startX = swap.x;
 	int startY = swap.y;
 	int startZ = swap.z;
@@ -183,8 +193,12 @@
  */
 - (void) columnUp{
 	
-	block * swap = [self getBlock:startArray.x andY:-5 andZ:5];
-	int startX = swap.x;
+	block * swap = [self getBlock:startArray.x andY:startArray.y andZ:5];
+	if (swap==nil) {
+		return;
+	}
+	swap = [self getBlock:startArray.x andY:-5 andZ:5];
+		int startX = swap.x;
 	int startY = swap.y;
 	int startZ = swap.z;
 	
@@ -241,7 +255,11 @@
  */
 - (void) columnDown{
 	
-	block * swap = [self getBlock:startArray.x andY:5 andZ:5];
+	block * swap = [self getBlock:startArray.x andY:startArray.y andZ:5];
+	if (swap==nil) {
+		return;
+	}
+	swap = [self getBlock:startArray.x andY:5 andZ:5];
 	int startX = swap.x;
 	int startY = swap.y;
 	int startZ = swap.z;
@@ -300,6 +318,9 @@
 - (void) zForward{
 	
 	block * swap = [self getBlock:startArray.x andY:startArray.y andZ:-5];
+	if (swap==nil) {
+		return;
+	}
 	int startX = swap.x;
 	int startY = swap.y;
 	int startZ = swap.z;
@@ -328,6 +349,9 @@
 - (void) zBackward{
 	
 	block * swap = [self getBlock:startArray.x andY:startArray.y andZ:5];
+	if (swap==nil) {
+		return;
+	}
 	int startX = swap.x;
 	int startY = swap.y;
 	int startZ = swap.z;
@@ -426,11 +450,11 @@
 
 /* ----------------------------------- These methods will be moved to feature extraction ----------------------------------- */
 
-- (void)setStart:(CGPoint)start{
+- (void)setStart:(float)x andY:(float)y{
    
 	
 	// New touches are not yet included in the current touches for the view
-	startPos = CGPointMake(start.x, start.y);
+	startPos = CGPointMake(x, y);
 	//[[blockArray objectAtIndex:0] setPosition:(startPos.x-160)/160 andY:(startPos.y-240)/240 andZ:0];
 	
 	startArray.x = roundf((startPos.x - 512)/512*15*1024/768/2.0);
@@ -439,13 +463,14 @@
 }
 
 
-- (void)setEnd:(CGPoint) end 
+
+- (void)setEnd:(float)x andY:(float)y 
 {
 	
-	endPos = CGPointMake(end.x, end.y);
+	endPos = CGPointMake(x, y);
 }
 
-- (void) rotateCube{
+- (CGPoint)rotateCube{
 	
 	float x = endPos.x - startPos.x;
 	float y = endPos.y - startPos.y;
@@ -518,7 +543,7 @@
 		int z = 0;
 		
 		
-		
+	return CGPointMake(x, y);
 		
 		
 		
