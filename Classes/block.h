@@ -13,12 +13,13 @@
 	int x,y,z;
 	
 	int colour;
-	
+	block **** placementArray;
+	int checkX, checkY, checkZ;
 	
 }
 
-- (void) setPosition:(int)tempX andY:(int)tempY andZ:(int)tempZ;
-
+- (void) setPosition:(int)tempX andY:(int)tempY andZ:(int)tempZ andPlacement:(block****)placementA;
+- (void) checkRemoval:(NSMutableArray*)toRemove andCol:(int)col andX:(int)cX andY:(int)cY andZ:(int)cZ;
 @property int x;
 @property int y;
 @property int z;

@@ -747,11 +747,21 @@
             
 			[[touchesArray objectAtIndex:0] addObject: [NSValue valueWithCGPoint:CGPointMake(pt.x, pt.y)]];
 			[packed1 addObject: [recognition1 end:CGPointMake(pt.x, pt.y)]];
+			
 			NSArray * temp = [recognition1 getSecond];
 			if (temp != nil) {
 				[packed1 addObject:temp];
 			}
 			if (numTouches == 1) {
+				
+				if (recognition1.tap) {
+					[mechanics setEnd:([[[packed1 lastObject] objectAtIndex:0] CGPointValue]).x andY:([[[packed1 lastObject] objectAtIndex:0] CGPointValue]).y];
+					[mechanics removeBlocks];
+					NSLog(@"Single tap");
+					[packed1 removeObjectAtIndex:0];
+					continue;
+				}
+				
 				/* FUNCTION CALL GOES HERE
 				 * Data is in packed1 array
 				 * [0] (CGPoint)	endPoint
@@ -851,6 +861,13 @@
 			}
             
 			if (numTouches == 1) {
+				if (recognition2.tap) {
+					[mechanics setEnd:([[[packed2 lastObject] objectAtIndex:0] CGPointValue]).x andY:([[[packed2 lastObject] objectAtIndex:0] CGPointValue]).y];
+					[mechanics removeBlocks];
+					NSLog(@"Single tap");
+					[packed2 removeObjectAtIndex:0];
+					continue;
+				}
 				/* FUNCTION CALL GOES HERE
 				 * Data is in packed1 array
 				 * [0] (CGPoint)	endPoint
@@ -940,6 +957,14 @@
 				[packed3 addObject:temp];
 			}
 			if (numTouches == 1) {
+				
+				if (recognition3.tap) {
+					[mechanics setEnd:([[[packed3 lastObject] objectAtIndex:0] CGPointValue]).x andY:([[[packed3 lastObject] objectAtIndex:0] CGPointValue]).y];
+					[mechanics removeBlocks];
+					NSLog(@"Single tap");
+					[packed3 removeObjectAtIndex:0];
+					continue;
+				}
 				/* FUNCTION CALL GOES HERE
 				 * Data is in packed1 array
 				 * [0] (CGPoint)	endPoint

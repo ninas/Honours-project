@@ -25,8 +25,8 @@
 	int xAxis [3];
 	int zAxis[3];
 	
-	
-	
+	BOOL adjustZ;
+	int currentZ;
 	
 	
 	
@@ -52,6 +52,6 @@
 
 - (void) setEnd:(float)x andY:(float)y;
 - (CGPoint) rotateCube;
-//- (void) removeBlocks;
+- (void) removeBlocks;
 - (block *) getBlock:(int)x andY:(int)y andZ:(int)z;
 @end

@@ -29,7 +29,7 @@
 				blockPlace[x+5][y+5] = (block**)malloc(11*sizeof(block*));
 				for (int z=-5; z<6; z++) {
 					block * temp = [[block alloc] init];
-					[temp setPosition:x andY:y andZ:z]; 
+					[temp setPosition:x andY:y andZ:z andPlacement:blockPlace]; 
 					blockPlace[x+5][y+5][z+5] = temp;
 					[blockArray addObject:temp];
 				}
@@ -51,7 +51,8 @@
 		zAxis[1]=0;
 		zAxis[2] = 1;
 		
-			
+	adjustZ = NO;
+	currentZ = -6;
     return self;
 }
 
@@ -67,20 +68,23 @@
  * Rotates a row left
  */
 - (void) rowLeft{
-	
+	adjustZ = YES;
 	block * swap = [self getBlock:startArray.x andY:startArray.y andZ:5];
+	
 	if (swap==nil) {
+		NSLog(@"Returning nil");
 		return;
 	}
-	swap = [self getBlock:5 andY:startArray.y andZ:5];
+	NSLog(@"Current z %d", currentZ);
+	swap = [self getBlock:currentZ andY:startArray.y andZ:currentZ];
 	
 	int startX = swap.x;
 	int startY = swap.y;
 	int startZ = swap.z;
 	
 	
-	for (int j=4; j>=-5; j--) {
-		block * temp = [self getBlock:j andY:startArray.y andZ:5];
+	for (int j=currentZ-1; j>=-currentZ; j--) {
+		block * temp = [self getBlock:j andY:startArray.y andZ:currentZ];
 		blockPlace[temp.x+5][temp.y+5][temp.z+5] = swap;
 		swap.x = temp.x;
 		swap.y = temp.y;
@@ -89,8 +93,9 @@
 		swap = temp;
 	}
 	
-	for (int j=4; j>=-5; j--) {
-		block * temp = [self getBlock:-5 andY:startArray.y andZ:j];
+		
+	for (int j=currentZ-1; j>=-currentZ; j--) {
+		block * temp = [self getBlock:-currentZ andY:startArray.y andZ:j];
 		blockPlace[temp.x+5][temp.y+5][temp.z+5] = swap;
 		swap.x = temp.x;
 		swap.y = temp.y;
@@ -99,8 +104,8 @@
 		swap = temp;
 	}
 	
-	for (int j=-4; j<=5; j++) {
-		block * temp = [self getBlock:j andY:startArray.y andZ:-5];
+	for (int j=-currentZ+1; j<=currentZ; j++) {
+		block * temp = [self getBlock:j andY:startArray.y andZ:-currentZ];
 		blockPlace[temp.x+5][temp.y+5][temp.z+5] = swap;
 		swap.x = temp.x;
 		swap.y = temp.y;
@@ -109,8 +114,8 @@
 		swap = temp;
 	}
 	
-	for (int j=-4; j<=4; j++) {
-		block * temp = [self getBlock:5 andY:startArray.y andZ:j];
+	for (int j=-currentZ+1; j<=currentZ-1; j++) {
+		block * temp = [self getBlock:currentZ andY:startArray.y andZ:j];
 		blockPlace[temp.x+5][temp.y+5][temp.z+5] = swap;
 		swap.x = temp.x;
 		swap.y = temp.y;
@@ -130,20 +135,20 @@
  * Rotates a row right
  */
 - (void) rowRight{
-	
+	adjustZ = YES;
 	block * swap = [self getBlock:startArray.x andY:startArray.y andZ:5];
 	if (swap==nil) {
 		return;
 	}
-	swap = [self getBlock:-5 andY:startArray.y andZ:5];
+	swap = [self getBlock:-currentZ andY:startArray.y andZ:currentZ];
 	
 	int startX = swap.x;
 	int startY = swap.y;
 	int startZ = swap.z;
 	
 	
-	for (int j=-4; j<=5; j++) {
-		block * temp = [self getBlock:j andY:startArray.y andZ:5];
+	for (int j=-currentZ+1; j<=currentZ; j++) {
+		block * temp = [self getBlock:j andY:startArray.y andZ:currentZ];
 		blockPlace[temp.x+5][temp.y+5][temp.z+5] = swap;
 		swap.x = temp.x;
 		swap.y = temp.y;
@@ -152,8 +157,8 @@
 		swap = temp;
 	}
 	
-	for (int j=-4; j<=5; j++) {
-		block * temp = [self getBlock:-5 andY:startArray.y andZ:j];
+	for (int j=-currentZ+1; j<=currentZ; j++) {
+		block * temp = [self getBlock:-currentZ andY:startArray.y andZ:j];
 		blockPlace[temp.x+5][temp.y+5][temp.z+5] = swap;
 		swap.x = temp.x;
 		swap.y = temp.y;
@@ -162,8 +167,8 @@
 		swap = temp;
 	}
 	
-	for (int j=4; j>=-5; j--) {
-		block * temp = [self getBlock:j andY:startArray.y andZ:-5];
+	for (int j=currentZ-1; j>=-currentZ; j--) {
+		block * temp = [self getBlock:j andY:startArray.y andZ:-currentZ];
 		blockPlace[temp.x+5][temp.y+5][temp.z+5] = swap;
 		swap.x = temp.x;
 		swap.y = temp.y;
@@ -172,8 +177,8 @@
 		swap = temp;
 	}
 	
-	for (int j=4; j>=-4; j--) {
-		block * temp = [self getBlock:5 andY:startArray.y andZ:j];
+	for (int j=currentZ-1; j>=-currentZ+1; j--) {
+		block * temp = [self getBlock:currentZ andY:startArray.y andZ:j];
 		blockPlace[temp.x+5][temp.y+5][temp.z+5] = swap;
 		swap.x = temp.x;
 		swap.y = temp.y;
@@ -192,19 +197,19 @@
  * Rotates column up
  */
 - (void) columnUp{
-	
+	adjustZ = YES;
 	block * swap = [self getBlock:startArray.x andY:startArray.y andZ:5];
 	if (swap==nil) {
 		return;
 	}
-	swap = [self getBlock:startArray.x andY:-5 andZ:5];
+	swap = [self getBlock:startArray.x andY:-currentZ andZ:currentZ];
 		int startX = swap.x;
 	int startY = swap.y;
 	int startZ = swap.z;
 	
 	
-	for (int j=-4; j<=5; j++) {
-		block * temp = [self getBlock:startArray.x andY:j andZ:5];
+	for (int j=-currentZ+1; j<=currentZ; j++) {
+		block * temp = [self getBlock:startArray.x andY:j andZ:currentZ];
 		blockPlace[temp.x+5][temp.y+5][temp.z+5] = swap;
 		swap.x = temp.x;
 		swap.y = temp.y;
@@ -213,8 +218,8 @@
 		swap = temp;
 	}
 	
-	for (int j=4; j>=-5; j--) {
-		block * temp = [self getBlock:startArray.x andY:5 andZ:j];
+	for (int j=currentZ-1; j>=-currentZ; j--) {
+		block * temp = [self getBlock:startArray.x andY:currentZ andZ:j];
 		blockPlace[temp.x+5][temp.y+5][temp.z+5] = swap;
 		swap.x = temp.x;
 		swap.y = temp.y;
@@ -223,8 +228,8 @@
 		swap = temp;
 	}
 	
-	for (int j=4; j>=-5; j--) {
-		block * temp = [self getBlock:startArray.x andY:j andZ:-5];
+	for (int j=currentZ-1; j>=-currentZ; j--) {
+		block * temp = [self getBlock:startArray.x andY:j andZ:-currentZ];
 		blockPlace[temp.x+5][temp.y+5][temp.z+5] = swap;
 		swap.x = temp.x;
 		swap.y = temp.y;
@@ -233,8 +238,8 @@
 		swap = temp;
 	}
 	
-	for (int j=-4; j<=4; j++) {
-		block * temp = [self getBlock:startArray.x andY:-5 andZ:j];
+	for (int j=-currentZ+1; j<=currentZ-1; j++) {
+		block * temp = [self getBlock:startArray.x andY:-currentZ andZ:j];
 		blockPlace[temp.x+5][temp.y+5][temp.z+5] = swap;
 		swap.x = temp.x;
 		swap.y = temp.y;
@@ -254,19 +259,19 @@
  * Rotates column down
  */
 - (void) columnDown{
-	
+	adjustZ = YES;
 	block * swap = [self getBlock:startArray.x andY:startArray.y andZ:5];
 	if (swap==nil) {
 		return;
 	}
-	swap = [self getBlock:startArray.x andY:5 andZ:5];
+	swap = [self getBlock:startArray.x andY:currentZ andZ:currentZ];
 	int startX = swap.x;
 	int startY = swap.y;
 	int startZ = swap.z;
 	
 	
-	for (int j=4; j>=-5; j--) {
-		block * temp = [self getBlock:startArray.x andY:j andZ:5];
+	for (int j=currentZ-1; j>=-currentZ; j--) {
+		block * temp = [self getBlock:startArray.x andY:j andZ:currentZ];
 		blockPlace[temp.x+5][temp.y+5][temp.z+5] = swap;
 		swap.x = temp.x;
 		swap.y = temp.y;
@@ -275,8 +280,8 @@
 		swap = temp;
 	}
 	
-	for (int j=-4; j<=5; j++) {
-		block * temp = [self getBlock:startArray.x andY:5 andZ:j];
+	for (int j=-currentZ+1; j<=currentZ; j++) {
+		block * temp = [self getBlock:startArray.x andY:currentZ andZ:j];
 		blockPlace[temp.x+5][temp.y+5][temp.z+5] = swap;
 		swap.x = temp.x;
 		swap.y = temp.y;
@@ -285,8 +290,8 @@
 		swap = temp;
 	}
 	
-	for (int j=-4; j<=5; j++) {
-		block * temp = [self getBlock:startArray.x andY:j andZ:-5];
+	for (int j=-currentZ+1; j<=currentZ; j++) {
+		block * temp = [self getBlock:startArray.x andY:j andZ:-currentZ];
 		blockPlace[temp.x+5][temp.y+5][temp.z+5] = swap;
 		swap.x = temp.x;
 		swap.y = temp.y;
@@ -295,8 +300,8 @@
 		swap = temp;
 	}
 	
-	for (int j=4; j>=-4; j--) {
-		block * temp = [self getBlock:startArray.x andY:-5 andZ:j];
+	for (int j=currentZ-1; j>=-currentZ+1; j--) {
+		block * temp = [self getBlock:startArray.x andY:-currentZ andZ:j];
 		blockPlace[temp.x+5][temp.y+5][temp.z+5] = swap;
 		swap.x = temp.x;
 		swap.y = temp.y;
@@ -316,7 +321,7 @@
  * Moves blocks forward along z. Frontmost block is wrapped around to the back
  */
 - (void) zForward{
-	
+	adjustZ = YES;
 	block * swap = [self getBlock:startArray.x andY:startArray.y andZ:-5];
 	if (swap==nil) {
 		return;
@@ -347,7 +352,7 @@
  * Moves blocks backward along z. Backmost block is wrapped around to the front
  */
 - (void) zBackward{
-	
+	adjustZ = YES;
 	block * swap = [self getBlock:startArray.x andY:startArray.y andZ:5];
 	if (swap==nil) {
 		return;
@@ -443,7 +448,23 @@
 	int newX = x*xAxis[0] + y*xAxis[1] + z*xAxis[2];
 	int newY = x*yAxis[0] + y*yAxis[1] + z*yAxis[2];	
 	int newZ = x*zAxis[0] + y*zAxis[1] + z*zAxis[2];	
-	
+	currentZ = z;
+	if (adjustZ && blockPlace[newX+5][newY+5][newZ+5] == nil) {
+		
+		while (blockPlace[newX+5][newY+5][newZ+5]==nil) {
+			currentZ-=1;
+			z = currentZ;
+			newX = x*xAxis[0] + y*xAxis[1] + z*xAxis[2];
+			newY = x*yAxis[0] + y*yAxis[1] + z*yAxis[2];	
+			newZ = x*zAxis[0] + y*zAxis[1] + z*zAxis[2];
+			
+			if (newX > 5 || newX < -5 || newY > 5 || newY < -5 || newZ > 5 || newZ < -5) {
+				return nil;
+			}
+		}
+		currentZ = abs(currentZ);
+		adjustZ = NO;
+	}
 	return blockPlace[newX+5][newY+5][newZ+5];
 	
 }
@@ -462,7 +483,36 @@
 	
 }
 
-
+- (void) removeBlocks{
+	NSMutableArray * toRemove = [[NSMutableArray alloc] init];
+	adjustZ = YES;
+	block* touched = [self getBlock:startArray.x andY:startArray.y andZ:5];
+	int colour = touched.colour;
+	
+	for (int x = touched.x-1; x<touched.x+2; x++) {
+		for (int y = touched.y-1; y<touched.y+2; y++) {
+			for (int z = touched.z-1; z<touched.z+2; z++) {
+				if (x > 5 || x< -5 || y > 5 || y < -5 || z > 5 || z < -5 || (touched.x == x && touched.y == y && touched.z==z)) {
+					continue;
+				}
+				
+				[blockPlace[x+5][y+5][z+5] checkRemoval:toRemove andCol:colour andX:touched.x andY:touched.y andZ:touched.z];
+				
+			}
+		}
+	}
+	for (int i=0; i<toRemove.count; i++) {
+		for (int j=0; j<blockArray.count; j++) {
+			if ([blockArray objectAtIndex:j] == [toRemove objectAtIndex:i]) {
+				block * temp = [blockArray objectAtIndex:j];
+				blockPlace[temp.x+5][temp.y+5][temp.z+5] = nil;
+				[blockArray removeObjectAtIndex:j];
+				break;
+			}
+		}
+	}
+	NSLog(@"Number to remove:   %d",toRemove.count);
+}
 
 - (void)setEnd:(float)x andY:(float)y 
 {

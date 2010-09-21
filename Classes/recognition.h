@@ -60,6 +60,8 @@
     
 	NSMutableArray * packed;
 	NSMutableArray * packed2;
+	
+	BOOL tap;
     
     
     
@@ -72,4 +74,5 @@
 - (NSMutableArray *) getFeature;
 - (NSMutableArray *) getSecond;
 
+@property BOOL tap;
 @end

@@ -30,8 +30,8 @@
 		currentCalculatedMatrix = CATransform3DIdentity;
 		check = NO;
 		blockSize = 15;
-		/*float xRot=-14.0;
-		 float yRot = 14.0;
+		float xRot=5;
+		 float yRot = 5;
 		 GLfloat totalRotation = sqrt(xRot*xRot + yRot*yRot);
 		 //NSLog(@"x: %f   TempX: %f  y:  %f   tempY: %f", xRotation, xTemp, yRotation, yTemp);
 		 CATransform3D temporaryMatrix = CATransform3DRotate(currentCalculatedMatrix, totalRotation * M_PI / 180.0, 
@@ -141,6 +141,7 @@
 	
 	static const GLushort cubeIndices[] = {
 		0, 1, 2, 3, 7, 1, 5, 4, 7, 6, 2, 4, 0, 1
+		//0,1,2,2,1,3,1,5,7,1,7,3,5,4,7,7,4,6,6,2,4,2,4,0,3,7,2,6,2,7,1,0,5,4,5,0
 	};
 	
 	
@@ -177,6 +178,17 @@
         255, 0,   255, 255
     };
 	
+	static const GLfloat normals [] = {
+		-0.57735026918962573, -0.57735026918962573,0.57735026918962573,
+		0.57735026918962573, -0.57735026918962573,0.57735026918962573,
+		-0.57735026918962573, 0.57735026918962573,0.57735026918962573,
+		0.57735026918962573, 0.57735026918962573,0.57735026918962573,
+		-0.57735026918962573, -0.57735026918962573,-0.57735026918962573,
+		0.57735026918962573, -0.57735026918962573,-0.57735026918962573,
+		-0.57735026918962573, 0.57735026918962573,-0.57735026918962573,
+		0.57735026918962573, 0.57735026918962573,-0.57735026918962573
+	};
+	
 		
     // This application only creates a single context which is already set current at this point.
     // This call is redundant, but needed if dealing with multiple contexts.
@@ -196,6 +208,43 @@
 	// Perform incremental rotation based on current angles in X and Y	
 	
 	
+	
+	
+	
+    // Enable lighting
+    glEnable(GL_LIGHTING);
+	
+    // Turn the first light on
+    glEnable(GL_LIGHT0);
+    
+    // Define the ambient component of the first light
+    static const GLfloat light0Ambient[] = {0.05, 0.05, 0.05, 1.0};
+	glLightfv(GL_LIGHT0, GL_AMBIENT, light0Ambient);
+    
+    // Define the diffuse component of the first light
+    static const GLfloat light0Diffuse[] = {0.4, 0.4, 0.4, 1.0};
+	glLightfv(GL_LIGHT0, GL_DIFFUSE, light0Diffuse);
+    
+    // Define the specular component and shininess of the first light
+    static const GLfloat light0Specular[] = {0.7, 0.7, 0.7, 1.0};
+    glLightfv(GL_LIGHT0, GL_SPECULAR, light0Specular);
+    
+    // Define the position of the first light
+	// const GLfloat light0Position[] = {10.0, 10.0, 10.0}; 
+    static const GLfloat light0Position[] = {10, 10, 15};
+	glLightfv(GL_LIGHT0, GL_POSITION, light0Position); 
+	
+    // Calculate light vector so it points at the object
+    
+	static const GLfloat direction0Position[] = {-15.0, -15.0, -15.0};
+    
+    glLightfv(GL_LIGHT0, GL_SPOT_DIRECTION, direction0Position);
+	
+    // Define a cutoff angle. This defines a 90° field of vision, since the cutoff
+    // is number of degrees to each side of an imaginary line drawn from the light's
+    // position along the vector supplied in GL_SPOT_DIRECTION above
+    glLightf(GL_LIGHT0, GL_SPOT_CUTOFF, 45.0);
+	glEnable(GL_COLOR_MATERIAL);
 	
 	CATransform3D temporaryMatrix = currentCalculatedMatrix;
 	if (xRot != 0) { // rotate around y
@@ -217,11 +266,18 @@
 	GLfloat currentModelViewMatrix[16];
 	[self convert3DTransform:&currentCalculatedMatrix toMatrix:currentModelViewMatrix];
 	
-	glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
+	glClearColor(255.0f, 255.0f, 255.0f, 1.0f);
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	
 	glVertexPointer(3, GL_FLOAT, 0, cubeVertices);
 	glEnableClientState(GL_VERTEX_ARRAY);
+	
+	
+	
+	glNormalPointer(GL_FLOAT, 0, normals);
+	glEnableClientState(GL_NORMAL_ARRAY);
+    
+    
 	
 	for (int i=0; i < blocks.count; i++) {
 
@@ -246,11 +302,12 @@
 			
 		}
 		glDrawElements(GL_TRIANGLE_STRIP, 14, GL_UNSIGNED_SHORT, cubeIndices);
+		//glDrawElements(GL_TRIANGLES, 36, GL_UNSIGNED_SHORT, cubeIndices);
 		
 	}
 	glDisableClientState(GL_VERTEX_ARRAY);
 	glDisableClientState(GL_COLOR_ARRAY);
-	
+	glDisableClientState(GL_NORMAL_ARRAY);
 	NSMutableArray * drawingArray;
 	/*draw user interactions */
     for (int i = 0; i < 3 ; i++){
@@ -277,7 +334,7 @@
                     interactionColors[i*4 + 3]  = 255;
                 }
                 glLoadIdentity();
-                glTranslatef(0, 0,15);
+                glTranslatef(0, 0,16);
                
                 glLineWidth(20);                
                 glVertexPointer(2, GL_FLOAT, 0, interactionPoints);

@@ -10,6 +10,8 @@
 
 
 @implementation recognition
+@synthesize tap;
+
 - (id)init {
     if ((self = [super init])) {
         // Initialization code
@@ -21,6 +23,7 @@
 		packed = [[NSMutableArray alloc] init];
 		packed2 = [[NSMutableArray alloc] init];
         
+		tap = NO;
         
     }
     return self;
@@ -237,7 +240,7 @@
     
     
 	distance=0;
-    
+    tap = NO;
 	previous = pt;
 	startPos.x = pt.x;
 	startPos.y= pt.y;
@@ -260,6 +263,10 @@
 	[packed removeAllObjects];
 	[packed2 removeAllObjects];
 	// does much the same stuff as in recognitionDirection
+	if (directionArray.count == 0 && distance < 10) {
+		tap = YES;
+	}
+	
 	if (directionArray.count == 0) {
         
         
