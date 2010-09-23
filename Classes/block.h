@@ -20,6 +20,7 @@
 
 - (void) setPosition:(int)tempX andY:(int)tempY andZ:(int)tempZ andPlacement:(block****)placementA;
 - (void) checkRemoval:(NSMutableArray*)toRemove andCol:(int)col andX:(int)cX andY:(int)cY andZ:(int)cZ;
+- (void) checkConnection;
 @property int x;
 @property int y;
 @property int z;

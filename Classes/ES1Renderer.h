@@ -27,6 +27,7 @@
 	
 	CATransform3D currentCalculatedMatrix;
 	CATransform3D beginCalculatedMatrix;
+	CATransform3D rotatedMatix;
 	NSMutableArray * blocks;
 	GLfloat xRot;
 	GLfloat yRot;
@@ -34,6 +35,8 @@
 	BOOL check;
 	float blockSize;
 	NSMutableArray * touchesArray;
+	BOOL extraRot;
+	int rotCounter;
 @public
 	/*float rotationAngleX;
 	float rotationAngleY;

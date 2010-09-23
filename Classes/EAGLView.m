@@ -459,7 +459,7 @@
 		}
 	}
 	
-	if (numTouches != 3) {
+	if (numTouches == 1) {
 		
 		
 			
@@ -1047,7 +1047,7 @@
 		}
         
 	}
-    
+    int originalNum = numTouches;
 	if (endCount == numTouches && endCount!=0) {
 		NSLog(@"Removing last ones   %d", endCount);
 		numTouches = 0;
@@ -1203,9 +1203,10 @@
 	char* type = [stateMachine getGestureType];
 	NSLog(@"%s found", type);
 	
-	if (type != NULL && numTouches!=3){
+	if (type != NULL && originalNum!=3){
 		if(strcmp(type, "left") == 0) {
 		[mechanics rowLeft];
+			NSLog(@"Calling left");
 		}
 		else if (strcmp(type, "right") == 0){
 			[mechanics rowRight];
@@ -1215,6 +1216,12 @@
 		}
 		else if (strcmp(type, "down") == 0){
 			[mechanics columnDown];
+		}
+		else if (strcmp(type, "diagonalU") == 0){
+			[mechanics zForward];
+		}
+		else if (strcmp(type, "z") == 0){
+			[mechanics moveIn];
 		}
 	}
 	//[self setNeedsDisplay];

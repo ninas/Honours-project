@@ -64,4 +64,8 @@
 	
 }
 
+- (void) checkConnection{
+	
+}
+
 @end

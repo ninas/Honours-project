@@ -1,2 +1,0 @@
-/Users/NSchiff/Documents/tester/Classes/ES1Renderer.m: In function '-[ES1Renderer renderByRotatingAroundX:rotatingAroundY:]':
-/Users/NSchiff/Documents/tester/Classes/ES1Renderer.m:82: warning: unused variable 'cubePosition'

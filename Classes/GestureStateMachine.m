@@ -26,10 +26,15 @@ init
 		current = NULL;
         
         // Initialization code
+		[self canReadGestureFile:@"z"];
 		[self canReadGestureFile:@"right"];		
 		[self canReadGestureFile:@"left"];	
 		[self canReadGestureFile:@"up"];	
 		[self canReadGestureFile:@"down"];	
+		[self canReadGestureFile:@"diagonalUp"];
+
+
+		
         //[self canReadGestureFile:@"spiralout"];         
         //[self canReadGestureFile:@"2down"];
         //[self canReadGestureFile:@"3down"];           

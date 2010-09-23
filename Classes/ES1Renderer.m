@@ -28,9 +28,10 @@
             return nil;
         }
 		currentCalculatedMatrix = CATransform3DIdentity;
+		rotatedMatix = CATransform3DIdentity;
 		check = NO;
 		blockSize = 15;
-		float xRot=5;
+		/*float xRot=5;
 		 float yRot = 5;
 		 GLfloat totalRotation = sqrt(xRot*xRot + yRot*yRot);
 		 //NSLog(@"x: %f   TempX: %f  y:  %f   tempY: %f", xRotation, xTemp, yRotation, yTemp);
@@ -39,7 +40,7 @@
 		 ((xRot/totalRotation) * currentCalculatedMatrix.m22 + (yRot/totalRotation) * currentCalculatedMatrix.m21),
 		 ((xRot/totalRotation) * currentCalculatedMatrix.m32 + (yRot/totalRotation) * currentCalculatedMatrix.m31));
 		 if ((temporaryMatrix.m11 >= -100.0) && (temporaryMatrix.m11 <= 100.0))
-		 currentCalculatedMatrix = temporaryMatrix;
+		 rotatedMatix = temporaryMatrix;*/
 		//currentCalculatedMatrix = CATransform3DMakeTranslation(-1.0f, -3.0f, -1.0f);
 		/*rotationAngleX = 0.0f;
 		 rotationAngleY = 0.0f;
@@ -48,7 +49,7 @@
 		 rotateX=FALSE;
 		 rotateY=FALSE;
 		 rotateA=FALSE;*/
-		
+		extraRot = YES;
         // Create default framebuffer object. The backing will be allocated for the current layer in -resizeFromLayer
         glGenFramebuffersOES(1, &defaultFramebuffer);
         glGenRenderbuffersOES(1, &colorRenderbuffer);
@@ -91,14 +92,28 @@
 		yRot = yRotation;
 		check = NO;
 	}	
-	else if (xRot == 0 && yRot == 0 && (xRotation !=0 || yRotation != 0)) { // rotation ended
+	else if (xRot == 0 && yRot == 0 && (xRotation !=0 || yRotation != 0)) { // rotation started
+		/*beginCalculatedMatrix = currentCalculatedMatrix;
+		xRot = xRotation;
+		yRot = yRotation;*/
+		/*float xR=-5;
+		float yR = -5;
+		GLfloat totalRotation = sqrt(xR*xR + yR*yR);
+		//NSLog(@"x: %f   TempX: %f  y:  %f   tempY: %f", xRotation, xTemp, yRotation, yTemp);
+		CATransform3D temporaryMatrix = CATransform3DRotate(currentCalculatedMatrix, totalRotation * M_PI / 180.0, 
+															((xR/totalRotation) * currentCalculatedMatrix.m12 + (yR/totalRotation) * currentCalculatedMatrix.m11),
+															((xR/totalRotation) * currentCalculatedMatrix.m22 + (yR/totalRotation) * currentCalculatedMatrix.m21),
+															((xR/totalRotation) * currentCalculatedMatrix.m32 + (yR/totalRotation) * currentCalculatedMatrix.m31));
+		if ((temporaryMatrix.m11 >= -100.0) && (temporaryMatrix.m11 <= 100.0))
+			currentCalculatedMatrix = temporaryMatrix;*/
+		
 		beginCalculatedMatrix = currentCalculatedMatrix;
 		xRot = xRotation;
 		yRot = yRotation;
 		
 		
 	}
-	else if ((xRot != 0 || yRot !=0 ) && xRotation ==0 && yRotation ==0){ // rotation started
+	else if ((xRot != 0 || yRot !=0 ) && xRotation ==0 && yRotation ==0){ // rotation ended
 		currentCalculatedMatrix = beginCalculatedMatrix;
 		
 		if (xRot > 0) {
@@ -119,6 +134,18 @@
 		}
 		NSLog(@"xRot: %f    yRot: %f",xRot, yRot);
 		check = YES;
+		extraRot = YES;
+		rotCounter = 0;
+		/*float xR=5;
+		float yR = 5;
+		GLfloat totalRotation = sqrt(xR*xR + yR*yR);
+		//NSLog(@"x: %f   TempX: %f  y:  %f   tempY: %f", xRotation, xTemp, yRotation, yTemp);
+		CATransform3D temporaryMatrix = CATransform3DRotate(currentCalculatedMatrix, totalRotation * M_PI / 180.0, 
+															((xR/totalRotation) * currentCalculatedMatrix.m12 + (yR/totalRotation) * currentCalculatedMatrix.m11),
+															((xR/totalRotation) * currentCalculatedMatrix.m22 + (yR/totalRotation) * currentCalculatedMatrix.m21),
+															((xR/totalRotation) * currentCalculatedMatrix.m32 + (yR/totalRotation) * currentCalculatedMatrix.m31));
+		if ((temporaryMatrix.m11 >= -100.0) && (temporaryMatrix.m11 <= 100.0))
+			currentCalculatedMatrix = temporaryMatrix;*/
 		
 	}
 	else{
@@ -132,61 +159,211 @@
 		-1.0, -1.0,  1.0,
 		1.0, -1.0,  1.0,
 		-1.0,  1.0,  1.0,
+		1.0, 1.0, 1.0,
+		
+		1.0, -1.0, 1.0,
+		1.0, -1.0, -1.0,
+		1.0, 1.0, 1.0,
+		1.0, 1.0, -1.0,
+		
+		1.0, -1.0, -1.0,
+		-1.0,-1.0, -1.0,
+		1.0, 1.0, -1.0,
+		-1.0,1.0, -1.0,
+		
+		-1.0, -1.0, -1.0,
+		-1.0, -1.0, 1.0,
+		-1.0, 1.0, -1.0,
+		-1.0, 1.0, 1.0,
+		
+		-1.0, 1.0, 1.0,
+		1.0, 1.0, 1.0,
+		-1.0, 1.0, -1.0,
+		1.0, 1.0, -1.0,
+		
+		-1.0, -1.0, -1.0,
+		1.0, -1.0, -1.0,
+		-1.0, -1.0, 1.0,
+		1.0, -1.0, 1.0
+		
+		/*
+		-1.0, -1.0,  1.0,
+		1.0, -1.0,  1.0,
+		-1.0,  1.0,  1.0,
+		1.0, 1.0, 1.0,
+		
+		1.0, -1.0, 1.0,
+		1.0, -1.0, -1.0,
+		1.0, 1.0, 1.0,
+		1.0, 1.0, -1.0,
+		
+		
 		1.0,  1.0,  1.0,
 		-1.0, -1.0, -1.0,
 		1.0, -1.0, -1.0,
 		-1.0,  1.0, -1.0,
-		1.0,  1.0, -1.0,
+		1.0,  1.0, -1.0,*/
 	};
 	
 	static const GLushort cubeIndices[] = {
-		0, 1, 2, 3, 7, 1, 5, 4, 7, 6, 2, 4, 0, 1
+		0,1,2,1,3,2,		4,5,6,5,7,6,		8,9,10,9,11,10,  12,13,14,13,15,14,
+		16,17,18,17,19,18,	20,21,22,21,23,22	
+//		0, 1, 2, 3, 7, 1, 5, 4, 7, 6, 2, 4, 0, 1
 		//0,1,2,2,1,3,1,5,7,1,7,3,5,4,7,7,4,6,6,2,4,2,4,0,3,7,2,6,2,7,1,0,5,4,5,0
 	};
 	
 	
     static const GLubyte cubeColorsRed[] = {
-        255, 0,   0, 255,
+        /*255, 0,   0, 255,
         255, 0,   255, 255,
         255, 255,   0, 255,
         255, 0,   0, 255,
         255, 0,   255, 255,
         255, 255,   0, 255,
         255, 0,   0, 255,
-        255, 0,   255, 255
+		 255, 0,   255, 255*/
+		255, 0,255,255,
+		255, 0,0,255,
+		255, 0,0,255,
+		255, 0,0,255,
+		
+		255, 0,255,255,
+		255, 0,0,255,
+		255, 0,0,255,
+		255, 0,0,255,
+		
+		255, 0,255,255,
+		255, 0,0,255,
+		255, 0,0,255,
+		255, 0,0,255,
+		
+		255, 0,255,255,
+		255, 0,0,255,
+		255, 0,0,255,
+		255, 0,0,255,
+		
+		255, 0,255,255,
+		255, 0,0,255,
+		255, 0,0,255,
+		255, 0,0,255,
+		
+		255, 0,255,255,
+		255, 0,0,255,
+		255, 0,0,255,
+		255, 0,0,255,
+
     };
 	
 	static const GLubyte cubeColorsGreen[] = {
-        0, 255,   0, 255,
+        /*0, 255,   0, 255,
         255, 255,   0, 255,
         0, 255,   255, 255,
         0, 255,   0, 255,
         255, 255,   0, 255,
         0, 255,   255, 255,
         255, 255,   0, 255,
-        0, 255,   255, 255
+		 0, 255,   255, 255*/
+		0,255,255,255,
+		0,255,0,255,
+		0,255,0,255,
+		0,255,0,255,
+		
+		0,255,255,255,
+		0,255,0,255,
+		0,255,0,255,
+		0,255,0,255,
+		
+		0,255,255,255,
+		0,255,0,255,
+		0,255,0,255,
+		0,255,0,255,
+		
+		0,255,255,255,
+		0,255,0,255,
+		0,255,0,255,
+		0,255,0,255,
+		
+		0,255,255,255,
+		0,255,0,255,
+		0,255,0,255,
+		0,255,0,255,
+		
+		0,255,255,255,
+		0,255,0,255,
+		0,255,0,255,
+		0,255,0,255,
     };
 	
 	static const GLubyte cubeColorsBlue[] = {
-        0, 0,   255, 255,
+       /* 0, 0,   255, 255,
 		0, 0,   255, 255,
         0, 0,   255, 255,
         0, 0,   255, 255,
         0, 0,   255, 255,
         0, 0,   255, 255,
         0, 0,   255, 255,
-        255, 0,   255, 255
+        255, 0,   255, 255*/
+		0,0,255,255,
+		0,0,255,255,
+		0,0,255,255,
+		0,0,255,255,
+		0,0,255,255,
+		0,0,255,255,
+		0,0,255,255,
+		0,0,255,255,
+		0,0,255,255,
+		0,0,255,255,
+		0,0,255,255,
+		0,0,255,255,
+		0,0,255,255,
+		0,0,255,255,
+		0,0,255,255,
+		0,0,255,255,
+		0,0,255,255,
+		0,0,255,255,
+		0,0,255,255,
+		0,0,255,255,
     };
 	
 	static const GLfloat normals [] = {
-		-0.57735026918962573, -0.57735026918962573,0.57735026918962573,
+		/*-0.57735026918962573, -0.57735026918962573,0.57735026918962573,
 		0.57735026918962573, -0.57735026918962573,0.57735026918962573,
 		-0.57735026918962573, 0.57735026918962573,0.57735026918962573,
 		0.57735026918962573, 0.57735026918962573,0.57735026918962573,
 		-0.57735026918962573, -0.57735026918962573,-0.57735026918962573,
 		0.57735026918962573, -0.57735026918962573,-0.57735026918962573,
 		-0.57735026918962573, 0.57735026918962573,-0.57735026918962573,
-		0.57735026918962573, 0.57735026918962573,-0.57735026918962573
+		 0.57735026918962573, 0.57735026918962573,-0.57735026918962573*/
+		.0, .0, 1.0,
+		.0, .0, 1.0,
+		.0, .0, 1.0,
+		.0, .0, 1.0,
+		
+		1.0, .0, .0,
+		1.0, .0, .0,
+		1.0, .0, .0,
+		1.0, .0, .0,
+		
+		.0, .0, -1.0,
+		.0, .0, -1.0,
+		.0, .0, -1.0,
+		.0, .0, -1.0,
+		
+		-1.0, .0, .0,
+		-1.0, .0, .0,
+		-1.0, .0, .0,
+		-1.0, .0, .0,
+		
+		.0, 1.0, .0,
+		.0, 1.0, .0,
+		.0, 1.0, .0,
+		.0, 1.0, .0,
+		
+		.0, -1.0, .0,
+		.0, -1.0, .0,
+		.0, -1.0, .0,
+		.0, -1.0, .0,
+		
 	};
 	
 		
@@ -222,7 +399,7 @@
 	glLightfv(GL_LIGHT0, GL_AMBIENT, light0Ambient);
     
     // Define the diffuse component of the first light
-    static const GLfloat light0Diffuse[] = {0.4, 0.4, 0.4, 1.0};
+    static const GLfloat light0Diffuse[] = {0.8, 0.8, 0.8, 1.0};
 	glLightfv(GL_LIGHT0, GL_DIFFUSE, light0Diffuse);
     
     // Define the specular component and shininess of the first light
@@ -230,21 +407,21 @@
     glLightfv(GL_LIGHT0, GL_SPECULAR, light0Specular);
     
     // Define the position of the first light
-	// const GLfloat light0Position[] = {10.0, 10.0, 10.0}; 
-    static const GLfloat light0Position[] = {10, 10, 15};
-	glLightfv(GL_LIGHT0, GL_POSITION, light0Position); 
+	static const GLfloat direction0Position[] = {15.0, 15.0, 8.0, .0};
+	glLightfv(GL_LIGHT0, GL_POSITION, direction0Position); 
 	
     // Calculate light vector so it points at the object
     
-	static const GLfloat direction0Position[] = {-15.0, -15.0, -15.0};
     
-    glLightfv(GL_LIGHT0, GL_SPOT_DIRECTION, direction0Position);
+    //glLightfv(GL_LIGHT0, GL_SPOT_DIRECTION, direction0Position);
 	
     // Define a cutoff angle. This defines a 90° field of vision, since the cutoff
     // is number of degrees to each side of an imaginary line drawn from the light's
     // position along the vector supplied in GL_SPOT_DIRECTION above
-    glLightf(GL_LIGHT0, GL_SPOT_CUTOFF, 45.0);
+//    glLightf(GL_LIGHT0, GL_SPOT_CUTOFF, 45.0);
 	glEnable(GL_COLOR_MATERIAL);
+	
+	
 	
 	CATransform3D temporaryMatrix = currentCalculatedMatrix;
 	if (xRot != 0) { // rotate around y
@@ -262,9 +439,33 @@
 	}
 	if ( (temporaryMatrix.m11 >= -100.0) && (temporaryMatrix.m11 <= 100.0))
 		currentCalculatedMatrix = temporaryMatrix;	
+	if (xRot!=0 || yRot!=0) {
+		rotatedMatix = currentCalculatedMatrix;
+	}
+	
+	
+	
+	if (extraRot) { // rotate around y
+		NSLog(@"Extra rotation");
+		float xR=0.5;
+		float yR = 0.5;
+		GLfloat totalRotation = sqrt(xR*xR + yR*yR);
+		//NSLog(@"x: %f   TempX: %f  y:  %f   tempY: %f", xRotation, xTemp, yRotation, yTemp);
+		CATransform3D temporaryMatrix = CATransform3DRotate(rotatedMatix, totalRotation * M_PI / 180.0, 
+															((xR/totalRotation) * rotatedMatix.m12 + (yR/totalRotation) * rotatedMatix.m11),
+															((xR/totalRotation) * rotatedMatix.m22 + (yR/totalRotation) * rotatedMatix.m21),
+															((xR/totalRotation) * rotatedMatix.m32 + (yR/totalRotation) * rotatedMatix.m31));
+		//if ((temporaryMatrix.m11 >= -100.0) && (temporaryMatrix.m11 <= 100.0))
+			rotatedMatix = temporaryMatrix;
+		rotCounter++;
+		if (rotCounter>=10) {
+			extraRot = NO;
+		}
+		
+	}
 	
 	GLfloat currentModelViewMatrix[16];
-	[self convert3DTransform:&currentCalculatedMatrix toMatrix:currentModelViewMatrix];
+	[self convert3DTransform:&rotatedMatix toMatrix:currentModelViewMatrix];
 	
 	glClearColor(255.0f, 255.0f, 255.0f, 1.0f);
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
@@ -284,7 +485,7 @@
 			
 		glLoadIdentity();
 		glLoadMatrixf(currentModelViewMatrix);
-		
+		//glRotatef(5, 1, 0, 0);
 		block * temp = [blocks objectAtIndex:i];
 		glTranslatef(temp.x*2, temp.y*2, temp.z*2 );
 		
@@ -301,8 +502,8 @@
 			glEnableClientState(GL_COLOR_ARRAY);
 			
 		}
-		glDrawElements(GL_TRIANGLE_STRIP, 14, GL_UNSIGNED_SHORT, cubeIndices);
-		//glDrawElements(GL_TRIANGLES, 36, GL_UNSIGNED_SHORT, cubeIndices);
+		//glDrawElements(GL_TRIANGLE_STRIP, 14, GL_UNSIGNED_SHORT, cubeIndices);
+		glDrawElements(GL_TRIANGLES, 36, GL_UNSIGNED_SHORT, cubeIndices);
 		
 	}
 	glDisableClientState(GL_VERTEX_ARRAY);
