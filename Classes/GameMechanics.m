@@ -15,6 +15,8 @@
 @synthesize endPos;
 @synthesize maxDist;
 @synthesize blockArray;
+@synthesize rotating;
+@synthesize score;
 
 - (id)init
 {    
@@ -53,6 +55,8 @@
 	
 	adjustZ = NO;
 	currentZ = -6;
+	rotating = NO;
+	score = 0;
     return self;
 }
 
@@ -443,7 +447,7 @@
 	
 	int tempPos[3];	
 	
-	for (int j=currentZ-1; j>=-currentZ; j--) {
+	for (int j=currentZ-1; j>= -currentZ; j--) {
 		//block * temp = [self getBlock:startArray.x andY:j andZ:currentZ];
 		int tempPos[3] = {startArray.x,j,currentZ};
 		[self getPosition:tempPos];
@@ -463,9 +467,9 @@
 		swap = temp;
 	}
 	
-	for (int j=-currentZ+1; j<=currentZ; j++) {
+	for (int j=currentZ-1; j>=-currentZ; j--) {
 		//block * temp = [self getBlock:startArray.x andY:currentZ andZ:j];
-		int tempPos[3] = {startArray.x,currentZ,j};
+		int tempPos[3] = {startArray.x,-currentZ,j};
 		[self getPosition:tempPos];
 		
 		
@@ -503,9 +507,9 @@
 		swap = temp;
 	}
 	
-	for (int j=currentZ-1; j>=-currentZ+1; j--) {
+	for (int j=-currentZ+1; j<=currentZ-1; j++) {
 		//block * temp = [self getBlock:startArray.x andY:-currentZ andZ:j];
-		int tempPos[3] = {startArray.x,-currentZ,j};
+		int tempPos[3] = {startArray.x,currentZ,j};
 		[self getPosition:tempPos];
 		
 		
@@ -536,11 +540,11 @@
 - (void) zForward{
 	adjustZ = YES;
 	block * swap = [self getBlock:startArray.x andY:startArray.y andZ:-5];
-	int pos[3] = {startArray.x,startArray.y, -5};	
+	
+	int pos[3] = {startArray.x,startArray.y, -5};
 	
 	
 	for (int j=-4; j<=5; j++) {
-		//block * temp = [self getBlock:startArray.x andY:startArray.y andZ:j];
 		int tempPos[3] = {startArray.x,startArray.y,j};
 		[self getPosition:tempPos];
 		
@@ -576,7 +580,7 @@
 	int pos[3] = {startArray.x,startArray.y, 5};
 	
 	
-	for (int j=4; j>=-4; j--) {
+	for (int j=4; j>=-5; j--) {
 		int tempPos[3] = {startArray.x,startArray.y,j};
 		[self getPosition:tempPos];
 		
@@ -843,6 +847,20 @@
 	NSLog(@"Start position:    %f %f",startArray.x,startArray.y);
 }
 
+- (void) shuffle{
+	
+	for (int i=-5; i<=5; i++) {
+		startArray.x = 0;
+		startArray.y = i;
+		[self rowLeft];
+		
+		startArray.x = i;
+		startArray.y = 0;
+		[self columnDown];
+	}
+	[self moveIn];
+	
+}
 - (void) removeBlocks{
 	NSMutableArray * toRemove = [[NSMutableArray alloc] init];
 	adjustZ = YES;
@@ -864,43 +882,14 @@
 			}
 		}
 	}
-	}
-	/*if (toRemove.count > 0) {
 		
-		for (int x = 0; x<11; x++) {
-			for (int y=0; y<11; y++) {
-				for (int z=0; z<11; z++) {
-					int subtract = -1;
-					if (z == 5) {
-						continue;
-					}
-					else if (z < 5){
-						subtract = 1;
-					}
-					int newZ = z;
-					while (newZ+subtract >= 0 && newZ+subtract<=10 && blockPlace[x][y][newZ+subtract] == nil) {
-						//NSLog(@"Disconnect found  %d at position: (%d, %d, %d)   subtract: %d", newZ,x,y,newZ,subtract);
-						
-						newZ+=subtract;
-						//NSLog(@"Disconnect found  %d at position: (%d, %d, %d)   subtract: %d", newZ,x,y,newZ,subtract);
-						[blockPlace[x][y][newZ-subtract] setZ:newZ-5];
-						
-						if (newZ ==5) {
-							NSLog(@"brwaking");
-							break;
-						}
-						
-						
-						subtract = -1;
-						if (newZ < 5){
-							subtract = 1;
-						}
-						
-					}
-				}
-			}
-		}
-	}*/
+		NSMutableSet * forScore = [NSMutableSet set];
+		[forScore addObjectsFromArray:toRemove];
+		score+=2*(forScore.count-3);
+		NSLog(@"Number removed %d    score: %d",forScore.count, score);
+		
+	}
+	
 	NSLog(@"Number to remove:   %d",toRemove.count);
 	[toRemove release];
 	
@@ -913,7 +902,7 @@
 }
 
 - (CGPoint)rotateCube{
-	
+	rotating = YES;
 	float x = endPos.x - startPos.x;
 	float y = endPos.y - startPos.y;
 	
@@ -984,7 +973,7 @@
 	NSLog(@"                     Z axis:  %d  %d  %d",zAxis[0], zAxis[1], zAxis[2]);
 	int z = 0;
 	
-	
+	rotating = NO;
 	return CGPointMake(x, y);
 	
 	

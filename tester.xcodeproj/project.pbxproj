@@ -21,6 +21,12 @@
 		0F93871B124681A100C3AB0A /* down.gesture in Resources */ = {isa = PBXBuildFile; fileRef = 0F938711124680F300C3AB0A /* down.gesture */; };
 		0F938A2E124A541000C3AB0A /* diagonalUp.gesture in Resources */ = {isa = PBXBuildFile; fileRef = 0F938A2D124A541000C3AB0A /* diagonalUp.gesture */; };
 		0F938A61124A5CE300C3AB0A /* z.gesture in Resources */ = {isa = PBXBuildFile; fileRef = 0F938A60124A5CDE00C3AB0A /* z.gesture */; };
+		0F938B04124B732500C3AB0A /* swapLeft.gesture in Resources */ = {isa = PBXBuildFile; fileRef = 0F938B03124B724300C3AB0A /* swapLeft.gesture */; };
+		0F938B24124B76EB00C3AB0A /* swapRight.gesture in Resources */ = {isa = PBXBuildFile; fileRef = 0F938B23124B76D800C3AB0A /* swapRight.gesture */; };
+		0F938B9D124B9E2E00C3AB0A /* swapUp.gesture in Resources */ = {isa = PBXBuildFile; fileRef = 0F938B9C124B9E1E00C3AB0A /* swapUp.gesture */; };
+		0F938B9F124B9E4700C3AB0A /* swapDown.gesture in Resources */ = {isa = PBXBuildFile; fileRef = 0F938B9E124B9E3A00C3AB0A /* swapDown.gesture */; };
+		0F938BA5124B9F9A00C3AB0A /* diagonalDown.gesture in Resources */ = {isa = PBXBuildFile; fileRef = 0F938BA0124B9E7D00C3AB0A /* diagonalDown.gesture */; };
+		0F938BEC124BACB500C3AB0A /* sidePanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F938BEB124BACB500C3AB0A /* sidePanel.m */; };
 		0FEA949E122D105D007FA78C /* block.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEA949D122D105D007FA78C /* block.m */; };
 		0FEAA1B512412152007FA78C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEAA1B312412152007FA78C /* ViewController.m */; };
 		0FEAA1B612412152007FA78C /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FEAA1B412412152007FA78C /* ViewController.xib */; };
@@ -57,6 +63,13 @@
 		0F938711124680F300C3AB0A /* down.gesture */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = down.gesture; sourceTree = "<group>"; };
 		0F938A2D124A541000C3AB0A /* diagonalUp.gesture */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = diagonalUp.gesture; sourceTree = "<group>"; };
 		0F938A60124A5CDE00C3AB0A /* z.gesture */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = z.gesture; sourceTree = "<group>"; };
+		0F938B03124B724300C3AB0A /* swapLeft.gesture */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = swapLeft.gesture; sourceTree = "<group>"; };
+		0F938B23124B76D800C3AB0A /* swapRight.gesture */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = swapRight.gesture; sourceTree = "<group>"; };
+		0F938B9C124B9E1E00C3AB0A /* swapUp.gesture */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = swapUp.gesture; sourceTree = "<group>"; };
+		0F938B9E124B9E3A00C3AB0A /* swapDown.gesture */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = swapDown.gesture; sourceTree = "<group>"; };
+		0F938BA0124B9E7D00C3AB0A /* diagonalDown.gesture */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = diagonalDown.gesture; sourceTree = "<group>"; };
+		0F938BEA124BACB500C3AB0A /* sidePanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sidePanel.h; sourceTree = "<group>"; };
+		0F938BEB124BACB500C3AB0A /* sidePanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = sidePanel.m; sourceTree = "<group>"; };
 		0FEA949C122D105D007FA78C /* block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = block.h; sourceTree = "<group>"; };
 		0FEA949D122D105D007FA78C /* block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = block.m; sourceTree = "<group>"; };
 		0FEAA1B212412152007FA78C /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -123,6 +136,8 @@
 				0FEAA1B312412152007FA78C /* ViewController.m */,
 				0F93858312465A6100C3AB0A /* GameMechanics.h */,
 				0F93858412465A6100C3AB0A /* GameMechanics.m */,
+				0F938BEA124BACB500C3AB0A /* sidePanel.h */,
+				0F938BEB124BACB500C3AB0A /* sidePanel.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -182,6 +197,11 @@
 				0F938711124680F300C3AB0A /* down.gesture */,
 				0F938A2D124A541000C3AB0A /* diagonalUp.gesture */,
 				0F938A60124A5CDE00C3AB0A /* z.gesture */,
+				0F938B03124B724300C3AB0A /* swapLeft.gesture */,
+				0F938B23124B76D800C3AB0A /* swapRight.gesture */,
+				0F938B9C124B9E1E00C3AB0A /* swapUp.gesture */,
+				0F938B9E124B9E3A00C3AB0A /* swapDown.gesture */,
+				0F938BA0124B9E7D00C3AB0A /* diagonalDown.gesture */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -253,6 +273,11 @@
 				0F93871B124681A100C3AB0A /* down.gesture in Resources */,
 				0F938A2E124A541000C3AB0A /* diagonalUp.gesture in Resources */,
 				0F938A61124A5CE300C3AB0A /* z.gesture in Resources */,
+				0F938B04124B732500C3AB0A /* swapLeft.gesture in Resources */,
+				0F938B24124B76EB00C3AB0A /* swapRight.gesture in Resources */,
+				0F938B9D124B9E2E00C3AB0A /* swapUp.gesture in Resources */,
+				0F938B9F124B9E4700C3AB0A /* swapDown.gesture in Resources */,
+				0F938BA5124B9F9A00C3AB0A /* diagonalDown.gesture in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +299,7 @@
 				0F93857A124658BE00C3AB0A /* recognition.m in Sources */,
 				0F93857B124658BE00C3AB0A /* StateMachineNode.m in Sources */,
 				0F93858512465A6100C3AB0A /* GameMechanics.m in Sources */,
+				0F938BEC124BACB500C3AB0A /* sidePanel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

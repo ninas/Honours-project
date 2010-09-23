@@ -28,7 +28,8 @@
 	BOOL adjustZ;
 	int currentZ;
 	
-	
+	BOOL rotating;
+	int score;
 	
 	
 }
@@ -38,7 +39,8 @@
 @property (nonatomic) CGPoint endPos;
 @property (nonatomic) float maxDist;
 @property (nonatomic, retain) NSMutableArray * blockArray;
-
+@property (nonatomic) BOOL rotating;
+@property (nonatomic) int score;
 
 - (void)rowLeft;
 
@@ -55,4 +57,5 @@
 - (CGPoint) rotateCube;
 - (void) removeBlocks;
 - (block *) getBlock:(int)x andY:(int)y andZ:(int)z;
+- (void) shuffle;
 @end

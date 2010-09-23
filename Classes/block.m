@@ -18,7 +18,7 @@
 
 - (id) init{
 	
-	colour = rand()%3;
+	colour = rand()%4;
 	
 	return self;
 	
@@ -66,6 +66,39 @@
 
 - (void) checkConnection{
 	
+	
+}
+
+- (BOOL) updatePos{
+	newX+=increX;
+	newY+=increY;
+	newZ+=increZ;
+	
+	if (newX >= upX && newY >= upY && newZ >= upZ) {
+		x = upX;
+		y = upY;
+		z = upZ;
+		return YES;
+	}
+	return NO;
+	
+	
+}
+
+- (void) setNewPos:(int)nX andY:(int)nY andZ:(int)nZ{
+	newX = (float)x;
+	newY = (float)y;
+	newZ = (float)z;
+	
+	upX=nX;
+	upY=nY;
+	upZ=nZ;
+	
+	
+	
+	increX = (upX - x)/20.0;
+	increY = (upY - y)/20.0;
+	increZ = (upZ - z)/20.0;
 }
 
 @end

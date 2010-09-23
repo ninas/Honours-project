@@ -11,7 +11,6 @@
 
 @implementation recognition
 @synthesize tap;
-
 - (id)init {
     if ((self = [super init])) {
         // Initialization code
