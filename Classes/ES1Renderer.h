@@ -28,16 +28,22 @@
 	CATransform3D currentCalculatedMatrix;
 	CATransform3D beginCalculatedMatrix;
 	CATransform3D rotatedMatix;
+	
 	NSMutableArray * blocks;
+	NSMutableSet * translate;
 	GLfloat xRot;
 	GLfloat yRot;
+	
 	
 	BOOL check;
 	float blockSize;
 	NSMutableArray * touchesArray;
 	BOOL extraRot;
 	int rotCounter;
-@public
+	GLubyte alphaVal;
+	//BOOL changeAlpha;
+	int counterAlpha;
+	BOOL doingRock;
 	/*float rotationAngleX;
 	float rotationAngleY;
 	float distX;
@@ -49,7 +55,7 @@
 	BOOL rotateY;
 	BOOL rotateA;*/
 }
-
+@property BOOL doingRock;
 /*@property float rotationAngleX;
 @property float rotationAngleY;
 @property float distX;
@@ -61,6 +67,8 @@
 //- (void) setVals:(float)rotX andRot:(float)rotY andDist:(float)x andDist2:(float)y;
 - (void)renderByRotatingAroundX:(float)xRotation rotatingAroundY:(float)yRotation;
 - (void)convert3DTransform:(CATransform3D *)transform3D toMatrix:(GLfloat *)matrix;
-- (void) setBlockArray:(NSMutableArray*)array;
+- (void) setBlockArray:(NSMutableArray*)array andTrans:(NSMutableSet*)trans;
 - (void) setTouchesArray:(NSMutableArray*)touches;
+- (void) clearTouches;
+- (void) resetCounterA;
 @end

@@ -60,10 +60,12 @@
 		
 		counter = 0;
 		totalCounter = 0;
+		doRock = NO;
+		rocking = 0;
 		
 		mechanics = [[GameMechanics alloc] init];
 		
-		[renderer setBlockArray:mechanics.blockArray];
+		[renderer setBlockArray:mechanics.blockArray andTrans:mechanics.translateArray];
 		
 		
 		touchesArray = [[NSMutableArray alloc]init];
@@ -118,6 +120,16 @@
 		[self addSubview:panel];
 		panelOn = YES;
 		
+		gestureDescriptor = [[UILabel alloc] initWithFrame:CGRectMake(340, 10, 400, 50)];
+		gestureDescriptor.text=@"";
+		gestureDescriptor.textAlignment = UITextAlignmentCenter;
+		gestureDescriptor.backgroundColor = [UIColor clearColor]; 
+		gestureDescriptor.textColor = [UIColor whiteColor];
+		gestureDescriptor.alpha = 0;
+		gestureDescriptor.font = [UIFont systemFontOfSize:25];
+		[self addSubview:gestureDescriptor];
+		
+		gestureDCount = 101;
         // A system version of 3.1 or greater is required to use CADisplayLink. The NSTimer
         // class is used as fallback when it isn't available.
         NSString *reqSysVer = @"3.1";
@@ -134,7 +146,72 @@
  */
 - (void)drawView:(id)sender
 {
+	
 	score.text = [NSString stringWithFormat:@"%d", mechanics.score];
+	if (gestureDCount < 30) {
+		gestureDCount++;
+	}
+	else if (gestureDCount == 30){
+		gestureDCount++;
+		[UIView beginAnimations:nil context:NULL];
+		[UIView setAnimationDuration:1.5];
+		[gestureDescriptor setAlpha:0.0];
+		[UIView commitAnimations];
+		[renderer resetCounterA];
+		//renderer.changeAlpha = YES;
+	}
+	
+	if (doRock) {
+		renderer.doingRock = YES;
+		if (rocking == 0) {
+			rockRotat.x = -8;
+			rockRotat.y = 5;
+			divideBy = 10;
+		}
+		else if (rocking == 10){
+			rockRotat.x = 16;
+			rockRotat.y = 0;
+			divideBy = 20;
+		}
+		else if (rocking == 30){
+			rockRotat.x = -8;
+			rockRotat.y = -5;
+			divideBy = 10;
+			
+		}
+		else if (rocking == 40){
+			rockRotat.x = 5;
+			rockRotat.y = -8;
+			divideBy = 10;
+			
+		}
+		else if (rocking == 50){
+			rockRotat.x = 0;
+			rockRotat.y = 16;
+			divideBy = 20;
+			
+		}
+		else if (rocking == 70){
+			rockRotat.x = -5;
+			rockRotat.y = -8;
+			divideBy = 10;
+			
+		}
+		else if (rocking == 80){
+			rocking = 0;
+			doRock = NO;
+			
+			
+		}
+		
+		float xRot = rockRotat.x/divideBy;
+		float yRot = rockRotat.y/divideBy;
+		rocking++;
+		[renderer renderByRotatingAroundX:xRot rotatingAroundY:yRot];
+
+	}
+	else {
+		
     float xRot = lastDist.x/40;
 	float yRot = lastDist.y/40;
 	
@@ -153,7 +230,7 @@
 	}
 	
 	[renderer renderByRotatingAroundX:xRot rotatingAroundY:yRot];
-	
+	}
 }
 
 - (void)layoutSubviews
@@ -233,6 +310,7 @@
 	
     [super dealloc];
 }
+
 
 
 
@@ -933,54 +1011,6 @@
 				[packed3 removeObjectAtIndex:0];
 				NSLog(@"One touch 3");
 			}
-			/*else if (numTouches == 2 && packed2.count != 0 && packed1.count == 0){
-				/* FUNCTION CALL GOES HERE
-				 * Data is in packed1 and packed2 arrays
-				 * 
-				 * [0] (CGPoint)	endPoint
-				 * [1] (float)		scale
-				 * [2] (float)		angle
-				 * [3] (float)		gradient angle
-				 */
-                /*float angles[2];
-                angles[0] = [[[packed2 objectAtIndex:0] objectAtIndex:2] floatValue];
-                angles[1] = [[[packed3 objectAtIndex:0] objectAtIndex:2] floatValue];
-                [stateMachine doesGestureStateExistWithAngle:angles AndTouch:2];                  
-				[packed2 removeObjectAtIndex:0];
-				[packed3 removeObjectAtIndex:0];
-				[stateMachine endOfGestureStateRecogniser];
-                [mechanics setEnd:([[[packed1 lastObject] objectAtIndex:0] CGPointValue]).x andY:([[[packed1 lastObject] objectAtIndex:0] CGPointValue]).y];
-				
-				lastDist = [mechanics rotateCube];
-				[packed1 removeAllObjects];
-				[packed2 removeAllObjects];
-				
-				NSLog(@"Two touches 3, 2");
-			}
-			else if (numTouches == 2 && packed1.count != 0 && packed2.count == 0){
-				/* FUNCTION CALL GOES HERE
-				 * Data is in packed1 and packed3 arrays
-				 * 
-				 * [0] (CGPoint)	endPoint
-				 * [1] (float)		scale
-				 * [2] (float)		angle
-				 * [3] (float)		gradient angle
-				 */
-                /*float angles[2];
-                angles[0] = [[[packed1 objectAtIndex:0] objectAtIndex:2] floatValue];
-                angles[1] = [[[packed3 objectAtIndex:0] objectAtIndex:2] floatValue];
-                [stateMachine doesGestureStateExistWithAngle:angles AndTouch:2];                  
-				[packed1 removeObjectAtIndex:0];
-				[packed3 removeObjectAtIndex:0];
-				[stateMachine endOfGestureStateRecogniser];
-                [mechanics setEnd:([[[packed1 lastObject] objectAtIndex:0] CGPointValue]).x andY:([[[packed1 lastObject] objectAtIndex:0] CGPointValue]).y];
-				
-				lastDist = [mechanics rotateCube];
-				[packed1 removeAllObjects];
-				[packed3 removeAllObjects];
-				
-				NSLog(@"Two touches 3, 1");
-			}*/
 			else if (numTouches == 3 && packed1.count != 0 && packed2.count != 0){
 				/* FUNCTION CALL GOES HERE
 				 * Data is in packed1, packed2 and packed3 arrays
@@ -1210,40 +1240,63 @@
 	NSLog(@"%s found", type);
 	
 	if (type != NULL && originalNum==1){
+		NSString * descrip =[[NSString string] init];
 		if(strcmp(type, "left") == 0) {
 		[mechanics rowLeft];
 			NSLog(@"Calling left");
+			descrip = @"Row left";
 		}
 		else if (strcmp(type, "right") == 0){
 			[mechanics rowRight];
+			descrip = @"Row right";
 		}
 		else if (strcmp(type, "up") == 0){
 			[mechanics columnUp];
+			descrip = @"Column up";
 		}
 		else if (strcmp(type, "down") == 0){
 			[mechanics columnDown];
+			descrip = @"Column down";
 		}
 		else if (strcmp(type, "diagonalU") == 0){
 			[mechanics zForward];
+			descrip = @"Forward";
 		}
 		else if (strcmp(type, "diagonalDown") == 0){
 			[mechanics zBackward];
+			descrip = @"Backward";
 		}
 		else if (strcmp(type, "z") == 0){
 			[mechanics moveIn];
+			descrip = @"Move together";
 		}
 		else if (strcmp(type, "sLeft") == 0){
 			[mechanics swapBlocks:0];
+			descrip = @"Swap left";
 		}
 		else if (strcmp(type, "sRight") == 0){
 			[mechanics swapBlocks:1];
+			descrip = @"Swap right";
 		}
 		else if (strcmp(type, "sDown") == 0){
-			[mechanics swapBlocks:2];
+			[mechanics swapBlocks:3];
+			descrip = @"Swap down";
 		}
 		else if (strcmp(type, "sUp") == 0){
-			[mechanics swapBlocks:3];
+			[mechanics swapBlocks:2];
+			descrip = @"Swap up";
 		}
+		else if (strcmp(type, "square") == 0){
+			doRock = YES;
+			descrip = @"Rock cube";
+		}
+		gestureDescriptor.text = descrip;
+		[UIView beginAnimations:nil context:NULL];
+		[UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
+		[UIView setAnimationDuration:0.75];
+		[gestureDescriptor setAlpha:50];
+		[UIView commitAnimations];
+		gestureDCount = 0;
 	}
 	//[self setNeedsDisplay];
 }

@@ -9,7 +9,8 @@
 #import "ES1Renderer.h"
 
 @implementation ES1Renderer
-
+@synthesize doingRock;
+//@synthesize counterAlpha;
 /*@synthesize rotationAngleX;
  @synthesize rotationAngleY;
  @synthesize distX;
@@ -31,6 +32,10 @@
 		rotatedMatix = CATransform3DIdentity;
 		check = NO;
 		blockSize = 15;
+		alphaVal = 255;
+		counterAlpha = 300;
+		doingRock = NO;
+		//changeAlpha = NO;
 		/*float xRot=5;
 		 float yRot = 5;
 		 GLfloat totalRotation = sqrt(xRot*xRot + yRot*yRot);
@@ -69,16 +74,32 @@
 	
     return self;
 }
-
-- (void) setBlockArray:(NSMutableArray *) array{
+- (void) resetCounterA{
+	counterAlpha = 0;
+}
+- (void) setBlockArray:(NSMutableArray *) array andTrans:(NSMutableSet*)trans{
 	NSLog(@"Array set    %d", array.count);
 	
 	blocks = array;
+	translate = trans;
 	NSLog(@"Array set    %d", blocks.count);
 }
 
 - (void) setTouchesArray:(NSMutableArray*)touches{
 	touchesArray = touches;
+}
+
+- (void) clearTouches{
+	if ([[touchesArray objectAtIndex:0] count] > 0) {
+		[[touchesArray objectAtIndex:0] removeAllObjects];
+	}
+	if ([[touchesArray objectAtIndex:1] count] > 0) {
+		[[touchesArray objectAtIndex:1] removeAllObjects];
+	}
+	if ([[touchesArray objectAtIndex:2] count] > 0) {
+		[[touchesArray objectAtIndex:2] removeAllObjects];
+	}
+	
 }
 /*
  * Render function
@@ -94,20 +115,21 @@
 	}	
 	else if (xRot == 0 && yRot == 0 && (xRotation !=0 || yRotation != 0)) { // rotation started
 		/*beginCalculatedMatrix = currentCalculatedMatrix;
-		xRot = xRotation;
-		yRot = yRotation;*/
+		 xRot = xRotation;
+		 yRot = yRotation;*/
 		/*float xR=-5;
-		float yR = -5;
-		GLfloat totalRotation = sqrt(xR*xR + yR*yR);
-		//NSLog(@"x: %f   TempX: %f  y:  %f   tempY: %f", xRotation, xTemp, yRotation, yTemp);
-		CATransform3D temporaryMatrix = CATransform3DRotate(currentCalculatedMatrix, totalRotation * M_PI / 180.0, 
-															((xR/totalRotation) * currentCalculatedMatrix.m12 + (yR/totalRotation) * currentCalculatedMatrix.m11),
-															((xR/totalRotation) * currentCalculatedMatrix.m22 + (yR/totalRotation) * currentCalculatedMatrix.m21),
-															((xR/totalRotation) * currentCalculatedMatrix.m32 + (yR/totalRotation) * currentCalculatedMatrix.m31));
-		if ((temporaryMatrix.m11 >= -100.0) && (temporaryMatrix.m11 <= 100.0))
-			currentCalculatedMatrix = temporaryMatrix;*/
+		 float yR = -5;
+		 GLfloat totalRotation = sqrt(xR*xR + yR*yR);
+		 //NSLog(@"x: %f   TempX: %f  y:  %f   tempY: %f", xRotation, xTemp, yRotation, yTemp);
+		 CATransform3D temporaryMatrix = CATransform3DRotate(currentCalculatedMatrix, totalRotation * M_PI / 180.0, 
+		 ((xR/totalRotation) * currentCalculatedMatrix.m12 + (yR/totalRotation) * currentCalculatedMatrix.m11),
+		 ((xR/totalRotation) * currentCalculatedMatrix.m22 + (yR/totalRotation) * currentCalculatedMatrix.m21),
+		 ((xR/totalRotation) * currentCalculatedMatrix.m32 + (yR/totalRotation) * currentCalculatedMatrix.m31));
+		 if ((temporaryMatrix.m11 >= -100.0) && (temporaryMatrix.m11 <= 100.0))
+		 currentCalculatedMatrix = temporaryMatrix;*/
 		
 		beginCalculatedMatrix = currentCalculatedMatrix;
+		
 		xRot = xRotation;
 		yRot = yRotation;
 		
@@ -115,8 +137,11 @@
 	}
 	else if ((xRot != 0 || yRot !=0 ) && xRotation ==0 && yRotation ==0){ // rotation ended
 		currentCalculatedMatrix = beginCalculatedMatrix;
-		
-		if (xRot > 0) {
+		NSLog(@"ending");
+		if (doingRock) {
+			doingRock = NO;
+		}
+		else if (xRot > 0) {
 			xRot = 90;
 			yRot = 0;
 		}
@@ -137,15 +162,15 @@
 		extraRot = YES;
 		rotCounter = 0;
 		/*float xR=5;
-		float yR = 5;
-		GLfloat totalRotation = sqrt(xR*xR + yR*yR);
-		//NSLog(@"x: %f   TempX: %f  y:  %f   tempY: %f", xRotation, xTemp, yRotation, yTemp);
-		CATransform3D temporaryMatrix = CATransform3DRotate(currentCalculatedMatrix, totalRotation * M_PI / 180.0, 
-															((xR/totalRotation) * currentCalculatedMatrix.m12 + (yR/totalRotation) * currentCalculatedMatrix.m11),
-															((xR/totalRotation) * currentCalculatedMatrix.m22 + (yR/totalRotation) * currentCalculatedMatrix.m21),
-															((xR/totalRotation) * currentCalculatedMatrix.m32 + (yR/totalRotation) * currentCalculatedMatrix.m31));
-		if ((temporaryMatrix.m11 >= -100.0) && (temporaryMatrix.m11 <= 100.0))
-			currentCalculatedMatrix = temporaryMatrix;*/
+		 float yR = 5;
+		 GLfloat totalRotation = sqrt(xR*xR + yR*yR);
+		 //NSLog(@"x: %f   TempX: %f  y:  %f   tempY: %f", xRotation, xTemp, yRotation, yTemp);
+		 CATransform3D temporaryMatrix = CATransform3DRotate(currentCalculatedMatrix, totalRotation * M_PI / 180.0, 
+		 ((xR/totalRotation) * currentCalculatedMatrix.m12 + (yR/totalRotation) * currentCalculatedMatrix.m11),
+		 ((xR/totalRotation) * currentCalculatedMatrix.m22 + (yR/totalRotation) * currentCalculatedMatrix.m21),
+		 ((xR/totalRotation) * currentCalculatedMatrix.m32 + (yR/totalRotation) * currentCalculatedMatrix.m31));
+		 if ((temporaryMatrix.m11 >= -100.0) && (temporaryMatrix.m11 <= 100.0))
+		 currentCalculatedMatrix = temporaryMatrix;*/
 		
 	}
 	else{
@@ -187,40 +212,40 @@
 		1.0, -1.0, 1.0
 		
 		/*
-		-1.0, -1.0,  1.0,
-		1.0, -1.0,  1.0,
-		-1.0,  1.0,  1.0,
-		1.0, 1.0, 1.0,
-		
-		1.0, -1.0, 1.0,
-		1.0, -1.0, -1.0,
-		1.0, 1.0, 1.0,
-		1.0, 1.0, -1.0,
-		
-		
-		1.0,  1.0,  1.0,
-		-1.0, -1.0, -1.0,
-		1.0, -1.0, -1.0,
-		-1.0,  1.0, -1.0,
-		1.0,  1.0, -1.0,*/
+		 -1.0, -1.0,  1.0,
+		 1.0, -1.0,  1.0,
+		 -1.0,  1.0,  1.0,
+		 1.0, 1.0, 1.0,
+		 
+		 1.0, -1.0, 1.0,
+		 1.0, -1.0, -1.0,
+		 1.0, 1.0, 1.0,
+		 1.0, 1.0, -1.0,
+		 
+		 
+		 1.0,  1.0,  1.0,
+		 -1.0, -1.0, -1.0,
+		 1.0, -1.0, -1.0,
+		 -1.0,  1.0, -1.0,
+		 1.0,  1.0, -1.0,*/
 	};
 	
 	static const GLushort cubeIndices[] = {
 		0,1,2,1,3,2,		4,5,6,5,7,6,		8,9,10,9,11,10,  12,13,14,13,15,14,
 		16,17,18,17,19,18,	20,21,22,21,23,22	
-//		0, 1, 2, 3, 7, 1, 5, 4, 7, 6, 2, 4, 0, 1
+		//		0, 1, 2, 3, 7, 1, 5, 4, 7, 6, 2, 4, 0, 1
 		//0,1,2,2,1,3,1,5,7,1,7,3,5,4,7,7,4,6,6,2,4,2,4,0,3,7,2,6,2,7,1,0,5,4,5,0
 	};
 	
 	
     static const GLubyte cubeColorsRed[] = {
         /*255, 0,   0, 255,
-        255, 0,   255, 255,
-        255, 255,   0, 255,
-        255, 0,   0, 255,
-        255, 0,   255, 255,
-        255, 255,   0, 255,
-        255, 0,   0, 255,
+		 255, 0,   255, 255,
+		 255, 255,   0, 255,
+		 255, 0,   0, 255,
+		 255, 0,   255, 255,
+		 255, 255,   0, 255,
+		 255, 0,   0, 255,
 		 255, 0,   255, 255*/
 		243, 148,148,255,
 		200, 15,15,255,
@@ -251,17 +276,17 @@
 		200, 15,15,255,
 		243, 148,148,255,
 		200, 15,15,255
-
+		
     };
 	
 	static const GLubyte cubeColorsGreen[] = {
         /*0, 255,   0, 255,
-        255, 255,   0, 255,
-        0, 255,   255, 255,
-        0, 255,   0, 255,
-        255, 255,   0, 255,
-        0, 255,   255, 255,
-        255, 255,   0, 255,
+		 255, 255,   0, 255,
+		 0, 255,   255, 255,
+		 0, 255,   0, 255,
+		 255, 255,   0, 255,
+		 0, 255,   255, 255,
+		 255, 255,   0, 255,
 		 0, 255,   255, 255*/
 		173,207,170,255,
 		28,179,16,255,
@@ -295,14 +320,14 @@
     };
 	
 	static const GLubyte cubeColorsBlue[] = {
-       /* 0, 0,   255, 255,
-		0, 0,   255, 255,
-        0, 0,   255, 255,
-        0, 0,   255, 255,
-        0, 0,   255, 255,
-        0, 0,   255, 255,
-        0, 0,   255, 255,
-        255, 0,   255, 255*/
+		/* 0, 0,   255, 255,
+		 0, 0,   255, 255,
+		 0, 0,   255, 255,
+		 0, 0,   255, 255,
+		 0, 0,   255, 255,
+		 0, 0,   255, 255,
+		 0, 0,   255, 255,
+		 255, 0,   255, 255*/
 		184,181,255,255,
 		67,59,232,255,
 		67,59,232,255,
@@ -377,12 +402,12 @@
 	
 	static const GLfloat normals [] = {
 		/*-0.57735026918962573, -0.57735026918962573,0.57735026918962573,
-		0.57735026918962573, -0.57735026918962573,0.57735026918962573,
-		-0.57735026918962573, 0.57735026918962573,0.57735026918962573,
-		0.57735026918962573, 0.57735026918962573,0.57735026918962573,
-		-0.57735026918962573, -0.57735026918962573,-0.57735026918962573,
-		0.57735026918962573, -0.57735026918962573,-0.57735026918962573,
-		-0.57735026918962573, 0.57735026918962573,-0.57735026918962573,
+		 0.57735026918962573, -0.57735026918962573,0.57735026918962573,
+		 -0.57735026918962573, 0.57735026918962573,0.57735026918962573,
+		 0.57735026918962573, 0.57735026918962573,0.57735026918962573,
+		 -0.57735026918962573, -0.57735026918962573,-0.57735026918962573,
+		 0.57735026918962573, -0.57735026918962573,-0.57735026918962573,
+		 -0.57735026918962573, 0.57735026918962573,-0.57735026918962573,
 		 0.57735026918962573, 0.57735026918962573,-0.57735026918962573*/
 		.0, .0, 1.0,
 		.0, .0, 1.0,
@@ -416,7 +441,7 @@
 		
 	};
 	
-		
+	
     // This application only creates a single context which is already set current at this point.
     // This call is redundant, but needed if dealing with multiple contexts.
     [EAGLContext setCurrentContext:context];
@@ -427,10 +452,10 @@
     glViewport(0, 0, backingWidth, backingHeight);
 	
     glMatrixMode(GL_PROJECTION);
-		
+	
 	glLoadIdentity();
 	glOrthof(-1*blockSize*backingWidth/backingHeight, blockSize*backingWidth/backingHeight, -1*blockSize , blockSize , -3.0*blockSize/2.0, 3.0*blockSize/2.0);
-		
+	
 	glMatrixMode(GL_MODELVIEW);
 	// Perform incremental rotation based on current angles in X and Y	
 	
@@ -457,7 +482,7 @@
     glLightfv(GL_LIGHT0, GL_SPECULAR, light0Specular);
     
     // Define the position of the first light
-	static const GLfloat direction0Position[] = {15.0, 15.0, 8.0, .0};
+	static const GLfloat direction0Position[] = {11.0, 13.0, 15.0, .0};
 	glLightfv(GL_LIGHT0, GL_POSITION, direction0Position); 
 	
     // Calculate light vector so it points at the object
@@ -468,54 +493,58 @@
     // Define a cutoff angle. This defines a 90° field of vision, since the cutoff
     // is number of degrees to each side of an imaginary line drawn from the light's
     // position along the vector supplied in GL_SPOT_DIRECTION above
-//    glLightf(GL_LIGHT0, GL_SPOT_CUTOFF, 45.0);
+	//    glLightf(GL_LIGHT0, GL_SPOT_CUTOFF, 45.0);
 	glEnable(GL_COLOR_MATERIAL);
 	
 	
 	
-	CATransform3D temporaryMatrix = currentCalculatedMatrix;
-	if (xRot != 0) { // rotate around y
 		
-		temporaryMatrix = CATransform3DRotate(currentCalculatedMatrix, xRot * M_PI / 180.0, 
-											  (currentCalculatedMatrix.m12 ),
-											  ( currentCalculatedMatrix.m22),
-											  (currentCalculatedMatrix.m32 ));
-	}
-	if (yRot!= 0){ // rotate around x
-		temporaryMatrix = CATransform3DRotate(currentCalculatedMatrix, yRot * M_PI / 180.0, 
-															(currentCalculatedMatrix.m11),
-															(currentCalculatedMatrix.m21),
-															(currentCalculatedMatrix.m31));
-	}
+		CATransform3D temporaryMatrix = currentCalculatedMatrix;
+		if (xRot != 0) { // rotate around y
+			
+			temporaryMatrix = CATransform3DRotate(currentCalculatedMatrix, xRot * M_PI / 180.0, 
+												  (currentCalculatedMatrix.m12 ),
+												  ( currentCalculatedMatrix.m22),
+												  (currentCalculatedMatrix.m32 ));
+		}
 	if ( (temporaryMatrix.m11 >= -100.0) && (temporaryMatrix.m11 <= 100.0))
 		currentCalculatedMatrix = temporaryMatrix;	
-	if (xRot!=0 || yRot!=0) {
-		rotatedMatix = currentCalculatedMatrix;
-	}
-	
-	
-	
-	if (extraRot) { // rotate around y
-		NSLog(@"Extra rotation");
-		float xR=0.5;
-		float yR = 0.5;
-		GLfloat totalRotation = sqrt(xR*xR + yR*yR);
-		//NSLog(@"x: %f   TempX: %f  y:  %f   tempY: %f", xRotation, xTemp, yRotation, yTemp);
-		CATransform3D temporaryMatrix = CATransform3DRotate(rotatedMatix, totalRotation * M_PI / 180.0, 
-															((xR/totalRotation) * rotatedMatix.m12 + (yR/totalRotation) * rotatedMatix.m11),
-															((xR/totalRotation) * rotatedMatix.m22 + (yR/totalRotation) * rotatedMatix.m21),
-															((xR/totalRotation) * rotatedMatix.m32 + (yR/totalRotation) * rotatedMatix.m31));
-		//if ((temporaryMatrix.m11 >= -100.0) && (temporaryMatrix.m11 <= 100.0))
-			rotatedMatix = temporaryMatrix;
-		rotCounter++;
-		if (rotCounter>=10) {
-			extraRot = NO;
+		if (yRot!= 0){ // rotate around x
+			temporaryMatrix = CATransform3DRotate(currentCalculatedMatrix, yRot * M_PI / 180.0, 
+												  (currentCalculatedMatrix.m11),
+												  (currentCalculatedMatrix.m21),
+												  (currentCalculatedMatrix.m31));
+		}
+		if ( (temporaryMatrix.m11 >= -100.0) && (temporaryMatrix.m11 <= 100.0))
+			currentCalculatedMatrix = temporaryMatrix;	
+		if (xRot!=0 || yRot!=0) {
+			rotatedMatix = currentCalculatedMatrix;
 		}
 		
-	}
+		
+		
+		if (extraRot && !doingRock) { // rotate around y
+			NSLog(@"Extra rotation");
+			float xR=0.5;
+			float yR = 0.5;
+			GLfloat totalRotation = sqrt(xR*xR + yR*yR);
+			//NSLog(@"x: %f   TempX: %f  y:  %f   tempY: %f", xRotation, xTemp, yRotation, yTemp);
+			CATransform3D temporaryMatrix = CATransform3DRotate(rotatedMatix, totalRotation * M_PI / 180.0, 
+																((xR/totalRotation) * rotatedMatix.m12 + (yR/totalRotation) * rotatedMatix.m11),
+																((xR/totalRotation) * rotatedMatix.m22 + (yR/totalRotation) * rotatedMatix.m21),
+																((xR/totalRotation) * rotatedMatix.m32 + (yR/totalRotation) * rotatedMatix.m31));
+			//if ((temporaryMatrix.m11 >= -100.0) && (temporaryMatrix.m11 <= 100.0))
+			rotatedMatix = temporaryMatrix;
+			rotCounter++;
+			if (rotCounter>=10) {
+				extraRot = NO;
+			}
+			
+		}
+		GLfloat currentModelViewMatrix[16];
+		
+		[self convert3DTransform:&rotatedMatix toMatrix:currentModelViewMatrix];
 	
-	GLfloat currentModelViewMatrix[16];
-	[self convert3DTransform:&rotatedMatix toMatrix:currentModelViewMatrix];
 	
 	glClearColor(0, 0, 0, 1.0f);
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
@@ -531,8 +560,8 @@
     
 	
 	for (int i=0; i < blocks.count; i++) {
-
-			
+		
+		
 		glLoadIdentity();
 		glLoadMatrixf(currentModelViewMatrix);
 		//glRotatef(5, 1, 0, 0);
@@ -561,6 +590,54 @@
 		glDrawElements(GL_TRIANGLES, 36, GL_UNSIGNED_SHORT, cubeIndices);
 		
 	}
+	int counter = 0;
+	//NSLog(@"Length of translate     %d     vs.    %d", translate.count, blocks.count);
+	NSArray * data = [translate allObjects];
+	while (counter < data.count) {
+				
+		
+		glLoadIdentity();
+		glLoadMatrixf(currentModelViewMatrix);
+		//glRotatef(5, 1, 0, 0);
+		block * temp = [data objectAtIndex:counter];
+		BOOL ans = [temp updatePos];
+		if (ans) {
+			glTranslatef(temp.x*2, temp.y*2, temp.z*2 );
+			[translate removeObject:temp];
+			
+			[blocks addObject:temp];
+		}
+		else {
+			//NSLog(@"Is translating");
+			glTranslatef(temp.newX*2, temp.newY*2, temp.newZ*2 );
+		}
+
+		
+		
+		if (temp.colour == 0) {
+			glColorPointer(4, GL_UNSIGNED_BYTE, 0, cubeColorsRed);
+			glEnableClientState(GL_COLOR_ARRAY);
+		}
+		else if (temp.colour == 1) {
+			glColorPointer(4, GL_UNSIGNED_BYTE, 0, cubeColorsGreen);
+			glEnableClientState(GL_COLOR_ARRAY);
+		}
+		else if (temp.colour == 2){
+			glColorPointer(4, GL_UNSIGNED_BYTE, 0, cubeColorsBlue);
+			glEnableClientState(GL_COLOR_ARRAY);
+			
+		}
+		else {
+			glColorPointer(4, GL_UNSIGNED_BYTE, 0, cubeColorsOrange);
+			glEnableClientState(GL_COLOR_ARRAY);
+			
+		}
+		//glDrawElements(GL_TRIANGLE_STRIP, 14, GL_UNSIGNED_SHORT, cubeIndices);
+		glDrawElements(GL_TRIANGLES, 36, GL_UNSIGNED_SHORT, cubeIndices);
+		counter++;
+	}
+	
+	
 	glDisableClientState(GL_VERTEX_ARRAY);
 	glDisableClientState(GL_COLOR_ARRAY);
 	glDisableClientState(GL_NORMAL_ARRAY);
@@ -587,16 +664,18 @@
                     interactionColors[i*4]      = 255;
                     interactionColors[i*4 + 1]  = 255;
                     interactionColors[i*4 + 2]  = 255;
+					
+					
                     interactionColors[i*4 + 3]  = 255;
                 }
                 glLoadIdentity();
                 glTranslatef(0, 0,16);
-               
+				
                 glLineWidth(20);                
                 glVertexPointer(2, GL_FLOAT, 0, interactionPoints);
                 glEnableClientState(GL_VERTEX_ARRAY);
                 glColorPointer(4, GL_UNSIGNED_BYTE, 0, interactionColors);
-                 glEnableClientState(GL_COLOR_ARRAY);
+				glEnableClientState(GL_COLOR_ARRAY);
                 
                 
                 glDrawArrays(GL_LINE_STRIP, 0, [drawingArray count]);      
@@ -607,10 +686,11 @@
         }
     }
 	
+	
 	glBindRenderbufferOES(GL_RENDERBUFFER_OES, colorRenderbuffer);
 	[context presentRenderbuffer:GL_RENDERBUFFER_OES];
 	
-	 
+	
 	
 }
 

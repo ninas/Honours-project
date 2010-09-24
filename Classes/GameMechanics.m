@@ -17,12 +17,14 @@
 @synthesize blockArray;
 @synthesize rotating;
 @synthesize score;
+@synthesize translateArray;
 
 - (id)init
 {    
     
 	// Init 
 	blockArray = [[NSMutableArray alloc] init];
+	translateArray = [[NSMutableSet alloc] init];
 	blockPlace = (block****) malloc(11*sizeof(block***));
 	
 	for (int x=-5; x<6; x++) {
@@ -111,10 +113,18 @@
 			blockPlace[tempPos[0]+5][tempPos[1]+5][tempPos[2]+5] = swap;
 		if (swap!=nil) {
 			
-		
-			swap.x = tempPos[0];
+			[swap setNewPos:tempPos[0] andY:tempPos[1] andZ:tempPos[2]];
+			/*swap.x = tempPos[0];
 			swap.y = tempPos[1];
-			swap.z = tempPos[2];
+			swap.z = tempPos[2];*/
+			
+			[translateArray addObject:blockPlace[tempPos[0]+5][tempPos[1]+5][tempPos[2]+5]];
+			for (int i=0; i<blockArray.count; i++) {
+				if ([blockArray objectAtIndex:i] == swap) {
+					[blockArray removeObjectAtIndex:i];
+					break;
+				}
+			}
 			
 			
 		}
@@ -133,9 +143,18 @@
 		if (swap!=nil) {
 			
 			
-			swap.x = tempPos[0];
-			swap.y = tempPos[1];
-			swap.z = tempPos[2];
+			[swap setNewPos:tempPos[0] andY:tempPos[1] andZ:tempPos[2]];
+			/*swap.x = tempPos[0];
+			 swap.y = tempPos[1];
+			 swap.z = tempPos[2];*/
+			
+			[translateArray addObject:blockPlace[tempPos[0]+5][tempPos[1]+5][tempPos[2]+5]];
+			for (int i=0; i<blockArray.count; i++) {
+				if ([blockArray objectAtIndex:i] == swap) {
+					[blockArray removeObjectAtIndex:i];
+					break;
+				}
+			}
 			
 			
 		}
@@ -153,9 +172,19 @@
 		if (swap!=nil) {
 			
 			
-			swap.x = tempPos[0];
-			swap.y = tempPos[1];
-			swap.z = tempPos[2];
+			[swap setNewPos:tempPos[0] andY:tempPos[1] andZ:tempPos[2]];
+			/*swap.x = tempPos[0];
+			 swap.y = tempPos[1];
+			 swap.z = tempPos[2];*/
+			
+			[translateArray addObject:blockPlace[tempPos[0]+5][tempPos[1]+5][tempPos[2]+5]];
+			for (int i=0; i<blockArray.count; i++) {
+				if ([blockArray objectAtIndex:i] == swap) {
+					[blockArray removeObjectAtIndex:i];
+					break;
+				}
+			}
+			
 			
 			
 		}
@@ -174,9 +203,18 @@
 		if (swap!=nil) {
 			
 			
-			swap.x = tempPos[0];
-			swap.y = tempPos[1];
-			swap.z = tempPos[2];
+			[swap setNewPos:tempPos[0] andY:tempPos[1] andZ:tempPos[2]];
+			/*swap.x = tempPos[0];
+			 swap.y = tempPos[1];
+			 swap.z = tempPos[2];*/
+			
+			[translateArray addObject:blockPlace[tempPos[0]+5][tempPos[1]+5][tempPos[2]+5]];
+			for (int i=0; i<blockArray.count; i++) {
+				if ([blockArray objectAtIndex:i] == swap) {
+					[blockArray removeObjectAtIndex:i];
+					break;
+				}
+			}
 			
 			
 		}
@@ -186,9 +224,19 @@
 	blockPlace[pos[0]+5][pos[1]+5][pos[2]+5] = swap;
 	if (swap!=nil) {
 		
-	swap.x = pos[0];
-	swap.y = pos[1];
-	swap.z = pos[2];
+		[swap setNewPos:pos[0] andY:pos[1] andZ:pos[2]];
+		/*swap.x = tempPos[0];
+		 swap.y = tempPos[1];
+		 swap.z = tempPos[2];*/
+		
+		[translateArray addObject:blockPlace[pos[0]+5][pos[1]+5][pos[2]+5]];
+		for (int i=0; i<blockArray.count; i++) {
+			if ([blockArray objectAtIndex:i] == swap) {
+				[blockArray removeObjectAtIndex:i];
+				break;
+			}
+		}
+		
 	}
 	
 }
@@ -230,9 +278,18 @@
 		if (swap!=nil) {
 			
 			
-			swap.x = tempPos[0];
-			swap.y = tempPos[1];
-			swap.z = tempPos[2];
+			[swap setNewPos:tempPos[0] andY:tempPos[1] andZ:tempPos[2]];
+			/*swap.x = tempPos[0];
+			 swap.y = tempPos[1];
+			 swap.z = tempPos[2];*/
+			
+			[translateArray addObject:blockPlace[tempPos[0]+5][tempPos[1]+5][tempPos[2]+5]];
+			for (int i=0; i<blockArray.count; i++) {
+				if ([blockArray objectAtIndex:i] == swap) {
+					[blockArray removeObjectAtIndex:i];
+					break;
+				}
+			}
 			
 			
 		}
@@ -251,9 +308,18 @@
 		if (swap!=nil) {
 			
 			
-			swap.x = tempPos[0];
-			swap.y = tempPos[1];
-			swap.z = tempPos[2];
+			[swap setNewPos:tempPos[0] andY:tempPos[1] andZ:tempPos[2]];
+			/*swap.x = tempPos[0];
+			 swap.y = tempPos[1];
+			 swap.z = tempPos[2];*/
+			
+			[translateArray addObject:blockPlace[tempPos[0]+5][tempPos[1]+5][tempPos[2]+5]];
+			for (int i=0; i<blockArray.count; i++) {
+				if ([blockArray objectAtIndex:i] == swap) {
+					[blockArray removeObjectAtIndex:i];
+					break;
+				}
+			}
 			
 			
 		}
@@ -271,9 +337,18 @@
 		if (swap!=nil) {
 			
 			
-			swap.x = tempPos[0];
-			swap.y = tempPos[1];
-			swap.z = tempPos[2];
+			[swap setNewPos:tempPos[0] andY:tempPos[1] andZ:tempPos[2]];
+			/*swap.x = tempPos[0];
+			 swap.y = tempPos[1];
+			 swap.z = tempPos[2];*/
+			
+			[translateArray addObject:blockPlace[tempPos[0]+5][tempPos[1]+5][tempPos[2]+5]];
+			for (int i=0; i<blockArray.count; i++) {
+				if ([blockArray objectAtIndex:i] == swap) {
+					[blockArray removeObjectAtIndex:i];
+					break;
+				}
+			}
 			
 			
 		}
@@ -292,9 +367,18 @@
 		if (swap!=nil) {
 			
 			
-			swap.x = tempPos[0];
-			swap.y = tempPos[1];
-			swap.z = tempPos[2];
+			[swap setNewPos:tempPos[0] andY:tempPos[1] andZ:tempPos[2]];
+			/*swap.x = tempPos[0];
+			 swap.y = tempPos[1];
+			 swap.z = tempPos[2];*/
+			
+			[translateArray addObject:blockPlace[tempPos[0]+5][tempPos[1]+5][tempPos[2]+5]];
+			for (int i=0; i<blockArray.count; i++) {
+				if ([blockArray objectAtIndex:i] == swap) {
+					[blockArray removeObjectAtIndex:i];
+					break;
+				}
+			}
 			
 			
 		}
@@ -304,9 +388,18 @@
 	blockPlace[pos[0]+5][pos[1]+5][pos[2]+5] = swap;
 	if (swap!=nil) {
 		
-		swap.x = pos[0];
-		swap.y = pos[1];
-		swap.z = pos[2];
+		[swap setNewPos:pos[0] andY:pos[1] andZ:pos[2]];
+		/*swap.x = tempPos[0];
+		 swap.y = tempPos[1];
+		 swap.z = tempPos[2];*/
+		
+		[translateArray addObject:blockPlace[pos[0]+5][pos[1]+5][pos[2]+5]];
+		for (int i=0; i<blockArray.count; i++) {
+			if ([blockArray objectAtIndex:i] == swap) {
+				[blockArray removeObjectAtIndex:i];
+				break;
+			}
+		}
 	}	
 }
 
@@ -325,9 +418,7 @@
 	
 	int pos[3] = {startArray.x,-currentZ,currentZ};
 	[self getPosition:pos];
-	startX = pos[0];
-	startY = pos[1];
-	startZ = pos[2];
+	
 	
 	swap = blockPlace[pos[0]+5][pos[1]+5][pos[2]+5];
 	
@@ -346,9 +437,18 @@
 		if (swap!=nil) {
 			
 			
-			swap.x = tempPos[0];
-			swap.y = tempPos[1];
-			swap.z = tempPos[2];
+			[swap setNewPos:tempPos[0] andY:tempPos[1] andZ:tempPos[2]];
+			/*swap.x = tempPos[0];
+			 swap.y = tempPos[1];
+			 swap.z = tempPos[2];*/
+			
+			[translateArray addObject:blockPlace[tempPos[0]+5][tempPos[1]+5][tempPos[2]+5]];
+			for (int i=0; i<blockArray.count; i++) {
+				if ([blockArray objectAtIndex:i] == swap) {
+					[blockArray removeObjectAtIndex:i];
+					break;
+				}
+			}
 			
 			
 		}
@@ -366,10 +466,18 @@
 		if (swap!=nil) {
 			
 			
-			swap.x = tempPos[0];
-			swap.y = tempPos[1];
-			swap.z = tempPos[2];
+			[swap setNewPos:tempPos[0] andY:tempPos[1] andZ:tempPos[2]];
+			/*swap.x = tempPos[0];
+			 swap.y = tempPos[1];
+			 swap.z = tempPos[2];*/
 			
+			[translateArray addObject:blockPlace[tempPos[0]+5][tempPos[1]+5][tempPos[2]+5]];
+			for (int i=0; i<blockArray.count; i++) {
+				if ([blockArray objectAtIndex:i] == swap) {
+					[blockArray removeObjectAtIndex:i];
+					break;
+				}
+			}			
 			
 		}
 		swap = temp;
@@ -386,10 +494,18 @@
 		if (swap!=nil) {
 			
 			
-			swap.x = tempPos[0];
-			swap.y = tempPos[1];
-			swap.z = tempPos[2];
+			[swap setNewPos:tempPos[0] andY:tempPos[1] andZ:tempPos[2]];
+			/*swap.x = tempPos[0];
+			 swap.y = tempPos[1];
+			 swap.z = tempPos[2];*/
 			
+			[translateArray addObject:blockPlace[tempPos[0]+5][tempPos[1]+5][tempPos[2]+5]];
+			for (int i=0; i<blockArray.count; i++) {
+				if ([blockArray objectAtIndex:i] == swap) {
+					[blockArray removeObjectAtIndex:i];
+					break;
+				}
+			}			
 			
 		}
 		swap = temp;
@@ -406,19 +522,40 @@
 		if (swap!=nil) {
 			
 			
-			swap.x = tempPos[0];
-			swap.y = tempPos[1];
-			swap.z = tempPos[2];
+			[swap setNewPos:tempPos[0] andY:tempPos[1] andZ:tempPos[2]];
+			/*swap.x = tempPos[0];
+			 swap.y = tempPos[1];
+			 swap.z = tempPos[2];*/
+			
+			[translateArray addObject:blockPlace[tempPos[0]+5][tempPos[1]+5][tempPos[2]+5]];
+			for (int i=0; i<blockArray.count; i++) {
+				if ([blockArray objectAtIndex:i] == swap) {
+					[blockArray removeObjectAtIndex:i];
+					break;
+				}
+			}
 			
 			
 		}
 		swap = temp;
 	}
 	
-	blockPlace[startX+5][startY+5][startZ+5] = swap;
-	swap.x = startX;
-	swap.y = startY;
-	swap.z = startZ;
+	blockPlace[pos[0]+5][pos[1]+5][pos[2]+5] = swap;
+	if (swap!= nil) {
+		[swap setNewPos:pos[0] andY:pos[1] andZ:pos[2]];
+		/*swap.x = tempPos[0];
+		 swap.y = tempPos[1];
+		 swap.z = tempPos[2];*/
+		
+		[translateArray addObject:blockPlace[pos[0]+5][pos[1]+5][pos[2]+5]];
+		for (int i=0; i<blockArray.count; i++) {
+			if ([blockArray objectAtIndex:i] == swap) {
+				[blockArray removeObjectAtIndex:i];
+				break;
+			}
+		}
+	}
+	
 	
 }
 
@@ -437,10 +574,7 @@
 	
 	int pos[3] = {startArray.x,currentZ,currentZ};
 	[self getPosition:pos];
-	startX = pos[0];
-	startY = pos[1];
-	startZ = pos[2];
-	
+		
 	swap = blockPlace[pos[0]+5][pos[1]+5][pos[2]+5];
 	
 	
@@ -458,9 +592,18 @@
 		if (swap!=nil) {
 			
 			
-			swap.x = tempPos[0];
-			swap.y = tempPos[1];
-			swap.z = tempPos[2];
+			[swap setNewPos:tempPos[0] andY:tempPos[1] andZ:tempPos[2]];
+			/*swap.x = tempPos[0];
+			 swap.y = tempPos[1];
+			 swap.z = tempPos[2];*/
+			
+			[translateArray addObject:blockPlace[tempPos[0]+5][tempPos[1]+5][tempPos[2]+5]];
+			for (int i=0; i<blockArray.count; i++) {
+				if ([blockArray objectAtIndex:i] == swap) {
+					[blockArray removeObjectAtIndex:i];
+					break;
+				}
+			}
 			
 			
 		}
@@ -478,9 +621,18 @@
 		if (swap!=nil) {
 			
 			
-			swap.x = tempPos[0];
-			swap.y = tempPos[1];
-			swap.z = tempPos[2];
+			[swap setNewPos:tempPos[0] andY:tempPos[1] andZ:tempPos[2]];
+			/*swap.x = tempPos[0];
+			 swap.y = tempPos[1];
+			 swap.z = tempPos[2];*/
+			
+			[translateArray addObject:blockPlace[tempPos[0]+5][tempPos[1]+5][tempPos[2]+5]];
+			for (int i=0; i<blockArray.count; i++) {
+				if ([blockArray objectAtIndex:i] == swap) {
+					[blockArray removeObjectAtIndex:i];
+					break;
+				}
+			}
 			
 			
 		}
@@ -498,9 +650,18 @@
 		if (swap!=nil) {
 			
 			
-			swap.x = tempPos[0];
-			swap.y = tempPos[1];
-			swap.z = tempPos[2];
+			[swap setNewPos:tempPos[0] andY:tempPos[1] andZ:tempPos[2]];
+			/*swap.x = tempPos[0];
+			 swap.y = tempPos[1];
+			 swap.z = tempPos[2];*/
+			
+			[translateArray addObject:blockPlace[tempPos[0]+5][tempPos[1]+5][tempPos[2]+5]];
+			for (int i=0; i<blockArray.count; i++) {
+				if ([blockArray objectAtIndex:i] == swap) {
+					[blockArray removeObjectAtIndex:i];
+					break;
+				}
+			}
 			
 			
 		}
@@ -518,19 +679,39 @@
 		if (swap!=nil) {
 			
 			
-			swap.x = tempPos[0];
-			swap.y = tempPos[1];
-			swap.z = tempPos[2];
+			[swap setNewPos:tempPos[0] andY:tempPos[1] andZ:tempPos[2]];
+			/*swap.x = tempPos[0];
+			 swap.y = tempPos[1];
+			 swap.z = tempPos[2];*/
+			
+			[translateArray addObject:blockPlace[tempPos[0]+5][tempPos[1]+5][tempPos[2]+5]];
+			for (int i=0; i<blockArray.count; i++) {
+				if ([blockArray objectAtIndex:i] == swap) {
+					[blockArray removeObjectAtIndex:i];
+					break;
+				}
+			}
 			
 			
 		}
 		swap = temp;
 	}
 	
-	blockPlace[startX+5][startY+5][startZ+5] = swap;
-	swap.x = startX;
-	swap.y = startY;
-	swap.z = startZ;
+	blockPlace[pos[0]+5][pos[1]+5][pos[2]+5] = swap;
+	if (swap!=nil) {
+		[swap setNewPos:pos[0] andY:pos[1] andZ:pos[2]];
+		/*swap.x = tempPos[0];
+		 swap.y = tempPos[1];
+		 swap.z = tempPos[2];*/
+		
+		[translateArray addObject:blockPlace[pos[0]+5][pos[1]+5][pos[2]+5]];
+		for (int i=0; i<blockArray.count; i++) {
+			if ([blockArray objectAtIndex:i] == swap) {
+				[blockArray removeObjectAtIndex:i];
+				break;
+			}
+		}
+	}
 	
 }
 
@@ -554,9 +735,18 @@
 		if (swap!=nil) {
 			
 			
-			swap.x = tempPos[0];
-			swap.y = tempPos[1];
-			swap.z = tempPos[2];
+			[swap setNewPos:tempPos[0] andY:tempPos[1] andZ:tempPos[2]];
+			/*swap.x = tempPos[0];
+			 swap.y = tempPos[1];
+			 swap.z = tempPos[2];*/
+			
+			[translateArray addObject:blockPlace[tempPos[0]+5][tempPos[1]+5][tempPos[2]+5]];
+			for (int i=0; i<blockArray.count; i++) {
+				if ([blockArray objectAtIndex:i] == swap) {
+					[blockArray removeObjectAtIndex:i];
+					break;
+				}
+			}
 			
 			
 		}
@@ -564,9 +754,21 @@
 	}
 	
 	blockPlace[pos[0]+5][pos[1]+5][pos[2]+5] = swap;
-	swap.x = pos[0];
-	swap.y = pos[1];
-	swap.z = pos[2];
+	if (swap!=nil) {
+		[swap setNewPos:pos[0] andY:pos[1] andZ:pos[2]];
+		/*swap.x = tempPos[0];
+		 swap.y = tempPos[1];
+		 swap.z = tempPos[2];*/
+		
+		[translateArray addObject:blockPlace[pos[0]+5][pos[1]+5][pos[2]+5]];
+		for (int i=0; i<blockArray.count; i++) {
+			if ([blockArray objectAtIndex:i] == swap) {
+				[blockArray removeObjectAtIndex:i];
+				break;
+			}
+		}
+	}
+	
 	
 }
 
@@ -590,9 +792,18 @@
 		if (swap!=nil) {
 			
 			
-			swap.x = tempPos[0];
-			swap.y = tempPos[1];
-			swap.z = tempPos[2];
+			[swap setNewPos:tempPos[0] andY:tempPos[1] andZ:tempPos[2]];
+			/*swap.x = tempPos[0];
+			 swap.y = tempPos[1];
+			 swap.z = tempPos[2];*/
+			
+			[translateArray addObject:blockPlace[tempPos[0]+5][tempPos[1]+5][tempPos[2]+5]];
+			for (int i=0; i<blockArray.count; i++) {
+				if ([blockArray objectAtIndex:i] == swap) {
+					[blockArray removeObjectAtIndex:i];
+					break;
+				}
+			}
 			
 			
 		}
@@ -600,10 +811,20 @@
 	}
 	
 	blockPlace[pos[0]+5][pos[1]+5][pos[2]+5] = swap;
-	swap.x = pos[0];
-	swap.y = pos[1];
-	swap.z = pos[2];
-	
+	if (swap!=nil) {
+		[swap setNewPos:pos[0] andY:pos[1] andZ:pos[2]];
+		/*swap.x = tempPos[0];
+		 swap.y = tempPos[1];
+		 swap.z = tempPos[2];*/
+		
+		[translateArray addObject:blockPlace[pos[0]+5][pos[1]+5][pos[2]+5]];
+		for (int i=0; i<blockArray.count; i++) {
+			if ([blockArray objectAtIndex:i] == swap) {
+				[blockArray removeObjectAtIndex:i];
+				break;
+			}
+		}
+	}	
 }
 
 /*
@@ -734,25 +955,44 @@
 }
 
 - (void) moveIn{
+	for (int x=0; x<=10; x++) {
+		for (int y=0; y<=10; y++) {
+			for (int z =0; z<=10; z++) {
+				if (blockPlace[x][y][z] != nil) {
+					[blockPlace[x][y][z] setToTrans:NO];
+					[blockPlace[x][y][z] preTrans];
+
+				}
+			}
+		}
+	}
+	
 	NSLog(@"Moving in");
 		for (int x=0; x<=10; x++) {
 			for (int y=0; y<=10; y++) {
 				for (int z=1; z<=5; z++) {
 					int zVal = z;
 					while (blockPlace[x][y][zVal+5]!=nil && zVal > 0 && blockPlace[x][y][zVal+4] == nil) {
-						[blockPlace[x][y][zVal+5] setZ:zVal-1];
+						[blockPlace[x][y][zVal+5] setUpZ:zVal-1];
+						//NSLog(@"New value:    %d    (was %d)", [blockPlace[x][y][zVal+5] newZ], [blockPlace[x][y][zVal+5] z]);
 						blockPlace[x][y][zVal+4] = blockPlace[x][y][zVal+5];
 						blockPlace[x][y][zVal+5] = nil;
 						zVal-=1;
 						//NSLog(@"Something1");
 					}
+					if (zVal != z) {
+						[blockPlace[x][y][zVal+5] setToTrans:YES];
+					}
 					zVal = z;
 					while (blockPlace[x][y][-zVal+5]!=nil && zVal > 0 && blockPlace[x][y][-zVal+6] == nil) {
-						[blockPlace[x][y][-zVal+5] setZ:-zVal+1];
+						[blockPlace[x][y][-zVal+5] setUpZ:-zVal+1];
 						blockPlace[x][y][-zVal+6] = blockPlace[x][y][-zVal+5];
 						blockPlace[x][y][-zVal+5] = nil;
 						zVal-=1;
 						//NSLog(@"Something2");
+					}
+					if (zVal != z) {
+						[blockPlace[x][y][-zVal+5] setToTrans:YES];
 					}
 				}
 			}
@@ -763,19 +1003,25 @@
 			for (int z=0; z<=10; z++) {
 				int xVal = x;
 				while (blockPlace[xVal+5][y][z]!=nil && xVal > 0 && blockPlace[xVal+4][y][z] == nil) {
-					[blockPlace[xVal+5][y][z] setX:xVal-1];
+					[blockPlace[xVal+5][y][z] setUpX:xVal-1];
 					blockPlace[xVal+4][y][z] = blockPlace[xVal+5][y][z];
 					blockPlace[xVal+5][y][z] = nil;
 					xVal-=1;
 					//NSLog(@"Something1");
 				}
+				if (xVal != x) {
+					[blockPlace[xVal+5][y][z] setToTrans:YES];
+				}
 				xVal = x;
 				while (blockPlace[-xVal+5][y][z]!=nil && xVal > 0 && blockPlace[-xVal+6][y][z] == nil) {
-					[blockPlace[-xVal+5][y][z] setX:-xVal+1];
+					[blockPlace[-xVal+5][y][z] setUpX:-xVal+1];
 					blockPlace[-xVal+6][y][z] = blockPlace[-xVal+5][y][z];
 					blockPlace[-xVal+5][y][z] = nil;
 					xVal-=1;
 					//NSLog(@"Something1");
+				}
+				if (xVal != x) {
+					[blockPlace[-xVal+5][y][z] setToTrans:YES];
 				}
 			}
 		}
@@ -786,24 +1032,44 @@
 			for (int z=0; z<=10; z++) {
 				int yVal = y;
 				while (blockPlace[x][yVal+5][z]!=nil && yVal > 0 && blockPlace[x][yVal+4][z] == nil) {
-					[blockPlace[x][yVal+5][z] setY:yVal-1];
+					[blockPlace[x][yVal+5][z] setUpY:yVal-1];
 					blockPlace[x][yVal+4][z] = blockPlace[x][yVal+5][z];
 					blockPlace[x][yVal+5][z] = nil;
 					yVal-=1;
 					//NSLog(@"Something1");
 				}
+				if (yVal != y) {
+					[blockPlace[x][yVal+5][z] setToTrans:YES];
+				}
 				yVal = y;
 				while (blockPlace[x][-yVal+5][z]!=nil && yVal > 0 && blockPlace[x][-yVal+6][z] == nil) {
-					[blockPlace[x][-yVal+5][z] setY:-yVal+1];
+					[blockPlace[x][-yVal+5][z] setUpY:-yVal+1];
 					blockPlace[x][-yVal+6][z] = blockPlace[x][-yVal+5][z];
 					blockPlace[x][-yVal+5][z] = nil;
 					yVal-=1;
 					//NSLog(@"Something1");
 				}
+				if (yVal != y) {
+					[blockPlace[x][-yVal+5][z] setToTrans:YES];
+				}
 			}
 		}
 	}
+	int counter = 0;
+	while (counter < blockArray.count) {
+		block * temp = [blockArray objectAtIndex:counter];
+		if (temp.toTrans) {
+			//NSLog(@"Should be adding...");
+			[translateArray addObject:temp];
+			[temp setNewPos2];
+			[blockArray removeObjectAtIndex:counter];
+			counter--;
+		}
+		
+		counter++;
+	}
 	
+	NSLog(@"Count:   %d",translateArray.count);
 }
 
 

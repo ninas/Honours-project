@@ -77,8 +77,14 @@
 	
 	CGPoint panelStart;
 	UILabel * score;
+	UILabel * gestureDescriptor;
+	int gestureDCount;
 	
 	BOOL panelOn;
+	int rocking;
+	BOOL doRock;
+	CGPoint rockRotat;
+	float divideBy;
 	
 	
 }
@@ -92,5 +98,6 @@
 - (void)startAnimation;
 - (void)stopAnimation;
 - (void)drawView:(id)sender;
+
 
 @end

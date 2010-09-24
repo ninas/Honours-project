@@ -15,6 +15,7 @@
 	CGPoint endPos;
 	float maxDist;
 	NSMutableArray * blockArray;
+	NSMutableSet * translateArray;
 	block **** blockPlace;
 	CGPoint  lastDist;
 	
@@ -39,6 +40,7 @@
 @property (nonatomic) CGPoint endPos;
 @property (nonatomic) float maxDist;
 @property (nonatomic, retain) NSMutableArray * blockArray;
+@property (nonatomic, retain) NSMutableSet * translateArray;
 @property (nonatomic) BOOL rotating;
 @property (nonatomic) int score;
 
@@ -58,4 +60,5 @@
 - (void) removeBlocks;
 - (block *) getBlock:(int)x andY:(int)y andZ:(int)z;
 - (void) shuffle;
+
 @end

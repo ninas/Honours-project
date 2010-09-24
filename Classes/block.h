@@ -18,6 +18,8 @@
 	float newX, newY, newZ;
 	float increX, increY, increZ;
 	int upX, upY, upZ;
+	int counter;
+	BOOL toTrans;
 	
 }
 
@@ -26,9 +28,19 @@
 - (void) checkConnection;
 - (BOOL) updatePos;
 - (void) setNewPos:(int)nX andY:(int)nY andZ:(int)nZ;
+- (void) setNewPos2;
+
+- (void) preTrans;
 @property int x;
 @property int y;
 @property int z;
+@property float newX;
+@property float newY;
+@property float newZ;
+@property int upX;
+@property int upY;
+@property int upZ;
+@property BOOL toTrans;
 
 @property int colour;
 @end

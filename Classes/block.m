@@ -15,11 +15,18 @@
 @synthesize y;
 @synthesize z;
 @synthesize colour;
+@synthesize newX;
+@synthesize newY;
+@synthesize newZ;
+@synthesize toTrans;
+@synthesize upX;
+@synthesize upY;
+@synthesize upZ;
 
 - (id) init{
 	
 	colour = rand()%4;
-	
+	toTrans = NO;
 	return self;
 	
 }
@@ -28,6 +35,9 @@
 	x=tempX;
 	y=tempY;
 	z=tempZ;
+	upX = x;
+	upY=y;
+	upZ=z;
 	placementArray = placementA;
 	
 }
@@ -70,22 +80,28 @@
 }
 
 - (BOOL) updatePos{
+	//NSLog(@"Current pos:   %f   %f   %f",newX,newY,newZ);
 	newX+=increX;
 	newY+=increY;
 	newZ+=increZ;
 	
-	if (newX >= upX && newY >= upY && newZ >= upZ) {
+	if (counter==20) {
 		x = upX;
 		y = upY;
 		z = upZ;
 		return YES;
 	}
+	counter++;
 	return NO;
 	
 	
 }
 
 - (void) setNewPos:(int)nX andY:(int)nY andZ:(int)nZ{
+	x = upX;
+	y = upY;
+	z = upZ;
+	
 	newX = (float)x;
 	newY = (float)y;
 	newZ = (float)z;
@@ -94,7 +110,34 @@
 	upY=nY;
 	upZ=nZ;
 	
+	counter = 0;
 	
+	increX = (upX - x)/20.0;
+	increY = (upY - y)/20.0;
+	increZ = (upZ - z)/20.0;
+}
+
+- (void) preTrans{
+	upX=x;
+	upY=y;
+	upZ=z;
+	//NSLog(@"1111111111111111111old (%d, %d, %d)    new:(%d, %d, %d)",x,y,z,newX,newY,newZ);
+}
+
+- (void) setNewPos2{
+	/*x = upX;
+	y = upY;
+	z = upZ;*/
+	
+	newX = (float)x;
+	newY = (float)y;
+	newZ = (float)z;
+	//NSLog(@"old (%d, %d, %d)    new:(%d, %d, %d)",x,y,z,newX,newY,newZ);
+	/*upX=nX;
+	upY=nY;
+	upZ=nZ;*/
+	
+	counter = 0;
 	
 	increX = (upX - x)/20.0;
 	increY = (upY - y)/20.0;
