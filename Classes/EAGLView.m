@@ -19,6 +19,7 @@
 @synthesize touchesArray;
 @synthesize maxDist;
 @dynamic animationFrameInterval;
+@synthesize gameVersion;
 
 // You must implement this method
 + (Class)layerClass
@@ -45,7 +46,11 @@
 			[self release];
 			return nil;
 		}
+		versionsDone[0] = NO;
+		versionsDone[1] = NO;
+		versionsDone[2] = NO;
         
+		
 		// Game loop variables
         animating = FALSE;
         displayLinkSupported = FALSE;
@@ -62,7 +67,7 @@
 		totalCounter = 0;
 		doRock = NO;
 		rocking = 0;
-		
+		checkValue = YES;
 		mechanics = [[GameMechanics alloc] init];
 		
 		[renderer setBlockArray:mechanics.blockArray andTrans:mechanics.translateArray];
@@ -77,6 +82,8 @@
 		for (int i=0; i<3; i++) {
 			[directionArray addObject:[[NSMutableArray alloc] init]];
 		}
+		
+		
 		
 		touch1 = nil;
 		touch2 = nil;
@@ -103,7 +110,7 @@
 		
 		stateMachine = [[GestureStateMachine alloc] init];
 		
-		[self setMultipleTouchEnabled:YES]; 
+		
 		
 		// UI elements on game screen
 		score = [[UILabel alloc] initWithFrame:CGRectMake(1000, 5, -220, 50)];
@@ -114,11 +121,28 @@
 		score.font = [UIFont fontWithName: @"Marker Felt" size: 48];
 		[self addSubview:score];
 		
+		
+		
 		panel = [[sidePanel alloc] initWithFrame:CGRectMake(10, 10, 100, 750)];
 		panel.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:.3];
 		panel.layer.cornerRadius = 5;
 		[self addSubview:panel];
 		panelOn = YES;
+		
+		dm = [[dmMenu alloc] initWithFrame:CGRectMake(10, 10, 100, 750)];
+		dm.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:.3];
+		dm.layer.cornerRadius = 5;
+		[self addSubview:dm];
+		[dm setup:mechanics];
+		
+		dmSideMenu = [[dmSide alloc] initWithFrame:CGRectMake(120, 10, 100, 500)];
+		dmSideMenu.backgroundColor = [[UIColor grayColor] colorWithAlphaComponent:0.9];
+		dmSideMenu.layer.cornerRadius = 5;
+		[self addSubview:dmSideMenu];
+		dm.gestPanel = dmSideMenu;
+		dmSideMenu.hidden = YES;
+		
+		
 		
 		gestureDescriptor = [[UILabel alloc] initWithFrame:CGRectMake(340, 10, 400, 50)];
 		gestureDescriptor.text=@"";
@@ -128,6 +152,7 @@
 		gestureDescriptor.alpha = 0;
 		gestureDescriptor.font = [UIFont systemFontOfSize:25];
 		[self addSubview:gestureDescriptor];
+		
 		
 		gestPanel = [[gesturePanel alloc] initWithFrame:CGRectMake(120, 10, 600, 400)];
 		//gestPanel.frame = CGRectMake(120, 10, 600, 400);
@@ -144,9 +169,362 @@
         NSString *currSysVer = [[UIDevice currentDevice] systemVersion];
         if ([currSysVer compare:reqSysVer options:NSNumericSearch] != NSOrderedAscending)
             displayLinkSupported = TRUE;
+		
+		[self setVersion];
     }
 	
     return self;
+}
+
+- (void) setVersion{
+	gameVersion = 0;//rand()%3;
+	versionsDone[gameVersion] = YES;
+	
+	if (gameVersion == 0) {
+		panel.hidden = YES;
+		dm.hidden = NO;
+		dmSideMenu.hidden = YES;
+		userRotation = NO;
+		
+		[self setMultipleTouchEnabled:NO]; 
+		
+		UIButton * rock = [[UIButton alloc] initWithFrame:CGRectMake(10, 310, 80, 80)];
+		rock.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:.3];
+		rock.layer.cornerRadius = 5;
+		rock.titleLabel.lineBreakMode = UILineBreakModeWordWrap;
+		rock.titleLabel.textAlignment = UITextAlignmentCenter;
+		[rock setTitle:@"Rock shape" forState:UIControlStateNormal];
+		[rock addTarget:self action:@selector(setDoRock) forControlEvents:UIControlEventTouchUpInside];
+		rock.adjustsImageWhenHighlighted = YES;
+		[dm addSubview:rock];
+		dm.rock = rock;
+		
+		
+		UIButton * rotate = [[UIButton alloc] initWithFrame:CGRectMake(10, 410, 80, 80)];
+		rotate.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:.3];
+		rotate.layer.cornerRadius = 5;
+		rotate.titleLabel.lineBreakMode = UILineBreakModeWordWrap;
+		rotate.titleLabel.textAlignment = UITextAlignmentCenter;
+		[rotate setTitle:@"Rotate shape" forState:UIControlStateNormal];
+		[rotate addTarget:self action:@selector(setRotateOn) forControlEvents:UIControlEventTouchUpInside];
+		rotate.adjustsImageWhenHighlighted = YES;
+		[dm addSubview:rotate];
+		dm.rotate = rotate;
+		
+		
+		UIButton * rowL = [[UIButton alloc] initWithFrame:CGRectMake(10, 10, 80, 80)];
+		rowL.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:.3];
+		rowL.layer.cornerRadius = 5;
+		rowL.titleLabel.lineBreakMode = UILineBreakModeWordWrap;
+		rowL.titleLabel.textAlignment = UITextAlignmentCenter;
+		[rowL setTitle:@"Move row left" forState:UIControlStateNormal];
+		[rowL addTarget:self action:@selector(lineSelector:) forControlEvents:UIControlEventTouchUpInside];
+		rowL.adjustsImageWhenHighlighted = YES;
+		[dmSideMenu addSubview:rowL];
+		rowL.hidden = YES;
+		
+		UIButton * rowR = [[UIButton alloc] initWithFrame:CGRectMake(10, 110, 80, 80)];
+		rowR.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:.3];
+		rowR.layer.cornerRadius = 5;
+		rowR.titleLabel.lineBreakMode = UILineBreakModeWordWrap;
+		rowR.titleLabel.textAlignment = UITextAlignmentCenter;
+		[rowR setTitle:@"Move row right" forState:UIControlStateNormal];
+		[rowR addTarget:self action:@selector(lineSelector:) forControlEvents:UIControlEventTouchUpInside];
+		rowR.adjustsImageWhenHighlighted = YES;
+		[dmSideMenu addSubview:rowR];
+		rowR.hidden = YES;
+		
+		UIButton * columnU = [[UIButton alloc] initWithFrame:CGRectMake(10, 210, 80, 80)];
+		columnU.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:.3];
+		columnU.layer.cornerRadius = 5;
+		columnU.titleLabel.lineBreakMode = UILineBreakModeWordWrap;
+		columnU.titleLabel.textAlignment = UITextAlignmentCenter;
+		[columnU setTitle:@"Move column up" forState:UIControlStateNormal];
+		[columnU addTarget:self action:@selector(lineSelector:) forControlEvents:UIControlEventTouchUpInside];
+		columnU.adjustsImageWhenHighlighted = YES;
+		[dmSideMenu addSubview:columnU];
+		columnU.hidden = YES;
+		
+		UIButton * columnD = [[UIButton alloc] initWithFrame:CGRectMake(10, 310, 80, 80)];
+		columnD.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:.3];
+		columnD.layer.cornerRadius = 5;
+		columnD.titleLabel.lineBreakMode = UILineBreakModeWordWrap;
+		columnD.titleLabel.textAlignment = UITextAlignmentCenter;
+		[columnD setTitle:@"Move column down" forState:UIControlStateNormal];
+		[columnD addTarget:self action:@selector(lineSelector:) forControlEvents:UIControlEventTouchUpInside];
+		columnD.adjustsImageWhenHighlighted = YES;
+		[dmSideMenu addSubview:columnD];
+		columnD.hidden = YES;
+		
+		UIButton * backward = [[UIButton alloc] initWithFrame:CGRectMake(10, 410, 80, 80)];
+		backward.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:.3];
+		backward.layer.cornerRadius = 5;
+		backward.titleLabel.lineBreakMode = UILineBreakModeWordWrap;
+		backward.titleLabel.textAlignment = UITextAlignmentCenter;
+		[backward setTitle:@"Move line backward" forState:UIControlStateNormal];
+		[backward addTarget:self action:@selector(lineSelector:) forControlEvents:UIControlEventTouchUpInside];
+		backward.adjustsImageWhenHighlighted = YES;
+		[dmSideMenu addSubview:backward];
+		backward.hidden = YES;
+		
+		UIButton * forward = [[UIButton alloc] initWithFrame:CGRectMake(10, 510, 80, 80)];
+		forward.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:.3];
+		forward.layer.cornerRadius = 5;
+		forward.titleLabel.lineBreakMode = UILineBreakModeWordWrap;
+		forward.titleLabel.textAlignment = UITextAlignmentCenter;
+		[forward setTitle:@"Move line forward" forState:UIControlStateNormal];
+		[forward addTarget:self action:@selector(lineSelector:) forControlEvents:UIControlEventTouchUpInside];
+		forward.adjustsImageWhenHighlighted = YES;
+		[dmSideMenu addSubview:forward];
+		forward.hidden = YES;
+		
+		lineButtons = [[NSMutableArray alloc] init];
+		[lineButtons addObject:rowL];
+		[lineButtons addObject:rowR];
+		[lineButtons addObject:columnD];
+		[lineButtons addObject:columnU];
+		[lineButtons addObject:backward];
+		[lineButtons addObject:forward];
+		dmSideMenu.lineButtons = lineButtons;
+		
+		UIButton * swapL = [[UIButton alloc] initWithFrame:CGRectMake(10, 10, 80, 80)];
+		swapL.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:.3];
+		swapL.layer.cornerRadius = 5;
+		swapL.titleLabel.lineBreakMode = UILineBreakModeWordWrap;
+		swapL.titleLabel.textAlignment = UITextAlignmentCenter;
+		[swapL setTitle:@"Swap block left" forState:UIControlStateNormal];
+		[swapL addTarget:self action:@selector(swapSelector:) forControlEvents:UIControlEventTouchUpInside];
+		swapL.adjustsImageWhenHighlighted = YES;
+		[dmSideMenu addSubview:swapL];
+		swapL.hidden = YES;
+		
+		UIButton * swapR = [[UIButton alloc] initWithFrame:CGRectMake(10, 110, 80, 80)];
+		swapR.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:.3];
+		swapR.layer.cornerRadius = 5;
+		swapR.titleLabel.lineBreakMode = UILineBreakModeWordWrap;
+		swapR.titleLabel.textAlignment = UITextAlignmentCenter;
+		[swapR setTitle:@"Swap block right" forState:UIControlStateNormal];
+		[swapR addTarget:self action:@selector(swapSelector:) forControlEvents:UIControlEventTouchUpInside];
+		swapR.adjustsImageWhenHighlighted = YES;
+		[dmSideMenu addSubview:swapR];
+		swapR.hidden = YES;
+		
+		UIButton * swapU = [[UIButton alloc] initWithFrame:CGRectMake(10, 210, 80, 80)];
+		swapU.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:.3];
+		swapU.layer.cornerRadius = 5;
+		swapU.titleLabel.lineBreakMode = UILineBreakModeWordWrap;
+		swapU.titleLabel.textAlignment = UITextAlignmentCenter;
+		[swapU setTitle:@"Swap block up" forState:UIControlStateNormal];
+		
+		[swapU addTarget:self action:@selector(swapSelector:) forControlEvents:UIControlEventTouchUpInside];
+		swapU.adjustsImageWhenHighlighted = YES;
+		[dmSideMenu addSubview:swapU];
+		swapU.hidden = YES;
+		
+		UIButton * swapD = [[UIButton alloc] initWithFrame:CGRectMake(10, 310, 80, 80)];
+		swapD.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:.3];
+		swapD.layer.cornerRadius = 5;
+		swapD.titleLabel.lineBreakMode = UILineBreakModeWordWrap;
+		swapD.titleLabel.textAlignment = UITextAlignmentCenter;
+		[swapD setTitle:@"Swap block down" forState:UIControlStateNormal];
+		[swapD addTarget:self action:@selector(swapSelector:) forControlEvents:UIControlEventTouchUpInside];
+		swapD.adjustsImageWhenHighlighted = YES;
+		[dmSideMenu addSubview:swapD];
+		swapD.hidden = YES;
+		
+		swapButtons = [[NSMutableArray alloc] init];
+		[swapButtons addObject:swapL];
+		[swapButtons addObject:swapR];
+		[swapButtons addObject:swapD];
+		[swapButtons addObject:swapU];
+		dmSideMenu.swapButtons = swapButtons;
+		
+		
+		
+		UIButton * rotL = [[UIButton alloc] initWithFrame:CGRectMake(10, 10, 80, 80)];
+		rotL.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:.3];
+		rotL.layer.cornerRadius = 5;
+		rotL.titleLabel.lineBreakMode = UILineBreakModeWordWrap;
+		rotL.titleLabel.textAlignment = UITextAlignmentCenter;
+		[rotL setTitle:@"Rotate left" forState:UIControlStateNormal];
+		[rotL addTarget:self action:@selector(rotateSelector:) forControlEvents:UIControlEventTouchUpInside];
+		rotL.adjustsImageWhenHighlighted = YES;
+		[dmSideMenu addSubview:rotL];
+		rotL.hidden = YES;
+		
+		UIButton * rotR = [[UIButton alloc] initWithFrame:CGRectMake(10, 110, 80, 80)];
+		rotR.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:.3];
+		rotR.layer.cornerRadius = 5;
+		rotR.titleLabel.lineBreakMode = UILineBreakModeWordWrap;
+		rotR.titleLabel.textAlignment = UITextAlignmentCenter;
+		[rotR setTitle:@"Rotate right" forState:UIControlStateNormal];
+		[rotR addTarget:self action:@selector(rotateSelector:) forControlEvents:UIControlEventTouchUpInside];
+		rotR.adjustsImageWhenHighlighted = YES;
+		[dmSideMenu addSubview:rotR];
+		rotR.hidden = YES;
+		
+		UIButton * rotU = [[UIButton alloc] initWithFrame:CGRectMake(10, 210, 80, 80)];
+		rotU.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:.3];
+		rotU.layer.cornerRadius = 5;
+		rotU.titleLabel.lineBreakMode = UILineBreakModeWordWrap;
+		rotU.titleLabel.textAlignment = UITextAlignmentCenter;
+		[rotU setTitle:@"Rotate up" forState:UIControlStateNormal];
+		
+		[rotU addTarget:self action:@selector(rotateSelector:) forControlEvents:UIControlEventTouchUpInside];
+		rotU.adjustsImageWhenHighlighted = YES;
+		[dmSideMenu addSubview:rotU];
+		rotU.hidden = YES;
+		
+		UIButton * rotD = [[UIButton alloc] initWithFrame:CGRectMake(10, 310, 80, 80)];
+		rotD.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:.3];
+		rotD.layer.cornerRadius = 5;
+		rotD.titleLabel.lineBreakMode = UILineBreakModeWordWrap;
+		rotD.titleLabel.textAlignment = UITextAlignmentCenter;
+		[rotD setTitle:@"Rotate down" forState:UIControlStateNormal];
+		[rotD addTarget:self action:@selector(rotateSelector:) forControlEvents:UIControlEventTouchUpInside];
+		rotD.adjustsImageWhenHighlighted = YES;
+		[dmSideMenu addSubview:rotD];
+		rotD.hidden = YES;
+		
+		rotateButtons = [[NSMutableArray alloc] init];
+		[rotateButtons addObject:rotL];
+		[rotateButtons addObject:rotR];
+		[rotateButtons addObject:rotU];
+		[rotateButtons addObject:rotD];
+		dmSideMenu.rotateButtons = rotateButtons;
+		
+	}
+	else if (gameVersion == 1){
+		panel.hidden = NO;
+		dm.hidden = YES;
+		dmSideMenu.hidden = YES;
+		
+		
+		[self setMultipleTouchEnabled:YES]; 
+		
+	}
+}
+
+- (void) lineSelector:(id)select{
+	for (int i=0; i<lineButtons.count; i++) {
+		UIButton * temp = [lineButtons objectAtIndex:i];
+		if (temp == select) {
+			temp.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:.7];
+			
+			if (dmSwitches[i]) {
+				dmSwitches[i] = NO;
+			}
+			else{
+				dmSwitches[i] = YES;
+			}
+		}
+		else {
+			temp.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:.3];
+			dmSwitches[i] = NO;
+		}
+		
+	}
+	for (int i = 6; i<10; i++) {
+		dmSwitches[i]=NO;
+	}
+	
+}
+
+- (void) swapSelector:(id)select{
+	for (int i=0; i<swapButtons.count; i++) {
+		UIButton * temp = [swapButtons objectAtIndex:i];
+		if (temp == select) {
+			temp.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:.7];
+			if (dmSwitches[i+6]) {
+				dmSwitches[i+6] = NO;
+			}
+			else{
+				dmSwitches[i+6] = YES;
+			}
+		}
+		else {
+			temp.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:.3];
+			dmSwitches[i+6] = NO;
+		}
+		
+	}
+	for (int i = 0; i<6; i++) {
+		dmSwitches[i]=NO;
+	}
+	
+	
+	
+}
+
+- (void) rotateSelector:(id)select{
+	if (lastDist.x == 0 && lastDist.y ==0) {
+			for (int i=0; i<rotateButtons.count; i++) {
+		UIButton * temp = [rotateButtons objectAtIndex:i];
+		if (temp == select) {
+			temp.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:.7];
+			[mechanics setStartPos:CGPointMake(0.0, 0.0)];
+			if (i == 0) {
+				[mechanics setEnd:-90 andY:0];
+				
+				
+			}
+			else if (i == 1) {
+				[mechanics setEnd:90 andY:0];
+			}
+			else if (i == 2) {
+				[mechanics setEnd:0 andY:-90];
+			}
+			else if (i == 3) {
+				[mechanics setEnd:0 andY:90];
+			}
+			
+			
+			lastDist = [mechanics rotateCube];
+		}
+		else {
+			temp.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:.3];
+			
+		}
+		
+	}
+	}
+	
+	
+}
+
+
+
+- (void) setDoRock{
+	doRock = YES;
+	[dm clearOthers];
+	[dmSideMenu fadeOut];
+	dm.rotate.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:.3];
+	dm.rotateVis = NO;
+	
+	for (int i=0; i<10; i++) {
+		dmSwitches[i]=NO;
+	}
+}
+
+- (void) setRotateOn{
+	
+	if (dm.rotateVis) {
+		[dmSideMenu fadeOut];
+		dm.rotate.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:.3];
+		dm.rotateVis = NO;
+	}
+	else{
+		[dm clearOthers];
+		[dmSideMenu setFrame:CGRectMake(120, 360, 100, 400)];
+		[dmSideMenu setupRotate];
+		[dmSideMenu fadeIn];
+		dm.rotate.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:.7];
+		dm.rotateVis = YES;
+	}
+	NSLog(@"Rotate being called");
+	for (int i=0; i<10; i++) {
+		dmSwitches[i]=NO;
+	}
 }
 
 /*
@@ -156,6 +534,18 @@
 {
 	
 	score.text = [NSString stringWithFormat:@"%d", mechanics.score];
+	if (gameVersion != 0 && touch1 == nil && touch2 == nil && touch3 == nil) {
+		checkValue = YES;
+		if (packed1.count > 0) {
+			[packed1 removeAllObjects];
+		}
+		if (packed2.count > 0) {
+			[packed2 removeAllObjects];
+		}
+		if (packed3.count > 0) {
+			[packed3 removeAllObjects];
+		}
+	}
 	if (gestureDCount < 30) {
 		gestureDCount++;
 	}
@@ -216,28 +606,33 @@
 		float yRot = rockRotat.y/divideBy;
 		rocking++;
 		[renderer renderByRotatingAroundX:xRot rotatingAroundY:yRot];
-
+		
 	}
 	else {
 		
-    float xRot = lastDist.x/40;
-	float yRot = lastDist.y/40;
-	
-	if (xRot != 0 || yRot !=0) {
-		counter+=1;
-	}
-	
-	
-	if (counter==40) {
-		lastDist.x=0;
-		lastDist.y=0;
-		counter=0;
-		totalCounter-=40;
-		xRot=0.0;
-		yRot=0.0;
-	}
-	
-	[renderer renderByRotatingAroundX:xRot rotatingAroundY:yRot];
+		float xRot = lastDist.x/40;
+		float yRot = lastDist.y/40;
+		
+		if (xRot != 0 || yRot !=0) {
+			counter+=1;
+		}
+		
+		
+		if (counter==40) {
+			lastDist.x=0;
+			lastDist.y=0;
+			counter=0;
+			totalCounter-=40;
+			xRot=0.0;
+			yRot=0.0;
+			for (int i=0; i<rotateButtons.count; i++) {
+				UIButton * temp = [rotateButtons objectAtIndex:i];
+				temp.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:.3];
+
+			}
+		}
+		
+		[renderer renderByRotatingAroundX:xRot rotatingAroundY:yRot];
 	}
 }
 
@@ -329,10 +724,32 @@
     
 	[super touchesBegan:touches withEvent:event];	
 	NSLog(@"Touches began");
+	if (gameVersion != 0) {
+		renderer.inRed = NO;
+		NSArray * array = [touches allObjects];
+		[self beginTouch:array];
+	}
+	else {
+		UITouch * touch = [touches anyObject];
+		CGPoint pt = [touch locationInView:self];
+		
+		tapPosition = CGPointMake(pt.x, pt.y);
+		[mechanics setStart:pt.x andY:pt.y];
+		if ([[touchesArray objectAtIndex:0] count] > 0) {
+			[[touchesArray objectAtIndex:0] removeAllObjects];
+		}
+		[[touchesArray objectAtIndex:0] addObject:[NSValue valueWithCGPoint:CGPointMake(1100, 900)]];
+	}
+	
     
-	NSArray * array = [touches allObjects];
 	
 	
+	
+	
+	//[self setNeedsDisplay];
+}
+
+- (void) beginTouch:(NSArray*) array{
 	for (int i=0; i<array.count; i++) {
 		UITouch *touch = [array objectAtIndex:i];
 		CGPoint pt = [touch locationInView:self];
@@ -441,27 +858,39 @@
 	if (numTouches == 1) {
 		
 		
-			
+		
 		[stateMachine startOfGestureStateRecogniser];
 	}
 	else if (numTouches == 3){
+		checkValue = NO;
 		panelStart = [[[touchesArray objectAtIndex:0] objectAtIndex:0] CGPointValue];
 	}
 	else {
+		checkValue = NO;
 		CGPoint point = [[[touchesArray objectAtIndex:0] objectAtIndex:0] CGPointValue];
 		[mechanics setStart: point.x andY:point.y];
 		[stateMachine endOfGestureStateRecogniser];
 	}
-
-	//[self setNeedsDisplay];
 }
 
 
 - (void) touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
 	[super touchesMoved:touches withEvent:event];
     
+    if (gameVersion != 0) {
+		NSArray * array = [touches allObjects];
+		[self movedTouch:array];
+	}
+	else {
+		//[[touchesArray objectAtIndex:0] addObject:[NSValue valueWithCGPoint:[[touches anyObject] locationInView:self]]];
+	}
+
+	
+	
     
-	NSArray * array = [touches allObjects];
+}
+
+- (void) movedTouch:(NSArray*)array{
 	for (int i=0; i<array.count; i++) {
 		UITouch *touch = [array objectAtIndex:i];
 		CGPoint pt = [touch locationInView:self];
@@ -485,6 +914,7 @@
 					NSLog(@"One touch 1");
 				}
 				else if (numTouches == 2 && packed2.count != 0 && packed3.count == 0){
+					checkValue = NO;
 					/* FUNCTION CALL GOES HERE
 					 * Data is in packed1 and packed2 arrays
 					 * 
@@ -493,10 +923,10 @@
 					 * [2] (float)		angle
 					 * [3] (float)		gradient angle
 					 */
-                   /* float angles[2];
-                    angles[0] = [[[packed1 objectAtIndex:0] objectAtIndex:2] floatValue];
-                    angles[1] = [[[packed2 objectAtIndex:0] objectAtIndex:2] floatValue];
-                    [stateMachine doesGestureStateExistWithAngle:angles AndTouch:2];*/
+					/* float angles[2];
+					 angles[0] = [[[packed1 objectAtIndex:0] objectAtIndex:2] floatValue];
+					 angles[1] = [[[packed2 objectAtIndex:0] objectAtIndex:2] floatValue];
+					 [stateMachine doesGestureStateExistWithAngle:angles AndTouch:2];*/
                     [stateMachine endOfGestureStateRecogniser];
 					
 					[packed1 removeObjectAtIndex:0];
@@ -504,6 +934,7 @@
 					NSLog(@"Two touches 1, 2");
 				}
 				else if (numTouches == 2 && packed3.count != 0 && packed2.count == 0){
+					checkValue = NO;
 					/* FUNCTION CALL GOES HERE
 					 * Data is in packed1 and packed3 arrays
 					 * 
@@ -513,9 +944,9 @@
 					 * [3] (float)		gradient angle
 					 */
                     /*float angles[2];
-                    angles[0] = [[[packed1 objectAtIndex:0] objectAtIndex:2] floatValue];
-                    angles[1] = [[[packed3 objectAtIndex:0] objectAtIndex:2] floatValue];
-                    [stateMachine doesGestureStateExistWithAngle:angles AndTouch:2];*/
+					 angles[0] = [[[packed1 objectAtIndex:0] objectAtIndex:2] floatValue];
+					 angles[1] = [[[packed3 objectAtIndex:0] objectAtIndex:2] floatValue];
+					 [stateMachine doesGestureStateExistWithAngle:angles AndTouch:2];*/
 					[stateMachine endOfGestureStateRecogniser];
 					[packed1 removeObjectAtIndex:0];
 					[packed3 removeObjectAtIndex:0];
@@ -547,6 +978,7 @@
 					NSLog(@"One touch 2");
 				}
 				else if (numTouches == 2 && packed1.count != 0 && packed3.count == 0){
+					checkValue = NO;
 					/* FUNCTION CALL GOES HERE
 					 * Data is in packed1 and packed2 arrays
 					 * 
@@ -556,15 +988,16 @@
 					 * [3] (float)		gradient angle
 					 */
                     /*float angles[2];
-                    angles[0] = [[[packed1 objectAtIndex:0] objectAtIndex:2] floatValue];
-                    angles[1] = [[[packed2 objectAtIndex:0] objectAtIndex:2] floatValue];
-                    [stateMachine doesGestureStateExistWithAngle:angles AndTouch:2];    */
+					 angles[0] = [[[packed1 objectAtIndex:0] objectAtIndex:2] floatValue];
+					 angles[1] = [[[packed2 objectAtIndex:0] objectAtIndex:2] floatValue];
+					 [stateMachine doesGestureStateExistWithAngle:angles AndTouch:2];    */
 					[stateMachine endOfGestureStateRecogniser];
 					[packed1 removeObjectAtIndex:0];
 					[packed2 removeObjectAtIndex:0];
 					NSLog(@"Two touches 2, 1");
 				}
 				else if (numTouches == 2 && packed3.count != 0 && packed1.count == 0){
+					checkValue = NO;
 					/* FUNCTION CALL GOES HERE
 					 * Data is in packed1 and packed3 arrays
 					 * 
@@ -574,46 +1007,46 @@
 					 * [3] (float)		gradient angle
 					 */
                     /*float angles[2];
-                    angles[0] = [[[packed2 objectAtIndex:0] objectAtIndex:2] floatValue];
-                    angles[1] = [[[packed3 objectAtIndex:0] objectAtIndex:2] floatValue];
-                    [stateMachine doesGestureStateExistWithAngle:angles AndTouch:2];  */
+					 angles[0] = [[[packed2 objectAtIndex:0] objectAtIndex:2] floatValue];
+					 angles[1] = [[[packed3 objectAtIndex:0] objectAtIndex:2] floatValue];
+					 [stateMachine doesGestureStateExistWithAngle:angles AndTouch:2];  */
 					[stateMachine endOfGestureStateRecogniser];
 					[packed2 removeObjectAtIndex:0];
 					[packed3 removeObjectAtIndex:0];
 					NSLog(@"Two touches 2, 3");
 				}
 				/*else if (numTouches == 3 && packed3.count != 0 && packed1.count != 0){
-					/* FUNCTION CALL GOES HERE
-					 * Data is in packed1, packed2 and packed3 arrays
-					 * 
-					 * [0] (CGPoint)	endPoint
-					 * [1] (float)		scale
-					 * [2] (float)		angle
-					 * [3] (float)		gradient angle
-					 */
-                    /*float angles[3];
-                    angles[0] = [[[packed1 objectAtIndex:0] objectAtIndex:2] floatValue];
-                    angles[1] = [[[packed2 objectAtIndex:0] objectAtIndex:2] floatValue];
-                    angles[2] = [[[packed3 objectAtIndex:0] objectAtIndex:2] floatValue];
-                    [stateMachine doesGestureStateExistWithAngle:angles AndTouch:3];   
-					[stateMachine endOfGestureStateRecogniser];
-					if (pt.x < 100 && panelStart.x != -1 && panelStart.y != -1) {
-						float changeX = pt.x - panelStart.x;
-						if (changeX < 0 && panelOn) {
-							[panel slideIn];
-							panelOn = NO;
-						}
-						else if (changeX > 0 && !panelOn){
-							[panel slideOut];
-							panelOn = YES;
-						}
-					}
-					
-					[packed1 removeObjectAtIndex:0];
-					[packed2 removeObjectAtIndex:0];
-					[packed3 removeObjectAtIndex:0];
-					NSLog(@"Three touches 2, 1, 3");
-				}*/
+				 /* FUNCTION CALL GOES HERE
+				 * Data is in packed1, packed2 and packed3 arrays
+				 * 
+				 * [0] (CGPoint)	endPoint
+				 * [1] (float)		scale
+				 * [2] (float)		angle
+				 * [3] (float)		gradient angle
+				 */
+				/*float angles[3];
+				 angles[0] = [[[packed1 objectAtIndex:0] objectAtIndex:2] floatValue];
+				 angles[1] = [[[packed2 objectAtIndex:0] objectAtIndex:2] floatValue];
+				 angles[2] = [[[packed3 objectAtIndex:0] objectAtIndex:2] floatValue];
+				 [stateMachine doesGestureStateExistWithAngle:angles AndTouch:3];   
+				 [stateMachine endOfGestureStateRecogniser];
+				 if (pt.x < 100 && panelStart.x != -1 && panelStart.y != -1) {
+				 float changeX = pt.x - panelStart.x;
+				 if (changeX < 0 && panelOn) {
+				 [panel slideIn];
+				 panelOn = NO;
+				 }
+				 else if (changeX > 0 && !panelOn){
+				 [panel slideOut];
+				 panelOn = YES;
+				 }
+				 }
+				 
+				 [packed1 removeObjectAtIndex:0];
+				 [packed2 removeObjectAtIndex:0];
+				 [packed3 removeObjectAtIndex:0];
+				 NSLog(@"Three touches 2, 1, 3");
+				 }*/
 				else{
 					NSLog(@"Ignored for now 2");
 				}
@@ -640,6 +1073,7 @@
 					NSLog(@"One touch 3");
 				}
 				else if (numTouches == 2 && packed2.count != 0 && packed1.count == 0){
+					checkValue = NO;
 					/* FUNCTION CALL GOES HERE
 					 * Data is in packed1 and packed2 arrays
 					 * 
@@ -649,16 +1083,17 @@
 					 * [3] (float)		gradient angle
 					 */
                     
-                   /* float angles[2];
-                    angles[0] = [[[packed2 objectAtIndex:0] objectAtIndex:2] floatValue];
-                    angles[1] = [[[packed3 objectAtIndex:0] objectAtIndex:2] floatValue];
-                    [stateMachine doesGestureStateExistWithAngle:angles AndTouch:2];*/
+					/* float angles[2];
+					 angles[0] = [[[packed2 objectAtIndex:0] objectAtIndex:2] floatValue];
+					 angles[1] = [[[packed3 objectAtIndex:0] objectAtIndex:2] floatValue];
+					 [stateMachine doesGestureStateExistWithAngle:angles AndTouch:2];*/
 					[stateMachine endOfGestureStateRecogniser];
 					[packed2 removeObjectAtIndex:0];
 					[packed3 removeObjectAtIndex:0];
 					NSLog(@"Two touches 3, 2");
 				}
 				else if (numTouches == 2 && packed1.count != 0 && packed2.count == 0){
+					checkValue = NO;
 					/* FUNCTION CALL GOES HERE
 					 * Data is in packed1 and packed3 arrays
 					 * 
@@ -668,45 +1103,45 @@
 					 * [3] (float)		gradient angle
 					 */
                     /*float angles[2];
-                    angles[0] = [[[packed1 objectAtIndex:0] objectAtIndex:2] floatValue];
-                    angles[1] = [[[packed3 objectAtIndex:0] objectAtIndex:2] floatValue];
-                    [stateMachine doesGestureStateExistWithAngle:angles AndTouch:2];  */
+					 angles[0] = [[[packed1 objectAtIndex:0] objectAtIndex:2] floatValue];
+					 angles[1] = [[[packed3 objectAtIndex:0] objectAtIndex:2] floatValue];
+					 [stateMachine doesGestureStateExistWithAngle:angles AndTouch:2];  */
 					[stateMachine endOfGestureStateRecogniser];
 					[packed1 removeObjectAtIndex:0];
 					[packed3 removeObjectAtIndex:0];
 					NSLog(@"Two touches 3, 1");
 				}
 				/*else if (numTouches == 3 && packed1.count != 0 && packed2.count != 0){
-					/* FUNCTION CALL GOES HERE
-					 * Data is in packed1, packed2 and packed3 arrays
-					 * 
-					 * [0] (CGPoint)	endPoint
-					 * [1] (float)		scale
-					 * [2] (float)		angle
-					 * [3] (float)		gradient angle
-					 */
-                    /*float angles[3];
-                    angles[0] = [[[packed1 objectAtIndex:0] objectAtIndex:2] floatValue];
-                    angles[1] = [[[packed2 objectAtIndex:0] objectAtIndex:2] floatValue];
-                    angles[2] = [[[packed3 objectAtIndex:0] objectAtIndex:2] floatValue];
-                    [stateMachine doesGestureStateExistWithAngle:angles AndTouch:3];   
-					[stateMachine endOfGestureStateRecogniser];
-					if (pt.x < 100 && panelStart.x != -1 && panelStart.y != -1) {
-						float changeX = pt.x - panelStart.x;
-						if (changeX < 0 && panelOn) {
-							[panel slideIn];
-							panelOn = NO;
-						}
-						else if (changeX > 0 && !panelOn){
-							[panel slideOut];
-							panelOn = YES;
-						}
-					}
-					[packed1 removeObjectAtIndex:0];
-					[packed2 removeObjectAtIndex:0];
-					[packed3 removeObjectAtIndex:0];
-					NSLog(@"Three touches 3, 2, 1");
-				}*/
+				 /* FUNCTION CALL GOES HERE
+				 * Data is in packed1, packed2 and packed3 arrays
+				 * 
+				 * [0] (CGPoint)	endPoint
+				 * [1] (float)		scale
+				 * [2] (float)		angle
+				 * [3] (float)		gradient angle
+				 */
+				/*float angles[3];
+				 angles[0] = [[[packed1 objectAtIndex:0] objectAtIndex:2] floatValue];
+				 angles[1] = [[[packed2 objectAtIndex:0] objectAtIndex:2] floatValue];
+				 angles[2] = [[[packed3 objectAtIndex:0] objectAtIndex:2] floatValue];
+				 [stateMachine doesGestureStateExistWithAngle:angles AndTouch:3];   
+				 [stateMachine endOfGestureStateRecogniser];
+				 if (pt.x < 100 && panelStart.x != -1 && panelStart.y != -1) {
+				 float changeX = pt.x - panelStart.x;
+				 if (changeX < 0 && panelOn) {
+				 [panel slideIn];
+				 panelOn = NO;
+				 }
+				 else if (changeX > 0 && !panelOn){
+				 [panel slideOut];
+				 panelOn = YES;
+				 }
+				 }
+				 [packed1 removeObjectAtIndex:0];
+				 [packed2 removeObjectAtIndex:0];
+				 [packed3 removeObjectAtIndex:0];
+				 NSLog(@"Three touches 3, 2, 1");
+				 }*/
 				else{
 					NSLog(@"Ignored for now 3");
 				}
@@ -717,6 +1152,7 @@
 	}
     
 	if (numTouches == 3 ){
+		checkValue = NO;
 		/* FUNCTION CALL GOES HERE
 		 * Data is in packed1, packed2 and packed3 arrays
 		 * 
@@ -747,19 +1183,83 @@
 		[packed1 removeAllObjects];
 		[packed2 removeAllObjects];
 		[packed3 removeAllObjects];
+		[renderer clearTouches];
 		NSLog(@"Three touches 1, 2, 3");
 	}
     
 	//[self setNeedsDisplay];
 	//[self recognitionDirection:pt];
-    
 }
 
 
 - (void) touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
 	[super touchesEnded:touches withEvent:event];
-    
-	NSArray * array = [touches allObjects];
+    if (gameVersion!=0) {
+		NSArray * array = [touches allObjects];
+		[self endedTouch:array];
+	}
+	else {
+		UITouch * touch = [touches anyObject];
+		CGPoint pt = [touch locationInView:self];
+		/*if (dm.rotateVis) {
+			[mechanics setStartPos:tapPosition];
+			[mechanics setEnd:pt.x andY:pt.y];
+			
+			lastDist = [mechanics rotateCube];
+		}
+		else */if (sqrt((pt.x - tapPosition.x)*(pt.x - tapPosition.x) +  (pt.y - tapPosition.y)*(pt.y - tapPosition.y)) < 10){
+			if (dm.lineVis) {
+				
+				if (dmSwitches[0]) {
+					[mechanics rowLeft];
+				}
+				else if (dmSwitches[1]) {
+					[mechanics rowRight];
+				}
+				else if (dmSwitches[2]) {
+					[mechanics columnDown];
+				}
+				else if (dmSwitches[3]) {
+					[mechanics columnUp];
+				}
+				else if (dmSwitches[4]) {
+					[mechanics zBackward];
+				}
+				else if (dmSwitches[5]) {
+					[mechanics zForward];
+				}
+			}
+			else if (dm.swapVis){
+				if (dmSwitches[6]) {
+					[mechanics swapBlocks:0];
+				}
+				else if (dmSwitches[7]) {
+					[mechanics swapBlocks:1];
+				}
+				else if (dmSwitches[8]) {
+					[mechanics swapBlocks:3];
+				}
+				else if (dmSwitches[9]) {
+					[mechanics swapBlocks:2];
+				}
+			}
+			else{
+				[mechanics setEnd:pt.x andY:pt.y];
+				[mechanics removeBlocks];
+				
+				for (int i=0; i<10; i++) {
+					dmSwitches[i] = NO;
+				}
+			}
+		}
+		
+	}
+	
+	
+	//[self setNeedsDisplay];
+}
+
+- (void) endedTouch:(NSArray*)array{
 	for (int i=0; i<array.count; i++) {
 		UITouch *touch = [array objectAtIndex:i];
 		CGPoint pt = [touch locationInView:self];
@@ -799,48 +1299,49 @@
 				NSLog(@"One touch 1");
 			}
 			/*else if (numTouches == 2 && packed2.count != 0 && packed3.count == 0){
-				/* FUNCTION CALL GOES HERE
-				 * Data is in packed1 and packed2 arrays
-				 * 
-				 * [0] (CGPoint)	endPoint
-				 * [1] (float)		scale
-				 * [2] (float)		angle
-				 * [3] (float)		gradient angle
-				 */
-               /* float angles[2];
-                angles[0] = [[[packed1 objectAtIndex:0] objectAtIndex:2] floatValue];
-                angles[1] = [[[packed2 objectAtIndex:0] objectAtIndex:2] floatValue];
-                [stateMachine doesGestureStateExistWithAngle:angles AndTouch:2];
-				[stateMachine endOfGestureStateRecogniser];
-				[mechanics setEnd:([[[packed1 lastObject] objectAtIndex:0] CGPointValue]).x andY:([[[packed1 lastObject] objectAtIndex:0] CGPointValue]).y];
-				
-				lastDist = [mechanics rotateCube];
-				[packed1 removeAllObjects];
-				[packed2 removeAllObjects];
-				NSLog(@"Two touches 1, 2");
-			}
-			else if (numTouches == 2 && packed3.count != 0 && packed2.count == 0){
-				/* FUNCTION CALL GOES HERE
-				 * Data is in packed1 and packed3 arrays
-				 * 
-				 * [0] (CGPoint)	endPoint
-				 * [1] (float)		scale
-				 * [2] (float)		angle
-				 * [3] (float)		gradient angle
-				 */
-                /*float angles[2];
-                angles[0] = [[[packed1 objectAtIndex:0] objectAtIndex:2] floatValue];
-                angles[1] = [[[packed3 objectAtIndex:0] objectAtIndex:2] floatValue];
-                [stateMachine doesGestureStateExistWithAngle:angles AndTouch:2];
-				[stateMachine endOfGestureStateRecogniser];
-				[mechanics setEnd:([[[packed1 lastObject] objectAtIndex:0] CGPointValue]).x andY:([[[packed1 lastObject] objectAtIndex:0] CGPointValue]).y];
-				
-				lastDist = [mechanics rotateCube];
-				[packed1 removeAllObjects];
-				[packed3 removeAllObjects];
-				NSLog(@"Two touches 1, 3");
-			}*/
+			 /* FUNCTION CALL GOES HERE
+			 * Data is in packed1 and packed2 arrays
+			 * 
+			 * [0] (CGPoint)	endPoint
+			 * [1] (float)		scale
+			 * [2] (float)		angle
+			 * [3] (float)		gradient angle
+			 */
+			/* float angles[2];
+			 angles[0] = [[[packed1 objectAtIndex:0] objectAtIndex:2] floatValue];
+			 angles[1] = [[[packed2 objectAtIndex:0] objectAtIndex:2] floatValue];
+			 [stateMachine doesGestureStateExistWithAngle:angles AndTouch:2];
+			 [stateMachine endOfGestureStateRecogniser];
+			 [mechanics setEnd:([[[packed1 lastObject] objectAtIndex:0] CGPointValue]).x andY:([[[packed1 lastObject] objectAtIndex:0] CGPointValue]).y];
+			 
+			 lastDist = [mechanics rotateCube];
+			 [packed1 removeAllObjects];
+			 [packed2 removeAllObjects];
+			 NSLog(@"Two touches 1, 2");
+			 }
+			 else if (numTouches == 2 && packed3.count != 0 && packed2.count == 0){
+			 /* FUNCTION CALL GOES HERE
+			 * Data is in packed1 and packed3 arrays
+			 * 
+			 * [0] (CGPoint)	endPoint
+			 * [1] (float)		scale
+			 * [2] (float)		angle
+			 * [3] (float)		gradient angle
+			 */
+			/*float angles[2];
+			 angles[0] = [[[packed1 objectAtIndex:0] objectAtIndex:2] floatValue];
+			 angles[1] = [[[packed3 objectAtIndex:0] objectAtIndex:2] floatValue];
+			 [stateMachine doesGestureStateExistWithAngle:angles AndTouch:2];
+			 [stateMachine endOfGestureStateRecogniser];
+			 [mechanics setEnd:([[[packed1 lastObject] objectAtIndex:0] CGPointValue]).x andY:([[[packed1 lastObject] objectAtIndex:0] CGPointValue]).y];
+			 
+			 lastDist = [mechanics rotateCube];
+			 [packed1 removeAllObjects];
+			 [packed3 removeAllObjects];
+			 NSLog(@"Two touches 1, 3");
+			 }*/
 			else if (numTouches == 3 && packed3.count != 0 && packed2.count != 0){
+				checkValue = NO;
 				/* FUNCTION CALL GOES HERE
 				 * Data is in packed1, packed2 and packed3 arrays
 				 * 
@@ -850,23 +1351,23 @@
 				 * [3] (float)		gradient angle
 				 */
                 /*float angles[3];
-                angles[0] = [[[packed1 objectAtIndex:0] objectAtIndex:2] floatValue];
-                angles[1] = [[[packed2 objectAtIndex:0] objectAtIndex:2] floatValue];
-                angles[2] = [[[packed3 objectAtIndex:0] objectAtIndex:2] floatValue];
-                [stateMachine doesGestureStateExistWithAngle:angles AndTouch:3];  */
+				 angles[0] = [[[packed1 objectAtIndex:0] objectAtIndex:2] floatValue];
+				 angles[1] = [[[packed2 objectAtIndex:0] objectAtIndex:2] floatValue];
+				 angles[2] = [[[packed3 objectAtIndex:0] objectAtIndex:2] floatValue];
+				 [stateMachine doesGestureStateExistWithAngle:angles AndTouch:3];  */
 				
 				/*float totalX= (([[[packed1 lastObject] objectAtIndex:0] CGPointValue]).x +
-							   ([[[packed2 lastObject] objectAtIndex:0] CGPointValue]).x +
-							   ([[[packed3 lastObject] objectAtIndex:0] CGPointValue]).x)/3.0;
-				
-				float totalY= (([[[packed1 lastObject] objectAtIndex:0] CGPointValue]).y +
-							   ([[[packed2 lastObject] objectAtIndex:0] CGPointValue]).y +
-							   ([[[packed3 lastObject] objectAtIndex:0] CGPointValue]).y)/3.0;*/
+				 ([[[packed2 lastObject] objectAtIndex:0] CGPointValue]).x +
+				 ([[[packed3 lastObject] objectAtIndex:0] CGPointValue]).x)/3.0;
+				 
+				 float totalY= (([[[packed1 lastObject] objectAtIndex:0] CGPointValue]).y +
+				 ([[[packed2 lastObject] objectAtIndex:0] CGPointValue]).y +
+				 ([[[packed3 lastObject] objectAtIndex:0] CGPointValue]).y)/3.0;*/
 				
 				/*[mechanics setEnd:([[[packed1 lastObject] objectAtIndex:0] CGPointValue]).x andY:([[[packed1 lastObject] objectAtIndex:0] CGPointValue]).y];
-				
-				lastDist = [mechanics rotateCube];*/
-				
+				 
+				 lastDist = [mechanics rotateCube];*/
+				[renderer clearTouches];
 				
 				[packed1 removeObjectAtIndex:0];
 				[packed2 removeObjectAtIndex:0];
@@ -914,50 +1415,51 @@
 				NSLog(@"One touch 2");
 			}
 			/*else if (numTouches == 2 && packed1.count != 0 && packed3.count == 0){
-				/* FUNCTION CALL GOES HERE
-				 * Data is in packed1 and packed2 arrays
-				 * 
-				 * [0] (CGPoint)	endPoint
-				 * [1] (float)		scale
-				 * [2] (float)		angle
-				 * [3] (float)		gradient angle
-				 */
-                /*float angles[2];
-                angles[0] = [[[packed1 objectAtIndex:0] objectAtIndex:2] floatValue];
-                angles[1] = [[[packed2 objectAtIndex:0] objectAtIndex:2] floatValue];
-                [stateMachine doesGestureStateExistWithAngle:angles AndTouch:2]; 
-				[stateMachine endOfGestureStateRecogniser];
-                [mechanics setEnd:([[[packed1 lastObject] objectAtIndex:0] CGPointValue]).x andY:([[[packed1 lastObject] objectAtIndex:0] CGPointValue]).y];
-				
-				lastDist = [mechanics rotateCube];
-				[packed1 removeAllObjects];
-				[packed2 removeAllObjects];
-				NSLog(@"Two touches 2, 1");
-			}
-			else if (numTouches == 2 && packed3.count != 0 && packed1.count == 0){
-				/* FUNCTION CALL GOES HERE
-				 * Data is in packed1 and packed3 arrays
-				 * 
-				 * [0] (CGPoint)	endPoint
-				 * [1] (float)		scale
-				 * [2] (float)		angle
-				 * [3] (float)		gradient angle
-				 */
-                /*float angles[2];
-                angles[0] = [[[packed2 objectAtIndex:0] objectAtIndex:2] floatValue];
-                angles[1] = [[[packed3 objectAtIndex:0] objectAtIndex:2] floatValue];
-                [stateMachine doesGestureStateExistWithAngle:angles AndTouch:2];
-				
-				[stateMachine endOfGestureStateRecogniser];
-                [mechanics setEnd:([[[packed2 lastObject] objectAtIndex:0] CGPointValue]).x andY:([[[packed2 lastObject] objectAtIndex:0] CGPointValue]).y];
-				
-				lastDist = [mechanics rotateCube];
-				[packed3 removeAllObjects];
-				[packed2 removeAllObjects];
-				
-				NSLog(@"Two touches 2, 3");
-			}*/
+			 /* FUNCTION CALL GOES HERE
+			 * Data is in packed1 and packed2 arrays
+			 * 
+			 * [0] (CGPoint)	endPoint
+			 * [1] (float)		scale
+			 * [2] (float)		angle
+			 * [3] (float)		gradient angle
+			 */
+			/*float angles[2];
+			 angles[0] = [[[packed1 objectAtIndex:0] objectAtIndex:2] floatValue];
+			 angles[1] = [[[packed2 objectAtIndex:0] objectAtIndex:2] floatValue];
+			 [stateMachine doesGestureStateExistWithAngle:angles AndTouch:2]; 
+			 [stateMachine endOfGestureStateRecogniser];
+			 [mechanics setEnd:([[[packed1 lastObject] objectAtIndex:0] CGPointValue]).x andY:([[[packed1 lastObject] objectAtIndex:0] CGPointValue]).y];
+			 
+			 lastDist = [mechanics rotateCube];
+			 [packed1 removeAllObjects];
+			 [packed2 removeAllObjects];
+			 NSLog(@"Two touches 2, 1");
+			 }
+			 else if (numTouches == 2 && packed3.count != 0 && packed1.count == 0){
+			 /* FUNCTION CALL GOES HERE
+			 * Data is in packed1 and packed3 arrays
+			 * 
+			 * [0] (CGPoint)	endPoint
+			 * [1] (float)		scale
+			 * [2] (float)		angle
+			 * [3] (float)		gradient angle
+			 */
+			/*float angles[2];
+			 angles[0] = [[[packed2 objectAtIndex:0] objectAtIndex:2] floatValue];
+			 angles[1] = [[[packed3 objectAtIndex:0] objectAtIndex:2] floatValue];
+			 [stateMachine doesGestureStateExistWithAngle:angles AndTouch:2];
+			 
+			 [stateMachine endOfGestureStateRecogniser];
+			 [mechanics setEnd:([[[packed2 lastObject] objectAtIndex:0] CGPointValue]).x andY:([[[packed2 lastObject] objectAtIndex:0] CGPointValue]).y];
+			 
+			 lastDist = [mechanics rotateCube];
+			 [packed3 removeAllObjects];
+			 [packed2 removeAllObjects];
+			 
+			 NSLog(@"Two touches 2, 3");
+			 }*/
 			else if (numTouches == 3 && packed3.count != 0 && packed1.count != 0){
+				checkValue = NO;
 				/* FUNCTION CALL GOES HERE
 				 * Data is in packed1, packed2 and packed3 arrays
 				 * 
@@ -966,15 +1468,15 @@
 				 * [2] (float)		angle
 				 * [3] (float)		gradient angle
 				 */
-               /* float angles[3];
-                angles[0] = [[[packed1 objectAtIndex:0] objectAtIndex:2] floatValue];
-                angles[1] = [[[packed2 objectAtIndex:0] objectAtIndex:2] floatValue];
-                angles[2] = [[[packed3 objectAtIndex:0] objectAtIndex:2] floatValue];
-                [stateMachine doesGestureStateExistWithAngle:angles AndTouch:3];   */
+				/* float angles[3];
+				 angles[0] = [[[packed1 objectAtIndex:0] objectAtIndex:2] floatValue];
+				 angles[1] = [[[packed2 objectAtIndex:0] objectAtIndex:2] floatValue];
+				 angles[2] = [[[packed3 objectAtIndex:0] objectAtIndex:2] floatValue];
+				 [stateMachine doesGestureStateExistWithAngle:angles AndTouch:3];   */
 				/*[mechanics setEnd:([[[packed1 lastObject] objectAtIndex:0] CGPointValue]).x andY:([[[packed1 lastObject] objectAtIndex:0] CGPointValue]).y];
-				
-				lastDist = [mechanics rotateCube];*/
-								
+				 
+				 lastDist = [mechanics rotateCube];*/
+				[renderer clearTouches];		
 				
 				[packed1 removeObjectAtIndex:0];
 				[packed2 removeObjectAtIndex:0];
@@ -1020,6 +1522,7 @@
 				NSLog(@"One touch 3");
 			}
 			else if (numTouches == 3 && packed1.count != 0 && packed2.count != 0){
+				checkValue = NO;
 				/* FUNCTION CALL GOES HERE
 				 * Data is in packed1, packed2 and packed3 arrays
 				 * 
@@ -1029,16 +1532,16 @@
 				 * [3] (float)		gradient angle
 				 */
                 /*float angles[3];
-                angles[0] = [[[packed1 objectAtIndex:0] objectAtIndex:2] floatValue];
-                angles[1] = [[[packed2 objectAtIndex:0] objectAtIndex:2] floatValue];
-                angles[2] = [[[packed3 objectAtIndex:0] objectAtIndex:2] floatValue];
-                [stateMachine doesGestureStateExistWithAngle:angles AndTouch:3];  */
+				 angles[0] = [[[packed1 objectAtIndex:0] objectAtIndex:2] floatValue];
+				 angles[1] = [[[packed2 objectAtIndex:0] objectAtIndex:2] floatValue];
+				 angles[2] = [[[packed3 objectAtIndex:0] objectAtIndex:2] floatValue];
+				 [stateMachine doesGestureStateExistWithAngle:angles AndTouch:3];  */
                 
 				
 				/*[mechanics setEnd:([[[packed1 lastObject] objectAtIndex:0] CGPointValue]).x andY:([[[packed1 lastObject] objectAtIndex:0] CGPointValue]).y];
-				
-				lastDist = [mechanics rotateCube];*/
-				
+				 
+				 lastDist = [mechanics rotateCube];*/
+				[renderer clearTouches];
 				
 				[packed1 removeObjectAtIndex:0];
 				[packed2 removeObjectAtIndex:0];
@@ -1057,27 +1560,28 @@
     int originalNum = numTouches;
 	if ((touch1 == nil && touch2 !=nil && touch3!=nil) || (touch2==nil && touch1!=nil && touch2!=nil) || (touch3==nil && touch1!=nil && touch2!=nil)) {
 		NSLog(@"Doing rotation for 2");
+		checkValue = NO;
 		[stateMachine endOfGestureStateRecogniser];
 		if (lastDist.x == 0 && lastDist.y == 0) {
 			
-		CGPoint val;
-		CGPoint startV;
-		if (touchesArray.count > 0) {
-			val = [[[touchesArray objectAtIndex:0] lastObject] CGPointValue];
-			startV = [[[touchesArray objectAtIndex:0] objectAtIndex:0] CGPointValue];
-		}
-		else if (touchesArray.count > 0){
-			val = [[[touchesArray objectAtIndex:1] lastObject] CGPointValue];
-			startV = [[[touchesArray objectAtIndex:1] objectAtIndex:0] CGPointValue];
-		}
-		else if (touchesArray.count > 0){
+			CGPoint val;
+			CGPoint startV;
+			if (touchesArray.count > 0) {
+				val = [[[touchesArray objectAtIndex:0] lastObject] CGPointValue];
+				startV = [[[touchesArray objectAtIndex:0] objectAtIndex:0] CGPointValue];
+			}
+			else if (touchesArray.count > 0){
+				val = [[[touchesArray objectAtIndex:1] lastObject] CGPointValue];
+				startV = [[[touchesArray objectAtIndex:1] objectAtIndex:0] CGPointValue];
+			}
+			else if (touchesArray.count > 0){
 				val = [[[touchesArray objectAtIndex:2] lastObject] CGPointValue];
-			startV = [[[touchesArray objectAtIndex:2] objectAtIndex:0] CGPointValue];
-		}
-		[mechanics setStartPos:startV];
-		[mechanics setEnd:val.x andY:val.y];
-		
-		lastDist = [mechanics rotateCube];
+				startV = [[[touchesArray objectAtIndex:2] objectAtIndex:0] CGPointValue];
+			}
+			[mechanics setStartPos:startV];
+			[mechanics setEnd:val.x andY:val.y];
+			
+			lastDist = [mechanics rotateCube];
 		}
 		[packed1 removeAllObjects];
 		[packed2 removeAllObjects];
@@ -1113,73 +1617,74 @@
 			 * [3] (float)		gradient angle
 			 */
             /*float angles[3];
-            angles[0] = [[[packed1 objectAtIndex:0] objectAtIndex:2] floatValue];
-            angles[1] = [[[packed2 objectAtIndex:0] objectAtIndex:2] floatValue];
-            angles[2] = [[[packed3 objectAtIndex:0] objectAtIndex:2] floatValue];
-            [stateMachine doesGestureStateExistWithAngle:angles AndTouch:3];   */
+			 angles[0] = [[[packed1 objectAtIndex:0] objectAtIndex:2] floatValue];
+			 angles[1] = [[[packed2 objectAtIndex:0] objectAtIndex:2] floatValue];
+			 angles[2] = [[[packed3 objectAtIndex:0] objectAtIndex:2] floatValue];
+			 [stateMachine doesGestureStateExistWithAngle:angles AndTouch:3];   */
             
 			/*[mechanics setEnd:([[[packed1 lastObject] objectAtIndex:0] CGPointValue]).x andY:([[[packed1 lastObject] objectAtIndex:0] CGPointValue]).y];
-			
-			lastDist = [mechanics rotateCube];*/
-			
+			 
+			 lastDist = [mechanics rotateCube];*/
+			checkValue = NO;
+			[renderer clearTouches];
 			
 			[packed1 removeAllObjects];
 			[packed2 removeAllObjects];
 			[packed3 removeAllObjects];
 		}
 		/*if (packed1.count > 0 && packed2.count > 0 ) {
-			// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Take EVERYTHING in the arrays !!!!!!!!!!!!!!!!!!!!!!!!!!
-			/* FUNCTION CALL GOES HERE
-			 * Data is in packed1, packed2 and packed3 arrays
-			 * 
-			 * [0] (CGPoint)	endPoint
-			 * [1] (float)		scale
-			 * [2] (float)		angle
-			 * [3] (float)		gradient angle
-			 
-            float angles[2];
-            angles[0] = [[[packed1 objectAtIndex:0] objectAtIndex:2] floatValue];
-            angles[1] = [[[packed2 objectAtIndex:0] objectAtIndex:2] floatValue];
-            [stateMachine doesGestureStateExistWithAngle:angles AndTouch:2];               
-			[packed1 removeAllObjects];
-			[packed2 removeAllObjects];
-            
-		}
-		if (packed1.count > 0  && packed3.count > 0) {
-			// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Take EVERYTHING in the arrays !!!!!!!!!!!!!!!!!!!!!!!!!!
-			/* FUNCTION CALL GOES HERE
-			 * Data is in packed1, packed2 and packed3 arrays
-			 * 
-			 * [0] (CGPoint)	endPoint
-			 * [1] (float)		scale
-			 * [2] (float)		angle
-			 * [3] (float)		gradient angle
-			             
-            float angles[2];
-            angles[0] = [[[packed1 objectAtIndex:0] objectAtIndex:2] floatValue];
-            angles[1] = [[[packed3 objectAtIndex:0] objectAtIndex:2] floatValue];
-            [stateMachine doesGestureStateExistWithAngle:angles AndTouch:2];               
-			[packed1 removeAllObjects];
-            
-			[packed3 removeAllObjects];
-		}
-		if (packed2.count > 0 && packed3.count > 0) {
-			// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Take EVERYTHING in the arrays !!!!!!!!!!!!!!!!!!!!!!!!!!
-			/* FUNCTION CALL GOES HERE
-			 * Data is in packed1, packed2 and packed3 arrays
-			 * 
-			 * [0] (CGPoint)	endPoint
-			 * [1] (float)		scale
-			 * [2] (float)		angle
-			 * [3] (float)		gradient angle
-			 
-            float angles[2];
-            angles[0] = [[[packed2 objectAtIndex:0] objectAtIndex:2] floatValue];
-            angles[1] = [[[packed3 objectAtIndex:0] objectAtIndex:2] floatValue];
-            [stateMachine doesGestureStateExistWithAngle:angles AndTouch:2];               
-			[packed2 removeAllObjects];
-			[packed3 removeAllObjects];
-		}*/
+		 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Take EVERYTHING in the arrays !!!!!!!!!!!!!!!!!!!!!!!!!!
+		 /* FUNCTION CALL GOES HERE
+		 * Data is in packed1, packed2 and packed3 arrays
+		 * 
+		 * [0] (CGPoint)	endPoint
+		 * [1] (float)		scale
+		 * [2] (float)		angle
+		 * [3] (float)		gradient angle
+		 
+		 float angles[2];
+		 angles[0] = [[[packed1 objectAtIndex:0] objectAtIndex:2] floatValue];
+		 angles[1] = [[[packed2 objectAtIndex:0] objectAtIndex:2] floatValue];
+		 [stateMachine doesGestureStateExistWithAngle:angles AndTouch:2];               
+		 [packed1 removeAllObjects];
+		 [packed2 removeAllObjects];
+		 
+		 }
+		 if (packed1.count > 0  && packed3.count > 0) {
+		 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Take EVERYTHING in the arrays !!!!!!!!!!!!!!!!!!!!!!!!!!
+		 /* FUNCTION CALL GOES HERE
+		 * Data is in packed1, packed2 and packed3 arrays
+		 * 
+		 * [0] (CGPoint)	endPoint
+		 * [1] (float)		scale
+		 * [2] (float)		angle
+		 * [3] (float)		gradient angle
+		 
+		 float angles[2];
+		 angles[0] = [[[packed1 objectAtIndex:0] objectAtIndex:2] floatValue];
+		 angles[1] = [[[packed3 objectAtIndex:0] objectAtIndex:2] floatValue];
+		 [stateMachine doesGestureStateExistWithAngle:angles AndTouch:2];               
+		 [packed1 removeAllObjects];
+		 
+		 [packed3 removeAllObjects];
+		 }
+		 if (packed2.count > 0 && packed3.count > 0) {
+		 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Take EVERYTHING in the arrays !!!!!!!!!!!!!!!!!!!!!!!!!!
+		 /* FUNCTION CALL GOES HERE
+		 * Data is in packed1, packed2 and packed3 arrays
+		 * 
+		 * [0] (CGPoint)	endPoint
+		 * [1] (float)		scale
+		 * [2] (float)		angle
+		 * [3] (float)		gradient angle
+		 
+		 float angles[2];
+		 angles[0] = [[[packed2 objectAtIndex:0] objectAtIndex:2] floatValue];
+		 angles[1] = [[[packed3 objectAtIndex:0] objectAtIndex:2] floatValue];
+		 [stateMachine doesGestureStateExistWithAngle:angles AndTouch:2];               
+		 [packed2 removeAllObjects];
+		 [packed3 removeAllObjects];
+		 }*/
 		if (packed1.count > 0 ) {
 			// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Take EVERYTHING in the arrays !!!!!!!!!!!!!!!!!!!!!!!!!!
 			/* FUNCTION CALL GOES HERE
@@ -1247,10 +1752,10 @@
 	char* type = [stateMachine getGestureType];
 	NSLog(@"%s found", type);
 	
-	if (type != NULL && originalNum==1){
+	if (type != NULL && originalNum==1 && checkValue){
 		NSString * descrip =[[NSString string] init];
 		if(strcmp(type, "left") == 0) {
-		[mechanics rowLeft];
+			[mechanics rowLeft];
 			NSLog(@"Calling left");
 			descrip = @"Row left";
 		}
@@ -1305,10 +1810,13 @@
 		[gestureDescriptor setAlpha:50];
 		[UIView commitAnimations];
 		gestureDCount = 0;
+		
 	}
-	//[self setNeedsDisplay];
+	else if (type == NULL && originalNum==1 && checkValue){
+		renderer.inRed = YES;
+	}
+	
 }
-
 - (void) touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event {
 	[super touchesCancelled:touches withEvent:event];
 }

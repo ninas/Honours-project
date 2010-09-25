@@ -16,6 +16,8 @@
 #import "recognition.h"
 #import "sidePanel.h"
 #import "gesturePanel.h"
+#import "dmMenu.h"
+#import "dmSide.h"
 
 // This class wraps the CAEAGLLayer from CoreAnimation into a convenient UIView subclass.
 // The view content is basically an EAGL surface you render your OpenGL scene into.
@@ -46,6 +48,8 @@
 	GameMechanics * mechanics;
 	sidePanel * panel;
 	gesturePanel * gestPanel;
+	dmMenu * dm;
+	dmSide * dmSideMenu;
 		
 	/*** For drawing ***/
 	// Holds all points recieved
@@ -87,18 +91,43 @@
 	CGPoint rockRotat;
 	float divideBy;
 	
+	BOOL checkValue;
+	
+	
+	UIButton * newGame;
+	int gameVersion;
+	BOOL versionsDone [3];
+	
+	CGPoint tapPosition;
+	BOOL userRotation;
+	
+	NSMutableArray * lineButtons;
+	NSMutableArray * swapButtons;
+	NSMutableArray * rotateButtons;
+	
+	
+	BOOL dmSwitches[10];
+	
 	
 }
 
 @property (readonly, nonatomic, getter=isAnimating) BOOL animating;
 @property (nonatomic) NSInteger animationFrameInterval;
-
+@property (nonatomic) int gameVersion;
 @property (nonatomic) float maxDist;
 @property (nonatomic, retain) NSMutableArray *touchesArray;
 
 - (void)startAnimation;
 - (void)stopAnimation;
 - (void)drawView:(id)sender;
-
+- (void) beginTouch:(NSArray*) array;
+- (void) movedTouch:(NSArray*)array;
+- (void) endedTouch:(NSArray*)array;
+- (void) setVersion;
+- (void) setDoRock;
+- (void) setRotateOn;
+- (void) lineSelector:(id)select;
+- (void) swapSelector:(id)select;
+- (void) rotateSelector:(id)select;
 
 @end

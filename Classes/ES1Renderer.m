@@ -10,6 +10,7 @@
 
 @implementation ES1Renderer
 @synthesize doingRock;
+@synthesize inRed;
 //@synthesize counterAlpha;
 /*@synthesize rotationAngleX;
  @synthesize rotationAngleY;
@@ -36,6 +37,7 @@
 		counterAlpha = 300;
 		doingRock = NO;
 		rotMult = 1.0;
+		inRed = NO;
 		//changeAlpha = NO;
 		/*float xRot=5;
 		 float yRot = 5;
@@ -644,6 +646,7 @@
 	glDisableClientState(GL_VERTEX_ARRAY);
 	glDisableClientState(GL_COLOR_ARRAY);
 	glDisableClientState(GL_NORMAL_ARRAY);
+	
 	NSMutableArray * drawingArray;
 	/*draw user interactions */
     for (int i = 0; i < 3 ; i++){
@@ -663,13 +666,24 @@
 					interactionPoints[i*2] = (pt.x - 512)/512*15*1024/768;
 					interactionPoints[i * 2 +1] = (pt.y- 384)/384*-15;
 					
+                    if (!inRed) {
+						interactionColors[i*4]      = 255;
+						interactionColors[i*4 + 1]  = 255;
+						interactionColors[i*4 + 2]  = 255;
+						
+						
+						interactionColors[i*4 + 3]  = 255;
+					}
+					else {
+						interactionColors[i*4]      = 255;
+						interactionColors[i*4 + 1]  = 0;
+						interactionColors[i*4 + 2]  = 0;
+						
+						
+						interactionColors[i*4 + 3]  = 255;
+					}
+
                     
-                    interactionColors[i*4]      = 255;
-                    interactionColors[i*4 + 1]  = 255;
-                    interactionColors[i*4 + 2]  = 255;
-					
-					
-                    interactionColors[i*4 + 3]  = 255;
                 }
                 glLoadIdentity();
                 glTranslatef(0, 0,16);
@@ -689,6 +703,8 @@
         }
     }
 	
+	glDisableClientState(GL_VERTEX_ARRAY);
+	glDisableClientState(GL_COLOR_ARRAY);
 	
 	glBindRenderbufferOES(GL_RENDERBUFFER_OES, colorRenderbuffer);
 	[context presentRenderbuffer:GL_RENDERBUFFER_OES];

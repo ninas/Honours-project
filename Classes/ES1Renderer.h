@@ -45,6 +45,7 @@
 	int counterAlpha;
 	float rotMult;
 	BOOL doingRock;
+	BOOL inRed;
 	/*float rotationAngleX;
 	float rotationAngleY;
 	float distX;
@@ -57,6 +58,7 @@
 	BOOL rotateA;*/
 }
 @property BOOL doingRock;
+@property BOOL inRed;
 /*@property float rotationAngleX;
 @property float rotationAngleY;
 @property float distX;

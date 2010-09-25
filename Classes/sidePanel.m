@@ -88,6 +88,9 @@
     }
     return self;
 }
+
+
+
 - (void) setGest:(gesturePanel*)gg{
 	gestPanel = gg;
 	
@@ -128,6 +131,8 @@
 	[UIView setAnimationDuration:0.75];
 	self.frame = CGRectMake(10, 10, 100, 750);	
 	[UIView commitAnimations];
+	
+	//[gestPanel fadeIn];
 }
 
 - (void) slideOut{
@@ -136,6 +141,7 @@
 	[UIView setAnimationDuration:0.75];
 	self.frame = CGRectMake(-100,10,100,750);	
 	[UIView commitAnimations];
+	[self hideWindow];
 }
 
 
@@ -233,7 +239,7 @@
 	}
 	else{
 		
-		[gestPanel setupOther];
+		[gestPanel setupOther:0];
 		[gestPanel setFrame:CGRectMake(120, 220, 600, 400)];
 		[gestPanel fadeIn];
 		moveVis = YES;
@@ -267,7 +273,7 @@
 	}
 	else{
 		
-		[gestPanel setupOther];
+		[gestPanel setupOther:1];
 		[gestPanel setFrame:CGRectMake(120, 320, 600, 400)];
 		[gestPanel fadeIn];
 		rockVis = YES;
@@ -301,7 +307,7 @@
 	}
 	else{
 		
-		[gestPanel setupOther];
+		[gestPanel setupOther:2];
 		[gestPanel setFrame:CGRectMake(120, 360, 600, 400)];
 		
 		[gestPanel fadeIn];

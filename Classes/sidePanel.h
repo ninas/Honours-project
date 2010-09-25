@@ -25,6 +25,7 @@
 	BOOL moveVis;
 	BOOL rockVis;
 	BOOL otherVis;
+	int version;
 	
 }
 - (void) moveRow;
@@ -36,6 +37,7 @@
 - (void) otherC;
 - (void) setGest:(gesturePanel*)gg;
 - (void) hideWindow;
+
 
 
 @end

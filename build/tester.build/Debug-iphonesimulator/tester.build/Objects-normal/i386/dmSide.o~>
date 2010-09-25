@@ -1,0 +1,3 @@
+/Users/NSchiff/Documents/tester/Classes/dmSide.m:94: warning: incomplete implementation of class 'dmSide'
+/Users/NSchiff/Documents/tester/Classes/dmSide.m:94: warning: method definition for '-swapMen:' not found
+/Users/NSchiff/Documents/tester/Classes/dmSide.m:94: warning: method definition for '-rowLeft:' not found
