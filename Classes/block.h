@@ -29,7 +29,7 @@
 - (BOOL) updatePos;
 - (void) setNewPos:(int)nX andY:(int)nY andZ:(int)nZ;
 - (void) setNewPos2;
-
+- (void) reset;
 - (void) preTrans;
 @property int x;
 @property int y;

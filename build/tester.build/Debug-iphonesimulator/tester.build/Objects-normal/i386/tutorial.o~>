@@ -1,0 +1,3 @@
+/Users/NSchiff/Documents/tester/Classes/tutorial.m: In function '-[tutorial incrementGes:]':
+/Users/NSchiff/Documents/tester/Classes/tutorial.m:46: warning: conflicting types for '-(BOOL)incrementGes:(int)type'
+/Users/NSchiff/Documents/tester/Classes/tutorial.h:19: warning: previous declaration of '-(void)incrementGes:(int)type'

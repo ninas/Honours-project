@@ -28,6 +28,8 @@
     [super viewDidLoad];
 	NSLog(@"sdfsdfsdfsdf");
 	
+	
+	
 	[self.view startAnimation];
 	
 	

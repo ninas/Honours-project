@@ -18,6 +18,7 @@
 #import "gesturePanel.h"
 #import "dmMenu.h"
 #import "dmSide.h"
+#import "tutorial.h"
 
 // This class wraps the CAEAGLLayer from CoreAnimation into a convenient UIView subclass.
 // The view content is basically an EAGL surface you render your OpenGL scene into.
@@ -50,6 +51,7 @@
 	gesturePanel * gestPanel;
 	dmMenu * dm;
 	dmSide * dmSideMenu;
+	tutorial * tut;
 		
 	/*** For drawing ***/
 	// Holds all points recieved
@@ -105,7 +107,7 @@
 	NSMutableArray * swapButtons;
 	NSMutableArray * rotateButtons;
 	
-	
+	int tutCounter;
 	BOOL dmSwitches[10];
 	
 	
@@ -129,5 +131,6 @@
 - (void) lineSelector:(id)select;
 - (void) swapSelector:(id)select;
 - (void) rotateSelector:(id)select;
+
 
 @end

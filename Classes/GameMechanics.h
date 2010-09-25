@@ -60,5 +60,6 @@
 - (void) removeBlocks;
 - (block *) getBlock:(int)x andY:(int)y andZ:(int)z;
 - (void) shuffle;
+- (void) restart;
 
 @end

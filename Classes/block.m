@@ -31,6 +31,11 @@
 	
 }
 
+-(void) reset{
+	colour = rand()%4;
+	toTrans = NO;
+}
+
 - (void) setPosition:(int)tempX andY:(int)tempY andZ:(int)tempZ andPlacement:(block****)placementA{
 	x=tempX;
 	y=tempY;

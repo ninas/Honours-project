@@ -31,6 +31,7 @@
 		0F93900D124E0AB900C3AB0A /* gesturePanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F93900C124E0AB900C3AB0A /* gesturePanel.m */; };
 		0F9391EE124E3EAC00C3AB0A /* dmMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F9391ED124E3EAC00C3AB0A /* dmMenu.m */; };
 		0F93925D124E4BAB00C3AB0A /* dmSide.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F93925C124E4BAB00C3AB0A /* dmSide.m */; };
+		0F9393DA124E812100C3AB0A /* tutorial.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F9393D9124E812100C3AB0A /* tutorial.m */; };
 		0FEA949E122D105D007FA78C /* block.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEA949D122D105D007FA78C /* block.m */; };
 		0FEAA1B512412152007FA78C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEAA1B312412152007FA78C /* ViewController.m */; };
 		0FEAA1B612412152007FA78C /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FEAA1B412412152007FA78C /* ViewController.xib */; };
@@ -81,6 +82,8 @@
 		0F9391ED124E3EAC00C3AB0A /* dmMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dmMenu.m; sourceTree = "<group>"; };
 		0F93925B124E4BAB00C3AB0A /* dmSide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dmSide.h; sourceTree = "<group>"; };
 		0F93925C124E4BAB00C3AB0A /* dmSide.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dmSide.m; sourceTree = "<group>"; };
+		0F9393D8124E812100C3AB0A /* tutorial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tutorial.h; sourceTree = "<group>"; };
+		0F9393D9124E812100C3AB0A /* tutorial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tutorial.m; sourceTree = "<group>"; };
 		0FEA949C122D105D007FA78C /* block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = block.h; sourceTree = "<group>"; };
 		0FEA949D122D105D007FA78C /* block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = block.m; sourceTree = "<group>"; };
 		0FEAA1B212412152007FA78C /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -155,6 +158,8 @@
 				0F9391ED124E3EAC00C3AB0A /* dmMenu.m */,
 				0F93925B124E4BAB00C3AB0A /* dmSide.h */,
 				0F93925C124E4BAB00C3AB0A /* dmSide.m */,
+				0F9393D8124E812100C3AB0A /* tutorial.h */,
+				0F9393D9124E812100C3AB0A /* tutorial.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -322,6 +327,7 @@
 				0F93900D124E0AB900C3AB0A /* gesturePanel.m in Sources */,
 				0F9391EE124E3EAC00C3AB0A /* dmMenu.m in Sources */,
 				0F93925D124E4BAB00C3AB0A /* dmSide.m in Sources */,
+				0F9393DA124E812100C3AB0A /* tutorial.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

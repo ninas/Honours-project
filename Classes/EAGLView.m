@@ -12,6 +12,7 @@
 #import "ES2Renderer.h"
 #import "block.h"
 #import <math.h>
+#import "time.h"
 
 @implementation EAGLView
 
@@ -32,6 +33,7 @@
 {    
     if ((self = [super initWithCoder:coder]))
     {
+		srand(time(NULL));
         // Get the layer
         CAEAGLLayer *eaglLayer = (CAEAGLLayer *)self.layer;
 		
@@ -50,7 +52,7 @@
 		versionsDone[1] = NO;
 		versionsDone[2] = NO;
         
-		
+		gameVersion = 3;
 		// Game loop variables
         animating = FALSE;
         displayLinkSupported = FALSE;
@@ -70,7 +72,7 @@
 		checkValue = YES;
 		mechanics = [[GameMechanics alloc] init];
 		
-		[renderer setBlockArray:mechanics.blockArray andTrans:mechanics.translateArray];
+		
 		
 		
 		touchesArray = [[NSMutableArray alloc]init];
@@ -170,16 +172,38 @@
         if ([currSysVer compare:reqSysVer options:NSNumericSearch] != NSOrderedAscending)
             displayLinkSupported = TRUE;
 		
-		[self setVersion];
+		//[self setVersion];
+		
+		tut = [[tutorial alloc] initWithFrame:CGRectMake(10, 10, 400, 325)];
+		tut.backgroundColor = [[UIColor grayColor] colorWithAlphaComponent:0.9];
+		tut.layer.cornerRadius = 5;
+		[self addSubview:tut];
+		
+		score.hidden = YES;
+		panel.hidden = YES;
+		dm.hidden = YES;
+		tutCounter = 0;
     }
 	
     return self;
 }
 
+
+
 - (void) setVersion{
-	gameVersion = 2;//rand()%3;
-	versionsDone[gameVersion] = YES;
+	do {
+		gameVersion = rand()%3;
+	} while (versionsDone[gameVersion] != NO);
 	
+	versionsDone[gameVersion] = YES;
+	tut.hidden = YES;
+	if ([[touchesArray objectAtIndex:0] count] > 0) {
+		[[touchesArray objectAtIndex:0] removeAllObjects];
+	}
+	
+	[mechanics restart];
+	[renderer setBlockArray:mechanics.blockArray andTrans:mechanics.translateArray];
+	score.hidden = NO;
 	if (gameVersion == 0) {
 		panel.hidden = YES;
 		dm.hidden = NO;
@@ -481,35 +505,35 @@
 
 - (void) rotateSelector:(id)select{
 	if (lastDist.x == 0 && lastDist.y ==0) {
-			for (int i=0; i<rotateButtons.count; i++) {
-		UIButton * temp = [rotateButtons objectAtIndex:i];
-		if (temp == select) {
-			temp.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:.7];
-			[mechanics setStartPos:CGPointMake(0.0, 0.0)];
-			if (i == 0) {
-				[mechanics setEnd:-90 andY:0];
+		for (int i=0; i<rotateButtons.count; i++) {
+			UIButton * temp = [rotateButtons objectAtIndex:i];
+			if (temp == select) {
+				temp.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:.7];
+				[mechanics setStartPos:CGPointMake(0.0, 0.0)];
+				if (i == 0) {
+					[mechanics setEnd:-90 andY:0];
+					
+					
+				}
+				else if (i == 1) {
+					[mechanics setEnd:90 andY:0];
+				}
+				else if (i == 2) {
+					[mechanics setEnd:0 andY:-90];
+				}
+				else if (i == 3) {
+					[mechanics setEnd:0 andY:90];
+				}
 				
 				
+				lastDist = [mechanics rotateCube];
 			}
-			else if (i == 1) {
-				[mechanics setEnd:90 andY:0];
+			else {
+				temp.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:.3];
+				
 			}
-			else if (i == 2) {
-				[mechanics setEnd:0 andY:-90];
-			}
-			else if (i == 3) {
-				[mechanics setEnd:0 andY:90];
-			}
-			
-			
-			lastDist = [mechanics rotateCube];
-		}
-		else {
-			temp.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:.3];
 			
 		}
-		
-	}
 	}
 	
 	
@@ -651,7 +675,7 @@
 			for (int i=0; i<rotateButtons.count; i++) {
 				UIButton * temp = [rotateButtons objectAtIndex:i];
 				temp.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:.3];
-
+				
 			}
 		}
 		
@@ -733,6 +757,45 @@
 - (void)dealloc
 {
     [renderer release];
+	[mechanics release];
+	[panel release];
+	[gestPanel release];
+	[dm release];
+	[dmSideMenu release];
+	
+	[touchesArray removeAllObjects];
+	[touchesArray release];
+	
+	[recognition1 release];
+	[recognition2 release];
+	[recognition3 release];
+    
+    [packed1 removeAllObjects];
+	[packed1 release];
+	
+	[packed2 removeAllObjects];
+	[packed2 release];
+	
+	[packed3 removeAllObjects];
+	[packed3 release];
+	
+    
+	[stateMachine release];
+	
+	[score release];
+	[gestureDescriptor release];
+	[newGame release];
+	
+	[lineButtons removeAllObjects];
+	[lineButtons release];
+	
+	[swapButtons removeAllObjects];
+	[swapButtons release];
+	
+	[rotateButtons removeAllObjects];
+	[rotateButtons release];
+	[tut release];
+	
 	
     [super dealloc];
 }
@@ -907,7 +970,7 @@
 	else {
 		//[[touchesArray objectAtIndex:0] addObject:[NSValue valueWithCGPoint:[[touches anyObject] locationInView:self]]];
 	}
-
+	
 	
 	
     
@@ -1225,56 +1288,56 @@
 		UITouch * touch = [touches anyObject];
 		CGPoint pt = [touch locationInView:self];
 		/*if (dm.rotateVis) {
-			[mechanics setStartPos:tapPosition];
-			[mechanics setEnd:pt.x andY:pt.y];
-			
-			lastDist = [mechanics rotateCube];
-		}
-		else */if (sqrt((pt.x - tapPosition.x)*(pt.x - tapPosition.x) +  (pt.y - tapPosition.y)*(pt.y - tapPosition.y)) < 10){
-			if (dm.lineVis) {
-				
-				if (dmSwitches[0]) {
-					[mechanics rowLeft];
-				}
-				else if (dmSwitches[1]) {
-					[mechanics rowRight];
-				}
-				else if (dmSwitches[2]) {
-					[mechanics columnDown];
-				}
-				else if (dmSwitches[3]) {
-					[mechanics columnUp];
-				}
-				else if (dmSwitches[4]) {
-					[mechanics zBackward];
-				}
-				else if (dmSwitches[5]) {
-					[mechanics zForward];
-				}
-			}
-			else if (dm.swapVis){
-				if (dmSwitches[6]) {
-					[mechanics swapBlocks:0];
-				}
-				else if (dmSwitches[7]) {
-					[mechanics swapBlocks:1];
-				}
-				else if (dmSwitches[8]) {
-					[mechanics swapBlocks:3];
-				}
-				else if (dmSwitches[9]) {
-					[mechanics swapBlocks:2];
-				}
-			}
-			else{
-				[mechanics setEnd:pt.x andY:pt.y];
-				[mechanics removeBlocks];
-				
-				for (int i=0; i<10; i++) {
-					dmSwitches[i] = NO;
-				}
-			}
-		}
+		 [mechanics setStartPos:tapPosition];
+		 [mechanics setEnd:pt.x andY:pt.y];
+		 
+		 lastDist = [mechanics rotateCube];
+		 }
+		 else */if (sqrt((pt.x - tapPosition.x)*(pt.x - tapPosition.x) +  (pt.y - tapPosition.y)*(pt.y - tapPosition.y)) < 10){
+			 if (dm.lineVis) {
+				 
+				 if (dmSwitches[0]) {
+					 [mechanics rowLeft];
+				 }
+				 else if (dmSwitches[1]) {
+					 [mechanics rowRight];
+				 }
+				 else if (dmSwitches[2]) {
+					 [mechanics columnDown];
+				 }
+				 else if (dmSwitches[3]) {
+					 [mechanics columnUp];
+				 }
+				 else if (dmSwitches[4]) {
+					 [mechanics zBackward];
+				 }
+				 else if (dmSwitches[5]) {
+					 [mechanics zForward];
+				 }
+			 }
+			 else if (dm.swapVis){
+				 if (dmSwitches[6]) {
+					 [mechanics swapBlocks:0];
+				 }
+				 else if (dmSwitches[7]) {
+					 [mechanics swapBlocks:1];
+				 }
+				 else if (dmSwitches[8]) {
+					 [mechanics swapBlocks:3];
+				 }
+				 else if (dmSwitches[9]) {
+					 [mechanics swapBlocks:2];
+				 }
+			 }
+			 else{
+				 [mechanics setEnd:pt.x andY:pt.y];
+				 [mechanics removeBlocks];
+				 
+				 for (int i=0; i<10; i++) {
+					 dmSwitches[i] = NO;
+				 }
+			 }
+		 }
 		
 	}
 	
@@ -1775,7 +1838,7 @@
 	char* type = [stateMachine getGestureType];
 	NSLog(@"%s found", type);
 	
-	if (type != NULL && originalNum==1 && checkValue){
+	if (type != NULL && originalNum==1 && checkValue && gameVersion!=3){
 		NSString * descrip =[[NSString string] init];
 		if(strcmp(type, "left") == 0) {
 			[mechanics rowLeft];
@@ -1804,8 +1867,8 @@
 		}
 		else if (strcmp(type, "z") == 0){
 			if (gameVersion!=2){
-			[mechanics moveIn];
-			descrip = @"Move together";
+				[mechanics moveIn];
+				descrip = @"Move together";
 			}
 			else {
 				renderer.inRed = YES;
@@ -1829,13 +1892,13 @@
 		}
 		else if ( strcmp(type, "square") == 0){
 			if (gameVersion!=2){
-			doRock = YES;
-			descrip = @"Rock cube";
+				doRock = YES;
+				descrip = @"Rock cube";
 			}
 			else {
 				renderer.inRed = YES;
 			}
-
+			
 		}
 		gestureDescriptor.text = descrip;
 		[UIView beginAnimations:nil context:NULL];
@@ -1846,8 +1909,105 @@
 		gestureDCount = 0;
 		
 	}
+	else if (type != NULL && originalNum==1 && checkValue && gameVersion==3){
+		NSString * descrip =[[NSString string] init];
+		BOOL rightGes = NO;
+		if(strcmp(type, "left") == 0) {
+			
+			descrip = @"Gesture found";
+			rightGes = [tut incrementGes:0];
+			if (rightGes) {
+				tutCounter++;
+				if (tutCounter == 3) {
+					[self setVersion];
+				}
+			}
+		}
+		else if (strcmp(type, "right") == 0){
+			descrip = @"Gesture found";
+			rightGes = [tut incrementGes:1];
+		}
+		else if (strcmp(type, "up") == 0){
+			descrip = @"Gesture found";
+			rightGes = [tut incrementGes:2];
+		}
+		else if (strcmp(type, "down") == 0){
+			descrip = @"Gesture found";
+			rightGes = [tut incrementGes:3];
+		}
+		else if (strcmp(type, "diagonalU") == 0){
+			descrip = @"Gesture found";
+			rightGes = [tut incrementGes:4];
+		}
+		else if (strcmp(type, "diagonalDown") == 0){
+			descrip = @"Gesture found";
+			rightGes = [tut incrementGes:5];
+		}
+		else if (strcmp(type, "z") == 0){
+			descrip = @"Gesture found";
+			rightGes = [tut incrementGes:6];
+		}
+		else if (strcmp(type, "sLeft") == 0){
+			descrip = @"Gesture found";
+			rightGes = [tut incrementGes:7];
+		}
+		else if (strcmp(type, "sRight") == 0){
+			descrip = @"Gesture found";
+			rightGes = [tut incrementGes:8];
+		}
+		else if (strcmp(type, "sDown") == 0){
+			descrip = @"Gesture found";
+			rightGes = [tut incrementGes:9];
+		}
+		else if (strcmp(type, "sUp") == 0){
+			descrip = @"Gesture found";
+			rightGes = [tut incrementGes:10];
+		}
+		else if ( strcmp(type, "square") == 0){
+			descrip = @"Gesture found";
+			rightGes = [tut incrementGes:11];
+			if (rightGes) {
+				tutCounter++;
+				if (tutCounter == 10) {
+					[self setVersion];
+				}
+			}
+			
+		}
+		
+		if (rightGes) {
+			gestureDescriptor.text = descrip;
+			
+		}
+		else{
+			renderer.inRed = YES;
+			
+			
+			gestureDescriptor.text = @"Gesture not found";
+			
+			
+			
+		}
+		[UIView beginAnimations:nil context:NULL];
+		[UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
+		[UIView setAnimationDuration:0.75];
+		[gestureDescriptor setAlpha:50];
+		[UIView commitAnimations];
+		gestureDCount = 0;
+	}
 	else if (type == NULL && originalNum==1 && checkValue){
 		renderer.inRed = YES;
+		if (gameVersion==3) {
+			
+			gestureDescriptor.text = @"Gesture not found";
+			[UIView beginAnimations:nil context:NULL];
+			[UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
+			[UIView setAnimationDuration:0.75];
+			[gestureDescriptor setAlpha:50];
+			[UIView commitAnimations];
+			gestureDCount = 0;
+			
+		}
 	}
 	
 }
