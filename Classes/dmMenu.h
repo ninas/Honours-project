@@ -38,7 +38,8 @@
 - (void) rockB;
 - (void) clearOthers;
 
-
+-(void) enable;
+-(void) disable;
 - (void) setup:(GameMechanics*)mech;
 
 @property (nonatomic, retain) UIButton * rock;

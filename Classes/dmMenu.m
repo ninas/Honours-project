@@ -86,7 +86,16 @@
 }
 
 
+- (void) disable{
+	line.hidden = YES;
+	swap.hidden = YES;
+}
 
+
+- (void) enable{
+	line.hidden = NO;
+	swap.hidden = NO;
+}
 
 
 

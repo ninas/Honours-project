@@ -27,6 +27,8 @@
 	BOOL otherVis;
 	int version;
 	
+	BOOL disabled;
+	
 }
 - (void) moveRow;
 - (void) slideIn;
@@ -37,6 +39,8 @@
 - (void) otherC;
 - (void) setGest:(gesturePanel*)gg;
 - (void) hideWindow;
+- (void) disable;
+- (void) enable;
 
 
 

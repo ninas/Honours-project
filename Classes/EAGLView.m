@@ -177,12 +177,13 @@
 }
 
 - (void) setVersion{
-	gameVersion = 0;//rand()%3;
+	gameVersion = 2;//rand()%3;
 	versionsDone[gameVersion] = YES;
 	
 	if (gameVersion == 0) {
 		panel.hidden = YES;
 		dm.hidden = NO;
+		[dm enable];
 		dmSideMenu.hidden = YES;
 		userRotation = NO;
 		
@@ -396,12 +397,34 @@
 	}
 	else if (gameVersion == 1){
 		panel.hidden = NO;
+		[panel enable];
 		dm.hidden = YES;
 		dmSideMenu.hidden = YES;
 		
 		
 		[self setMultipleTouchEnabled:YES]; 
 		
+	}
+	else if (gameVersion == 2){
+		panel.hidden = NO;
+		[panel disable];
+		dm.hidden = NO;
+		dmSideMenu.hidden = YES;
+		dm.frame = CGRectMake(10, 10, 100, 300);
+		panel.frame = CGRectMake(10, 460, 100, 300);
+		[dm disable];
+		[self setMultipleTouchEnabled:YES];
+		
+		UIButton * rock = [[UIButton alloc] initWithFrame:CGRectMake(10, 110, 80, 80)];
+		rock.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:.3];
+		rock.layer.cornerRadius = 5;
+		rock.titleLabel.lineBreakMode = UILineBreakModeWordWrap;
+		rock.titleLabel.textAlignment = UITextAlignmentCenter;
+		[rock setTitle:@"Rock shape" forState:UIControlStateNormal];
+		[rock addTarget:self action:@selector(setDoRock) forControlEvents:UIControlEventTouchUpInside];
+		rock.adjustsImageWhenHighlighted = YES;
+		[dm addSubview:rock];
+		dm.rock = rock;
 	}
 }
 
@@ -1780,8 +1803,13 @@
 			descrip = @"Backward";
 		}
 		else if (strcmp(type, "z") == 0){
+			if (gameVersion!=2){
 			[mechanics moveIn];
 			descrip = @"Move together";
+			}
+			else {
+				renderer.inRed = YES;
+			}
 		}
 		else if (strcmp(type, "sLeft") == 0){
 			[mechanics swapBlocks:0];
@@ -1799,9 +1827,15 @@
 			[mechanics swapBlocks:2];
 			descrip = @"Swap up";
 		}
-		else if (strcmp(type, "square") == 0){
+		else if ( strcmp(type, "square") == 0){
+			if (gameVersion!=2){
 			doRock = YES;
 			descrip = @"Rock cube";
+			}
+			else {
+				renderer.inRed = YES;
+			}
+
 		}
 		gestureDescriptor.text = descrip;
 		[UIView beginAnimations:nil context:NULL];

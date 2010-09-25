@@ -89,7 +89,21 @@
     return self;
 }
 
+- (void) disable{
+	rock.hidden = YES;
+	moveT.hidden = YES;
+	other.frame = CGRectMake(10, 210, 80, 80);
+	disabled = YES;
+	
+}
 
+- (void) enable{
+	rock.hidden = NO;
+	moveT.hidden = NO;
+	other.frame = CGRectMake(10, 410, 80, 80);
+	disabled = NO;
+	
+}
 
 - (void) setGest:(gesturePanel*)gg{
 	gestPanel = gg;
@@ -129,7 +143,12 @@
 	[UIView beginAnimations:nil context:NULL];
 	[UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
 	[UIView setAnimationDuration:0.75];
-	self.frame = CGRectMake(10, 10, 100, 750);	
+	if (disabled) {
+		self.frame = CGRectMake(10, 10, 100, 300);
+	}
+	else{
+	self.frame = CGRectMake(10, 10, 100, 750);
+	}
 	[UIView commitAnimations];
 	
 	//[gestPanel fadeIn];
@@ -139,7 +158,12 @@
 	[UIView beginAnimations:nil context:NULL];
 	[UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
 	[UIView setAnimationDuration:0.75];
+	if (disabled) {
+		self.frame = CGRectMake(-100, 10, 100, 300);
+	}
+	else{
 	self.frame = CGRectMake(-100,10,100,750);	
+	}
 	[UIView commitAnimations];
 	[self hideWindow];
 }
@@ -170,7 +194,12 @@
 	else{
 	
 	[gestPanel setupLine];
+		if (disabled) {
+			[gestPanel setFrame:CGRectMake(120, 360, 600, 400)];
+		}
+		else{
 	[gestPanel setFrame:CGRectMake(120, 10, 600, 400)];
+		}
 	[gestPanel fadeIn];
 	lineVis = YES;
 		line.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:.7];
@@ -206,7 +235,12 @@
 	else{
 		
 		[gestPanel setupSwap];
+		if (disabled) {
+			[gestPanel setFrame:CGRectMake(120, 360, 600, 400)];
+		}
+		else{
 		[gestPanel setFrame:CGRectMake(120, 120, 600, 400)];
+		}
 		[gestPanel fadeIn];
 		swapVis = YES;
 		swap.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:.7];
@@ -308,7 +342,12 @@
 	else{
 		
 		[gestPanel setupOther:2];
+		if (disabled) {
+			[gestPanel setFrame:CGRectMake(120, 360, 600, 400)];
+		}
+		else{
 		[gestPanel setFrame:CGRectMake(120, 360, 600, 400)];
+		}
 		
 		[gestPanel fadeIn];
 		otherVis = YES;
