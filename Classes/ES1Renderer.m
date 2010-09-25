@@ -35,6 +35,7 @@
 		alphaVal = 255;
 		counterAlpha = 300;
 		doingRock = NO;
+		rotMult = 1.0;
 		//changeAlpha = NO;
 		/*float xRot=5;
 		 float yRot = 5;
@@ -134,6 +135,7 @@
 		yRot = yRotation;
 		
 		
+		
 	}
 	else if ((xRot != 0 || yRot !=0 ) && xRotation ==0 && yRotation ==0){ // rotation ended
 		currentCalculatedMatrix = beginCalculatedMatrix;
@@ -161,6 +163,7 @@
 		check = YES;
 		extraRot = YES;
 		rotCounter = 0;
+		rotMult = 1;
 		/*float xR=5;
 		 float yR = 5;
 		 GLfloat totalRotation = sqrt(xR*xR + yR*yR);
@@ -525,8 +528,8 @@
 		
 		if (extraRot && !doingRock) { // rotate around y
 			NSLog(@"Extra rotation");
-			float xR=0.5;
-			float yR = 0.5;
+			float xR=0.5*rotMult;
+			float yR = 0.5*rotMult;
 			GLfloat totalRotation = sqrt(xR*xR + yR*yR);
 			//NSLog(@"x: %f   TempX: %f  y:  %f   tempY: %f", xRotation, xTemp, yRotation, yTemp);
 			CATransform3D temporaryMatrix = CATransform3DRotate(rotatedMatix, totalRotation * M_PI / 180.0, 

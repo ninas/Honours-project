@@ -43,6 +43,7 @@
 	GLubyte alphaVal;
 	//BOOL changeAlpha;
 	int counterAlpha;
+	float rotMult;
 	BOOL doingRock;
 	/*float rotationAngleX;
 	float rotationAngleY;

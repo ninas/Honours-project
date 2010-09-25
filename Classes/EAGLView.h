@@ -15,6 +15,7 @@
 #import "GestureStateMachine.h"
 #import "recognition.h"
 #import "sidePanel.h"
+#import "gesturePanel.h"
 
 // This class wraps the CAEAGLLayer from CoreAnimation into a convenient UIView subclass.
 // The view content is basically an EAGL surface you render your OpenGL scene into.
@@ -44,7 +45,7 @@
 	
 	GameMechanics * mechanics;
 	sidePanel * panel;
-	
+	gesturePanel * gestPanel;
 		
 	/*** For drawing ***/
 	// Holds all points recieved

@@ -129,6 +129,14 @@
 		gestureDescriptor.font = [UIFont systemFontOfSize:25];
 		[self addSubview:gestureDescriptor];
 		
+		gestPanel = [[gesturePanel alloc] initWithFrame:CGRectMake(120, 10, 600, 400)];
+		//gestPanel.frame = CGRectMake(120, 10, 600, 400);
+		gestPanel.backgroundColor = [[UIColor grayColor] colorWithAlphaComponent:0.9];
+		gestPanel.layer.cornerRadius = 5;
+		[self addSubview:gestPanel];
+		[panel setGest:gestPanel];
+		gestPanel.hidden = YES;
+		
 		gestureDCount = 101;
         // A system version of 3.1 or greater is required to use CADisplayLink. The NSTimer
         // class is used as fallback when it isn't available.
