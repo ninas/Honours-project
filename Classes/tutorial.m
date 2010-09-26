@@ -162,8 +162,11 @@
 		instructions.text = @"Instructions:";
 		instructions.frame = CGRectMake(10, 10, 1030, 50);
 		instructions.font = [UIFont systemFontOfSize:35];
+		first.hidden = NO;
+		description.hidden = NO;
 		
-		[self showSecondScreen];
+		description.text = [NSString stringWithFormat:@"The aim of this game is to get as high a score as possible.\n\nThe game consists of a number of different coloured blocks placed in a cube shape. These can be removed from the screen by grouping them into sets of 3 or more blocks of the same colour. Points are awarded for the number of blocks removed at one time.\n\nThere are a number of possible block manipulations that can be performed in order to rearrange blocks so that they can be removed. These include rotating an entire row or column and moving blocks backwards and forwards within the overall shape. Blocks can also be swapped with their neighbours. In addition, as gaps may be left when blocks are removed, one can move all blocks back in towards the centre.\n\nAs the shape is three dimensional, there are also controls for rotating it.\n\nIf you get stuck, or can no longer remove any more blocks, tap the New Game button and try and beat your previous score.\n\nGood luck!"];
+		//[self showSecondScreen];
 	}
 	else {
 		gameCounter++;

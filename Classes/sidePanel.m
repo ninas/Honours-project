@@ -99,7 +99,7 @@
 }
 
 - (void) enable{
-	NSLog(@"enabled");
+	
 	rock.hidden = NO;
 	moveT.hidden = NO;
 	other.frame = CGRectMake(10, 410, 80, 80);

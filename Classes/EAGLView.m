@@ -134,7 +134,7 @@
 		highScore.textColor = [UIColor whiteColor];
 		highScore.font = [UIFont fontWithName: @"Marker Felt" size: 30];
 		[self addSubview:highScore];
-		
+		highScore.hidden = YES;
 		
 		
 		
@@ -336,6 +336,7 @@
 	[mechanics restart];
 	[renderer setBlockArray:mechanics.blockArray andTrans:mechanics.translateArray];
 	score.hidden = NO;
+	highScore.hidden = NO;
 	if (gameVersion == 0) {
 		panel.hidden = YES;
 		[panel hideWindow];
@@ -2064,7 +2065,7 @@
 			
 			descrip = @"Gesture found";
 			rightGes = [tut incrementGes:0];
-			
+			[self changeGameVersion];
 			
 		}
 		else if (strcmp(type, "right") == 0){
