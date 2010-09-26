@@ -2065,7 +2065,7 @@
 			
 			descrip = @"Gesture found";
 			rightGes = [tut incrementGes:0];
-			[self changeGameVersion];
+			
 			
 		}
 		else if (strcmp(type, "right") == 0){

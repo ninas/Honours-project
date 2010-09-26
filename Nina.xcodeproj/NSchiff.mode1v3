@@ -216,7 +216,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>0F93983F124FB70600C3AB0A</string>
+						<string>0F93984B124FB79700C3AB0A</string>
 						<key>history</key>
 						<array>
 							<string>0F93980E124FB4BE00C3AB0A</string>
@@ -256,7 +256,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>0F939840124FB70600C3AB0A</string>
+						<string>0F93984C124FB79700C3AB0A</string>
 						<key>history</key>
 						<array>
 							<string>0F93980F124FB4BE00C3AB0A</string>
@@ -403,7 +403,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>tutorial.m</string>
+								<string>EAGLView.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -411,11 +411,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>tutorial.m</string>
+										<string>EAGLView.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>0F93983E124FB70600C3AB0A</string>
+										<string>0F93984A124FB79700C3AB0A</string>
 										<key>history</key>
 										<array>
 											<string>0F4E050811CBC6570038827E</string>
@@ -470,8 +470,8 @@
 											<string>0F9397F1124FAF8D00C3AB0A</string>
 											<string>0F93980B124FB4BE00C3AB0A</string>
 											<string>0F939821124FB5D800C3AB0A</string>
-											<string>0F939835124FB68200C3AB0A</string>
-											<string>0F939836124FB68200C3AB0A</string>
+											<string>0F939848124FB79700C3AB0A</string>
+											<string>0F939849124FB79700C3AB0A</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -669,15 +669,15 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>0F939841124FB70600C3AB0A</string>
+		<string>0F939847124FB78900C3AB0A</string>
 		<string>0F93983B124FB68200C3AB0A</string>
 		<string>0F939832124FB5D800C3AB0A</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>0F63978D11C68C6500DB3577</string>
 		<string>0F93947D124E8A1700C3AB0A</string>
 		<string>0F9393F8124E82EE00C3AB0A</string>
-		<string>/Users/NSchiff/Documents/tester/Nina.xcodeproj</string>
 		<string>1C78EAAD065D492600B07095</string>
+		<string>/Users/NSchiff/Documents/tester/Nina.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
 	<string>251 210 1609 821 0 0 1920 1058 </string>
