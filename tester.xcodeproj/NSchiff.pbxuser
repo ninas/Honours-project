@@ -120,17 +120,18 @@
 	};
 	0F93858312465A6100C3AB0A /* GameMechanics.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1340, 858}}";
-			sepNavSelRange = "{235, 292}";
-			sepNavVisRange = "{138, 897}";
+			sepNavIntBoundsRect = "{{0, 0}, {1187, 897}}";
+			sepNavSelRange = "{1331, 0}";
+			sepNavVisRange = "{676, 660}";
+			sepNavWindowFrame = "{{153, 200}, {1125, 727}}";
 		};
 	};
 	0F93858412465A6100C3AB0A /* GameMechanics.m */ = {
 		uiCtxt = {
-			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{25114, 3314}\";\n            s = 0;\n        },\n                {\n            r = \"{28602, 986}\";\n            s = 0;\n        },\n                {\n            r = \"{29608, 175}\";\n            s = 0;\n        },\n                {\n            r = \"{30918, 32}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 32785}\";\n    s = 0;\n}";
-			sepNavIntBoundsRect = "{{0, 0}, {1340, 15093}}";
-			sepNavSelRange = "{24241, 0}";
-			sepNavVisRange = "{23681, 1095}";
+			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{25282, 3338}\";\n            s = 0;\n        },\n                {\n            r = \"{28794, 986}\";\n            s = 0;\n        },\n                {\n            r = \"{29800, 175}\";\n            s = 0;\n        },\n                {\n            r = \"{31110, 32}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 33001}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {1340, 15015}}";
+			sepNavSelRange = "{26663, 0}";
+			sepNavVisRange = "{27562, 912}";
 			sepNavWindowFrame = "{{61, 284}, {1125, 727}}";
 		};
 	};
@@ -334,8 +335,8 @@
 	0F938BEB124BACB500C3AB0A /* sidePanel.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1066, 4381}}";
-			sepNavSelRange = "{3343, 0}";
-			sepNavVisRange = "{1912, 1565}";
+			sepNavSelRange = "{2875, 0}";
+			sepNavVisRange = "{0, 1383}";
 			sepNavWindowFrame = "{{84, 263}, {1125, 727}}";
 		};
 	};
@@ -571,7 +572,7 @@
 		fRef = 0F93858312465A6100C3AB0A /* GameMechanics.h */;
 		name = "GameMechanics.h: 43";
 		rLen = 0;
-		rLoc = 752;
+		rLoc = 777;
 		rType = 0;
 		vrLen = 901;
 		vrLoc = 348;
@@ -591,7 +592,7 @@
 		fRef = 0F93858412465A6100C3AB0A /* GameMechanics.m */;
 		name = "GameMechanics.m: 977";
 		rLen = 0;
-		rLoc = 25625;
+		rLoc = 25817;
 		rType = 0;
 		vrLen = 1346;
 		vrLoc = 23804;
@@ -641,7 +642,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 255";
 		rLen = 0;
-		rLoc = 24778;
+		rLoc = 25652;
 		rType = 0;
 		vrLen = 1565;
 		vrLoc = 5622;
@@ -765,7 +766,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 136";
 		rLen = 0;
-		rLoc = 5785;
+		rLoc = 5921;
 		rType = 0;
 		vrLen = 1826;
 		vrLoc = 2545;
@@ -775,7 +776,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 134";
 		rLen = 0;
-		rLoc = 5716;
+		rLoc = 5852;
 		rType = 0;
 		vrLen = 1864;
 		vrLoc = 2548;
@@ -785,7 +786,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 134";
 		rLen = 0;
-		rLoc = 5716;
+		rLoc = 5852;
 		rType = 0;
 		vrLen = 1864;
 		vrLoc = 2548;
@@ -795,7 +796,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 134";
 		rLen = 0;
-		rLoc = 5687;
+		rLoc = 5823;
 		rType = 0;
 		vrLen = 1863;
 		vrLoc = 2548;
@@ -805,7 +806,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 134";
 		rLen = 0;
-		rLoc = 5716;
+		rLoc = 5852;
 		rType = 0;
 		vrLen = 1863;
 		vrLoc = 2548;
@@ -815,7 +816,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 134";
 		rLen = 0;
-		rLoc = 5716;
+		rLoc = 5852;
 		rType = 0;
 		vrLen = 1863;
 		vrLoc = 2548;
@@ -825,7 +826,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 134";
 		rLen = 0;
-		rLoc = 5682;
+		rLoc = 5818;
 		rType = 0;
 		vrLen = 1864;
 		vrLoc = 2548;
@@ -845,7 +846,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 139";
 		rLen = 0;
-		rLoc = 5843;
+		rLoc = 5979;
 		rType = 0;
 		vrLen = 1898;
 		vrLoc = 2548;
@@ -894,7 +895,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 139";
 		rLen = 0;
-		rLoc = 5843;
+		rLoc = 5979;
 		rType = 0;
 		vrLen = 1898;
 		vrLoc = 2548;
@@ -904,7 +905,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 137";
 		rLen = 0;
-		rLoc = 5815;
+		rLoc = 5951;
 		rType = 0;
 		vrLen = 1894;
 		vrLoc = 2548;
@@ -944,7 +945,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 137";
 		rLen = 0;
-		rLoc = 5815;
+		rLoc = 5951;
 		rType = 0;
 		vrLen = 1878;
 		vrLoc = 2564;
@@ -985,7 +986,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 190;
+		rLoc = 192;
 		rType = 1;
 	};
 	0F93906A124E137A00C3AB0A /* PBXTextBookmark */ = {
@@ -993,7 +994,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 137";
 		rLen = 0;
-		rLoc = 5788;
+		rLoc = 5924;
 		rType = 0;
 		vrLen = 1181;
 		vrLoc = 3280;
@@ -1013,7 +1014,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 132";
 		rLen = 0;
-		rLoc = 5533;
+		rLoc = 5669;
 		rType = 0;
 		vrLen = 1897;
 		vrLoc = 2564;
@@ -1103,7 +1104,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 134";
 		rLen = 0;
-		rLoc = 5716;
+		rLoc = 5852;
 		rType = 0;
 		vrLen = 1867;
 		vrLoc = 2596;
@@ -1113,7 +1114,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 134";
 		rLen = 0;
-		rLoc = 5716;
+		rLoc = 5852;
 		rType = 0;
 		vrLen = 1867;
 		vrLoc = 2596;
@@ -1253,7 +1254,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 134";
 		rLen = 0;
-		rLoc = 5716;
+		rLoc = 5852;
 		rType = 0;
 		vrLen = 1867;
 		vrLoc = 2596;
@@ -1263,7 +1264,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 134";
 		rLen = 0;
-		rLoc = 5716;
+		rLoc = 5852;
 		rType = 0;
 		vrLen = 1865;
 		vrLoc = 2596;
@@ -1273,7 +1274,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 134";
 		rLen = 0;
-		rLoc = 5716;
+		rLoc = 5852;
 		rType = 0;
 		vrLen = 1867;
 		vrLoc = 2596;
@@ -1313,7 +1314,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 138";
 		rLen = 0;
-		rLoc = 5840;
+		rLoc = 5976;
 		rType = 0;
 		vrLen = 1889;
 		vrLoc = 2596;
@@ -1433,7 +1434,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 134";
 		rLen = 0;
-		rLoc = 5716;
+		rLoc = 5852;
 		rType = 0;
 		vrLen = 1889;
 		vrLoc = 2596;
@@ -1463,7 +1464,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 137";
 		rLen = 0;
-		rLoc = 5814;
+		rLoc = 5950;
 		rType = 0;
 		vrLen = 1887;
 		vrLoc = 2596;
@@ -1523,7 +1524,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 137";
 		rLen = 0;
-		rLoc = 5814;
+		rLoc = 5950;
 		rType = 0;
 		vrLen = 1203;
 		vrLoc = 3124;
@@ -1752,7 +1753,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 123";
 		rLen = 412;
-		rLoc = 5084;
+		rLoc = 5220;
 		rType = 0;
 		vrLen = 1887;
 		vrLoc = 2596;
@@ -1892,7 +1893,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 123";
 		rLen = 412;
-		rLoc = 5084;
+		rLoc = 5220;
 		rType = 0;
 		vrLen = 1887;
 		vrLoc = 2596;
@@ -1922,7 +1923,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 129";
 		rLen = 37;
-		rLoc = 5420;
+		rLoc = 5556;
 		rType = 0;
 		vrLen = 1887;
 		vrLoc = 2596;
@@ -1992,7 +1993,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 124";
 		rLen = 329;
-		rLoc = 5168;
+		rLoc = 5304;
 		rType = 0;
 		vrLen = 1887;
 		vrLoc = 2596;
@@ -2222,7 +2223,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 1090";
 		rLen = 0;
-		rLoc = 43994;
+		rLoc = 44975;
 		rType = 0;
 		vrLen = 1464;
 		vrLoc = 34901;
@@ -2232,7 +2233,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 1090";
 		rLen = 0;
-		rLoc = 43994;
+		rLoc = 44975;
 		rType = 0;
 		vrLen = 1808;
 		vrLoc = 2711;
@@ -2262,7 +2263,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 1335";
 		rLen = 0;
-		rLoc = 43994;
+		rLoc = 44975;
 		rType = 0;
 		vrLen = 1146;
 		vrLoc = 42558;
@@ -2272,7 +2273,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 357";
 		rLen = 0;
-		rLoc = 28036;
+		rLoc = 28910;
 		rType = 0;
 		vrLen = 1456;
 		vrLoc = 8617;
@@ -2287,9 +2288,9 @@
 	};
 	0F9391ED124E3EAC00C3AB0A /* dmMenu.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1340, 3510}}";
-			sepNavSelRange = "{2688, 0}";
-			sepNavVisRange = "{5108, 1081}";
+			sepNavIntBoundsRect = "{{0, 0}, {1340, 3523}}";
+			sepNavSelRange = "{5720, 0}";
+			sepNavVisRange = "{470, 1662}";
 			sepNavWindowFrame = "{{107, 242}, {1125, 727}}";
 		};
 	};
@@ -2348,7 +2349,7 @@
 		fRef = 28FD14FC0DC6FC130079059D /* EAGLView.h */;
 		name = "EAGLView.h: 114";
 		rLen = 0;
-		rLoc = 3216;
+		rLoc = 3241;
 		rType = 0;
 		vrLen = 882;
 		vrLoc = 1790;
@@ -2358,7 +2359,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 149";
 		rLen = 0;
-		rLoc = 5843;
+		rLoc = 5979;
 		rType = 0;
 		vrLen = 1782;
 		vrLoc = 2939;
@@ -2368,7 +2369,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 163";
 		rLen = 0;
-		rLoc = 19463;
+		rLoc = 20313;
 		rType = 0;
 		vrLen = 4798;
 		vrLoc = 4110;
@@ -2378,7 +2379,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 163";
 		rLen = 0;
-		rLoc = 7776;
+		rLoc = 8626;
 		rType = 0;
 		vrLen = 4949;
 		vrLoc = 3947;
@@ -2399,7 +2400,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 904;
+		rLoc = 933;
 		rType = 1;
 	};
 	0F9391FD124E411600C3AB0A /* PBXTextBookmark */ = {
@@ -2407,7 +2408,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 370";
 		rLen = 0;
-		rLoc = 27690;
+		rLoc = 28564;
 		rType = 0;
 		vrLen = 526;
 		vrLoc = 8949;
@@ -2418,7 +2419,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 911;
+		rLoc = 940;
 		rType = 1;
 	};
 	0F939201124E411E00C3AB0A /* PBXTextBookmark */ = {
@@ -2426,7 +2427,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 372";
 		rLen = 0;
-		rLoc = 27737;
+		rLoc = 28611;
 		rType = 0;
 		vrLen = 528;
 		vrLoc = 8949;
@@ -2436,7 +2437,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 167";
 		rLen = 0;
-		rLoc = 18368;
+		rLoc = 19218;
 		rType = 0;
 		vrLen = 3252;
 		vrLoc = 3557;
@@ -2446,7 +2447,7 @@
 		fRef = 28FD14FC0DC6FC130079059D /* EAGLView.h */;
 		name = "EAGLView.h: 114";
 		rLen = 0;
-		rLoc = 2991;
+		rLoc = 3016;
 		rType = 0;
 		vrLen = 899;
 		vrLoc = 1763;
@@ -2456,7 +2457,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 158";
 		rLen = 0;
-		rLoc = 7140;
+		rLoc = 7276;
 		rType = 0;
 		vrLen = 1832;
 		vrLoc = 2848;
@@ -2466,7 +2467,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 170";
 		rLen = 0;
-		rLoc = 8282;
+		rLoc = 9132;
 		rType = 0;
 		vrLen = 3191;
 		vrLoc = 3521;
@@ -2476,7 +2477,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 375";
 		rLen = 0;
-		rLoc = 28020;
+		rLoc = 28894;
 		rType = 0;
 		vrLen = 14937;
 		vrLoc = 8977;
@@ -2646,7 +2647,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 210";
 		rLen = 0;
-		rLoc = 21986;
+		rLoc = 22860;
 		rType = 0;
 		vrLen = 3236;
 		vrLoc = 4868;
@@ -2656,7 +2657,7 @@
 		fRef = 28FD14FC0DC6FC130079059D /* EAGLView.h */;
 		name = "EAGLView.h: 117";
 		rLen = 0;
-		rLoc = 3216;
+		rLoc = 3241;
 		rType = 0;
 		vrLen = 887;
 		vrLoc = 1828;
@@ -2676,7 +2677,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 414";
 		rLen = 0;
-		rLoc = 27737;
+		rLoc = 28611;
 		rType = 0;
 		vrLen = 1085;
 		vrLoc = 9149;
@@ -2715,7 +2716,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 210";
 		rLen = 0;
-		rLoc = 21986;
+		rLoc = 22860;
 		rType = 0;
 		vrLen = 3235;
 		vrLoc = 4869;
@@ -2725,7 +2726,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 217";
 		rLen = 0;
-		rLoc = 21901;
+		rLoc = 22775;
 		rType = 0;
 		vrLen = 3368;
 		vrLoc = 5085;
@@ -2735,7 +2736,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 216";
 		rLen = 0;
-		rLoc = 21795;
+		rLoc = 22669;
 		rType = 0;
 		vrLen = 3282;
 		vrLoc = 5085;
@@ -2775,7 +2776,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 216";
 		rLen = 0;
-		rLoc = 21898;
+		rLoc = 22772;
 		rType = 0;
 		vrLen = 3282;
 		vrLoc = 5085;
@@ -2785,7 +2786,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 218";
 		rLen = 0;
-		rLoc = 21874;
+		rLoc = 22748;
 		rType = 0;
 		vrLen = 3420;
 		vrLoc = 5085;
@@ -2795,7 +2796,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 202";
 		rLen = 0;
-		rLoc = 18368;
+		rLoc = 19218;
 		rType = 0;
 		vrLen = 1626;
 		vrLoc = 5085;
@@ -2805,7 +2806,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 891";
 		rLen = 0;
-		rLoc = 43078;
+		rLoc = 44059;
 		rType = 0;
 		vrLen = 15105;
 		vrLoc = 11371;
@@ -2820,7 +2821,7 @@
 	0F93925C124E4BAB00C3AB0A /* dmSide.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1340, 1742}}";
-			sepNavSelRange = "{1578, 0}";
+			sepNavSelRange = "{378, 0}";
 			sepNavVisRange = "{228, 934}";
 		};
 	};
@@ -2918,7 +2919,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 281";
 		rLen = 0;
-		rLoc = 13290;
+		rLoc = 14140;
 		rType = 0;
 		vrLen = 2056;
 		vrLoc = 4970;
@@ -3008,7 +3009,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 142";
 		rLen = 0;
-		rLoc = 5045;
+		rLoc = 5181;
 		rType = 0;
 		vrLen = 1794;
 		vrLoc = 2805;
@@ -3038,7 +3039,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 186";
 		rLen = 0;
-		rLoc = 8223;
+		rLoc = 9073;
 		rType = 0;
 		vrLen = 2619;
 		vrLoc = 7356;
@@ -3158,7 +3159,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 186";
 		rLen = 0;
-		rLoc = 8223;
+		rLoc = 9073;
 		rType = 0;
 		vrLen = 3168;
 		vrLoc = 12054;
@@ -3168,7 +3169,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 360";
 		rLen = 0;
-		rLoc = 21897;
+		rLoc = 22771;
 		rType = 0;
 		vrLen = 1367;
 		vrLoc = 12054;
@@ -3188,7 +3189,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 360";
 		rLen = 0;
-		rLoc = 21897;
+		rLoc = 22771;
 		rType = 0;
 		vrLen = 1367;
 		vrLoc = 12054;
@@ -3198,7 +3199,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 1026";
 		rLen = 0;
-		rLoc = 42835;
+		rLoc = 43816;
 		rType = 0;
 		vrLen = 15127;
 		vrLoc = 18081;
@@ -3208,7 +3209,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 358";
 		rLen = 0;
-		rLoc = 21795;
+		rLoc = 22669;
 		rType = 0;
 		vrLen = 1537;
 		vrLoc = 11843;
@@ -3308,7 +3309,7 @@
 		fRef = 28FD14FC0DC6FC130079059D /* EAGLView.h */;
 		name = "EAGLView.h: 108";
 		rLen = 0;
-		rLoc = 2515;
+		rLoc = 2540;
 		rType = 0;
 		vrLen = 948;
 		vrLoc = 1933;
@@ -3318,7 +3319,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 352";
 		rLen = 0;
-		rLoc = 19703;
+		rLoc = 20553;
 		rType = 0;
 		vrLen = 1360;
 		vrLoc = 12084;
@@ -3328,7 +3329,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 355";
 		rLen = 0;
-		rLoc = 19904;
+		rLoc = 20754;
 		rType = 0;
 		vrLen = 1141;
 		vrLoc = 12619;
@@ -3338,7 +3339,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 1065";
 		rLen = 0;
-		rLoc = 43497;
+		rLoc = 44478;
 		rType = 0;
 		vrLen = 20349;
 		vrLoc = 33039;
@@ -3348,7 +3349,7 @@
 		fRef = 28FD14FC0DC6FC130079059D /* EAGLView.h */;
 		name = "EAGLView.h: 129";
 		rLen = 0;
-		rLoc = 3216;
+		rLoc = 3241;
 		rType = 0;
 		vrLen = 946;
 		vrLoc = 2010;
@@ -3358,7 +3359,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 379";
 		rLen = 0;
-		rLoc = 20445;
+		rLoc = 21295;
 		rType = 0;
 		vrLen = 938;
 		vrLoc = 13318;
@@ -3368,7 +3369,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 330";
 		rLen = 0;
-		rLoc = 15473;
+		rLoc = 16323;
 		rType = 0;
 		vrLen = 2383;
 		vrLoc = 10404;
@@ -3378,7 +3379,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 1102";
 		rLen = 0;
-		rLoc = 43804;
+		rLoc = 44785;
 		rType = 0;
 		vrLen = 979;
 		vrLoc = 33778;
@@ -3388,7 +3389,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 582";
 		rLen = 0;
-		rLoc = 26513;
+		rLoc = 27387;
 		rType = 0;
 		vrLen = 912;
 		vrLoc = 18229;
@@ -3448,7 +3449,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 389";
 		rLen = 0;
-		rLoc = 21484;
+		rLoc = 22358;
 		rType = 0;
 		vrLen = 1004;
 		vrLoc = 13307;
@@ -3458,7 +3459,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 355";
 		rLen = 0;
-		rLoc = 19778;
+		rLoc = 20628;
 		rType = 0;
 		vrLen = 966;
 		vrLoc = 12918;
@@ -3518,7 +3519,7 @@
 		fRef = 0F93858412465A6100C3AB0A /* GameMechanics.m */;
 		name = "GameMechanics.m: 1073";
 		rLen = 0;
-		rLoc = 28428;
+		rLoc = 28620;
 		rType = 0;
 		vrLen = 3128;
 		vrLoc = 27483;
@@ -3538,7 +3539,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 516";
 		rLen = 0;
-		rLoc = 21731;
+		rLoc = 22605;
 		rType = 0;
 		vrLen = 986;
 		vrLoc = 17081;
@@ -3548,7 +3549,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 516";
 		rLen = 0;
-		rLoc = 21731;
+		rLoc = 22605;
 		rType = 0;
 		vrLen = 986;
 		vrLoc = 17081;
@@ -3558,7 +3559,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 516";
 		rLen = 0;
-		rLoc = 21730;
+		rLoc = 22604;
 		rType = 0;
 		vrLen = 986;
 		vrLoc = 17081;
@@ -3568,7 +3569,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 516";
 		rLen = 0;
-		rLoc = 21740;
+		rLoc = 22614;
 		rType = 0;
 		vrLen = 986;
 		vrLoc = 17081;
@@ -3578,7 +3579,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 461";
 		rLen = 0;
-		rLoc = 20645;
+		rLoc = 21495;
 		rType = 0;
 		vrLen = 987;
 		vrLoc = 16042;
@@ -3588,7 +3589,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 510";
 		rLen = 0;
-		rLoc = 21556;
+		rLoc = 22430;
 		rType = 0;
 		vrLen = 3038;
 		vrLoc = 17302;
@@ -3598,7 +3599,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 490";
 		rLen = 0;
-		rLoc = 21245;
+		rLoc = 22095;
 		rType = 0;
 		vrLen = 1035;
 		vrLoc = 16555;
@@ -3608,7 +3609,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 412";
 		rLen = 0;
-		rLoc = 19460;
+		rLoc = 20310;
 		rType = 0;
 		vrLen = 13468;
 		vrLoc = 4765;
@@ -3618,7 +3619,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 1810";
 		rLen = 0;
-		rLoc = 62948;
+		rLoc = 63933;
 		rType = 0;
 		vrLen = 1255;
 		vrLoc = 57219;
@@ -3628,7 +3629,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 1797";
 		rLen = 0;
-		rLoc = 62533;
+		rLoc = 63518;
 		rType = 0;
 		vrLen = 1023;
 		vrLoc = 57316;
@@ -3697,7 +3698,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 1803";
 		rLen = 0;
-		rLoc = 62678;
+		rLoc = 63663;
 		rType = 0;
 		vrLen = 11757;
 		vrLoc = 26058;
@@ -3707,7 +3708,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 409";
 		rLen = 0;
-		rLoc = 18698;
+		rLoc = 19548;
 		rType = 0;
 		vrLen = 12865;
 		vrLoc = 4673;
@@ -3717,7 +3718,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 409";
 		rLen = 0;
-		rLoc = 18698;
+		rLoc = 19548;
 		rType = 0;
 		vrLen = 17298;
 		vrLoc = 22220;
@@ -3787,7 +3788,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 412";
 		rLen = 0;
-		rLoc = 18768;
+		rLoc = 19618;
 		rType = 0;
 		vrLen = 13261;
 		vrLoc = 5069;
@@ -3797,7 +3798,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 412";
 		rLen = 0;
-		rLoc = 18804;
+		rLoc = 19654;
 		rType = 0;
 		vrLen = 13289;
 		vrLoc = 5028;
@@ -3807,7 +3808,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 412";
 		rLen = 0;
-		rLoc = 18803;
+		rLoc = 19653;
 		rType = 0;
 		vrLen = 13289;
 		vrLoc = 5028;
@@ -3817,7 +3818,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 412";
 		rLen = 0;
-		rLoc = 18803;
+		rLoc = 19653;
 		rType = 0;
 		vrLen = 13289;
 		vrLoc = 5028;
@@ -3877,7 +3878,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 398";
 		rLen = 0;
-		rLoc = 18419;
+		rLoc = 19269;
 		rType = 0;
 		vrLen = 6976;
 		vrLoc = 15606;
@@ -3887,7 +3888,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 469";
 		rLen = 729;
-		rLoc = 20521;
+		rLoc = 21371;
 		rType = 0;
 		vrLen = 5174;
 		vrLoc = 15476;
@@ -3897,7 +3898,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 413";
 		rLen = 0;
-		rLoc = 18840;
+		rLoc = 19690;
 		rType = 0;
 		vrLen = 5174;
 		vrLoc = 15476;
@@ -3907,7 +3908,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 413";
 		rLen = 0;
-		rLoc = 18840;
+		rLoc = 19690;
 		rType = 0;
 		vrLen = 5174;
 		vrLoc = 15476;
@@ -3917,7 +3918,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 413";
 		rLen = 0;
-		rLoc = 18840;
+		rLoc = 19690;
 		rType = 0;
 		vrLen = 5174;
 		vrLoc = 15476;
@@ -3927,7 +3928,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 413";
 		rLen = 0;
-		rLoc = 18840;
+		rLoc = 19690;
 		rType = 0;
 		vrLen = 5174;
 		vrLoc = 15476;
@@ -3937,7 +3938,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 413";
 		rLen = 0;
-		rLoc = 18814;
+		rLoc = 19664;
 		rType = 0;
 		vrLen = 5174;
 		vrLoc = 15476;
@@ -3977,7 +3978,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 413";
 		rLen = 0;
-		rLoc = 18814;
+		rLoc = 19664;
 		rType = 0;
 		vrLen = 5174;
 		vrLoc = 15476;
@@ -3987,7 +3988,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 397";
 		rLen = 0;
-		rLoc = 18370;
+		rLoc = 19220;
 		rType = 0;
 		vrLen = 15339;
 		vrLoc = 5120;
@@ -3997,7 +3998,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 418";
 		rLen = 0;
-		rLoc = 18979;
+		rLoc = 19829;
 		rType = 0;
 		vrLen = 13104;
 		vrLoc = 5121;
@@ -4007,7 +4008,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 418";
 		rLen = 0;
-		rLoc = 18979;
+		rLoc = 19829;
 		rType = 0;
 		vrLen = 13104;
 		vrLoc = 5121;
@@ -4017,7 +4018,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 418";
 		rLen = 0;
-		rLoc = 18979;
+		rLoc = 19829;
 		rType = 0;
 		vrLen = 13104;
 		vrLoc = 5121;
@@ -4067,7 +4068,7 @@
 		fRef = 28FD14FC0DC6FC130079059D /* EAGLView.h */;
 		name = "EAGLView.h: 132";
 		rLen = 0;
-		rLoc = 3216;
+		rLoc = 3241;
 		rType = 0;
 		vrLen = 1003;
 		vrLoc = 2040;
@@ -4077,7 +4078,7 @@
 		fRef = 0F93858312465A6100C3AB0A /* GameMechanics.h */;
 		name = "GameMechanics.h: 63";
 		rLen = 0;
-		rLoc = 1260;
+		rLoc = 1329;
 		rType = 0;
 		vrLen = 981;
 		vrLoc = 286;
@@ -4107,7 +4108,7 @@
 		fRef = 0F93858412465A6100C3AB0A /* GameMechanics.m */;
 		name = "GameMechanics.m: 106";
 		rLen = 0;
-		rLoc = 1735;
+		rLoc = 1763;
 		rType = 0;
 		vrLen = 1069;
 		vrLoc = 397;
@@ -4117,7 +4118,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 181";
 		rLen = 0;
-		rLoc = 7169;
+		rLoc = 7305;
 		rType = 0;
 		vrLen = 1315;
 		vrLoc = 1310;
@@ -4127,7 +4128,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 78";
 		rLen = 0;
-		rLoc = 1838;
+		rLoc = 1974;
 		rType = 0;
 		vrLen = 1375;
 		vrLoc = 488;
@@ -4147,7 +4148,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 179";
 		rLen = 0;
-		rLoc = 7169;
+		rLoc = 7305;
 		rType = 0;
 		vrLen = 11467;
 		vrLoc = 4445;
@@ -4157,7 +4158,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 759";
 		rLen = 0;
-		rLoc = 26924;
+		rLoc = 27798;
 		rType = 0;
 		vrLen = 1045;
 		vrLoc = 22911;
@@ -4221,7 +4222,7 @@
 		fRef = 0F93858412465A6100C3AB0A /* GameMechanics.m */;
 		name = "GameMechanics.m: 967";
 		rLen = 0;
-		rLoc = 24242;
+		rLoc = 24410;
 		rType = 0;
 		vrLen = 1095;
 		vrLoc = 23675;
@@ -4281,7 +4282,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 118";
 		rLen = 223;
-		rLoc = 2884;
+		rLoc = 3020;
 		rType = 0;
 		vrLen = 1747;
 		vrLoc = 2714;
@@ -4291,7 +4292,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 175";
 		rLen = 0;
-		rLoc = 7056;
+		rLoc = 7192;
 		rType = 0;
 		vrLen = 1821;
 		vrLoc = 3480;
@@ -4305,7 +4306,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 175";
 		rLen = 0;
-		rLoc = 7056;
+		rLoc = 7192;
 		rType = 0;
 		vrLen = 1326;
 		vrLoc = 2051;
@@ -4415,7 +4416,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 175";
 		rLen = 0;
-		rLoc = 7056;
+		rLoc = 7192;
 		rType = 0;
 		vrLen = 1326;
 		vrLoc = 2051;
@@ -4425,7 +4426,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 175";
 		rLen = 0;
-		rLoc = 7056;
+		rLoc = 7192;
 		rType = 0;
 		vrLen = 1519;
 		vrLoc = 3815;
@@ -4445,7 +4446,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 175";
 		rLen = 0;
-		rLoc = 7056;
+		rLoc = 7192;
 		rType = 0;
 		vrLen = 1519;
 		vrLoc = 3815;
@@ -4515,7 +4516,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 121";
 		rLen = 47;
-		rLoc = 3033;
+		rLoc = 3169;
 		rType = 0;
 		vrLen = 1470;
 		vrLoc = 2438;
@@ -4745,7 +4746,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 121";
 		rLen = 47;
-		rLoc = 3033;
+		rLoc = 3169;
 		rType = 0;
 		vrLen = 1386;
 		vrLoc = 2438;
@@ -4755,7 +4756,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 1951";
 		rLen = 0;
-		rLoc = 65058;
+		rLoc = 66069;
 		rType = 0;
 		vrLen = 1180;
 		vrLoc = 60775;
@@ -4775,7 +4776,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 1951";
 		rLen = 0;
-		rLoc = 64949;
+		rLoc = 65960;
 		rType = 0;
 		vrLen = 1267;
 		vrLoc = 60090;
@@ -4795,7 +4796,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 1951";
 		rLen = 0;
-		rLoc = 64949;
+		rLoc = 65960;
 		rType = 0;
 		vrLen = 1267;
 		vrLoc = 60090;
@@ -4875,7 +4876,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 1964";
 		rLen = 0;
-		rLoc = 65464;
+		rLoc = 66475;
 		rType = 0;
 		vrLen = 1293;
 		vrLoc = 60944;
@@ -4935,7 +4936,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 1964";
 		rLen = 0;
-		rLoc = 65464;
+		rLoc = 66475;
 		rType = 0;
 		vrLen = 1293;
 		vrLoc = 60944;
@@ -4945,7 +4946,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 1977";
 		rLen = 0;
-		rLoc = 65235;
+		rLoc = 66246;
 		rType = 0;
 		vrLen = 1163;
 		vrLoc = 61687;
@@ -4965,7 +4966,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 1973";
 		rLen = 0;
-		rLoc = 65443;
+		rLoc = 66454;
 		rType = 0;
 		vrLen = 1158;
 		vrLoc = 61476;
@@ -4985,7 +4986,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 195";
 		rLen = 0;
-		rLoc = 7776;
+		rLoc = 8626;
 		rType = 0;
 		vrLen = 1330;
 		vrLoc = 4964;
@@ -5015,7 +5016,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 212";
 		rLen = 0;
-		rLoc = 8534;
+		rLoc = 9384;
 		rType = 0;
 		vrLen = 1330;
 		vrLoc = 4964;
@@ -5025,7 +5026,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 183";
 		rLen = 0;
-		rLoc = 7140;
+		rLoc = 7276;
 		rType = 0;
 		vrLen = 1353;
 		vrLoc = 4380;
@@ -5046,7 +5047,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 268;
+		rLoc = 296;
 		rType = 1;
 	};
 	0F93947C124E8A1700C3AB0A /* PBXTextBookmark */ = {
@@ -5054,7 +5055,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 1914";
 		rLen = 0;
-		rLoc = 63679;
+		rLoc = 64690;
 		rType = 0;
 		vrLen = 1196;
 		vrLoc = 60189;
@@ -5064,7 +5065,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 194";
 		rLen = 0;
-		rLoc = 7776;
+		rLoc = 8626;
 		rType = 0;
 		vrLen = 1252;
 		vrLoc = 4461;
@@ -5094,7 +5095,7 @@
 		fRef = 0F93858412465A6100C3AB0A /* GameMechanics.m */;
 		name = "GameMechanics.m: 70";
 		rLen = 0;
-		rLoc = 1733;
+		rLoc = 1761;
 		rType = 0;
 		vrLen = 374;
 		vrLoc = 1973;
@@ -5105,7 +5106,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 268;
+		rLoc = 296;
 		rType = 1;
 	};
 	0F939487124E8A5400C3AB0A /* PBXTextBookmark */ = {
@@ -5113,7 +5114,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 183";
 		rLen = 0;
-		rLoc = 7140;
+		rLoc = 7276;
 		rType = 0;
 		vrLen = 496;
 		vrLoc = 5008;
@@ -5123,7 +5124,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 1914";
 		rLen = 0;
-		rLoc = 63679;
+		rLoc = 64690;
 		rType = 0;
 		vrLen = 1267;
 		vrLoc = 454;
@@ -5133,7 +5134,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 194";
 		rLen = 0;
-		rLoc = 7776;
+		rLoc = 8626;
 		rType = 0;
 		vrLen = 1252;
 		vrLoc = 4461;
@@ -5153,7 +5154,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 198";
 		rLen = 0;
-		rLoc = 7843;
+		rLoc = 8693;
 		rType = 0;
 		vrLen = 1259;
 		vrLoc = 4763;
@@ -5163,7 +5164,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 194";
 		rLen = 0;
-		rLoc = 7776;
+		rLoc = 8626;
 		rType = 0;
 		vrLen = 1256;
 		vrLoc = 4461;
@@ -5183,7 +5184,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 199";
 		rLen = 0;
-		rLoc = 7899;
+		rLoc = 8749;
 		rType = 0;
 		vrLen = 1299;
 		vrLoc = 4763;
@@ -5193,7 +5194,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 194";
 		rLen = 0;
-		rLoc = 7776;
+		rLoc = 8626;
 		rType = 0;
 		vrLen = 1296;
 		vrLoc = 4461;
@@ -5213,7 +5214,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 202";
 		rLen = 0;
-		rLoc = 7987;
+		rLoc = 8837;
 		rType = 0;
 		vrLen = 1299;
 		vrLoc = 4763;
@@ -5223,7 +5224,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 194";
 		rLen = 0;
-		rLoc = 7776;
+		rLoc = 8626;
 		rType = 0;
 		vrLen = 1296;
 		vrLoc = 4461;
@@ -5243,7 +5244,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 201";
 		rLen = 0;
-		rLoc = 7904;
+		rLoc = 8754;
 		rType = 0;
 		vrLen = 1254;
 		vrLoc = 4763;
@@ -5253,7 +5254,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 194";
 		rLen = 0;
-		rLoc = 7776;
+		rLoc = 8626;
 		rType = 0;
 		vrLen = 1302;
 		vrLoc = 4461;
@@ -5273,7 +5274,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 201";
 		rLen = 0;
-		rLoc = 7904;
+		rLoc = 8754;
 		rType = 0;
 		vrLen = 1386;
 		vrLoc = 5238;
@@ -5283,7 +5284,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 194";
 		rLen = 0;
-		rLoc = 7776;
+		rLoc = 8626;
 		rType = 0;
 		vrLen = 1273;
 		vrLoc = 4461;
@@ -5313,7 +5314,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 196";
 		rLen = 0;
-		rLoc = 7776;
+		rLoc = 8626;
 		rType = 0;
 		vrLen = 1273;
 		vrLoc = 4499;
@@ -5333,7 +5334,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 474";
 		rLen = 0;
-		rLoc = 19944;
+		rLoc = 20794;
 		rType = 0;
 		vrLen = 1154;
 		vrLoc = 16701;
@@ -5363,7 +5364,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 196";
 		rLen = 0;
-		rLoc = 7776;
+		rLoc = 8626;
 		rType = 0;
 		vrLen = 1273;
 		vrLoc = 4499;
@@ -5413,7 +5414,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 196";
 		rLen = 0;
-		rLoc = 7776;
+		rLoc = 8626;
 		rType = 0;
 		vrLen = 1273;
 		vrLoc = 4499;
@@ -5473,7 +5474,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 177";
 		rLen = 0;
-		rLoc = 7056;
+		rLoc = 7192;
 		rType = 0;
 		vrLen = 1429;
 		vrLoc = 3859;
@@ -5483,7 +5484,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 177";
 		rLen = 0;
-		rLoc = 6312;
+		rLoc = 6448;
 		rType = 0;
 		vrLen = 1555;
 		vrLoc = 3859;
@@ -5493,7 +5494,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 196";
 		rLen = 0;
-		rLoc = 7776;
+		rLoc = 8626;
 		rType = 0;
 		vrLen = 1273;
 		vrLoc = 4499;
@@ -5523,7 +5524,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 196";
 		rLen = 0;
-		rLoc = 7776;
+		rLoc = 8626;
 		rType = 0;
 		vrLen = 1273;
 		vrLoc = 4499;
@@ -5543,7 +5544,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 682";
 		rLen = 0;
-		rLoc = 24012;
+		rLoc = 24886;
 		rType = 0;
 		vrLen = 918;
 		vrLoc = 20912;
@@ -5553,7 +5554,7 @@
 		fRef = 0F93858412465A6100C3AB0A /* GameMechanics.m */;
 		name = "GameMechanics.m: 1215";
 		rLen = 0;
-		rLoc = 30851;
+		rLoc = 31043;
 		rType = 0;
 		vrLen = 840;
 		vrLoc = 30403;
@@ -5563,7 +5564,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 196";
 		rLen = 0;
-		rLoc = 7776;
+		rLoc = 8626;
 		rType = 0;
 		vrLen = 1273;
 		vrLoc = 4499;
@@ -5583,7 +5584,7 @@
 		fRef = 0F93858412465A6100C3AB0A /* GameMechanics.m */;
 		name = "GameMechanics.m: 1215";
 		rLen = 0;
-		rLoc = 30851;
+		rLoc = 31043;
 		rType = 0;
 		vrLen = 840;
 		vrLoc = 30403;
@@ -5593,7 +5594,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 177";
 		rLen = 198;
-		rLoc = 6294;
+		rLoc = 6430;
 		rType = 0;
 		vrLen = 1393;
 		vrLoc = 4277;
@@ -5633,7 +5634,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 196";
 		rLen = 0;
-		rLoc = 7776;
+		rLoc = 8626;
 		rType = 0;
 		vrLen = 1273;
 		vrLoc = 4499;
@@ -5683,7 +5684,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 196";
 		rLen = 0;
-		rLoc = 7776;
+		rLoc = 8626;
 		rType = 0;
 		vrLen = 1273;
 		vrLoc = 4499;
@@ -5743,7 +5744,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 215";
 		rLen = 0;
-		rLoc = 7663;
+		rLoc = 8302;
 		rType = 0;
 		vrLen = 851;
 		vrLoc = 5072;
@@ -5753,7 +5754,7 @@
 		fRef = 28FD14FC0DC6FC130079059D /* EAGLView.h */;
 		name = "EAGLView.h: 139";
 		rLen = 0;
-		rLoc = 3215;
+		rLoc = 3240;
 		rType = 0;
 		vrLen = 1000;
 		vrLoc = 2182;
@@ -5773,7 +5774,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 221";
 		rLen = 0;
-		rLoc = 7776;
+		rLoc = 8626;
 		rType = 0;
 		vrLen = 1129;
 		vrLoc = 4499;
@@ -5803,7 +5804,7 @@
 		fRef = 0F93858412465A6100C3AB0A /* GameMechanics.m */;
 		name = "GameMechanics.m: 1215";
 		rLen = 0;
-		rLoc = 30851;
+		rLoc = 31043;
 		rType = 0;
 		vrLen = 727;
 		vrLoc = 1807;
@@ -5833,7 +5834,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 142";
 		rLen = 0;
-		rLoc = 4510;
+		rLoc = 4646;
 		rType = 0;
 		vrLen = 1799;
 		vrLoc = 2749;
@@ -5843,7 +5844,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 144";
 		rLen = 0;
-		rLoc = 4510;
+		rLoc = 4646;
 		rType = 0;
 		vrLen = 1742;
 		vrLoc = 2749;
@@ -5853,7 +5854,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 233";
 		rLen = 0;
-		rLoc = 7776;
+		rLoc = 8626;
 		rType = 0;
 		vrLen = 1736;
 		vrLoc = 3488;
@@ -5873,7 +5874,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 233";
 		rLen = 0;
-		rLoc = 7776;
+		rLoc = 8626;
 		rType = 0;
 		vrLen = 863;
 		vrLoc = 5994;
@@ -5883,7 +5884,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 233";
 		rLen = 0;
-		rLoc = 7776;
+		rLoc = 8626;
 		rType = 0;
 		vrLen = 1736;
 		vrLoc = 3488;
@@ -5903,7 +5904,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 233";
 		rLen = 0;
-		rLoc = 7776;
+		rLoc = 8626;
 		rType = 0;
 		vrLen = 1913;
 		vrLoc = 3081;
@@ -5933,7 +5934,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 233";
 		rLen = 0;
-		rLoc = 7776;
+		rLoc = 8626;
 		rType = 0;
 		vrLen = 1736;
 		vrLoc = 3488;
@@ -5963,7 +5964,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 233";
 		rLen = 0;
-		rLoc = 7776;
+		rLoc = 8626;
 		rType = 0;
 		vrLen = 1736;
 		vrLoc = 3488;
@@ -5993,7 +5994,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 233";
 		rLen = 0;
-		rLoc = 7776;
+		rLoc = 8626;
 		rType = 0;
 		vrLen = 1886;
 		vrLoc = 3108;
@@ -6003,7 +6004,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 233";
 		rLen = 0;
-		rLoc = 7776;
+		rLoc = 8626;
 		rType = 0;
 		vrLen = 1285;
 		vrLoc = 6187;
@@ -6013,7 +6014,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 233";
 		rLen = 0;
-		rLoc = 7776;
+		rLoc = 8626;
 		rType = 0;
 		vrLen = 1736;
 		vrLoc = 3488;
@@ -6033,7 +6034,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 233";
 		rLen = 0;
-		rLoc = 7776;
+		rLoc = 8626;
 		rType = 0;
 		vrLen = 1285;
 		vrLoc = 6187;
@@ -6053,7 +6054,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 233";
 		rLen = 0;
-		rLoc = 7776;
+		rLoc = 8626;
 		rType = 0;
 		vrLen = 1736;
 		vrLoc = 3488;
@@ -6083,7 +6084,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 233";
 		rLen = 0;
-		rLoc = 7776;
+		rLoc = 8626;
 		rType = 0;
 		vrLen = 1267;
 		vrLoc = 6187;
@@ -6093,7 +6094,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 233";
 		rLen = 0;
-		rLoc = 7776;
+		rLoc = 8626;
 		rType = 0;
 		vrLen = 1267;
 		vrLoc = 6187;
@@ -6103,7 +6104,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 233";
 		rLen = 0;
-		rLoc = 7776;
+		rLoc = 8626;
 		rType = 0;
 		vrLen = 1736;
 		vrLoc = 3488;
@@ -6123,7 +6124,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 233";
 		rLen = 0;
-		rLoc = 7776;
+		rLoc = 8626;
 		rType = 0;
 		vrLen = 1267;
 		vrLoc = 6187;
@@ -6133,7 +6134,7 @@
 		fRef = 0F93858412465A6100C3AB0A /* GameMechanics.m */;
 		name = "GameMechanics.m: 1215";
 		rLen = 0;
-		rLoc = 30851;
+		rLoc = 31043;
 		rType = 0;
 		vrLen = 727;
 		vrLoc = 1807;
@@ -6143,7 +6144,7 @@
 		fRef = 0F93858412465A6100C3AB0A /* GameMechanics.m */;
 		name = "GameMechanics.m: 108";
 		rLen = 0;
-		rLoc = 2143;
+		rLoc = 2171;
 		rType = 0;
 		vrLen = 730;
 		vrLoc = 1807;
@@ -6153,7 +6154,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 233";
 		rLen = 0;
-		rLoc = 7776;
+		rLoc = 8626;
 		rType = 0;
 		vrLen = 1736;
 		vrLoc = 3488;
@@ -6173,7 +6174,7 @@
 		fRef = 0F93858412465A6100C3AB0A /* GameMechanics.m */;
 		name = "GameMechanics.m: 60";
 		rLen = 0;
-		rLoc = 1310;
+		rLoc = 1338;
 		rType = 0;
 		vrLen = 1286;
 		vrLoc = 479;
@@ -6183,7 +6184,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 233";
 		rLen = 0;
-		rLoc = 7776;
+		rLoc = 8626;
 		rType = 0;
 		vrLen = 1736;
 		vrLoc = 3488;
@@ -6203,7 +6204,7 @@
 		fRef = 0F93858412465A6100C3AB0A /* GameMechanics.m */;
 		name = "GameMechanics.m: 60";
 		rLen = 0;
-		rLoc = 1310;
+		rLoc = 1338;
 		rType = 0;
 		vrLen = 1286;
 		vrLoc = 479;
@@ -6213,7 +6214,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 233";
 		rLen = 0;
-		rLoc = 7776;
+		rLoc = 8626;
 		rType = 0;
 		vrLen = 1267;
 		vrLoc = 6187;
@@ -6223,7 +6224,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 131";
 		rLen = 0;
-		rLoc = 3445;
+		rLoc = 3581;
 		rType = 0;
 		vrLen = 1983;
 		vrLoc = 3685;
@@ -6233,7 +6234,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 233";
 		rLen = 0;
-		rLoc = 7776;
+		rLoc = 8626;
 		rType = 0;
 		vrLen = 1771;
 		vrLoc = 3420;
@@ -6253,7 +6254,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 166";
 		rLen = 0;
-		rLoc = 5400;
+		rLoc = 5536;
 		rType = 0;
 		vrLen = 1983;
 		vrLoc = 3685;
@@ -6293,7 +6294,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 233";
 		rLen = 0;
-		rLoc = 7776;
+		rLoc = 8626;
 		rType = 0;
 		vrLen = 1771;
 		vrLoc = 3420;
@@ -6313,7 +6314,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 152";
 		rLen = 0;
-		rLoc = 4785;
+		rLoc = 4921;
 		rType = 0;
 		vrLen = 1848;
 		vrLoc = 3111;
@@ -6353,7 +6354,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 235";
 		rLen = 0;
-		rLoc = 7776;
+		rLoc = 8626;
 		rType = 0;
 		vrLen = 1755;
 		vrLoc = 3420;
@@ -6383,7 +6384,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 152";
 		rLen = 0;
-		rLoc = 4785;
+		rLoc = 4921;
 		rType = 0;
 		vrLen = 1848;
 		vrLoc = 3111;
@@ -6393,7 +6394,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 235";
 		rLen = 0;
-		rLoc = 7776;
+		rLoc = 8626;
 		rType = 0;
 		vrLen = 1255;
 		vrLoc = 6270;
@@ -6403,7 +6404,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 235";
 		rLen = 0;
-		rLoc = 7776;
+		rLoc = 8626;
 		rType = 0;
 		vrLen = 1755;
 		vrLoc = 3420;
@@ -6423,7 +6424,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 235";
 		rLen = 0;
-		rLoc = 7776;
+		rLoc = 8626;
 		rType = 0;
 		vrLen = 1255;
 		vrLoc = 6270;
@@ -6433,7 +6434,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 235";
 		rLen = 0;
-		rLoc = 7776;
+		rLoc = 8626;
 		rType = 0;
 		vrLen = 1755;
 		vrLoc = 3420;
@@ -6453,7 +6454,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 235";
 		rLen = 0;
-		rLoc = 7776;
+		rLoc = 8626;
 		rType = 0;
 		vrLen = 1255;
 		vrLoc = 6270;
@@ -6483,7 +6484,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 235";
 		rLen = 0;
-		rLoc = 7776;
+		rLoc = 8626;
 		rType = 0;
 		vrLen = 1755;
 		vrLoc = 3420;
@@ -6513,7 +6514,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 235";
 		rLen = 0;
-		rLoc = 7776;
+		rLoc = 8626;
 		rType = 0;
 		vrLen = 1755;
 		vrLoc = 3420;
@@ -6573,7 +6574,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 256";
 		rLen = 113;
-		rLoc = 8480;
+		rLoc = 9330;
 		rType = 0;
 		vrLen = 2103;
 		vrLoc = 6822;
@@ -6613,7 +6614,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 235";
 		rLen = 0;
-		rLoc = 7776;
+		rLoc = 8626;
 		rType = 0;
 		vrLen = 1755;
 		vrLoc = 3420;
@@ -6643,7 +6644,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 232";
 		rLen = 0;
-		rLoc = 7677;
+		rLoc = 8527;
 		rType = 0;
 		vrLen = 924;
 		vrLoc = 6140;
@@ -6653,7 +6654,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 233";
 		rLen = 0;
-		rLoc = 7724;
+		rLoc = 8574;
 		rType = 0;
 		vrLen = 904;
 		vrLoc = 6122;
@@ -6663,7 +6664,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 238";
 		rLen = 0;
-		rLoc = 7776;
+		rLoc = 8626;
 		rType = 0;
 		vrLen = 1755;
 		vrLoc = 3420;
@@ -6683,7 +6684,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 233";
 		rLen = 0;
-		rLoc = 7724;
+		rLoc = 8574;
 		rType = 0;
 		vrLen = 904;
 		vrLoc = 6122;
@@ -6723,7 +6724,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 238";
 		rLen = 0;
-		rLoc = 7776;
+		rLoc = 8626;
 		rType = 0;
 		vrLen = 1755;
 		vrLoc = 3420;
@@ -6753,7 +6754,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 238";
 		rLen = 0;
-		rLoc = 7776;
+		rLoc = 8626;
 		rType = 0;
 		vrLen = 1755;
 		vrLoc = 3420;
@@ -6783,7 +6784,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 238";
 		rLen = 0;
-		rLoc = 7776;
+		rLoc = 8626;
 		rType = 0;
 		vrLen = 1755;
 		vrLoc = 3420;
@@ -6833,7 +6834,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 238";
 		rLen = 0;
-		rLoc = 7776;
+		rLoc = 8626;
 		rType = 0;
 		vrLen = 1755;
 		vrLoc = 3420;
@@ -6863,7 +6864,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 238";
 		rLen = 0;
-		rLoc = 7776;
+		rLoc = 8626;
 		rType = 0;
 		vrLen = 1755;
 		vrLoc = 3420;
@@ -6893,7 +6894,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 238";
 		rLen = 0;
-		rLoc = 7776;
+		rLoc = 8626;
 		rType = 0;
 		vrLen = 1755;
 		vrLoc = 3420;
@@ -6923,7 +6924,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 238";
 		rLen = 0;
-		rLoc = 7776;
+		rLoc = 8626;
 		rType = 0;
 		vrLen = 1755;
 		vrLoc = 3420;
@@ -6953,7 +6954,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 238";
 		rLen = 0;
-		rLoc = 7776;
+		rLoc = 8626;
 		rType = 0;
 		vrLen = 1755;
 		vrLoc = 3420;
@@ -6993,7 +6994,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 202";
 		rLen = 0;
-		rLoc = 6931;
+		rLoc = 7067;
 		rType = 0;
 		vrLen = 1773;
 		vrLoc = 4826;
@@ -7003,7 +7004,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 205";
 		rLen = 0;
-		rLoc = 7036;
+		rLoc = 7172;
 		rType = 0;
 		vrLen = 1541;
 		vrLoc = 5242;
@@ -7013,7 +7014,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 249";
 		rLen = 0;
-		rLoc = 7776;
+		rLoc = 8626;
 		rType = 0;
 		vrLen = 1755;
 		vrLoc = 3420;
@@ -7033,7 +7034,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 249";
 		rLen = 0;
-		rLoc = 7776;
+		rLoc = 8626;
 		rType = 0;
 		vrLen = 1414;
 		vrLoc = 6914;
@@ -7043,7 +7044,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 249";
 		rLen = 0;
-		rLoc = 7776;
+		rLoc = 8626;
 		rType = 0;
 		vrLen = 1755;
 		vrLoc = 3420;
@@ -7063,7 +7064,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 792";
 		rLen = 0;
-		rLoc = 26102;
+		rLoc = 26976;
 		rType = 0;
 		vrLen = 5888;
 		vrLoc = 19705;
@@ -7073,7 +7074,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 250";
 		rLen = 0;
-		rLoc = 7776;
+		rLoc = 8626;
 		rType = 0;
 		vrLen = 1755;
 		vrLoc = 3420;
@@ -7093,7 +7094,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 792";
 		rLen = 0;
-		rLoc = 26102;
+		rLoc = 26976;
 		rType = 0;
 		vrLen = 5888;
 		vrLoc = 19705;
@@ -7113,7 +7114,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 250";
 		rLen = 0;
-		rLoc = 7776;
+		rLoc = 8626;
 		rType = 0;
 		vrLen = 1755;
 		vrLoc = 3420;
@@ -7133,7 +7134,7 @@
 		fRef = 0F93858412465A6100C3AB0A /* GameMechanics.m */;
 		name = "GameMechanics.m: 966";
 		rLen = 0;
-		rLoc = 24241;
+		rLoc = 24409;
 		rType = 0;
 		vrLen = 1095;
 		vrLoc = 23681;
@@ -7143,7 +7144,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 871";
 		rLen = 67;
-		rLoc = 27372;
+		rLoc = 28246;
 		rType = 0;
 		vrLen = 5633;
 		vrLoc = 21224;
@@ -7173,7 +7174,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 250";
 		rLen = 0;
-		rLoc = 7776;
+		rLoc = 8626;
 		rType = 0;
 		vrLen = 1755;
 		vrLoc = 3420;
@@ -7203,7 +7204,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 871";
 		rLen = 67;
-		rLoc = 27372;
+		rLoc = 28246;
 		rType = 0;
 		vrLen = 1039;
 		vrLoc = 21224;
@@ -7213,7 +7214,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 227";
 		rLen = 0;
-		rLoc = 7390;
+		rLoc = 7616;
 		rType = 0;
 		vrLen = 768;
 		vrLoc = 6463;
@@ -7223,7 +7224,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 251";
 		rLen = 0;
-		rLoc = 7776;
+		rLoc = 8626;
 		rType = 0;
 		vrLen = 1755;
 		vrLoc = 3420;
@@ -7243,7 +7244,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 792";
 		rLen = 0;
-		rLoc = 26021;
+		rLoc = 26895;
 		rType = 0;
 		vrLen = 2183;
 		vrLoc = 23296;
@@ -7253,7 +7254,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 251";
 		rLen = 0;
-		rLoc = 7776;
+		rLoc = 8626;
 		rType = 0;
 		vrLen = 1755;
 		vrLoc = 3420;
@@ -7283,7 +7284,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 479";
 		rLen = 0;
-		rLoc = 18510;
+		rLoc = 19360;
 		rType = 0;
 		vrLen = 1593;
 		vrLoc = 16876;
@@ -7293,7 +7294,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 482";
 		rLen = 0;
-		rLoc = 18558;
+		rLoc = 19408;
 		rType = 0;
 		vrLen = 1652;
 		vrLoc = 17133;
@@ -7303,7 +7304,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 251";
 		rLen = 0;
-		rLoc = 7776;
+		rLoc = 8626;
 		rType = 0;
 		vrLen = 1755;
 		vrLoc = 3420;
@@ -7323,7 +7324,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 480";
 		rLen = 0;
-		rLoc = 18510;
+		rLoc = 19360;
 		rType = 0;
 		vrLen = 1652;
 		vrLoc = 17133;
@@ -7373,7 +7374,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 251";
 		rLen = 0;
-		rLoc = 7776;
+		rLoc = 8626;
 		rType = 0;
 		vrLen = 1755;
 		vrLoc = 3420;
@@ -7433,7 +7434,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 251";
 		rLen = 0;
-		rLoc = 7776;
+		rLoc = 8626;
 		rType = 0;
 		vrLen = 1755;
 		vrLoc = 3420;
@@ -7473,7 +7474,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 480";
 		rLen = 0;
-		rLoc = 18510;
+		rLoc = 19360;
 		rType = 0;
 		vrLen = 1652;
 		vrLoc = 17133;
@@ -7483,7 +7484,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 251";
 		rLen = 0;
-		rLoc = 7752;
+		rLoc = 8602;
 		rType = 0;
 		vrLen = 1636;
 		vrLoc = 7120;
@@ -7493,7 +7494,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 252";
 		rLen = 0;
-		rLoc = 7776;
+		rLoc = 8626;
 		rType = 0;
 		vrLen = 1755;
 		vrLoc = 3420;
@@ -7513,7 +7514,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 251";
 		rLen = 0;
-		rLoc = 7752;
+		rLoc = 8602;
 		rType = 0;
 		vrLen = 1636;
 		vrLoc = 7120;
@@ -7543,7 +7544,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 252";
 		rLen = 0;
-		rLoc = 7776;
+		rLoc = 8626;
 		rType = 0;
 		vrLen = 1755;
 		vrLoc = 3420;
@@ -7573,7 +7574,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 252";
 		rLen = 0;
-		rLoc = 7776;
+		rLoc = 8626;
 		rType = 0;
 		vrLen = 1755;
 		vrLoc = 3420;
@@ -7603,7 +7604,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 480";
 		rLen = 0;
-		rLoc = 18464;
+		rLoc = 19314;
 		rType = 0;
 		vrLen = 1347;
 		vrLoc = 17508;
@@ -7633,7 +7634,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 251";
 		rLen = 0;
-		rLoc = 7752;
+		rLoc = 8602;
 		rType = 0;
 		vrLen = 1636;
 		vrLoc = 7120;
@@ -7643,7 +7644,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 147";
 		rLen = 0;
-		rLoc = 3950;
+		rLoc = 4086;
 		rType = 0;
 		vrLen = 1787;
 		vrLoc = 2758;
@@ -7653,7 +7654,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 483";
 		rLen = 0;
-		rLoc = 18464;
+		rLoc = 19314;
 		rType = 0;
 		vrLen = 1347;
 		vrLoc = 17521;
@@ -7673,7 +7674,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 146";
 		rLen = 0;
-		rLoc = 3923;
+		rLoc = 4059;
 		rType = 0;
 		vrLen = 1812;
 		vrLoc = 3111;
@@ -7683,7 +7684,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 483";
 		rLen = 0;
-		rLoc = 18464;
+		rLoc = 19314;
 		rType = 0;
 		vrLen = 1347;
 		vrLoc = 17517;
@@ -7703,7 +7704,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 155";
 		rLen = 0;
-		rLoc = 4760;
+		rLoc = 4896;
 		rType = 0;
 		vrLen = 1816;
 		vrLoc = 3111;
@@ -7713,7 +7714,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 483";
 		rLen = 0;
-		rLoc = 18464;
+		rLoc = 19314;
 		rType = 0;
 		vrLen = 1347;
 		vrLoc = 17521;
@@ -7743,7 +7744,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 155";
 		rLen = 0;
-		rLoc = 4760;
+		rLoc = 4896;
 		rType = 0;
 		vrLen = 1705;
 		vrLoc = 3264;
@@ -7753,7 +7754,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 115";
 		rLen = 0;
-		rLoc = 2754;
+		rLoc = 2890;
 		rType = 0;
 		vrLen = 1543;
 		vrLoc = 2513;
@@ -7763,7 +7764,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 492";
 		rLen = 0;
-		rLoc = 18464;
+		rLoc = 19314;
 		rType = 0;
 		vrLen = 1517;
 		vrLoc = 17154;
@@ -7783,7 +7784,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 263";
 		rLen = 0;
-		rLoc = 7752;
+		rLoc = 8602;
 		rType = 0;
 		vrLen = 961;
 		vrLoc = 7365;
@@ -7793,7 +7794,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 492";
 		rLen = 0;
-		rLoc = 18464;
+		rLoc = 19314;
 		rType = 0;
 		vrLen = 1517;
 		vrLoc = 17138;
@@ -7813,7 +7814,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 283";
 		rLen = 27;
-		rLoc = 8341;
+		rLoc = 9191;
 		rType = 0;
 		vrLen = 2226;
 		vrLoc = 8200;
@@ -7853,7 +7854,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 492";
 		rLen = 0;
-		rLoc = 18464;
+		rLoc = 19314;
 		rType = 0;
 		vrLen = 1517;
 		vrLoc = 17138;
@@ -7883,7 +7884,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 492";
 		rLen = 0;
-		rLoc = 18464;
+		rLoc = 19314;
 		rType = 0;
 		vrLen = 1517;
 		vrLoc = 17138;
@@ -7933,7 +7934,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 492";
 		rLen = 0;
-		rLoc = 18464;
+		rLoc = 19314;
 		rType = 0;
 		vrLen = 1517;
 		vrLoc = 17138;
@@ -7983,7 +7984,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 507";
 		rLen = 0;
-		rLoc = 18698;
+		rLoc = 19548;
 		rType = 0;
 		vrLen = 1453;
 		vrLoc = 17798;
@@ -7993,7 +7994,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 495";
 		rLen = 0;
-		rLoc = 18464;
+		rLoc = 19314;
 		rType = 0;
 		vrLen = 1524;
 		vrLoc = 17167;
@@ -8033,7 +8034,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 507";
 		rLen = 0;
-		rLoc = 18698;
+		rLoc = 19548;
 		rType = 0;
 		vrLen = 1318;
 		vrLoc = 18121;
@@ -8043,7 +8044,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 280";
 		rLen = 0;
-		rLoc = 8196;
+		rLoc = 9046;
 		rType = 0;
 		vrLen = 1741;
 		vrLoc = 7847;
@@ -8053,7 +8054,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 496";
 		rLen = 0;
-		rLoc = 18464;
+		rLoc = 19314;
 		rType = 0;
 		vrLen = 1529;
 		vrLoc = 17156;
@@ -8083,7 +8084,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 280";
 		rLen = 0;
-		rLoc = 8196;
+		rLoc = 9046;
 		rType = 0;
 		vrLen = 1741;
 		vrLoc = 7847;
@@ -8093,7 +8094,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 508";
 		rLen = 0;
-		rLoc = 18698;
+		rLoc = 19548;
 		rType = 0;
 		vrLen = 1297;
 		vrLoc = 18322;
@@ -8103,7 +8104,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 496";
 		rLen = 0;
-		rLoc = 18464;
+		rLoc = 19314;
 		rType = 0;
 		vrLen = 1516;
 		vrLoc = 17183;
@@ -8123,7 +8124,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 508";
 		rLen = 0;
-		rLoc = 18698;
+		rLoc = 19548;
 		rType = 0;
 		vrLen = 1378;
 		vrLoc = 18322;
@@ -8163,7 +8164,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 496";
 		rLen = 0;
-		rLoc = 18464;
+		rLoc = 19314;
 		rType = 0;
 		vrLen = 1516;
 		vrLoc = 17183;
@@ -8193,7 +8194,7 @@
 		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
 		name = "EAGLView.m: 496";
 		rLen = 0;
-		rLoc = 18464;
+		rLoc = 19314;
 		rType = 0;
 		vrLen = 1554;
 		vrLoc = 17183;
@@ -8207,6 +8208,276 @@
 		rType = 0;
 		vrLen = 1565;
 		vrLoc = 1912;
+	};
+	0F93967F124F872D00C3AB0A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0F93925C124E4BAB00C3AB0A /* dmSide.m */;
+		name = "dmSide.m: 23";
+		rLen = 0;
+		rLoc = 378;
+		rType = 0;
+		vrLen = 934;
+		vrLoc = 228;
+	};
+	0F939680124F872D00C3AB0A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
+		name = "EAGLView.m: 508";
+		rLen = 0;
+		rLoc = 19548;
+		rType = 0;
+		vrLen = 1378;
+		vrLoc = 18322;
+	};
+	0F939681124F872D00C3AB0A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
+		name = "EAGLView.m: 256";
+		rLen = 0;
+		rLoc = 7881;
+		rType = 0;
+		vrLen = 983;
+		vrLoc = 7365;
+	};
+	0F939682124F872D00C3AB0A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
+		name = "EAGLView.m: 514";
+		rLen = 0;
+		rLoc = 19314;
+		rType = 0;
+		vrLen = 2146;
+		vrLoc = 16772;
+	};
+	0F939683124F872D00C3AB0A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0F938BEB124BACB500C3AB0A /* sidePanel.m */;
+		name = "sidePanel.m: 95";
+		rLen = 0;
+		rLoc = 3343;
+		rType = 0;
+		vrLen = 1526;
+		vrLoc = 1912;
+	};
+	0F93968C124F8BE800C3AB0A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0F938BEB124BACB500C3AB0A /* sidePanel.m */;
+		name = "sidePanel.m: 111";
+		rLen = 0;
+		rLoc = 3609;
+		rType = 0;
+		vrLen = 1350;
+		vrLoc = 3418;
+	};
+	0F93968D124F8BE800C3AB0A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0F9391ED124E3EAC00C3AB0A /* dmMenu.m */;
+		name = "dmMenu.m: 249";
+		rLen = 0;
+		rLoc = 5720;
+		rType = 0;
+		vrLen = 1662;
+		vrLoc = 470;
+	};
+	0F93968E124F8BE800C3AB0A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0F93858312465A6100C3AB0A /* GameMechanics.h */;
+		name = "GameMechanics.h: 35";
+		rLen = 0;
+		rLoc = 537;
+		rType = 0;
+		vrLen = 924;
+		vrLoc = 415;
+	};
+	0F93968F124F8BE800C3AB0A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28FD14FC0DC6FC130079059D /* EAGLView.h */;
+		name = "EAGLView.h: 117";
+		rLen = 0;
+		rLoc = 2539;
+		rType = 0;
+		vrLen = 914;
+		vrLoc = 2009;
+	};
+	0F939690124F8BE800C3AB0A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
+		name = "EAGLView.m: 78";
+		rLen = 0;
+		rLoc = 1894;
+		rType = 0;
+		vrLen = 1263;
+		vrLoc = 1364;
+	};
+	0F939691124F8BE800C3AB0A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0F93858412465A6100C3AB0A /* GameMechanics.m */;
+		name = "GameMechanics.m: 1228";
+		rLen = 0;
+		rLoc = 31186;
+		rType = 0;
+		vrLen = 912;
+		vrLoc = 32053;
+	};
+	0F939692124F8BE800C3AB0A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0F93858412465A6100C3AB0A /* GameMechanics.m */;
+		name = "GameMechanics.m: 21";
+		rLen = 0;
+		rLoc = 384;
+		rType = 0;
+		vrLen = 1082;
+		vrLoc = 3;
+	};
+	0F939693124F8BE800C3AB0A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
+		name = "EAGLView.m: 516";
+		rLen = 0;
+		rLoc = 19314;
+		rType = 0;
+		vrLen = 2253;
+		vrLoc = 16618;
+	};
+	0F939694124F8BE800C3AB0A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0F938BEB124BACB500C3AB0A /* sidePanel.m */;
+		name = "sidePanel.m: 95";
+		rLen = 0;
+		rLoc = 3343;
+		rType = 0;
+		vrLen = 1526;
+		vrLoc = 1912;
+	};
+	0F939698124F8D3700C3AB0A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0F93858412465A6100C3AB0A /* GameMechanics.m */;
+		name = "GameMechanics.m: 29";
+		rLen = 0;
+		rLoc = 485;
+		rType = 0;
+		vrLen = 1121;
+		vrLoc = 310;
+	};
+	0F939699124F8D3700C3AB0A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
+		name = "EAGLView.m: 78";
+		rLen = 0;
+		rLoc = 1894;
+		rType = 0;
+		vrLen = 1189;
+		vrLoc = 1438;
+	};
+	0F93969A124F8D3700C3AB0A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
+		name = "EAGLView.m: 245";
+		rLen = 0;
+		rLoc = 7616;
+		rType = 0;
+		vrLen = 1077;
+		vrLoc = 7386;
+	};
+	0F93969B124F8D3700C3AB0A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
+		name = "EAGLView.m: 523";
+		rLen = 0;
+		rLoc = 19314;
+		rType = 0;
+		vrLen = 2285;
+		vrLoc = 16712;
+	};
+	0F93969C124F8D3700C3AB0A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0F938BEB124BACB500C3AB0A /* sidePanel.m */;
+		name = "sidePanel.m: 95";
+		rLen = 0;
+		rLoc = 3343;
+		rType = 0;
+		vrLen = 1526;
+		vrLoc = 1912;
+	};
+	0F9396A3124F8DFB00C3AB0A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
+		name = "EAGLView.m: 1075";
+		rLen = 0;
+		rLoc = 32429;
+		rType = 0;
+		vrLen = 1030;
+		vrLoc = 31588;
+	};
+	0F9396A4124F8DFB00C3AB0A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
+		name = "EAGLView.m: 523";
+		rLen = 0;
+		rLoc = 19314;
+		rType = 0;
+		vrLen = 2253;
+		vrLoc = 16793;
+	};
+	0F9396A5124F8DFB00C3AB0A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0F938BEB124BACB500C3AB0A /* sidePanel.m */;
+		name = "sidePanel.m: 95";
+		rLen = 0;
+		rLoc = 3343;
+		rType = 0;
+		vrLen = 1526;
+		vrLoc = 1912;
+	};
+	0F9396BF124F91A000C3AB0A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0F93858412465A6100C3AB0A /* GameMechanics.m */;
+		name = "GameMechanics.m: 1229";
+		rLen = 0;
+		rLoc = 31190;
+		rType = 0;
+		vrLen = 912;
+		vrLoc = 32089;
+	};
+	0F9396C0124F91A000C3AB0A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
+		name = "EAGLView.m: 27";
+		rLen = 0;
+		rLoc = 470;
+		rType = 0;
+		vrLen = 1154;
+		vrLoc = 7331;
+	};
+	0F9396C1124F91A000C3AB0A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
+		name = "EAGLView.m: 281";
+		rLen = 0;
+		rLoc = 8510;
+		rType = 0;
+		vrLen = 1069;
+		vrLoc = 7882;
+	};
+	0F9396C2124F91A000C3AB0A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0F938BEB124BACB500C3AB0A /* sidePanel.m */;
+		name = "sidePanel.m: 76";
+		rLen = 0;
+		rLoc = 2875;
+		rType = 0;
+		vrLen = 1383;
+		vrLoc = 0;
+	};
+	0F9396C3124F91A000C3AB0A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */;
+		name = "EAGLView.m: 524";
+		rLen = 0;
+		rLoc = 19314;
+		rType = 0;
+		vrLen = 2267;
+		vrLoc = 16949;
 	};
 	0FEA949C122D105D007FA78C /* block.h */ = {
 		uiCtxt = {
@@ -8336,24 +8607,24 @@
 	};
 	28FD14FC0DC6FC130079059D /* EAGLView.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1340, 1872}}";
-			sepNavSelRange = "{2449, 0}";
-			sepNavVisRange = "{2030, 905}";
+			sepNavIntBoundsRect = "{{0, 0}, {1340, 1885}}";
+			sepNavSelRange = "{2539, 0}";
+			sepNavVisRange = "{2009, 914}";
 			sepNavWindowFrame = "{{38, 474}, {750, 558}}";
 		};
 	};
 	28FD14FD0DC6FC130079059D /* EAGLView.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1066, 27118}}";
-			sepNavSelRange = "{18464, 0}";
-			sepNavVisRange = "{17183, 1554}";
+			sepNavIntBoundsRect = "{{0, 0}, {1066, 27508}}";
+			sepNavSelRange = "{19314, 0}";
+			sepNavVisRange = "{16949, 2267}";
 			sepNavWindowFrame = "{{189, 283}, {1125, 727}}";
 		};
 	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
 		activeBuildConfigurationName = Debug;
 		activeExecutable = 0F63976C11C68AF900DB3577 /* tester */;
-		activeSDKPreference = iphonesimulator3.2;
+		activeSDKPreference = iphoneos3.2;
 		activeTarget = 1D6058900D05DD3D006BFB54 /* tester */;
 		addToTargets = (
 			1D6058900D05DD3D006BFB54 /* tester */,
@@ -9197,6 +9468,33 @@
 			0F939670124F85B200C3AB0A /* PBXTextBookmark */ = 0F939670124F85B200C3AB0A /* PBXTextBookmark */;
 			0F939671124F85B200C3AB0A /* PBXTextBookmark */ = 0F939671124F85B200C3AB0A /* PBXTextBookmark */;
 			0F939672124F85B200C3AB0A /* PBXTextBookmark */ = 0F939672124F85B200C3AB0A /* PBXTextBookmark */;
+			0F93967F124F872D00C3AB0A /* PBXTextBookmark */ = 0F93967F124F872D00C3AB0A /* PBXTextBookmark */;
+			0F939680124F872D00C3AB0A /* PBXTextBookmark */ = 0F939680124F872D00C3AB0A /* PBXTextBookmark */;
+			0F939681124F872D00C3AB0A /* PBXTextBookmark */ = 0F939681124F872D00C3AB0A /* PBXTextBookmark */;
+			0F939682124F872D00C3AB0A /* PBXTextBookmark */ = 0F939682124F872D00C3AB0A /* PBXTextBookmark */;
+			0F939683124F872D00C3AB0A /* PBXTextBookmark */ = 0F939683124F872D00C3AB0A /* PBXTextBookmark */;
+			0F93968C124F8BE800C3AB0A /* PBXTextBookmark */ = 0F93968C124F8BE800C3AB0A /* PBXTextBookmark */;
+			0F93968D124F8BE800C3AB0A /* PBXTextBookmark */ = 0F93968D124F8BE800C3AB0A /* PBXTextBookmark */;
+			0F93968E124F8BE800C3AB0A /* PBXTextBookmark */ = 0F93968E124F8BE800C3AB0A /* PBXTextBookmark */;
+			0F93968F124F8BE800C3AB0A /* PBXTextBookmark */ = 0F93968F124F8BE800C3AB0A /* PBXTextBookmark */;
+			0F939690124F8BE800C3AB0A /* PBXTextBookmark */ = 0F939690124F8BE800C3AB0A /* PBXTextBookmark */;
+			0F939691124F8BE800C3AB0A /* PBXTextBookmark */ = 0F939691124F8BE800C3AB0A /* PBXTextBookmark */;
+			0F939692124F8BE800C3AB0A /* PBXTextBookmark */ = 0F939692124F8BE800C3AB0A /* PBXTextBookmark */;
+			0F939693124F8BE800C3AB0A /* PBXTextBookmark */ = 0F939693124F8BE800C3AB0A /* PBXTextBookmark */;
+			0F939694124F8BE800C3AB0A /* PBXTextBookmark */ = 0F939694124F8BE800C3AB0A /* PBXTextBookmark */;
+			0F939698124F8D3700C3AB0A /* PBXTextBookmark */ = 0F939698124F8D3700C3AB0A /* PBXTextBookmark */;
+			0F939699124F8D3700C3AB0A /* PBXTextBookmark */ = 0F939699124F8D3700C3AB0A /* PBXTextBookmark */;
+			0F93969A124F8D3700C3AB0A /* PBXTextBookmark */ = 0F93969A124F8D3700C3AB0A /* PBXTextBookmark */;
+			0F93969B124F8D3700C3AB0A /* PBXTextBookmark */ = 0F93969B124F8D3700C3AB0A /* PBXTextBookmark */;
+			0F93969C124F8D3700C3AB0A /* PBXTextBookmark */ = 0F93969C124F8D3700C3AB0A /* PBXTextBookmark */;
+			0F9396A3124F8DFB00C3AB0A /* PBXTextBookmark */ = 0F9396A3124F8DFB00C3AB0A /* PBXTextBookmark */;
+			0F9396A4124F8DFB00C3AB0A /* PBXTextBookmark */ = 0F9396A4124F8DFB00C3AB0A /* PBXTextBookmark */;
+			0F9396A5124F8DFB00C3AB0A /* PBXTextBookmark */ = 0F9396A5124F8DFB00C3AB0A /* PBXTextBookmark */;
+			0F9396BF124F91A000C3AB0A /* PBXTextBookmark */ = 0F9396BF124F91A000C3AB0A /* PBXTextBookmark */;
+			0F9396C0124F91A000C3AB0A /* PBXTextBookmark */ = 0F9396C0124F91A000C3AB0A /* PBXTextBookmark */;
+			0F9396C1124F91A000C3AB0A /* PBXTextBookmark */ = 0F9396C1124F91A000C3AB0A /* PBXTextBookmark */;
+			0F9396C2124F91A000C3AB0A /* PBXTextBookmark */ = 0F9396C2124F91A000C3AB0A /* PBXTextBookmark */;
+			0F9396C3124F91A000C3AB0A /* PBXTextBookmark */ = 0F9396C3124F91A000C3AB0A /* PBXTextBookmark */;
 			0FEAA2441241252F007FA78C = 0FEAA2441241252F007FA78C /* PBXTextBookmark */;
 			0FEAA2461241252F007FA78C = 0FEAA2461241252F007FA78C /* PBXTextBookmark */;
 		};

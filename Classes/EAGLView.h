@@ -114,6 +114,8 @@
 	
 	NSTimer * gameTimer;
 	
+	int * gestureCounter;
+	
 	
 }
 

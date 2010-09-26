@@ -18,6 +18,7 @@
 @synthesize rotating;
 @synthesize score;
 @synthesize translateArray;
+@synthesize gestureCounter;
 
 - (id)init
 {    
@@ -129,7 +130,7 @@
 		NSLog(@"Returning nil");
 		return;
 	}
-	
+	gestureCounter[0]+=1;
 	if (fabs(startArray.x) > currentZ) {
 		currentZ = fabs(startArray.x);
 	}
@@ -300,7 +301,7 @@
 		NSLog(@"Returning nil");
 		return;
 	}
-	
+	gestureCounter[1]+=1;
 	if (fabs(startArray.x) > currentZ) {
 		currentZ = fabs(startArray.x);
 	}
@@ -460,9 +461,7 @@
 	if (swap==nil) {
 		return;
 	}
-	int startX;
-	int startY ;
-	int startZ ;
+	gestureCounter[2]+=1;
 	
 	int pos[3] = {startArray.x,-currentZ,currentZ};
 	[self getPosition:pos];
@@ -616,9 +615,7 @@
 	if (swap==nil) {
 		return;
 	}
-	int startX;
-	int startY ;
-	int startZ ;
+	gestureCounter[3]+=1;
 	
 	int pos[3] = {startArray.x,currentZ,currentZ};
 	[self getPosition:pos];
@@ -769,7 +766,7 @@
 - (void) zForward{
 	adjustZ = YES;
 	block * swap = [self getBlock:startArray.x andY:startArray.y andZ:-5];
-	
+	gestureCounter[4]+=1;
 	int pos[3] = {startArray.x,startArray.y, -5};
 	
 	
@@ -826,7 +823,7 @@
 - (void) zBackward{
 	adjustZ = YES;
 	block * swap = [self getBlock:startArray.x andY:startArray.y andZ:5];
-	
+	gestureCounter[5]+=1;
 	int pos[3] = {startArray.x,startArray.y, 5};
 	
 	
@@ -895,6 +892,7 @@
 		}
 		pos[1] = startArray.y;
 		[self getPosition:pos];
+		gestureCounter[6]++;
 	}
 	else if (direction == 1) { // right
 		pos[0] = startArray.x + 1;
@@ -905,6 +903,7 @@
 		}
 		pos[1] = startArray.y;
 		[self getPosition:pos];
+		gestureCounter[7]++;
 	}
 	else if (direction == 2) { // up
 		pos[1] = startArray.y + 1;
@@ -915,6 +914,7 @@
 		}
 		pos[0] = startArray.x;
 		[self getPosition:pos];
+		gestureCounter[8]++;
 	}
 	else if (direction == 3) { // down
 		pos[1] = startArray.y - 1;
@@ -925,6 +925,7 @@
 		}
 		pos[0] = startArray.x;
 		[self getPosition:pos];
+		gestureCounter[9]++;
 	}
 	
 	
@@ -1003,6 +1004,7 @@
 }
 
 - (void) moveIn{
+	gestureCounter[10]+=1;
 	for (int x=0; x<=10; x++) {
 		for (int y=0; y<=10; y++) {
 			for (int z =0; z<=10; z++) {
@@ -1224,6 +1226,7 @@
 }
 
 - (CGPoint)rotateCube{
+	gestureCounter[12]+=1;
 	rotating = YES;
 	float x = endPos.x - startPos.x;
 	float y = endPos.y - startPos.y;

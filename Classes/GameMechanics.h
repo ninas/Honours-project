@@ -32,6 +32,8 @@
 	BOOL rotating;
 	int score;
 	
+	int * gestureCounter;
+	
 	
 }
 
@@ -43,6 +45,7 @@
 @property (nonatomic, retain) NSMutableSet * translateArray;
 @property (nonatomic) BOOL rotating;
 @property (nonatomic) int score;
+@property (nonatomic) int * gestureCounter;
 
 - (void)rowLeft;
 

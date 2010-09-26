@@ -72,8 +72,10 @@
 		checkValue = YES;
 		mechanics = [[GameMechanics alloc] init];
 		
+		gestureCounter = (int*)malloc(13*sizeof(int));
+		memset(gestureCounter, 0, sizeof(int)*13);
 		
-		
+		mechanics.gestureCounter = gestureCounter;
 		
 		touchesArray = [[NSMutableArray alloc]init];
 		for (int i=0; i<3; i++) {
@@ -235,25 +237,51 @@
 			check=YES;
 		}
 	}
-	if (!check) {
-		[tut showFirstScreen:gameVersion];
-		tut.hidden = NO;
-		return;
+	if (check) {
+		do {
+			gameVersion = rand()%3;
+		} while (versionsDone[gameVersion] != NO);
+		
+		versionsDone[gameVersion] = YES;
+		
 	}
 	
-	do {
-		gameVersion = rand()%3;
-	} while (versionsDone[gameVersion] != NO);
 	
-	versionsDone[gameVersion] = YES;
 	
-	/*if (prevVersion != 3) {
-		// code for tutorial saying fill out form
+	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+	NSString *documentsDirectory = [paths objectAtIndex:0];
+	
+	
+	NSString *appFile = [documentsDirectory stringByAppendingPathComponent:@"gameLog.txt"];
+	
+	
+	NSMutableString * data = [NSMutableString stringWithString:@""];
+	if (prevVersion != 3) {
+		// write gesture info
+		
+		for (int i=0; i<13; i++) {
+			[data appendFormat:@"%d:  %d\n",i,gestureCounter[i]];
+		}
+		[data appendFormat:@"\n"];
+		
+		
+		memset(gestureCounter, 0, sizeof(int)*13);
 	}
-	else {
-		// first description tutorial
-	}*/
+	if (check) {
+		[data appendFormat:@"%d\n",gameVersion];
+	}
 	
+	NSData *theData = [data dataUsingEncoding:NSUTF8StringEncoding];
+	
+		if (appFile){
+			NSFileHandle *myHandle = [NSFileHandle fileHandleForUpdatingAtPath:appFile];
+			[myHandle seekToEndOfFile];
+			[myHandle writeData:theData];
+			[myHandle closeFile];
+			NSLog(@"writing2");
+		}
+		
+		
 	[tut showFirstScreen:gameVersion];
 	tut.hidden = NO;
 
@@ -618,6 +646,7 @@
 
 - (void) setDoRock{
 	doRock = YES;
+	gestureCounter[11]+=1;
 	[dm clearOthers];
 	[dmSideMenu fadeOut];
 	dm.rotate.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:.3];
@@ -1038,8 +1067,14 @@
 	}
 	else {
 		checkValue = NO;
-		CGPoint point = [[[touchesArray objectAtIndex:0] objectAtIndex:0] CGPointValue];
-		[mechanics setStart: point.x andY:point.y];
+		if ([[touchesArray objectAtIndex:0] count] > 0) {
+			CGPoint point = [[[touchesArray objectAtIndex:0] objectAtIndex:0] CGPointValue];
+			[mechanics setStart: point.x andY:point.y];
+			
+		}
+		else{
+		[mechanics setStart:0 andY:0];
+		}
 		[stateMachine endOfGestureStateRecogniser];
 	}
 }
@@ -1929,6 +1964,7 @@
 			[mechanics rowLeft];
 			NSLog(@"Calling left");
 			descrip = @"Row left";
+			
 		}
 		else if (strcmp(type, "right") == 0){
 			[mechanics rowRight];
@@ -1979,6 +2015,7 @@
 			if (gameVersion!=2){
 				doRock = YES;
 				descrip = @"Rock cube";
+				gestureCounter[11]++;
 			}
 			else {
 				renderer.inRed = YES;
