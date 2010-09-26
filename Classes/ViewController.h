@@ -9,12 +9,12 @@
 #import <UIKit/UIKit.h>
 #import "GestureStateMachine.h"
 
-#import "tutorial.h"
+
 
 @class EAGLView;
 @interface ViewController : UIViewController {
 	EAGLView * glView;
-	tutorial * tut;
+	
 	
 }
 

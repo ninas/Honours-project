@@ -106,9 +106,12 @@
 	NSMutableArray * lineButtons;
 	NSMutableArray * swapButtons;
 	NSMutableArray * rotateButtons;
-	
+	UIButton * restart;
 	int tutCounter;
 	BOOL dmSwitches[10];
+	
+	
+	NSTimer * gameTimer;
 	
 	
 }
@@ -131,6 +134,9 @@
 - (void) lineSelector:(id)select;
 - (void) swapSelector:(id)select;
 - (void) rotateSelector:(id)select;
+- (void) startGameTimer;
+- (void) stopGameTimer;
+- (void) changeGameVersion;
 
 
 @end

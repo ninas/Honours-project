@@ -123,6 +123,19 @@
 		score.font = [UIFont fontWithName: @"Marker Felt" size: 48];
 		[self addSubview:score];
 		
+		restart = [[UIButton alloc] initWithFrame:CGRectMake(10, 310, 80, 80)];
+		restart.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:.3];
+		restart.layer.cornerRadius = 5;
+		restart.titleLabel.lineBreakMode = UILineBreakModeWordWrap;
+		restart.titleLabel.textAlignment = UITextAlignmentCenter;
+		[restart setTitle:@"New game" forState:UIControlStateNormal];
+		[restart addTarget:mechanics action:@selector(restart) forControlEvents:UIControlEventTouchUpInside];
+		restart.adjustsImageWhenHighlighted = YES;
+		
+		
+		
+		//[dm addSubview:rock];
+		//dm.rock = rock;
 		
 		
 		panel = [[sidePanel alloc] initWithFrame:CGRectMake(10, 10, 100, 750)];
@@ -130,12 +143,16 @@
 		panel.layer.cornerRadius = 5;
 		[self addSubview:panel];
 		panelOn = YES;
+		panel.restart = restart;
+		[panel addSubview:restart];
 		
 		dm = [[dmMenu alloc] initWithFrame:CGRectMake(10, 10, 100, 750)];
 		dm.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:.3];
 		dm.layer.cornerRadius = 5;
 		[self addSubview:dm];
 		[dm setup:mechanics];
+		dm.restart = restart;
+		[dm addSubview:restart];
 		
 		dmSideMenu = [[dmSide alloc] initWithFrame:CGRectMake(120, 10, 100, 500)];
 		dmSideMenu.backgroundColor = [[UIColor grayColor] colorWithAlphaComponent:0.9];
@@ -179,6 +196,17 @@
 		tut.layer.cornerRadius = 5;
 		[self addSubview:tut];
 		
+		UIButton * second = [[UIButton alloc] initWithFrame:CGRectMake(900, 650, 100, 100)];
+		second.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:.3];
+		second.layer.cornerRadius = 5;
+		second.titleLabel.lineBreakMode = UILineBreakModeWordWrap;
+		second.titleLabel.textAlignment = UITextAlignmentCenter;
+		[second setTitle:@"Start game" forState:UIControlStateNormal];
+		[second addTarget:self action:@selector(setVersion) forControlEvents:UIControlEventTouchUpInside];
+		[tut addSubview:second];
+		tut.second = second;
+		tut.second.hidden = YES;
+		
 		score.hidden = YES;
 		panel.hidden = YES;
 		dm.hidden = YES;
@@ -189,13 +217,42 @@
 }
 
 
-
-- (void) setVersion{
+- (void) changeGameVersion{
+	[self stopGameTimer];
+	int prevVersion = gameVersion;
+	BOOL check = NO;
+	for (int i=0; i<3; i++) {
+		if (versionsDone[i] == NO) {
+			check=YES;
+		}
+	}
+	if (!check) {
+		[tut showFirstScreen:gameVersion];
+		tut.hidden = NO;
+		return;
+	}
+	
 	do {
 		gameVersion = rand()%3;
 	} while (versionsDone[gameVersion] != NO);
 	
 	versionsDone[gameVersion] = YES;
+	
+	/*if (prevVersion != 3) {
+		// code for tutorial saying fill out form
+	}
+	else {
+		// first description tutorial
+	}*/
+	
+	[tut showFirstScreen:gameVersion];
+	tut.hidden = NO;
+
+	
+}
+- (void) setVersion{
+	gameVersion = 1;
+	[self startGameTimer];
 	tut.hidden = YES;
 	if ([[touchesArray objectAtIndex:0] count] > 0) {
 		[[touchesArray objectAtIndex:0] removeAllObjects];
@@ -207,6 +264,7 @@
 	if (gameVersion == 0) {
 		panel.hidden = YES;
 		dm.hidden = NO;
+		dm.frame = CGRectMake(10, 10, 100, 750);
 		[dm enable];
 		dmSideMenu.hidden = YES;
 		userRotation = NO;
@@ -422,9 +480,11 @@
 	else if (gameVersion == 1){
 		panel.hidden = NO;
 		[panel enable];
+		panel.restart.hidden = NO;
 		dm.hidden = YES;
 		dmSideMenu.hidden = YES;
 		
+		panel.frame = CGRectMake(10, 10, 100, 750);
 		
 		[self setMultipleTouchEnabled:YES]; 
 		
@@ -733,6 +793,16 @@
 		
         animating = TRUE;
     }
+}
+
+- (void) startGameTimer{
+	gameTimer = [NSTimer scheduledTimerWithTimeInterval:5 target:self selector:@selector(changeGameVersion) userInfo:nil repeats:FALSE];
+	
+	
+}
+- (void) stopGameTimer{
+	[gameTimer invalidate];
+	gameTimer = nil;
 }
 
 - (void)stopAnimation
@@ -1919,7 +1989,7 @@
 			if (rightGes) {
 				tutCounter++;
 				if (tutCounter == 3) {
-					[self setVersion];
+					[self changeGameVersion];
 				}
 			}
 		}
@@ -1969,7 +2039,7 @@
 			if (rightGes) {
 				tutCounter++;
 				if (tutCounter == 10) {
-					[self setVersion];
+					[self changeGameVersion];
 				}
 			}
 			

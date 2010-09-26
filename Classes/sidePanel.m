@@ -10,7 +10,7 @@
 
 
 @implementation sidePanel
-
+@synthesize restart;
 
 - (id)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
@@ -93,14 +93,18 @@
 	rock.hidden = YES;
 	moveT.hidden = YES;
 	other.frame = CGRectMake(10, 210, 80, 80);
+	restart.hidden = YES;
 	disabled = YES;
 	
 }
 
 - (void) enable{
+	NSLog(@"enabled");
 	rock.hidden = NO;
 	moveT.hidden = NO;
 	other.frame = CGRectMake(10, 410, 80, 80);
+	restart.hidden = NO;
+	restart.frame = CGRectMake(10, 660, 80, 80);
 	disabled = NO;
 	
 }

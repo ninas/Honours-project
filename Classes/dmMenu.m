@@ -16,6 +16,8 @@
 @synthesize rotateVis;
 @synthesize swapVis;
 @synthesize lineVis;
+@synthesize restart;
+
 
 - (id)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
@@ -89,12 +91,20 @@
 - (void) disable{
 	line.hidden = YES;
 	swap.hidden = YES;
+	rock.hidden = YES;
+	rotate.hidden = YES;
+	restart.frame = CGRectMake(10, 10, 80, 80);
+	restart.hidden = NO;
 }
 
 
 - (void) enable{
 	line.hidden = NO;
 	swap.hidden = NO;
+	rock.hidden = NO;
+	rotate.hidden = NO;
+	restart.hidden = NO;
+	restart.frame = CGRectMake(10, 660, 80, 80);
 }
 
 

@@ -13,9 +13,22 @@
 @interface tutorial : UIView {
 
 	UILabel * counter;
+	
+	UILabel * instructions;
 	int gesCounter;
 	int currentGesture;
+	NSMutableArray * text;
+	CGRect fullScreen;
+	UIButton * first;
+	UIButton * second;
+	int version;
+	BOOL wasTraining;
+	UITextView * description;
+	int gameCounter;
 }
 - (BOOL) incrementGes:(int)type;
+- (void) showFirstScreen:(int)vers;
+- (void) showSecondScreen;
 
+@property UIButton * second;
 @end

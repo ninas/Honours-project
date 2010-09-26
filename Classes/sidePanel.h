@@ -17,6 +17,7 @@
 	UIButton * moveT;
 	UIButton * rock;
 	UIButton * other;
+	UIButton * restart;
 	
 	gesturePanel * gestPanel;
 	
@@ -42,6 +43,6 @@
 - (void) disable;
 - (void) enable;
 
-
+@property UIButton * restart;
 
 @end

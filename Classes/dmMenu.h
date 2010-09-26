@@ -18,6 +18,7 @@
 	UIButton * moveT;
 	UIButton * rock;
 	UIButton * rotate;
+	UIButton * restart;
 	
 	dmSide * gestPanel;
 	
@@ -48,5 +49,6 @@
 @property BOOL rotateVis;
 @property BOOL lineVis;
 @property BOOL swapVis;
+@property (nonatomic, retain) UIButton * restart;
 
 @end

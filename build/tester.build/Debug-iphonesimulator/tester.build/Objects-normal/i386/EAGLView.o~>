@@ -1,0 +1,10 @@
+In file included from /Users/NSchiff/Documents/tester/Classes/EAGLView.h:17,
+                 from /Users/NSchiff/Documents/tester/Classes/EAGLView.m:9:
+/Users/NSchiff/Documents/tester/Classes/sidePanel.h:46: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed
+/Users/NSchiff/Documents/tester/Classes/sidePanel.h:46: warning: assign attribute (default) not appropriate for non-gc object property 'restart'
+In file included from /Users/NSchiff/Documents/tester/Classes/EAGLView.h:21,
+                 from /Users/NSchiff/Documents/tester/Classes/EAGLView.m:9:
+/Users/NSchiff/Documents/tester/Classes/tutorial.h:33: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed
+/Users/NSchiff/Documents/tester/Classes/tutorial.h:33: warning: assign attribute (default) not appropriate for non-gc object property 'second'
+/Users/NSchiff/Documents/tester/Classes/EAGLView.m: In function '-[EAGLView changeGameVersion]':
+/Users/NSchiff/Documents/tester/Classes/EAGLView.m:222: warning: unused variable 'prevVersion'

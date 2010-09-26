@@ -55,9 +55,9 @@
 		if (translateArray.count > 0) {
 			[translateArray removeAllObjects];
 		}
-		for (int x = 0; x<10; x++) {
-			for (int y = 0; y<10; y++) {
-				for (int z=0; z<10; z++) {
+		for (int x = 0; x<=10; x++) {
+			for (int y = 0; y<=10; y++) {
+				for (int z=0; z<=10; z++) {
 					if (blockPlace[x][y][z] == nil) {
 						block * temp = [[block alloc] init];
 						[temp setPosition:x-5 andY:y-5 andZ:z-5 andPlacement:blockPlace]; 
@@ -103,9 +103,9 @@
     [blockArray release];
 	[translateArray release];
 	
-	for (int x=0; x<10; x++) {
-		for (int y=0; y<10; y++) {
-			for (int z=0; z<10; z++) {
+	for (int x=0; x<=10; x++) {
+		for (int y=0; y<=10; y++) {
+			for (int z=0; z<=10; z++) {
 				[blockPlace[x][y][z] release];
 					 
 			}
@@ -1206,12 +1206,13 @@
 	
 	NSLog(@"Number to remove:   %d",toRemove.count);
 	
-	while (toRemove.count > 0) {
+	/*while (toRemove.count > 0) {
 		block * temp = [toRemove objectAtIndex:0];
 		[toRemove removeObjectAtIndex:0];
 		[temp release];
 		
-	}
+	}*/
+	[toRemove removeAllObjects];
 	[toRemove release];
 	
 }
