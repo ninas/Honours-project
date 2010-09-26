@@ -145,6 +145,7 @@
 		restart.titleLabel.textAlignment = UITextAlignmentCenter;
 		[restart setTitle:@"New game" forState:UIControlStateNormal];
 		[restart addTarget:mechanics action:@selector(restart) forControlEvents:UIControlEventTouchUpInside];
+		[restart addTarget:renderer action:@selector(resetMatrices) forControlEvents:UIControlEventTouchUpInside];
 		restart.adjustsImageWhenHighlighted = YES;
 		
 		
@@ -286,7 +287,7 @@
 	NSString *appFile = [documentsDirectory stringByAppendingPathComponent:@"gameLog.txt"];
 	
 	
-	NSMutableString * data = [NSMutableString stringWithString:@""];
+	NSMutableString * data = [NSMutableString stringWithString:[[NSDate  date] descriptionWithCalendarFormat:nil timeZone:nil locale:[[NSUserDefaults standardUserDefaults] dictionaryRepresentation]]];
 	if (prevVersion != 3) {
 		// write gesture info
 		
@@ -299,7 +300,7 @@
 		memset(gestureCounter, 0, sizeof(int)*13);
 	}
 	if (check) {
-		[data appendFormat:@"%d\n",gameVersion];
+		[data appendFormat:@"\n%d\n",gameVersion];
 	}
 	else {
 		
@@ -311,7 +312,7 @@
 	
 	
 	NSData *theData = [data dataUsingEncoding:NSUTF8StringEncoding];
-	
+	//[theData writeToFile:appFile atomically:YES];
 	if (appFile){
 		NSFileHandle *myHandle = [NSFileHandle fileHandleForUpdatingAtPath:appFile];
 		[myHandle seekToEndOfFile];
@@ -335,6 +336,7 @@
 	}
 	
 	[mechanics restart];
+	[renderer resetMatrices];
 	[renderer setBlockArray:mechanics.blockArray andTrans:mechanics.translateArray];
 	score.hidden = NO;
 	highScore.hidden = NO;

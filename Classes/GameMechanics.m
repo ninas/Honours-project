@@ -63,21 +63,28 @@
 		if (translateArray.count > 0) {
 			[translateArray removeAllObjects];
 		}
-		for (int x = 0; x<=10; x++) {
-			for (int y = 0; y<=10; y++) {
-				for (int z=0; z<=10; z++) {
-					if (blockPlace[x][y][z] == nil) {
+		
+		
+		
+		for (int x=-5; x<6; x++) {
+			
+			for (int y=-5; y<6; y++) {
+				
+				for (int z=-5; z<6; z++) {
+					
+					
+					
+					if (blockPlace[x+5][y+5][z+5] == nil) {
 						block * temp = [[block alloc] init];
-						[temp setPosition:x-5 andY:y-5 andZ:z-5 andPlacement:blockPlace]; 
-						blockPlace[x][y][z] = temp;
+						[temp setPosition:x andY:y andZ:z andPlacement:blockPlace]; 
+						blockPlace[x+5][y+5][z+5] = temp;
 						[blockArray addObject:temp];
 					}
 					else {
-						[blockPlace[x][y][z] setPosition:x-5 andY:y-5 andZ:z-5 andPlacement:blockPlace];
-						[blockPlace[x][y][z] reset];
-						[blockArray addObject:blockPlace[x][y][z]];
+						[blockPlace[x+5][y+5][z+5] setPosition:x andY:y andZ:z andPlacement:blockPlace];
+						[blockPlace[x+5][y+5][z+5] reset];
+						[blockArray addObject:blockPlace[x+5][y+5][z+5]];
 					}
-
 				}
 			}
 		}

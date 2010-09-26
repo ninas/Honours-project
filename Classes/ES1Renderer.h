@@ -74,4 +74,5 @@
 - (void) setTouchesArray:(NSMutableArray*)touches;
 - (void) clearTouches;
 - (void) resetCounterA;
+- (void) resetMatrices;
 @end

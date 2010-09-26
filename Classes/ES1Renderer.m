@@ -88,6 +88,20 @@
 	
 }
 
+- (void) resetMatrices{
+	currentCalculatedMatrix = CATransform3DIdentity;
+	rotatedMatix = CATransform3DIdentity;
+	check = NO;
+	blockSize = 15;
+	alphaVal = 255;
+	counterAlpha = 300;
+	doingRock = NO;
+	rotMult = 1.0;
+	inRed = NO;
+	extraRot = YES;
+	rotCounter = 0;
+}
+
 - (void) setTouchesArray:(NSMutableArray*)touches{
 	touchesArray = touches;
 }
