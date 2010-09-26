@@ -81,11 +81,11 @@
 	counterAlpha = 0;
 }
 - (void) setBlockArray:(NSMutableArray *) array andTrans:(NSMutableSet*)trans{
-	NSLog(@"Array set    %d", array.count);
+	
 	
 	blocks = array;
 	translate = trans;
-	NSLog(@"Array set    %d", blocks.count);
+	
 }
 
 - (void) setTouchesArray:(NSMutableArray*)touches{
@@ -141,7 +141,7 @@
 	}
 	else if ((xRot != 0 || yRot !=0 ) && xRotation ==0 && yRotation ==0){ // rotation ended
 		currentCalculatedMatrix = beginCalculatedMatrix;
-		NSLog(@"ending");
+		
 		if (doingRock) {
 			doingRock = NO;
 		}
@@ -161,7 +161,7 @@
 			yRot = -90;
 			xRot = 0;
 		}
-		NSLog(@"xRot: %f    yRot: %f",xRot, yRot);
+		
 		check = YES;
 		extraRot = YES;
 		rotCounter = 0;
@@ -529,7 +529,7 @@
 		
 		
 		if (extraRot && !doingRock) { // rotate around y
-			NSLog(@"Extra rotation");
+			
 			float xR=0.5*rotMult;
 			float yR = 0.5*rotMult;
 			GLfloat totalRotation = sqrt(xR*xR + yR*yR);

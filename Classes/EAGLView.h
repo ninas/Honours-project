@@ -116,6 +116,10 @@
 	
 	int * gestureCounter;
 	
+	UILabel * highScore;
+	
+	int highSc;
+	
 	
 }
 
@@ -140,6 +144,7 @@
 - (void) startGameTimer;
 - (void) stopGameTimer;
 - (void) changeGameVersion;
+- (void) readHighScore;
 
 
 @end

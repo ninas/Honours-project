@@ -125,9 +125,9 @@
 - (void) rowLeft{
 	adjustZ = YES;
 	block * swap = [self getBlock:startArray.x andY:startArray.y andZ:5];
-	NSLog(@"%d  -  %d",-currentZ+1,currentZ-1);
+	
 	if (swap==nil) {
-		NSLog(@"Returning nil");
+		
 		return;
 	}
 	gestureCounter[0]+=1;
@@ -135,7 +135,7 @@
 		currentZ = fabs(startArray.x);
 	}
 	
-	NSLog(@"Current z %d", currentZ);
+	
 	//swap = [self getBlock:currentZ andY:startArray.y andZ:currentZ];
 	int startX;
 	int startY ;
@@ -152,12 +152,12 @@
 	
 	
 	int tempPos[3];
-	NSLog(@"Start: %d %d %d",startX,startY,startZ);
+	
 	for (int j=currentZ-1; j>=-currentZ; j--) {
 		int tempPos[3] = {j,startArray.y,currentZ};
 		[self getPosition:tempPos];
 		//block * temp = [self getBlock:j andY:startArray.y andZ:currentZ];
-			NSLog(@"                  TempPos:  %d %d %d",tempPos[0], tempPos[1], tempPos[2]);
+			
 		block * temp = blockPlace[tempPos[0]+5][tempPos[1]+5][tempPos[2]+5];
 			blockPlace[tempPos[0]+5][tempPos[1]+5][tempPos[2]+5] = swap;
 		if (swap!=nil) {
@@ -186,7 +186,7 @@
 		int tempPos[3] = {-currentZ,startArray.y,j};
 		[self getPosition:tempPos];
 		//block * temp = [self getBlock:j andY:startArray.y andZ:currentZ];
-		NSLog(@"                  TempPos:  %d %d %d",tempPos[0], tempPos[1], tempPos[2]);
+		
 		block * temp = blockPlace[tempPos[0]+5][tempPos[1]+5][tempPos[2]+5];
 		blockPlace[tempPos[0]+5][tempPos[1]+5][tempPos[2]+5] = swap;
 		if (swap!=nil) {
@@ -209,13 +209,13 @@
 		}
 		swap = temp;
 	}
-	NSLog(@"%d  -  %d",-currentZ+1,currentZ-1);
+	
 	for (int j=-currentZ+1; j<=currentZ; j++) {
 		//block * temp = [self getBlock:j andY:startArray.y andZ:-currentZ];
 		int tempPos[3] = {j,startArray.y,-currentZ};
 		[self getPosition:tempPos];
 		//block * temp = [self getBlock:j andY:startArray.y andZ:currentZ];
-		NSLog(@"                  TempPos:  %d %d %d",tempPos[0], tempPos[1], tempPos[2]);
+		
 		block * temp = blockPlace[tempPos[0]+5][tempPos[1]+5][tempPos[2]+5];
 		blockPlace[tempPos[0]+5][tempPos[1]+5][tempPos[2]+5] = swap;
 		if (swap!=nil) {
@@ -239,14 +239,13 @@
 		}
 		swap = temp;
 	}
-	NSLog(@"%d  -  %d",-currentZ+1,currentZ-1);
+	
 	for (int j=-currentZ+1; j<=currentZ-1; j++) {
-		NSLog(@"4");
+		
 		//block * temp = [self getBlock:currentZ andY:startArray.y andZ:j];
 		int tempPos[3] = {currentZ,startArray.y,j};
 		[self getPosition:tempPos];
 		//block * temp = [self getBlock:j andY:startArray.y andZ:currentZ];
-		NSLog(@"                  TempPos:  %d %d %d",tempPos[0], tempPos[1], tempPos[2]);
 		block * temp = blockPlace[tempPos[0]+5][tempPos[1]+5][tempPos[2]+5];
 		blockPlace[tempPos[0]+5][tempPos[1]+5][tempPos[2]+5] = swap;
 		if (swap!=nil) {
@@ -296,9 +295,9 @@
 - (void) rowRight{
 	adjustZ = YES;
 	block * swap = [self getBlock:startArray.x andY:startArray.y andZ:5];
-	NSLog(@"%d  -  %d",-currentZ+1,currentZ-1);
+	
 	if (swap==nil) {
-		NSLog(@"Returning nil");
+		
 		return;
 	}
 	gestureCounter[1]+=1;
@@ -306,7 +305,7 @@
 		currentZ = fabs(startArray.x);
 	}
 	
-	NSLog(@"Current z %d", currentZ);
+	
 	//swap = [self getBlock:currentZ andY:startArray.y andZ:currentZ];
 		
 	int pos[3] = {-currentZ,startArray.y,currentZ};
@@ -321,7 +320,7 @@
 		int tempPos[3] = {j,startArray.y,currentZ};
 		[self getPosition:tempPos];
 		//block * temp = [self getBlock:j andY:startArray.y andZ:currentZ];
-		NSLog(@"                  TempPos:  %d %d %d",tempPos[0], tempPos[1], tempPos[2]);
+		
 		block * temp = blockPlace[tempPos[0]+5][tempPos[1]+5][tempPos[2]+5];
 		blockPlace[tempPos[0]+5][tempPos[1]+5][tempPos[2]+5] = swap;
 		if (swap!=nil) {
@@ -351,7 +350,7 @@
 		int tempPos[3] = {currentZ,startArray.y,j};
 		[self getPosition:tempPos];
 		//block * temp = [self getBlock:j andY:startArray.y andZ:currentZ];
-		NSLog(@"                  TempPos:  %d %d %d",tempPos[0], tempPos[1], tempPos[2]);
+		
 		block * temp = blockPlace[tempPos[0]+5][tempPos[1]+5][tempPos[2]+5];
 		blockPlace[tempPos[0]+5][tempPos[1]+5][tempPos[2]+5] = swap;
 		if (swap!=nil) {
@@ -374,13 +373,13 @@
 		}
 		swap = temp;
 	}
-	NSLog(@"%d  -  %d",-currentZ+1,currentZ-1);
+	
 	for (int j=currentZ-1; j>=-currentZ; j--) {
 		//block * temp = [self getBlock:j andY:startArray.y andZ:-currentZ];
 		int tempPos[3] = {j,startArray.y,-currentZ};
 		[self getPosition:tempPos];
 		//block * temp = [self getBlock:j andY:startArray.y andZ:currentZ];
-		NSLog(@"                  TempPos:  %d %d %d",tempPos[0], tempPos[1], tempPos[2]);
+		
 		block * temp = blockPlace[tempPos[0]+5][tempPos[1]+5][tempPos[2]+5];
 		blockPlace[tempPos[0]+5][tempPos[1]+5][tempPos[2]+5] = swap;
 		if (swap!=nil) {
@@ -403,14 +402,14 @@
 		}
 		swap = temp;
 	}
-	NSLog(@"%d  -  %d",-currentZ+1,currentZ-1);
+	
 	for (int j=-currentZ+1; j<=currentZ-1; j++) {
-		NSLog(@"4");
+		
 		//block * temp = [self getBlock:currentZ andY:startArray.y andZ:j];
 		int tempPos[3] = {-currentZ,startArray.y,j};
 		[self getPosition:tempPos];
 		//block * temp = [self getBlock:j andY:startArray.y andZ:currentZ];
-		NSLog(@"                  TempPos:  %d %d %d",tempPos[0], tempPos[1], tempPos[2]);
+		
 		block * temp = blockPlace[tempPos[0]+5][tempPos[1]+5][tempPos[2]+5];
 		blockPlace[tempPos[0]+5][tempPos[1]+5][tempPos[2]+5] = swap;
 		if (swap!=nil) {
@@ -1017,7 +1016,7 @@
 		}
 	}
 	
-	NSLog(@"Moving in");
+	
 		for (int x=0; x<=10; x++) {
 			for (int y=0; y<=10; y++) {
 				for (int z=1; z<=5; z++) {
@@ -1119,7 +1118,7 @@
 		counter++;
 	}
 	
-	NSLog(@"Count:   %d",translateArray.count);
+	
 }
 
 
@@ -1132,7 +1131,6 @@
 	// New touches are not yet included in the current touches for the view
 	startPos = CGPointMake(x, y);
 	//[[blockArray objectAtIndex:0] setPosition:(startPos.x-160)/160 andY:(startPos.y-240)/240 andZ:0];
-	NSLog(@"Start position:    %f %f",(startPos.x - 512)/512*15*1024/768/2.0,(startPos.y- 384)/384*-15/2.0);
 	float xPos = (startPos.x - 512)/512*15*1024/768/2.0;
 	float yPos = (startPos.y- 384)/384*-15/2.0;
 	float zPos = 5;
@@ -1151,8 +1149,7 @@
 	yPos = newY;
 	zPos= newZ;
 	
-	NSLog(@"Adjusted:  %f %f",xPos,yPos);
-	NSLog(@"Rounded:  %f %f",roundf(xPos), roundf(yPos) );
+	
 	
 	
 	
@@ -1160,7 +1157,7 @@
 	
 	startArray.x = roundf(xPos);
 	startArray.y = roundf(yPos);
-	NSLog(@"Start position:    %f %f",startArray.x,startArray.y);
+	
 }
 
 - (void) shuffle{
@@ -1202,11 +1199,11 @@
 		NSMutableSet * forScore = [NSMutableSet set];
 		[forScore addObjectsFromArray:toRemove];
 		score+=2*(forScore.count-3);
-		NSLog(@"Number removed %d    score: %d",forScore.count, score);
+		
 		
 	}
 	
-	NSLog(@"Number to remove:   %d",toRemove.count);
+	
 	
 	/*while (toRemove.count > 0) {
 		block * temp = [toRemove objectAtIndex:0];
@@ -1293,9 +1290,7 @@
 	}
 	
 	
-	NSLog(@"                     X axis:  %d  %d  %d",xAxis[0], xAxis[1], xAxis[2]);
-	NSLog(@"                     Y axis:  %d  %d  %d",yAxis[0], yAxis[1], yAxis[2]);
-	NSLog(@"                     Z axis:  %d  %d  %d",zAxis[0], zAxis[1], zAxis[2]);
+	
 	int z = 0;
 	
 	rotating = NO;

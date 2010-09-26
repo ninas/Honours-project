@@ -60,7 +60,7 @@ init
         
 		
         //NSLog(@"Printing Gestures");
-		[self print_gestures:root];
+		//[self print_gestures:root];
     }
     return self;
 }

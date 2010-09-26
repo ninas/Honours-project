@@ -125,6 +125,19 @@
 		score.font = [UIFont fontWithName: @"Marker Felt" size: 48];
 		[self addSubview:score];
 		
+		[self readHighScore];
+		
+		highScore = [[UILabel alloc] initWithFrame:CGRectMake(1005, 40, -220, 50)];
+		highScore.text=[NSString stringWithFormat:@"Best: %d", highSc];
+		highScore.textAlignment = UITextAlignmentRight;
+		highScore.backgroundColor = [UIColor clearColor];
+		highScore.textColor = [UIColor whiteColor];
+		highScore.font = [UIFont fontWithName: @"Marker Felt" size: 30];
+		[self addSubview:highScore];
+		
+		
+		
+		
 		restart = [[UIButton alloc] initWithFrame:CGRectMake(10, 310, 80, 80)];
 		restart.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:.3];
 		restart.layer.cornerRadius = 5;
@@ -227,6 +240,20 @@
     return self;
 }
 
+- (void) readHighScore{
+	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+	NSString *documentsDirectory = [paths objectAtIndex:0];
+	
+	
+	NSString *appFile = [documentsDirectory stringByAppendingPathComponent:@"highscore.txt"];
+	highSc = 0;
+	/* Reading */
+	if (appFile){
+		NSString *myText = [NSString stringWithContentsOfFile:appFile encoding:NSUTF8StringEncoding error:NULL];  
+		highSc = [myText intValue];
+	}
+		
+}
 
 - (void) changeGameVersion{
 	[self stopGameTimer];
@@ -246,7 +273,10 @@
 		
 	}
 	
-	
+	if (mechanics.score > highSc) {
+		highSc = mechanics.score;
+		highScore.text = [NSString stringWithFormat:@"Best: %d",highSc];
+	}
 	
 	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
 	NSString *documentsDirectory = [paths objectAtIndex:0];
@@ -270,6 +300,14 @@
 	if (check) {
 		[data appendFormat:@"%d\n",gameVersion];
 	}
+	else {
+		
+		NSString *appFile2 = [documentsDirectory stringByAppendingPathComponent:@"highscore.txt"];
+		NSData *theData = [[NSString stringWithFormat:@"%d",highSc] dataUsingEncoding:NSUTF8StringEncoding];
+		
+		[theData writeToFile:appFile2 atomically:YES];
+	}
+
 	
 	NSData *theData = [data dataUsingEncoding:NSUTF8StringEncoding];
 	
@@ -278,7 +316,7 @@
 			[myHandle seekToEndOfFile];
 			[myHandle writeData:theData];
 			[myHandle closeFile];
-			NSLog(@"writing2");
+			
 		}
 		
 		
@@ -672,7 +710,7 @@
 		dm.rotate.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:.7];
 		dm.rotateVis = YES;
 	}
-	NSLog(@"Rotate being called");
+	
 	for (int i=0; i<10; i++) {
 		dmSwitches[i]=NO;
 	}
@@ -840,7 +878,7 @@
 }
 
 - (void) startGameTimer{
-	gameTimer = [NSTimer scheduledTimerWithTimeInterval:10 target:self selector:@selector(changeGameVersion) userInfo:nil repeats:FALSE];
+	gameTimer = [NSTimer scheduledTimerWithTimeInterval:420 target:self selector:@selector(changeGameVersion) userInfo:nil repeats:FALSE];
 	
 	
 }
@@ -923,7 +961,7 @@
 - (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     
 	[super touchesBegan:touches withEvent:event];	
-	NSLog(@"Touches began");
+	
 	if (gameVersion != 0) {
 		renderer.inRed = NO;
 		NSArray * array = [touches allObjects];
@@ -1117,7 +1155,7 @@
                     angle[0] = [[[packed1 objectAtIndex:0] objectAtIndex:2] floatValue];
                     [stateMachine doesGestureStateExistWithAngle:angle AndTouch:1];
 					[packed1 removeObjectAtIndex:0];
-					NSLog(@"One touch 1");
+					
 				}
 				else if (numTouches == 2 && packed2.count != 0 && packed3.count == 0){
 					checkValue = NO;
@@ -1137,7 +1175,7 @@
 					
 					[packed1 removeObjectAtIndex:0];
 					[packed2 removeObjectAtIndex:0];
-					NSLog(@"Two touches 1, 2");
+					
 				}
 				else if (numTouches == 2 && packed3.count != 0 && packed2.count == 0){
 					checkValue = NO;
@@ -1156,11 +1194,9 @@
 					[stateMachine endOfGestureStateRecogniser];
 					[packed1 removeObjectAtIndex:0];
 					[packed3 removeObjectAtIndex:0];
-					NSLog(@"Two touches 1, 3");
+					
 				}
-				else{
-					NSLog(@"Ignored for now 1");
-				}
+				
 			}
             
 		}
@@ -1181,7 +1217,7 @@
                     angles[0] = [[[packed2 objectAtIndex:0] objectAtIndex:2] floatValue];
                     [stateMachine doesGestureStateExistWithAngle:angles AndTouch:1];
 					[packed2 removeObjectAtIndex:0];
-					NSLog(@"One touch 2");
+					
 				}
 				else if (numTouches == 2 && packed1.count != 0 && packed3.count == 0){
 					checkValue = NO;
@@ -1200,7 +1236,7 @@
 					[stateMachine endOfGestureStateRecogniser];
 					[packed1 removeObjectAtIndex:0];
 					[packed2 removeObjectAtIndex:0];
-					NSLog(@"Two touches 2, 1");
+					
 				}
 				else if (numTouches == 2 && packed3.count != 0 && packed1.count == 0){
 					checkValue = NO;
@@ -1219,7 +1255,7 @@
 					[stateMachine endOfGestureStateRecogniser];
 					[packed2 removeObjectAtIndex:0];
 					[packed3 removeObjectAtIndex:0];
-					NSLog(@"Two touches 2, 3");
+					
 				}
 				/*else if (numTouches == 3 && packed3.count != 0 && packed1.count != 0){
 				 /* FUNCTION CALL GOES HERE
@@ -1253,9 +1289,7 @@
 				 [packed3 removeObjectAtIndex:0];
 				 NSLog(@"Three touches 2, 1, 3");
 				 }*/
-				else{
-					NSLog(@"Ignored for now 2");
-				}
+				
 			}
             
 		}
@@ -1276,7 +1310,7 @@
                     angle[0] = [[[packed3 objectAtIndex:0] objectAtIndex:2] floatValue];
                     [stateMachine doesGestureStateExistWithAngle:angle AndTouch:1];
 					[packed3 removeObjectAtIndex:0];
-					NSLog(@"One touch 3");
+					
 				}
 				else if (numTouches == 2 && packed2.count != 0 && packed1.count == 0){
 					checkValue = NO;
@@ -1296,7 +1330,7 @@
 					[stateMachine endOfGestureStateRecogniser];
 					[packed2 removeObjectAtIndex:0];
 					[packed3 removeObjectAtIndex:0];
-					NSLog(@"Two touches 3, 2");
+					
 				}
 				else if (numTouches == 2 && packed1.count != 0 && packed2.count == 0){
 					checkValue = NO;
@@ -1315,7 +1349,7 @@
 					[stateMachine endOfGestureStateRecogniser];
 					[packed1 removeObjectAtIndex:0];
 					[packed3 removeObjectAtIndex:0];
-					NSLog(@"Two touches 3, 1");
+					
 				}
 				/*else if (numTouches == 3 && packed1.count != 0 && packed2.count != 0){
 				 /* FUNCTION CALL GOES HERE
@@ -1348,9 +1382,7 @@
 				 [packed3 removeObjectAtIndex:0];
 				 NSLog(@"Three touches 3, 2, 1");
 				 }*/
-				else{
-					NSLog(@"Ignored for now 3");
-				}
+				
 			}
             
 		}
@@ -1390,7 +1422,7 @@
 		[packed2 removeAllObjects];
 		[packed3 removeAllObjects];
 		[renderer clearTouches];
-		NSLog(@"Three touches 1, 2, 3");
+		
 	}
     
 	//[self setNeedsDisplay];
@@ -1486,7 +1518,7 @@
 				if (recognition1.tap) {
 					[mechanics setEnd:([[[packed1 lastObject] objectAtIndex:0] CGPointValue]).x andY:([[[packed1 lastObject] objectAtIndex:0] CGPointValue]).y];
 					[mechanics removeBlocks];
-					NSLog(@"Single tap");
+					
 					[packed1 removeObjectAtIndex:0];
 					continue;
 				}
@@ -1502,7 +1534,7 @@
                 angles[0] = [[[packed1 objectAtIndex:0] objectAtIndex:2] floatValue];
                 [stateMachine doesGestureStateExistWithAngle:angles AndTouch:1];          
 				[packed1 removeObjectAtIndex:0];
-				NSLog(@"One touch 1");
+				
 			}
 			/*else if (numTouches == 2 && packed2.count != 0 && packed3.count == 0){
 			 /* FUNCTION CALL GOES HERE
@@ -1578,11 +1610,9 @@
 				[packed1 removeObjectAtIndex:0];
 				[packed2 removeObjectAtIndex:0];
 				[packed3 removeObjectAtIndex:0];
-				NSLog(@"Three touches 1, 2, 3");
+				
 			}
-			else{
-				NSLog(@"Ignored for now 1");
-			}
+			
             
             
 		}
@@ -1602,7 +1632,7 @@
 				if (recognition2.tap) {
 					[mechanics setEnd:([[[packed2 lastObject] objectAtIndex:0] CGPointValue]).x andY:([[[packed2 lastObject] objectAtIndex:0] CGPointValue]).y];
 					[mechanics removeBlocks];
-					NSLog(@"Single tap");
+					
 					[packed2 removeObjectAtIndex:0];
 					continue;
 				}
@@ -1618,7 +1648,7 @@
                 [stateMachine doesGestureStateExistWithAngle:angle AndTouch:1];
                 
 				[packed2 removeObjectAtIndex:0];
-				NSLog(@"One touch 2");
+				
 			}
 			/*else if (numTouches == 2 && packed1.count != 0 && packed3.count == 0){
 			 /* FUNCTION CALL GOES HERE
@@ -1687,11 +1717,9 @@
 				[packed1 removeObjectAtIndex:0];
 				[packed2 removeObjectAtIndex:0];
 				[packed3 removeObjectAtIndex:0];
-				NSLog(@"Three touches 2, 1, 3");
+				
 			}
-			else{
-				NSLog(@"Ignored for now 2");
-			}			
+					
             
 		}
 		else if (touch3 == touch) {
@@ -1709,7 +1737,7 @@
 				if (recognition3.tap) {
 					[mechanics setEnd:([[[packed3 lastObject] objectAtIndex:0] CGPointValue]).x andY:([[[packed3 lastObject] objectAtIndex:0] CGPointValue]).y];
 					[mechanics removeBlocks];
-					NSLog(@"Single tap");
+					
 					[packed3 removeObjectAtIndex:0];
 					continue;
 				}
@@ -1725,7 +1753,7 @@
                 [stateMachine doesGestureStateExistWithAngle:angle AndTouch:1];
                 
 				[packed3 removeObjectAtIndex:0];
-				NSLog(@"One touch 3");
+				
 			}
 			else if (numTouches == 3 && packed1.count != 0 && packed2.count != 0){
 				checkValue = NO;
@@ -1752,20 +1780,18 @@
 				[packed1 removeObjectAtIndex:0];
 				[packed2 removeObjectAtIndex:0];
 				[packed3 removeObjectAtIndex:0];
-				NSLog(@"Three touches 3, 2, 1");
+				
 			}
-			else{
-				NSLog(@"Ignored for now 3");
-			}
+			
             
             
 		}
         
 	}
-	NSLog(@"End and num touches: %d   %d", numTouches,endCount);
+	
     int originalNum = numTouches;
 	if ((touch1 == nil && touch2 !=nil && touch3!=nil) || (touch2==nil && touch1!=nil && touch2!=nil) || (touch3==nil && touch1!=nil && touch2!=nil)) {
-		NSLog(@"Doing rotation for 2");
+		
 		checkValue = NO;
 		[stateMachine endOfGestureStateRecogniser];
 		if (lastDist.x == 0 && lastDist.y == 0) {
@@ -1804,7 +1830,7 @@
 		touch3 = nil;
 	}
 	else if (endCount == numTouches && endCount!=0) {
-		NSLog(@"Removing last ones   %d", endCount);
+		
 		numTouches = 0;
 		endCount = 0;
 		touch1 = nil;
@@ -1956,13 +1982,13 @@
     
     [stateMachine endOfGestureStateRecogniser];
 	char* type = [stateMachine getGestureType];
-	NSLog(@"%s found", type);
+	
 	
 	if (type != NULL && originalNum==1 && checkValue && gameVersion!=3){
 		NSString * descrip =[[NSString string] init];
 		if(strcmp(type, "left") == 0) {
 			[mechanics rowLeft];
-			NSLog(@"Calling left");
+			
 			descrip = @"Row left";
 			
 		}
@@ -2038,7 +2064,7 @@
 			
 			descrip = @"Gesture found";
 			rightGes = [tut incrementGes:0];
-			[self changeGameVersion];
+			
 			
 		}
 		else if (strcmp(type, "right") == 0){

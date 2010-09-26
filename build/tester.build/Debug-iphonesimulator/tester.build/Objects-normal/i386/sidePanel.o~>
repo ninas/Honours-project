@@ -1,0 +1,3 @@
+In file included from /Users/NSchiff/Documents/tester/Classes/sidePanel.m:9:
+/Users/NSchiff/Documents/tester/Classes/sidePanel.h:46: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed
+/Users/NSchiff/Documents/tester/Classes/sidePanel.h:46: warning: assign attribute (default) not appropriate for non-gc object property 'restart'
