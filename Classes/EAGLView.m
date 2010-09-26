@@ -253,7 +253,7 @@
 		highSc = [myText intValue];
 		mechanics.highScore = &highSc;
 	}
-		
+	
 }
 
 - (void) changeGameVersion{
@@ -308,22 +308,22 @@
 		
 		[theData writeToFile:appFile2 atomically:YES];
 	}
-
+	
 	
 	NSData *theData = [data dataUsingEncoding:NSUTF8StringEncoding];
 	
-		if (appFile){
-			NSFileHandle *myHandle = [NSFileHandle fileHandleForUpdatingAtPath:appFile];
-			[myHandle seekToEndOfFile];
-			[myHandle writeData:theData];
-			[myHandle closeFile];
-			
-		}
+	if (appFile){
+		NSFileHandle *myHandle = [NSFileHandle fileHandleForUpdatingAtPath:appFile];
+		[myHandle seekToEndOfFile];
+		[myHandle writeData:theData];
+		[myHandle closeFile];
 		
-		
+	}
+	
+	
 	[tut showFirstScreen:gameVersion];
 	tut.hidden = NO;
-
+	
 	
 }
 - (void) setVersion{
@@ -1103,7 +1103,10 @@
 	}
 	else if (numTouches == 3){
 		checkValue = NO;
-		panelStart = [[[touchesArray objectAtIndex:0] objectAtIndex:0] CGPointValue];
+		if ([[touchesArray objectAtIndex:0] count] > 0) {
+			panelStart = [[[touchesArray objectAtIndex:0] objectAtIndex:0] CGPointValue];
+		}
+		
 	}
 	else {
 		checkValue = NO;
@@ -1113,7 +1116,7 @@
 			
 		}
 		else{
-		[mechanics setStart:0 andY:0];
+			[mechanics setStart:0 andY:0];
 		}
 		[stateMachine endOfGestureStateRecogniser];
 	}
@@ -1517,7 +1520,7 @@
 			}
 			if (numTouches == 1) {
 				
-				if (recognition1.tap) {
+				if (recognition1.tap && gameVersion!=3) {
 					[mechanics setEnd:([[[packed1 lastObject] objectAtIndex:0] CGPointValue]).x andY:([[[packed1 lastObject] objectAtIndex:0] CGPointValue]).y];
 					[mechanics removeBlocks];
 					
@@ -1631,7 +1634,7 @@
 			}
             
 			if (numTouches == 1) {
-				if (recognition2.tap) {
+				if (recognition2.tap && gameVersion!=3) {
 					[mechanics setEnd:([[[packed2 lastObject] objectAtIndex:0] CGPointValue]).x andY:([[[packed2 lastObject] objectAtIndex:0] CGPointValue]).y];
 					[mechanics removeBlocks];
 					
@@ -1721,7 +1724,7 @@
 				[packed3 removeObjectAtIndex:0];
 				
 			}
-					
+			
             
 		}
 		else if (touch3 == touch) {
@@ -1736,7 +1739,7 @@
 			}
 			if (numTouches == 1) {
 				
-				if (recognition3.tap) {
+				if (recognition3.tap && gameVersion!=3) {
 					[mechanics setEnd:([[[packed3 lastObject] objectAtIndex:0] CGPointValue]).x andY:([[[packed3 lastObject] objectAtIndex:0] CGPointValue]).y];
 					[mechanics removeBlocks];
 					
@@ -2066,7 +2069,7 @@
 			
 			descrip = @"Gesture found";
 			rightGes = [tut incrementGes:0];
-			[self changeGameVersion];
+			
 			
 		}
 		else if (strcmp(type, "right") == 0){

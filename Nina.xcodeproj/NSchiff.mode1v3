@@ -216,7 +216,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>0F93985C124FC40100C3AB0A</string>
+						<string>0F93986A124FDAE500C3AB0A</string>
 						<key>history</key>
 						<array>
 							<string>0F93980E124FB4BE00C3AB0A</string>
@@ -256,7 +256,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>0F93985D124FC40100C3AB0A</string>
+						<string>0F93986B124FDAE500C3AB0A</string>
 						<key>history</key>
 						<array>
 							<string>0F93980F124FB4BE00C3AB0A</string>
@@ -415,7 +415,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>0F93985B124FC40100C3AB0A</string>
+										<string>0F939869124FDAE500C3AB0A</string>
 										<key>history</key>
 										<array>
 											<string>0F4E050811CBC6570038827E</string>
@@ -470,8 +470,8 @@
 											<string>0F939821124FB5D800C3AB0A</string>
 											<string>0F939848124FB79700C3AB0A</string>
 											<string>0F939854124FC38100C3AB0A</string>
-											<string>0F939855124FC38100C3AB0A</string>
-											<string>0F939856124FC38100C3AB0A</string>
+											<string>0F939867124FDAE500C3AB0A</string>
+											<string>0F939868124FDAE500C3AB0A</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -669,12 +669,13 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>0F93986C124FDAE500C3AB0A</string>
 		<string>0F93983B124FB68200C3AB0A</string>
 		<string>0F939832124FB5D800C3AB0A</string>
 		<string>1CD10A99069EF8BA00B06720</string>
-		<string>0F63978D11C68C6500DB3577</string>
 		<string>0F93947D124E8A1700C3AB0A</string>
 		<string>0F9393F8124E82EE00C3AB0A</string>
+		<string>0F63978D11C68C6500DB3577</string>
 		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/NSchiff/Documents/tester/Nina.xcodeproj</string>
 	</array>
@@ -717,6 +718,8 @@
 							<string>363pt</string>
 						</dict>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -769,7 +772,7 @@
 			<key>WindowToolGUID</key>
 			<string>0F63978D11C68C6500DB3577</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>FirstTimeWindowDisplayed</key>
