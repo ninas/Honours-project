@@ -186,6 +186,28 @@
 		[self addSubview:secLabel];
 		secLabel.hidden = YES;
 		
+		images = [[NSMutableArray alloc] init];
+		
+		[images addObject:@"rowL.png"];
+		[images addObject:@"rowR.png"];
+		[images addObject:@"colU.png"];
+		[images addObject:@"colD.png"];
+		[images addObject:@"backward.png"];
+		[images addObject:@"forward.png"];
+		
+		
+		[images addObject:@"sL.png"];
+		[images addObject:@"sR.png"];
+		[images addObject:@"sD.png"];
+		[images addObject:@"sU.png"];
+		[images addObject:@"square.png"];
+		[images addObject:@"z.png"];
+		
+		imageView = [[UIImageView alloc] initWithFrame:CGRectMake(200, 100, 200, 200)];
+		imageView.opaque = YES;
+		[self addSubview:imageView];
+		imageView.hidden = YES;
+		
 	}
 	
 	return self;
@@ -194,11 +216,13 @@
 - (void) rowLeft:(id)select{
 	descripLabel.hidden = NO;
 	secLabel.hidden = NO;
+	imageView.hidden = NO;
 	for (int i=0; i<lineButtons.count; i++) {
 		UIButton * temp = [lineButtons objectAtIndex:i];
 		if (temp == select) {
 			temp.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:.7];
 			descripLabel.text = [descriptions objectAtIndex:i];
+			[imageView setImage:[UIImage imageNamed:[images objectAtIndex:i]]];
 		}
 		else {
 			temp.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:.3];
@@ -210,11 +234,13 @@
 - (void) swapMen:(id)select{
 	descripLabel.hidden = NO;
 	secLabel.hidden = NO;
+	imageView.hidden = NO;
 	for (int i=0; i<swapButtons.count; i++) {
 		UIButton * temp = [swapButtons objectAtIndex:i];
 		if (temp == select) {
 			temp.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:.7];
 			descripLabel.text = [descriptions objectAtIndex:i+6];
+			[imageView setImage:[UIImage imageNamed:[images objectAtIndex:i+6]]];
 		}
 		else {
 			temp.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:.3];
@@ -226,6 +252,7 @@
 - (void) setupLine{
 	
 	otherControls.hidden = YES;
+	imageView.hidden = YES;
 	for (int i=0; i<lineButtons.count; i++) {
 		[[lineButtons objectAtIndex:i] setHidden:NO];
 		[[lineButtons objectAtIndex:i] setBackgroundColor:[[UIColor whiteColor] colorWithAlphaComponent:.3]];
@@ -242,6 +269,7 @@
 
 - (void) setupSwap{
 	otherControls.hidden = YES;
+	imageView.hidden = YES;
 	for (int i=0; i<lineButtons.count; i++) {
 		[[lineButtons objectAtIndex:i] setHidden:YES];
 		[[lineButtons objectAtIndex:i] setBackgroundColor:[[UIColor whiteColor] colorWithAlphaComponent:.3]];
@@ -258,6 +286,7 @@
 - (void) setupOther:(int)num{
 	otherControls.hidden = YES;
 	descripLabel.hidden = NO;
+	imageView.hidden = YES;
 	secLabel.hidden = NO;
 	for (int i=0; i<lineButtons.count; i++) {
 		[[lineButtons objectAtIndex:i] setHidden:YES];
@@ -274,17 +303,21 @@
 	if (num == 0) {
 		// move together
 		descripLabel.text = @"Moves blocks together, removing any gaps";
+		[imageView setImage:[UIImage imageNamed:[images objectAtIndex:11]]];
+		imageView.hidden = NO;
 	}
 	else if (num == 1){
 		// rocking cube
 		descripLabel.text = @"Rocks shape slightly";
-		
+		[imageView setImage:[UIImage imageNamed:[images objectAtIndex:10]]];
+		imageView.hidden = NO;
 	}
 	else {
 		// other options
 		descripLabel.hidden = YES;
 		otherControls.hidden = NO;
 		secLabel.hidden = YES;
+		imageView.hidden = YES;
 	}
 	
 }

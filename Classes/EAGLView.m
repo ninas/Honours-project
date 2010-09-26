@@ -840,7 +840,7 @@
 }
 
 - (void) startGameTimer{
-	gameTimer = [NSTimer scheduledTimerWithTimeInterval:5 target:self selector:@selector(changeGameVersion) userInfo:nil repeats:FALSE];
+	gameTimer = [NSTimer scheduledTimerWithTimeInterval:10 target:self selector:@selector(changeGameVersion) userInfo:nil repeats:FALSE];
 	
 	
 }
@@ -2038,12 +2038,8 @@
 			
 			descrip = @"Gesture found";
 			rightGes = [tut incrementGes:0];
-			if (rightGes) {
-				tutCounter++;
-				if (tutCounter == 3) {
-					[self changeGameVersion];
-				}
-			}
+			[self changeGameVersion];
+			
 		}
 		else if (strcmp(type, "right") == 0){
 			descrip = @"Gesture found";

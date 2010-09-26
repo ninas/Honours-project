@@ -32,6 +32,18 @@
 		<data>
 		qHkNEcqHRhALVqY0pHN5Wuhrg/w=
 		</data>
+		<key>backward.png</key>
+		<data>
+		PCleX8DJmOUyC/UwYE/o+vLhFHg=
+		</data>
+		<key>colD.png</key>
+		<data>
+		3FmkU9dmgpVDHNN5wKgxaadkxxs=
+		</data>
+		<key>colU.png</key>
+		<data>
+		q7Lh7+V4dUn409OBHaQM9wAr3DU=
+		</data>
 		<key>diagonalDown.gesture</key>
 		<data>
 		mlGij8J+Mw6I5h7Yp2guPpOLrzk=
@@ -48,6 +60,10 @@
 		<data>
 		XHsrQr5uTqKQhWkz3u3Y6PVJ+ho=
 		</data>
+		<key>forward.png</key>
+		<data>
+		PcatsgEWNV3/70cRSz3h6RLNpx8=
+		</data>
 		<key>left.gesture</key>
 		<data>
 		wlQxCPBl1hIqYLG4dUWGL2SeIZY=
@@ -56,6 +72,30 @@
 		<data>
 		bvZuDYko8PyG9gdNj3tP3sM9BJU=
 		</data>
+		<key>rowL.png</key>
+		<data>
+		wvNawed1TNv0nC76/rVD6GSAiM8=
+		</data>
+		<key>rowR.png</key>
+		<data>
+		Lt5ml62PxYF4jRmfDJHHVatCxTg=
+		</data>
+		<key>sD.png</key>
+		<data>
+		6XFzL3FD+I6vTX7CgvApNGSPoUc=
+		</data>
+		<key>sL.png</key>
+		<data>
+		w5snFg5zAs1GaI6OClFMiEZusPs=
+		</data>
+		<key>sR.png</key>
+		<data>
+		e7nekCRpVegeSB4pImEgod89SXU=
+		</data>
+		<key>sU.png</key>
+		<data>
+		vRB7GrUM5kSNOXGvJO9/O+TWtTM=
+		</data>
 		<key>spiralout.gesture</key>
 		<data>
 		YaHnc/UFWtmACynK42HQt6RSO0o=
@@ -63,6 +103,10 @@
 		<key>square.gesture</key>
 		<data>
 		zn/XrXUpi0I/cppdoV6bd8guoOs=
+		</data>
+		<key>square.png</key>
+		<data>
+		Bmqqalw9+W55vUkd7vfYnKmJvow=
 		</data>
 		<key>swapDown.gesture</key>
 		<data>
@@ -91,6 +135,10 @@
 		<key>z.gesture</key>
 		<data>
 		uT9Egu0om1YZKH+FjkbNRUgyDaY=
+		</data>
+		<key>z.png</key>
+		<data>
+		UxQ6D7lygRtJTuKptNgfCNqD0CE=
 		</data>
 	</dict>
 	<key>rules</key>

@@ -23,6 +23,8 @@
 	UITextView * otherControls;
 	UILabel * descripLabel;
 	UILabel * secLabel;
+	UIImageView * imageView;
+	NSMutableArray * images;
 	
 }
 

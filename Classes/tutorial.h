@@ -25,6 +25,10 @@
 	BOOL wasTraining;
 	UITextView * description;
 	int gameCounter;
+	UIImageView * imageView;
+	NSMutableArray * images;
+	
+	UILabel * instruct2;
 }
 - (BOOL) incrementGes:(int)type;
 - (void) showFirstScreen:(int)vers;

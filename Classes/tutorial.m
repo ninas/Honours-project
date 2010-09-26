@@ -22,8 +22,20 @@
 		instructions.textColor = [UIColor whiteColor];
 		instructions.lineBreakMode = UILineBreakModeWordWrap;
 		instructions.textAlignment = UITextAlignmentCenter;
+		instructions.font = [UIFont systemFontOfSize:18];
 		
 		[self addSubview:instructions];
+		
+		instruct2 = [[UILabel alloc] initWithFrame:CGRectMake(10, 30, 380, 100)];
+		instruct2.lineBreakMode = UILineBreakModeWordWrap;
+		instruct2.textAlignment = UITextAlignmentCenter;
+		instruct2.text = @"The black dot indicates the beginning of the gesture.";
+		instruct2.font = [UIFont systemFontOfSize:15];
+		instruct2.backgroundColor = [UIColor clearColor] ;
+		instruct2.textColor = [UIColor whiteColor];
+		
+		
+		[self addSubview:instruct2];
 		
 		
 		counter = [[UILabel alloc] initWithFrame:CGRectMake(340, 270, 50, 35)];
@@ -83,6 +95,33 @@
 		[self addSubview:description];
 		description.hidden = YES;
 		gameCounter = 0;
+		
+		images = [[NSMutableArray alloc] init];
+		
+		[images addObject:@"rowL.png"];
+		[images addObject:@"rowR.png"];
+		[images addObject:@"colU.png"];
+		[images addObject:@"colD.png"];
+		[images addObject:@"forward.png"];
+		[images addObject:@"backward.png"];
+		[images addObject:@"z.png"];
+		[images addObject:@"sL.png"];
+		[images addObject:@"sR.png"];
+		[images addObject:@"sD.png"];
+		[images addObject:@"sU.png"];
+		[images addObject:@"square.png"];
+		
+		imageView = [[UIImageView alloc] initWithFrame:CGRectMake(100, 100, 200, 200)];
+		imageView.opaque = YES;
+		[self addSubview:imageView];
+		[imageView setImage:[UIImage imageNamed:[images objectAtIndex:currentGesture]]];
+		
+		/*CGRect myImageRect = CGRectMake(0.0f, 0.0f, 320.0f, 109.0f);
+		UIImageView *myImage = [[UIImageView alloc] initWithFrame:myImageRect];
+		[myImage setImage:[UIImage imageNamed:@"myImage.png"]];
+		myImage.opaque = YES; // explicitly opaque for performance
+		[self.view addSubview:myImage];
+		[myImage release];*/
 	}
 	
 	return self;
@@ -99,6 +138,10 @@
 		gesCounter = 10;
 		currentGesture++;
 		// load next gesture
+		if (currentGesture < 12) {
+			[imageView setImage:[UIImage imageNamed:[images objectAtIndex:currentGesture]]];
+		}
+		
 	}
 	
 	counter.text = [NSString stringWithFormat:@"%d", gesCounter];
@@ -109,6 +152,8 @@
 	self.frame = fullScreen;
 	self.backgroundColor = [UIColor grayColor];
 	second.hidden = YES;
+	imageView.hidden = YES;
+	instruct2.hidden = YES;
 	instructions.hidden = NO;
 	counter.hidden = YES;
 	version = vers;
