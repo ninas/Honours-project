@@ -101,7 +101,8 @@
 - (void) enable{
 	line.hidden = NO;
 	swap.hidden = NO;
-	rock.hidden = NO;
+	rock.hidden = YES;
+	//rock.frame = CGRectMake(10, 310, 80, 80);
 	rotate.hidden = NO;
 	restart.hidden = NO;
 	restart.frame = CGRectMake(10, 660, 80, 80);

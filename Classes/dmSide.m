@@ -74,6 +74,7 @@
 	
 	for (int i=0; i<lineButtons.count; i++) {
 		[[lineButtons objectAtIndex:i] setHidden:YES];
+		[[lineButtons objectAtIndex:i] setBackgroundColor:[[UIColor whiteColor] colorWithAlphaComponent:.3]];
 	}
 	
 	
@@ -84,14 +85,16 @@
 	otherControls.hidden = YES;
 	for (int i=0; i<lineButtons.count; i++) {
 		[[lineButtons objectAtIndex:i] setHidden:YES];
+		[[lineButtons objectAtIndex:i] setBackgroundColor:[[UIColor whiteColor] colorWithAlphaComponent:.3]];
 	}
 	
 	for (int i=0; i<swapButtons.count; i++) {
 		[[swapButtons objectAtIndex:i] setHidden:NO];
+		[[swapButtons objectAtIndex:i] setBackgroundColor:[[UIColor whiteColor] colorWithAlphaComponent:.3]];
 	}
 	
 	for (int i=0; i<rotateButtons.count; i++) {
-		[[rotateButtons objectAtIndex:i] setHidden:NO];
+		[[rotateButtons objectAtIndex:i] setHidden:YES];
 		[[rotateButtons objectAtIndex:i] setBackgroundColor:[[UIColor whiteColor] colorWithAlphaComponent:.3]];
 	}
 	

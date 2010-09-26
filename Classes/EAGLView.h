@@ -107,6 +107,7 @@
 	NSMutableArray * swapButtons;
 	NSMutableArray * rotateButtons;
 	UIButton * restart;
+	UIButton * restart2;
 	int tutCounter;
 	BOOL dmSwitches[10];
 	

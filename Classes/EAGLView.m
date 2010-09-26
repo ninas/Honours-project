@@ -146,13 +146,22 @@
 		panel.restart = restart;
 		[panel addSubview:restart];
 		
+		restart2 = [[UIButton alloc] initWithFrame:CGRectMake(10, 310, 80, 80)];
+		restart2.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:.3];
+		restart2.layer.cornerRadius = 5;
+		restart2.titleLabel.lineBreakMode = UILineBreakModeWordWrap;
+		restart2.titleLabel.textAlignment = UITextAlignmentCenter;
+		[restart2 setTitle:@"New game" forState:UIControlStateNormal];
+		[restart2 addTarget:mechanics action:@selector(restart) forControlEvents:UIControlEventTouchUpInside];
+		restart2.adjustsImageWhenHighlighted = YES;
+		
 		dm = [[dmMenu alloc] initWithFrame:CGRectMake(10, 10, 100, 750)];
 		dm.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:.3];
 		dm.layer.cornerRadius = 5;
 		[self addSubview:dm];
 		[dm setup:mechanics];
-		dm.restart = restart;
-		[dm addSubview:restart];
+		dm.restart = restart2;
+		[dm addSubview:restart2];
 		
 		dmSideMenu = [[dmSide alloc] initWithFrame:CGRectMake(120, 10, 100, 500)];
 		dmSideMenu.backgroundColor = [[UIColor grayColor] colorWithAlphaComponent:0.9];
@@ -251,7 +260,7 @@
 	
 }
 - (void) setVersion{
-	gameVersion = 1;
+	
 	[self startGameTimer];
 	tut.hidden = YES;
 	if ([[touchesArray objectAtIndex:0] count] > 0) {
@@ -263,9 +272,12 @@
 	score.hidden = NO;
 	if (gameVersion == 0) {
 		panel.hidden = YES;
+		[panel hideWindow];
+		
 		dm.hidden = NO;
 		dm.frame = CGRectMake(10, 10, 100, 750);
 		[dm enable];
+		[dm clearOthers];
 		dmSideMenu.hidden = YES;
 		userRotation = NO;
 		
@@ -479,8 +491,9 @@
 	}
 	else if (gameVersion == 1){
 		panel.hidden = NO;
+		[panel hideWindow];
 		[panel enable];
-		panel.restart.hidden = NO;
+		
 		dm.hidden = YES;
 		dmSideMenu.hidden = YES;
 		
@@ -492,7 +505,9 @@
 	else if (gameVersion == 2){
 		panel.hidden = NO;
 		[panel disable];
+		[panel hideWindow];
 		dm.hidden = NO;
+		[dm clearOthers];
 		dmSideMenu.hidden = YES;
 		dm.frame = CGRectMake(10, 10, 100, 300);
 		panel.frame = CGRectMake(10, 460, 100, 300);
