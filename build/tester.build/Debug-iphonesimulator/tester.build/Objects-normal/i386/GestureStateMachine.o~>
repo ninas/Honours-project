@@ -1,0 +1,4 @@
+/Users/NSchiff/Documents/tester/Classes/GestureStateMachine.m: In function '-[GestureStateMachine canReadGestureFile:]':
+/Users/NSchiff/Documents/tester/Classes/GestureStateMachine.m:73: warning: 'stringWithContentsOfFile:' is deprecated (declared at /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSString.h:361)
+/Users/NSchiff/Documents/tester/Classes/GestureStateMachine.m: In function '-[GestureStateMachine processGestureRelations:]':
+/Users/NSchiff/Documents/tester/Classes/GestureStateMachine.m:88: warning: initialization discards qualifiers from pointer target type

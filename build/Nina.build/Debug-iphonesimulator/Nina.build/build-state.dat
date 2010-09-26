@@ -1,0 +1,1384 @@
+TNina
+v7
+r0
+t307217280.680559
+cCheck dependencies
+cProcessInfoPlistFile /Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app/Info.plist Nina-Info.plist
+cCpResource build/Debug-iphonesimulator/Nina.app/Shader.fsh Shaders/Shader.fsh
+cCpResource build/Debug-iphonesimulator/Nina.app/Shader.vsh Shaders/Shader.vsh
+cCompileXIB /Users/NSchiff/Documents/tester/MainWindow.xib
+cCompileXIB /Users/NSchiff/Documents/tester/Classes/ViewController.xib
+cCpResource build/Debug-iphonesimulator/Nina.app/v.gesture v.gesture
+cCpResource build/Debug-iphonesimulator/Nina.app/2down.gesture 2down.gesture
+cCpResource build/Debug-iphonesimulator/Nina.app/3down.gesture 3down.gesture
+cCpResource build/Debug-iphonesimulator/Nina.app/spiralout.gesture spiralout.gesture
+cCpResource build/Debug-iphonesimulator/Nina.app/left.gesture left.gesture
+cCpResource build/Debug-iphonesimulator/Nina.app/right.gesture right.gesture
+cCpResource build/Debug-iphonesimulator/Nina.app/up.gesture up.gesture
+cCpResource build/Debug-iphonesimulator/Nina.app/down.gesture down.gesture
+cCpResource build/Debug-iphonesimulator/Nina.app/diagonalUp.gesture diagonalUp.gesture
+cCpResource build/Debug-iphonesimulator/Nina.app/z.gesture z.gesture
+cCpResource build/Debug-iphonesimulator/Nina.app/swapLeft.gesture swapLeft.gesture
+cCpResource build/Debug-iphonesimulator/Nina.app/swapRight.gesture swapRight.gesture
+cCpResource build/Debug-iphonesimulator/Nina.app/swapUp.gesture swapUp.gesture
+cCpResource build/Debug-iphonesimulator/Nina.app/swapDown.gesture swapDown.gesture
+cCpResource build/Debug-iphonesimulator/Nina.app/diagonalDown.gesture diagonalDown.gesture
+cCpResource build/Debug-iphonesimulator/Nina.app/square.gesture square.gesture
+cCpResource build/Debug-iphonesimulator/Nina.app/backward.png backward.png
+cCpResource build/Debug-iphonesimulator/Nina.app/colD.png colD.png
+cCpResource build/Debug-iphonesimulator/Nina.app/colU.png colU.png
+cCpResource build/Debug-iphonesimulator/Nina.app/forward.png forward.png
+cCpResource build/Debug-iphonesimulator/Nina.app/rowL.png rowL.png
+cCpResource build/Debug-iphonesimulator/Nina.app/rowR.png rowR.png
+cCpResource build/Debug-iphonesimulator/Nina.app/sD.png sD.png
+cCpResource build/Debug-iphonesimulator/Nina.app/sL.png sL.png
+cCpResource build/Debug-iphonesimulator/Nina.app/square.png square.png
+cCpResource build/Debug-iphonesimulator/Nina.app/sR.png sR.png
+cCpResource build/Debug-iphonesimulator/Nina.app/sU.png sU.png
+cCpResource build/Debug-iphonesimulator/Nina.app/z.png z.png
+cCpResource build/Debug-iphonesimulator/Nina.app/icon.png icon.png
+cProcessPCH /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Nina_Prefix-fyffsniitaqkzmgwljjhvmpfgrty/Nina_Prefix.pch.gch Nina_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/main.o /Users/NSchiff/Documents/tester/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/testerAppDelegate.o /Users/NSchiff/Documents/tester/Classes/testerAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/EAGLView.o /Users/NSchiff/Documents/tester/Classes/EAGLView.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/ES1Renderer.o /Users/NSchiff/Documents/tester/Classes/ES1Renderer.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/ES2Renderer.o /Users/NSchiff/Documents/tester/Classes/ES2Renderer.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/block.o /Users/NSchiff/Documents/tester/Classes/block.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/ViewController.o /Users/NSchiff/Documents/tester/Classes/ViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/GestureStateMachine.o /Users/NSchiff/Documents/tester/Classes/GestureStateMachine.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/recognition.o /Users/NSchiff/Documents/tester/Classes/recognition.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/StateMachineNode.o /Users/NSchiff/Documents/tester/Classes/StateMachineNode.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/GameMechanics.o /Users/NSchiff/Documents/tester/Classes/GameMechanics.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/sidePanel.o /Users/NSchiff/Documents/tester/Classes/sidePanel.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/gesturePanel.o /Users/NSchiff/Documents/tester/Classes/gesturePanel.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/dmMenu.o /Users/NSchiff/Documents/tester/Classes/dmMenu.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/dmSide.o /Users/NSchiff/Documents/tester/Classes/dmSide.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/tutorial.o /Users/NSchiff/Documents/tester/Classes/tutorial.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app/Nina normal i386
+cGenerateDSYMFile /Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app.dSYM /Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app/Nina
+cTouch /Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk
+c000000004C1650370000000000000110
+t1276530743
+s272
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004B9F1DE40000000000289C20
+t1268719076
+s2661408
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004B9F1DD60000000000001355
+t1268719062
+s4949
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/EAGL.h
+c000000004B9F2660000000000000094F
+t1268721248
+s2383
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/EAGLDrawable.h
+c000000004B9F26600000000000000A61
+t1268721248
+s2657
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES1/gl.h
+c000000004B9F26600000000000009369
+t1268721248
+s37737
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES1/glext.h
+c000000004B9F26600000000000002A42
+t1268721248
+s10818
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES2/gl.h
+c000000004B9F266000000000000082AD
+t1268721248
+s33453
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES2/glext.h
+c000000004B9F26600000000000001617
+t1268721248
+s5655
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/OpenGLES.framework/OpenGLES
+c000000004B9F266D000000000001F9F0
+t1268721261
+s129520
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.h
+c000000004B9F26A3000000000000007D
+t1268721315
+s125
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+c000000004B9F27B9000000000011BF20
+t1268721593
+s1163040
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004BA6CAEC000000000000098F
+t1269222124
+s2447
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004BA6CB31000000000214E400
+t1269222193
+s34923520
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/usr/include/Availability.h
+c000000004B9F1E7D0000000000001A1A
+t1268719229
+s6682
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/usr/include/math.h
+c000000004748A10600000000000004B7
+t1195942150
+s1207
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/usr/include/time.h
+c000000004748A133000000000000178E
+t1195942195
+s6030
+
+N/Users/NSchiff/Documents/tester/2down.gesture
+c000000004C9633EC0000000000000022
+t1284912108
+s34
+
+N/Users/NSchiff/Documents/tester/3down.gesture
+c000000004C9633EC0000000000000017
+t1284912108
+s23
+
+N/Users/NSchiff/Documents/tester/Classes/EAGLView.h
+c000000004C9F73560000000000000CEF
+t1285518166
+s3311
+i<UIKit/UIKit.h>
+i<QuartzCore/QuartzCore.h>
+i"ES1Renderer.h"
+i"block.h"
+i"GameMechanics.h"
+i"GestureStateMachine.h"
+i"recognition.h"
+i"sidePanel.h"
+i"gesturePanel.h"
+i"dmMenu.h"
+i"dmSide.h"
+i"tutorial.h"
+
+N/Users/NSchiff/Documents/tester/Classes/EAGLView.m
+c000000004C9F8C7A0000000000010711
+t1285524602
+s67345
+i"EAGLView.h"
+i"ES1Renderer.h"
+i"ES2Renderer.h"
+i"block.h"
+i<math.h>
+i"time.h"
+
+N/Users/NSchiff/Documents/tester/Classes/ES1Renderer.h
+c000000004C9E00BE0000000000000771
+t1285423294
+s1905
+i"ESRenderer.h"
+i<OpenGLES/EAGL.h>
+i<OpenGLES/EAGLDrawable.h>
+i<OpenGLES/ES1/gl.h>
+i<OpenGLES/ES1/glext.h>
+i"block.h"
+
+N/Users/NSchiff/Documents/tester/Classes/ES1Renderer.m
+c000000004C9F770C0000000000005409
+t1285519116
+s21513
+i"ES1Renderer.h"
+
+N/Users/NSchiff/Documents/tester/Classes/ES2Renderer.h
+c000000004C1653790000000000000281
+t1276531577
+s641
+i"ESRenderer.h"
+i<OpenGLES/ES2/gl.h>
+i<OpenGLES/ES2/glext.h>
+
+N/Users/NSchiff/Documents/tester/Classes/ES2Renderer.m
+c000000004C1B8683000000000000220B
+t1276872323
+s8715
+i"ES2Renderer.h"
+
+N/Users/NSchiff/Documents/tester/Classes/ESRenderer.h
+c000000004C2200260000000000000192
+t1277296678
+s402
+i<QuartzCore/QuartzCore.h>
+i<OpenGLES/EAGL.h>
+i<OpenGLES/EAGLDrawable.h>
+
+N/Users/NSchiff/Documents/tester/Classes/GameMechanics.h
+c000000004C9F8B8400000000000005C4
+t1285524356
+s1476
+i<Foundation/Foundation.h>
+i"block.h"
+
+N/Users/NSchiff/Documents/tester/Classes/GameMechanics.m
+c000000004C9F8BA20000000000007AAA
+t1285524386
+s31402
+i"GameMechanics.h"
+
+N/Users/NSchiff/Documents/tester/Classes/GestureStateMachine.h
+c000000004C962BD50000000000000417
+t1284910037
+s1047
+i<Foundation/Foundation.h>
+i"StateMachineNode.h"
+i<math.h>
+
+N/Users/NSchiff/Documents/tester/Classes/GestureStateMachine.m
+c000000004C9F776C0000000000002D06
+t1285519212
+s11526
+i"GestureStateMachine.h"
+
+N/Users/NSchiff/Documents/tester/Classes/StateMachineNode.h
+c000000004C961D760000000000000362
+t1284906358
+s866
+i<Foundation/Foundation.h>
+
+N/Users/NSchiff/Documents/tester/Classes/StateMachineNode.m
+c000000004C961D760000000000000514
+t1284906358
+s1300
+i"StateMachineNode.h"
+
+N/Users/NSchiff/Documents/tester/Classes/ViewController.h
+c000000004C9F1CE80000000000000166
+t1285496040
+s358
+i<UIKit/UIKit.h>
+i"GestureStateMachine.h"
+
+N/Users/NSchiff/Documents/tester/Classes/ViewController.m
+c000000004C9F77B100000000000005EB
+t1285519281
+s1515
+i"ViewController.h"
+i"EAGLView.h"
+
+N/Users/NSchiff/Documents/tester/Classes/ViewController.xib
+c000000004C90EA60000000000000421F
+t1284565600
+s16927
+
+N/Users/NSchiff/Documents/tester/Classes/block.h
+c000000004C9E3EC800000000000003D4
+t1285439176
+s980
+i<Foundation/Foundation.h>
+
+N/Users/NSchiff/Documents/tester/Classes/block.m
+c000000004C9E3EDD0000000000000A84
+t1285439197
+s2692
+i"block.h"
+i<math.h>
+
+N/Users/NSchiff/Documents/tester/Classes/dmMenu.h
+c000000004C9F28BC00000000000003C0
+t1285499068
+s960
+i<UIKit/UIKit.h>
+i<QuartzCore/QuartzCore.h>
+i"dmSide.h"
+i"GameMechanics.h"
+
+N/Users/NSchiff/Documents/tester/Classes/dmMenu.m
+c000000004C9F4BC8000000000000182D
+t1285508040
+s6189
+i"dmMenu.h"
+
+N/Users/NSchiff/Documents/tester/Classes/dmSide.h
+c000000004C9E2BB30000000000000377
+t1285434291
+s887
+i<UIKit/UIKit.h>
+i<QuartzCore/QuartzCore.h>
+i"GameMechanics.h"
+
+N/Users/NSchiff/Documents/tester/Classes/dmSide.m
+c000000004C9F4E2C0000000000000B51
+t1285508652
+s2897
+i"dmSide.h"
+
+N/Users/NSchiff/Documents/tester/Classes/gesturePanel.h
+c000000004C9F6FC000000000000002C2
+t1285517248
+s706
+i<UIKit/UIKit.h>
+i<QuartzCore/QuartzCore.h>
+
+N/Users/NSchiff/Documents/tester/Classes/gesturePanel.m
+c000000004C9F72680000000000003239
+t1285517928
+s12857
+i"gesturePanel.h"
+
+N/Users/NSchiff/Documents/tester/Classes/recognition.h
+c000000004C9787810000000000000726
+t1284999041
+s1830
+i<Foundation/Foundation.h>
+
+N/Users/NSchiff/Documents/tester/Classes/recognition.m
+c000000004C9F77740000000000002CDB
+t1285519220
+s11483
+i"recognition.h"
+
+N/Users/NSchiff/Documents/tester/Classes/sidePanel.h
+c000000004C9F226100000000000002F7
+t1285497441
+s759
+i<UIKit/UIKit.h>
+i<QuartzCore/QuartzCore.h>
+i"gesturePanel.h"
+
+N/Users/NSchiff/Documents/tester/Classes/sidePanel.m
+c000000004C9F77B400000000000026BA
+t1285519284
+s9914
+i"sidePanel.h"
+
+N/Users/NSchiff/Documents/tester/Classes/testerAppDelegate.h
+c000000004C90E86C00000000000001E4
+t1284565100
+s484
+i<UIKit/UIKit.h>
+i"ViewController.h"
+
+N/Users/NSchiff/Documents/tester/Classes/testerAppDelegate.m
+c000000004C90E8750000000000000394
+t1284565109
+s916
+i"testerAppDelegate.h"
+
+N/Users/NSchiff/Documents/tester/Classes/tutorial.h
+c000000004C9F6D7500000000000002AC
+t1285516661
+s684
+i<UIKit/UIKit.h>
+i<QuartzCore/QuartzCore.h>
+
+N/Users/NSchiff/Documents/tester/Classes/tutorial.m
+c000000004C9F80060000000000001E93
+t1285521414
+s7827
+i"tutorial.h"
+
+N/Users/NSchiff/Documents/tester/MainWindow.xib
+c000000004C90EC810000000000005238
+t1284566145
+s21048
+
+N/Users/NSchiff/Documents/tester/Nina_Prefix.pch
+c000000004C1653790000000000000136
+t1276531577
+s310
+i<Availability.h>
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/NSchiff/Documents/tester/Shaders/Shader.fsh
+c000000004C16537900000000000000DB
+t1276531577
+s219
+
+N/Users/NSchiff/Documents/tester/Shaders/Shader.vsh
+c000000004C1653790000000000000161
+t1276531577
+s353
+
+N/Users/NSchiff/Documents/tester/backward.png
+c000000004C9F61000000000000001084
+t1285513472
+s4228
+
+N/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app
+t1285524480
+s1292
+
+N/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app.dSYM
+t1285524480
+s102
+
+N/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app/2down.gesture
+t1285520979
+s34
+
+N/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app/3down.gesture
+t1285520979
+s23
+
+N/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app/Info.plist
+t1285520979
+s640
+
+N/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app/MainWindow.nib
+t1285520979
+s1126
+
+N/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app/Nina
+t1285524480
+s218448
+
+N/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app/PkgInfo
+t1285520979
+s8
+
+N/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app/Shader.fsh
+t1285520979
+s219
+
+N/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app/Shader.vsh
+t1285520979
+s353
+
+N/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app/ViewController.nib
+t1285520979
+s847
+
+N/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app/backward.png
+t1285520979
+s4228
+
+N/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app/colD.png
+t1285520979
+s2380
+
+N/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app/colU.png
+t1285520979
+s2295
+
+N/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app/diagonalDown.gesture
+t1285520979
+s34
+
+N/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app/diagonalUp.gesture
+t1285520979
+s34
+
+N/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app/down.gesture
+t1285520979
+s25
+
+N/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app/forward.png
+t1285520979
+s4362
+
+N/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app/icon.png
+t1285520979
+s1874
+
+N/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app/left.gesture
+t1285520979
+s25
+
+N/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app/right.gesture
+t1285520979
+s25
+
+N/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app/rowL.png
+t1285520979
+s2430
+
+N/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app/rowR.png
+t1285520979
+s2409
+
+N/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app/sD.png
+t1285520979
+s1197
+
+N/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app/sL.png
+t1285520979
+s1131
+
+N/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app/sR.png
+t1285520979
+s1163
+
+N/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app/sU.png
+t1285520979
+s1182
+
+N/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app/spiralout.gesture
+t1285520979
+s77
+
+N/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app/square.gesture
+t1285520979
+s37
+
+N/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app/square.png
+t1285520979
+s1906
+
+N/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app/swapDown.gesture
+t1285520979
+s15
+
+N/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app/swapLeft.gesture
+t1285520979
+s15
+
+N/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app/swapRight.gesture
+t1285520979
+s14
+
+N/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app/swapUp.gesture
+t1285520979
+s12
+
+N/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app/up.gesture
+t1285520979
+s23
+
+N/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app/v.gesture
+t1285520979
+s18
+
+N/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app/z.gesture
+t1285520979
+s23
+
+N/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app/z.png
+t1285520979
+s3711
+
+N/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/EAGLView.o
+t1285524480
+s137504
+
+N/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/ES1Renderer.o
+t1285520982
+s32124
+
+N/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/ES2Renderer.o
+t1285520982
+s21884
+
+N/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/GameMechanics.o
+t1285524480
+s61240
+
+N/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/GestureStateMachine.o
+t1285520982
+s23748
+
+N/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/Nina.LinkFileList
+c000000004C9F7E53000000000000073A
+t1285520979
+s1850
+
+N/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/StateMachineNode.o
+t1285520982
+s12840
+
+N/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/ViewController.o
+t1285524478
+s46300
+
+N/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/block.o
+t1285520982
+s18320
+
+N/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/dmMenu.o
+t1285524480
+s43096
+
+N/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/dmSide.o
+t1285524480
+s32028
+
+N/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/gesturePanel.o
+t1285520983
+s55084
+
+N/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/main.o
+t1285520982
+s5928
+
+N/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/recognition.o
+t1285520983
+s25932
+
+N/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/sidePanel.o
+t1285520983
+s48876
+
+N/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/testerAppDelegate.o
+t1285520982
+s43400
+
+N/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/tutorial.o
+t1285521416
+s41564
+
+N/Users/NSchiff/Documents/tester/colD.png
+c000000004C9F5FFE000000000000094C
+t1285513214
+s2380
+
+N/Users/NSchiff/Documents/tester/colU.png
+c000000004C9F601A00000000000008F7
+t1285513242
+s2295
+
+N/Users/NSchiff/Documents/tester/diagonalDown.gesture
+c000000004C9B68940000000000000022
+t1285253268
+s34
+
+N/Users/NSchiff/Documents/tester/diagonalUp.gesture
+c000000004C9B68BE0000000000000022
+t1285253310
+s34
+
+N/Users/NSchiff/Documents/tester/down.gesture
+c000000004C9B3FCB0000000000000019
+t1285242827
+s25
+
+N/Users/NSchiff/Documents/tester/forward.png
+c000000004C9F60F0000000000000110A
+t1285513456
+s4362
+
+N/Users/NSchiff/Documents/tester/icon.png
+c000000004C9F792F0000000000000752
+t1285519663
+s1874
+
+N/Users/NSchiff/Documents/tester/left.gesture
+c000000004C9B3FE00000000000000019
+t1285242848
+s25
+
+N/Users/NSchiff/Documents/tester/main.m
+c000000004C98A41A0000000000000174
+t1285071898
+s372
+i<UIKit/UIKit.h>
+
+N/Users/NSchiff/Documents/tester/right.gesture
+c000000004C9B3FED0000000000000019
+t1285242861
+s25
+
+N/Users/NSchiff/Documents/tester/rowL.png
+c000000004C9F6042000000000000097E
+t1285513282
+s2430
+
+N/Users/NSchiff/Documents/tester/rowR.png
+c000000004C9F60280000000000000969
+t1285513256
+s2409
+
+N/Users/NSchiff/Documents/tester/sD.png
+c000000004C9F606600000000000004AD
+t1285513318
+s1197
+
+N/Users/NSchiff/Documents/tester/sL.png
+c000000004C9F609C000000000000046B
+t1285513372
+s1131
+
+N/Users/NSchiff/Documents/tester/sR.png
+c000000004C9F608E000000000000048B
+t1285513358
+s1163
+
+N/Users/NSchiff/Documents/tester/sU.png
+c000000004C9F6078000000000000049E
+t1285513336
+s1182
+
+N/Users/NSchiff/Documents/tester/spiralout.gesture
+c000000004C9633EC000000000000004D
+t1284912108
+s77
+
+N/Users/NSchiff/Documents/tester/square.gesture
+c000000004C9CA5880000000000000025
+t1285334408
+s37
+
+N/Users/NSchiff/Documents/tester/square.png
+c000000004C9F612A0000000000000772
+t1285513514
+s1906
+
+N/Users/NSchiff/Documents/tester/swapDown.gesture
+c000000004C9B66C5000000000000000F
+t1285252805
+s15
+
+N/Users/NSchiff/Documents/tester/swapLeft.gesture
+c000000004C9B6690000000000000000F
+t1285252752
+s15
+
+N/Users/NSchiff/Documents/tester/swapRight.gesture
+c000000004C9B668C000000000000000E
+t1285252748
+s14
+
+N/Users/NSchiff/Documents/tester/swapUp.gesture
+c000000004C9B66AA000000000000000C
+t1285252778
+s12
+
+N/Users/NSchiff/Documents/tester/up.gesture
+c000000004C9B3FA50000000000000017
+t1285242789
+s23
+
+N/Users/NSchiff/Documents/tester/v.gesture
+c000000004C961D760000000000000012
+t1284906358
+s18
+
+N/Users/NSchiff/Documents/tester/z.gesture
+c000000004C9A27270000000000000017
+t1285170983
+s23
+
+N/Users/NSchiff/Documents/tester/z.png
+c000000004C9F61500000000000000E7F
+t1285513552
+s3711
+
+N/var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Nina_Prefix-fyffsniitaqkzmgwljjhvmpfgrty/Nina_Prefix.pch.gch
+t1285520981
+s13797264
+
+NNina-Info.plist
+c000000004C9F79F200000000000003F6
+t1285519858
+s1014
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies307217276#307217276#0(0"0(0#1#0"4300911832#0"0#
+
+CCompileC build/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/EAGLView.o /Users/NSchiff/Documents/tester/Classes/EAGLView.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s307217276.102818
+e307217280.479278
+r1
+xCompileC
+xbuild/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/EAGLView.o
+x/Users/NSchiff/Documents/tester/Classes/EAGLView.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+oIn file included from /Users/NSchiff/Documents/tester/Classes/EAGLView.h:17,
+o                 from /Users/NSchiff/Documents/tester/Classes/EAGLView.m:9:
+o/Users/NSchiff/Documents/tester/Classes/sidePanel.h:46: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed
+o/Users/NSchiff/Documents/tester/Classes/sidePanel.h:46: warning: assign attribute (default) not appropriate for non-gc object property 'restart'
+oIn file included from /Users/NSchiff/Documents/tester/Classes/EAGLView.h:21,
+o                 from /Users/NSchiff/Documents/tester/Classes/EAGLView.m:9:
+o/Users/NSchiff/Documents/tester/Classes/tutorial.h:37: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed
+o/Users/NSchiff/Documents/tester/Classes/tutorial.h:37: warning: assign attribute (default) not appropriate for non-gc object property 'second'
+lSLF07#2@58"Compile /Users/NSchiff/Documents/tester/Classes/EAGLView.m307217276#307217280#0(879"In file included from /Users/NSchiff/Documents/tester/Classes/EAGLView.h:17,                 from /Users/NSchiff/Documents/tester/Classes/EAGLView.m:9:/Users/NSchiff/Documents/tester/Classes/sidePanel.h:46: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed/Users/NSchiff/Documents/tester/Classes/sidePanel.h:46: warning: assign attribute (default) not appropriate for non-gc object property 'restart'In file included from /Users/NSchiff/Documents/tester/Classes/EAGLView.h:21,                 from /Users/NSchiff/Documents/tester/Classes/EAGLView.m:9:/Users/NSchiff/Documents/tester/Classes/tutorial.h:37: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed/Users/NSchiff/Documents/tester/Classes/tutorial.h:37: warning: assign attribute (default) not appropriate for non-gc object property 'second'4(22@77"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed307217277#153#143#3(7@72"In file included from /Users/NSchiff/Documents/tester/Classes/EAGLView.m307217277#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/EAGLView.m307217273#9#0#9#0#0"0(7@72"In file included from /Users/NSchiff/Documents/tester/Classes/EAGLView.h307217277#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/EAGLView.h307210966#17#0#17#0#0"0(13@132"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed in /Users/NSchiff/Documents/tester/Classes/sidePanel.h307217277#18446744073709551615#0#0(6@51"/Users/NSchiff/Documents/tester/Classes/sidePanel.h307190241#46#0#46#0#0"0(6@51"/Users/NSchiff/Documents/tester/Classes/sidePanel.h307190241#46#0#46#0#0"0(22@79"Assign attribute (default) not appropriate for non-gc object property 'restart'307217277#296#145#3(7@72"In file included from /Users/NSchiff/Documents/tester/Classes/EAGLView.m307217277#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/EAGLView.m307217273#9#0#9#0#0"0(7@72"In file included from /Users/NSchiff/Documents/tester/Classes/EAGLView.h307217277#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/EAGLView.h307210966#17#0#17#0#0"0(13@134"Assign attribute (default) not appropriate for non-gc object property 'restart' in /Users/NSchiff/Documents/tester/Classes/sidePanel.h307217277#18446744073709551615#0#0(6@51"/Users/NSchiff/Documents/tester/Classes/sidePanel.h307190241#46#0#46#0#0"0(6@51"/Users/NSchiff/Documents/tester/Classes/sidePanel.h307190241#46#0#46#0#0"0(22@77"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed307217277#594#142#3(7@72"In file included from /Users/NSchiff/Documents/tester/Classes/EAGLView.m307217277#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/EAGLView.m307217273#9#0#9#0#0"0(7@72"In file included from /Users/NSchiff/Documents/tester/Classes/EAGLView.h307217277#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/EAGLView.h307210966#21#0#21#0#0"0(13@131"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed in /Users/NSchiff/Documents/tester/Classes/tutorial.h307217277#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/tutorial.h307209461#37#0#37#0#0"0(6@50"/Users/NSchiff/Documents/tester/Classes/tutorial.h307209461#37#0#37#0#0"0(22@78"Assign attribute (default) not appropriate for non-gc object property 'second'307217277#736#143#3(7@72"In file included from /Users/NSchiff/Documents/tester/Classes/EAGLView.m307217277#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/EAGLView.m307217273#9#0#9#0#0"0(7@72"In file included from /Users/NSchiff/Documents/tester/Classes/EAGLView.h307217277#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/EAGLView.h307210966#21#0#21#0#0"0(13@132"Assign attribute (default) not appropriate for non-gc object property 'second' in /Users/NSchiff/Documents/tester/Classes/tutorial.h307217277#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/tutorial.h307209461#37#0#37#0#0"0(6@50"/Users/NSchiff/Documents/tester/Classes/tutorial.h307209461#37#0#37#0#0"0(0#0#50"/Users/NSchiff/Documents/tester/Classes/EAGLView.m4300911832#1744"    cd /Users/NSchiff/Documents/tester    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Nina-generated-files.hmap -I/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Nina-own-target-headers.hmap -I/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Nina-all-target-headers.hmap -iquote /Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Nina-project-headers.hmap -F/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator -I/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/include -I/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/DerivedSources/i386 -I/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/DerivedSources -include /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Nina_Prefix-fyffsniitaqkzmgwljjhvmpfgrty/Nina_Prefix.pch -c /Users/NSchiff/Documents/tester/Classes/EAGLView.m -o /Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/EAGLView.o0#
+
+CCompileC build/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/ES1Renderer.o /Users/NSchiff/Documents/tester/Classes/ES1Renderer.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s307213782.159351
+e307213782.312234
+r1
+xCompileC
+xbuild/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/ES1Renderer.o
+x/Users/NSchiff/Documents/tester/Classes/ES1Renderer.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@61"Compile /Users/NSchiff/Documents/tester/Classes/ES1Renderer.m307213782#307213782#0(0"0(0#0#53"/Users/NSchiff/Documents/tester/Classes/ES1Renderer.m4300911832#1750"    cd /Users/NSchiff/Documents/tester    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Nina-generated-files.hmap -I/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Nina-own-target-headers.hmap -I/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Nina-all-target-headers.hmap -iquote /Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Nina-project-headers.hmap -F/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator -I/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/include -I/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/DerivedSources/i386 -I/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/DerivedSources -include /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Nina_Prefix-fyffsniitaqkzmgwljjhvmpfgrty/Nina_Prefix.pch -c /Users/NSchiff/Documents/tester/Classes/ES1Renderer.m -o /Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/ES1Renderer.o0#
+
+CCompileC build/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/ES2Renderer.o /Users/NSchiff/Documents/tester/Classes/ES2Renderer.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s307213782.312338
+e307213782.439769
+r1
+xCompileC
+xbuild/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/ES2Renderer.o
+x/Users/NSchiff/Documents/tester/Classes/ES2Renderer.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/NSchiff/Documents/tester/Classes/ES2Renderer.m:325: warning: incomplete implementation of class 'ES2Renderer'
+o/Users/NSchiff/Documents/tester/Classes/ES2Renderer.m:325: warning: method definition for '-renderByRotatingAroundX:rotatingAroundY:' not found
+o/Users/NSchiff/Documents/tester/Classes/ES2Renderer.m:325: warning: class 'ES2Renderer' does not fully implement the 'ESRenderer' protocol
+lSLF07#2@61"Compile /Users/NSchiff/Documents/tester/Classes/ES2Renderer.m307213782#307213782#0(400"/Users/NSchiff/Documents/tester/Classes/ES2Renderer.m:325: warning: incomplete implementation of class 'ES2Renderer'/Users/NSchiff/Documents/tester/Classes/ES2Renderer.m:325: warning: method definition for '-renderByRotatingAroundX:rotatingAroundY:' not found/Users/NSchiff/Documents/tester/Classes/ES2Renderer.m:325: warning: class 'ES2Renderer' does not fully implement the 'ESRenderer' protocol3(22@48"Incomplete implementation of class 'ES2Renderer'307213782#0#117#0(6@53"/Users/NSchiff/Documents/tester/Classes/ES2Renderer.m298565123#325#0#325#0#38"incomplete implementation of class '*'0(22@75"Method definition for '-renderByRotatingAroundX:rotatingAroundY:' not found307213782#117#144#0(6@53"/Users/NSchiff/Documents/tester/Classes/ES2Renderer.m298565123#325#0#325#0#35"method definition for '*' not found0(22@70"Class 'ES2Renderer' does not fully implement the 'ESRenderer' protocol307213782#261#139#0(6@53"/Users/NSchiff/Documents/tester/Classes/ES2Renderer.m298565123#325#0#325#0#51"class '*' does not fully implement the '*' protocol0(0#0#53"/Users/NSchiff/Documents/tester/Classes/ES2Renderer.m4300911832#1750"    cd /Users/NSchiff/Documents/tester    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Nina-generated-files.hmap -I/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Nina-own-target-headers.hmap -I/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Nina-all-target-headers.hmap -iquote /Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Nina-project-headers.hmap -F/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator -I/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/include -I/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/DerivedSources/i386 -I/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/DerivedSources -include /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Nina_Prefix-fyffsniitaqkzmgwljjhvmpfgrty/Nina_Prefix.pch -c /Users/NSchiff/Documents/tester/Classes/ES2Renderer.m -o /Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/ES2Renderer.o0#
+
+CCompileC build/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/GameMechanics.o /Users/NSchiff/Documents/tester/Classes/GameMechanics.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s307217278.054260
+e307217280.172936
+r1
+xCompileC
+xbuild/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/GameMechanics.o
+x/Users/NSchiff/Documents/tester/Classes/GameMechanics.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/NSchiff/Documents/tester/Classes/GameMechanics.m: In function '-[GameMechanics rowLeft]':
+o/Users/NSchiff/Documents/tester/Classes/GameMechanics.m:161: warning: unused variable 'tempPos'
+o/Users/NSchiff/Documents/tester/Classes/GameMechanics.m: In function '-[GameMechanics columnUp]':
+o/Users/NSchiff/Documents/tester/Classes/GameMechanics.m:480: warning: unused variable 'tempPos'
+o/Users/NSchiff/Documents/tester/Classes/GameMechanics.m: In function '-[GameMechanics columnDown]':
+o/Users/NSchiff/Documents/tester/Classes/GameMechanics.m:633: warning: unused variable 'tempPos'
+o/Users/NSchiff/Documents/tester/Classes/GameMechanics.m: In function '-[GameMechanics rotateCube]':
+o/Users/NSchiff/Documents/tester/Classes/GameMechanics.m:1301: warning: unused variable 'z'
+lSLF07#2@63"Compile /Users/NSchiff/Documents/tester/Classes/GameMechanics.m307217278#307217280#0(774"/Users/NSchiff/Documents/tester/Classes/GameMechanics.m: In function '-[GameMechanics rowLeft]':/Users/NSchiff/Documents/tester/Classes/GameMechanics.m:161: warning: unused variable 'tempPos'/Users/NSchiff/Documents/tester/Classes/GameMechanics.m: In function '-[GameMechanics columnUp]':/Users/NSchiff/Documents/tester/Classes/GameMechanics.m:480: warning: unused variable 'tempPos'/Users/NSchiff/Documents/tester/Classes/GameMechanics.m: In function '-[GameMechanics columnDown]':/Users/NSchiff/Documents/tester/Classes/GameMechanics.m:633: warning: unused variable 'tempPos'/Users/NSchiff/Documents/tester/Classes/GameMechanics.m: In function '-[GameMechanics rotateCube]':/Users/NSchiff/Documents/tester/Classes/GameMechanics.m:1301: warning: unused variable 'z'4(22@25"Unused variable 'tempPos'307217278#97#96#0(6@55"/Users/NSchiff/Documents/tester/Classes/GameMechanics.m307217186#161#0#161#0#19"unused variable '*'0(22@25"Unused variable 'tempPos'307217278#291#96#0(6@55"/Users/NSchiff/Documents/tester/Classes/GameMechanics.m307217186#480#0#480#0#19"unused variable '*'0(22@25"Unused variable 'tempPos'307217278#487#96#0(6@55"/Users/NSchiff/Documents/tester/Classes/GameMechanics.m307217186#633#0#633#0#19"unused variable '*'0(22@19"Unused variable 'z'307217279#683#91#0(6@55"/Users/NSchiff/Documents/tester/Classes/GameMechanics.m307217186#1301#0#1301#0#19"unused variable '*'0(0#0#55"/Users/NSchiff/Documents/tester/Classes/GameMechanics.m4300911832#1754"    cd /Users/NSchiff/Documents/tester    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Nina-generated-files.hmap -I/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Nina-own-target-headers.hmap -I/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Nina-all-target-headers.hmap -iquote /Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Nina-project-headers.hmap -F/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator -I/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/include -I/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/DerivedSources/i386 -I/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/DerivedSources -include /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Nina_Prefix-fyffsniitaqkzmgwljjhvmpfgrty/Nina_Prefix.pch -c /Users/NSchiff/Documents/tester/Classes/GameMechanics.m -o /Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/GameMechanics.o0#
+
+CCompileC build/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/GestureStateMachine.o /Users/NSchiff/Documents/tester/Classes/GestureStateMachine.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s307213782.635382
+e307213782.816832
+r1
+xCompileC
+xbuild/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/GestureStateMachine.o
+x/Users/NSchiff/Documents/tester/Classes/GestureStateMachine.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/NSchiff/Documents/tester/Classes/GestureStateMachine.m: In function '-[GestureStateMachine canReadGestureFile:]':
+o/Users/NSchiff/Documents/tester/Classes/GestureStateMachine.m:73: warning: 'stringWithContentsOfFile:' is deprecated (declared at /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSString.h:361)
+o/Users/NSchiff/Documents/tester/Classes/GestureStateMachine.m: In function '-[GestureStateMachine processGestureRelations:]':
+o/Users/NSchiff/Documents/tester/Classes/GestureStateMachine.m:88: warning: initialization discards qualifiers from pointer target type
+lSLF07#2@69"Compile /Users/NSchiff/Documents/tester/Classes/GestureStateMachine.m307213782#307213782#0(667"/Users/NSchiff/Documents/tester/Classes/GestureStateMachine.m: In function '-[GestureStateMachine canReadGestureFile:]':/Users/NSchiff/Documents/tester/Classes/GestureStateMachine.m:73: warning: 'stringWithContentsOfFile:' is deprecated (declared at /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSString.h:361)/Users/NSchiff/Documents/tester/Classes/GestureStateMachine.m: In function '-[GestureStateMachine processGestureRelations:]':/Users/NSchiff/Documents/tester/Classes/GestureStateMachine.m:88: warning: initialization discards qualifiers from pointer target type2(22@209"'stringWithContentsOfFile:' is deprecated (declared at /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSString.h:361)307213782#121#285#0(6@61"/Users/NSchiff/Documents/tester/Classes/GestureStateMachine.m307212012#73#0#73#0#33"'*' is deprecated (declared at *)0(22@59"Initialization discards qualifiers from pointer target type307213782#532#135#0(6@61"/Users/NSchiff/Documents/tester/Classes/GestureStateMachine.m307212012#88#0#88#0#0"0(0#0#61"/Users/NSchiff/Documents/tester/Classes/GestureStateMachine.m4300911832#1766"    cd /Users/NSchiff/Documents/tester    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Nina-generated-files.hmap -I/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Nina-own-target-headers.hmap -I/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Nina-all-target-headers.hmap -iquote /Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Nina-project-headers.hmap -F/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator -I/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/include -I/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/DerivedSources/i386 -I/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/DerivedSources -include /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Nina_Prefix-fyffsniitaqkzmgwljjhvmpfgrty/Nina_Prefix.pch -c /Users/NSchiff/Documents/tester/Classes/GestureStateMachine.m -o /Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/GestureStateMachine.o0#
+
+CCompileC build/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/StateMachineNode.o /Users/NSchiff/Documents/tester/Classes/StateMachineNode.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s307213782.830262
+e307213782.921415
+r1
+xCompileC
+xbuild/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/StateMachineNode.o
+x/Users/NSchiff/Documents/tester/Classes/StateMachineNode.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@66"Compile /Users/NSchiff/Documents/tester/Classes/StateMachineNode.m307213782#307213782#0(0"0(0#0#58"/Users/NSchiff/Documents/tester/Classes/StateMachineNode.m4300911832#1760"    cd /Users/NSchiff/Documents/tester    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Nina-generated-files.hmap -I/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Nina-own-target-headers.hmap -I/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Nina-all-target-headers.hmap -iquote /Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Nina-project-headers.hmap -F/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator -I/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/include -I/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/DerivedSources/i386 -I/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/DerivedSources -include /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Nina_Prefix-fyffsniitaqkzmgwljjhvmpfgrty/Nina_Prefix.pch -c /Users/NSchiff/Documents/tester/Classes/StateMachineNode.m -o /Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/StateMachineNode.o0#
+
+CCompileC build/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/ViewController.o /Users/NSchiff/Documents/tester/Classes/ViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s307217277.885567
+e307217278.053383
+r1
+xCompileC
+xbuild/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/ViewController.o
+x/Users/NSchiff/Documents/tester/Classes/ViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+oIn file included from /Users/NSchiff/Documents/tester/Classes/EAGLView.h:17,
+o                 from /Users/NSchiff/Documents/tester/Classes/ViewController.m:10:
+o/Users/NSchiff/Documents/tester/Classes/sidePanel.h:46: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed
+o/Users/NSchiff/Documents/tester/Classes/sidePanel.h:46: warning: assign attribute (default) not appropriate for non-gc object property 'restart'
+oIn file included from /Users/NSchiff/Documents/tester/Classes/EAGLView.h:21,
+o                 from /Users/NSchiff/Documents/tester/Classes/ViewController.m:10:
+o/Users/NSchiff/Documents/tester/Classes/tutorial.h:37: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed
+o/Users/NSchiff/Documents/tester/Classes/tutorial.h:37: warning: assign attribute (default) not appropriate for non-gc object property 'second'
+o/Users/NSchiff/Documents/tester/Classes/ViewController.m: In function '-[ViewController viewDidLoad]':
+o/Users/NSchiff/Documents/tester/Classes/ViewController.m:33: warning: 'UIView' may not respond to '-startAnimation'
+o/Users/NSchiff/Documents/tester/Classes/ViewController.m:33: warning: (Messages without a matching method signature
+o/Users/NSchiff/Documents/tester/Classes/ViewController.m:33: warning: will be assumed to return 'id' and accept
+o/Users/NSchiff/Documents/tester/Classes/ViewController.m:33: warning: '...' as arguments.)
+lSLF07#2@64"Compile /Users/NSchiff/Documents/tester/Classes/ViewController.m307217277#307217278#0(1431"In file included from /Users/NSchiff/Documents/tester/Classes/EAGLView.h:17,                 from /Users/NSchiff/Documents/tester/Classes/ViewController.m:10:/Users/NSchiff/Documents/tester/Classes/sidePanel.h:46: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed/Users/NSchiff/Documents/tester/Classes/sidePanel.h:46: warning: assign attribute (default) not appropriate for non-gc object property 'restart'In file included from /Users/NSchiff/Documents/tester/Classes/EAGLView.h:21,                 from /Users/NSchiff/Documents/tester/Classes/ViewController.m:10:/Users/NSchiff/Documents/tester/Classes/tutorial.h:37: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed/Users/NSchiff/Documents/tester/Classes/tutorial.h:37: warning: assign attribute (default) not appropriate for non-gc object property 'second'/Users/NSchiff/Documents/tester/Classes/ViewController.m: In function '-[ViewController viewDidLoad]':/Users/NSchiff/Documents/tester/Classes/ViewController.m:33: warning: 'UIView' may not respond to '-startAnimation'/Users/NSchiff/Documents/tester/Classes/ViewController.m:33: warning: (Messages without a matching method signature/Users/NSchiff/Documents/tester/Classes/ViewController.m:33: warning: will be assumed to return 'id' and accept/Users/NSchiff/Documents/tester/Classes/ViewController.m:33: warning: '...' as arguments.)6(22@77"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed307217277#160#143#3(7@78"In file included from /Users/NSchiff/Documents/tester/Classes/ViewController.m307217277#18446744073709551615#0#0(6@56"/Users/NSchiff/Documents/tester/Classes/ViewController.m307212081#10#0#10#0#0"0(7@72"In file included from /Users/NSchiff/Documents/tester/Classes/EAGLView.h307217277#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/EAGLView.h307210966#17#0#17#0#0"0(13@132"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed in /Users/NSchiff/Documents/tester/Classes/sidePanel.h307217277#18446744073709551615#0#0(6@51"/Users/NSchiff/Documents/tester/Classes/sidePanel.h307190241#46#0#46#0#0"0(6@51"/Users/NSchiff/Documents/tester/Classes/sidePanel.h307190241#46#0#46#0#0"0(22@79"Assign attribute (default) not appropriate for non-gc object property 'restart'307217277#303#145#3(7@78"In file included from /Users/NSchiff/Documents/tester/Classes/ViewController.m307217277#18446744073709551615#0#0(6@56"/Users/NSchiff/Documents/tester/Classes/ViewController.m307212081#10#0#10#0#0"0(7@72"In file included from /Users/NSchiff/Documents/tester/Classes/EAGLView.h307217277#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/EAGLView.h307210966#17#0#17#0#0"0(13@134"Assign attribute (default) not appropriate for non-gc object property 'restart' in /Users/NSchiff/Documents/tester/Classes/sidePanel.h307217277#18446744073709551615#0#0(6@51"/Users/NSchiff/Documents/tester/Classes/sidePanel.h307190241#46#0#46#0#0"0(6@51"/Users/NSchiff/Documents/tester/Classes/sidePanel.h307190241#46#0#46#0#0"0(22@77"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed307217277#608#142#3(7@78"In file included from /Users/NSchiff/Documents/tester/Classes/ViewController.m307217277#18446744073709551615#0#0(6@56"/Users/NSchiff/Documents/tester/Classes/ViewController.m307212081#10#0#10#0#0"0(7@72"In file included from /Users/NSchiff/Documents/tester/Classes/EAGLView.h307217277#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/EAGLView.h307210966#21#0#21#0#0"0(13@131"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed in /Users/NSchiff/Documents/tester/Classes/tutorial.h307217277#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/tutorial.h307209461#37#0#37#0#0"0(6@50"/Users/NSchiff/Documents/tester/Classes/tutorial.h307209461#37#0#37#0#0"0(22@78"Assign attribute (default) not appropriate for non-gc object property 'second'307217277#750#143#3(7@78"In file included from /Users/NSchiff/Documents/tester/Classes/ViewController.m307217277#18446744073709551615#0#0(6@56"/Users/NSchiff/Documents/tester/Classes/ViewController.m307212081#10#0#10#0#0"0(7@72"In file included from /Users/NSchiff/Documents/tester/Classes/EAGLView.h307217277#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/EAGLView.h307210966#21#0#21#0#0"0(13@132"Assign attribute (default) not appropriate for non-gc object property 'second' in /Users/NSchiff/Documents/tester/Classes/tutorial.h307217277#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/tutorial.h307209461#37#0#37#0#0"0(6@50"/Users/NSchiff/Documents/tester/Classes/tutorial.h307209461#37#0#37#0#0"0(22@45"'UIView' may not respond to '-startAnimation'307217277#996#116#0(6@56"/Users/NSchiff/Documents/tester/Classes/ViewController.m307212081#33#0#33#0#26"'*' may not respond to '*'0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)307217277#1112#116#0(6@56"/Users/NSchiff/Documents/tester/Classes/ViewController.m307212081#33#0#33#0#0"0(0#0#56"/Users/NSchiff/Documents/tester/Classes/ViewController.m4300911832#1756"    cd /Users/NSchiff/Documents/tester    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Nina-generated-files.hmap -I/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Nina-own-target-headers.hmap -I/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Nina-all-target-headers.hmap -iquote /Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Nina-project-headers.hmap -F/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator -I/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/include -I/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/DerivedSources/i386 -I/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/DerivedSources -include /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Nina_Prefix-fyffsniitaqkzmgwljjhvmpfgrty/Nina_Prefix.pch -c /Users/NSchiff/Documents/tester/Classes/ViewController.m -o /Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/ViewController.o0#
+
+CCompileC build/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/block.o /Users/NSchiff/Documents/tester/Classes/block.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s307213782.439890
+e307213782.531411
+r1
+xCompileC
+xbuild/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/block.o
+x/Users/NSchiff/Documents/tester/Classes/block.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@55"Compile /Users/NSchiff/Documents/tester/Classes/block.m307213782#307213782#0(0"0(0#0#47"/Users/NSchiff/Documents/tester/Classes/block.m4300911832#1738"    cd /Users/NSchiff/Documents/tester    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Nina-generated-files.hmap -I/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Nina-own-target-headers.hmap -I/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Nina-all-target-headers.hmap -iquote /Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Nina-project-headers.hmap -F/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator -I/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/include -I/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/DerivedSources/i386 -I/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/DerivedSources -include /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Nina_Prefix-fyffsniitaqkzmgwljjhvmpfgrty/Nina_Prefix.pch -c /Users/NSchiff/Documents/tester/Classes/block.m -o /Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/block.o0#
+
+CCompileC build/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/dmMenu.o /Users/NSchiff/Documents/tester/Classes/dmMenu.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s307217280.173379
+e307217280.363455
+r1
+xCompileC
+xbuild/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/dmMenu.o
+x/Users/NSchiff/Documents/tester/Classes/dmMenu.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/NSchiff/Documents/tester/Classes/dmMenu.m: In function '-[dmMenu rockB]':
+o/Users/NSchiff/Documents/tester/Classes/dmMenu.m:239: warning: 'dmSide' may not respond to '-setupOther:'
+o/Users/NSchiff/Documents/tester/Classes/dmMenu.m:239: warning: (Messages without a matching method signature
+o/Users/NSchiff/Documents/tester/Classes/dmMenu.m:239: warning: will be assumed to return 'id' and accept
+o/Users/NSchiff/Documents/tester/Classes/dmMenu.m:239: warning: '...' as arguments.)
+lSLF07#2@56"Compile /Users/NSchiff/Documents/tester/Classes/dmMenu.m307217280#307217280#0(485"/Users/NSchiff/Documents/tester/Classes/dmMenu.m: In function '-[dmMenu rockB]':/Users/NSchiff/Documents/tester/Classes/dmMenu.m:239: warning: 'dmSide' may not respond to '-setupOther:'/Users/NSchiff/Documents/tester/Classes/dmMenu.m:239: warning: (Messages without a matching method signature/Users/NSchiff/Documents/tester/Classes/dmMenu.m:239: warning: will be assumed to return 'id' and accept/Users/NSchiff/Documents/tester/Classes/dmMenu.m:239: warning: '...' as arguments.)2(22@42"'dmSide' may not respond to '-setupOther:'307217280#81#106#0(6@48"/Users/NSchiff/Documents/tester/Classes/dmMenu.m307200840#239#0#239#0#26"'*' may not respond to '*'0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)307217280#187#109#0(6@48"/Users/NSchiff/Documents/tester/Classes/dmMenu.m307200840#239#0#239#0#0"0(0#0#48"/Users/NSchiff/Documents/tester/Classes/dmMenu.m4300911832#1740"    cd /Users/NSchiff/Documents/tester    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Nina-generated-files.hmap -I/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Nina-own-target-headers.hmap -I/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Nina-all-target-headers.hmap -iquote /Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Nina-project-headers.hmap -F/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator -I/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/include -I/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/DerivedSources/i386 -I/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/DerivedSources -include /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Nina_Prefix-fyffsniitaqkzmgwljjhvmpfgrty/Nina_Prefix.pch -c /Users/NSchiff/Documents/tester/Classes/dmMenu.m -o /Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/dmMenu.o0#
+
+CCompileC build/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/dmSide.o /Users/NSchiff/Documents/tester/Classes/dmSide.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s307217280.363672
+e307217280.472785
+r1
+xCompileC
+xbuild/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/dmSide.o
+x/Users/NSchiff/Documents/tester/Classes/dmSide.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@56"Compile /Users/NSchiff/Documents/tester/Classes/dmSide.m307217280#307217280#0(0"0(0#0#48"/Users/NSchiff/Documents/tester/Classes/dmSide.m4300911832#1740"    cd /Users/NSchiff/Documents/tester    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Nina-generated-files.hmap -I/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Nina-own-target-headers.hmap -I/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Nina-all-target-headers.hmap -iquote /Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Nina-project-headers.hmap -F/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator -I/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/include -I/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/DerivedSources/i386 -I/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/DerivedSources -include /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Nina_Prefix-fyffsniitaqkzmgwljjhvmpfgrty/Nina_Prefix.pch -c /Users/NSchiff/Documents/tester/Classes/dmSide.m -o /Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/dmSide.o0#
+
+CCompileC build/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/gesturePanel.o /Users/NSchiff/Documents/tester/Classes/gesturePanel.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s307213783.318294
+e307213783.603078
+r1
+xCompileC
+xbuild/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/gesturePanel.o
+x/Users/NSchiff/Documents/tester/Classes/gesturePanel.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@62"Compile /Users/NSchiff/Documents/tester/Classes/gesturePanel.m307213783#307213783#0(0"0(0#0#54"/Users/NSchiff/Documents/tester/Classes/gesturePanel.m4300911832#1752"    cd /Users/NSchiff/Documents/tester    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Nina-generated-files.hmap -I/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Nina-own-target-headers.hmap -I/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Nina-all-target-headers.hmap -iquote /Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Nina-project-headers.hmap -F/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator -I/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/include -I/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/DerivedSources/i386 -I/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/DerivedSources -include /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Nina_Prefix-fyffsniitaqkzmgwljjhvmpfgrty/Nina_Prefix.pch -c /Users/NSchiff/Documents/tester/Classes/gesturePanel.m -o /Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/gesturePanel.o0#
+
+CCompileC build/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/main.o /Users/NSchiff/Documents/tester/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s307213782.021955
+e307213782.116942
+r1
+xCompileC
+xbuild/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/main.o
+x/Users/NSchiff/Documents/tester/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@46"Compile /Users/NSchiff/Documents/tester/main.m307213782#307213782#0(0"0(0#0#38"/Users/NSchiff/Documents/tester/main.m4300911832#1728"    cd /Users/NSchiff/Documents/tester    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Nina-generated-files.hmap -I/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Nina-own-target-headers.hmap -I/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Nina-all-target-headers.hmap -iquote /Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Nina-project-headers.hmap -F/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator -I/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/include -I/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/DerivedSources/i386 -I/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/DerivedSources -include /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Nina_Prefix-fyffsniitaqkzmgwljjhvmpfgrty/Nina_Prefix.pch -c /Users/NSchiff/Documents/tester/main.m -o /Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/main.o0#
+
+CCompileC build/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/recognition.o /Users/NSchiff/Documents/tester/Classes/recognition.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s307213782.816945
+e307213783.051121
+r1
+xCompileC
+xbuild/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/recognition.o
+x/Users/NSchiff/Documents/tester/Classes/recognition.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@61"Compile /Users/NSchiff/Documents/tester/Classes/recognition.m307213782#307213783#0(0"0(0#0#53"/Users/NSchiff/Documents/tester/Classes/recognition.m4300911832#1750"    cd /Users/NSchiff/Documents/tester    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Nina-generated-files.hmap -I/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Nina-own-target-headers.hmap -I/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Nina-all-target-headers.hmap -iquote /Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Nina-project-headers.hmap -F/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator -I/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/include -I/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/DerivedSources/i386 -I/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/DerivedSources -include /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Nina_Prefix-fyffsniitaqkzmgwljjhvmpfgrty/Nina_Prefix.pch -c /Users/NSchiff/Documents/tester/Classes/recognition.m -o /Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/recognition.o0#
+
+CCompileC build/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/sidePanel.o /Users/NSchiff/Documents/tester/Classes/sidePanel.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s307213783.051231
+e307213783.318178
+r1
+xCompileC
+xbuild/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/sidePanel.o
+x/Users/NSchiff/Documents/tester/Classes/sidePanel.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+oIn file included from /Users/NSchiff/Documents/tester/Classes/sidePanel.m:9:
+o/Users/NSchiff/Documents/tester/Classes/sidePanel.h:46: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed
+o/Users/NSchiff/Documents/tester/Classes/sidePanel.h:46: warning: assign attribute (default) not appropriate for non-gc object property 'restart'
+lSLF07#2@59"Compile /Users/NSchiff/Documents/tester/Classes/sidePanel.m307213783#307213783#0(365"In file included from /Users/NSchiff/Documents/tester/Classes/sidePanel.m:9:/Users/NSchiff/Documents/tester/Classes/sidePanel.h:46: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed/Users/NSchiff/Documents/tester/Classes/sidePanel.h:46: warning: assign attribute (default) not appropriate for non-gc object property 'restart'2(22@77"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed307213783#77#143#2(7@73"In file included from /Users/NSchiff/Documents/tester/Classes/sidePanel.m307213783#18446744073709551615#0#0(6@51"/Users/NSchiff/Documents/tester/Classes/sidePanel.m307212084#9#0#9#0#0"0(13@132"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed in /Users/NSchiff/Documents/tester/Classes/sidePanel.h307213783#18446744073709551615#0#0(6@51"/Users/NSchiff/Documents/tester/Classes/sidePanel.h307190241#46#0#46#0#0"0(6@51"/Users/NSchiff/Documents/tester/Classes/sidePanel.h307190241#46#0#46#0#0"0(22@79"Assign attribute (default) not appropriate for non-gc object property 'restart'307213783#220#145#2(7@73"In file included from /Users/NSchiff/Documents/tester/Classes/sidePanel.m307213783#18446744073709551615#0#0(6@51"/Users/NSchiff/Documents/tester/Classes/sidePanel.m307212084#9#0#9#0#0"0(13@134"Assign attribute (default) not appropriate for non-gc object property 'restart' in /Users/NSchiff/Documents/tester/Classes/sidePanel.h307213783#18446744073709551615#0#0(6@51"/Users/NSchiff/Documents/tester/Classes/sidePanel.h307190241#46#0#46#0#0"0(6@51"/Users/NSchiff/Documents/tester/Classes/sidePanel.h307190241#46#0#46#0#0"0(0#0#51"/Users/NSchiff/Documents/tester/Classes/sidePanel.m4300911832#1746"    cd /Users/NSchiff/Documents/tester    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Nina-generated-files.hmap -I/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Nina-own-target-headers.hmap -I/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Nina-all-target-headers.hmap -iquote /Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Nina-project-headers.hmap -F/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator -I/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/include -I/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/DerivedSources/i386 -I/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/DerivedSources -include /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Nina_Prefix-fyffsniitaqkzmgwljjhvmpfgrty/Nina_Prefix.pch -c /Users/NSchiff/Documents/tester/Classes/sidePanel.m -o /Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/sidePanel.o0#
+
+CCompileC build/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/testerAppDelegate.o /Users/NSchiff/Documents/tester/Classes/testerAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s307213782.023212
+e307213782.159236
+r1
+xCompileC
+xbuild/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/testerAppDelegate.o
+x/Users/NSchiff/Documents/tester/Classes/testerAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@67"Compile /Users/NSchiff/Documents/tester/Classes/testerAppDelegate.m307213782#307213782#0(0"0(0#0#59"/Users/NSchiff/Documents/tester/Classes/testerAppDelegate.m4300911832#1762"    cd /Users/NSchiff/Documents/tester    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Nina-generated-files.hmap -I/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Nina-own-target-headers.hmap -I/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Nina-all-target-headers.hmap -iquote /Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Nina-project-headers.hmap -F/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator -I/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/include -I/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/DerivedSources/i386 -I/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/DerivedSources -include /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Nina_Prefix-fyffsniitaqkzmgwljjhvmpfgrty/Nina_Prefix.pch -c /Users/NSchiff/Documents/tester/Classes/testerAppDelegate.m -o /Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/testerAppDelegate.o0#
+
+CCompileC build/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/tutorial.o /Users/NSchiff/Documents/tester/Classes/tutorial.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s307214216.221705
+e307214216.443197
+r1
+xCompileC
+xbuild/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/tutorial.o
+x/Users/NSchiff/Documents/tester/Classes/tutorial.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+oIn file included from /Users/NSchiff/Documents/tester/Classes/tutorial.m:9:
+o/Users/NSchiff/Documents/tester/Classes/tutorial.h:37: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed
+o/Users/NSchiff/Documents/tester/Classes/tutorial.h:37: warning: assign attribute (default) not appropriate for non-gc object property 'second'
+lSLF07#2@58"Compile /Users/NSchiff/Documents/tester/Classes/tutorial.m307214216#307214216#0(361"In file included from /Users/NSchiff/Documents/tester/Classes/tutorial.m:9:/Users/NSchiff/Documents/tester/Classes/tutorial.h:37: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed/Users/NSchiff/Documents/tester/Classes/tutorial.h:37: warning: assign attribute (default) not appropriate for non-gc object property 'second'2(22@77"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed307214216#76#142#2(7@72"In file included from /Users/NSchiff/Documents/tester/Classes/tutorial.m307214216#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/tutorial.m307214214#9#0#9#0#0"0(13@131"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed in /Users/NSchiff/Documents/tester/Classes/tutorial.h307214216#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/tutorial.h307209461#37#0#37#0#0"0(6@50"/Users/NSchiff/Documents/tester/Classes/tutorial.h307209461#37#0#37#0#0"0(22@78"Assign attribute (default) not appropriate for non-gc object property 'second'307214216#218#143#2(7@72"In file included from /Users/NSchiff/Documents/tester/Classes/tutorial.m307214216#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/tutorial.m307214214#9#0#9#0#0"0(13@132"Assign attribute (default) not appropriate for non-gc object property 'second' in /Users/NSchiff/Documents/tester/Classes/tutorial.h307214216#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/tutorial.h307209461#37#0#37#0#0"0(6@50"/Users/NSchiff/Documents/tester/Classes/tutorial.h307209461#37#0#37#0#0"0(0#0#50"/Users/NSchiff/Documents/tester/Classes/tutorial.m4300911832#1744"    cd /Users/NSchiff/Documents/tester    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Nina-generated-files.hmap -I/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Nina-own-target-headers.hmap -I/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Nina-all-target-headers.hmap -iquote /Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Nina-project-headers.hmap -F/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator -I/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/include -I/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/DerivedSources/i386 -I/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/DerivedSources -include /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Nina_Prefix-fyffsniitaqkzmgwljjhvmpfgrty/Nina_Prefix.pch -c /Users/NSchiff/Documents/tester/Classes/tutorial.m -o /Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/tutorial.o0#
+
+CCompileXIB /Users/NSchiff/Documents/tester/Classes/ViewController.xib
+s307213779.414719
+e307213779.736058
+r1
+xCompileXIB
+x/Users/NSchiff/Documents/tester/Classes/ViewController.xib
+lSLF07#2@37"CompileXIB Classes/ViewController.xib307213779#307213779#0(0"0(0#0#58"/Users/NSchiff/Documents/tester/Classes/ViewController.xib4300911832#472"    cd /Users/NSchiff/Documents/tester    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app/ViewController.nib /Users/NSchiff/Documents/tester/Classes/ViewController.xib0#
+
+CCompileXIB /Users/NSchiff/Documents/tester/MainWindow.xib
+s307213779.375877
+e307213779.887571
+r1
+xCompileXIB
+x/Users/NSchiff/Documents/tester/MainWindow.xib
+lSLF07#2@25"CompileXIB MainWindow.xib307213779#307213779#0(0"0(0#0#46"/Users/NSchiff/Documents/tester/MainWindow.xib4300911832#456"    cd /Users/NSchiff/Documents/tester    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app/MainWindow.nib /Users/NSchiff/Documents/tester/MainWindow.xib0#
+
+CCpResource build/Debug-iphonesimulator/Nina.app/2down.gesture 2down.gesture
+s307213779.737023
+e307213779.758628
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Nina.app/2down.gesture
+x2down.gesture
+lSLF07#2@18"Copy 2down.gesture307213779#307213779#0(0"0(0#0#45"/Users/NSchiff/Documents/tester/2down.gesture4300911832#433"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/NSchiff/Documents/tester/2down.gesture /Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app0#
+
+CCpResource build/Debug-iphonesimulator/Nina.app/3down.gesture 3down.gesture
+s307213779.738821
+e307213779.758734
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Nina.app/3down.gesture
+x3down.gesture
+lSLF07#2@18"Copy 3down.gesture307213779#307213779#0(0"0(0#0#45"/Users/NSchiff/Documents/tester/3down.gesture4300911832#433"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/NSchiff/Documents/tester/3down.gesture /Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app0#
+
+CCpResource build/Debug-iphonesimulator/Nina.app/Shader.fsh Shaders/Shader.fsh
+s307213779.371122
+e307213779.414457
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Nina.app/Shader.fsh
+xShaders/Shader.fsh
+lSLF07#2@23"Copy Shaders/Shader.fsh307213779#307213779#0(0"0(0#0#50"/Users/NSchiff/Documents/tester/Shaders/Shader.fsh4300911832#438"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/NSchiff/Documents/tester/Shaders/Shader.fsh /Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app0#
+
+CCpResource build/Debug-iphonesimulator/Nina.app/Shader.vsh Shaders/Shader.vsh
+s307213779.372522
+e307213779.414590
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Nina.app/Shader.vsh
+xShaders/Shader.vsh
+lSLF07#2@23"Copy Shaders/Shader.vsh307213779#307213779#0(0"0(0#0#50"/Users/NSchiff/Documents/tester/Shaders/Shader.vsh4300911832#438"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/NSchiff/Documents/tester/Shaders/Shader.vsh /Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app0#
+
+CCpResource build/Debug-iphonesimulator/Nina.app/backward.png backward.png
+s307213779.790457
+e307213779.857141
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Nina.app/backward.png
+xbackward.png
+lSLF07#2@17"Copy backward.png307213779#307213779#0(0"0(0#0#44"/Users/NSchiff/Documents/tester/backward.png4300911832#432"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/NSchiff/Documents/tester/backward.png /Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app0#
+
+CCpResource build/Debug-iphonesimulator/Nina.app/colD.png colD.png
+s307213779.796294
+e307213779.857270
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Nina.app/colD.png
+xcolD.png
+lSLF07#2@13"Copy colD.png307213779#307213779#0(0"0(0#0#40"/Users/NSchiff/Documents/tester/colD.png4300911832#428"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/NSchiff/Documents/tester/colD.png /Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app0#
+
+CCpResource build/Debug-iphonesimulator/Nina.app/colU.png colU.png
+s307213779.798654
+e307213779.857395
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Nina.app/colU.png
+xcolU.png
+lSLF07#2@13"Copy colU.png307213779#307213779#0(0"0(0#0#40"/Users/NSchiff/Documents/tester/colU.png4300911832#428"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/NSchiff/Documents/tester/colU.png /Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app0#
+
+CCpResource build/Debug-iphonesimulator/Nina.app/diagonalDown.gesture diagonalDown.gesture
+s307213779.774633
+e307213779.857661
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Nina.app/diagonalDown.gesture
+xdiagonalDown.gesture
+lSLF07#2@25"Copy diagonalDown.gesture307213779#307213779#0(0"0(0#0#52"/Users/NSchiff/Documents/tester/diagonalDown.gesture4300911832#440"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/NSchiff/Documents/tester/diagonalDown.gesture /Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app0#
+
+CCpResource build/Debug-iphonesimulator/Nina.app/diagonalUp.gesture diagonalUp.gesture
+s307213779.756373
+e307213779.785146
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Nina.app/diagonalUp.gesture
+xdiagonalUp.gesture
+lSLF07#2@23"Copy diagonalUp.gesture307213779#307213779#0(0"0(0#0#50"/Users/NSchiff/Documents/tester/diagonalUp.gesture4300911832#438"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/NSchiff/Documents/tester/diagonalUp.gesture /Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app0#
+
+CCpResource build/Debug-iphonesimulator/Nina.app/down.gesture down.gesture
+s307213779.754427
+e307213779.785032
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Nina.app/down.gesture
+xdown.gesture
+lSLF07#2@17"Copy down.gesture307213779#307213779#0(0"0(0#0#44"/Users/NSchiff/Documents/tester/down.gesture4300911832#432"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/NSchiff/Documents/tester/down.gesture /Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app0#
+
+CCpResource build/Debug-iphonesimulator/Nina.app/forward.png forward.png
+s307213779.804639
+e307213779.857521
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Nina.app/forward.png
+xforward.png
+lSLF07#2@16"Copy forward.png307213779#307213779#0(0"0(0#0#43"/Users/NSchiff/Documents/tester/forward.png4300911832#431"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/NSchiff/Documents/tester/forward.png /Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app0#
+
+CCpResource build/Debug-iphonesimulator/Nina.app/icon.png icon.png
+s307213779.879899
+e307213779.891215
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Nina.app/icon.png
+xicon.png
+lSLF07#2@13"Copy icon.png307213779#307213779#0(0"0(0#0#40"/Users/NSchiff/Documents/tester/icon.png4300911832#428"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/NSchiff/Documents/tester/icon.png /Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app0#
+
+CCpResource build/Debug-iphonesimulator/Nina.app/left.gesture left.gesture
+s307213779.746401
+e307213779.758948
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Nina.app/left.gesture
+xleft.gesture
+lSLF07#2@17"Copy left.gesture307213779#307213779#0(0"0(0#0#44"/Users/NSchiff/Documents/tester/left.gesture4300911832#432"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/NSchiff/Documents/tester/left.gesture /Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app0#
+
+CCpResource build/Debug-iphonesimulator/Nina.app/right.gesture right.gesture
+s307213779.748329
+e307213779.759056
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Nina.app/right.gesture
+xright.gesture
+lSLF07#2@18"Copy right.gesture307213779#307213779#0(0"0(0#0#45"/Users/NSchiff/Documents/tester/right.gesture4300911832#433"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/NSchiff/Documents/tester/right.gesture /Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app0#
+
+CCpResource build/Debug-iphonesimulator/Nina.app/rowL.png rowL.png
+s307213779.814760
+e307213779.857784
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Nina.app/rowL.png
+xrowL.png
+lSLF07#2@13"Copy rowL.png307213779#307213779#0(0"0(0#0#40"/Users/NSchiff/Documents/tester/rowL.png4300911832#428"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/NSchiff/Documents/tester/rowL.png /Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app0#
+
+CCpResource build/Debug-iphonesimulator/Nina.app/rowR.png rowR.png
+s307213779.816796
+e307213779.857916
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Nina.app/rowR.png
+xrowR.png
+lSLF07#2@13"Copy rowR.png307213779#307213779#0(0"0(0#0#40"/Users/NSchiff/Documents/tester/rowR.png4300911832#428"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/NSchiff/Documents/tester/rowR.png /Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app0#
+
+CCpResource build/Debug-iphonesimulator/Nina.app/sD.png sD.png
+s307213779.823072
+e307213779.858045
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Nina.app/sD.png
+xsD.png
+lSLF07#2@11"Copy sD.png307213779#307213779#0(0"0(0#0#38"/Users/NSchiff/Documents/tester/sD.png4300911832#426"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/NSchiff/Documents/tester/sD.png /Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app0#
+
+CCpResource build/Debug-iphonesimulator/Nina.app/sL.png sL.png
+s307213779.858127
+e307213779.887245
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Nina.app/sL.png
+xsL.png
+lSLF07#2@11"Copy sL.png307213779#307213779#0(0"0(0#0#38"/Users/NSchiff/Documents/tester/sL.png4300911832#426"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/NSchiff/Documents/tester/sL.png /Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app0#
+
+CCpResource build/Debug-iphonesimulator/Nina.app/sR.png sR.png
+s307213779.862817
+e307213779.887702
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Nina.app/sR.png
+xsR.png
+lSLF07#2@11"Copy sR.png307213779#307213779#0(0"0(0#0#38"/Users/NSchiff/Documents/tester/sR.png4300911832#426"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/NSchiff/Documents/tester/sR.png /Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app0#
+
+CCpResource build/Debug-iphonesimulator/Nina.app/sU.png sU.png
+s307213779.871954
+e307213779.890922
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Nina.app/sU.png
+xsU.png
+lSLF07#2@11"Copy sU.png307213779#307213779#0(0"0(0#0#38"/Users/NSchiff/Documents/tester/sU.png4300911832#426"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/NSchiff/Documents/tester/sU.png /Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app0#
+
+CCpResource build/Debug-iphonesimulator/Nina.app/spiralout.gesture spiralout.gesture
+s307213779.742570
+e307213779.758839
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Nina.app/spiralout.gesture
+xspiralout.gesture
+lSLF07#2@22"Copy spiralout.gesture307213779#307213779#0(0"0(0#0#49"/Users/NSchiff/Documents/tester/spiralout.gesture4300911832#437"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/NSchiff/Documents/tester/spiralout.gesture /Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app0#
+
+CCpResource build/Debug-iphonesimulator/Nina.app/square.gesture square.gesture
+s307213779.785229
+e307213779.856984
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Nina.app/square.gesture
+xsquare.gesture
+lSLF07#2@19"Copy square.gesture307213779#307213779#0(0"0(0#0#46"/Users/NSchiff/Documents/tester/square.gesture4300911832#434"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/NSchiff/Documents/tester/square.gesture /Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app0#
+
+CCpResource build/Debug-iphonesimulator/Nina.app/square.png square.png
+s307213779.859245
+e307213779.887393
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Nina.app/square.png
+xsquare.png
+lSLF07#2@15"Copy square.png307213779#307213779#0(0"0(0#0#42"/Users/NSchiff/Documents/tester/square.png4300911832#430"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/NSchiff/Documents/tester/square.png /Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app0#
+
+CCpResource build/Debug-iphonesimulator/Nina.app/swapDown.gesture swapDown.gesture
+s307213779.771277
+e307213779.784817
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Nina.app/swapDown.gesture
+xswapDown.gesture
+lSLF07#2@21"Copy swapDown.gesture307213779#307213779#0(0"0(0#0#48"/Users/NSchiff/Documents/tester/swapDown.gesture4300911832#436"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/NSchiff/Documents/tester/swapDown.gesture /Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app0#
+
+CCpResource build/Debug-iphonesimulator/Nina.app/swapLeft.gesture swapLeft.gesture
+s307213779.763187
+e307213779.784470
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Nina.app/swapLeft.gesture
+xswapLeft.gesture
+lSLF07#2@21"Copy swapLeft.gesture307213779#307213779#0(0"0(0#0#48"/Users/NSchiff/Documents/tester/swapLeft.gesture4300911832#436"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/NSchiff/Documents/tester/swapLeft.gesture /Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app0#
+
+CCpResource build/Debug-iphonesimulator/Nina.app/swapRight.gesture swapRight.gesture
+s307213779.764983
+e307213779.784585
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Nina.app/swapRight.gesture
+xswapRight.gesture
+lSLF07#2@22"Copy swapRight.gesture307213779#307213779#0(0"0(0#0#49"/Users/NSchiff/Documents/tester/swapRight.gesture4300911832#437"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/NSchiff/Documents/tester/swapRight.gesture /Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app0#
+
+CCpResource build/Debug-iphonesimulator/Nina.app/swapUp.gesture swapUp.gesture
+s307213779.770026
+e307213779.784705
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Nina.app/swapUp.gesture
+xswapUp.gesture
+lSLF07#2@19"Copy swapUp.gesture307213779#307213779#0(0"0(0#0#46"/Users/NSchiff/Documents/tester/swapUp.gesture4300911832#434"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/NSchiff/Documents/tester/swapUp.gesture /Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app0#
+
+CCpResource build/Debug-iphonesimulator/Nina.app/up.gesture up.gesture
+s307213779.752301
+e307213779.784926
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Nina.app/up.gesture
+xup.gesture
+lSLF07#2@15"Copy up.gesture307213779#307213779#0(0"0(0#0#42"/Users/NSchiff/Documents/tester/up.gesture4300911832#430"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/NSchiff/Documents/tester/up.gesture /Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app0#
+
+CCpResource build/Debug-iphonesimulator/Nina.app/v.gesture v.gesture
+s307213779.736162
+e307213779.758506
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Nina.app/v.gesture
+xv.gesture
+lSLF07#2@14"Copy v.gesture307213779#307213779#0(0"0(0#0#41"/Users/NSchiff/Documents/tester/v.gesture4300911832#429"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/NSchiff/Documents/tester/v.gesture /Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app0#
+
+CCpResource build/Debug-iphonesimulator/Nina.app/z.gesture z.gesture
+s307213779.759134
+e307213779.784343
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Nina.app/z.gesture
+xz.gesture
+lSLF07#2@14"Copy z.gesture307213779#307213779#0(0"0(0#0#41"/Users/NSchiff/Documents/tester/z.gesture4300911832#429"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/NSchiff/Documents/tester/z.gesture /Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app0#
+
+CCpResource build/Debug-iphonesimulator/Nina.app/z.png z.png
+s307213779.877719
+e307213779.891084
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Nina.app/z.png
+xz.png
+lSLF07#2@10"Copy z.png307213779#307213779#0(0"0(0#0#37"/Users/NSchiff/Documents/tester/z.png4300911832#425"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/NSchiff/Documents/tester/z.png /Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app0#
+
+CGenerateDSYMFile /Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app.dSYM /Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app/Nina
+s307217280.601187
+e307217280.648399
+r1
+xGenerateDSYMFile
+x/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app.dSYM
+x/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app/Nina
+lSLF07#2@100"GenerateDSYMFile build/Debug-iphonesimulator/Nina.app.dSYM build/Debug-iphonesimulator/Nina.app/Nina307217280#307217280#0(0"0(0#0#73"/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app/Nina4300911832#353"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app/Nina -o /Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app.dSYM0#
+
+CLd /Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app/Nina normal i386
+s307217280.479395
+e307217280.601058
+r1
+xLd
+x/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app/Nina
+xnormal
+xi386
+lSLF07#2@78"Link /Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app/Nina307217280#307217280#0(0"0(0#0#0"4300911832#830"    cd /Users/NSchiff/Documents/tester    setenv MACOSX_DEPLOYMENT_TARGET 10.5    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -L/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator -F/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator -filelist /Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Objects-normal/i386/Nina.LinkFileList -mmacosx-version-min=10.5 -framework Foundation -framework UIKit -framework OpenGLES -framework QuartzCore -o /Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app/Nina0#
+
+CProcessInfoPlistFile /Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app/Info.plist Nina-Info.plist
+s307213779.358081
+e307213779.371018
+r1
+xProcessInfoPlistFile
+x/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app/Info.plist
+xNina-Info.plist
+lSLF07#2@23"Process Nina-Info.plist307213779#307213779#0(0"0(0#0#47"/Users/NSchiff/Documents/tester/Nina-Info.plist4300911832#449"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility Nina-Info.plist -genpkginfo /Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app/Info.plist0#
+
+CProcessPCH /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Nina_Prefix-fyffsniitaqkzmgwljjhvmpfgrty/Nina_Prefix.pch.gch Nina_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s307213779.891338
+e307213782.021640
+r1
+xProcessPCH
+x/var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Nina_Prefix-fyffsniitaqkzmgwljjhvmpfgrty/Nina_Prefix.pch.gch
+xNina_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@26"Precompile Nina_Prefix.pch307213779#307213782#0(0"0(0#0#47"/Users/NSchiff/Documents/tester/Nina_Prefix.pch4300911832#1630"    cd /Users/NSchiff/Documents/tester    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Nina-generated-files.hmap -I/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Nina-own-target-headers.hmap -I/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Nina-all-target-headers.hmap -iquote /Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/Nina-project-headers.hmap -F/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator -I/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/include -I/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/DerivedSources/i386 -I/Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphonesimulator/Nina.build/DerivedSources -c /Users/NSchiff/Documents/tester/Nina_Prefix.pch -o /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Nina_Prefix-fyffsniitaqkzmgwljjhvmpfgrty/Nina_Prefix.pch.gch0#
+
+CTouch /Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app
+s307217280.648507
+e307217280.680495
+r1
+xTouch
+x/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app
+lSLF07#2@74"Touch /Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app307217280#307217280#0(0"0(0#0#0"4300911832#261"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina.app0#
+
