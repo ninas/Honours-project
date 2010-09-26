@@ -1,0 +1,8 @@
+/Users/NSchiff/Documents/tester/Classes/GameMechanics.m: In function '-[GameMechanics rowLeft]':
+/Users/NSchiff/Documents/tester/Classes/GameMechanics.m:161: warning: unused variable 'tempPos'
+/Users/NSchiff/Documents/tester/Classes/GameMechanics.m: In function '-[GameMechanics columnUp]':
+/Users/NSchiff/Documents/tester/Classes/GameMechanics.m:480: warning: unused variable 'tempPos'
+/Users/NSchiff/Documents/tester/Classes/GameMechanics.m: In function '-[GameMechanics columnDown]':
+/Users/NSchiff/Documents/tester/Classes/GameMechanics.m:633: warning: unused variable 'tempPos'
+/Users/NSchiff/Documents/tester/Classes/GameMechanics.m: In function '-[GameMechanics rotateCube]':
+/Users/NSchiff/Documents/tester/Classes/GameMechanics.m:1301: warning: unused variable 'z'

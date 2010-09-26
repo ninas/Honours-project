@@ -33,6 +33,8 @@
 	int score;
 	
 	int * gestureCounter;
+	int * highScore;
+	UILabel * highScoreLabel;
 	
 	
 }
@@ -46,6 +48,8 @@
 @property (nonatomic) BOOL rotating;
 @property (nonatomic) int score;
 @property (nonatomic) int * gestureCounter;
+@property (nonatomic) int * highScore;
+@property (nonatomic, retain) UILabel * highScoreLabel;
 
 - (void)rowLeft;
 

@@ -19,6 +19,8 @@
 @synthesize score;
 @synthesize translateArray;
 @synthesize gestureCounter;
+@synthesize highScore;
+@synthesize highScoreLabel;
 
 - (id)init
 {    
@@ -50,6 +52,11 @@
 		
 	}
 	else {
+		if (score > *highScore) {
+			*highScore = score;
+			highScoreLabel.text = [NSString stringWithFormat:@"Best: %d",score];
+		}
+		
 		if (blockArray.count > 0) {
 			[blockArray removeAllObjects];
 		}

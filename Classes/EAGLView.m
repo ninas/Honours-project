@@ -135,7 +135,7 @@
 		highScore.font = [UIFont fontWithName: @"Marker Felt" size: 30];
 		[self addSubview:highScore];
 		highScore.hidden = YES;
-		
+		mechanics.highScoreLabel = highScore;
 		
 		
 		restart = [[UIButton alloc] initWithFrame:CGRectMake(10, 310, 80, 80)];
@@ -251,6 +251,7 @@
 	if (appFile){
 		NSString *myText = [NSString stringWithContentsOfFile:appFile encoding:NSUTF8StringEncoding error:NULL];  
 		highSc = [myText intValue];
+		mechanics.highScore = &highSc;
 	}
 		
 }
@@ -2065,7 +2066,7 @@
 			
 			descrip = @"Gesture found";
 			rightGes = [tut incrementGes:0];
-			
+			[self changeGameVersion];
 			
 		}
 		else if (strcmp(type, "right") == 0){
