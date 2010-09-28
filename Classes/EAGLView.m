@@ -236,6 +236,7 @@
 		panel.hidden = YES;
 		dm.hidden = YES;
 		tutCounter = 0;
+		
     }
 	
     return self;
@@ -301,6 +302,7 @@
 	}
 	if (check) {
 		[data appendFormat:@"\n%d\n",gameVersion];
+		NSLog(@"Game version:    %d",gameVersion);
 	}
 	else {
 		
@@ -322,7 +324,7 @@
 	}
 	
 	
-	[tut showFirstScreen:gameVersion];
+	[tut showFirstScreen:prevVersion];
 	tut.hidden = NO;
 	
 	

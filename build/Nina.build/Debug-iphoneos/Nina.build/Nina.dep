@@ -1,7 +1,3 @@
-188d66d7b9635c969d77713346ece893 0b3b1a00843f50913fc69a73ffaadf77 ffffffffffffffffffffffffffffffff 1428 /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina.app
-00000000000000000000000000000000 a3b77020dc91327eef999553d632abdd ffffffffffffffffffffffffffffffff 102 /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina.app.dSYM
-9317378d4459837d96cef1510ec575d4 58a02b62525ce6e2a9d66ce7c28f9a92 ffffffffffffffffffffffffffffffff 346540 /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina.app/Nina
-0ac920c3b0f6bef647e0aeaa88883a0f e5f247da7e0c27ef598e9e299a8db8ba ffffffffffffffffffffffffffffffff 186792 /Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphoneos/Nina.build/Objects-normal/armv6/EAGLView.o
 0ac920c3fb550c3547e0aeaa8889b85a ac7e28e2e9ddec745b9338ec5e552cde ffffffffffffffffffffffffffffffff 49300 /Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphoneos/Nina.build/Objects-normal/armv6/tutorial.o
 0ac920c3fb55319547e0aeaa8889aa53 1983d9a228dba18ba581a3ae171a9f29 ffffffffffffffffffffffffffffffff 35508 /Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphoneos/Nina.build/Objects-normal/armv6/dmSide.o
 0ac920c3b7cbb0e247e0aeaa8889b50d cc81be46fde3186dc79992df48f7657a ffffffffffffffffffffffffffffffff 51892 /Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphoneos/Nina.build/Objects-normal/armv6/dmMenu.o
@@ -15,10 +11,13 @@
 0ac920c3fb55cc5147e0aeaa8889b363 8d4b5f20c8559d4850b804f35a0d1239 ffffffffffffffffffffffffffffffff 26820 /Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphoneos/Nina.build/Objects-normal/armv6/block.o
 0ac920c3fce5051747e0aeaa88891b66 81c5980c46f517abd6b9dfaa0d919826 ffffffffffffffffffffffffffffffff 27124 /Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphoneos/Nina.build/Objects-normal/armv6/ES2Renderer.o
 0ac920c3fbe9c7dd47e0aeaa8889574a d9b7c2b14aab18c9047f01d2406e87de ffffffffffffffffffffffffffffffff 41964 /Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphoneos/Nina.build/Objects-normal/armv6/ES1Renderer.o
+0ac920c3b0c8bbf847e0aeaa88883a5f e5f247da7e0c27ef598e9e299a8db8ba ffffffffffffffffffffffffffffffff 186972 /Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphoneos/Nina.build/Objects-normal/armv6/EAGLView.o
 0ac920c3fc55c0af47e0aeaa8889ad05 9d5e7eaddd804eec6bccfe6491666cd5 ffffffffffffffffffffffffffffffff 44452 /Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphoneos/Nina.build/Objects-normal/armv6/testerAppDelegate.o
 0ac920c3fc526db247e0aeaa8889a56c 3159b2e0eb650b2521834aed134bfc4a ffffffffffffffffffffffffffffffff 6484 /Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphoneos/Nina.build/Objects-normal/armv6/main.o
-99533b82efcc7b9315a5d4c768e14cfa 881305ffceb19abeda761352f78a95f6 ffffffffffffffffffffffffffffffff 317 /Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphoneos/Nina.build/Nina.xcent
+00000000000000000000000000000000 a3b77020dc91327eef999553d632abdd ffffffffffffffffffffffffffffffff 102 /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina.app.dSYM
+188d66d7b95d59989d77713346ece8c3 0b3b1a00843f50913fc69a73ffaadf77 ffffffffffffffffffffffffffffffff 1428 /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina.app
 00000000000000000000000000000000 ab9efd08b170a6dc2b39377401a08088 ffffffffffffffffffffffffffffffff 7162 /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina.app/embedded.mobileprovision
+9317378d4467867396cef1510ec57584 58a02b62525ce6e2a9d66ce7c28f9a92 ffffffffffffffffffffffffffffffff 353920 /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina.app/Nina
 000000000789638b00000000000001f6 0ac920c3fcdc9bae47e0aeaa8889ac61 ffffffffffffffffffffffffffffffff 8950420 /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Nina_Prefix-fwygyqduoujagdhbitiptjoqwtfs/Nina_Prefix.pch.gch
 00000000000000000000000000000000 3b807a04adc7c2da8d7fe290c4eea7f3 ffffffffffffffffffffffffffffffff 2145 /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina.app/icon.png
 00000000000000000000000000000000 972dfe66e4898519bc813bf9e59b3b51 ffffffffffffffffffffffffffffffff 2772 /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina.app/z.png
@@ -56,4 +55,5 @@
 00000000000000000000000000000000 99533b82efcc7b9315a5d4c768e14cfa ffffffffffffffffffffffffffffffff 8 /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina.app/PkgInfo
 00000000000000000000000000000000 99533b82efcc7b9315a5d4c768e14cfa ffffffffffffffffffffffffffffffff 732 /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina.app/Info.plist
 00000000000000000000000000000000 f9ce28ea993186bcbc6305a252cd1660 ffffffffffffffffffffffffffffffff 485 /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina.app/ResourceRules.plist
+99533b82efcc7b9315a5d4c768e14cfa 881305ffceb19abeda761352f78a95f6 ffffffffffffffffffffffffffffffff 317 /Users/NSchiff/Documents/tester/build/Nina.build/Debug-iphoneos/Nina.build/Nina.xcent
 ffffffffffffffffffffffffffffffff ffffffffffffffffffffffffffffffff ffffffffffffffffffffffffffffffff 0 /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina.app/thumbs_018679-glossy-black-icon-symbols-shapes-cube.png
