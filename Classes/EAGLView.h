@@ -121,6 +121,8 @@
 	int highSc;
 	
 	
+	BOOL crashed;
+	
 }
 
 @property (readonly, nonatomic, getter=isAnimating) BOOL animating;

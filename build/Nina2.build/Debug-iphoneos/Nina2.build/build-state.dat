@@ -1,7 +1,7 @@
 TNina2
 v7
 r0
-t307271421.856974
+t312712903.957006
 cCheck dependencies
 cCpResource build/Debug-iphoneos/Nina2.app/ResourceRules.plist /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/ResourceRules.plist
 cProcessInfoPlistFile /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/Info.plist Nina2-Info.plist
@@ -57,7 +57,7 @@ cCompileC build/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/dmSi
 cCompileC build/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/tutorial.o /Users/NSchiff/Documents/tester/Classes/tutorial.m normal armv6 objective-c com.apple.compilers.gcc.4_2
 cLd /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/Nina2 normal armv6
 cGenerateDSYMFile /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app.dSYM /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/Nina2
-cProcessProductPackaging "/Users/NSchiff/Library/MobileDevice/Provisioning Profiles/F29FFEF1-25C9-457A-942C-5C2FE04C8216.mobileprovision" /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/embedded.mobileprovision
+cProcessProductPackaging "/Users/NSchiff/Library/MobileDevice/Provisioning Profiles/2FFE28C2-C7C5-4E46-A3CF-C3C699DEC631.mobileprovision" /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/embedded.mobileprovision
 cTouch /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app
 cProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/Entitlements.plist /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2.xcent
 cCodeSign /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app
@@ -168,9 +168,9 @@ t1284912108
 s23
 
 N/Users/NSchiff/Documents/tester/Classes/EAGLView.h
-c000000004C9F73560000000000000CEF
-t1285518166
-s3311
+c000000004CF3677E0000000000000D00
+t1291020158
+s3328
 i<UIKit/UIKit.h>
 i<QuartzCore/QuartzCore.h>
 i"ES1Renderer.h"
@@ -185,9 +185,9 @@ i"dmSide.h"
 i"tutorial.h"
 
 N/Users/NSchiff/Documents/tester/Classes/EAGLView.m
-c000000004CA05F7A00000000000108B8
-t1285578618
-s67768
+c000000004CF367E300000000000109F9
+t1291020259
+s68089
 i"EAGLView.h"
 i"ES1Renderer.h"
 i"ES2Renderer.h"
@@ -428,236 +428,236 @@ t1285513472
 s4228
 
 N/Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app
-t1285578621
+t1291020103
 s1428
 
 N/Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app.dSYM
-t1285578621
+t1291020103
 s102
 
 N/Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/2down.gesture
-t1285575565
+t1291020100
 s34
 
 N/Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/3down.gesture
-t1285575565
+t1291020100
 s23
 
 N/Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/Info.plist
-t1285575561
+t1291020099
 s736
 
 N/Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/MainWindow.nib
-t1285575565
+t1291020100
 s1126
 
 N/Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/Nina2
-t1285578621
-s346580
+t1291020103
+s353968
 
 N/Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/PkgInfo
-t1285575561
+t1291020099
 s8
 
 N/Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/ResourceRules.plist
-t1285575562
+t1291020099
 s485
 
 N/Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/Shader.fsh
-t1285575562
+t1291020099
 s219
 
 N/Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/Shader.vsh
-t1285575562
+t1291020099
 s353
 
 N/Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/ViewController.nib
-t1285575564
+t1291020100
 s847
 
 N/Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/backward.png
-t1285575566
+t1291020100
 s3969
 
 N/Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/colD.png
-t1285575566
+t1291020100
 s2477
 
 N/Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/colU.png
-t1285575566
+t1291020100
 s2503
 
 N/Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/diagonalDown.gesture
-t1285575565
+t1291020100
 s34
 
 N/Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/diagonalUp.gesture
-t1285575565
+t1291020100
 s34
 
 N/Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/down.gesture
-t1285575565
+t1291020100
 s25
 
 N/Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/embedded.mobileprovision
-t1285575570
-s7162
+t1291020103
+s7158
 
 N/Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/forward.png
-t1285575566
+t1291020100
 s4021
 
 N/Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/icon.png
-t1285575566
+t1291020100
 s2145
 
 N/Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/left.gesture
-t1285575565
+t1291020100
 s25
 
 N/Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/right.gesture
-t1285575565
+t1291020100
 s25
 
 N/Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/rowL.png
-t1285575566
+t1291020100
 s2275
 
 N/Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/rowR.png
-t1285575566
+t1291020100
 s2326
 
 N/Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/sD.png
-t1285575566
+t1291020100
 s1119
 
 N/Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/sL.png
-t1285575566
+t1291020100
 s919
 
 N/Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/sR.png
-t1285575566
+t1291020100
 s930
 
 N/Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/sU.png
-t1285575566
+t1291020100
 s1121
 
 N/Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/spiralout.gesture
-t1285575565
+t1291020100
 s77
 
 N/Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/square.gesture
-t1285575565
+t1291020100
 s37
 
 N/Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/square.png
-t1285575566
+t1291020100
 s1287
 
 N/Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/swapDown.gesture
-t1285575565
+t1291020100
 s15
 
 N/Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/swapLeft.gesture
-t1285575565
+t1291020100
 s15
 
 N/Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/swapRight.gesture
-t1285575565
+t1291020100
 s14
 
 N/Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/swapUp.gesture
-t1285575565
+t1291020100
 s12
 
 N/Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/up.gesture
-t1285575565
+t1291020100
 s23
 
 N/Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/v.gesture
-t1285575565
+t1291020100
 s18
 
 N/Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/z.gesture
-t1285575565
+t1291020100
 s23
 
 N/Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/z.png
-t1285575566
+t1291020100
 s2772
 
 N/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2.xcent
-t1285575570
+t1291020103
 s318
 
 N/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/EAGLView.o
-t1285578620
-s186848
+t1291020102
+s186976
 
 N/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/ES1Renderer.o
-t1285575568
+t1291020101
 s41964
 
 N/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/ES2Renderer.o
-t1285575568
+t1291020101
 s27124
 
 N/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/GameMechanics.o
-t1285575569
+t1291020102
 s91680
 
 N/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/GestureStateMachine.o
-t1285575569
+t1291020102
 s27588
 
 N/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/Nina2.LinkFileList
-c000000004CA0538900000000000006FA
-t1285575561
+c000000004CF3674300000000000006FA
+t1291020099
 s1786
 
 N/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/StateMachineNode.o
-t1285575569
+t1291020102
 s16568
 
 N/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/ViewController.o
-t1285575568
+t1291020102
 s46368
 
 N/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/block.o
-t1285575568
+t1291020102
 s26820
 
 N/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/dmMenu.o
-t1285575570
+t1291020102
 s51892
 
 N/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/dmSide.o
-t1285575570
+t1291020102
 s35508
 
 N/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/gesturePanel.o
-t1285575569
+t1291020102
 s63452
 
 N/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/main.o
-t1285575568
+t1291020101
 s6484
 
 N/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/recognition.o
-t1285575569
+t1291020102
 s41172
 
 N/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/sidePanel.o
-t1285575569
+t1291020102
 s59164
 
 N/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/testerAppDelegate.o
-t1285575568
+t1291020101
 s44452
 
 N/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/tutorial.o
-t1285575570
+t1291020102
 s49300
 
 N/Users/NSchiff/Documents/tester/colD.png
@@ -796,13 +796,18 @@ c000000004C9F61500000000000000E7F
 t1285513552
 s3711
 
+N/Users/NSchiff/Library/MobileDevice/Provisioning Profiles/2FFE28C2-C7C5-4E46-A3CF-C3C699DEC631.mobileprovision
+c000000004CF366A80000000000001BF6
+t1291019944
+s7158
+
 N/Users/NSchiff/Library/MobileDevice/Provisioning Profiles/F29FFEF1-25C9-457A-942C-5C2FE04C8216.mobileprovision
 c000000004C600ECA0000000000001BFA
 t1281363658
 s7162
 
 N/var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Nina2_Prefix-fwygyqduoujagdhbitiptjoqwtfs/Nina2_Prefix.pch.gch
-t1285575568
+t1291020101
 s8950420
 
 NNina2-Info.plist
@@ -812,19 +817,19 @@ s1014
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies307271420#307271420#0(179"[BWARN]warning: building for SDK 'Device - iPhone OS 3.2' requires an armv7 architecture.[BWARN]warning: building for deployment target '3.2' should omit the armv6 architecture.2(22@82"warning: building for SDK 'Device - iPhone OS 3.2' requires an armv7 architecture.307271420#18446744073709551615#0#0(1@0"0(22@81"warning: building for deployment target '3.2' should omit the armv6 architecture.307271420#18446744073709551615#0#0(1@0"0(0#1#0"4300911832#0"0#
+lSLF07#2@18"Check dependencies312712899#312712899#0(179"[BWARN]warning: building for SDK 'Device - iPhone OS 3.2' requires an armv7 architecture.[BWARN]warning: building for deployment target '3.2' should omit the armv6 architecture.2(22@82"warning: building for SDK 'Device - iPhone OS 3.2' requires an armv7 architecture.312712899#18446744073709551615#0#0(1@0"0(22@81"warning: building for deployment target '3.2' should omit the armv6 architecture.312712899#18446744073709551615#0#0(1@0"0(0#1#0"4300911832#0"0#
 
 CCodeSign /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app
-s307271421.173338
-e307271421.856925
+s312712903.608967
+e312712903.956962
 r1
 xCodeSign
 x/Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app
-lSLF07#2@39"CodeSign build/Debug-iphoneos/Nina2.app307271421#307271421#0(0"0(0#0#62"/Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app4300911832#628"    cd /Users/NSchiff/Documents/tester    setenv IGNORE_CODESIGN_ALLOCATE_RADAR_7181968 /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/codesign -f -s "iPhone Developer: Nina Schiff (R7BF4VLQTL)" --resource-rules=/Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/ResourceRules.plist --entitlements /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2.xcent /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app0#
+lSLF07#2@39"CodeSign build/Debug-iphoneos/Nina2.app312712903#312712903#0(0"0(0#0#62"/Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app4300911832#628"    cd /Users/NSchiff/Documents/tester    setenv IGNORE_CODESIGN_ALLOCATE_RADAR_7181968 /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/codesign -f -s "iPhone Developer: Nina Schiff (R7BF4VLQTL)" --resource-rules=/Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/ResourceRules.plist --entitlements /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2.xcent /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app0#
 
 CCompileC build/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/EAGLView.o /Users/NSchiff/Documents/tester/Classes/EAGLView.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-s307271420.384213
-e307271420.938767
+s312712901.697451
+e312712902.295331
 r1
 xCompileC
 xbuild/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/EAGLView.o
@@ -842,15 +847,15 @@ o                 from /Users/NSchiff/Documents/tester/Classes/EAGLView.m:9:
 o/Users/NSchiff/Documents/tester/Classes/tutorial.h:37: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed
 o/Users/NSchiff/Documents/tester/Classes/tutorial.h:37: warning: assign attribute (default) not appropriate for non-gc object property 'second'
 o/Users/NSchiff/Documents/tester/Classes/EAGLView.m: In function '-[EAGLView changeGameVersion]':
-o/Users/NSchiff/Documents/tester/Classes/EAGLView.m:291: warning: no '-descriptionWithCalendarFormat:timeZone:locale:' method found
-o/Users/NSchiff/Documents/tester/Classes/EAGLView.m:291: warning: (Messages without a matching method signature
-o/Users/NSchiff/Documents/tester/Classes/EAGLView.m:291: warning: will be assumed to return 'id' and accept
-o/Users/NSchiff/Documents/tester/Classes/EAGLView.m:291: warning: '...' as arguments.)
-lSLF07#2@58"Compile /Users/NSchiff/Documents/tester/Classes/EAGLView.m307271420#307271420#0(1411"In file included from /Users/NSchiff/Documents/tester/Classes/EAGLView.h:17,                 from /Users/NSchiff/Documents/tester/Classes/EAGLView.m:9:/Users/NSchiff/Documents/tester/Classes/sidePanel.h:46: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed/Users/NSchiff/Documents/tester/Classes/sidePanel.h:46: warning: assign attribute (default) not appropriate for non-gc object property 'restart'In file included from /Users/NSchiff/Documents/tester/Classes/EAGLView.h:21,                 from /Users/NSchiff/Documents/tester/Classes/EAGLView.m:9:/Users/NSchiff/Documents/tester/Classes/tutorial.h:37: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed/Users/NSchiff/Documents/tester/Classes/tutorial.h:37: warning: assign attribute (default) not appropriate for non-gc object property 'second'/Users/NSchiff/Documents/tester/Classes/EAGLView.m: In function '-[EAGLView changeGameVersion]':/Users/NSchiff/Documents/tester/Classes/EAGLView.m:291: warning: no '-descriptionWithCalendarFormat:timeZone:locale:' method found/Users/NSchiff/Documents/tester/Classes/EAGLView.m:291: warning: (Messages without a matching method signature/Users/NSchiff/Documents/tester/Classes/EAGLView.m:291: warning: will be assumed to return 'id' and accept/Users/NSchiff/Documents/tester/Classes/EAGLView.m:291: warning: '...' as arguments.)6(22@77"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed307271420#153#143#3(7@72"In file included from /Users/NSchiff/Documents/tester/Classes/EAGLView.m307271420#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/EAGLView.m307271418#9#0#9#0#0"0(7@72"In file included from /Users/NSchiff/Documents/tester/Classes/EAGLView.h307271420#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/EAGLView.h307210966#17#0#17#0#0"0(13@132"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed in /Users/NSchiff/Documents/tester/Classes/sidePanel.h307271420#18446744073709551615#0#0(6@51"/Users/NSchiff/Documents/tester/Classes/sidePanel.h307190241#46#0#46#0#0"0(6@51"/Users/NSchiff/Documents/tester/Classes/sidePanel.h307190241#46#0#46#0#0"0(22@79"Assign attribute (default) not appropriate for non-gc object property 'restart'307271420#296#145#3(7@72"In file included from /Users/NSchiff/Documents/tester/Classes/EAGLView.m307271420#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/EAGLView.m307271418#9#0#9#0#0"0(7@72"In file included from /Users/NSchiff/Documents/tester/Classes/EAGLView.h307271420#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/EAGLView.h307210966#17#0#17#0#0"0(13@134"Assign attribute (default) not appropriate for non-gc object property 'restart' in /Users/NSchiff/Documents/tester/Classes/sidePanel.h307271420#18446744073709551615#0#0(6@51"/Users/NSchiff/Documents/tester/Classes/sidePanel.h307190241#46#0#46#0#0"0(6@51"/Users/NSchiff/Documents/tester/Classes/sidePanel.h307190241#46#0#46#0#0"0(22@77"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed307271420#594#142#3(7@72"In file included from /Users/NSchiff/Documents/tester/Classes/EAGLView.m307271420#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/EAGLView.m307271418#9#0#9#0#0"0(7@72"In file included from /Users/NSchiff/Documents/tester/Classes/EAGLView.h307271420#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/EAGLView.h307210966#21#0#21#0#0"0(13@131"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed in /Users/NSchiff/Documents/tester/Classes/tutorial.h307271420#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/tutorial.h307209461#37#0#37#0#0"0(6@50"/Users/NSchiff/Documents/tester/Classes/tutorial.h307209461#37#0#37#0#0"0(22@78"Assign attribute (default) not appropriate for non-gc object property 'second'307271420#736#143#3(7@72"In file included from /Users/NSchiff/Documents/tester/Classes/EAGLView.m307271420#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/EAGLView.m307271418#9#0#9#0#0"0(7@72"In file included from /Users/NSchiff/Documents/tester/Classes/EAGLView.h307271420#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/EAGLView.h307210966#21#0#21#0#0"0(13@132"Assign attribute (default) not appropriate for non-gc object property 'second' in /Users/NSchiff/Documents/tester/Classes/tutorial.h307271420#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/tutorial.h307209461#37#0#37#0#0"0(6@50"/Users/NSchiff/Documents/tester/Classes/tutorial.h307209461#37#0#37#0#0"0(22@65"No '-descriptionWithCalendarFormat:timeZone:locale:' method found307271420#976#131#0(6@50"/Users/NSchiff/Documents/tester/Classes/EAGLView.m307271418#291#0#291#0#19"no '*' method found0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)307271420#1107#111#0(6@50"/Users/NSchiff/Documents/tester/Classes/EAGLView.m307271418#291#0#291#0#0"0(0#0#50"/Users/NSchiff/Documents/tester/Classes/EAGLView.m4300911832#1623"    cd /Users/NSchiff/Documents/tester    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -miphoneos-version-min=3.2 -iquote /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-generated-files.hmap -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-own-target-headers.hmap -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-all-target-headers.hmap -iquote /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-project-headers.hmap -F/Users/NSchiff/Documents/tester/build/Debug-iphoneos -I/Users/NSchiff/Documents/tester/build/Debug-iphoneos/include -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/DerivedSources/armv6 -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/DerivedSources -include /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Nina2_Prefix-fwygyqduoujagdhbitiptjoqwtfs/Nina2_Prefix.pch -c /Users/NSchiff/Documents/tester/Classes/EAGLView.m -o /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/EAGLView.o0#
+o/Users/NSchiff/Documents/tester/Classes/EAGLView.m:293: warning: no '-descriptionWithCalendarFormat:timeZone:locale:' method found
+o/Users/NSchiff/Documents/tester/Classes/EAGLView.m:293: warning: (Messages without a matching method signature
+o/Users/NSchiff/Documents/tester/Classes/EAGLView.m:293: warning: will be assumed to return 'id' and accept
+o/Users/NSchiff/Documents/tester/Classes/EAGLView.m:293: warning: '...' as arguments.)
+lSLF07#2@58"Compile /Users/NSchiff/Documents/tester/Classes/EAGLView.m312712901#312712902#0(1411"In file included from /Users/NSchiff/Documents/tester/Classes/EAGLView.h:17,                 from /Users/NSchiff/Documents/tester/Classes/EAGLView.m:9:/Users/NSchiff/Documents/tester/Classes/sidePanel.h:46: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed/Users/NSchiff/Documents/tester/Classes/sidePanel.h:46: warning: assign attribute (default) not appropriate for non-gc object property 'restart'In file included from /Users/NSchiff/Documents/tester/Classes/EAGLView.h:21,                 from /Users/NSchiff/Documents/tester/Classes/EAGLView.m:9:/Users/NSchiff/Documents/tester/Classes/tutorial.h:37: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed/Users/NSchiff/Documents/tester/Classes/tutorial.h:37: warning: assign attribute (default) not appropriate for non-gc object property 'second'/Users/NSchiff/Documents/tester/Classes/EAGLView.m: In function '-[EAGLView changeGameVersion]':/Users/NSchiff/Documents/tester/Classes/EAGLView.m:293: warning: no '-descriptionWithCalendarFormat:timeZone:locale:' method found/Users/NSchiff/Documents/tester/Classes/EAGLView.m:293: warning: (Messages without a matching method signature/Users/NSchiff/Documents/tester/Classes/EAGLView.m:293: warning: will be assumed to return 'id' and accept/Users/NSchiff/Documents/tester/Classes/EAGLView.m:293: warning: '...' as arguments.)6(22@77"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed312712901#153#143#3(7@72"In file included from /Users/NSchiff/Documents/tester/Classes/EAGLView.m312712901#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/EAGLView.m312712381#9#0#9#0#0"0(7@72"In file included from /Users/NSchiff/Documents/tester/Classes/EAGLView.h312712901#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/EAGLView.h307210966#17#0#17#0#0"0(13@132"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed in /Users/NSchiff/Documents/tester/Classes/sidePanel.h312712901#18446744073709551615#0#0(6@51"/Users/NSchiff/Documents/tester/Classes/sidePanel.h307190241#46#0#46#0#0"0(6@51"/Users/NSchiff/Documents/tester/Classes/sidePanel.h307190241#46#0#46#0#0"0(22@79"Assign attribute (default) not appropriate for non-gc object property 'restart'312712901#296#145#3(7@72"In file included from /Users/NSchiff/Documents/tester/Classes/EAGLView.m312712901#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/EAGLView.m312712381#9#0#9#0#0"0(7@72"In file included from /Users/NSchiff/Documents/tester/Classes/EAGLView.h312712901#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/EAGLView.h307210966#17#0#17#0#0"0(13@134"Assign attribute (default) not appropriate for non-gc object property 'restart' in /Users/NSchiff/Documents/tester/Classes/sidePanel.h312712901#18446744073709551615#0#0(6@51"/Users/NSchiff/Documents/tester/Classes/sidePanel.h307190241#46#0#46#0#0"0(6@51"/Users/NSchiff/Documents/tester/Classes/sidePanel.h307190241#46#0#46#0#0"0(22@77"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed312712901#594#142#3(7@72"In file included from /Users/NSchiff/Documents/tester/Classes/EAGLView.m312712901#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/EAGLView.m312712381#9#0#9#0#0"0(7@72"In file included from /Users/NSchiff/Documents/tester/Classes/EAGLView.h312712901#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/EAGLView.h307210966#21#0#21#0#0"0(13@131"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed in /Users/NSchiff/Documents/tester/Classes/tutorial.h312712901#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/tutorial.h307209461#37#0#37#0#0"0(6@50"/Users/NSchiff/Documents/tester/Classes/tutorial.h307209461#37#0#37#0#0"0(22@78"Assign attribute (default) not appropriate for non-gc object property 'second'312712901#736#143#3(7@72"In file included from /Users/NSchiff/Documents/tester/Classes/EAGLView.m312712901#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/EAGLView.m312712381#9#0#9#0#0"0(7@72"In file included from /Users/NSchiff/Documents/tester/Classes/EAGLView.h312712901#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/EAGLView.h307210966#21#0#21#0#0"0(13@132"Assign attribute (default) not appropriate for non-gc object property 'second' in /Users/NSchiff/Documents/tester/Classes/tutorial.h312712901#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/tutorial.h307209461#37#0#37#0#0"0(6@50"/Users/NSchiff/Documents/tester/Classes/tutorial.h307209461#37#0#37#0#0"0(22@65"No '-descriptionWithCalendarFormat:timeZone:locale:' method found312712901#976#131#0(6@50"/Users/NSchiff/Documents/tester/Classes/EAGLView.m312712381#293#0#293#0#19"no '*' method found0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)312712901#1107#111#0(6@50"/Users/NSchiff/Documents/tester/Classes/EAGLView.m312712381#293#0#293#0#0"0(0#0#50"/Users/NSchiff/Documents/tester/Classes/EAGLView.m4300911832#1623"    cd /Users/NSchiff/Documents/tester    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -miphoneos-version-min=3.2 -iquote /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-generated-files.hmap -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-own-target-headers.hmap -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-all-target-headers.hmap -iquote /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-project-headers.hmap -F/Users/NSchiff/Documents/tester/build/Debug-iphoneos -I/Users/NSchiff/Documents/tester/build/Debug-iphoneos/include -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/DerivedSources/armv6 -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/DerivedSources -include /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Nina2_Prefix-fwygyqduoujagdhbitiptjoqwtfs/Nina2_Prefix.pch -c /Users/NSchiff/Documents/tester/Classes/EAGLView.m -o /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/EAGLView.o0#
 
 CCompileC build/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/ES1Renderer.o /Users/NSchiff/Documents/tester/Classes/ES1Renderer.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-s307268368.341741
-e307268368.604169
+s312712901.712420
+e312712901.876216
 r1
 xCompileC
 xbuild/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/ES1Renderer.o
@@ -859,11 +864,11 @@ xnormal
 xarmv6
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@61"Compile /Users/NSchiff/Documents/tester/Classes/ES1Renderer.m307268368#307268368#0(0"0(0#0#53"/Users/NSchiff/Documents/tester/Classes/ES1Renderer.m4300911832#1629"    cd /Users/NSchiff/Documents/tester    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -miphoneos-version-min=3.2 -iquote /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-generated-files.hmap -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-own-target-headers.hmap -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-all-target-headers.hmap -iquote /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-project-headers.hmap -F/Users/NSchiff/Documents/tester/build/Debug-iphoneos -I/Users/NSchiff/Documents/tester/build/Debug-iphoneos/include -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/DerivedSources/armv6 -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/DerivedSources -include /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Nina2_Prefix-fwygyqduoujagdhbitiptjoqwtfs/Nina2_Prefix.pch -c /Users/NSchiff/Documents/tester/Classes/ES1Renderer.m -o /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/ES1Renderer.o0#
+lSLF07#2@61"Compile /Users/NSchiff/Documents/tester/Classes/ES1Renderer.m312712901#312712901#0(0"0(0#0#53"/Users/NSchiff/Documents/tester/Classes/ES1Renderer.m4300911832#1629"    cd /Users/NSchiff/Documents/tester    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -miphoneos-version-min=3.2 -iquote /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-generated-files.hmap -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-own-target-headers.hmap -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-all-target-headers.hmap -iquote /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-project-headers.hmap -F/Users/NSchiff/Documents/tester/build/Debug-iphoneos -I/Users/NSchiff/Documents/tester/build/Debug-iphoneos/include -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/DerivedSources/armv6 -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/DerivedSources -include /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Nina2_Prefix-fwygyqduoujagdhbitiptjoqwtfs/Nina2_Prefix.pch -c /Users/NSchiff/Documents/tester/Classes/ES1Renderer.m -o /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/ES1Renderer.o0#
 
 CCompileC build/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/ES2Renderer.o /Users/NSchiff/Documents/tester/Classes/ES2Renderer.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-s307268368.604287
-e307268368.692981
+s312712901.876321
+e312712901.969794
 r1
 xCompileC
 xbuild/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/ES2Renderer.o
@@ -875,11 +880,11 @@ xcom.apple.compilers.gcc.4_2
 o/Users/NSchiff/Documents/tester/Classes/ES2Renderer.m:325: warning: incomplete implementation of class 'ES2Renderer'
 o/Users/NSchiff/Documents/tester/Classes/ES2Renderer.m:325: warning: method definition for '-renderByRotatingAroundX:rotatingAroundY:' not found
 o/Users/NSchiff/Documents/tester/Classes/ES2Renderer.m:325: warning: class 'ES2Renderer' does not fully implement the 'ESRenderer' protocol
-lSLF07#2@61"Compile /Users/NSchiff/Documents/tester/Classes/ES2Renderer.m307268368#307268368#0(400"/Users/NSchiff/Documents/tester/Classes/ES2Renderer.m:325: warning: incomplete implementation of class 'ES2Renderer'/Users/NSchiff/Documents/tester/Classes/ES2Renderer.m:325: warning: method definition for '-renderByRotatingAroundX:rotatingAroundY:' not found/Users/NSchiff/Documents/tester/Classes/ES2Renderer.m:325: warning: class 'ES2Renderer' does not fully implement the 'ESRenderer' protocol3(22@48"Incomplete implementation of class 'ES2Renderer'307268368#0#117#0(6@53"/Users/NSchiff/Documents/tester/Classes/ES2Renderer.m298565123#325#0#325#0#38"incomplete implementation of class '*'0(22@75"Method definition for '-renderByRotatingAroundX:rotatingAroundY:' not found307268368#117#144#0(6@53"/Users/NSchiff/Documents/tester/Classes/ES2Renderer.m298565123#325#0#325#0#35"method definition for '*' not found0(22@70"Class 'ES2Renderer' does not fully implement the 'ESRenderer' protocol307268368#261#139#0(6@53"/Users/NSchiff/Documents/tester/Classes/ES2Renderer.m298565123#325#0#325#0#51"class '*' does not fully implement the '*' protocol0(0#0#53"/Users/NSchiff/Documents/tester/Classes/ES2Renderer.m4300911832#1629"    cd /Users/NSchiff/Documents/tester    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -miphoneos-version-min=3.2 -iquote /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-generated-files.hmap -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-own-target-headers.hmap -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-all-target-headers.hmap -iquote /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-project-headers.hmap -F/Users/NSchiff/Documents/tester/build/Debug-iphoneos -I/Users/NSchiff/Documents/tester/build/Debug-iphoneos/include -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/DerivedSources/armv6 -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/DerivedSources -include /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Nina2_Prefix-fwygyqduoujagdhbitiptjoqwtfs/Nina2_Prefix.pch -c /Users/NSchiff/Documents/tester/Classes/ES2Renderer.m -o /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/ES2Renderer.o0#
+lSLF07#2@61"Compile /Users/NSchiff/Documents/tester/Classes/ES2Renderer.m312712901#312712901#0(400"/Users/NSchiff/Documents/tester/Classes/ES2Renderer.m:325: warning: incomplete implementation of class 'ES2Renderer'/Users/NSchiff/Documents/tester/Classes/ES2Renderer.m:325: warning: method definition for '-renderByRotatingAroundX:rotatingAroundY:' not found/Users/NSchiff/Documents/tester/Classes/ES2Renderer.m:325: warning: class 'ES2Renderer' does not fully implement the 'ESRenderer' protocol3(22@48"Incomplete implementation of class 'ES2Renderer'312712901#0#117#0(6@53"/Users/NSchiff/Documents/tester/Classes/ES2Renderer.m298565123#325#0#325#0#38"incomplete implementation of class '*'0(22@75"Method definition for '-renderByRotatingAroundX:rotatingAroundY:' not found312712901#117#144#0(6@53"/Users/NSchiff/Documents/tester/Classes/ES2Renderer.m298565123#325#0#325#0#35"method definition for '*' not found0(22@70"Class 'ES2Renderer' does not fully implement the 'ESRenderer' protocol312712901#261#139#0(6@53"/Users/NSchiff/Documents/tester/Classes/ES2Renderer.m298565123#325#0#325#0#51"class '*' does not fully implement the '*' protocol0(0#0#53"/Users/NSchiff/Documents/tester/Classes/ES2Renderer.m4300911832#1629"    cd /Users/NSchiff/Documents/tester    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -miphoneos-version-min=3.2 -iquote /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-generated-files.hmap -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-own-target-headers.hmap -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-all-target-headers.hmap -iquote /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-project-headers.hmap -F/Users/NSchiff/Documents/tester/build/Debug-iphoneos -I/Users/NSchiff/Documents/tester/build/Debug-iphoneos/include -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/DerivedSources/armv6 -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/DerivedSources -include /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Nina2_Prefix-fwygyqduoujagdhbitiptjoqwtfs/Nina2_Prefix.pch -c /Users/NSchiff/Documents/tester/Classes/ES2Renderer.m -o /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/ES2Renderer.o0#
 
 CCompileC build/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/GameMechanics.o /Users/NSchiff/Documents/tester/Classes/GameMechanics.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-s307268369.390639
-e307268369.871681
+s312712902.361286
+e312712902.749375
 r1
 xCompileC
 xbuild/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/GameMechanics.o
@@ -896,11 +901,11 @@ o/Users/NSchiff/Documents/tester/Classes/GameMechanics.m: In function '-[GameMec
 o/Users/NSchiff/Documents/tester/Classes/GameMechanics.m:640: warning: unused variable 'tempPos'
 o/Users/NSchiff/Documents/tester/Classes/GameMechanics.m: In function '-[GameMechanics rotateCube]':
 o/Users/NSchiff/Documents/tester/Classes/GameMechanics.m:1308: warning: unused variable 'z'
-lSLF07#2@63"Compile /Users/NSchiff/Documents/tester/Classes/GameMechanics.m307268369#307268369#0(774"/Users/NSchiff/Documents/tester/Classes/GameMechanics.m: In function '-[GameMechanics rowLeft]':/Users/NSchiff/Documents/tester/Classes/GameMechanics.m:168: warning: unused variable 'tempPos'/Users/NSchiff/Documents/tester/Classes/GameMechanics.m: In function '-[GameMechanics columnUp]':/Users/NSchiff/Documents/tester/Classes/GameMechanics.m:487: warning: unused variable 'tempPos'/Users/NSchiff/Documents/tester/Classes/GameMechanics.m: In function '-[GameMechanics columnDown]':/Users/NSchiff/Documents/tester/Classes/GameMechanics.m:640: warning: unused variable 'tempPos'/Users/NSchiff/Documents/tester/Classes/GameMechanics.m: In function '-[GameMechanics rotateCube]':/Users/NSchiff/Documents/tester/Classes/GameMechanics.m:1308: warning: unused variable 'z'4(22@25"Unused variable 'tempPos'307268369#97#96#0(6@55"/Users/NSchiff/Documents/tester/Classes/GameMechanics.m307224087#168#0#168#0#19"unused variable '*'0(22@25"Unused variable 'tempPos'307268369#291#96#0(6@55"/Users/NSchiff/Documents/tester/Classes/GameMechanics.m307224087#487#0#487#0#19"unused variable '*'0(22@25"Unused variable 'tempPos'307268369#487#96#0(6@55"/Users/NSchiff/Documents/tester/Classes/GameMechanics.m307224087#640#0#640#0#19"unused variable '*'0(22@19"Unused variable 'z'307268369#683#91#0(6@55"/Users/NSchiff/Documents/tester/Classes/GameMechanics.m307224087#1308#0#1308#0#19"unused variable '*'0(0#0#55"/Users/NSchiff/Documents/tester/Classes/GameMechanics.m4300911832#1633"    cd /Users/NSchiff/Documents/tester    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -miphoneos-version-min=3.2 -iquote /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-generated-files.hmap -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-own-target-headers.hmap -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-all-target-headers.hmap -iquote /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-project-headers.hmap -F/Users/NSchiff/Documents/tester/build/Debug-iphoneos -I/Users/NSchiff/Documents/tester/build/Debug-iphoneos/include -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/DerivedSources/armv6 -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/DerivedSources -include /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Nina2_Prefix-fwygyqduoujagdhbitiptjoqwtfs/Nina2_Prefix.pch -c /Users/NSchiff/Documents/tester/Classes/GameMechanics.m -o /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/GameMechanics.o0#
+lSLF07#2@63"Compile /Users/NSchiff/Documents/tester/Classes/GameMechanics.m312712902#312712902#0(774"/Users/NSchiff/Documents/tester/Classes/GameMechanics.m: In function '-[GameMechanics rowLeft]':/Users/NSchiff/Documents/tester/Classes/GameMechanics.m:168: warning: unused variable 'tempPos'/Users/NSchiff/Documents/tester/Classes/GameMechanics.m: In function '-[GameMechanics columnUp]':/Users/NSchiff/Documents/tester/Classes/GameMechanics.m:487: warning: unused variable 'tempPos'/Users/NSchiff/Documents/tester/Classes/GameMechanics.m: In function '-[GameMechanics columnDown]':/Users/NSchiff/Documents/tester/Classes/GameMechanics.m:640: warning: unused variable 'tempPos'/Users/NSchiff/Documents/tester/Classes/GameMechanics.m: In function '-[GameMechanics rotateCube]':/Users/NSchiff/Documents/tester/Classes/GameMechanics.m:1308: warning: unused variable 'z'4(22@25"Unused variable 'tempPos'312712902#97#96#0(6@55"/Users/NSchiff/Documents/tester/Classes/GameMechanics.m307224087#168#0#168#0#19"unused variable '*'0(22@25"Unused variable 'tempPos'312712902#291#96#0(6@55"/Users/NSchiff/Documents/tester/Classes/GameMechanics.m307224087#487#0#487#0#19"unused variable '*'0(22@25"Unused variable 'tempPos'312712902#487#96#0(6@55"/Users/NSchiff/Documents/tester/Classes/GameMechanics.m307224087#640#0#640#0#19"unused variable '*'0(22@19"Unused variable 'z'312712902#683#91#0(6@55"/Users/NSchiff/Documents/tester/Classes/GameMechanics.m307224087#1308#0#1308#0#19"unused variable '*'0(0#0#55"/Users/NSchiff/Documents/tester/Classes/GameMechanics.m4300911832#1633"    cd /Users/NSchiff/Documents/tester    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -miphoneos-version-min=3.2 -iquote /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-generated-files.hmap -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-own-target-headers.hmap -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-all-target-headers.hmap -iquote /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-project-headers.hmap -F/Users/NSchiff/Documents/tester/build/Debug-iphoneos -I/Users/NSchiff/Documents/tester/build/Debug-iphoneos/include -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/DerivedSources/armv6 -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/DerivedSources -include /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Nina2_Prefix-fwygyqduoujagdhbitiptjoqwtfs/Nina2_Prefix.pch -c /Users/NSchiff/Documents/tester/Classes/GameMechanics.m -o /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/GameMechanics.o0#
 
 CCompileC build/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/GestureStateMachine.o /Users/NSchiff/Documents/tester/Classes/GestureStateMachine.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-s307268368.933533
-e307268369.071160
+s312712902.154600
+e312712902.265666
 r1
 xCompileC
 xbuild/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/GestureStateMachine.o
@@ -913,11 +918,11 @@ o/Users/NSchiff/Documents/tester/Classes/GestureStateMachine.m: In function '-[G
 o/Users/NSchiff/Documents/tester/Classes/GestureStateMachine.m:73: warning: 'stringWithContentsOfFile:' is deprecated (declared at /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSString.h:361)
 o/Users/NSchiff/Documents/tester/Classes/GestureStateMachine.m: In function '-[GestureStateMachine processGestureRelations:]':
 o/Users/NSchiff/Documents/tester/Classes/GestureStateMachine.m:88: warning: initialization discards qualifiers from pointer target type
-lSLF07#2@69"Compile /Users/NSchiff/Documents/tester/Classes/GestureStateMachine.m307268368#307268369#0(653"/Users/NSchiff/Documents/tester/Classes/GestureStateMachine.m: In function '-[GestureStateMachine canReadGestureFile:]':/Users/NSchiff/Documents/tester/Classes/GestureStateMachine.m:73: warning: 'stringWithContentsOfFile:' is deprecated (declared at /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSString.h:361)/Users/NSchiff/Documents/tester/Classes/GestureStateMachine.m: In function '-[GestureStateMachine processGestureRelations:]':/Users/NSchiff/Documents/tester/Classes/GestureStateMachine.m:88: warning: initialization discards qualifiers from pointer target type2(22@195"'stringWithContentsOfFile:' is deprecated (declared at /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSString.h:361)307268368#121#271#0(6@61"/Users/NSchiff/Documents/tester/Classes/GestureStateMachine.m307212012#73#0#73#0#33"'*' is deprecated (declared at *)0(22@59"Initialization discards qualifiers from pointer target type307268368#518#135#0(6@61"/Users/NSchiff/Documents/tester/Classes/GestureStateMachine.m307212012#88#0#88#0#0"0(0#0#61"/Users/NSchiff/Documents/tester/Classes/GestureStateMachine.m4300911832#1645"    cd /Users/NSchiff/Documents/tester    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -miphoneos-version-min=3.2 -iquote /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-generated-files.hmap -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-own-target-headers.hmap -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-all-target-headers.hmap -iquote /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-project-headers.hmap -F/Users/NSchiff/Documents/tester/build/Debug-iphoneos -I/Users/NSchiff/Documents/tester/build/Debug-iphoneos/include -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/DerivedSources/armv6 -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/DerivedSources -include /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Nina2_Prefix-fwygyqduoujagdhbitiptjoqwtfs/Nina2_Prefix.pch -c /Users/NSchiff/Documents/tester/Classes/GestureStateMachine.m -o /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/GestureStateMachine.o0#
+lSLF07#2@69"Compile /Users/NSchiff/Documents/tester/Classes/GestureStateMachine.m312712902#312712902#0(653"/Users/NSchiff/Documents/tester/Classes/GestureStateMachine.m: In function '-[GestureStateMachine canReadGestureFile:]':/Users/NSchiff/Documents/tester/Classes/GestureStateMachine.m:73: warning: 'stringWithContentsOfFile:' is deprecated (declared at /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSString.h:361)/Users/NSchiff/Documents/tester/Classes/GestureStateMachine.m: In function '-[GestureStateMachine processGestureRelations:]':/Users/NSchiff/Documents/tester/Classes/GestureStateMachine.m:88: warning: initialization discards qualifiers from pointer target type2(22@195"'stringWithContentsOfFile:' is deprecated (declared at /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSString.h:361)312712902#121#271#0(6@61"/Users/NSchiff/Documents/tester/Classes/GestureStateMachine.m307212012#73#0#73#0#33"'*' is deprecated (declared at *)0(22@59"Initialization discards qualifiers from pointer target type312712902#518#135#0(6@61"/Users/NSchiff/Documents/tester/Classes/GestureStateMachine.m307212012#88#0#88#0#0"0(0#0#61"/Users/NSchiff/Documents/tester/Classes/GestureStateMachine.m4300911832#1645"    cd /Users/NSchiff/Documents/tester    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -miphoneos-version-min=3.2 -iquote /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-generated-files.hmap -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-own-target-headers.hmap -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-all-target-headers.hmap -iquote /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-project-headers.hmap -F/Users/NSchiff/Documents/tester/build/Debug-iphoneos -I/Users/NSchiff/Documents/tester/build/Debug-iphoneos/include -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/DerivedSources/armv6 -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/DerivedSources -include /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Nina2_Prefix-fwygyqduoujagdhbitiptjoqwtfs/Nina2_Prefix.pch -c /Users/NSchiff/Documents/tester/Classes/GestureStateMachine.m -o /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/GestureStateMachine.o0#
 
 CCompileC build/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/StateMachineNode.o /Users/NSchiff/Documents/tester/Classes/StateMachineNode.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-s307268369.283737
-e307268369.390531
+s312712902.295438
+e312712902.361161
 r1
 xCompileC
 xbuild/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/StateMachineNode.o
@@ -926,11 +931,11 @@ xnormal
 xarmv6
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@66"Compile /Users/NSchiff/Documents/tester/Classes/StateMachineNode.m307268369#307268369#0(0"0(0#0#58"/Users/NSchiff/Documents/tester/Classes/StateMachineNode.m4300911832#1639"    cd /Users/NSchiff/Documents/tester    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -miphoneos-version-min=3.2 -iquote /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-generated-files.hmap -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-own-target-headers.hmap -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-all-target-headers.hmap -iquote /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-project-headers.hmap -F/Users/NSchiff/Documents/tester/build/Debug-iphoneos -I/Users/NSchiff/Documents/tester/build/Debug-iphoneos/include -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/DerivedSources/armv6 -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/DerivedSources -include /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Nina2_Prefix-fwygyqduoujagdhbitiptjoqwtfs/Nina2_Prefix.pch -c /Users/NSchiff/Documents/tester/Classes/StateMachineNode.m -o /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/StateMachineNode.o0#
+lSLF07#2@66"Compile /Users/NSchiff/Documents/tester/Classes/StateMachineNode.m312712902#312712902#0(0"0(0#0#58"/Users/NSchiff/Documents/tester/Classes/StateMachineNode.m4300911832#1639"    cd /Users/NSchiff/Documents/tester    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -miphoneos-version-min=3.2 -iquote /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-generated-files.hmap -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-own-target-headers.hmap -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-all-target-headers.hmap -iquote /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-project-headers.hmap -F/Users/NSchiff/Documents/tester/build/Debug-iphoneos -I/Users/NSchiff/Documents/tester/build/Debug-iphoneos/include -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/DerivedSources/armv6 -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/DerivedSources -include /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Nina2_Prefix-fwygyqduoujagdhbitiptjoqwtfs/Nina2_Prefix.pch -c /Users/NSchiff/Documents/tester/Classes/StateMachineNode.m -o /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/StateMachineNode.o0#
 
 CCompileC build/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/ViewController.o /Users/NSchiff/Documents/tester/Classes/ViewController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-s307268368.802440
-e307268368.933425
+s312712902.066159
+e312712902.154489
 r1
 xCompileC
 xbuild/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/ViewController.o
@@ -952,11 +957,11 @@ o/Users/NSchiff/Documents/tester/Classes/ViewController.m:33: warning: 'UIView' 
 o/Users/NSchiff/Documents/tester/Classes/ViewController.m:33: warning: (Messages without a matching method signature
 o/Users/NSchiff/Documents/tester/Classes/ViewController.m:33: warning: will be assumed to return 'id' and accept
 o/Users/NSchiff/Documents/tester/Classes/ViewController.m:33: warning: '...' as arguments.)
-lSLF07#2@64"Compile /Users/NSchiff/Documents/tester/Classes/ViewController.m307268368#307268368#0(1431"In file included from /Users/NSchiff/Documents/tester/Classes/EAGLView.h:17,                 from /Users/NSchiff/Documents/tester/Classes/ViewController.m:10:/Users/NSchiff/Documents/tester/Classes/sidePanel.h:46: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed/Users/NSchiff/Documents/tester/Classes/sidePanel.h:46: warning: assign attribute (default) not appropriate for non-gc object property 'restart'In file included from /Users/NSchiff/Documents/tester/Classes/EAGLView.h:21,                 from /Users/NSchiff/Documents/tester/Classes/ViewController.m:10:/Users/NSchiff/Documents/tester/Classes/tutorial.h:37: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed/Users/NSchiff/Documents/tester/Classes/tutorial.h:37: warning: assign attribute (default) not appropriate for non-gc object property 'second'/Users/NSchiff/Documents/tester/Classes/ViewController.m: In function '-[ViewController viewDidLoad]':/Users/NSchiff/Documents/tester/Classes/ViewController.m:33: warning: 'UIView' may not respond to '-startAnimation'/Users/NSchiff/Documents/tester/Classes/ViewController.m:33: warning: (Messages without a matching method signature/Users/NSchiff/Documents/tester/Classes/ViewController.m:33: warning: will be assumed to return 'id' and accept/Users/NSchiff/Documents/tester/Classes/ViewController.m:33: warning: '...' as arguments.)6(22@77"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed307268368#160#143#3(7@78"In file included from /Users/NSchiff/Documents/tester/Classes/ViewController.m307268368#18446744073709551615#0#0(6@56"/Users/NSchiff/Documents/tester/Classes/ViewController.m307212081#10#0#10#0#0"0(7@72"In file included from /Users/NSchiff/Documents/tester/Classes/EAGLView.h307268368#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/EAGLView.h307210966#17#0#17#0#0"0(13@132"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed in /Users/NSchiff/Documents/tester/Classes/sidePanel.h307268368#18446744073709551615#0#0(6@51"/Users/NSchiff/Documents/tester/Classes/sidePanel.h307190241#46#0#46#0#0"0(6@51"/Users/NSchiff/Documents/tester/Classes/sidePanel.h307190241#46#0#46#0#0"0(22@79"Assign attribute (default) not appropriate for non-gc object property 'restart'307268368#303#145#3(7@78"In file included from /Users/NSchiff/Documents/tester/Classes/ViewController.m307268368#18446744073709551615#0#0(6@56"/Users/NSchiff/Documents/tester/Classes/ViewController.m307212081#10#0#10#0#0"0(7@72"In file included from /Users/NSchiff/Documents/tester/Classes/EAGLView.h307268368#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/EAGLView.h307210966#17#0#17#0#0"0(13@134"Assign attribute (default) not appropriate for non-gc object property 'restart' in /Users/NSchiff/Documents/tester/Classes/sidePanel.h307268368#18446744073709551615#0#0(6@51"/Users/NSchiff/Documents/tester/Classes/sidePanel.h307190241#46#0#46#0#0"0(6@51"/Users/NSchiff/Documents/tester/Classes/sidePanel.h307190241#46#0#46#0#0"0(22@77"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed307268368#608#142#3(7@78"In file included from /Users/NSchiff/Documents/tester/Classes/ViewController.m307268368#18446744073709551615#0#0(6@56"/Users/NSchiff/Documents/tester/Classes/ViewController.m307212081#10#0#10#0#0"0(7@72"In file included from /Users/NSchiff/Documents/tester/Classes/EAGLView.h307268368#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/EAGLView.h307210966#21#0#21#0#0"0(13@131"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed in /Users/NSchiff/Documents/tester/Classes/tutorial.h307268368#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/tutorial.h307209461#37#0#37#0#0"0(6@50"/Users/NSchiff/Documents/tester/Classes/tutorial.h307209461#37#0#37#0#0"0(22@78"Assign attribute (default) not appropriate for non-gc object property 'second'307268368#750#143#3(7@78"In file included from /Users/NSchiff/Documents/tester/Classes/ViewController.m307268368#18446744073709551615#0#0(6@56"/Users/NSchiff/Documents/tester/Classes/ViewController.m307212081#10#0#10#0#0"0(7@72"In file included from /Users/NSchiff/Documents/tester/Classes/EAGLView.h307268368#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/EAGLView.h307210966#21#0#21#0#0"0(13@132"Assign attribute (default) not appropriate for non-gc object property 'second' in /Users/NSchiff/Documents/tester/Classes/tutorial.h307268368#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/tutorial.h307209461#37#0#37#0#0"0(6@50"/Users/NSchiff/Documents/tester/Classes/tutorial.h307209461#37#0#37#0#0"0(22@45"'UIView' may not respond to '-startAnimation'307268368#996#116#0(6@56"/Users/NSchiff/Documents/tester/Classes/ViewController.m307212081#33#0#33#0#26"'*' may not respond to '*'0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)307268368#1112#116#0(6@56"/Users/NSchiff/Documents/tester/Classes/ViewController.m307212081#33#0#33#0#0"0(0#0#56"/Users/NSchiff/Documents/tester/Classes/ViewController.m4300911832#1635"    cd /Users/NSchiff/Documents/tester    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -miphoneos-version-min=3.2 -iquote /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-generated-files.hmap -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-own-target-headers.hmap -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-all-target-headers.hmap -iquote /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-project-headers.hmap -F/Users/NSchiff/Documents/tester/build/Debug-iphoneos -I/Users/NSchiff/Documents/tester/build/Debug-iphoneos/include -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/DerivedSources/armv6 -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/DerivedSources -include /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Nina2_Prefix-fwygyqduoujagdhbitiptjoqwtfs/Nina2_Prefix.pch -c /Users/NSchiff/Documents/tester/Classes/ViewController.m -o /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/ViewController.o0#
+lSLF07#2@64"Compile /Users/NSchiff/Documents/tester/Classes/ViewController.m312712902#312712902#0(1431"In file included from /Users/NSchiff/Documents/tester/Classes/EAGLView.h:17,                 from /Users/NSchiff/Documents/tester/Classes/ViewController.m:10:/Users/NSchiff/Documents/tester/Classes/sidePanel.h:46: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed/Users/NSchiff/Documents/tester/Classes/sidePanel.h:46: warning: assign attribute (default) not appropriate for non-gc object property 'restart'In file included from /Users/NSchiff/Documents/tester/Classes/EAGLView.h:21,                 from /Users/NSchiff/Documents/tester/Classes/ViewController.m:10:/Users/NSchiff/Documents/tester/Classes/tutorial.h:37: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed/Users/NSchiff/Documents/tester/Classes/tutorial.h:37: warning: assign attribute (default) not appropriate for non-gc object property 'second'/Users/NSchiff/Documents/tester/Classes/ViewController.m: In function '-[ViewController viewDidLoad]':/Users/NSchiff/Documents/tester/Classes/ViewController.m:33: warning: 'UIView' may not respond to '-startAnimation'/Users/NSchiff/Documents/tester/Classes/ViewController.m:33: warning: (Messages without a matching method signature/Users/NSchiff/Documents/tester/Classes/ViewController.m:33: warning: will be assumed to return 'id' and accept/Users/NSchiff/Documents/tester/Classes/ViewController.m:33: warning: '...' as arguments.)6(22@77"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed312712902#160#143#3(7@78"In file included from /Users/NSchiff/Documents/tester/Classes/ViewController.m312712902#18446744073709551615#0#0(6@56"/Users/NSchiff/Documents/tester/Classes/ViewController.m307212081#10#0#10#0#0"0(7@72"In file included from /Users/NSchiff/Documents/tester/Classes/EAGLView.h312712902#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/EAGLView.h307210966#17#0#17#0#0"0(13@132"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed in /Users/NSchiff/Documents/tester/Classes/sidePanel.h312712902#18446744073709551615#0#0(6@51"/Users/NSchiff/Documents/tester/Classes/sidePanel.h307190241#46#0#46#0#0"0(6@51"/Users/NSchiff/Documents/tester/Classes/sidePanel.h307190241#46#0#46#0#0"0(22@79"Assign attribute (default) not appropriate for non-gc object property 'restart'312712902#303#145#3(7@78"In file included from /Users/NSchiff/Documents/tester/Classes/ViewController.m312712902#18446744073709551615#0#0(6@56"/Users/NSchiff/Documents/tester/Classes/ViewController.m307212081#10#0#10#0#0"0(7@72"In file included from /Users/NSchiff/Documents/tester/Classes/EAGLView.h312712902#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/EAGLView.h307210966#17#0#17#0#0"0(13@134"Assign attribute (default) not appropriate for non-gc object property 'restart' in /Users/NSchiff/Documents/tester/Classes/sidePanel.h312712902#18446744073709551615#0#0(6@51"/Users/NSchiff/Documents/tester/Classes/sidePanel.h307190241#46#0#46#0#0"0(6@51"/Users/NSchiff/Documents/tester/Classes/sidePanel.h307190241#46#0#46#0#0"0(22@77"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed312712902#608#142#3(7@78"In file included from /Users/NSchiff/Documents/tester/Classes/ViewController.m312712902#18446744073709551615#0#0(6@56"/Users/NSchiff/Documents/tester/Classes/ViewController.m307212081#10#0#10#0#0"0(7@72"In file included from /Users/NSchiff/Documents/tester/Classes/EAGLView.h312712902#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/EAGLView.h307210966#21#0#21#0#0"0(13@131"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed in /Users/NSchiff/Documents/tester/Classes/tutorial.h312712902#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/tutorial.h307209461#37#0#37#0#0"0(6@50"/Users/NSchiff/Documents/tester/Classes/tutorial.h307209461#37#0#37#0#0"0(22@78"Assign attribute (default) not appropriate for non-gc object property 'second'312712902#750#143#3(7@78"In file included from /Users/NSchiff/Documents/tester/Classes/ViewController.m312712902#18446744073709551615#0#0(6@56"/Users/NSchiff/Documents/tester/Classes/ViewController.m307212081#10#0#10#0#0"0(7@72"In file included from /Users/NSchiff/Documents/tester/Classes/EAGLView.h312712902#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/EAGLView.h307210966#21#0#21#0#0"0(13@132"Assign attribute (default) not appropriate for non-gc object property 'second' in /Users/NSchiff/Documents/tester/Classes/tutorial.h312712902#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/tutorial.h307209461#37#0#37#0#0"0(6@50"/Users/NSchiff/Documents/tester/Classes/tutorial.h307209461#37#0#37#0#0"0(22@45"'UIView' may not respond to '-startAnimation'312712902#996#116#0(6@56"/Users/NSchiff/Documents/tester/Classes/ViewController.m307212081#33#0#33#0#26"'*' may not respond to '*'0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)312712902#1112#116#0(6@56"/Users/NSchiff/Documents/tester/Classes/ViewController.m307212081#33#0#33#0#0"0(0#0#56"/Users/NSchiff/Documents/tester/Classes/ViewController.m4300911832#1635"    cd /Users/NSchiff/Documents/tester    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -miphoneos-version-min=3.2 -iquote /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-generated-files.hmap -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-own-target-headers.hmap -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-all-target-headers.hmap -iquote /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-project-headers.hmap -F/Users/NSchiff/Documents/tester/build/Debug-iphoneos -I/Users/NSchiff/Documents/tester/build/Debug-iphoneos/include -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/DerivedSources/armv6 -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/DerivedSources -include /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Nina2_Prefix-fwygyqduoujagdhbitiptjoqwtfs/Nina2_Prefix.pch -c /Users/NSchiff/Documents/tester/Classes/ViewController.m -o /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/ViewController.o0#
 
 CCompileC build/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/block.o /Users/NSchiff/Documents/tester/Classes/block.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-s307268368.693097
-e307268368.802322
+s312712901.969902
+e312712902.066056
 r1
 xCompileC
 xbuild/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/block.o
@@ -965,11 +970,11 @@ xnormal
 xarmv6
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@55"Compile /Users/NSchiff/Documents/tester/Classes/block.m307268368#307268368#0(0"0(0#0#47"/Users/NSchiff/Documents/tester/Classes/block.m4300911832#1617"    cd /Users/NSchiff/Documents/tester    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -miphoneos-version-min=3.2 -iquote /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-generated-files.hmap -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-own-target-headers.hmap -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-all-target-headers.hmap -iquote /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-project-headers.hmap -F/Users/NSchiff/Documents/tester/build/Debug-iphoneos -I/Users/NSchiff/Documents/tester/build/Debug-iphoneos/include -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/DerivedSources/armv6 -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/DerivedSources -include /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Nina2_Prefix-fwygyqduoujagdhbitiptjoqwtfs/Nina2_Prefix.pch -c /Users/NSchiff/Documents/tester/Classes/block.m -o /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/block.o0#
+lSLF07#2@55"Compile /Users/NSchiff/Documents/tester/Classes/block.m312712901#312712902#0(0"0(0#0#47"/Users/NSchiff/Documents/tester/Classes/block.m4300911832#1617"    cd /Users/NSchiff/Documents/tester    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -miphoneos-version-min=3.2 -iquote /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-generated-files.hmap -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-own-target-headers.hmap -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-all-target-headers.hmap -iquote /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-project-headers.hmap -F/Users/NSchiff/Documents/tester/build/Debug-iphoneos -I/Users/NSchiff/Documents/tester/build/Debug-iphoneos/include -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/DerivedSources/armv6 -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/DerivedSources -include /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Nina2_Prefix-fwygyqduoujagdhbitiptjoqwtfs/Nina2_Prefix.pch -c /Users/NSchiff/Documents/tester/Classes/block.m -o /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/block.o0#
 
 CCompileC build/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/dmMenu.o /Users/NSchiff/Documents/tester/Classes/dmMenu.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-s307268369.871785
-e307268370.123451
+s312712902.749488
+e312712902.904999
 r1
 xCompileC
 xbuild/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/dmMenu.o
@@ -983,11 +988,11 @@ o/Users/NSchiff/Documents/tester/Classes/dmMenu.m:239: warning: 'dmSide' may not
 o/Users/NSchiff/Documents/tester/Classes/dmMenu.m:239: warning: (Messages without a matching method signature
 o/Users/NSchiff/Documents/tester/Classes/dmMenu.m:239: warning: will be assumed to return 'id' and accept
 o/Users/NSchiff/Documents/tester/Classes/dmMenu.m:239: warning: '...' as arguments.)
-lSLF07#2@56"Compile /Users/NSchiff/Documents/tester/Classes/dmMenu.m307268369#307268370#0(485"/Users/NSchiff/Documents/tester/Classes/dmMenu.m: In function '-[dmMenu rockB]':/Users/NSchiff/Documents/tester/Classes/dmMenu.m:239: warning: 'dmSide' may not respond to '-setupOther:'/Users/NSchiff/Documents/tester/Classes/dmMenu.m:239: warning: (Messages without a matching method signature/Users/NSchiff/Documents/tester/Classes/dmMenu.m:239: warning: will be assumed to return 'id' and accept/Users/NSchiff/Documents/tester/Classes/dmMenu.m:239: warning: '...' as arguments.)2(22@42"'dmSide' may not respond to '-setupOther:'307268369#81#106#0(6@48"/Users/NSchiff/Documents/tester/Classes/dmMenu.m307200840#239#0#239#0#26"'*' may not respond to '*'0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)307268369#187#109#0(6@48"/Users/NSchiff/Documents/tester/Classes/dmMenu.m307200840#239#0#239#0#0"0(0#0#48"/Users/NSchiff/Documents/tester/Classes/dmMenu.m4300911832#1619"    cd /Users/NSchiff/Documents/tester    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -miphoneos-version-min=3.2 -iquote /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-generated-files.hmap -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-own-target-headers.hmap -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-all-target-headers.hmap -iquote /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-project-headers.hmap -F/Users/NSchiff/Documents/tester/build/Debug-iphoneos -I/Users/NSchiff/Documents/tester/build/Debug-iphoneos/include -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/DerivedSources/armv6 -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/DerivedSources -include /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Nina2_Prefix-fwygyqduoujagdhbitiptjoqwtfs/Nina2_Prefix.pch -c /Users/NSchiff/Documents/tester/Classes/dmMenu.m -o /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/dmMenu.o0#
+lSLF07#2@56"Compile /Users/NSchiff/Documents/tester/Classes/dmMenu.m312712902#312712902#0(485"/Users/NSchiff/Documents/tester/Classes/dmMenu.m: In function '-[dmMenu rockB]':/Users/NSchiff/Documents/tester/Classes/dmMenu.m:239: warning: 'dmSide' may not respond to '-setupOther:'/Users/NSchiff/Documents/tester/Classes/dmMenu.m:239: warning: (Messages without a matching method signature/Users/NSchiff/Documents/tester/Classes/dmMenu.m:239: warning: will be assumed to return 'id' and accept/Users/NSchiff/Documents/tester/Classes/dmMenu.m:239: warning: '...' as arguments.)2(22@42"'dmSide' may not respond to '-setupOther:'312712902#81#106#0(6@48"/Users/NSchiff/Documents/tester/Classes/dmMenu.m307200840#239#0#239#0#26"'*' may not respond to '*'0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)312712902#187#109#0(6@48"/Users/NSchiff/Documents/tester/Classes/dmMenu.m307200840#239#0#239#0#0"0(0#0#48"/Users/NSchiff/Documents/tester/Classes/dmMenu.m4300911832#1619"    cd /Users/NSchiff/Documents/tester    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -miphoneos-version-min=3.2 -iquote /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-generated-files.hmap -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-own-target-headers.hmap -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-all-target-headers.hmap -iquote /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-project-headers.hmap -F/Users/NSchiff/Documents/tester/build/Debug-iphoneos -I/Users/NSchiff/Documents/tester/build/Debug-iphoneos/include -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/DerivedSources/armv6 -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/DerivedSources -include /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Nina2_Prefix-fwygyqduoujagdhbitiptjoqwtfs/Nina2_Prefix.pch -c /Users/NSchiff/Documents/tester/Classes/dmMenu.m -o /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/dmMenu.o0#
 
 CCompileC build/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/dmSide.o /Users/NSchiff/Documents/tester/Classes/dmSide.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-s307268369.968041
-e307268370.119076
+s312712902.779440
+e312712902.882486
 r1
 xCompileC
 xbuild/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/dmSide.o
@@ -996,11 +1001,11 @@ xnormal
 xarmv6
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@56"Compile /Users/NSchiff/Documents/tester/Classes/dmSide.m307268369#307268370#0(0"0(0#0#48"/Users/NSchiff/Documents/tester/Classes/dmSide.m4300911832#1619"    cd /Users/NSchiff/Documents/tester    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -miphoneos-version-min=3.2 -iquote /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-generated-files.hmap -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-own-target-headers.hmap -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-all-target-headers.hmap -iquote /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-project-headers.hmap -F/Users/NSchiff/Documents/tester/build/Debug-iphoneos -I/Users/NSchiff/Documents/tester/build/Debug-iphoneos/include -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/DerivedSources/armv6 -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/DerivedSources -include /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Nina2_Prefix-fwygyqduoujagdhbitiptjoqwtfs/Nina2_Prefix.pch -c /Users/NSchiff/Documents/tester/Classes/dmSide.m -o /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/dmSide.o0#
+lSLF07#2@56"Compile /Users/NSchiff/Documents/tester/Classes/dmSide.m312712902#312712902#0(0"0(0#0#48"/Users/NSchiff/Documents/tester/Classes/dmSide.m4300911832#1619"    cd /Users/NSchiff/Documents/tester    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -miphoneos-version-min=3.2 -iquote /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-generated-files.hmap -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-own-target-headers.hmap -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-all-target-headers.hmap -iquote /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-project-headers.hmap -F/Users/NSchiff/Documents/tester/build/Debug-iphoneos -I/Users/NSchiff/Documents/tester/build/Debug-iphoneos/include -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/DerivedSources/armv6 -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/DerivedSources -include /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Nina2_Prefix-fwygyqduoujagdhbitiptjoqwtfs/Nina2_Prefix.pch -c /Users/NSchiff/Documents/tester/Classes/dmSide.m -o /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/dmSide.o0#
 
 CCompileC build/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/gesturePanel.o /Users/NSchiff/Documents/tester/Classes/gesturePanel.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-s307268369.727774
-e307268369.967930
+s312712902.603823
+e312712902.779309
 r1
 xCompileC
 xbuild/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/gesturePanel.o
@@ -1009,11 +1014,11 @@ xnormal
 xarmv6
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@62"Compile /Users/NSchiff/Documents/tester/Classes/gesturePanel.m307268369#307268369#0(0"0(0#0#54"/Users/NSchiff/Documents/tester/Classes/gesturePanel.m4300911832#1631"    cd /Users/NSchiff/Documents/tester    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -miphoneos-version-min=3.2 -iquote /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-generated-files.hmap -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-own-target-headers.hmap -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-all-target-headers.hmap -iquote /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-project-headers.hmap -F/Users/NSchiff/Documents/tester/build/Debug-iphoneos -I/Users/NSchiff/Documents/tester/build/Debug-iphoneos/include -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/DerivedSources/armv6 -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/DerivedSources -include /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Nina2_Prefix-fwygyqduoujagdhbitiptjoqwtfs/Nina2_Prefix.pch -c /Users/NSchiff/Documents/tester/Classes/gesturePanel.m -o /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/gesturePanel.o0#
+lSLF07#2@62"Compile /Users/NSchiff/Documents/tester/Classes/gesturePanel.m312712902#312712902#0(0"0(0#0#54"/Users/NSchiff/Documents/tester/Classes/gesturePanel.m4300911832#1631"    cd /Users/NSchiff/Documents/tester    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -miphoneos-version-min=3.2 -iquote /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-generated-files.hmap -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-own-target-headers.hmap -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-all-target-headers.hmap -iquote /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-project-headers.hmap -F/Users/NSchiff/Documents/tester/build/Debug-iphoneos -I/Users/NSchiff/Documents/tester/build/Debug-iphoneos/include -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/DerivedSources/armv6 -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/DerivedSources -include /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Nina2_Prefix-fwygyqduoujagdhbitiptjoqwtfs/Nina2_Prefix.pch -c /Users/NSchiff/Documents/tester/Classes/gesturePanel.m -o /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/gesturePanel.o0#
 
 CCompileC build/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/main.o /Users/NSchiff/Documents/tester/main.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-s307268368.206117
-e307268368.292728
+s312712901.617450
+e312712901.697348
 r1
 xCompileC
 xbuild/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/main.o
@@ -1022,11 +1027,11 @@ xnormal
 xarmv6
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@46"Compile /Users/NSchiff/Documents/tester/main.m307268368#307268368#0(0"0(0#0#38"/Users/NSchiff/Documents/tester/main.m4300911832#1607"    cd /Users/NSchiff/Documents/tester    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -miphoneos-version-min=3.2 -iquote /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-generated-files.hmap -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-own-target-headers.hmap -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-all-target-headers.hmap -iquote /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-project-headers.hmap -F/Users/NSchiff/Documents/tester/build/Debug-iphoneos -I/Users/NSchiff/Documents/tester/build/Debug-iphoneos/include -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/DerivedSources/armv6 -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/DerivedSources -include /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Nina2_Prefix-fwygyqduoujagdhbitiptjoqwtfs/Nina2_Prefix.pch -c /Users/NSchiff/Documents/tester/main.m -o /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/main.o0#
+lSLF07#2@46"Compile /Users/NSchiff/Documents/tester/main.m312712901#312712901#0(0"0(0#0#38"/Users/NSchiff/Documents/tester/main.m4300911832#1607"    cd /Users/NSchiff/Documents/tester    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -miphoneos-version-min=3.2 -iquote /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-generated-files.hmap -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-own-target-headers.hmap -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-all-target-headers.hmap -iquote /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-project-headers.hmap -F/Users/NSchiff/Documents/tester/build/Debug-iphoneos -I/Users/NSchiff/Documents/tester/build/Debug-iphoneos/include -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/DerivedSources/armv6 -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/DerivedSources -include /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Nina2_Prefix-fwygyqduoujagdhbitiptjoqwtfs/Nina2_Prefix.pch -c /Users/NSchiff/Documents/tester/main.m -o /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/main.o0#
 
 CCompileC build/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/recognition.o /Users/NSchiff/Documents/tester/Classes/recognition.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-s307268369.071272
-e307268369.283625
+s312712902.265777
+e312712902.443997
 r1
 xCompileC
 xbuild/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/recognition.o
@@ -1035,11 +1040,11 @@ xnormal
 xarmv6
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@61"Compile /Users/NSchiff/Documents/tester/Classes/recognition.m307268369#307268369#0(0"0(0#0#53"/Users/NSchiff/Documents/tester/Classes/recognition.m4300911832#1629"    cd /Users/NSchiff/Documents/tester    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -miphoneos-version-min=3.2 -iquote /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-generated-files.hmap -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-own-target-headers.hmap -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-all-target-headers.hmap -iquote /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-project-headers.hmap -F/Users/NSchiff/Documents/tester/build/Debug-iphoneos -I/Users/NSchiff/Documents/tester/build/Debug-iphoneos/include -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/DerivedSources/armv6 -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/DerivedSources -include /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Nina2_Prefix-fwygyqduoujagdhbitiptjoqwtfs/Nina2_Prefix.pch -c /Users/NSchiff/Documents/tester/Classes/recognition.m -o /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/recognition.o0#
+lSLF07#2@61"Compile /Users/NSchiff/Documents/tester/Classes/recognition.m312712902#312712902#0(0"0(0#0#53"/Users/NSchiff/Documents/tester/Classes/recognition.m4300911832#1629"    cd /Users/NSchiff/Documents/tester    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -miphoneos-version-min=3.2 -iquote /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-generated-files.hmap -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-own-target-headers.hmap -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-all-target-headers.hmap -iquote /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-project-headers.hmap -F/Users/NSchiff/Documents/tester/build/Debug-iphoneos -I/Users/NSchiff/Documents/tester/build/Debug-iphoneos/include -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/DerivedSources/armv6 -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/DerivedSources -include /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Nina2_Prefix-fwygyqduoujagdhbitiptjoqwtfs/Nina2_Prefix.pch -c /Users/NSchiff/Documents/tester/Classes/recognition.m -o /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/recognition.o0#
 
 CCompileC build/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/sidePanel.o /Users/NSchiff/Documents/tester/Classes/sidePanel.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-s307268369.526024
-e307268369.727231
+s312712902.444104
+e312712902.603717
 r1
 xCompileC
 xbuild/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/sidePanel.o
@@ -1051,11 +1056,11 @@ xcom.apple.compilers.gcc.4_2
 oIn file included from /Users/NSchiff/Documents/tester/Classes/sidePanel.m:9:
 o/Users/NSchiff/Documents/tester/Classes/sidePanel.h:46: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed
 o/Users/NSchiff/Documents/tester/Classes/sidePanel.h:46: warning: assign attribute (default) not appropriate for non-gc object property 'restart'
-lSLF07#2@59"Compile /Users/NSchiff/Documents/tester/Classes/sidePanel.m307268369#307268369#0(365"In file included from /Users/NSchiff/Documents/tester/Classes/sidePanel.m:9:/Users/NSchiff/Documents/tester/Classes/sidePanel.h:46: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed/Users/NSchiff/Documents/tester/Classes/sidePanel.h:46: warning: assign attribute (default) not appropriate for non-gc object property 'restart'2(22@77"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed307268369#77#143#2(7@73"In file included from /Users/NSchiff/Documents/tester/Classes/sidePanel.m307268369#18446744073709551615#0#0(6@51"/Users/NSchiff/Documents/tester/Classes/sidePanel.m307212084#9#0#9#0#0"0(13@132"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed in /Users/NSchiff/Documents/tester/Classes/sidePanel.h307268369#18446744073709551615#0#0(6@51"/Users/NSchiff/Documents/tester/Classes/sidePanel.h307190241#46#0#46#0#0"0(6@51"/Users/NSchiff/Documents/tester/Classes/sidePanel.h307190241#46#0#46#0#0"0(22@79"Assign attribute (default) not appropriate for non-gc object property 'restart'307268369#220#145#2(7@73"In file included from /Users/NSchiff/Documents/tester/Classes/sidePanel.m307268369#18446744073709551615#0#0(6@51"/Users/NSchiff/Documents/tester/Classes/sidePanel.m307212084#9#0#9#0#0"0(13@134"Assign attribute (default) not appropriate for non-gc object property 'restart' in /Users/NSchiff/Documents/tester/Classes/sidePanel.h307268369#18446744073709551615#0#0(6@51"/Users/NSchiff/Documents/tester/Classes/sidePanel.h307190241#46#0#46#0#0"0(6@51"/Users/NSchiff/Documents/tester/Classes/sidePanel.h307190241#46#0#46#0#0"0(0#0#51"/Users/NSchiff/Documents/tester/Classes/sidePanel.m4300911832#1625"    cd /Users/NSchiff/Documents/tester    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -miphoneos-version-min=3.2 -iquote /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-generated-files.hmap -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-own-target-headers.hmap -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-all-target-headers.hmap -iquote /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-project-headers.hmap -F/Users/NSchiff/Documents/tester/build/Debug-iphoneos -I/Users/NSchiff/Documents/tester/build/Debug-iphoneos/include -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/DerivedSources/armv6 -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/DerivedSources -include /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Nina2_Prefix-fwygyqduoujagdhbitiptjoqwtfs/Nina2_Prefix.pch -c /Users/NSchiff/Documents/tester/Classes/sidePanel.m -o /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/sidePanel.o0#
+lSLF07#2@59"Compile /Users/NSchiff/Documents/tester/Classes/sidePanel.m312712902#312712902#0(365"In file included from /Users/NSchiff/Documents/tester/Classes/sidePanel.m:9:/Users/NSchiff/Documents/tester/Classes/sidePanel.h:46: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed/Users/NSchiff/Documents/tester/Classes/sidePanel.h:46: warning: assign attribute (default) not appropriate for non-gc object property 'restart'2(22@77"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed312712902#77#143#2(7@73"In file included from /Users/NSchiff/Documents/tester/Classes/sidePanel.m312712902#18446744073709551615#0#0(6@51"/Users/NSchiff/Documents/tester/Classes/sidePanel.m307212084#9#0#9#0#0"0(13@132"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed in /Users/NSchiff/Documents/tester/Classes/sidePanel.h312712902#18446744073709551615#0#0(6@51"/Users/NSchiff/Documents/tester/Classes/sidePanel.h307190241#46#0#46#0#0"0(6@51"/Users/NSchiff/Documents/tester/Classes/sidePanel.h307190241#46#0#46#0#0"0(22@79"Assign attribute (default) not appropriate for non-gc object property 'restart'312712902#220#145#2(7@73"In file included from /Users/NSchiff/Documents/tester/Classes/sidePanel.m312712902#18446744073709551615#0#0(6@51"/Users/NSchiff/Documents/tester/Classes/sidePanel.m307212084#9#0#9#0#0"0(13@134"Assign attribute (default) not appropriate for non-gc object property 'restart' in /Users/NSchiff/Documents/tester/Classes/sidePanel.h312712902#18446744073709551615#0#0(6@51"/Users/NSchiff/Documents/tester/Classes/sidePanel.h307190241#46#0#46#0#0"0(6@51"/Users/NSchiff/Documents/tester/Classes/sidePanel.h307190241#46#0#46#0#0"0(0#0#51"/Users/NSchiff/Documents/tester/Classes/sidePanel.m4300911832#1625"    cd /Users/NSchiff/Documents/tester    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -miphoneos-version-min=3.2 -iquote /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-generated-files.hmap -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-own-target-headers.hmap -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-all-target-headers.hmap -iquote /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-project-headers.hmap -F/Users/NSchiff/Documents/tester/build/Debug-iphoneos -I/Users/NSchiff/Documents/tester/build/Debug-iphoneos/include -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/DerivedSources/armv6 -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/DerivedSources -include /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Nina2_Prefix-fwygyqduoujagdhbitiptjoqwtfs/Nina2_Prefix.pch -c /Users/NSchiff/Documents/tester/Classes/sidePanel.m -o /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/sidePanel.o0#
 
 CCompileC build/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/testerAppDelegate.o /Users/NSchiff/Documents/tester/Classes/testerAppDelegate.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-s307268368.241735
-e307268368.341631
+s312712901.618476
+e312712901.712315
 r1
 xCompileC
 xbuild/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/testerAppDelegate.o
@@ -1064,11 +1069,11 @@ xnormal
 xarmv6
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@67"Compile /Users/NSchiff/Documents/tester/Classes/testerAppDelegate.m307268368#307268368#0(0"0(0#0#59"/Users/NSchiff/Documents/tester/Classes/testerAppDelegate.m4300911832#1641"    cd /Users/NSchiff/Documents/tester    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -miphoneos-version-min=3.2 -iquote /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-generated-files.hmap -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-own-target-headers.hmap -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-all-target-headers.hmap -iquote /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-project-headers.hmap -F/Users/NSchiff/Documents/tester/build/Debug-iphoneos -I/Users/NSchiff/Documents/tester/build/Debug-iphoneos/include -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/DerivedSources/armv6 -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/DerivedSources -include /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Nina2_Prefix-fwygyqduoujagdhbitiptjoqwtfs/Nina2_Prefix.pch -c /Users/NSchiff/Documents/tester/Classes/testerAppDelegate.m -o /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/testerAppDelegate.o0#
+lSLF07#2@67"Compile /Users/NSchiff/Documents/tester/Classes/testerAppDelegate.m312712901#312712901#0(0"0(0#0#59"/Users/NSchiff/Documents/tester/Classes/testerAppDelegate.m4300911832#1641"    cd /Users/NSchiff/Documents/tester    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -miphoneos-version-min=3.2 -iquote /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-generated-files.hmap -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-own-target-headers.hmap -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-all-target-headers.hmap -iquote /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-project-headers.hmap -F/Users/NSchiff/Documents/tester/build/Debug-iphoneos -I/Users/NSchiff/Documents/tester/build/Debug-iphoneos/include -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/DerivedSources/armv6 -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/DerivedSources -include /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Nina2_Prefix-fwygyqduoujagdhbitiptjoqwtfs/Nina2_Prefix.pch -c /Users/NSchiff/Documents/tester/Classes/testerAppDelegate.m -o /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/testerAppDelegate.o0#
 
 CCompileC build/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/tutorial.o /Users/NSchiff/Documents/tester/Classes/tutorial.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-s307268370.119178
-e307268370.269879
+s312712902.882585
+e312712902.999549
 r1
 xCompileC
 xbuild/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/tutorial.o
@@ -1080,343 +1085,345 @@ xcom.apple.compilers.gcc.4_2
 oIn file included from /Users/NSchiff/Documents/tester/Classes/tutorial.m:9:
 o/Users/NSchiff/Documents/tester/Classes/tutorial.h:37: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed
 o/Users/NSchiff/Documents/tester/Classes/tutorial.h:37: warning: assign attribute (default) not appropriate for non-gc object property 'second'
-lSLF07#2@58"Compile /Users/NSchiff/Documents/tester/Classes/tutorial.m307268370#307268370#0(361"In file included from /Users/NSchiff/Documents/tester/Classes/tutorial.m:9:/Users/NSchiff/Documents/tester/Classes/tutorial.h:37: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed/Users/NSchiff/Documents/tester/Classes/tutorial.h:37: warning: assign attribute (default) not appropriate for non-gc object property 'second'2(22@77"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed307268370#76#142#2(7@72"In file included from /Users/NSchiff/Documents/tester/Classes/tutorial.m307268370#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/tutorial.m307214214#9#0#9#0#0"0(13@131"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed in /Users/NSchiff/Documents/tester/Classes/tutorial.h307268370#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/tutorial.h307209461#37#0#37#0#0"0(6@50"/Users/NSchiff/Documents/tester/Classes/tutorial.h307209461#37#0#37#0#0"0(22@78"Assign attribute (default) not appropriate for non-gc object property 'second'307268370#218#143#2(7@72"In file included from /Users/NSchiff/Documents/tester/Classes/tutorial.m307268370#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/tutorial.m307214214#9#0#9#0#0"0(13@132"Assign attribute (default) not appropriate for non-gc object property 'second' in /Users/NSchiff/Documents/tester/Classes/tutorial.h307268370#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/tutorial.h307209461#37#0#37#0#0"0(6@50"/Users/NSchiff/Documents/tester/Classes/tutorial.h307209461#37#0#37#0#0"0(0#0#50"/Users/NSchiff/Documents/tester/Classes/tutorial.m4300911832#1623"    cd /Users/NSchiff/Documents/tester    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -miphoneos-version-min=3.2 -iquote /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-generated-files.hmap -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-own-target-headers.hmap -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-all-target-headers.hmap -iquote /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-project-headers.hmap -F/Users/NSchiff/Documents/tester/build/Debug-iphoneos -I/Users/NSchiff/Documents/tester/build/Debug-iphoneos/include -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/DerivedSources/armv6 -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/DerivedSources -include /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Nina2_Prefix-fwygyqduoujagdhbitiptjoqwtfs/Nina2_Prefix.pch -c /Users/NSchiff/Documents/tester/Classes/tutorial.m -o /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/tutorial.o0#
+lSLF07#2@58"Compile /Users/NSchiff/Documents/tester/Classes/tutorial.m312712902#312712902#0(361"In file included from /Users/NSchiff/Documents/tester/Classes/tutorial.m:9:/Users/NSchiff/Documents/tester/Classes/tutorial.h:37: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed/Users/NSchiff/Documents/tester/Classes/tutorial.h:37: warning: assign attribute (default) not appropriate for non-gc object property 'second'2(22@77"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed312712902#76#142#2(7@72"In file included from /Users/NSchiff/Documents/tester/Classes/tutorial.m312712902#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/tutorial.m307214214#9#0#9#0#0"0(13@131"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed in /Users/NSchiff/Documents/tester/Classes/tutorial.h312712902#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/tutorial.h307209461#37#0#37#0#0"0(6@50"/Users/NSchiff/Documents/tester/Classes/tutorial.h307209461#37#0#37#0#0"0(22@78"Assign attribute (default) not appropriate for non-gc object property 'second'312712902#218#143#2(7@72"In file included from /Users/NSchiff/Documents/tester/Classes/tutorial.m312712902#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/tutorial.m307214214#9#0#9#0#0"0(13@132"Assign attribute (default) not appropriate for non-gc object property 'second' in /Users/NSchiff/Documents/tester/Classes/tutorial.h312712902#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/tutorial.h307209461#37#0#37#0#0"0(6@50"/Users/NSchiff/Documents/tester/Classes/tutorial.h307209461#37#0#37#0#0"0(0#0#50"/Users/NSchiff/Documents/tester/Classes/tutorial.m4300911832#1623"    cd /Users/NSchiff/Documents/tester    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -miphoneos-version-min=3.2 -iquote /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-generated-files.hmap -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-own-target-headers.hmap -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-all-target-headers.hmap -iquote /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-project-headers.hmap -F/Users/NSchiff/Documents/tester/build/Debug-iphoneos -I/Users/NSchiff/Documents/tester/build/Debug-iphoneos/include -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/DerivedSources/armv6 -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/DerivedSources -include /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Nina2_Prefix-fwygyqduoujagdhbitiptjoqwtfs/Nina2_Prefix.pch -c /Users/NSchiff/Documents/tester/Classes/tutorial.m -o /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/tutorial.o0#
 
 CCompileXIB /Users/NSchiff/Documents/tester/Classes/ViewController.xib
-s307268362.080595
-e307268365.136876
+s312712899.723195
+e312712900.058307
 r1
 xCompileXIB
 x/Users/NSchiff/Documents/tester/Classes/ViewController.xib
-lSLF07#2@37"CompileXIB Classes/ViewController.xib307268362#307268365#0(0"0(0#0#58"/Users/NSchiff/Documents/tester/Classes/ViewController.xib4300911832#459"    cd /Users/NSchiff/Documents/tester    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/ViewController.nib /Users/NSchiff/Documents/tester/Classes/ViewController.xib0#
+oCouldn't open shared capabilities memory GSCapabilities (No such file or directory)
+lSLF07#2@37"CompileXIB Classes/ViewController.xib312712899#312712900#0(84"Couldn't open shared capabilities memory GSCapabilities (No such file or directory)0(0#0#58"/Users/NSchiff/Documents/tester/Classes/ViewController.xib4300911832#459"    cd /Users/NSchiff/Documents/tester    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/ViewController.nib /Users/NSchiff/Documents/tester/Classes/ViewController.xib0#
 
 CCompileXIB /Users/NSchiff/Documents/tester/MainWindow.xib
-s307268362.043017
-e307268365.212486
+s312712899.700879
+e312712900.064411
 r1
 xCompileXIB
 x/Users/NSchiff/Documents/tester/MainWindow.xib
-lSLF07#2@25"CompileXIB MainWindow.xib307268362#307268365#0(0"0(0#0#46"/Users/NSchiff/Documents/tester/MainWindow.xib4300911832#443"    cd /Users/NSchiff/Documents/tester    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/MainWindow.nib /Users/NSchiff/Documents/tester/MainWindow.xib0#
+oCouldn't open shared capabilities memory GSCapabilities (No such file or directory)
+lSLF07#2@25"CompileXIB MainWindow.xib312712899#312712900#0(84"Couldn't open shared capabilities memory GSCapabilities (No such file or directory)0(0#0#46"/Users/NSchiff/Documents/tester/MainWindow.xib4300911832#443"    cd /Users/NSchiff/Documents/tester    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/MainWindow.nib /Users/NSchiff/Documents/tester/MainWindow.xib0#
 
 CCopyPNGFile /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/backward.png backward.png
-s307268365.627974
-e307268366.557487
+s312712900.131461
+e312712900.496265
 r1
 xCopyPNGFile
 x/Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/backward.png
 xbackward.png
-lSLF07#2@68"CopyPNGFile build/Debug-iphoneos/Nina2.app/backward.png backward.png307268365#307268366#0(0"0(0#0#44"/Users/NSchiff/Documents/tester/backward.png4300911832#541"    cd /Users/NSchiff/Documents/tester    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/NSchiff/Documents/tester/backward.png /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/backward.png0#
+lSLF07#2@68"CopyPNGFile build/Debug-iphoneos/Nina2.app/backward.png backward.png312712900#312712900#0(0"0(0#0#44"/Users/NSchiff/Documents/tester/backward.png4300911832#541"    cd /Users/NSchiff/Documents/tester    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/NSchiff/Documents/tester/backward.png /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/backward.png0#
 
 CCopyPNGFile /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/colD.png colD.png
-s307268365.740943
-e307268366.545376
+s312712900.198343
+e312712900.482111
 r1
 xCopyPNGFile
 x/Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/colD.png
 xcolD.png
-lSLF07#2@60"CopyPNGFile build/Debug-iphoneos/Nina2.app/colD.png colD.png307268365#307268366#0(0"0(0#0#40"/Users/NSchiff/Documents/tester/colD.png4300911832#533"    cd /Users/NSchiff/Documents/tester    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/NSchiff/Documents/tester/colD.png /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/colD.png0#
+lSLF07#2@60"CopyPNGFile build/Debug-iphoneos/Nina2.app/colD.png colD.png312712900#312712900#0(0"0(0#0#40"/Users/NSchiff/Documents/tester/colD.png4300911832#533"    cd /Users/NSchiff/Documents/tester    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/NSchiff/Documents/tester/colD.png /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/colD.png0#
 
 CCopyPNGFile /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/colU.png colU.png
-s307268366.545476
-e307268366.620991
+s312712900.482216
+e312712900.551771
 r1
 xCopyPNGFile
 x/Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/colU.png
 xcolU.png
-lSLF07#2@60"CopyPNGFile build/Debug-iphoneos/Nina2.app/colU.png colU.png307268366#307268366#0(0"0(0#0#40"/Users/NSchiff/Documents/tester/colU.png4300911832#533"    cd /Users/NSchiff/Documents/tester    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/NSchiff/Documents/tester/colU.png /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/colU.png0#
+lSLF07#2@60"CopyPNGFile build/Debug-iphoneos/Nina2.app/colU.png colU.png312712900#312712900#0(0"0(0#0#40"/Users/NSchiff/Documents/tester/colU.png4300911832#533"    cd /Users/NSchiff/Documents/tester    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/NSchiff/Documents/tester/colU.png /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/colU.png0#
 
 CCopyPNGFile /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/forward.png forward.png
-s307268366.557591
-e307268366.628897
+s312712900.496363
+e312712900.561625
 r1
 xCopyPNGFile
 x/Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/forward.png
 xforward.png
-lSLF07#2@66"CopyPNGFile build/Debug-iphoneos/Nina2.app/forward.png forward.png307268366#307268366#0(0"0(0#0#43"/Users/NSchiff/Documents/tester/forward.png4300911832#539"    cd /Users/NSchiff/Documents/tester    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/NSchiff/Documents/tester/forward.png /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/forward.png0#
+lSLF07#2@66"CopyPNGFile build/Debug-iphoneos/Nina2.app/forward.png forward.png312712900#312712900#0(0"0(0#0#43"/Users/NSchiff/Documents/tester/forward.png4300911832#539"    cd /Users/NSchiff/Documents/tester    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/NSchiff/Documents/tester/forward.png /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/forward.png0#
 
 CCopyPNGFile /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/icon.png icon.png
-s307268366.801335
-e307268366.852563
+s312712900.771876
+e312712900.802575
 r1
 xCopyPNGFile
 x/Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/icon.png
 xicon.png
-lSLF07#2@60"CopyPNGFile build/Debug-iphoneos/Nina2.app/icon.png icon.png307268366#307268366#0(0"0(0#0#40"/Users/NSchiff/Documents/tester/icon.png4300911832#533"    cd /Users/NSchiff/Documents/tester    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/NSchiff/Documents/tester/icon.png /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/icon.png0#
+lSLF07#2@60"CopyPNGFile build/Debug-iphoneos/Nina2.app/icon.png icon.png312712900#312712900#0(0"0(0#0#40"/Users/NSchiff/Documents/tester/icon.png4300911832#533"    cd /Users/NSchiff/Documents/tester    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/NSchiff/Documents/tester/icon.png /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/icon.png0#
 
 CCopyPNGFile /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/rowL.png rowL.png
-s307268366.621088
-e307268366.690528
+s312712900.551882
+e312712900.663065
 r1
 xCopyPNGFile
 x/Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/rowL.png
 xrowL.png
-lSLF07#2@60"CopyPNGFile build/Debug-iphoneos/Nina2.app/rowL.png rowL.png307268366#307268366#0(0"0(0#0#40"/Users/NSchiff/Documents/tester/rowL.png4300911832#533"    cd /Users/NSchiff/Documents/tester    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/NSchiff/Documents/tester/rowL.png /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/rowL.png0#
+lSLF07#2@60"CopyPNGFile build/Debug-iphoneos/Nina2.app/rowL.png rowL.png312712900#312712900#0(0"0(0#0#40"/Users/NSchiff/Documents/tester/rowL.png4300911832#533"    cd /Users/NSchiff/Documents/tester    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/NSchiff/Documents/tester/rowL.png /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/rowL.png0#
 
 CCopyPNGFile /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/rowR.png rowR.png
-s307268366.629111
-e307268366.681243
+s312712900.561729
+e312712900.629183
 r1
 xCopyPNGFile
 x/Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/rowR.png
 xrowR.png
-lSLF07#2@60"CopyPNGFile build/Debug-iphoneos/Nina2.app/rowR.png rowR.png307268366#307268366#0(0"0(0#0#40"/Users/NSchiff/Documents/tester/rowR.png4300911832#533"    cd /Users/NSchiff/Documents/tester    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/NSchiff/Documents/tester/rowR.png /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/rowR.png0#
+lSLF07#2@60"CopyPNGFile build/Debug-iphoneos/Nina2.app/rowR.png rowR.png312712900#312712900#0(0"0(0#0#40"/Users/NSchiff/Documents/tester/rowR.png4300911832#533"    cd /Users/NSchiff/Documents/tester    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/NSchiff/Documents/tester/rowR.png /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/rowR.png0#
 
 CCopyPNGFile /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/sD.png sD.png
-s307268366.681403
-e307268366.722455
+s312712900.629281
+e312712900.672954
 r1
 xCopyPNGFile
 x/Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/sD.png
 xsD.png
-lSLF07#2@56"CopyPNGFile build/Debug-iphoneos/Nina2.app/sD.png sD.png307268366#307268366#0(0"0(0#0#38"/Users/NSchiff/Documents/tester/sD.png4300911832#529"    cd /Users/NSchiff/Documents/tester    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/NSchiff/Documents/tester/sD.png /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/sD.png0#
+lSLF07#2@56"CopyPNGFile build/Debug-iphoneos/Nina2.app/sD.png sD.png312712900#312712900#0(0"0(0#0#38"/Users/NSchiff/Documents/tester/sD.png4300911832#529"    cd /Users/NSchiff/Documents/tester    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/NSchiff/Documents/tester/sD.png /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/sD.png0#
 
 CCopyPNGFile /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/sL.png sL.png
-s307268366.690713
-e307268366.725846
+s312712900.663157
+e312712900.718429
 r1
 xCopyPNGFile
 x/Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/sL.png
 xsL.png
-lSLF07#2@56"CopyPNGFile build/Debug-iphoneos/Nina2.app/sL.png sL.png307268366#307268366#0(0"0(0#0#38"/Users/NSchiff/Documents/tester/sL.png4300911832#529"    cd /Users/NSchiff/Documents/tester    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/NSchiff/Documents/tester/sL.png /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/sL.png0#
+lSLF07#2@56"CopyPNGFile build/Debug-iphoneos/Nina2.app/sL.png sL.png312712900#312712900#0(0"0(0#0#38"/Users/NSchiff/Documents/tester/sL.png4300911832#529"    cd /Users/NSchiff/Documents/tester    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/NSchiff/Documents/tester/sL.png /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/sL.png0#
 
 CCopyPNGFile /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/sR.png sR.png
-s307268366.725944
-e307268366.766546
+s312712900.717362
+e312712900.764161
 r1
 xCopyPNGFile
 x/Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/sR.png
 xsR.png
-lSLF07#2@56"CopyPNGFile build/Debug-iphoneos/Nina2.app/sR.png sR.png307268366#307268366#0(0"0(0#0#38"/Users/NSchiff/Documents/tester/sR.png4300911832#529"    cd /Users/NSchiff/Documents/tester    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/NSchiff/Documents/tester/sR.png /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/sR.png0#
+lSLF07#2@56"CopyPNGFile build/Debug-iphoneos/Nina2.app/sR.png sR.png312712900#312712900#0(0"0(0#0#38"/Users/NSchiff/Documents/tester/sR.png4300911832#529"    cd /Users/NSchiff/Documents/tester    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/NSchiff/Documents/tester/sR.png /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/sR.png0#
 
 CCopyPNGFile /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/sU.png sU.png
-s307268366.763834
-e307268366.801236
+s312712900.718518
+e312712900.771774
 r1
 xCopyPNGFile
 x/Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/sU.png
 xsU.png
-lSLF07#2@56"CopyPNGFile build/Debug-iphoneos/Nina2.app/sU.png sU.png307268366#307268366#0(0"0(0#0#38"/Users/NSchiff/Documents/tester/sU.png4300911832#529"    cd /Users/NSchiff/Documents/tester    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/NSchiff/Documents/tester/sU.png /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/sU.png0#
+lSLF07#2@56"CopyPNGFile build/Debug-iphoneos/Nina2.app/sU.png sU.png312712900#312712900#0(0"0(0#0#38"/Users/NSchiff/Documents/tester/sU.png4300911832#529"    cd /Users/NSchiff/Documents/tester    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/NSchiff/Documents/tester/sU.png /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/sU.png0#
 
 CCopyPNGFile /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/square.png square.png
-s307268366.722549
-e307268366.763717
+s312712900.673081
+e312712900.717261
 r1
 xCopyPNGFile
 x/Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/square.png
 xsquare.png
-lSLF07#2@64"CopyPNGFile build/Debug-iphoneos/Nina2.app/square.png square.png307268366#307268366#0(0"0(0#0#42"/Users/NSchiff/Documents/tester/square.png4300911832#537"    cd /Users/NSchiff/Documents/tester    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/NSchiff/Documents/tester/square.png /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/square.png0#
+lSLF07#2@64"CopyPNGFile build/Debug-iphoneos/Nina2.app/square.png square.png312712900#312712900#0(0"0(0#0#42"/Users/NSchiff/Documents/tester/square.png4300911832#537"    cd /Users/NSchiff/Documents/tester    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/NSchiff/Documents/tester/square.png /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/square.png0#
 
 CCopyPNGFile /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/z.png z.png
-s307268366.766645
-e307268366.823814
+s312712900.764257
+e312712900.819622
 r1
 xCopyPNGFile
 x/Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/z.png
 xz.png
-lSLF07#2@54"CopyPNGFile build/Debug-iphoneos/Nina2.app/z.png z.png307268366#307268366#0(0"0(0#0#37"/Users/NSchiff/Documents/tester/z.png4300911832#527"    cd /Users/NSchiff/Documents/tester    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/NSchiff/Documents/tester/z.png /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/z.png0#
+lSLF07#2@54"CopyPNGFile build/Debug-iphoneos/Nina2.app/z.png z.png312712900#312712900#0(0"0(0#0#37"/Users/NSchiff/Documents/tester/z.png4300911832#527"    cd /Users/NSchiff/Documents/tester    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/NSchiff/Documents/tester/z.png /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/z.png0#
 
 CCpResource build/Debug-iphoneos/Nina2.app/2down.gesture 2down.gesture
-s307268365.139014
-e307268365.590477
+s312712900.059238
+e312712900.096708
 r1
 xCpResource
 xbuild/Debug-iphoneos/Nina2.app/2down.gesture
 x2down.gesture
-lSLF07#2@18"Copy 2down.gesture307268365#307268365#0(0"0(0#0#45"/Users/NSchiff/Documents/tester/2down.gesture4300911832#420"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/NSchiff/Documents/tester/2down.gesture /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app0#
+lSLF07#2@18"Copy 2down.gesture312712900#312712900#0(0"0(0#0#45"/Users/NSchiff/Documents/tester/2down.gesture4300911832#420"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/NSchiff/Documents/tester/2down.gesture /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app0#
 
 CCpResource build/Debug-iphoneos/Nina2.app/3down.gesture 3down.gesture
-s307268365.142283
-e307268365.657537
+s312712900.059867
+e312712900.131311
 r1
 xCpResource
 xbuild/Debug-iphoneos/Nina2.app/3down.gesture
 x3down.gesture
-lSLF07#2@18"Copy 3down.gesture307268365#307268365#0(0"0(0#0#45"/Users/NSchiff/Documents/tester/3down.gesture4300911832#420"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/NSchiff/Documents/tester/3down.gesture /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app0#
+lSLF07#2@18"Copy 3down.gesture312712900#312712900#0(0"0(0#0#45"/Users/NSchiff/Documents/tester/3down.gesture4300911832#420"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/NSchiff/Documents/tester/3down.gesture /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app0#
 
 CCpResource build/Debug-iphoneos/Nina2.app/ResourceRules.plist /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/ResourceRules.plist
-s307268361.946796
-e307268362.031975
+s312712899.644919
+e312712899.699141
 r1
 xCpResource
 xbuild/Debug-iphoneos/Nina2.app/ResourceRules.plist
 x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/ResourceRules.plist
-lSLF07#2@94"Copy /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/ResourceRules.plist307268361#307268362#0(0"0(0#0#89"/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/ResourceRules.plist4300911832#464"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/ResourceRules.plist /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app0#
+lSLF07#2@94"Copy /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/ResourceRules.plist312712899#312712899#0(0"0(0#0#89"/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/ResourceRules.plist7020109263432279040#464"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/ResourceRules.plist /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app0#
 
 CCpResource build/Debug-iphoneos/Nina2.app/Shader.fsh Shaders/Shader.fsh
-s307268362.032061
-e307268362.053119
+s312712899.699262
+e312712899.722965
 r1
 xCpResource
 xbuild/Debug-iphoneos/Nina2.app/Shader.fsh
 xShaders/Shader.fsh
-lSLF07#2@23"Copy Shaders/Shader.fsh307268362#307268362#0(0"0(0#0#50"/Users/NSchiff/Documents/tester/Shaders/Shader.fsh4300911832#425"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/NSchiff/Documents/tester/Shaders/Shader.fsh /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app0#
+lSLF07#2@23"Copy Shaders/Shader.fsh312712899#312712899#0(0"0(0#0#50"/Users/NSchiff/Documents/tester/Shaders/Shader.fsh4300911832#425"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/NSchiff/Documents/tester/Shaders/Shader.fsh /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app0#
 
 CCpResource build/Debug-iphoneos/Nina2.app/Shader.vsh Shaders/Shader.vsh
-s307268362.036940
-e307268362.080485
+s312712899.700167
+e312712899.723119
 r1
 xCpResource
 xbuild/Debug-iphoneos/Nina2.app/Shader.vsh
 xShaders/Shader.vsh
-lSLF07#2@23"Copy Shaders/Shader.vsh307268362#307268362#0(0"0(0#0#50"/Users/NSchiff/Documents/tester/Shaders/Shader.vsh4300911832#425"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/NSchiff/Documents/tester/Shaders/Shader.vsh /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app0#
+lSLF07#2@23"Copy Shaders/Shader.vsh312712899#312712899#0(0"0(0#0#50"/Users/NSchiff/Documents/tester/Shaders/Shader.vsh4300911832#425"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/NSchiff/Documents/tester/Shaders/Shader.vsh /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app0#
 
 CCpResource build/Debug-iphoneos/Nina2.app/diagonalDown.gesture diagonalDown.gesture
-s307268365.605620
-e307268365.627863
+s312712900.117025
+e312712900.145833
 r1
 xCpResource
 xbuild/Debug-iphoneos/Nina2.app/diagonalDown.gesture
 xdiagonalDown.gesture
-lSLF07#2@25"Copy diagonalDown.gesture307268365#307268365#0(0"0(0#0#52"/Users/NSchiff/Documents/tester/diagonalDown.gesture4300911832#427"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/NSchiff/Documents/tester/diagonalDown.gesture /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app0#
+lSLF07#2@25"Copy diagonalDown.gesture312712900#312712900#0(0"0(0#0#52"/Users/NSchiff/Documents/tester/diagonalDown.gesture4300911832#427"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/NSchiff/Documents/tester/diagonalDown.gesture /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app0#
 
 CCpResource build/Debug-iphoneos/Nina2.app/diagonalUp.gesture diagonalUp.gesture
-s307268365.152567
-e307268365.616795
+s312712900.063560
+e312712900.123179
 r1
 xCpResource
 xbuild/Debug-iphoneos/Nina2.app/diagonalUp.gesture
 xdiagonalUp.gesture
-lSLF07#2@23"Copy diagonalUp.gesture307268365#307268365#0(0"0(0#0#50"/Users/NSchiff/Documents/tester/diagonalUp.gesture4300911832#425"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/NSchiff/Documents/tester/diagonalUp.gesture /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app0#
+lSLF07#2@23"Copy diagonalUp.gesture312712900#312712900#0(0"0(0#0#50"/Users/NSchiff/Documents/tester/diagonalUp.gesture4300911832#425"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/NSchiff/Documents/tester/diagonalUp.gesture /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app0#
 
 CCpResource build/Debug-iphoneos/Nina2.app/down.gesture down.gesture
-s307268365.151334
-e307268365.636699
+s312712900.062932
+e312712900.154290
 r1
 xCpResource
 xbuild/Debug-iphoneos/Nina2.app/down.gesture
 xdown.gesture
-lSLF07#2@17"Copy down.gesture307268365#307268365#0(0"0(0#0#44"/Users/NSchiff/Documents/tester/down.gesture4300911832#419"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/NSchiff/Documents/tester/down.gesture /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app0#
+lSLF07#2@17"Copy down.gesture312712900#312712900#0(0"0(0#0#44"/Users/NSchiff/Documents/tester/down.gesture4300911832#419"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/NSchiff/Documents/tester/down.gesture /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app0#
 
 CCpResource build/Debug-iphoneos/Nina2.app/left.gesture left.gesture
-s307268365.145527
-e307268365.605516
+s312712900.061083
+e312712900.112073
 r1
 xCpResource
 xbuild/Debug-iphoneos/Nina2.app/left.gesture
 xleft.gesture
-lSLF07#2@17"Copy left.gesture307268365#307268365#0(0"0(0#0#44"/Users/NSchiff/Documents/tester/left.gesture4300911832#419"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/NSchiff/Documents/tester/left.gesture /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app0#
+lSLF07#2@17"Copy left.gesture312712900#312712900#0(0"0(0#0#44"/Users/NSchiff/Documents/tester/left.gesture4300911832#419"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/NSchiff/Documents/tester/left.gesture /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app0#
 
 CCpResource build/Debug-iphoneos/Nina2.app/right.gesture right.gesture
-s307268365.147067
-e307268365.632657
+s312712900.061696
+e312712900.116934
 r1
 xCpResource
 xbuild/Debug-iphoneos/Nina2.app/right.gesture
 xright.gesture
-lSLF07#2@18"Copy right.gesture307268365#307268365#0(0"0(0#0#45"/Users/NSchiff/Documents/tester/right.gesture4300911832#420"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/NSchiff/Documents/tester/right.gesture /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app0#
+lSLF07#2@18"Copy right.gesture312712900#312712900#0(0"0(0#0#45"/Users/NSchiff/Documents/tester/right.gesture4300911832#420"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/NSchiff/Documents/tester/right.gesture /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app0#
 
 CCpResource build/Debug-iphoneos/Nina2.app/spiralout.gesture spiralout.gesture
-s307268365.143423
-e307268365.591433
+s312712900.060482
+e312712900.098431
 r1
 xCpResource
 xbuild/Debug-iphoneos/Nina2.app/spiralout.gesture
 xspiralout.gesture
-lSLF07#2@22"Copy spiralout.gesture307268365#307268365#0(0"0(0#0#49"/Users/NSchiff/Documents/tester/spiralout.gesture4300911832#424"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/NSchiff/Documents/tester/spiralout.gesture /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app0#
+lSLF07#2@22"Copy spiralout.gesture312712900#312712900#0(0"0(0#0#49"/Users/NSchiff/Documents/tester/spiralout.gesture4300911832#424"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/NSchiff/Documents/tester/spiralout.gesture /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app0#
 
 CCpResource build/Debug-iphoneos/Nina2.app/square.gesture square.gesture
-s307268365.616905
-e307268365.740846
+s312712900.123273
+e312712900.198234
 r1
 xCpResource
 xbuild/Debug-iphoneos/Nina2.app/square.gesture
 xsquare.gesture
-lSLF07#2@19"Copy square.gesture307268365#307268365#0(0"0(0#0#46"/Users/NSchiff/Documents/tester/square.gesture4300911832#421"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/NSchiff/Documents/tester/square.gesture /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app0#
+lSLF07#2@19"Copy square.gesture312712900#312712900#0(0"0(0#0#46"/Users/NSchiff/Documents/tester/square.gesture4300911832#421"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/NSchiff/Documents/tester/square.gesture /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app0#
 
 CCpResource build/Debug-iphoneos/Nina2.app/swapDown.gesture swapDown.gesture
-s307268365.591499
-e307268365.657182
+s312712900.112165
+e312712900.181966
 r1
 xCpResource
 xbuild/Debug-iphoneos/Nina2.app/swapDown.gesture
 xswapDown.gesture
-lSLF07#2@21"Copy swapDown.gesture307268365#307268365#0(0"0(0#0#48"/Users/NSchiff/Documents/tester/swapDown.gesture4300911832#423"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/NSchiff/Documents/tester/swapDown.gesture /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app0#
+lSLF07#2@21"Copy swapDown.gesture312712900#312712900#0(0"0(0#0#48"/Users/NSchiff/Documents/tester/swapDown.gesture4300911832#423"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/NSchiff/Documents/tester/swapDown.gesture /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app0#
 
 CCpResource build/Debug-iphoneos/Nina2.app/swapLeft.gesture swapLeft.gesture
-s307268365.579327
-e307268365.644473
+s312712900.085763
+e312712900.151042
 r1
 xCpResource
 xbuild/Debug-iphoneos/Nina2.app/swapLeft.gesture
 xswapLeft.gesture
-lSLF07#2@21"Copy swapLeft.gesture307268365#307268365#0(0"0(0#0#48"/Users/NSchiff/Documents/tester/swapLeft.gesture4300911832#423"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/NSchiff/Documents/tester/swapLeft.gesture /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app0#
+lSLF07#2@21"Copy swapLeft.gesture312712900#312712900#0(0"0(0#0#48"/Users/NSchiff/Documents/tester/swapLeft.gesture4300911832#423"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/NSchiff/Documents/tester/swapLeft.gesture /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app0#
 
 CCpResource build/Debug-iphoneos/Nina2.app/swapRight.gesture swapRight.gesture
-s307268365.585371
-e307268365.644609
+s312712900.096821
+e312712900.151188
 r1
 xCpResource
 xbuild/Debug-iphoneos/Nina2.app/swapRight.gesture
 xswapRight.gesture
-lSLF07#2@22"Copy swapRight.gesture307268365#307268365#0(0"0(0#0#49"/Users/NSchiff/Documents/tester/swapRight.gesture4300911832#424"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/NSchiff/Documents/tester/swapRight.gesture /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app0#
+lSLF07#2@22"Copy swapRight.gesture312712900#312712900#0(0"0(0#0#49"/Users/NSchiff/Documents/tester/swapRight.gesture4300911832#424"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/NSchiff/Documents/tester/swapRight.gesture /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app0#
 
 CCpResource build/Debug-iphoneos/Nina2.app/swapUp.gesture swapUp.gesture
-s307268365.590576
-e307268365.653725
+s312712900.098512
+e312712900.160065
 r1
 xCpResource
 xbuild/Debug-iphoneos/Nina2.app/swapUp.gesture
 xswapUp.gesture
-lSLF07#2@19"Copy swapUp.gesture307268365#307268365#0(0"0(0#0#46"/Users/NSchiff/Documents/tester/swapUp.gesture4300911832#421"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/NSchiff/Documents/tester/swapUp.gesture /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app0#
+lSLF07#2@19"Copy swapUp.gesture312712900#312712900#0(0"0(0#0#46"/Users/NSchiff/Documents/tester/swapUp.gesture4300911832#421"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/NSchiff/Documents/tester/swapUp.gesture /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app0#
 
 CCpResource build/Debug-iphoneos/Nina2.app/up.gesture up.gesture
-s307268365.149062
-e307268365.585268
+s312712900.062307
+e312712900.170026
 r1
 xCpResource
 xbuild/Debug-iphoneos/Nina2.app/up.gesture
 xup.gesture
-lSLF07#2@15"Copy up.gesture307268365#307268365#0(0"0(0#0#42"/Users/NSchiff/Documents/tester/up.gesture4300911832#417"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/NSchiff/Documents/tester/up.gesture /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app0#
+lSLF07#2@15"Copy up.gesture312712900#312712900#0(0"0(0#0#42"/Users/NSchiff/Documents/tester/up.gesture4300911832#417"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/NSchiff/Documents/tester/up.gesture /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app0#
 
 CCpResource build/Debug-iphoneos/Nina2.app/v.gesture v.gesture
-s307268365.137044
-e307268365.579219
+s312712900.058407
+e312712900.085658
 r1
 xCpResource
 xbuild/Debug-iphoneos/Nina2.app/v.gesture
 xv.gesture
-lSLF07#2@14"Copy v.gesture307268365#307268365#0(0"0(0#0#41"/Users/NSchiff/Documents/tester/v.gesture4300911832#416"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/NSchiff/Documents/tester/v.gesture /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app0#
+lSLF07#2@14"Copy v.gesture312712900#312712900#0(0"0(0#0#41"/Users/NSchiff/Documents/tester/v.gesture4300911832#416"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/NSchiff/Documents/tester/v.gesture /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app0#
 
 CCpResource build/Debug-iphoneos/Nina2.app/z.gesture z.gesture
-s307268365.212589
-e307268365.636569
+s312712900.064481
+e312712900.154144
 r1
 xCpResource
 xbuild/Debug-iphoneos/Nina2.app/z.gesture
 xz.gesture
-lSLF07#2@14"Copy z.gesture307268365#307268365#0(0"0(0#0#41"/Users/NSchiff/Documents/tester/z.gesture4300911832#416"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/NSchiff/Documents/tester/z.gesture /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app0#
+lSLF07#2@14"Copy z.gesture312712900#312712900#0(0"0(0#0#41"/Users/NSchiff/Documents/tester/z.gesture4300911832#416"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/NSchiff/Documents/tester/z.gesture /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app0#
 
 CGenerateDSYMFile /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app.dSYM /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/Nina2
-s307271421.048281
-e307271421.165584
+s312712903.490417
+e312712903.570813
 r1
 xGenerateDSYMFile
 x/Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app.dSYM
 x/Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/Nina2
-lSLF07#2@89"GenerateDSYMFile build/Debug-iphoneos/Nina2.app.dSYM build/Debug-iphoneos/Nina2.app/Nina2307271421#307271421#0(0"0(0#0#68"/Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/Nina24300911832#335"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/Nina2 -o /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app.dSYM0#
+lSLF07#2@89"GenerateDSYMFile build/Debug-iphoneos/Nina2.app.dSYM build/Debug-iphoneos/Nina2.app/Nina2312712903#312712903#0(0"0(0#0#68"/Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/Nina24300911832#335"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/Nina2 -o /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app.dSYM0#
 
 CLd /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/Nina2 normal armv6
-s307271420.938866
-e307271421.048168
+s312712902.999802
+e312712903.490238
 r1
 xLd
 x/Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/Nina2
 xnormal
 xarmv6
-lSLF07#2@73"Link /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/Nina2307271420#307271421#0(0"0(0#0#0"4300911832#795"    cd /Users/NSchiff/Documents/tester    setenv IPHONEOS_DEPLOYMENT_TARGET 3.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -arch armv6 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -L/Users/NSchiff/Documents/tester/build/Debug-iphoneos -F/Users/NSchiff/Documents/tester/build/Debug-iphoneos -filelist /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/Nina2.LinkFileList -dead_strip -miphoneos-version-min=3.2 -framework Foundation -framework UIKit -framework OpenGLES -framework QuartzCore -o /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/Nina20#
+lSLF07#2@73"Link /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/Nina2312712903#312712903#0(0"0(0#0#0"4300911832#795"    cd /Users/NSchiff/Documents/tester    setenv IPHONEOS_DEPLOYMENT_TARGET 3.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -arch armv6 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -L/Users/NSchiff/Documents/tester/build/Debug-iphoneos -F/Users/NSchiff/Documents/tester/build/Debug-iphoneos -filelist /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Objects-normal/armv6/Nina2.LinkFileList -dead_strip -miphoneos-version-min=3.2 -framework Foundation -framework UIKit -framework OpenGLES -framework QuartzCore -o /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/Nina20#
 
 CProcessInfoPlistFile /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/Info.plist Nina2-Info.plist
-s307268361.961571
-e307268361.997175
+s312712899.657947
+e312712899.679873
 r1
 xProcessInfoPlistFile
 x/Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/Info.plist
 xNina2-Info.plist
-lSLF07#2@24"Process Nina2-Info.plist307268361#307268361#0(0"0(0#0#48"/Users/NSchiff/Documents/tester/Nina2-Info.plist4300911832#526"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility Nina2-Info.plist -genpkginfo /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -resourcerulesfile /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/ResourceRules.plist -o /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/Info.plist0#
+lSLF07#2@24"Process Nina2-Info.plist312712899#312712899#0(0"0(0#0#48"/Users/NSchiff/Documents/tester/Nina2-Info.plist4300911832#526"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility Nina2-Info.plist -genpkginfo /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -resourcerulesfile /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/ResourceRules.plist -o /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/Info.plist0#
 
 CProcessPCH /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Nina2_Prefix-fwygyqduoujagdhbitiptjoqwtfs/Nina2_Prefix.pch.gch Nina2_Prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
-s307268366.852929
-e307268368.205954
+s312712900.819794
+e312712901.617179
 r1
 xProcessPCH
 x/var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Nina2_Prefix-fwygyqduoujagdhbitiptjoqwtfs/Nina2_Prefix.pch.gch
@@ -1425,7 +1432,16 @@ xnormal
 xarmv6
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@27"Precompile Nina2_Prefix.pch307268366#307268368#0(0"0(0#0#48"/Users/NSchiff/Documents/tester/Nina2_Prefix.pch4300911832#1514"    cd /Users/NSchiff/Documents/tester    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -miphoneos-version-min=3.2 -iquote /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-generated-files.hmap -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-own-target-headers.hmap -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-all-target-headers.hmap -iquote /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-project-headers.hmap -F/Users/NSchiff/Documents/tester/build/Debug-iphoneos -I/Users/NSchiff/Documents/tester/build/Debug-iphoneos/include -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/DerivedSources/armv6 -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/DerivedSources -c /Users/NSchiff/Documents/tester/Nina2_Prefix.pch -o /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Nina2_Prefix-fwygyqduoujagdhbitiptjoqwtfs/Nina2_Prefix.pch.gch0#
+lSLF07#2@27"Precompile Nina2_Prefix.pch312712900#312712901#0(0"0(0#0#48"/Users/NSchiff/Documents/tester/Nina2_Prefix.pch4300911832#1514"    cd /Users/NSchiff/Documents/tester    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -miphoneos-version-min=3.2 -iquote /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-generated-files.hmap -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-own-target-headers.hmap -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-all-target-headers.hmap -iquote /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2-project-headers.hmap -F/Users/NSchiff/Documents/tester/build/Debug-iphoneos -I/Users/NSchiff/Documents/tester/build/Debug-iphoneos/include -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/DerivedSources/armv6 -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/DerivedSources -c /Users/NSchiff/Documents/tester/Nina2_Prefix.pch -o /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Nina2_Prefix-fwygyqduoujagdhbitiptjoqwtfs/Nina2_Prefix.pch.gch0#
+
+CProcessProductPackaging "/Users/NSchiff/Library/MobileDevice/Provisioning Profiles/2FFE28C2-C7C5-4E46-A3CF-C3C699DEC631.mobileprovision" /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/embedded.mobileprovision
+s312712903.570932
+e312712903.572185
+r1
+xProcessProductPackaging
+x/Users/NSchiff/Library/MobileDevice/Provisioning Profiles/2FFE28C2-C7C5-4E46-A3CF-C3C699DEC631.mobileprovision
+x/Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/embedded.mobileprovision
+lSLF07#2@192"ProcessProductPackaging "/Users/NSchiff/Library/MobileDevice/Provisioning Profiles/2FFE28C2-C7C5-4E46-A3CF-C3C699DEC631.mobileprovision" build/Debug-iphoneos/Nina2.app/embedded.mobileprovision312712903#312712903#0(0"0(0#0#87"/Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/embedded.mobileprovision4300911832#409"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> "/Users/NSchiff/Library/MobileDevice/Provisioning Profiles/2FFE28C2-C7C5-4E46-A3CF-C3C699DEC631.mobileprovision" -o /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/embedded.mobileprovision0#
 
 CProcessProductPackaging "/Users/NSchiff/Library/MobileDevice/Provisioning Profiles/F29FFEF1-25C9-457A-942C-5C2FE04C8216.mobileprovision" /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/embedded.mobileprovision
 s307268370.826206
@@ -1437,19 +1453,19 @@ x/Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/embedded.mobilep
 lSLF07#2@192"ProcessProductPackaging "/Users/NSchiff/Library/MobileDevice/Provisioning Profiles/F29FFEF1-25C9-457A-942C-5C2FE04C8216.mobileprovision" build/Debug-iphoneos/Nina2.app/embedded.mobileprovision307268370#307268370#0(0"0(0#0#87"/Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/embedded.mobileprovision4300911832#409"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> "/Users/NSchiff/Library/MobileDevice/Provisioning Profiles/F29FFEF1-25C9-457A-942C-5C2FE04C8216.mobileprovision" -o /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app/embedded.mobileprovision0#
 
 CProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/Entitlements.plist /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2.xcent
-s307268370.913165
-e307268370.950228
+s312712903.588580
+e312712903.608884
 r1
 xProcessProductPackaging
 x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/Entitlements.plist
 x/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2.xcent
-lSLF07#2@169"ProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/Entitlements.plist build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2.xcent307268370#307268370#0(0"0(0#0#88"/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2.xcent4300911832#412"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/Entitlements.plist -entitlements -format xml -o /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2.xcent0#
+lSLF07#2@169"ProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/Entitlements.plist build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2.xcent312712903#312712903#0(0"0(0#0#88"/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2.xcent4300911832#412"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/Entitlements.plist -entitlements -format xml -o /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphoneos/Nina2.build/Nina2.xcent0#
 
 CTouch /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app
-s307271421.165786
-e307271421.173141
+s312712903.572243
+e312712903.588413
 r1
 xTouch
 x/Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app
-lSLF07#2@68"Touch /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app307271421#307271421#0(0"0(0#0#0"4300911832#248"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app0#
+lSLF07#2@68"Touch /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app312712903#312712903#0(0"0(0#0#0"4300911832#248"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/NSchiff/Documents/tester/build/Debug-iphoneos/Nina2.app0#
 

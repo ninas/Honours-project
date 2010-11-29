@@ -1,7 +1,7 @@
 TNina2
 v7
 r0
-t307355531.250828
+t311084213.955608
 cCheck dependencies
 cProcessInfoPlistFile /Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina2.app/Info.plist Nina2-Info.plist
 cCpResource build/Debug-iphonesimulator/Nina2.app/Shader.fsh Shaders/Shader.fsh
@@ -171,9 +171,9 @@ i"dmSide.h"
 i"tutorial.h"
 
 N/Users/NSchiff/Documents/tester/Classes/EAGLView.m
-c000000004CA1A85400000000000108CE
-t1285662804
-s67790
+c000000004CF3653D000000000001091F
+t1291019581
+s67871
 i"EAGLView.h"
 i"ES1Renderer.h"
 i"ES2Renderer.h"
@@ -414,11 +414,11 @@ t1285513472
 s4228
 
 N/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina2.app
-t1285662682
+t1289391413
 s1292
 
 N/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina2.app.dSYM
-t1285662682
+t1289391413
 s102
 
 N/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina2.app/2down.gesture
@@ -438,7 +438,7 @@ t1285578629
 s1126
 
 N/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina2.app/Nina2
-t1285662682
+t1289391413
 s218684
 
 N/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina2.app/PkgInfo
@@ -566,7 +566,7 @@ t1285578629
 s3711
 
 N/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphonesimulator/Nina2.build/Objects-normal/i386/EAGLView.o
-t1285662682
+t1289391413
 s138656
 
 N/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphonesimulator/Nina2.build/Objects-normal/i386/ES1Renderer.o
@@ -781,11 +781,11 @@ s1014
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies307355531#307355531#0(0"0(0#1#0"4300911832#0"0#
+lSLF07#2@18"Check dependencies311084213#311084213#0(0"0(0#1#0"4300911832#0"0#
 
 CCompileC build/Nina2.build/Debug-iphonesimulator/Nina2.build/Objects-normal/i386/EAGLView.o /Users/NSchiff/Documents/tester/Classes/EAGLView.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s307355482.149995
-e307355482.621942
+s311084213.181020
+e311084213.860657
 r1
 xCompileC
 xbuild/Nina2.build/Debug-iphonesimulator/Nina2.build/Objects-normal/i386/EAGLView.o
@@ -803,11 +803,11 @@ o                 from /Users/NSchiff/Documents/tester/Classes/EAGLView.m:9:
 o/Users/NSchiff/Documents/tester/Classes/tutorial.h:37: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed
 o/Users/NSchiff/Documents/tester/Classes/tutorial.h:37: warning: assign attribute (default) not appropriate for non-gc object property 'second'
 o/Users/NSchiff/Documents/tester/Classes/EAGLView.m: In function '-[EAGLView changeGameVersion]':
-o/Users/NSchiff/Documents/tester/Classes/EAGLView.m:291: warning: no '-descriptionWithCalendarFormat:timeZone:locale:' method found
-o/Users/NSchiff/Documents/tester/Classes/EAGLView.m:291: warning: (Messages without a matching method signature
-o/Users/NSchiff/Documents/tester/Classes/EAGLView.m:291: warning: will be assumed to return 'id' and accept
-o/Users/NSchiff/Documents/tester/Classes/EAGLView.m:291: warning: '...' as arguments.)
-lSLF07#2@58"Compile /Users/NSchiff/Documents/tester/Classes/EAGLView.m307355482#307355482#0(1411"In file included from /Users/NSchiff/Documents/tester/Classes/EAGLView.h:17,                 from /Users/NSchiff/Documents/tester/Classes/EAGLView.m:9:/Users/NSchiff/Documents/tester/Classes/sidePanel.h:46: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed/Users/NSchiff/Documents/tester/Classes/sidePanel.h:46: warning: assign attribute (default) not appropriate for non-gc object property 'restart'In file included from /Users/NSchiff/Documents/tester/Classes/EAGLView.h:21,                 from /Users/NSchiff/Documents/tester/Classes/EAGLView.m:9:/Users/NSchiff/Documents/tester/Classes/tutorial.h:37: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed/Users/NSchiff/Documents/tester/Classes/tutorial.h:37: warning: assign attribute (default) not appropriate for non-gc object property 'second'/Users/NSchiff/Documents/tester/Classes/EAGLView.m: In function '-[EAGLView changeGameVersion]':/Users/NSchiff/Documents/tester/Classes/EAGLView.m:291: warning: no '-descriptionWithCalendarFormat:timeZone:locale:' method found/Users/NSchiff/Documents/tester/Classes/EAGLView.m:291: warning: (Messages without a matching method signature/Users/NSchiff/Documents/tester/Classes/EAGLView.m:291: warning: will be assumed to return 'id' and accept/Users/NSchiff/Documents/tester/Classes/EAGLView.m:291: warning: '...' as arguments.)6(22@77"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed307355482#153#143#3(7@72"In file included from /Users/NSchiff/Documents/tester/Classes/EAGLView.m307355482#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/EAGLView.m307355476#9#0#9#0#0"0(7@72"In file included from /Users/NSchiff/Documents/tester/Classes/EAGLView.h307355482#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/EAGLView.h307210966#17#0#17#0#0"0(13@132"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed in /Users/NSchiff/Documents/tester/Classes/sidePanel.h307355482#18446744073709551615#0#0(6@51"/Users/NSchiff/Documents/tester/Classes/sidePanel.h307190241#46#0#46#0#0"0(6@51"/Users/NSchiff/Documents/tester/Classes/sidePanel.h307190241#46#0#46#0#0"0(22@79"Assign attribute (default) not appropriate for non-gc object property 'restart'307355482#296#145#3(7@72"In file included from /Users/NSchiff/Documents/tester/Classes/EAGLView.m307355482#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/EAGLView.m307355476#9#0#9#0#0"0(7@72"In file included from /Users/NSchiff/Documents/tester/Classes/EAGLView.h307355482#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/EAGLView.h307210966#17#0#17#0#0"0(13@134"Assign attribute (default) not appropriate for non-gc object property 'restart' in /Users/NSchiff/Documents/tester/Classes/sidePanel.h307355482#18446744073709551615#0#0(6@51"/Users/NSchiff/Documents/tester/Classes/sidePanel.h307190241#46#0#46#0#0"0(6@51"/Users/NSchiff/Documents/tester/Classes/sidePanel.h307190241#46#0#46#0#0"0(22@77"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed307355482#594#142#3(7@72"In file included from /Users/NSchiff/Documents/tester/Classes/EAGLView.m307355482#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/EAGLView.m307355476#9#0#9#0#0"0(7@72"In file included from /Users/NSchiff/Documents/tester/Classes/EAGLView.h307355482#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/EAGLView.h307210966#21#0#21#0#0"0(13@131"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed in /Users/NSchiff/Documents/tester/Classes/tutorial.h307355482#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/tutorial.h307209461#37#0#37#0#0"0(6@50"/Users/NSchiff/Documents/tester/Classes/tutorial.h307209461#37#0#37#0#0"0(22@78"Assign attribute (default) not appropriate for non-gc object property 'second'307355482#736#143#3(7@72"In file included from /Users/NSchiff/Documents/tester/Classes/EAGLView.m307355482#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/EAGLView.m307355476#9#0#9#0#0"0(7@72"In file included from /Users/NSchiff/Documents/tester/Classes/EAGLView.h307355482#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/EAGLView.h307210966#21#0#21#0#0"0(13@132"Assign attribute (default) not appropriate for non-gc object property 'second' in /Users/NSchiff/Documents/tester/Classes/tutorial.h307355482#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/tutorial.h307209461#37#0#37#0#0"0(6@50"/Users/NSchiff/Documents/tester/Classes/tutorial.h307209461#37#0#37#0#0"0(22@65"No '-descriptionWithCalendarFormat:timeZone:locale:' method found307355482#976#131#0(6@50"/Users/NSchiff/Documents/tester/Classes/EAGLView.m307355476#291#0#291#0#19"no '*' method found0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)307355482#1107#111#0(6@50"/Users/NSchiff/Documents/tester/Classes/EAGLView.m307355476#291#0#291#0#0"0(0#0#50"/Users/NSchiff/Documents/tester/Classes/EAGLView.m4300911832#1764"    cd /Users/NSchiff/Documents/tester    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphonesimulator/Nina2.build/Nina2-generated-files.hmap -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphonesimulator/Nina2.build/Nina2-own-target-headers.hmap -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphonesimulator/Nina2.build/Nina2-all-target-headers.hmap -iquote /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphonesimulator/Nina2.build/Nina2-project-headers.hmap -F/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator -I/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/include -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphonesimulator/Nina2.build/DerivedSources/i386 -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphonesimulator/Nina2.build/DerivedSources -include /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Nina2_Prefix-fyffsniitaqkzmgwljjhvmpfgrty/Nina2_Prefix.pch -c /Users/NSchiff/Documents/tester/Classes/EAGLView.m -o /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphonesimulator/Nina2.build/Objects-normal/i386/EAGLView.o0#
+o/Users/NSchiff/Documents/tester/Classes/EAGLView.m:293: warning: no '-descriptionWithCalendarFormat:timeZone:locale:' method found
+o/Users/NSchiff/Documents/tester/Classes/EAGLView.m:293: warning: (Messages without a matching method signature
+o/Users/NSchiff/Documents/tester/Classes/EAGLView.m:293: warning: will be assumed to return 'id' and accept
+o/Users/NSchiff/Documents/tester/Classes/EAGLView.m:293: warning: '...' as arguments.)
+lSLF07#2@58"Compile /Users/NSchiff/Documents/tester/Classes/EAGLView.m311084213#311084213#0(1411"In file included from /Users/NSchiff/Documents/tester/Classes/EAGLView.h:17,                 from /Users/NSchiff/Documents/tester/Classes/EAGLView.m:9:/Users/NSchiff/Documents/tester/Classes/sidePanel.h:46: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed/Users/NSchiff/Documents/tester/Classes/sidePanel.h:46: warning: assign attribute (default) not appropriate for non-gc object property 'restart'In file included from /Users/NSchiff/Documents/tester/Classes/EAGLView.h:21,                 from /Users/NSchiff/Documents/tester/Classes/EAGLView.m:9:/Users/NSchiff/Documents/tester/Classes/tutorial.h:37: warning: no 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed/Users/NSchiff/Documents/tester/Classes/tutorial.h:37: warning: assign attribute (default) not appropriate for non-gc object property 'second'/Users/NSchiff/Documents/tester/Classes/EAGLView.m: In function '-[EAGLView changeGameVersion]':/Users/NSchiff/Documents/tester/Classes/EAGLView.m:293: warning: no '-descriptionWithCalendarFormat:timeZone:locale:' method found/Users/NSchiff/Documents/tester/Classes/EAGLView.m:293: warning: (Messages without a matching method signature/Users/NSchiff/Documents/tester/Classes/EAGLView.m:293: warning: will be assumed to return 'id' and accept/Users/NSchiff/Documents/tester/Classes/EAGLView.m:293: warning: '...' as arguments.)6(22@77"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed311084213#153#143#3(7@72"In file included from /Users/NSchiff/Documents/tester/Classes/EAGLView.m311084213#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/EAGLView.m309262054#9#0#9#0#0"0(7@72"In file included from /Users/NSchiff/Documents/tester/Classes/EAGLView.h311084213#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/EAGLView.h307210966#17#0#17#0#0"0(13@132"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed in /Users/NSchiff/Documents/tester/Classes/sidePanel.h311084213#18446744073709551615#0#0(6@51"/Users/NSchiff/Documents/tester/Classes/sidePanel.h307190241#46#0#46#0#0"0(6@51"/Users/NSchiff/Documents/tester/Classes/sidePanel.h307190241#46#0#46#0#0"0(22@79"Assign attribute (default) not appropriate for non-gc object property 'restart'311084213#296#145#3(7@72"In file included from /Users/NSchiff/Documents/tester/Classes/EAGLView.m311084213#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/EAGLView.m309262054#9#0#9#0#0"0(7@72"In file included from /Users/NSchiff/Documents/tester/Classes/EAGLView.h311084213#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/EAGLView.h307210966#17#0#17#0#0"0(13@134"Assign attribute (default) not appropriate for non-gc object property 'restart' in /Users/NSchiff/Documents/tester/Classes/sidePanel.h311084213#18446744073709551615#0#0(6@51"/Users/NSchiff/Documents/tester/Classes/sidePanel.h307190241#46#0#46#0#0"0(6@51"/Users/NSchiff/Documents/tester/Classes/sidePanel.h307190241#46#0#46#0#0"0(22@77"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed311084213#594#142#3(7@72"In file included from /Users/NSchiff/Documents/tester/Classes/EAGLView.m311084213#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/EAGLView.m309262054#9#0#9#0#0"0(7@72"In file included from /Users/NSchiff/Documents/tester/Classes/EAGLView.h311084213#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/EAGLView.h307210966#21#0#21#0#0"0(13@131"No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed in /Users/NSchiff/Documents/tester/Classes/tutorial.h311084213#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/tutorial.h307209461#37#0#37#0#0"0(6@50"/Users/NSchiff/Documents/tester/Classes/tutorial.h307209461#37#0#37#0#0"0(22@78"Assign attribute (default) not appropriate for non-gc object property 'second'311084213#736#143#3(7@72"In file included from /Users/NSchiff/Documents/tester/Classes/EAGLView.m311084213#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/EAGLView.m309262054#9#0#9#0#0"0(7@72"In file included from /Users/NSchiff/Documents/tester/Classes/EAGLView.h311084213#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/EAGLView.h307210966#21#0#21#0#0"0(13@132"Assign attribute (default) not appropriate for non-gc object property 'second' in /Users/NSchiff/Documents/tester/Classes/tutorial.h311084213#18446744073709551615#0#0(6@50"/Users/NSchiff/Documents/tester/Classes/tutorial.h307209461#37#0#37#0#0"0(6@50"/Users/NSchiff/Documents/tester/Classes/tutorial.h307209461#37#0#37#0#0"0(22@65"No '-descriptionWithCalendarFormat:timeZone:locale:' method found311084213#976#131#0(6@50"/Users/NSchiff/Documents/tester/Classes/EAGLView.m309262054#293#0#293#0#19"no '*' method found0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)311084213#1107#111#0(6@50"/Users/NSchiff/Documents/tester/Classes/EAGLView.m309262054#293#0#293#0#0"0(0#0#50"/Users/NSchiff/Documents/tester/Classes/EAGLView.m4300911832#1764"    cd /Users/NSchiff/Documents/tester    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphonesimulator/Nina2.build/Nina2-generated-files.hmap -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphonesimulator/Nina2.build/Nina2-own-target-headers.hmap -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphonesimulator/Nina2.build/Nina2-all-target-headers.hmap -iquote /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphonesimulator/Nina2.build/Nina2-project-headers.hmap -F/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator -I/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/include -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphonesimulator/Nina2.build/DerivedSources/i386 -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphonesimulator/Nina2.build/DerivedSources -include /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Nina2_Prefix-fyffsniitaqkzmgwljjhvmpfgrty/Nina2_Prefix.pch -c /Users/NSchiff/Documents/tester/Classes/EAGLView.m -o /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphonesimulator/Nina2.build/Objects-normal/i386/EAGLView.o0#
 
 CCompileC build/Nina2.build/Debug-iphonesimulator/Nina2.build/Objects-normal/i386/ES1Renderer.o /Users/NSchiff/Documents/tester/Classes/ES1Renderer.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s307271432.030058
@@ -1339,23 +1339,23 @@ xz.png
 lSLF07#2@10"Copy z.png307271429#307271429#0(0"0(0#0#37"/Users/NSchiff/Documents/tester/z.png4300911832#426"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/NSchiff/Documents/tester/z.png /Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina2.app0#
 
 CGenerateDSYMFile /Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina2.app.dSYM /Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina2.app/Nina2
-s307355482.690298
-e307355482.820152
+s311084213.912912
+e311084213.952735
 r1
 xGenerateDSYMFile
 x/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina2.app.dSYM
 x/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina2.app/Nina2
-lSLF07#2@103"GenerateDSYMFile build/Debug-iphonesimulator/Nina2.app.dSYM build/Debug-iphonesimulator/Nina2.app/Nina2307355482#307355482#0(0"0(0#0#75"/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina2.app/Nina24300911832#356"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina2.app/Nina2 -o /Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina2.app.dSYM0#
+lSLF07#2@103"GenerateDSYMFile build/Debug-iphonesimulator/Nina2.app.dSYM build/Debug-iphonesimulator/Nina2.app/Nina2311084213#311084213#0(0"0(0#0#75"/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina2.app/Nina24300911832#356"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina2.app/Nina2 -o /Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina2.app.dSYM0#
 
 CLd /Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina2.app/Nina2 normal i386
-s307355482.622037
-e307355482.690182
+s311084213.860762
+e311084213.912812
 r1
 xLd
 x/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina2.app/Nina2
 xnormal
 xi386
-lSLF07#2@80"Link /Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina2.app/Nina2307355482#307355482#0(0"0(0#0#0"4300911832#835"    cd /Users/NSchiff/Documents/tester    setenv MACOSX_DEPLOYMENT_TARGET 10.5    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -L/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator -F/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator -filelist /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphonesimulator/Nina2.build/Objects-normal/i386/Nina2.LinkFileList -mmacosx-version-min=10.5 -framework Foundation -framework UIKit -framework OpenGLES -framework QuartzCore -o /Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina2.app/Nina20#
+lSLF07#2@80"Link /Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina2.app/Nina2311084213#311084213#0(0"0(0#0#0"4300911832#835"    cd /Users/NSchiff/Documents/tester    setenv MACOSX_DEPLOYMENT_TARGET 10.5    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -L/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator -F/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator -filelist /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphonesimulator/Nina2.build/Objects-normal/i386/Nina2.LinkFileList -mmacosx-version-min=10.5 -framework Foundation -framework UIKit -framework OpenGLES -framework QuartzCore -o /Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina2.app/Nina20#
 
 CProcessInfoPlistFile /Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina2.app/Info.plist Nina2-Info.plist
 s307271426.899576
@@ -1380,10 +1380,10 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@27"Precompile Nina2_Prefix.pch307271429#307271431#0(0"0(0#0#48"/Users/NSchiff/Documents/tester/Nina2_Prefix.pch4300911832#1649"    cd /Users/NSchiff/Documents/tester    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphonesimulator/Nina2.build/Nina2-generated-files.hmap -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphonesimulator/Nina2.build/Nina2-own-target-headers.hmap -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphonesimulator/Nina2.build/Nina2-all-target-headers.hmap -iquote /Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphonesimulator/Nina2.build/Nina2-project-headers.hmap -F/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator -I/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/include -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphonesimulator/Nina2.build/DerivedSources/i386 -I/Users/NSchiff/Documents/tester/build/Nina2.build/Debug-iphonesimulator/Nina2.build/DerivedSources -c /Users/NSchiff/Documents/tester/Nina2_Prefix.pch -o /var/folders/Bx/BxARk5G+GH8sKjE5n4VtIk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Nina2_Prefix-fyffsniitaqkzmgwljjhvmpfgrty/Nina2_Prefix.pch.gch0#
 
 CTouch /Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina2.app
-s307355482.820247
-e307355482.823576
+s311084213.952836
+e311084213.955551
 r1
 xTouch
 x/Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina2.app
-lSLF07#2@75"Touch /Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina2.app307355482#307355482#0(0"0(0#0#0"4300911832#262"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina2.app0#
+lSLF07#2@75"Touch /Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina2.app311084213#311084213#0(0"0(0#0#0"4300911832#262"    cd /Users/NSchiff/Documents/tester    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/NSchiff/Documents/tester/build/Debug-iphonesimulator/Nina2.app0#
 

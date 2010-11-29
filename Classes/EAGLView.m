@@ -237,6 +237,13 @@
 		dm.hidden = YES;
 		tutCounter = 0;
 		
+		
+		
+		/* ---------------------------------------------------  IF GAME HAS CRASHED - CHANGE HERE  --------------------------------------------------- */
+		crashed = NO;
+		//versionsDone[0] = YES;
+		//versionsDone[1] = YES;
+		//versionsDone[2] = YES;
     }
 	
     return self;
@@ -884,7 +891,7 @@
 }
 
 - (void) startGameTimer{
-	gameTimer = [NSTimer scheduledTimerWithTimeInterval:420 target:self selector:@selector(changeGameVersion) userInfo:nil repeats:FALSE];
+	gameTimer = [NSTimer scheduledTimerWithTimeInterval:120 target:self selector:@selector(changeGameVersion) userInfo:nil repeats:FALSE];
 	
 	
 }
@@ -2073,7 +2080,9 @@
 			
 			descrip = @"Gesture found";
 			rightGes = [tut incrementGes:0];
-			
+			if (crashed){
+				[self changeGameVersion];
+			}
 			
 		}
 		else if (strcmp(type, "right") == 0){
