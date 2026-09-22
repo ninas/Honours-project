@@ -1,0 +1,47 @@
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Overview of system components developed or designed in order to assess the effect of interaction style on game enjoyment. These components will also be used in order to investigate whether game genre and previous gaming or touch-device experience impact the way in which interaction styles are perceived. The work allocation for the project is illustrated through the use of colour.\relax }}{3}{figure.caption.6}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces A summary of current research methods for games plotted according to how objective/subjective their data collection is as well as whether the data returned is qualitative or quantitative.\relax }}{10}{figure.caption.10}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces The rotation of one column shown apart from the shape. The active elements are considered to be part of the same layer.\relax }}{19}{figure.caption.17}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Illustration of \emph {Left} gesture on the square pyramid with blocks missing.\relax }}{19}{figure.caption.19}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Initial shape}}}{19}{subfigure.2.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Shape after \emph {Left} gesture has been applied. The red dot indicates which block it was applied to, while the arrow shows direction of movement.}}}{19}{subfigure.2.2}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Illustration of \emph {Up} gesture on the square pyramid with blocks missing. The red dot indicates which block it was applied to, while the arrow shows direction of movement.\relax }}{20}{figure.caption.20}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Initial shape with missing blocks.}}}{20}{subfigure.3.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Shape after \emph {Up} gesture has been applied. The red dot indicates which block it was applied to, while the arrow shows direction of movement.}}}{20}{subfigure.3.2}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Illustration of \emph {Fill in the gaps} gesture on the square pyramid with blocks missing.\relax }}{20}{figure.caption.21}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Initial shape}}}{20}{subfigure.4.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Shape after \emph {Fill in the gaps} gesture has been applied.}}}{20}{subfigure.4.2}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces An example of the direct manipulation menu structure. As can be seen, when selecting an option with multiple variants, a second sub-menu is displayed.\relax }}{22}{figure.caption.25}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces An example of possible interface design.\relax }}{23}{figure.caption.28}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Overview of game components and their relation to each other. The use of colour indicates the importance and scope of each component. Dark gray elements are responsible for coordinating a number of other components. Lighter gray items are responsible for the integration of a number of elements within a specific area, while the components in the lightest gray perform a single function and are not responsible for coordinating any of the other named items.\relax }}{25}{figure.caption.29}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Screenshots of the game illustrating the \emph {Move together} command.\relax }}{29}{figure.caption.47}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Initial shape with blocks removed}}}{29}{subfigure.8.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Shape after \emph {Move together} command}}}{29}{subfigure.8.2}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Screenshots of the three interface versions. A side menu has been activated in each case.\relax }}{31}{figure.caption.54}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Direct manipulation interface}}}{31}{subfigure.9.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Gestural interface}}}{31}{subfigure.9.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Mixed interface}}}{31}{subfigure.9.3}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Illustration of various curve fitting techniques. The black dots represent the data to be fitted, with the gray line showing the fitted curve.\relax }}{35}{figure.caption.60}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Interpolation}}}{35}{subfigure.1.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Smoothing}}}{35}{subfigure.1.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Splines}}}{35}{subfigure.1.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Straight-line regression}}}{35}{subfigure.1.4}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Parabolic regression}}}{35}{subfigure.1.5}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces An overview of how the various gesture recognition components are arranged in relation to each other\relax }}{36}{figure.caption.61}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Illustration of the flow of control as each event handling method is called\relax }}{37}{figure.caption.62}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\texttt {touchesBegan}}}}{37}{subfigure.3.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\texttt {touchesMoved}}}}{37}{subfigure.3.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\texttt {touchesEnded}}}}{37}{subfigure.3.3}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces An illustration of the elements used to describe a feature. The feature is shown as the black dotted line. \emph {a} is the angle made by the tangent at the start point and the \emph {x}-axis; \emph {b} is the angle between \emph {a} and the line from the origin to the midpoint of the feature; $c_x$ and $c_y$ are the adjusted coordinates of the end point.\relax }}{38}{figure.caption.63}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Demonstration of the eight possible directions used for segmentation. The black lines deliminate the boundaries of each direction with the red numbers indicating the assigned values in each condition.\relax }}{42}{figure.caption.68}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Illustration of the technique used to combine similar sequential features. The touch points are shown in black. The red dots illustrate the starting points of the two respective features. \emph {a} and \emph {b} are the angles between each feature (red line) and the positive \emph {x}-axis. If the difference between \emph {a} and \emph {b} is less than 20 degrees, they will be combined into one feature.\relax }}{42}{figure.caption.69}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Cell means plot for \emph {Genre}*\emph {Interface} interaction effect of higher-order flow factor ANOVA.\relax }}{54}{figure.caption.88}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }

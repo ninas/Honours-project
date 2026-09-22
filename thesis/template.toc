@@ -1,0 +1,187 @@
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Research question}{2}{section.1.1}
+\contentsline {section}{\numberline {1.2}System overview}{2}{section.1.2}
+\contentsline {section}{\numberline {1.3}Ethical considerations}{3}{section.1.3}
+\contentsline {section}{\numberline {1.4}Outline}{3}{section.1.4}
+\contentsline {chapter}{\numberline {2}Previous work}{5}{chapter.2}
+\contentsline {section}{\numberline {2.1}Introduction}{5}{section.2.1}
+\contentsline {section}{\numberline {2.2}Multi-touch}{5}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Introduction}{5}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Types of interaction}{5}{subsection.2.2.2}
+\contentsline {subsubsection}{Direct-touch versus indirect-touch}{6}{section*.7}
+\contentsline {subsubsection}{Multi-finger techniques}{6}{section*.8}
+\contentsline {subsubsection}{Unimanual versus bimanual interaction}{6}{section*.9}
+\contentsline {subsection}{\numberline {2.2.3}Benefits}{7}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.4}Limitations}{7}{subsection.2.2.4}
+\contentsline {subsection}{\numberline {2.2.5}Conclusion}{7}{subsection.2.2.5}
+\contentsline {section}{\numberline {2.3}Gestures}{8}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Introduction}{8}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Gestures versus direct manipulation}{8}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Benefits and limitations of gestural interaction}{8}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.4}Guidelines for gesture selection}{9}{subsection.2.3.4}
+\contentsline {subsection}{\numberline {2.3.5}Conclusion}{9}{subsection.2.3.5}
+\contentsline {section}{\numberline {2.4}Game evaluation techniques}{9}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Introduction}{9}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Computer games}{10}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.3}Immersion}{11}{subsection.2.4.3}
+\contentsline {subsubsection}{Measuring immersion}{11}{section*.11}
+\contentsline {subsection}{\numberline {2.4.4}Presence}{12}{subsection.2.4.4}
+\contentsline {subsubsection}{Measuring presence}{12}{section*.12}
+\contentsline {subsection}{\numberline {2.4.5}Flow}{13}{subsection.2.4.5}
+\contentsline {subsubsection}{Measuring flow}{14}{section*.13}
+\contentsline {subsection}{\numberline {2.4.6}General considerations}{14}{subsection.2.4.6}
+\contentsline {subsection}{\numberline {2.4.7}Conclusion}{15}{subsection.2.4.7}
+\contentsline {section}{\numberline {2.5}Gesture-based gaming}{15}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Introduction}{15}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.2}Previous research on gesture-based gaming}{16}{subsection.2.5.2}
+\contentsline {subsection}{\numberline {2.5.3}Conclusion}{16}{subsection.2.5.3}
+\contentsline {chapter}{\numberline {3}Game design and implementation}{17}{chapter.3}
+\contentsline {section}{\numberline {3.1}Introduction}{17}{section.3.1}
+\contentsline {section}{\numberline {3.2}Game design of \emph {Hexahedron}}{17}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Brief overview}{17}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Style and genre}{17}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Core game-play}{18}{subsection.3.2.3}
+\contentsline {subsubsection}{Scoring system}{18}{section*.14}
+\contentsline {subsection}{\numberline {3.2.4}View controls}{18}{subsection.3.2.4}
+\contentsline {subsubsection}{Rotation}{18}{section*.15}
+\contentsline {subsection}{\numberline {3.2.5}Game-play controls}{18}{subsection.3.2.5}
+\contentsline {subsubsection}{Term definitions}{18}{section*.16}
+\contentsline {subsubsection}{Controls}{19}{section*.18}
+\contentsline {paragraph}{Gestural interface}{20}{section*.22}
+\contentsline {paragraph}{Direct manipulation version}{20}{section*.24}
+\contentsline {paragraph}{Mixed interface}{22}{section*.26}
+\contentsline {subsubsection}{Removing blocks}{22}{section*.27}
+\contentsline {subsection}{\numberline {3.2.6}Target audience}{23}{subsection.3.2.6}
+\contentsline {subsection}{\numberline {3.2.7}Design}{23}{subsection.3.2.7}
+\contentsline {subsection}{\numberline {3.2.8}Summary}{24}{subsection.3.2.8}
+\contentsline {section}{\numberline {3.3}Game implementation}{24}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}System overview}{24}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Input events}{24}{subsection.3.3.2}
+\contentsline {subsubsection}{Single finger}{24}{section*.30}
+\contentsline {paragraph}{touchesBegan}{24}{section*.31}
+\contentsline {paragraph}{touchesMoved}{25}{section*.32}
+\contentsline {paragraph}{touchesEnded}{25}{section*.33}
+\contentsline {subsubsection}{Two fingers}{25}{section*.34}
+\contentsline {subsubsection}{Three fingers}{25}{section*.35}
+\contentsline {subsection}{\numberline {3.3.3}Data organisation}{26}{subsection.3.3.3}
+\contentsline {subsubsection}{Block objects}{26}{section*.36}
+\contentsline {subsubsection}{Block placement array}{26}{section*.37}
+\contentsline {subsubsection}{Drawing array}{26}{section*.38}
+\contentsline {subsection}{\numberline {3.3.4}File formats}{26}{subsection.3.3.4}
+\contentsline {subsubsection}{High score}{26}{section*.39}
+\contentsline {subsubsection}{Logging information}{26}{section*.40}
+\contentsline {subsection}{\numberline {3.3.5}Game mechanics}{27}{subsection.3.3.5}
+\contentsline {subsubsection}{Block identification}{27}{section*.42}
+\contentsline {subsubsection}{Movement of rows and columns}{27}{section*.43}
+\contentsline {subsubsection}{Movement along the \emph {z}-axis}{28}{section*.44}
+\contentsline {subsubsection}{Swapping of blocks}{28}{section*.45}
+\contentsline {subsubsection}{Moving blocks together}{28}{section*.46}
+\contentsline {subsubsection}{Block removal}{29}{section*.48}
+\contentsline {subsubsection}{Shape rotation}{29}{section*.49}
+\contentsline {subsubsection}{New game}{29}{section*.50}
+\contentsline {subsection}{\numberline {3.3.6}Game rendering}{30}{subsection.3.3.6}
+\contentsline {subsubsection}{Animations}{30}{section*.51}
+\contentsline {paragraph}{Rotation}{30}{section*.52}
+\contentsline {paragraph}{Translation}{30}{section*.53}
+\contentsline {subsection}{\numberline {3.3.7}Interface elements}{30}{subsection.3.3.7}
+\contentsline {subsubsection}{Gesture hint panel}{30}{section*.55}
+\contentsline {subsubsection}{Control button panel}{31}{section*.56}
+\contentsline {subsection}{\numberline {3.3.8}Game version controller and sequence}{31}{subsection.3.3.8}
+\contentsline {subsubsection}{Tutorial}{31}{section*.57}
+\contentsline {subsubsection}{Game choice}{32}{section*.58}
+\contentsline {section}{\numberline {3.4}Game evaluation}{32}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Play testing}{32}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Interface evaluation}{32}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}Gesture evaluation}{33}{subsection.3.4.3}
+\contentsline {chapter}{\numberline {4}Feature extraction}{34}{chapter.4}
+\contentsline {section}{\numberline {4.1}Introduction}{34}{section.4.1}
+\contentsline {section}{\numberline {4.2}Background}{34}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Features and their detection, extraction and segmentation}{34}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Curve fitting}{35}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Regression}{35}{subsection.4.2.3}
+\contentsline {section}{\numberline {4.3}Design}{36}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Introduction}{36}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}System overview}{36}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Feature description}{37}{subsection.4.3.3}
+\contentsline {subsection}{\numberline {4.3.4}Design considerations}{38}{subsection.4.3.4}
+\contentsline {subsubsection}{Device limitations}{38}{section*.64}
+\contentsline {subsubsection}{Nature of problem}{39}{section*.65}
+\contentsline {subsection}{\numberline {4.3.5}Feature extraction approach}{39}{subsection.4.3.5}
+\contentsline {section}{\numberline {4.4}Implementation}{39}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Introduction}{39}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Parabolic least squares regression}{40}{subsection.4.4.2}
+\contentsline {subsubsection}{Limitations}{40}{section*.66}
+\contentsline {subsection}{\numberline {4.4.3}Circular least squares regression}{41}{subsection.4.4.3}
+\contentsline {subsubsection}{Limitations}{41}{section*.67}
+\contentsline {subsection}{\numberline {4.4.4}Direction-based segmentation}{41}{subsection.4.4.4}
+\contentsline {subsubsection}{Limitations}{42}{section*.70}
+\contentsline {section}{\numberline {4.5}Evaluation}{43}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Test cases}{43}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}Experimental design}{43}{subsection.4.5.2}
+\contentsline {subsubsection}{Consistency}{43}{section*.71}
+\contentsline {subsubsection}{Robustness}{43}{section*.72}
+\contentsline {subsection}{\numberline {4.5.3}Results}{44}{subsection.4.5.3}
+\contentsline {subsubsection}{Consistency}{44}{section*.73}
+\contentsline {subsubsection}{Robustness}{45}{section*.76}
+\contentsline {subsection}{\numberline {4.5.4}Discussion and conclusion}{46}{subsection.4.5.4}
+\contentsline {chapter}{\numberline {5}Experimentation}{48}{chapter.5}
+\contentsline {section}{\numberline {5.1}Introduction}{48}{section.5.1}
+\contentsline {section}{\numberline {5.2}Method}{48}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Independent and dependant variables}{48}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Experimental design}{48}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.3}Instruments}{49}{subsection.5.2.3}
+\contentsline {subsubsection}{Pre-experiment questionnaire}{49}{section*.79}
+\contentsline {subsubsection}{Flow assessment}{49}{section*.80}
+\contentsline {subsection}{\numberline {5.2.4}Materials and setting}{49}{subsection.5.2.4}
+\contentsline {subsubsection}{Experiment setting}{50}{section*.82}
+\contentsline {subsection}{\numberline {5.2.5}Participants}{50}{subsection.5.2.5}
+\contentsline {subsubsection}{Participant characteristics of Puzzle group}{51}{section*.84}
+\contentsline {subsection}{\numberline {5.2.6}Control procedures}{51}{subsection.5.2.6}
+\contentsline {subsection}{\numberline {5.2.7}Procedure}{52}{subsection.5.2.7}
+\contentsline {subsection}{\numberline {5.2.8}Pilot study}{52}{subsection.5.2.8}
+\contentsline {section}{\numberline {5.3}Results}{53}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Higher-order flow factor analysis}{53}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Flow dimensions analysis}{54}{subsection.5.3.2}
+\contentsline {subsubsection}{\emph {Interface}*\emph {Genre}}{55}{section*.91}
+\contentsline {subsubsection}{\emph {Interface}*\emph {Group}}{56}{section*.92}
+\contentsline {subsubsection}{\emph {Interface} main effect}{57}{section*.93}
+\contentsline {subsection}{\numberline {5.3.3}Puzzle game results}{58}{subsection.5.3.3}
+\contentsline {section}{\numberline {5.4}Discussion}{58}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Effects of game genre on interface choice}{58}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}Interaction between participant characteristics and interaction style}{59}{subsection.5.4.2}
+\contentsline {subsection}{\numberline {5.4.3}Flow and the effect of interaction technique}{60}{subsection.5.4.3}
+\contentsline {subsection}{\numberline {5.4.4}Results specific to the Puzzle game}{62}{subsection.5.4.4}
+\contentsline {chapter}{\numberline {6}Conclusion}{63}{chapter.6}
+\contentsline {section}{\numberline {6.1}Future work}{64}{section.6.1}
+\contentsline {chapter}{\numberline {A}Feature extraction evaluation results}{69}{appendix.A}
+\contentsline {section}{\numberline {A.1}Parabolic regression}{69}{section.A.1}
+\contentsline {subsection}{\numberline {A.1.1}\emph {Z} gesture}{69}{subsection.A.1.1}
+\contentsline {subsection}{\numberline {A.1.2}\emph {Circle} gesture}{69}{subsection.A.1.2}
+\contentsline {subsection}{\numberline {A.1.3}\emph {U} gesture}{70}{subsection.A.1.3}
+\contentsline {section}{\numberline {A.2}Circular regression}{70}{section.A.2}
+\contentsline {subsection}{\numberline {A.2.1}\emph {Z} gesture}{70}{subsection.A.2.1}
+\contentsline {subsubsection}{Additional testing: First feature only}{71}{section*.95}
+\contentsline {subsection}{\numberline {A.2.2}\emph {Circle} gesture}{71}{subsection.A.2.2}
+\contentsline {subsection}{\numberline {A.2.3}\emph {U} gesture}{71}{subsection.A.2.3}
+\contentsline {subsubsection}{Additional testing: First feature only}{72}{section*.96}
+\contentsline {section}{\numberline {A.3}Direction-based segmentation}{72}{section.A.3}
+\contentsline {subsection}{\numberline {A.3.1}\emph {Z} gesture}{72}{subsection.A.3.1}
+\contentsline {subsubsection}{Additional testing: First feature only}{72}{section*.97}
+\contentsline {subsection}{\numberline {A.3.2}\emph {Circle} gesture}{73}{subsection.A.3.2}
+\contentsline {subsection}{\numberline {A.3.3}\emph {U} gesture}{73}{subsection.A.3.3}
+\contentsline {chapter}{\numberline {B}Pre-experiment questionnaire}{75}{appendix.B}
+\contentsline {chapter}{\numberline {C}User experimentation forms}{78}{appendix.C}
+\contentsline {section}{\numberline {C.1}Consent form}{78}{section.C.1}
+\contentsline {section}{\numberline {C.2}Introductory instruction form}{79}{section.C.2}
+\contentsline {section}{\numberline {C.3}Demographic information form}{80}{section.C.3}
+\contentsline {section}{\numberline {C.4}Flow State Scale}{81}{section.C.4}
+\contentsline {section}{\numberline {C.5}Post-experiment form}{82}{section.C.5}
+\contentsline {chapter}{\numberline {D}Full statistical results}{83}{appendix.D}
+\contentsline {section}{\numberline {D.1}Higher-order flow factor: Post-hoc testing}{83}{section.D.1}
+\contentsline {section}{\numberline {D.2}MANOVA: Full results}{84}{section.D.2}
+\contentsline {subsection}{\numberline {D.2.1}Mauchly's sphericity test}{84}{subsection.D.2.1}
+\contentsline {subsection}{\numberline {D.2.2}Univariate tests}{84}{subsection.D.2.2}
+\contentsline {subsection}{\numberline {D.2.3}Tukey's HSD test}{86}{subsection.D.2.3}
+\contentsline {subsubsection}{Main effect: \emph {Interface}}{86}{section*.104}
+\contentsline {subsubsection}{Interaction effect: \emph {Interface*Genre}}{90}{section*.105}
+\contentsline {subsubsection}{Interaction effect: \emph {Interface*Group}}{96}{section*.106}

@@ -1,0 +1,91 @@
+\documentclass[oneside]{report}         
+
+\usepackage[scaled=.92]{helvet}
+\usepackage{times}
+\usepackage{natbib}
+\usepackage{amsmath}
+
+\usepackage[nonumberlist]{glossaries}
+\usepackage{graphicx,subfig}
+\usepackage{multirow}
+\usepackage{url}
+
+
+\title{An investigation of multi-touch gesture-based gaming}
+\author{Nina Schiff}
+
+
+\parindent 1cm
+\parskip 0.0cm
+\topmargin 0.1cm
+
+\oddsidemargin 0.75cm
+\evensidemargin 0.75cm
+\textwidth 16cm
+\textheight 22cm
+%\linespread{1.3}
+
+
+\bibpunct{[}{]}{;}{a}{}{,}
+
+\makeglossaries
+\include{gloss}
+
+\usepackage[pdfborder={0 0 0}]{hyperref}
+\begin{document}
+	\input{title}
+
+	\begin{abstract}
+		\input{abstract}
+	\end{abstract}
+
+	\pagenumbering{roman}
+
+
+	\tableofcontents
+	\listoffigures
+	\listoftables
+
+	\glsaddall
+	\printglossaries
+
+
+	\chapter{Introduction}
+		\input{introduction}
+
+	\chapter{Previous work}
+		\input{multitouch}
+		\input{gestures}
+		\input{gameEval}
+		\input{gesGames}
+
+	\chapter{Game design and implementation}
+		\input{designDoc}
+		\input{technicalDesign}
+		\input{gameTesting}
+
+	\chapter{Feature extraction}
+		\input{FEbackground}
+		\input{FEdesign}
+		\input{FEimplementation}
+		\input{FEevaluation}	
+
+	\chapter{Experimentation}
+		\input{method}
+		\input{results}
+		\input{discussion}
+	
+	\chapter{Conclusion}
+		\input{conclusion}
+	
+	
+	\bibliographystyle{acmtrans}
+	\nocite{*}
+	\bibliography{template}
+
+	\appendix
+		\input{FEappendix}
+		\input{preQues}
+		\input{userExperiment}
+		\input{resultsAppendix}
+\end{document}

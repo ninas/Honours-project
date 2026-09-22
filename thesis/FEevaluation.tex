@@ -1,0 +1,154 @@
+\section{Evaluation}
+In order to determine which feature extraction technique provides the most appropriate results, an evaluation of the three was conducted. This involved tests of the reliability and consistency of each method. The following sections describe the test cases, experimental design as well as the results of testing.
+
+\subsection{Test cases}
+The assessment of the various feature extraction techniques requires choosing a number of test cases for further experimentation. These test cases should be as representative as possible of all likely gestures. For this reason, a \emph{Z}, \emph{U} and \emph{Circle} gesture were chosen. The \emph{Z} gesture contains only straight-lines, while the \emph{Circle} is composed entirely of curves. This allows the feature extraction units to be tested on each of the basic elements that could potentially compose a gesture. In addition, since these two gestures are composed entirely of single element types, it allows for a comparison between the straight-line and curve finding capabilities of each extraction technique. The \emph{U} gesture, on the other hand, contains a combination of curves and straight-lines. This gesture has been included so that the feature extraction units can be assessed on how well they extract a combination of elements. The use of these three gestures, thus hopefully manages to include the most important features present in the majority of gestures.
+
+\subsection{Experimental design}
+Two primary aspects, the consistency and robustness of the techniques, were assessed in our experiments. Consistency was evaluated since, for successful gesture recognition, the input into the gesture recognition engine has to be as consistent as possible for variations of the same gesture. That is, if the features extracted for the same gesture are widely different, there is very little that can be done by the gesture engine to accommodate. This is related to the second factor under evaluation. As people may draw gestures in very different ways, the feature extraction should be robust enough to extract variations of the same gesture in a similar way. The combination of a robust and consistent feature extraction unit should provide input that greatly aids the process of gesture recognition. The testing of these attributes is discussed below.
+
+\subsubsection{Consistency}
+In order to determine how consistently a gesture was recognised by each unit, each of the three test cases was drawn 75 times for each feature extraction unit. Of these 75 samples, the final 50 were selected for analysis. This was done so that the initial samples, which may have been inconsistent due to an unfamiliarity with the particular gesture, did not bias the overall results. As this experiment aims to see how consistently the feature extraction technique recognises a gesture, attempts were made to draw each test case as regularly as possible. This was aided by a sample gesture drawn on the screen over which the test cases could be traced. 
+
+\subsubsection{Robustness}
+In addition to consistency, the feature extraction is also required to be robust. That is, variations of a gesture should still be recognised as the same gesture. In order to test this in a fair way, as the direction-based technique produces features of only eight varieties, the other two techniques also had their features decomposed according to mean direction. This direction was determined by using the start and end \emph{x}-coordinates as well as the \emph{y}-coordinate calculated through use of the regression equation. As both gesture engines use the average direction of a feature for analysis, this technique was felt to be appropriate. Three conditions, consisting of 20 samples, were analysed as a measure of robustness. These included a control condition, where gestures were drawn as consistently as possible, one where random variation was added to the drawing of each gesture, and a third, with gestures drawn smaller than normal. As in the sample generation for consistency, each test case was drawn more times than needed and the initial samples discarded.
+
+\subsection{Results}
+\subsubsection{Consistency}
+The results for each gesture were analysed using Krippendorff's alpha, which is a measure of inter-rater reliability. This technique is used to determine the level of agreement between a set of coders on a number of variables. In this case, each drawn gesture was considered a rater, with the features within these gestures serving as the variables that each coder was assessing. The two regression techniques used the interval case of this metric, while the direction-based segmentation was calculated using the procedure for nominal data. As the test cases were not always recognised with the same number of features, this statistic was applied separately for each feature count, if there were more than 10 recognised gestures with this count. This minimum was selected to ensure there are enough samples to provide a reliable result as small sample sizes may produce spurious results. Table~\ref{featureCount} summarises the number of features found with each count for the three test cases.
+
+\begin{table}
+\small
+\centering %
+\begin{tabular*}{0.9\textwidth}{@{\extracolsep{\fill}} l | c c | c c | c c  }
+
+\hline	
+  & \multicolumn{2}{c |}{\emph{Z}} & \multicolumn{2}{c |}{\emph{Circle}} & \multicolumn{2}{c}{\emph{U}}  \\
+  & Feature count & Number & Feature count & Number & Feature count & Number \\
+  \hline
+ Parabolic regression & \emph{3} & \emph{50} & \emph{3} & \emph{17} & 3 & 1 \\
+ & & & \emph{4} & \emph{26} & \emph{4} & \emph{23} \\
+ & & & 5 & 7 & \emph{5} & \emph{20} \\
+ & & & & & 6 & 6 \\
+ \hline 
+ Circular regression & \emph{3} & \emph{33} & 1 & 1 & 2 & 7 \\
+ & \emph{4} & \emph{17} & 2 & 1 & \emph{3} & \emph{28} \\
+ & & & \emph{3} & \emph{40} & \emph{4} & \emph{14} \\
+ & & & 4 & 8 & 5 & 1 \\
+ \hline 
+ Direction change & \emph{3} & \emph{46} & 5 & 1 & 3 & 7 \\
+ & 4 & 4 & \emph{6} & \emph{19} & \emph{4} & \emph{20} \\
+ & & & \emph{7} & \emph{25} & \emph{5} & \emph{20} \\
+ & & & 8 & 4 & 6 & 3 \\
+ & & & 9 & 1 & &  \\
+\hline  
+\end{tabular*}
+\caption{The distribution of results for each feature extraction technique and test case according to the number of features extracted and how often. Values in italics will be investigated further.}
+\label {featureCount}
+\end{table}
+
+In order to apply Krippendorff's alpha, each feature had to be reduced to a single value. While this was a simple matter for the direction-based technique (as each feature is classified into one of eight directions), it proved more complex for the two regression methods. They were decomposed by calculating the mean end point for each feature and then using this value as the \emph{x}-coordinate of the equation obtained through regression. Thus the produced \emph{y}-coordinate was used in the inter-rater analysis. Descriptive statistics for the two regression techniques are provided in Table~\ref{conDescrip}, although only the standard deviation has been included as the mean is only useful in the context of gesture recognition. The same has not been done for the direction-based technique as these values do not make sense when considering ordinal values.
+\begin{table}
+\small
+\centering %
+\begin{tabular*}{0.7\textwidth}{@{\extracolsep{\fill}} l r r r r r r }
+
+\hline	
+& Feature number & 1 & 2 & 3 & 4 & 5 \\
+& &\emph{SD} &    \emph{SD} &  \emph{SD} &  \emph{SD} &  \emph{SD}  \\
+\hline
+\multirow{3}{*}{\emph{Z}} & Parabolic & 12.7 & 44.67 & 5.21 & &  \\
+& \multirow{2}{*}{Circular} & 2871.57 & 730.14 & 2489.91 & &   \\
+& & 3756.6 & 723.96 & 813.36 & 2515.17 &   \\
+\hline
+\multirow{3}{*}{\emph{Circle}} & \multirow{2}{*}{Parabolic} & 26.44 & 23.16 & 10.54 & &  \\
+& & 36.98 & 3770.67 & 322.03 & 35.8 &  \\
+& Circular & 34.4 & 47.11 & 87.3 & &  \\
+\hline
+\multirow{4}{*}{\emph{U}} & \multirow{2}{*}{Parabolic}  & 2030.49 & 1873.02 & 66.043.82 & 116.48 &  \\
+& & 149.93 & 669.67 & 152241.17 & 34.69 & 151.66   \\
+& \multirow{2}{*}{Circular} & 100.18 & 91.99 & 119.98 & & \\
+& & 39.42 & 84.38 & 57.6 & 63.69 & \\
+\hline  
+\end{tabular*}
+\caption{Standard deviation of each feature for the two regression techniques.}
+\label {conDescrip}
+\end{table}
+
+The \emph{Z} gesture was the most consistently recognised of the three, with the parabolic regression achieving the highest consistency ($\alpha$ = 0.965). In addition, the number of features for all 50 test cases was consistent. While the direction-based method was less consistent, it still demonstrated a high degree of agreement ($\alpha$ = 0.797). The circular regression, however, showed a much lower level of consistency (3 features: $\alpha$ = 0.251; 4 features: $\alpha$ = 0.38). This is also demonstrated when examining the standard deviations for this technique (for example for the first feature, 3 features: \emph{SD} = 2871.57; 4 features: \emph{SD} = 3756.6).
+
+The inconsistency of the circular regression was not true across all test cases, however. In the case of the \emph{Circle}, 80\% of the samples were segmented into the same number of features. In addition, it had a fairly high Krippendorff's alpha value of 0.723. While the direction-based technique did not produce the same number of features as consistently, those in each sample were very highly correlated (6 features: $\alpha$ = 0.861; 7 features: $\alpha$ = 0.921). The parabolic regression method produced interesting results. When a gesture was contained three features, the segmentation was highly consistent ($\alpha$ = 0.972). However, when four features were constructed, there was no correlation across the samples ($\alpha$ = 0.002).
+
+Both regression techniques appear to have struggled with the \emph{U} test case. The circular regression (3 features: $\alpha$ = 0.316; 4 features: $\alpha$ = 0.448) performed much more consistently than the parabolic regression (4 features: $\alpha$ = 0.018; 5 features: $\alpha$ = 0), perhaps due to the inclusion of straight-lines in the gesture (which the parabolic regression is unable to recognise). The direction-based technique was far more consistent, however (4 features: $\alpha$ = 0.824; 5 features: $\alpha$= 0.851).
+
+The mean $\alpha$ scores when first averaging within each test case and then across all gestures for each feature extraction technique show that the direction-based technique shows the greatest consistency (\emph{M} = 0.84, \emph{SD} = 0.05). The circular regression (\emph{M} = 0.51) is moderately more consistent than the parabolic (\emph{M} = 0.49). However, the parabolic regression (\emph{SD} = 0.48) shows far more variance than does the circular regression (\emph{SD} = 0.19).
+
+\subsubsection{Robustness}
+The results for each test case and extraction technique were analysed using a Two-way Main effects ANOVA. The two factors consisted of the sample a feature belonged to (\emph{Control}, \emph{Small} or \emph{Random variation}) and the feature number within the gesture sequence. As the purpose of the analysis was to determine how similar the results within each sample were, the main effect for feature number and the interaction between this and the sample type was ignored (and, in fact, not calculated). In addition, it does not make sense to examine the means to determine where an effect was experienced more strongly. For this reason, only basic post-hoc testing was performed in order to determine where the differences lay, rather than the nature of these differences. Adjustments were made to handle missing data in the cases where the number of gestures per sample was not consistent.
+
+An ANOVA was performed for each test case using all three feature extraction techniques, resulting in nine separate ANOVAs. A summary of the main effects can be found in Table~\ref{anovaRobust}. The full ANOVA tables have been included in Appendix~\ref{anovaFullRobust}.
+
+\begin{table}
+\small
+\centering %
+\begin{tabular*}{0.8\textwidth}{@{\extracolsep{\fill}} l c r r r r r }
+
+\hline	
+& & SS & df & MS & F & \emph{p} \\
+\hline
+\multirow{3}{*}{Parabolic regression} & \emph{Z} & 19.206 & 2 & 9.603 & 10.398 & 0.000057* \\
+& \emph{Circle} & 16.9 & 2 & 8.45 & 11.969 & 0.000013* \\
+& \emph{U} & 46.66 & 2 & 23.330 & 5.5 & 0.004797* \\
+\hline  
+\multirow{3}{*}{Circular regression} & \emph{Z} & 2.282 & 2 & 1.141 & 0.507 & 0.603396 \\
+& \emph{Circle} & 29.283 & 2 & 14.642 & 4.4184 & 0.013792* \\
+& \emph{U} & 0.8405 & 2 & 0.8405 & 0.64117 & 0.424727 \\
+\hline
+\multirow{3}{*}{Direction-based} & \emph{Z} & 2.059 & 2 & 1.029 & 1.689 & 0.187924 \\
+& \emph{Circle} & 249.403 & 2 & 124.701 & 114.053 & $< 0.000001$* \\
+& \emph{U} & 62.067 & 2 & 31.033 & 34.036 & $< 0.000001$*\\
+\hline
+\end{tabular*}
+\caption{Values for the Sample variable from the ANOVAs performed for each test case-feature extraction technique combination. A `*' indicates a significance result where $\alpha$ = 0.05.}
+\label {anovaRobust}
+\end{table}
+
+The majority of these tests showed significant results, indicating that there was significant variation in the feature extraction samples. In other words, the features were extracted significantly differently. All three test cases showed divergent results in the case of parabolic regression, while circular regression only showed significant differences for the \emph{Circle} test case. The direction-based method reported results that were not statistically significant for the \emph{Z} gesture only. 
+
+Post-hoc testing, using Tukey's HSD, was conducted for each significant result to determine whether this difference was present across all samples. The full results for each comparison can be found in Appendix~\ref{anovaFullRobust}. Table~\ref{tukeyRobust} summarises these results by indicating where significant differences were found. The results show that in general the \emph{Small} condition was divergent from both of the others. This is especially true of the \emph{Circle} test case. The direction-based extraction for the \emph{U} test case showed significant results across all groupings with the parabolic regression also showing a significant difference between the \emph{Control} and \emph{Random variation} condition.
+
+\begin{table}
+\small
+\centering %
+\begin{tabular*}{0.9\textwidth}{@{\extracolsep{\fill}} l c c c  }
+
+\hline	
+&  \emph{Z} & \emph{Circle} & \emph{U} \\
+\hline
+\multirow{2}{*}{Parabolic regression} & Control - Random variation  & Control - Small & Control - Small \\
+&  Small - Random variation & Small - Random variation & Small - Random variation \\
+\hline
+\multirow{2}{*}{Circular regression} &   & Control - Small &  \\
+&   & Small - Random variation &  \\
+\hline
+\multirow{3}{*}{Direction-based} &   & Control - Small & Control - Small \\
+&   & Small - Random variation & Small - Random variation \\
+& & & Random variation - Control \\
+\hline
+\end{tabular*}
+\caption{Summary of post-hoc testing using Tukey's HSD. Each cell indicates where a significant difference was found and between which samples.}
+\label {tukeyRobust}
+\end{table}
+
+Further testing was conducted on the cases which showed no significant results. This was done by conducting a One-way ANOVA on the first feature of each non-significant test case. The first feature was chosen as it removes the need to handling missing data. These tests showed significant differences between all the gesture-extraction technique combinations tested (Circular: \emph{Z} and \emph{U} -- \emph{p} $<$ 0.000001; Direction-based: \emph{Z} -- \emph{p} = 0.001434). Post-hoc testing was also conducted on these results. This determined that the difference, in all three cases, lay between the \emph{Small} sample and the other two samples. Full results are available in Appendix~\ref{anovaFullRobust}.
+
+\subsection{Discussion and conclusion}
+The results from the two experiments allow us to determine which feature extraction technique is most appropriate based on its consistency and robustness.
+
+The direction-based segmentation scheme is far more consistent than either of the other two techniques. While circular and parabolic regression did in some instances score higher on Krippendorff's alpha than the direct-based method, they did not do so consistently. All alpha values for the direction-based technique, however, were above, or close to, 0.8. Thus, based on consistency alone, this method would appear to be the best technique since the other two showed far greater variation, especially in the case of the parabolic regression feature extraction.
+
+However, robustness must also be considered. All the techniques failed the test of robustness to some extent. Much of this variation appears to be attributed to small gestures. Thus none of the techniques are appropriate for extracting gestures drawn below a certain size. This may be due to the sparseness of data, in the case of the regression methods and the lack of a large enough angle between features (due to the small size) in the direction-based case. The circular regression appears to have provided the most robust results overall, with the parabolic regression showing strong variation in all cases. However, when removing the \emph{Small} sample from results, all three methods are fairly robust.
+
+However, the limitations of this experiment must be considered. As the circular and parabolic regression results were converted to a form more similar to that of the direction-based technique, this may have skewed the results. In addition, as only one person was responsible for drawing the gestures used for analysis, this too may have affected the results. Finally, the fact that statistical techniques had to be used to handle missing data must also be considered when interpreting these results.
+
+In summary, the direction-based segmentation technique provided the most consistent results. All three techniques were fairly robust, except when considering small gestures, although the circular regression performed moderately better than the other two techniques in this respect. With this in mind, the direction-based method appears to be the best choice for integration with the two gesture engines. As all three methods provided roughly similar results on the tests of robustness, this choice is primarily based on the evaluation of consistency in extraction. The robustness results, however, suggest that attempts should be made to provide some form of training for users before they use the system. This, in turn, should decrease the divergence when drawing the same gesture. The high consistency of the direction-based technique can then be fully realised, resulting in features that are highly similar within the same gesture. This will greatly increase the probability of the gesture engines being able to accurately identify valid gestures.

@@ -1,0 +1,17 @@
+\section{Game evaluation}
+In order to evaluate the game, a number of techniques were used. These include play testing the actual game and evaluating the interface versions and gestures used within the game. These methods are described in more detail below.
+
+\subsection{Play testing}
+In order to uncover any bugs in the actual game mechanics, play testing was conducted. This was done throughout the game development process as well as after the game had been completed.
+
+After each movement technique had been implemented, the game was played for half an hour to ensure that this technique and all other previously implemented mechanics worked as expected. Any errors found were corrected and the game tested again until no more gameplay discrepencies were discovered.
+
+Once the game was completed, each group member play tested the game for 20 minutes. Between each session, any discovered bugs were fixed. Once each group member had played the game once and all errors had been corrected, the game was tested for a further half an hour. This was done to ensure that all mechanics worked as they should so that the elicited flow state during experimentation would not be interrupted due to discrepencies in game play.
+
+\subsection{Interface evaluation}
+The design of each interface went through a number of iterations. That is, the final design was successively refined. This was done by asking individuals within the Honours class to play the game with each interface version with the task of identifying any issues that may distract from gameplay. An example of this is the rotational controls in the direct manipulation version. Initially these were going to be implemented via a two-finger swipe, as in the gestural and mixed interface versions. However, play testing revealed that this was not the expected interaction style and represented a break in the continuity of the interface. That is, as all other controls were implemented through button use, including a more gestural technique for rotation was felt to be inconsistent with the remainder of the interface.
+
+\subsection{Gesture evaluation}
+The choice of gestures was also evaluated. This was a two-part process whereby group members were first asked to draw gestures they felt would be appropriate for each movement technique. These gestures were then refined into a set of gestural controls for the interface. The gestures were then shown to three members of the Honours class. They were given a list of possible movement techniques and asked to identify what they thought the function of each gesture was. After half an hour, they were then instructed to draw the gestures for each movement command. This was done to test the intuitiveness and memorability of each gesture. Subsequent refinements were made using the data from this procedure in order to determine the final gestures, which can be seen in Table~\ref{gestureList}.
+
+

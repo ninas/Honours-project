@@ -1,0 +1,125 @@
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}
+\BOOKMARK [1][-]{section.1.1}{Research question}{chapter.1}
+\BOOKMARK [1][-]{section.1.2}{System overview}{chapter.1}
+\BOOKMARK [1][-]{section.1.3}{Ethical considerations}{chapter.1}
+\BOOKMARK [1][-]{section.1.4}{Outline}{chapter.1}
+\BOOKMARK [0][-]{chapter.2}{Previous work}{}
+\BOOKMARK [1][-]{section.2.1}{Introduction}{chapter.2}
+\BOOKMARK [1][-]{section.2.2}{Multi-touch}{chapter.2}
+\BOOKMARK [2][-]{subsection.2.2.1}{Introduction}{section.2.2}
+\BOOKMARK [2][-]{subsection.2.2.2}{Types of interaction}{section.2.2}
+\BOOKMARK [2][-]{subsection.2.2.3}{Benefits}{section.2.2}
+\BOOKMARK [2][-]{subsection.2.2.4}{Limitations}{section.2.2}
+\BOOKMARK [2][-]{subsection.2.2.5}{Conclusion}{section.2.2}
+\BOOKMARK [1][-]{section.2.3}{Gestures}{chapter.2}
+\BOOKMARK [2][-]{subsection.2.3.1}{Introduction}{section.2.3}
+\BOOKMARK [2][-]{subsection.2.3.2}{Gestures versus direct manipulation}{section.2.3}
+\BOOKMARK [2][-]{subsection.2.3.3}{Benefits and limitations of gestural interaction}{section.2.3}
+\BOOKMARK [2][-]{subsection.2.3.4}{Guidelines for gesture selection}{section.2.3}
+\BOOKMARK [2][-]{subsection.2.3.5}{Conclusion}{section.2.3}
+\BOOKMARK [1][-]{section.2.4}{Game evaluation techniques}{chapter.2}
+\BOOKMARK [2][-]{subsection.2.4.1}{Introduction}{section.2.4}
+\BOOKMARK [2][-]{subsection.2.4.2}{Computer games}{section.2.4}
+\BOOKMARK [2][-]{subsection.2.4.3}{Immersion}{section.2.4}
+\BOOKMARK [2][-]{subsection.2.4.4}{Presence}{section.2.4}
+\BOOKMARK [2][-]{subsection.2.4.5}{Flow}{section.2.4}
+\BOOKMARK [2][-]{subsection.2.4.6}{General considerations}{section.2.4}
+\BOOKMARK [2][-]{subsection.2.4.7}{Conclusion}{section.2.4}
+\BOOKMARK [1][-]{section.2.5}{Gesture-based gaming}{chapter.2}
+\BOOKMARK [2][-]{subsection.2.5.1}{Introduction}{section.2.5}
+\BOOKMARK [2][-]{subsection.2.5.2}{Previous research on gesture-based gaming}{section.2.5}
+\BOOKMARK [2][-]{subsection.2.5.3}{Conclusion}{section.2.5}
+\BOOKMARK [0][-]{chapter.3}{Game design and implementation}{}
+\BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}
+\BOOKMARK [1][-]{section.3.2}{Game design of Hexahedron}{chapter.3}
+\BOOKMARK [2][-]{subsection.3.2.1}{Brief overview}{section.3.2}
+\BOOKMARK [2][-]{subsection.3.2.2}{Style and genre}{section.3.2}
+\BOOKMARK [2][-]{subsection.3.2.3}{Core game-play}{section.3.2}
+\BOOKMARK [2][-]{subsection.3.2.4}{View controls}{section.3.2}
+\BOOKMARK [2][-]{subsection.3.2.5}{Game-play controls}{section.3.2}
+\BOOKMARK [2][-]{subsection.3.2.6}{Target audience}{section.3.2}
+\BOOKMARK [2][-]{subsection.3.2.7}{Design}{section.3.2}
+\BOOKMARK [2][-]{subsection.3.2.8}{Summary}{section.3.2}
+\BOOKMARK [1][-]{section.3.3}{Game implementation}{chapter.3}
+\BOOKMARK [2][-]{subsection.3.3.1}{System overview}{section.3.3}
+\BOOKMARK [2][-]{subsection.3.3.2}{Input events}{section.3.3}
+\BOOKMARK [2][-]{subsection.3.3.3}{Data organisation}{section.3.3}
+\BOOKMARK [2][-]{subsection.3.3.4}{File formats}{section.3.3}
+\BOOKMARK [2][-]{subsection.3.3.5}{Game mechanics}{section.3.3}
+\BOOKMARK [2][-]{subsection.3.3.6}{Game rendering}{section.3.3}
+\BOOKMARK [2][-]{subsection.3.3.7}{Interface elements}{section.3.3}
+\BOOKMARK [2][-]{subsection.3.3.8}{Game version controller and sequence}{section.3.3}
+\BOOKMARK [1][-]{section.3.4}{Game evaluation}{chapter.3}
+\BOOKMARK [2][-]{subsection.3.4.1}{Play testing}{section.3.4}
+\BOOKMARK [2][-]{subsection.3.4.2}{Interface evaluation}{section.3.4}
+\BOOKMARK [2][-]{subsection.3.4.3}{Gesture evaluation}{section.3.4}
+\BOOKMARK [0][-]{chapter.4}{Feature extraction}{}
+\BOOKMARK [1][-]{section.4.1}{Introduction}{chapter.4}
+\BOOKMARK [1][-]{section.4.2}{Background}{chapter.4}
+\BOOKMARK [2][-]{subsection.4.2.1}{Features and their detection, extraction and segmentation}{section.4.2}
+\BOOKMARK [2][-]{subsection.4.2.2}{Curve fitting}{section.4.2}
+\BOOKMARK [2][-]{subsection.4.2.3}{Regression}{section.4.2}
+\BOOKMARK [1][-]{section.4.3}{Design}{chapter.4}
+\BOOKMARK [2][-]{subsection.4.3.1}{Introduction}{section.4.3}
+\BOOKMARK [2][-]{subsection.4.3.2}{System overview}{section.4.3}
+\BOOKMARK [2][-]{subsection.4.3.3}{Feature description}{section.4.3}
+\BOOKMARK [2][-]{subsection.4.3.4}{Design considerations}{section.4.3}
+\BOOKMARK [2][-]{subsection.4.3.5}{Feature extraction approach}{section.4.3}
+\BOOKMARK [1][-]{section.4.4}{Implementation}{chapter.4}
+\BOOKMARK [2][-]{subsection.4.4.1}{Introduction}{section.4.4}
+\BOOKMARK [2][-]{subsection.4.4.2}{Parabolic least squares regression}{section.4.4}
+\BOOKMARK [2][-]{subsection.4.4.3}{Circular least squares regression}{section.4.4}
+\BOOKMARK [2][-]{subsection.4.4.4}{Direction-based segmentation}{section.4.4}
+\BOOKMARK [1][-]{section.4.5}{Evaluation}{chapter.4}
+\BOOKMARK [2][-]{subsection.4.5.1}{Test cases}{section.4.5}
+\BOOKMARK [2][-]{subsection.4.5.2}{Experimental design}{section.4.5}
+\BOOKMARK [2][-]{subsection.4.5.3}{Results}{section.4.5}
+\BOOKMARK [2][-]{subsection.4.5.4}{Discussion and conclusion}{section.4.5}
+\BOOKMARK [0][-]{chapter.5}{Experimentation}{}
+\BOOKMARK [1][-]{section.5.1}{Introduction}{chapter.5}
+\BOOKMARK [1][-]{section.5.2}{Method}{chapter.5}
+\BOOKMARK [2][-]{subsection.5.2.1}{Independent and dependant variables}{section.5.2}
+\BOOKMARK [2][-]{subsection.5.2.2}{Experimental design}{section.5.2}
+\BOOKMARK [2][-]{subsection.5.2.3}{Instruments}{section.5.2}
+\BOOKMARK [2][-]{subsection.5.2.4}{Materials and setting}{section.5.2}
+\BOOKMARK [2][-]{subsection.5.2.5}{Participants}{section.5.2}
+\BOOKMARK [2][-]{subsection.5.2.6}{Control procedures}{section.5.2}
+\BOOKMARK [2][-]{subsection.5.2.7}{Procedure}{section.5.2}
+\BOOKMARK [2][-]{subsection.5.2.8}{Pilot study}{section.5.2}
+\BOOKMARK [1][-]{section.5.3}{Results}{chapter.5}
+\BOOKMARK [2][-]{subsection.5.3.1}{Higher-order flow factor analysis}{section.5.3}
+\BOOKMARK [2][-]{subsection.5.3.2}{Flow dimensions analysis}{section.5.3}
+\BOOKMARK [2][-]{subsection.5.3.3}{Puzzle game results}{section.5.3}
+\BOOKMARK [1][-]{section.5.4}{Discussion}{chapter.5}
+\BOOKMARK [2][-]{subsection.5.4.1}{Effects of game genre on interface choice}{section.5.4}
+\BOOKMARK [2][-]{subsection.5.4.2}{Interaction between participant characteristics and interaction style}{section.5.4}
+\BOOKMARK [2][-]{subsection.5.4.3}{Flow and the effect of interaction technique}{section.5.4}
+\BOOKMARK [2][-]{subsection.5.4.4}{Results specific to the Puzzle game}{section.5.4}
+\BOOKMARK [0][-]{chapter.6}{Conclusion}{}
+\BOOKMARK [1][-]{section.6.1}{Future work}{chapter.6}
+\BOOKMARK [0][-]{appendix.A}{Feature extraction evaluation results}{}
+\BOOKMARK [1][-]{section.A.1}{Parabolic regression}{appendix.A}
+\BOOKMARK [2][-]{subsection.A.1.1}{Z gesture}{section.A.1}
+\BOOKMARK [2][-]{subsection.A.1.2}{Circle gesture}{section.A.1}
+\BOOKMARK [2][-]{subsection.A.1.3}{U gesture}{section.A.1}
+\BOOKMARK [1][-]{section.A.2}{Circular regression}{appendix.A}
+\BOOKMARK [2][-]{subsection.A.2.1}{Z gesture}{section.A.2}
+\BOOKMARK [2][-]{subsection.A.2.2}{Circle gesture}{section.A.2}
+\BOOKMARK [2][-]{subsection.A.2.3}{U gesture}{section.A.2}
+\BOOKMARK [1][-]{section.A.3}{Direction-based segmentation}{appendix.A}
+\BOOKMARK [2][-]{subsection.A.3.1}{Z gesture}{section.A.3}
+\BOOKMARK [2][-]{subsection.A.3.2}{Circle gesture}{section.A.3}
+\BOOKMARK [2][-]{subsection.A.3.3}{U gesture}{section.A.3}
+\BOOKMARK [0][-]{appendix.B}{Pre-experiment questionnaire}{}
+\BOOKMARK [0][-]{appendix.C}{User experimentation forms}{}
+\BOOKMARK [1][-]{section.C.1}{Consent form}{appendix.C}
+\BOOKMARK [1][-]{section.C.2}{Introductory instruction form}{appendix.C}
+\BOOKMARK [1][-]{section.C.3}{Demographic information form}{appendix.C}
+\BOOKMARK [1][-]{section.C.4}{Flow State Scale}{appendix.C}
+\BOOKMARK [1][-]{section.C.5}{Post-experiment form}{appendix.C}
+\BOOKMARK [0][-]{appendix.D}{Full statistical results}{}
+\BOOKMARK [1][-]{section.D.1}{Higher-order flow factor: Post-hoc testing}{appendix.D}
+\BOOKMARK [1][-]{section.D.2}{MANOVA: Full results}{appendix.D}
+\BOOKMARK [2][-]{subsection.D.2.1}{Mauchly's sphericity test}{section.D.2}
+\BOOKMARK [2][-]{subsection.D.2.2}{Univariate tests}{section.D.2}
+\BOOKMARK [2][-]{subsection.D.2.3}{Tukey's HSD test}{section.D.2}

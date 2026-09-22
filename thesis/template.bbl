@@ -1,0 +1,465 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\citeauthoryear{Akima}{Akima}{1970}]{Akim70}
+{\sc Akima, H.} 1970.
+\newblock A new method of interpolation and smooth curve fitting based on local
+  procedures.
+\newblock {\em J. ACM\/}~{\em 17,\/}~4, 589--602.
+
+\bibitem[\protect\citeauthoryear{Apple}{Apple}{2010a}]{A10a}
+{\sc Apple}. 2010a.
+\newblock i{OS} application programming guide.
+\newblock
+  \url{http://developer.apple.com/library/ios/#documentation/iPhone/Conceptual%
+/iPhoneOSProgrammingGuide/Introduction/Introduction.html}.
+
+\bibitem[\protect\citeauthoryear{Apple}{Apple}{2010b}]{Appl10}
+{\sc Apple}. 2010b.
+\newblock i{P}ad: Technical specification.
+\newblock \url{http://www.apple.com/ipad/specs/}.
+
+\bibitem[\protect\citeauthoryear{Babbie and Mouton}{Babbie and
+  Mouton}{2007}]{Babb07}
+{\sc Babbie, E.} {\sc and} {\sc Mouton, J.} 2007.
+\newblock {\em The practice of social research}.
+\newblock Oxford University Press, Cape Town.
+
+\bibitem[\protect\citeauthoryear{Bartlett, Kotrlik, and Higgins}{Bartlett
+  et~al\mbox{.}}{2001}]{Bart01}
+{\sc Bartlett, J.~E.}, {\sc Kotrlik, J.~W.}, {\sc and} {\sc Higgins, C.~C.}
+  2001.
+\newblock Organisational research: Determining appropriate sample size in
+  survey research.
+\newblock {\em Information Technology, Learning and Performance Journal\/}~{\em
+  19,\/}~1, 43--50.
+
+\bibitem[\protect\citeauthoryear{Blake}{Blake}{2010}]{Blak10}
+{\sc Blake, E.} 2010.
+\newblock Measuring presence.
+\newblock CSC4000W Games and Virtual Environments course notes.
+
+\bibitem[\protect\citeauthoryear{Brown and Cairns}{Brown and
+  Cairns}{2004}]{Brow04}
+{\sc Brown, E.} {\sc and} {\sc Cairns, P.} 2004.
+\newblock A grounded investigation of game immersion.
+\newblock In {\em CHI '04: CHI '04 extended abstracts on Human Factors in
+  computing systems}. ACM, New York, NY, USA, 1297--1300.
+
+\bibitem[\protect\citeauthoryear{Bullock}{Bullock}{2006}]{Bull06}
+{\sc Bullock, R.} 2006.
+\newblock Least-squares circle fit.
+\newblock
+  \url{http://www.dtcenter.org/met/users/docs/write_ups/circle_fit.pdf}.
+
+\bibitem[\protect\citeauthoryear{Corder and Foreman}{Corder and
+  Foreman}{2009}]{Cord09}
+{\sc Corder, G.~W.} {\sc and} {\sc Foreman, D.~I.} 2009.
+\newblock {\em Nonparametric statistics for non-statisticians: A step-by-step
+  approach}.
+\newblock John Wiley and Sons, Inc., New Jersey.
+
+\bibitem[\protect\citeauthoryear{Cozby}{Cozby}{2005}]{Cozb05}
+{\sc Cozby, P.~C.} 2005.
+\newblock {\em Methods in behavioural research}.
+\newblock McGraw Hill, New York.
+
+\bibitem[\protect\citeauthoryear{Csikzentmihalyi}{Csikzentmihalyi}{1990}]{Csik%
+90}
+{\sc Csikzentmihalyi, M.} 1990.
+\newblock {\em Flow: The psychology of optimal experience}.
+\newblock Harper Perennial, New York.
+
+\bibitem[\protect\citeauthoryear{Desurvire, Caplan, and Toth}{Desurvire
+  et~al\mbox{.}}{2004}]{Desu04}
+{\sc Desurvire, H.}, {\sc Caplan, M.}, {\sc and} {\sc Toth, J.~A.} 2004.
+\newblock Using heuristics to evaluate the playability of games.
+\newblock In {\em CHI '04: CHI '04 extended abstracts on Human Factors in
+  computing systems}. ACM, New York, NY, USA, 1509--1512.
+
+\bibitem[\protect\citeauthoryear{Dierckx}{Dierckx}{1993}]{Dier93}
+{\sc Dierckx, P.} 1993.
+\newblock {\em Curve and surface fitting with splines}.
+\newblock Oxford University Press, Inc., New York, NY, USA.
+
+\bibitem[\protect\citeauthoryear{eFunda}{eFunda}{2010}]{eFun10}
+{\sc eFunda}. 2010.
+\newblock Least-squares parabola.
+\newblock \url{http://www.efunda.com/math/leastsquares/lstsqr2dcurve.cfm}.
+
+\bibitem[\protect\citeauthoryear{Erdas}{Erdas}{2008}]{Erda08}
+{\sc Erdas}. 2008.
+\newblock Feature extraction \& classification.
+\newblock White paper, Erdas.
+
+\bibitem[\protect\citeauthoryear{Ermi and Mayra}{Ermi and Mayra}{2005}]{Ermi05}
+{\sc Ermi, L.} {\sc and} {\sc Mayra, F.} 2005.
+\newblock Fundamental components of the gameplay experience: Analysing
+  immersion.
+\newblock In {\em DiGRA 2005: Changing views: Worlds in play}. 1--14.
+
+\bibitem[\protect\citeauthoryear{Federoff}{Federoff}{2002}]{Fede02}
+{\sc Federoff, M.~A.} 2002.
+\newblock Heuristics and usability guidelines for the creation and evaluation
+  of fun in video games.
+\newblock M.S.\ thesis, Indiana University.
+
+\bibitem[\protect\citeauthoryear{Forlines, Wigdor, Shen, and
+  Balakrishnan}{Forlines et~al\mbox{.}}{2007}]{Forl07}
+{\sc Forlines, C.}, {\sc Wigdor, D.}, {\sc Shen, C.}, {\sc and} {\sc
+  Balakrishnan, R.} 2007.
+\newblock Direct-touch vs. mouse input for tabletop displays.
+\newblock In {\em CHI '07: Proceedings of the SIGCHI conference on Human
+  Factors in computing systems}. ACM, New York, NY, USA, 647--656.
+
+\bibitem[\protect\citeauthoryear{Frohlich}{Frohlich}{1993}]{Froh93}
+{\sc Frohlich, D.~M.} 1993.
+\newblock The history and future of direct manipulation.
+\newblock {\em Behaviour \& Information Technology\/}~{\em 12,\/}~6, 315--329.
+
+\bibitem[\protect\citeauthoryear{Guyon and Elisseeff}{Guyon and
+  Elisseeff}{2006}]{Guyo06}
+{\sc Guyon, I.} {\sc and} {\sc Elisseeff, A.} 2006.
+\newblock {\em Feature extraction: Foundations and applications}.
+\newblock Springer, The Netherlands, Chapter An introduction to feature
+  extraction, 2--24.
+
+\bibitem[\protect\citeauthoryear{Hazlett}{Hazlett}{2006}]{Hazl06}
+{\sc Hazlett, R.~L.} 2006.
+\newblock Measuring emotional valence during interactive experiences: Boys at
+  video game play.
+\newblock In {\em CHI '06: Proceedings of the SIGCHI conference on Human
+  Factors in computing systems}. ACM, New York, NY, USA, 1023--1026.
+
+\bibitem[\protect\citeauthoryear{Hormuth}{Hormuth}{2006}]{Horm06}
+{\sc Hormuth, S.~E.} 2006.
+\newblock The sampling of experiences in situ.
+\newblock {\em Journal of Personality\/}~{\em 54,\/}~1, 262--293.
+
+\bibitem[\protect\citeauthoryear{Huang and Pavlovic}{Huang and
+  Pavlovic}{1995}]{Huan95}
+{\sc Huang, T.~S.} {\sc and} {\sc Pavlovic, V.~I.} 1995.
+\newblock Hand gesture modeling, analysis, and synthesis.
+\newblock In {\em In Proc. of IEEE International Workshop on Automatic Face and
+  Gesture Recognition}. IEEE, 73--79.
+
+\bibitem[\protect\citeauthoryear{Hutchins, Hollan, and Norman}{Hutchins
+  et~al\mbox{.}}{1985}]{Hutc85}
+{\sc Hutchins, E.~L.}, {\sc Hollan, J.~D.}, {\sc and} {\sc Norman, D.~A.} 1985.
+\newblock Direct manipulation interfaces.
+\newblock {\em Human-Computer Interaction\/}~{\em 1,\/}~4, 311--338.
+
+\bibitem[\protect\citeauthoryear{Ivory and Kalyanaraman}{Ivory and
+  Kalyanaraman}{2007}]{Ivor07}
+{\sc Ivory, J.~D.} {\sc and} {\sc Kalyanaraman, S.} 2007.
+\newblock The effects of technological advancement and violent content in video
+  games on players' feelings of presence, involvement, physiological arousal,
+  and aggression.
+\newblock {\em Journal of Communication\/}~{\em 57,\/}~1, 532--555.
+
+\bibitem[\protect\citeauthoryear{Jackson, Thomas, Marsh, and Smethurst}{Jackson
+  et~al\mbox{.}}{2001}]{Jack01}
+{\sc Jackson, S.~A.}, {\sc Thomas, P.~R.}, {\sc Marsh, H.~W.}, {\sc and} {\sc
+  Smethurst, C.~J.} 2001.
+\newblock Relationships between flow, self-concepts, psychological skills, and
+  performance.
+\newblock {\em Journal of Applied Sport Psychology\/}~{\em 13,\/}~1, 129--153.
+
+\bibitem[\protect\citeauthoryear{Jaimes and Sebe}{Jaimes and
+  Sebe}{2007}]{Jaim07}
+{\sc Jaimes, A.} {\sc and} {\sc Sebe, N.} 2007.
+\newblock Multimodal human-computer interaction: A survey.
+\newblock {\em Computer Vision and Image Understanding\/}~{\em 108,\/}~1-2,
+  116--134.
+\newblock Special Issue on Vision for Human-Computer Interaction.
+
+\bibitem[\protect\citeauthoryear{Johnson and Wiles}{Johnson and
+  Wiles}{2003}]{John03}
+{\sc Johnson, D.~M.} {\sc and} {\sc Wiles, J.} 2003.
+\newblock Effective affective user interface design in games.
+\newblock {\em Ergonomics\/}~{\em 46,\/}~13, 1332--1345.
+
+\bibitem[\protect\citeauthoryear{Kang, Lee, and Jung}{Kang
+  et~al\mbox{.}}{2004}]{Kang04}
+{\sc Kang, H.}, {\sc Lee, C.~W.}, {\sc and} {\sc Jung, K.} 2004.
+\newblock Recognition-based gesture spotting in video games.
+\newblock {\em Pattern Recognition Letters\/}~{\em 25,\/}~15, 1701 -- 1714.
+
+\bibitem[\protect\citeauthoryear{Kettebekov and Sharma}{Kettebekov and
+  Sharma}{2000}]{Kett00}
+{\sc Kettebekov, S.} {\sc and} {\sc Sharma, R.} 2000.
+\newblock Understanding gestures in multimodal human computer interaction.
+\newblock {\em International Journal on Articifical Intelligence Tools\/}~{\em
+  9,\/}~2, 205--223.
+
+\bibitem[\protect\citeauthoryear{Kin, Agrawala, and DeRose}{Kin
+  et~al\mbox{.}}{2009}]{Kin09}
+{\sc Kin, K.}, {\sc Agrawala, M.}, {\sc and} {\sc DeRose, T.} 2009.
+\newblock Determining the benefits of direct-touch, bimanual, and multifinger
+  input on a multitouch workstation.
+\newblock In {\em GI '09: Proceedings of Graphics Interface 2009}. Canadian
+  Information Processing Society, Toronto, Ont., Canada, Canada, 119--124.
+
+\bibitem[\protect\citeauthoryear{Korhonen and Koivisto}{Korhonen and
+  Koivisto}{2006}]{Korh06}
+{\sc Korhonen, H.} {\sc and} {\sc Koivisto, E. M.~I.} 2006.
+\newblock Playability heuristics for mobile games.
+\newblock In {\em MobileHCI '06: Proceedings of the 8th conference on
+  Human-computer interaction with mobile devices and services}. ACM, New York,
+  NY, USA, 9--16.
+
+\bibitem[\protect\citeauthoryear{Kratz, Smith, and Lee}{Kratz
+  et~al\mbox{.}}{2007}]{Krat07}
+{\sc Kratz, L.}, {\sc Smith, M.}, {\sc and} {\sc Lee, F.~J.} 2007.
+\newblock Wiizards: 3{D} gesture recognition for game play input.
+\newblock In {\em Future Play '07: Proceedings of the 2007 conference on Future
+  Play}. ACM, New York, NY, USA, 209--212.
+
+\bibitem[\protect\citeauthoryear{Lawson and Hanson}{Lawson and
+  Hanson}{1995}]{Laws95}
+{\sc Lawson, C.~L.} {\sc and} {\sc Hanson, R.~J.} 1995.
+\newblock {\em Solving Least Squares Problems}.
+\newblock Society for Industrial and Applied Mathematics, USA.
+
+\bibitem[\protect\citeauthoryear{Lessiter, Freeman, Keogh, and
+  Davidoff}{Lessiter et~al\mbox{.}}{2001}]{Less01}
+{\sc Lessiter, J.}, {\sc Freeman, J.}, {\sc Keogh, E.}, {\sc and} {\sc
+  Davidoff, J.} 2001.
+\newblock A cross-media presence questionnaire: The {ITC-Sense of Presence
+  Inventory}.
+\newblock {\em Presence: Teleoper. Virtual Environ.\/}~{\em 10,\/}~3, 282--297.
+
+\bibitem[\protect\citeauthoryear{Mandryk, Atkins, and Inkpen}{Mandryk
+  et~al\mbox{.}}{2006}]{Mand06}
+{\sc Mandryk, R.~L.}, {\sc Atkins, M.~S.}, {\sc and} {\sc Inkpen, K.~M.} 2006.
+\newblock A continuous and objective evaluation of emotional experience with
+  interactive play environments.
+\newblock In {\em CHI '06: Proceedings of the SIGCHI conference on Human
+  Factors in computing systems}. ACM, New York, NY, USA, 1027--1036.
+
+\bibitem[\protect\citeauthoryear{Marais}{Marais}{2010}]{Mara10}
+{\sc Marais, P.} 2010.
+\newblock Introduction to computer vision and image processing.
+\newblock CSC4000W Introduction to Computer Vision course notes.
+
+\bibitem[\protect\citeauthoryear{Marsh and Jackson}{Marsh and
+  Jackson}{1999}]{Mars99}
+{\sc Marsh, H.~W.} {\sc and} {\sc Jackson, S.~A.} 1999.
+\newblock Flow experience in sport: Construct validation of multidimensional,
+  hierarchical state and trait responses.
+\newblock {\em Structural Equation Modeling: A Multidisciplinary
+  Journal\/}~{\em 6,\/}~4, 343--371.
+
+\bibitem[\protect\citeauthoryear{Marsh, Yang, Shahabi, Wong, Nocera, Carriazo,
+  Varma, Yoon, and Kyriakakis}{Marsh et~al\mbox{.}}{2005}]{Mars05}
+{\sc Marsh, T.}, {\sc Yang, K.}, {\sc Shahabi, C.}, {\sc Wong, W.~L.}, {\sc
+  Nocera, L.}, {\sc Carriazo, E.}, {\sc Varma, A.}, {\sc Yoon, H.}, {\sc and}
+  {\sc Kyriakakis, C.} 2005.
+\newblock Automating the detection of breaks in continuous user experience with
+  computer games.
+\newblock In {\em CHI '05: CHI '05 extended abstracts on Human Factors in
+  computing systems}. ACM, New York, NY, USA, 1629--1632.
+
+\bibitem[\protect\citeauthoryear{McMahan, Gorton, Gresock, McConnell, and
+  Bowman}{McMahan et~al\mbox{.}}{2006}]{McMa06}
+{\sc McMahan, R.~P.}, {\sc Gorton, D.}, {\sc Gresock, J.}, {\sc McConnell, W.},
+  {\sc and} {\sc Bowman, D.~A.} 2006.
+\newblock Separating the effects of level of immersion and 3{D} interaction
+  techniques.
+\newblock In {\em VRST '06: Proceedings of the ACM symposium on Virtual reality
+  software and technology}. ACM, New York, NY, USA, 108--111.
+
+\bibitem[\protect\citeauthoryear{Moler}{Moler}{2004}]{Mole04}
+{\sc Moler, C.~B.} 2004.
+\newblock {\em Numerical computing with {MATLAB}}.
+\newblock Society for Industrial and Applied Mathematics, USA, Chapter
+  Interpolation, 93--110.
+
+\bibitem[\protect\citeauthoryear{Moscovich}{Moscovich}{2006}]{Mosc06}
+{\sc Moscovich, T.} 2006.
+\newblock Multi-touch interaction.
+\newblock In {\em CHI '06: CHI '06 extended abstracts on Human Factors in
+  computing systems}. ACM, New York, NY, USA, 1775--1778.
+
+\bibitem[\protect\citeauthoryear{Moscovich}{Moscovich}{2007}]{Mosc07}
+{\sc Moscovich, T.} 2007.
+\newblock Principles and applications of multi-touch interaction.
+\newblock Ph.D. thesis, Brown University.
+
+\bibitem[\protect\citeauthoryear{Moscovich and Hughes}{Moscovich and
+  Hughes}{2006}]{MoscH06}
+{\sc Moscovich, T.} {\sc and} {\sc Hughes, J.~F.} 2006.
+\newblock Multi-finger cursor techniques.
+\newblock In {\em GI '06: Proceedings of Graphics Interface 2006}. Canadian
+  Information Processing Society, Toronto, Ont., Canada, Canada, 1--7.
+
+\bibitem[\protect\citeauthoryear{Moscovich and Hughes}{Moscovich and
+  Hughes}{2008}]{Mosc08}
+{\sc Moscovich, T.} {\sc and} {\sc Hughes, J.~F.} 2008.
+\newblock Indirect mappings of multi-touch input using one and two hands.
+\newblock In {\em CHI '08: Proceeding of the twenty-sixth annual SIGCHI
+  conference on Human Factors in computing systems}. ACM, New York, NY, USA,
+  1275--1284.
+
+\bibitem[\protect\citeauthoryear{Nielsen, Störring, Moeslund, and
+  Granum}{Nielsen et~al\mbox{.}}{2004}]{Niel04}
+{\sc Nielsen, M.}, {\sc Störring, M.}, {\sc Moeslund, T.~B.}, {\sc and} {\sc
+  Granum, E.} 2004.
+\newblock A procedure for developing intuitive and ergonomic gesture interfaces
+  for {HCI}.
+\newblock In {\em Gesture-Based Communication in Human-Computer Interaction}.
+  Lecture Notes in Computer Science, vol. 2915. Springer Berlin / Heidelberg,
+  105--106.
+
+\bibitem[\protect\citeauthoryear{Nixon and Aguado}{Nixon and
+  Aguado}{2008}]{Nixo08}
+{\sc Nixon, M.~S.} {\sc and} {\sc Aguado, A.~S.} 2008.
+\newblock {\em Feature extraction and image processing}.
+\newblock Elsevier Ltd., London.
+
+\bibitem[\protect\citeauthoryear{Payne, Keir, Elgoyhen, McLundie, Naef, Horner,
+  and Anderson}{Payne et~al\mbox{.}}{2006}]{Payn06}
+{\sc Payne, J.}, {\sc Keir, P.}, {\sc Elgoyhen, J.}, {\sc McLundie, M.}, {\sc
+  Naef, M.}, {\sc Horner, M.}, {\sc and} {\sc Anderson, P.} 2006.
+\newblock Gameplay issues in the design of spatial 3{D} gestures for video
+  games.
+\newblock In {\em CHI '06: CHI '06 extended abstracts on Human Factors in
+  computing systems}. ACM, New York, NY, USA, 1217--1222.
+
+\bibitem[\protect\citeauthoryear{Pinelle, Wong, and Stach}{Pinelle
+  et~al\mbox{.}}{2008}]{Pine08}
+{\sc Pinelle, D.}, {\sc Wong, N.}, {\sc and} {\sc Stach, T.} 2008.
+\newblock Heuristic evaluation for games: Usability principles for video game
+  design.
+\newblock In {\em CHI '08: Proceeding of the twenty-sixth annual SIGCHI
+  conference on Human Factors in computing systems}. ACM, New York, NY, USA,
+  1453--1462.
+
+\bibitem[\protect\citeauthoryear{Ravaja, Salminen, Holopainen, Saari, Laarni,
+  and J\"{a}rvinen}{Ravaja et~al\mbox{.}}{2004}]{Rava04}
+{\sc Ravaja, N.}, {\sc Salminen, M.}, {\sc Holopainen, J.}, {\sc Saari, T.},
+  {\sc Laarni, J.}, {\sc and} {\sc J\"{a}rvinen, A.} 2004.
+\newblock Emotional response patterns and sense of presence during video games:
+  Potential criterion variables for game design.
+\newblock In {\em NordiCHI '04: Proceedings of the third Nordic conference on
+  Human-computer interaction}. ACM, New York, NY, USA, 339--347.
+
+\bibitem[\protect\citeauthoryear{Rubine}{Rubine}{1991}]{Rubi91}
+{\sc Rubine, D.} 1991.
+\newblock Specifying gestures by example.
+\newblock In {\em SIGGRAPH '91: Proceedings of the 18th annual conference on
+  Computer graphics and interactive techniques}. ACM, New York, NY, USA,
+  329--337.
+
+\bibitem[\protect\citeauthoryear{Sato, Saito, and Koik}{Sato
+  et~al\mbox{.}}{2001}]{Sato01}
+{\sc Sato, Y.}, {\sc Saito, M.}, {\sc and} {\sc Koik, H.} 2001.
+\newblock Real-time input of 3{D} pose and gestures of a user's hand and its
+  applications for {HCI}.
+\newblock {\em Virtual Reality Conference, IEEE\/}~{\em 0}, 79--86.
+
+\bibitem[\protect\citeauthoryear{Savitch}{Savitch}{2007}]{Savi07}
+{\sc Savitch, W.} 2007.
+\newblock {\em Absolute {J}ava}.
+\newblock Addison Wesley, San Diego.
+
+\bibitem[\protect\citeauthoryear{Savitzky and Golay}{Savitzky and
+  Golay}{1964}]{Savi64}
+{\sc Savitzky, A.} {\sc and} {\sc Golay, M. J.~E.} 1964.
+\newblock Smoothing and differentiation of data by simplified least squares
+  procedures.
+\newblock {\em Analytical Chemistry\/}~{\em 36,\/}~8, 1627--1639.
+
+\bibitem[\protect\citeauthoryear{Shneiderman}{Shneiderman}{1982}]{Shne82}
+{\sc Shneiderman, B.} 1982.
+\newblock The future of interactive systems and the emergence of direct
+  manipulation.
+\newblock {\em Behaviour \& Information Technology\/}~{\em 1,\/}~3, 237--256.
+
+\bibitem[\protect\citeauthoryear{Starner, Leibe, Singletary, and Pair}{Starner
+  et~al\mbox{.}}{2000}]{Star00}
+{\sc Starner, T.}, {\sc Leibe, B.}, {\sc Singletary, B.}, {\sc and} {\sc Pair,
+  J.} 2000.
+\newblock {MIND-WARPING}: Towards creating a compelling collaborative augmented
+  reality game.
+\newblock In {\em IUI '00: Proceedings of the 5th international conference on
+  Intelligent user interfaces}. ACM, New York, NY, USA, 256--259.
+
+\bibitem[\protect\citeauthoryear{Stevens}{Stevens}{1999}]{Steve99}
+{\sc Stevens, J.} 1999.
+\newblock Post hoc tests in {ANOVA}.
+\newblock Course notes, University of Oregan.
+
+\bibitem[\protect\citeauthoryear{Sweetser and Wyeth}{Sweetser and
+  Wyeth}{2005}]{Swee05}
+{\sc Sweetser, P.} {\sc and} {\sc Wyeth, P.} 2005.
+\newblock Gameflow: {A} model for evaluating player enjoyment in games.
+\newblock {\em Comput. Entertain.\/}~{\em 3,\/}~3, 3--3.
+
+\bibitem[\protect\citeauthoryear{Sykes}{Sykes}{2000}]{Syke00}
+{\sc Sykes, A.~O.} 2000.
+\newblock {\em An Introduction to Regression Analysis}.
+\newblock McGraw-Hill, New York.
+
+\bibitem[\protect\citeauthoryear{Tenenbaum, Fogarty, and Jackson}{Tenenbaum
+  et~al\mbox{.}}{1999}]{Tene99}
+{\sc Tenenbaum, G.}, {\sc Fogarty, G.~J.}, {\sc and} {\sc Jackson, S.~A.} 1999.
+\newblock The flow experience: A {Rasch} analysis of {Jackson's Flow State
+  Scale}.
+\newblock {\em Journal of Outcome Measurement\/}~{\em 3,\/}~3, 278--294.
+
+\bibitem[\protect\citeauthoryear{Tredoux and Durrheim}{Tredoux and
+  Durrheim}{2002}]{Tred02}
+{\sc Tredoux, C.} {\sc and} {\sc Durrheim, K.} 2002.
+\newblock {\em Numbers, hypotheses \& conclusions: A course in {S}tatistics for
+  the {Social Sciences}}.
+\newblock UCT Press, Cape Town.
+
+\bibitem[\protect\citeauthoryear{Vlachopoulos, Karageorghis, and
+  Terry}{Vlachopoulos et~al\mbox{.}}{2000}]{Vlac00}
+{\sc Vlachopoulos, S.~P.}, {\sc Karageorghis, C.~I.}, {\sc and} {\sc Terry,
+  P.~C.} 2000.
+\newblock Hierarchical confirmatory factor analysis of the {Flow State Scale}
+  in exercise.
+\newblock {\em Journal of Sport Sciences\/}~{\em 18,\/}~10, 815--823.
+
+\bibitem[\protect\citeauthoryear{Wigdor, Fletcher, and Morrison}{Wigdor
+  et~al\mbox{.}}{2009}]{Wigd09}
+{\sc Wigdor, D.}, {\sc Fletcher, J.}, {\sc and} {\sc Morrison, G.} 2009.
+\newblock Designing user interfaces for multi-touch and gesture devices.
+\newblock In {\em CHI '09: Proceedings of the 27th international conference
+  extended abstracts on Human Factors in computing systems}. ACM, New York, NY,
+  USA, 2755--2758.
+
+\bibitem[\protect\citeauthoryear{Wilson, Dimovska, Selvig, and Jarnfelt}{Wilson
+  et~al\mbox{.}}{2009}]{Wils09}
+{\sc Wilson, D.}, {\sc Dimovska, D.}, {\sc Selvig, S.}, {\sc and} {\sc
+  Jarnfelt, P.} 2009.
+\newblock Face-off in the magic circle: Getting players to look at each other,
+  not the screen.
+\newblock In {\em ACE '09: Proceedings of the International Conference on
+  Advances in Computer Enterntainment Technology}. ACM, New York, NY, USA,
+  462--462.
+
+\bibitem[\protect\citeauthoryear{Witmer and Singer}{Witmer and
+  Singer}{1998}]{Witm98}
+{\sc Witmer, B.~G.} {\sc and} {\sc Singer, M.~J.} 1998.
+\newblock Measuring presence in {Virtual Environments}: A presence
+  questionnaire.
+\newblock {\em Presence: Teleoper. Virtual Environ.\/}~{\em 7,\/}~3, 225--240.
+
+\bibitem[\protect\citeauthoryear{Wobbrock, Morris, and Wilson}{Wobbrock
+  et~al\mbox{.}}{2009}]{Wobb09}
+{\sc Wobbrock, J.~O.}, {\sc Morris, M.~R.}, {\sc and} {\sc Wilson, A.~D.} 2009.
+\newblock User-defined gestures for surface computing.
+\newblock In {\em CHI '09: Proceedings of the 27th international conference on
+  Human Factors in computing systems}. ACM, New York, NY, USA, 1083--1092.
+
+\bibitem[\protect\citeauthoryear{Wu and Balakrishnan}{Wu and
+  Balakrishnan}{2003}]{Wu03}
+{\sc Wu, M.} {\sc and} {\sc Balakrishnan, R.} 2003.
+\newblock Multi-finger and whole hand gestural interaction techniques for
+  multi-user tabletop displays.
+\newblock In {\em UIST '03: Proceedings of the 16th annual ACM symposium on
+  User interface software and technology}. ACM, New York, NY, USA, 193--202.
+
+\end{thebibliography}

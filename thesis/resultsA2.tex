@@ -1,0 +1,37 @@
+\newpage
+\subsubsection{Interaction effects: \emph{Interface}*\emph{Group}}
+
+\begin{table}[!h]
+                \footnotesize
+                \scalebox{0.9}{
+                \begin{tabular}{ l l | r r r | r r r | r r r }
+                \multicolumn{5}{l}{\bf  Autotelic Experience } \\
+                \hline
+                Genre & & \multicolumn{3}{c |}{Puzzle} & \multicolumn{3}{c |}{Strategy} & \multicolumn{3}{c}{Duelling} \\
+                &  & DM & G & M & DM & G & M & DM & G & M \\
+                \hline
+                        \multirow{3}{*}{Puzzle} & DM     &   &  0.492065  &  0.976725  &  0.996510  &  0.528253 & 0.010712*  &  1.000000  &  0.774791  &  0.937475  \\
+                        & G    &  0.492065  &   &  0.983392  &  0.997617  &  0.999940  &  0.444092  &  0.820797  &  1.000000  &  0.999998  \\
+                        & M    &  0.976725  &  0.983392  &   &  1.000000  &  0.948262  &  0.100395  &  0.996510  &  0.995031  &  0.999940  \\
+                        \hline
+                        \multirow{3}{*}{Strategy} & DM    &  0.996510  &  0.997617  &  1.000000  &   &  0.783253 & 0.006637*  &  0.996510  &  0.995031  &  0.999940  \\
+                        & G    &  0.528253  &  0.999940  &  0.948262  &  0.783253  &   &  0.384045  &  0.528253  &  0.999987  &  0.997617  \\
+                        & M   & 0.010712*  &  0.444092  &  0.100395 & 0.006637*  &  0.384045  &  & 0.010712*  &  0.499824  &  0.271660  \\
+                        \hline
+                        \multirow{3}{*}{Duelling} & DM    &  1.000000  &  0.820797  &  0.996510  &  0.996510  &  0.528253 & 0.010712*  &   &  0.418945  &  0.750615  \\
+                        & G    &  0.774791  &  1.000000  &  0.995031  &  0.995031  &  0.999987  &  0.499824  &  0.418945  &   &  0.999883  \\
+                        & M    &  0.937475  &  0.999998  &  0.999940  &  0.999940  &  0.997617  &  0.271660  &  0.750615  &  0.999883  &   \\
+                \hline
+                        \multicolumn{11}{l}{  Error: Between; Within; Pooled MSE = 18.648, df = 78.186 } \\
+                \hline
+                \multicolumn{11}{l}{DM - Direct manipulation, G - Gestural, M - Mixed} \\ 
+                \multicolumn{11}{l}{\emph{{\footnotesize * denotes a significant result at a 95\% confidence level ($\alpha$ = 0.05).}}} \\ 
+                \end{tabular}}
+\end{table}
+
+\begin{figure}[!h]
+          \begin{center}
+            \includegraphics [scale=0.4]{ig9.png}
+          \end{center}
+        \caption*{Autotelic Experience: Cell mean plot}
+\end{figure}

@@ -1,0 +1,85 @@
+\section{Design}
+
+\subsection{Introduction}
+A gesture recognition unit is highly dependant on the quality of input it recieves as erroneous data can drastically skew results. For this reason care needs to be taken in designing the feature extraction unit so that it provided the neccessary information required by both gesture engines. The feature extraction is required to be robust as well as consistent. In addition, the specific limitations placed on the system need to be considered. The following section discusses these design considerations as well as providing an overview of the system and the way in which features were described.
+
+\subsection{System overview}
+\begin{figure}
+  \begin{center}
+    \includegraphics [scale=0.2]{sysOverview.pdf}
+
+  \end{center}
+  \caption{An overview of how the various gesture recognition components are arranged in relation to each other}
+  \label{sysOverview}
+\end{figure}
+
+The feature extraction module is required to take raw touch data and reduce this to a form that the gesture engines will then interpret. This is needed for single as well as multi-touch input. Thus the components involved in the recognition of gestures include the feature extraction unit, input handling, the gesture engine as well as a controller to mediate interactions between the preceding three units. Figure~\ref{sysOverview} illustrates how the feature extraction relates to the gesture engines and other components.
+
+All touch data must pass through the feature extraction module so that relevant features can be constructed and then passed to the gesture recognition unit. This needs to be done for each currently active touch. This will be done by creating a feature extraction unit for each simultaneously active and distinct touch point. Seperate feature extraction was chosen as it allows for modular design that can be scaled according to the requirements of each game. In addition, it provides a consistent interface to the gesture engine, regardless of the number of active touches. This is of importance as the feature extraction will be used by two seperate and distinct gesture engines.
+
+\begin{figure}
+  \centering
+  \subfloat[\texttt{touchesBegan}]{\includegraphics[scale=0.15]{touchB.pdf}}    \\         
+  \subfloat[\texttt{touchesMoved}]{\includegraphics[scale=0.15]{touchM.pdf}}      \\
+  \subfloat[\texttt{touchesEnded}]{\includegraphics[scale=0.15]{touchE.pdf}}       
+  
+  \caption{Illustration of the flow of control when each event handling method is called}
+  \label{touchesFE}
+\end{figure}
+
+Three touch event handling methods are provided by iOS. These event handlers are called under the following conditions:
+\begin{itemize}
+\item \texttt{touchesBegan}: New input point is detected
+\item \texttt{touchesMoved}: Position of an existing touch point changes
+\item \texttt{touchesEnded}: Finger is lifted off the device, effectively ending touch interaction
+\end{itemize} 
+When a touch event is detected, the active touch it corresponds to will be determined. Once this is done, the touch data will be passed to the relevant feature extraction unit. The feature extraction will then determine whether this point constitutes the beginning of a new feature. If it does, this feature will be returned. When multiple touches are active, the control unit will wait until each touch has returned a completed feature before passing them to the gesture recognition engine. This is done so that the gesture engine does not have to determine or handle the temporal locality of multiple touches, thus simplifying the recognition process.
+
+When a touch ends, if there is only one active touch, the gesture engine is polled to determine whether a gesture has been recognised. If there are multiple active touches, the controller waits until all touches have ended before sending the final features of each touch to the gesture engine. Figure~\ref{touchesFE} illustrates the process for each type of touch event for both single and multi-touch input.
+
+\subsection{Feature description}
+The choice of feature description was strongly mediated by the requirements of the two gesture engines. That is, features were designed so that they encompassed the data required by both gesture units.
+
+When a feature is detected, its start point will be set to (0, 0) and the end point adjusted accordingly. This will be done to simplify and normalise feature descriptions. The angle the tangent of the feature at the start point makes with the positive \emph{x}-axis will then be calculated. In addition, the angle between this tangent and the line made when connecting the start point to the midpoint of the feature will be recorded. The scale of the feature will also be recorded. This will be calculated by assigning the first feature a scale factor of 1. All subsequent features will then use the length of the first feature to determine their scale. This allows gestures to be scale invariant. In order to calculate the length of a feature, the distance between each point within that feature will be calculated and summed. Thus the data used to describe each feature will be as follows:
+\begin{itemize}
+\item Adjusted end point
+\item Scale
+\item Start tangent angle
+\item Angle between start tangent and midpoint line
+\end{itemize}
+Figure~\ref{featureDescrip} provides a graphical representation of these factors.
+
+\begin{figure}
+  \begin{center}
+    \includegraphics [scale=0.5]{featureDescrip.pdf}
+
+  \end{center}
+  \caption{An illustration of the elements used to describe a feature. The feature is shown as the black dotted line. \emph{a} is the angle made by the tangent at the start point and the \emph{x}-axis. \emph{b} is the angle between \emph{a} and the line from the origin to the midpoint of the feature. $c_x$ and $c_y$ are the adjusted coordinates of the end point.}
+  \label{featureDescrip}
+\end{figure}
+
+\subsection{Design considerations}
+The nature of the system under development places a number of limitations on possible feature extraction designs. This is due to the nature of interaction as well as the fact that the feature extraction is to be implemented for the Apple iPad. A discussion of these considerations is contained below.
+
+\subsubsection{Device limitations}
+As the Apple iPad has limited computing capabilities when compared to a conventional desktop computer, care must be taken in selecting a computationally inexpensive feature extraction technique. This is compounded by the fact that the feature extraction is expected to be completed in realtime while a game is in progress. In addition, as the actual gesture recognition can only occur once features have been identified, a design that does not place unneccessary memory or computation demands on the device is required.
+
+Finally, the rate at which touch events are detected should also be considered. When a swipe is made, touches events are fired at a rate of 60 Hz. While this provides much data when gestures are drawn slowly, only very limited data is collected when they are drawn rapidly. This adds the additional constraint that the feature detection should be able to work with sparse datasets as well as dense ones.
+
+Thus, due to device constraints, a computationally inexpensive method that is able to handle sparse data quickly and efficiently is required.
+
+\subsubsection{Problem nature}
+Given the variety of feature descriptions and techniques for extracting these features, a thorough understanding of the specific problem at hand is required. As the feature description is fairly simple and feature detection is unneccessary (as the input points do not need to be extracted), in this case, the problem is one of feature segmentation, rather than extraction.
+
+That is, a method to segment the input into features in a consistent and robust manner is needed. Thus, the crux of the problem becomes one of deciding when to end a feature and begin a new one. With this said, the method used to do this needs to be efficient, requiring minimal computation. Furthermore, as each touch point will be recieved seperately, the solution should also be able to be computed incrementally. That is, the addition of new data points should not require recomputation. This immediately disqualifies non-parametric regression techniques, as these are computationally expensive and would require much recomputation. In addition, they require a large number of input points, which is not possible with the sparse data provided. Multi-variate or total least squares and non-linear regression also present problems of computational speed. Interpolation, on the other hand, solves the wrong problem. That is, it is used to describe features, rather than segment the data. Thus, if one were to use interpolation, some addition function would be required to determine when a new feature should be started. Furthermore, as interpolation provides a function that passes through all the data points, the addition of new data would require this function to be recomputed. The use of splines would also require a secondary evaluation function to determine when to end each feature. However, as fitting splines of a low degree is not very computational expensive, this may be a possible solution. 
+
+Thus it appears that ordinary least squares regression or some form of spline approach would be most appropriate for this problem. 
+
+\subsection{Feature extraction approach}
+As discussed above, ordinary least squares or splines appear to be the most feasible approaches for this specific problem when considering the constraints. In order to investigate which of these methods proves most effective, three feature extraction modules will be developed. This will include parabolic and circular least-squares regression with the degree of error from the line of best fit used to determine when to start a new feature. Parabolic and circular regression have been chosen as they are more robust than straight line fitting. In addition, they are able to handle and describe curves. A spline approach will also be attempted. This will use straight lines as splines with segmentation determined according to changes in direction.
+
+All three of these methods allow for incremental computation. That is, the addition of new touch points will not require recomputation. In addition, the amount of computation required at each step is minimal. Thus the general design for all three methods will be as follows. Touch points will be sent to the feature extraction unit. Each point will then be manipulated and checked against the current model. If the error between the value provided by the model and the actual point grows too large, the feature will be ended and a new one started.
+
+The details of how this will work in each case has been included in the implementation section with a comparison between the various techniques described in the testing section. Overall, however, all should provide a means of implementing feature extraction and segmentation in a way that is not computationally taxing.
+
+

@@ -1,0 +1,71 @@
+\graphicspath{{./intro/}}
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+Computing devices are becoming more and more prevalent in everyday life. Yet the way in which we interact with these devices is often given little thought. With the recent surge in accessibility, in terms of both cost and diversity, of multi-touch computing devices~\citep{Mosc07}, one can begin to consider alternative input techniques to the more traditional mouse and keyboard. Multi-touch refers to the ability to control two or more points of input simultaneously through the use of one's fingers~\citep{Jaim07}. This makes an understanding of the appropriateness of their use paramount, as these devices represent a possible shift in the way commands and information are relayed to computing devices.
+
+However, even when considering such emerging technology, the direct manipulation paradigm, that is, a design philosophy which discourages complex, abstract interaction in favour of manual, graphical and incremental techniques~\citep{Shne82}, is ubiquitous to the degree that few alternatives are even considered. While direct manipulation is regarded as providing the most appropriate means of interaction for many systems utilising a mouse and keyboard for input, the same may not be true for touch-devices. 
+
+With this said, it must be noted that an interaction technique should, in most cases, be matched to its application. That is, broad statements regarding which technique is most appropriate for all applications often ignore the fundamental differences present in various pieces of software~\citep{Froh93}. An interesting example of this is computer games. Unlike much conventional software, games are often used for their intrinsic enjoyment value alone. That is, there is often no added incentive, apart from enjoyment, in their use~\citep{Swee05}. Thus the choice of input technique should not detract from this, and if possible, should add to the potential amusement derived from the game.
+
+Gestures, that is, symbolic movements or drawn forms used to relay scope and commands, provide an alternative to traditional direct manipulation techniques~\citep{Rubi91}. While their use has been explored in a number of domains, such as Virtual Environments and Human-Computer Interaction, very little research has been performed to assess their impact on gaming~\citep{Krat07}. In addition, the majority of this research relates to three-dimensional gestures detected using Computer Vision or accelerometer-based techniques~\citep{Kang04}. Furthermore, it is often easier to entice users to use a novel or unfamiliar interaction technique within a gaming context. This is due to the fact that games are often disassociated, to some degree, from more traditional applications due to the enjoyment present in them and users are thus less hesitant to make use of novel techniques~\citep{Star00}. 
+
+This becomes especially relevant when considering the relatively unexplored field of direct manipulation alternatives for touch-based computing~\citep{Kin09}. Furthermore, as multi-touch technology has been shown to be more intuitive and naturalistic~\citep{Forl07} and experiments on the use of spatial gestures in gaming have suggested the same~\citep{Payn06}, the combination of gesture-based interaction with multi-touch technology may greatly improve the overall gaming experience.
+
+The combination of gestures, as an interaction technique, with multi-touch devices, as an input medium, allows us to investigate the effects of two relatively unconventional elements within the context of computer gaming. Therefore, the findings of this research will provide information on how game enjoyment is affected by the use of interaction technique. This thus provides novel findings within both the fields of computer gaming and multi-touch gestural interaction. 
+
+\section{Research question}
+The research question that will be investigated within this document is whether multi-touch gestures improve gaming experience when compared to other interaction techniques. In order to test this hypothesis, gestural interaction will be contrasted with direct manipulation. In addition, an interface that uses a combination of the two will also be created so that their combined interaction can be evaluated. The creation of games is therefore necessary. This provides an opportunity to assess whether game genre affects the appropriateness of gesture-based gaming. In addition, the effects of previous gaming and touch-device experience will also be investigated in relation to the enjoyment experienced through multi-touch gesture-based gaming.
+
+Thus, the research question and sub-questions under investigation are:
+\begin{itemize}
+\item The effect of interaction technique on the enjoyment experienced during multi-touch gaming.
+\begin{itemize}
+\renewcommand{\labelitemii}{$\bullet$}
+\item Whether game genre affects the appropriateness of interaction techniques within multi-touch gaming.
+\item The degree to which previous gaming or touch-device experience influences the enjoyment experienced through the use of different interaction techniques within multi-touch gaming. 
+\end{itemize}
+\end{itemize}
+
+In order to assess which interaction technique provides the most enjoyable gaming experience, a measure of flow will be used. Flow is defined as an emotional state, where an individual is immersed within some task that produces feelings of strong gratification~\citep{Ermi05}. This emotional state is so powerful that an individual is often ``willing to do it for its own sake with little concern for what they will get out of it"~\citep{Csik90}. This thus provides an ideal measure for gaming experience, as games are played for their intrinsic enjoyment value. 
+
+The evaluation of each game will therefore require user experiments. In order to investigate the effects of genre, three games of different genres (Puzzle, Strategy and Fighting/Duelling) will be developed. In addition, participants will be recruited so that the subject characteristics of gaming and touch-device experience can also be evaluated. Each participant will play a game, from one genre, three times. The interaction technique in each of these sessions will be varied so that the levels of flow produced by each interface can be determined. Flow will be assessed through the use of the \emph{Flow State Scale} developed by \citet{Jack01}. This consists of a 36 question survey administered after the task being evaluated has been completed. 
+
+The key success factors will thus be an understanding of the effects of interaction technique on the level of enjoyment experienced during gaming. The additional data concerning game genre and subject characteristics will also mediate the interpretation of these results. These results will be obtained through the measurement of flow and subsequent statistical testing.
+
+\section{System overview}
+
+\begin{figure}
+  \begin{center}
+    \includegraphics [scale=0.19]{overview.pdf}
+
+  \end{center}
+  \caption{Overview of system components developed or designed in order to assess the effect of interaction style on game enjoyment. These components will also be used in order to investigate whether game genre and previous gaming or touch-device experience impact the way in which interaction styles are perceived. The work allocation for the project is illustrated through the use of colour.}
+  \label{introSysOverview}
+\end{figure}
+
+In order to test the above research questions, a number of components need to be developed. These, and the work allocation amongst them, are summarised in Figure~\ref{introSysOverview}. The developed system will thus contain two distinct but related components. The first of these will be the gesture engine. This includes a feature extraction unit which will be used to transform raw touch input into a simpler form for use in the gesture recognition. The actual recognition of gestures will be performed by the gesture recognition engine. Two gesture recognition units will be developed in parallel, one making use of a Hidden Markov Model for recognition, with the second utilising simpler techniques.
+
+The gesture engine will be integrated with three games. Each game developed will be of a different genre (Puzzle, Strategy or Fighting/Duelling). The games will be developed with a limited scope, however, they should still prove sufficient in eliciting a flow state. Each game will contain three interface versions. One of these interfaces will contain direct manipulation controls, another will be purely gesture-based with the third containing a combination of the previous two. Finally, experiments need to be designed in order to evaluate the research hypotheses. 
+
+The system will be developed for the Apple iPad. This device was chosen due to its multi-touch capabilities and relatively large screen size when compared to other similarly priced commercial products. The choice of device necessitates the environment within which the system will be created. Thus, iOS will serve as the platform for development and the Objective C language will be used to create both the gesture engine and games. OpenGL ES will be used for any three-dimensional graphical requirements, while interface elements will be handled by the iOS SDK~\citep{A10a}.
+
+The feature extraction and Puzzle game as well as the experimental design are described in more detail within this document.
+
+\section{Ethical considerations}
+As user testing will be conducted, in order to assess the research questions, Ethics Clearance was obtained from the Science Faculty Ethics Clearance for all planned user experiments. This ensures that participants will not be adversely affected by the experimental procedure.
+
+With regard to legal and copyright issues surrounding use of libraries and other components, a number of factors must be considered. Development for the Apple iPad requires a Developer Licence. As an education licence was obtained, submitting one's code to the Apple App Store is disallowed. In addition, the use of external libraries or software, not approved by Apple, is also not permitted. For this reason, development was done using components provided within the iOS SDK. 
+
+The \emph{Flow State Scale}, used to assess flow, is also copyrighted. As the purchase of a licence, linked to the number of participants it would be administered to, was required, the experimental design cannot make use of more than 50 participants. In addition, due to these copyright restrictions, only a limited portion of the scale was able to be reproduced as an appendix within this document.
+
+Due to the use of restricted materials and frameworks, care was taken to not violate the above provisions. In addition, ethical considerations were carefully considered in the design of the user experiments to ensure that there was no undue harm to participants.
+
+\section{Outline}
+This document outlines the development and testing of the feature extraction unit and a puzzle game. It also contains the sections necessary for evaluating the research hypotheses. Chapter 2 provides background information on multi-touch interaction, gestures, the evaluation of games as well as the limited existing research on gesture-based gaming. The design, implementation and evaluation of the puzzle game, \emph{Hexahedron}, is contained in Chapter 3. Chapter 4 details the design and implementation of three feature extraction techniques. It also contains an evaluation of these methods. Background information on feature extraction has also been provided in this chapter. The design of the user experiments is provided in Chapter 5, while the results and discussion of the data obtained from these experiments is included in Chapter 6. Finally, Chapter 7 contains the overall findings and conclusions of this work as well as a discussion of the limitations of the present study and suggestions for future work.
+
+
+
+
+
+

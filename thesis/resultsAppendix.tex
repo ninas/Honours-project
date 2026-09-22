@@ -1,0 +1,1018 @@
+\graphicspath{{./stats/}}
+
+\chapter{Full statistical results}
+\label{allStats}
+
+\section{Higher-order flow factor: Post-hoc testing}
+\label{appendix:higherOrder}
+
+\begin{table}[h]
+	\footnotesize
+	\begin{tabular*}{\textwidth}{ l l | r r r | r r r | r r r }
+	\multicolumn{5}{l}{\bf Tukey HSD test} \\
+	\hline	
+	Genre & & \multicolumn{3}{c |}{Puzzle} & \multicolumn{3}{c |}{Strategy} & \multicolumn{3}{c}{Duelling} \\
+	 & Interface & DM & G & M & DM & G & M & DM & G & M \\
+	\hline
+	\multirow{3}{*}{Puzzle} & DM & & 0.754183 & 	0.940225  &	0.591897  &	0.995853  &	0.999999  &	1.000000  &	0.407407  &	0.998332 \\
+	& G & 0.754183  &	 &	0.999968  &	0.999442  &	0.999919  &	0.809728 & 	0.941348  &	0.992161  &	0.999676 \\
+	& M & 0.940225 & 0.999968  &	& 	0.988522  &	1.000000  &	0.941348  &	0.991065  &	0.945889  &	1.000000 \\
+	\hline
+	\multirow{3}{*}{Strategy} & DM & 	0.591897 &	0.999442 &	0.988522 	&&	0.882400 &	0.119458 &	0.628191 &	0.999999 &	0.952232 \\
+	& G & 	0.995853 &	0.999919 &	1.000000 &	0.882400 	&&	0.887037 &	0.997415 &	0.899003 &	1.000000 \\
+	& M & 	0.999999 &	0.809728 &	0.941348 &	0.119458 &	0.887037 	&&	0.999996 &	0.251894 &	0.984608 \\
+	\hline
+	\multirow{3}{*}{Duelling} & DM &	1.000000 &	0.941348 &	0.991065 &	0.628191 	&0.997415 &	0.999996 	&&	0.139794 &	0.994157 \\
+	& G &	0.407407 &	0.992161 &	0.945889 &	0.999999 &	0.899003 &	0.251894 &	0.139794 	&&	0.606237 \\
+	& M &  	0.998332 &	0.999676 &	1.000000 &	0.952232 &	1.000000 &	0.984608 &	0.994157 &	0.606237 & \\
+	\hline
+	
+	\multicolumn{11}{l}{Error: Between; Within; Pooled MS = 25.953, df = 82.162} \\
+	\hline
+	\multicolumn{11}{l}{DM - Direct manipulation, G - Gestural, M - Mixed} \\ 
+		\multicolumn{11}{l}{\emph{{\footnotesize * denotes a significant result at a 95\% confidence level ($\alpha$ = 0.05).}}} \\ 
+	
+
+	\end{tabular*}
+\end{table}
+
+
+\begin{table}[h]
+	\footnotesize
+	\begin{tabular*}{\textwidth}{ l l | r r r | r r r | r r r }
+	\multicolumn{5}{l}{\bf Fisher LSD test} \\
+	\hline	
+	Genre & & \multicolumn{3}{c |}{Puzzle} & \multicolumn{3}{c |}{Strategy} & \multicolumn{3}{c}{Duelling} \\
+	 & Interface & DM & G & M & DM & G & M & DM & G & M \\
+	\hline
+	\multirow{3}{*}{Puzzle} & DM & & 0.09653 & 	0.21276  &	0.05640  &	0.41217  &	0.78190  &	0.95725  &	0.02967* &	0.47007 \\
+	& G & 0.09653  &&	 	0.67084  &	0.53229  &	0.62980  &	0.11662  &	0.21328 & 	0.36816  &	0.56191 \\
+	& M & 0.21276  &	0.67084  	&& 	0.34054  &	0.87931  &	0.21328  &	0.35880  &	0.21983  &	0.80254 \\
+	\hline
+	\multirow{3}{*}{Strategy} & DM & 0.05640 & 0.53229  &	0.34054  &	& 0.15700  &	0.00571* &	0.06344  &	0.78190  &	0.22992 \\
+	& G & 	0.41217  &	0.62980 & 	0.87931  &	0.15700  &&	 	0.16033  &	0.44320  &	0.16867 & 	0.92173 \\
+	& M & 	0.78190  &	0.11662 & 	0.21328  &	0.00571*  &	0.16033  &&	 	0.74111  &	0.01476* &	0.31858 \\
+	\hline
+	\multirow{3}{*}{Duelling} & DM &	0.95725  &	0.21328 & 	0.35880 & 	0.06344 & 	0.44320  &	0.74111  && 	0.00694* &	0.38991 \\
+	& G &	0.02967* &	0.36816  &	0.21983  &	0.78190  &	0.16867  &	0.01476* &	0.00694* & &	0.05952 \\
+	& M &  	0.47007  &	0.56191  &	0.80254  &	0.22992  &	0.92173  &	0.31858  &	0.38991  &	0.05952   & \\
+	\hline
+	
+	\multicolumn{11}{l}{Error: Between; Within; Pooled MS = 25.953, df = 82.162} \\
+	\hline
+	\multicolumn{11}{l}{DM - Direct manipulation, G - Gestural, M - Mixed} \\ 
+		\multicolumn{11}{l}{\emph{{\footnotesize * denotes a significant result at a 95\% confidence level ($\alpha$ = 0.05).}}} \\ 
+	
+
+	\end{tabular*}
+\end{table}
+
+\newpage
+\section{MANOVA: Full results}
+
+\subsection{Mauchly's sphericity test}
+\label{manova:mauchly}
+
+\begin{table}[h]
+	
+	\begin{tabular*}{0.71\textwidth}{ l r r r r r }
+	\hline	
+	Dependant variable & W & Chi-Sqr. & df & \emph{p} \\
+	\hline
+	Challenge-Skill Balance &0.997321  &	0.093878  &	2 & 	0.954146 \\
+	Merging of Action and Awareness &	0.951121 &	1.753994 &	2 &	0.416030\\
+	Clear Goals &	0.992831 &	0.251808 	&2 &	0.881699\\
+	Unambiguous Feedback &	0.919297 &	2.945099 &	2 &	0.229340\\
+	Concentration on the Task at Hand &	0.825177 &	6.725492 &	2 &	0.034640*\\
+	Sense of Control &	0.980870 &	0.676050 &	2 &	0.713178\\
+	Loss of Self-Consciousness &	0.885833 &	4.242939 &	2 &	0.119855\\
+	Transformation of Time &	0.768128 &	9.232958 &	2 &	0.009888*\\
+	Autotelic Experience &	0.931844 &	2.470641 &	2 &	0.290742\\
+	\hline
+	\multicolumn{6}{l}{\emph{{\footnotesize * denotes a significant result at a 95\% confidence level ($\alpha$ = 0.05).}}} \\ 
+	
+
+	\end{tabular*}
+\end{table}
+
+\subsection{Univariate tests}
+\label{manova:univar}
+\parindent 0cm
+
+
+	\begin{tabular*}{0.8\textwidth}{@{\extracolsep{\fill}} l r r r r r }
+	\multicolumn{6}{l}{\bf Challenge-Skill Balance} \\
+	\hline	
+	 Effect & Value & F & Effect df & Error df & \emph{p} \\
+	\hline
+	Interface & 368.0148  &	2  &	184.0074  &	26.52536 & $<$0.000001* \\
+	Interface*Genre &  14.2963  &	4  &	3.5741  &	0.51522  &	0.724746 \\
+	Interface*Group &  30.5185  &	4  &	7.6296  &	1.09984  &	0.363333 \\
+	Interface*Genre*Group &  30.3704  &	8 & 	3.7963 & 	0.54725  &	0.816957 \\
+	Error  &	499.4667  &	72  &	6.9370&&\\
+	\hline
+	\multicolumn{6}{l}{\emph{{\small * denotes a significant result at a 95\% confidence level ($\alpha$ = 0.05).}}} \\ 
+
+	\end{tabular*} \vspace{0.5cm}  
+
+
+
+	\begin{tabular*}{0.8\textwidth}{@{\extracolsep{\fill}} l r r r r r }
+	\multicolumn{6}{l}{\bf Merging of Action and Awareness} \\
+	\hline	
+	 Effect & Value & F & Effect df & Error df & \emph{p} \\
+	\hline
+	Interface & 108.5778  &	2 & 	54.28889 & 	8.758889  &	0.000394* \\
+	Interface*Genre &  34.7111  &	4  &	8.67778  &	1.400060  &	0.242642 \\
+	Interface*Group &  21.6889  &	4  &	5.42222  &	0.874813  &	0.483401 \\
+	Interface*Genre*Group &  42.7556  &	8  &	5.34444  &	0.862265  &	0.552170 \\
+	Error  &	446.2667  &	72  &	6.19815&&\\
+	\hline
+	\multicolumn{6}{l}{\emph{{\small * denotes a significant result at a 95\% confidence level ($\alpha$ = 0.05).}}} \\ 
+
+	\end{tabular*} \vspace{0.5cm}  
+
+
+
+	\begin{tabular*}{0.8\textwidth}{@{\extracolsep{\fill}} l r r r r r }
+	\multicolumn{6}{l}{\bf Clear Goals} \\
+	\hline	
+	 Effect & Value & F & Effect df & Error df & \emph{p} \\
+	\hline
+	Interface & 219.2444  &	2  &	109.6222  &	17.49291  &	0.000001* \\
+	Interface*Genre &  50.8444  &	4 & 	12.7111  &	2.02837  &	0.099458 \\
+	Interface*Group &  30.0889  &	4 & 	7.5222  &	1.20035  &	0.318159 \\
+	Interface*Genre*Group &  68.6222  &	8 & 	8.5778  &	1.36879  &	0.224885 \\
+	Error  &	451.2000  &	72  &	6.2667 &&\\
+	\hline
+	\multicolumn{6}{l}{\emph{{\small * denotes a significant result at a 95\% confidence level ($\alpha$ = 0.05).}}} \\ 
+
+	\end{tabular*}\vspace{0.5cm} 
+
+
+
+	\begin{tabular*}{0.8\textwidth}{@{\extracolsep{\fill}} l r r r r r }
+	\multicolumn{6}{l}{\bf Unambiguous Feedback} \\
+	\hline	
+	 Effect & Value & F & Effect df & Error df & \emph{p} \\
+	\hline
+	Interface & 131.3926  &	2  &	65.69630 & 	9.166925  &	0.000284* \\
+	Interface*Genre &  89.4519  &	4  &	22.36296  &	3.120413  &	0.020006* \\
+	Interface*Group &  18.7852  &	4  &	4.69630  &	0.655297  &	0.625051 \\
+	Interface*Genre*Group &  12.3704  &	8  &	1.54630  &	0.215762 & 	0.987129 \\
+	Error  &	516.0000  &	72  &	7.16667&&\\
+	\hline
+	\multicolumn{6}{l}{\emph{{\small * denotes a significant result at a 95\% confidence level ($\alpha$ = 0.05).}}} \\ 
+
+	\end{tabular*} \vspace{0.5cm} 
+
+
+	\begin{tabular*}{0.8\textwidth}{@{\extracolsep{\fill}} l r r r r r }
+	\multicolumn{6}{l}{\bf Concentration on the Task at Hand} \\
+	\hline	
+	 Effect & Value & F & Effect df & Error df & \emph{p} \\
+	\hline
+	Interface & 117.3778  &	2 & 	58.68889 & 	5.456612 & 	0.006216* \\
+	Interface*Genre &  54.5778  &	4  &	13.64444  &	1.268595  &	0.290307 \\
+	Interface*Group &  24.7111  &	4  &	6.17778  &	0.574380  &	0.682091 \\
+	Interface*Genre*Group &  61.6000  &	8 & 	7.70000  &	0.715909  &	0.676722 \\
+	Error  &	774.4000  &	72  &	10.75556  &&\\
+	\hline
+	\multicolumn{6}{l}{\emph{{\small * denotes a significant result at a 95\% confidence level ($\alpha$ = 0.05).}}} \\ 
+
+	\end{tabular*} \vspace{0.5cm} 
+
+\begin{tabular*}{0.8\textwidth}{@{\extracolsep{\fill}} l r r r r r }
+	\multicolumn{6}{l}{\bf Sense of Control} \\
+	\hline	
+	 Effect & Value & F & Effect df & Error df & \emph{p} \\
+	\hline
+	Interface & 135.1259  &	2  &	67.56296 & 	9.924918  &	0.000156* \\
+	Interface*Genre &  14.3407  &	4 & 	3.58519  &	0.526659  &	0.716458 \\
+	Interface*Group &  63.4074  &	4 & 	15.85185 & 	2.328618  &	0.064197 \\
+	Interface*Genre*Group &  36.3259  &	8 & 	4.54074  &	0.667029  &	0.718653 \\
+	Error  &	490.1333  &	72  &	6.80741    &&\\
+	\hline
+	\multicolumn{6}{l}{\emph{{\small * denotes a significant result at a 95\% confidence level ($\alpha$ = 0.05).}}} \\ 
+
+	\end{tabular*} \vspace{0.5cm} 
+	
+
+	\begin{tabular*}{0.8\textwidth}{@{\extracolsep{\fill}} l r r r r r }
+	\multicolumn{6}{l}{\bf Loss of Self-Consciousness} \\
+	\hline	
+	 Effect & Value & F & Effect df & Error df & \emph{p} \\
+	\hline
+	Interface & 164.0444  &	2  &	82.02222  &	7.719066  &	0.000918* \\
+	Interface*Genre &  182.0889  &	4  &	45.52222  &	4.284071  &	0.003637* \\
+	Interface*Group &  32.3556  &	4 & 	8.08889  &	0.761241  &	0.553929 \\
+	Interface*Genre*Group &  85.1111  &	8  &	10.63889  &	1.001220  &	0.442816 \\
+	Error  &	765.0667 & 	72  &	10.62593    &&\\
+	\hline
+	\multicolumn{6}{l}{\emph{{\small * denotes a significant result at a 95\% confidence level ($\alpha$ = 0.05).}}} \\ 
+
+	\end{tabular*} \vspace{0.5cm} 
+
+
+	\begin{tabular*}{0.8\textwidth}{@{\extracolsep{\fill}} l r r r r r }
+	\multicolumn{6}{l}{\bf Transformation of Time} \\
+	\hline	
+	 Effect & Value & F & Effect df & Error df & \emph{p} \\
+	\hline
+	Interface & 129.7333  &	2 & 	64.86667  &	6.616547  &	0.002302* \\
+	Interface*Genre &  44.8889  &	4 & 	11.22222  &	1.144692  &	0.342549 \\
+	Interface*Group &  55.2889  &	4  &	13.82222  &	1.409898  &	0.239375 \\
+	Interface*Genre*Group &  74.8889  &	8  &	9.36111  &	0.954855  &	0.477916 \\
+	Error  &	705.8667  &	72  &	9.80370    &&\\
+	\hline
+	\multicolumn{6}{l}{\emph{{\small * denotes a significant result at a 95\% confidence level ($\alpha$ = 0.05).}}} \\ 
+
+	\end{tabular*} \vspace{0.5cm} 
+	
+	
+
+	\begin{tabular*}{0.8\textwidth}{@{\extracolsep{\fill}} l r r r r r }
+	\multicolumn{6}{l}{\bf Autotelic Experience} \\
+	\hline	
+	 Effect & Value & F & Effect df & Error df & \emph{p} \\
+	\hline
+	Interface & 186.0593  &	2  &	93.02963  &	8.855279  &	0.000364* \\
+	Interface*Genre &  75.2296  &	4  &	18.80741  &	1.790234  &	0.140164 \\
+	Interface*Group &  42.6519  &	4  &	10.66296  &	1.014983  &	0.405488 \\
+	Interface*Genre*Group &  116.3259 & 	8  &	14.54074  &	1.384100  &	0.218138 \\
+	Error  &	756.4000  &	72  &	10.50556    &&\\
+	\hline
+	\multicolumn{6}{l}{\emph{{\small * denotes a significant result at a 95\% confidence level ($\alpha$ = 0.05).}}} \\ 
+
+	\end{tabular*} \vspace{0.5cm} 
+
+
+
+\subsection{Tukey's HSD test}
+
+\subsubsection{Main effect: \emph{Interface}}
+
+
+
+	\begin{tabular*}{0.65\textwidth}{ l r r r }
+	\multicolumn{4}{l}{\bf Challenge-Skill Balance} \\
+	\hline	
+	 & Direct manipulation & Gestural & Mixed   \\
+	\hline
+	Direct manipulation & & 0.000111* & 0.000111* \\
+	Gestural & 0.000111* &  & 0.798469 \\
+	Mixed & 0.000111* & 0.798469 & \\
+	\hline
+	\multicolumn{4}{l}{Error: Within MS = 6.9370, df = 72.000} \\
+	\hline
+	\multicolumn{4}{l}{\emph{{\small * denotes a significant result at a 95\% confidence level ($\alpha$ = 0.05).}}} \\ 
+
+	\end{tabular*} \vspace{0.5cm} 
+
+	
+
+  \begin{center}
+    \includegraphics [scale=0.4]{graph1.pdf} \\
+    Challenge-Skill Balance: Cell mean plot
+    \end{center} \vspace{0.5cm} 
+	
+  
+
+
+
+
+	\begin{tabular*}{0.65\textwidth}{ l r r r }
+	\multicolumn{4}{l}{\bf Merging of Action and Awareness} \\
+	\hline	
+	 & Direct manipulation & Gestural & Mixed   \\
+	\hline
+	Direct manipulation & & 0.001201* & 	0.002278* \\
+	Gestural & 0.001201*  	&& 	0.975679 \\
+	Mixed & 0.002278* & 	0.975679 & \\
+	\hline
+	\multicolumn{4}{l}{Error: Within MS = 6.1981, df = 72.000} \\
+	\hline
+	\multicolumn{4}{l}{\emph{{\small * denotes a significant result at a 95\% confidence level ($\alpha$ = 0.05).}}} \\ 
+
+	\end{tabular*} \vspace{0.5cm} 
+	
+
+  \begin{center}
+    \includegraphics [scale=0.4]{graph2.png} \\
+    Merging of Action and Awareness: Cell mean plot
+    \end{center} \vspace{0.5cm} 
+
+  
+
+
+
+	\begin{tabular*}{0.65\textwidth}{ l r r r }
+	\multicolumn{4}{l}{\bf Clear Goals} \\
+	\hline	
+	 & Direct manipulation & Gestural & Mixed   \\
+	\hline
+	Direct manipulation & & 0.000114*  &	0.000121* \\
+	Gestural & 0.000114*  &&	 	0.953362 \\
+	Mixed & 0.000121*  &	0.953362   & \\
+	\hline
+	\multicolumn{4}{l}{Error: Within MS = 6.2667, df = 72.000} \\
+	\hline
+	\multicolumn{4}{l}{\emph{{\small * denotes a significant result at a 95\% confidence level ($\alpha$ = 0.05).}}} \\ 
+
+	\end{tabular*} \vspace{0.5cm} 
+	
+  \begin{center}
+    \includegraphics [scale=0.4]{graph3.png} \\
+    Clear Goals: Cell mean plot
+    \end{center}
+	
+
+
+
+	\begin{tabular*}{0.65\textwidth}{ l r r r }
+	\multicolumn{4}{l}{\bf Concentration on the Task at Hand} \\
+	\hline	
+	 & Direct manipulation & Gestural & Mixed   \\
+	\hline
+	Direct manipulation & & 0.005088* & 	0.521689 \\
+	Gestural & 0.005088*  	&& 	0.086483 \\
+	Mixed & 0.521689  &	0.086483   & \\
+	\hline
+	\multicolumn{4}{l}{Error: Within MS = 10.756, df = 72.000} \\
+	\hline
+	\multicolumn{4}{l}{\emph{{\small * denotes a significant result at a 95\% confidence level ($\alpha$ = 0.05).}}} \\ 
+
+	\end{tabular*} \vspace{0.5cm} 
+
+	
+
+  \begin{center}
+    \includegraphics [scale=0.4]{graph5.png} \\
+    Concentration on the Task at Hand: Cell mean plot
+    \end{center} \vspace{0.5cm} 
+	
+	
+	\begin{tabular*}{0.65\textwidth}{ l r r r }
+	\multicolumn{4}{l}{\bf Sense of Control} \\
+	\hline	
+	 & Direct manipulation & Gestural & Mixed   \\
+	\hline
+	Direct manipulation & & 0.000209* & 	0.245576 \\
+	Gestural & 0.000209*  	& 	0.018505* \\
+	Mixed & 0.245576  &	0.018505*   & \\
+	\hline
+	\multicolumn{4}{l}{Error: Within MS = 6.8074, df = 72.000} \\
+	\hline
+	\multicolumn{4}{l}{\emph{{\small * denotes a significant result at a 95\% confidence level ($\alpha$ = 0.05).}}} \\ 
+
+	\end{tabular*} \vspace{0.5cm} 
+	
+  \begin{center}
+    \includegraphics [scale=0.4]{graph6.png} \\
+    Sense of Control: Cell mean plot
+    \end{center} \vspace{0.5cm} 
+	
+
+	\begin{tabular*}{0.65\textwidth}{ l r r r }
+	\multicolumn{4}{l}{\bf Transformation of Time} \\
+	\hline	
+	 & Direct manipulation & Gestural & Mixed   \\
+	\hline
+	Direct manipulation & & 0.140792 & 	0.001579* \\
+	Gestural & 0.140792  	&& 	0.205955 \\
+	Mixed & 0.001579* & 	0.205955   & \\
+	\hline
+	\multicolumn{4}{l}{Error: Within MS = 9.8037, df = 72.000} \\
+	\hline
+	\multicolumn{4}{l}{\emph{{\small * denotes a significant result at a 95\% confidence level ($\alpha$ = 0.05).}}} \\ 
+
+	\end{tabular*}  \vspace{0.5cm} 
+
+
+
+  \begin{center}
+    \includegraphics [scale=0.4]{graph8.png} \\
+    Transformation of Time: Cell mean plot
+    \end{center}  \vspace{0.5cm} 
+	
+
+	\begin{tabular*}{0.65\textwidth}{ l r r r }
+	\multicolumn{4}{l}{\bf Autotelic Experience} \\
+	\hline	
+	 & Direct manipulation & Gestural & Mixed   \\
+	\hline
+	Direct manipulation & & 0.003083* & 	0.000863* \\
+	Gestural & 0.003083*  	&& 	0.906370 \\
+	Mixed & 0.000863* & 	0.906370     & \\
+	\hline
+	\multicolumn{4}{l}{Error: Within MS = 10.506, df = 72.000} \\
+	\hline
+	\multicolumn{4}{l}{\emph{{\small * denotes a significant result at a 95\% confidence level ($\alpha$ = 0.05).}}} \\ 
+
+	\end{tabular*}  \vspace{0.5cm} 
+	
+	
+  \begin{center}
+    \includegraphics [scale=0.4]{graph9.png} \\
+    Autotelic Experience: Cell mean plot
+    \end{center}  \vspace{0.5cm} 
+
+\newpage
+\subsubsection{Interaction effect: \emph{Interface*Genre}}
+
+
+	\scalebox{0.8}{
+	\begin{tabular}{ l l | r r r | r r r | r r r }
+	\multicolumn{5}{l}{\bf Challenge-Skill Balance} \\
+	\hline	
+	Genre & & \multicolumn{3}{c |}{Puzzle} & \multicolumn{3}{c |}{Strategy} & \multicolumn{3}{c}{Duelling} \\
+	 &  & DM & G & M & DM & G & M & DM & G & M \\
+	\hline
+	\multirow{3}{*}{Puzzle} & DM & & 0.000293*  &	0.004324*  &	0.041253*  &	0.000136* & 	0.000140* & 	0.192342  &	0.000152*  &	0.00014*5 \\
+	& G & 0.000293*  &&	 	0.992289  &	0.996715 & 	0.666131  &	0.833858  &	0.885127  &	0.925487  &	0.885127  \\
+	& M & 	0.004324* & 	0.992289  	&& 	1.000000  &	0.216286  &	0.365108  &	0.998927 & 	0.511983  &	0.436359\\
+	\hline
+	\multirow{3}{*}{Strategy} & DM & 	0.041253* & 	0.996715  &	1.000000  	&& 	0.051325  &	0.121302  &	0.999449  &	0.473768  &	0.400057\\
+	& G & 	0.000136* & 	0.666131  &	0.216286 & 	0.051325  	&& 	0.999994  	&0.041253*  &	0.999876  &	0.999982\\
+	& M & 	0.000140* & 	0.833858  &	0.365108 & 	0.121302 & 	0.999994  &&	 	0.087614  &	1.000000  &	1.000000\\
+	\hline
+	\multirow{3}{*}{Duelling} & DM & 	0.192342  &	0.885127  &	0.998927  &	0.999449  &	0.041253* & 	0.087614  	&& 	0.035257*  &	0.023826*\\
+	& G & 	0.000152*  &	0.925487 & 	0.511983  &	0.473768 & 	0.999876  &	1.000000 & 	0.035257*  	&&	1.000000\\
+	& M & 	0.000145* & 	0.885127 & 	0.436359  &	0.400057  &	0.999982 & 	1.000000  &	0.023826* & 	1.000000   &\\
+	\hline
+	
+	\multicolumn{11}{l}{Error: Between; Within; Pooled MSE = 10.256, df = 89.300} \\
+	\hline
+	\multicolumn{11}{l}{DM - Direct manipulation, G - Gestural, M - Mixed} \\ 
+		\multicolumn{11}{l}{\emph{{\footnotesize * denotes a significant result at a 95\% confidence level ($\alpha$ = 0.05).}}} \\ 
+	
+
+	\end{tabular}
+	} \vspace{0.5cm} 
+
+
+
+	
+
+  \begin{center}
+    \includegraphics [scale=0.4]{ig1.pdf} \\
+    Challenge-Skill Balance: Cell mean plot
+    \end{center} \vspace{0.5cm} 
+	
+	
+                \scalebox{0.8}{
+                \begin{tabular}{ l l | r r r | r r r | r r r }
+                \multicolumn{5}{l}{\bf  Merging of Action and Awareness } \\
+                \hline
+                Genre & & \multicolumn{3}{c |}{Puzzle} & \multicolumn{3}{c |}{Strategy} & \multicolumn{3}{c}{Duelling} \\
+                &  & DM & G & M & DM & G & M & DM & G & M \\
+                \hline
+                        \multirow{3}{*}{Puzzle} & DM     &   &  0.999990  &  0.707550  &  0.619478  &  0.999710  &  1.000000  &  1.000000  &  0.356435  &  0.731314  \\
+                        & G    &  0.999990  &   &  0.896785  &  0.427308  &  0.999999  &  0.999868  &  0.999999  &  0.541593  &  0.880870  \\
+                        & M    &  0.707550  &  0.896785  &  & 0.039442*  &  0.996519  &  0.798170  &  0.903059  &  0.991350  &  0.999994  \\
+                        \hline
+                        \multirow{3}{*}{Strategy} & DM    &  0.619478  &  0.427308 & 0.039442*  &   &  0.056324  &  0.464022  &  0.619478 & 0.002246* & 0.014382*  \\
+                        & G    &  0.999710  &  0.999999  &  0.996519  &  0.056324  &   &  0.982032  &  0.999710  &  0.731314  &  0.964744  \\
+                        & M    &  1.000000  &  0.999868  &  0.798170  &  0.464022  &  0.982032  &   &  1.000000  &  0.235152  &  0.580610  \\
+                        \hline
+                        \multirow{3}{*}{Duelling} & DM    &  1.000000  &  0.999999  &  0.903059  &  0.619478  &  0.999710  &  1.000000  &   &  0.097875  &  0.416919  \\
+                        & G    &  0.356435  &  0.541593  &  0.991350 & 0.002246*  &  0.731314  &  0.235152  &  0.097875  &   &  0.998175  \\
+                        & M    &  0.731314  &  0.880870  &  0.999994 & 0.014382*  &  0.964744  &  0.580610  &  0.416919  &  0.998175  &   \\
+                \hline
+                        \multicolumn{11}{l}{  Error: Between; Within; Pooled MSE = 10.115, df = 83.085 } \\
+                \hline
+                \multicolumn{11}{l}{DM - Direct manipulation, G - Gestural, M - Mixed} \\ 
+                \multicolumn{11}{l}{\emph{{\footnotesize * denotes a significant result at a 95\% confidence level ($\alpha$ = 0.05).}}} \\ 
+                \end{tabular}}  \vspace{0.5cm} 
+
+  \begin{center}
+    \includegraphics [scale=0.4]{ig2.png} \\
+    Merging of Action and Awareness: Cell mean plot
+    \end{center} \vspace{0.5cm} 
+	
+
+
+                \scalebox{0.8}{
+                \begin{tabular}{ l l | r r r | r r r | r r r }
+                \multicolumn{5}{l}{\bf  Clear Goals } \\
+                \hline
+                Genre & & \multicolumn{3}{c |}{Puzzle} & \multicolumn{3}{c |}{Strategy} & \multicolumn{3}{c}{Duelling} \\
+                &  & DM & G & M & DM & G & M & DM & G & M \\
+                \hline
+                        \multirow{3}{*}{Puzzle} & DM     &   &  0.989211  &  0.569355  &  0.501836  &  0.992740  &  1.000000  &  0.959756  &  0.464693  &  0.539541  \\
+                        & G    &  0.989211  &   &  0.982642  &  0.133101  &  1.000000  &  0.992740  &  0.615328  &  0.895625  &  0.932726  \\
+                        & M    &  0.569355  &  0.982642  &  & 0.016400*  &  0.999515  &  0.758465  &  0.170510  &  0.999515  &  0.999891  \\
+                        \hline
+                        \multirow{3}{*}{Strategy} & DM    &  0.501836  &  0.133101 & 0.016400*  &  & 0.007097*  &  0.259318  &  0.992740 & 0.002280* & 0.003296*  \\
+                        & G    &  0.992740  &  1.000000  &  0.999515 & 0.007097*  &   &  0.899634  &  0.501836  &  0.947441  &  0.969875  \\
+                        & M    &  1.000000  &  0.992740  &  0.758465  &  0.259318  &  0.899634  &   &  0.984313  &  0.359334  &  0.428405  \\
+                        \hline
+                        \multirow{3}{*}{Duelling} & DM    &  0.959756  &  0.615328  &  0.170510  &  0.992740  &  0.501836  &  0.984313  &  & 0.001737* & 0.002781*  \\
+                        & G    &  0.464693  &  0.895625  &  0.999515 & 0.002280*  &  0.947441  &  0.359334 & 0.001737*  &   &  1.000000  \\
+                        & M    &  0.539541  &  0.932726  &  0.999891 & 0.003296*  &  0.969875  &  0.428405 & 0.002781*  &  1.000000  &   \\
+                \hline
+                        \multicolumn{11}{l}{  Error: Between; Within; Pooled MSE = 10.667, df = 80.578 } \\
+                \hline
+                \multicolumn{11}{l}{DM - Direct manipulation, G - Gestural, M - Mixed} \\ 
+                \multicolumn{11}{l}{\emph{{\footnotesize * denotes a significant result at a 95\% confidence level ($\alpha$ = 0.05).}}} \\ 
+                \end{tabular}}  \vspace{0.5cm} 
+                
+          \begin{center}
+            \includegraphics [scale=0.4]{ig3.png} \\
+            Clear Goals: Cell mean plot
+          \end{center}  \vspace{0.5cm} 
+        
+        
+                \scalebox{0.8}{
+                \begin{tabular}{ l l | r r r | r r r | r r r }
+                \multicolumn{5}{l}{\bf  Unambiguous Feedback } \\
+                \hline
+                Genre & & \multicolumn{3}{c |}{Puzzle} & \multicolumn{3}{c |}{Strategy} & \multicolumn{3}{c}{Duelling} \\
+                &  & DM & G & M & DM & G & M & DM & G & M \\
+                \hline
+                        \multirow{3}{*}{Puzzle} & DM     &   &  0.999514  &  0.306979  &  0.998656  &  0.259906  &  0.809040  &  0.507560  &  0.666895  &  0.999936  \\
+                        & G    &  0.999514  &   &  0.699209  &  1.000000  &  0.587720  &  0.978651  &  0.205774  &  0.930857  &  0.985117  \\
+                        & M    &  0.306979  &  0.699209  &   &  0.912301  &  0.999977  &  0.999936 & 0.002635*  &  1.000000  &  0.231775  \\
+                        \hline
+                        \multirow{3}{*}{Strategy} & DM    &  0.998656  &  1.000000  &  0.912301  &   &  0.517559  &  0.982434  &  0.140213  &  0.970262  &  0.959651  \\
+                        & G    &  0.259906  &  0.587720  &  0.999977  &  0.517559  &   &  0.982434 & 0.000663*  &  0.999289  &  0.092105  \\
+                        & M    &  0.809040  &  0.978651  &  0.999936  &  0.982434  &  0.982434  &  & 0.012429*  &  1.000000  &  0.507560  \\
+                        \hline
+                        \multirow{3}{*}{Duelling} & DM    &  0.507560  &  0.205774 & 0.002635*  &  0.140213 & 0.000663* & 0.012429*  &  & 0.000921*  &  0.655002  \\
+                        & G    &  0.666895  &  0.930857  &  1.000000  &  0.970262  &  0.999289  &  1.000000 & 0.000921*  &   &  0.181217  \\
+                        & M    &  0.999936  &  0.985117  &  0.231775  &  0.959651  &  0.092105  &  0.507560  &  0.655002  &  0.181217  &   \\
+                \hline
+                        \multicolumn{11}{l}{  Error: Between; Within; Pooled MSE = 9.6370, df = 95.455 } \\
+                \hline
+                \multicolumn{11}{l}{DM - Direct manipulation, G - Gestural, M - Mixed} \\ 
+                \multicolumn{11}{l}{\emph{{\footnotesize * denotes a significant result at a 95\% confidence level ($\alpha$ = 0.05).}}} \\ 
+                \end{tabular}} \vspace{0.5cm} 
+
+
+
+	
+
+  \begin{center}
+    \includegraphics [scale=0.4]{ig4.png} \\
+    Unambiguous Feedback: Cell mean plot
+    \end{center} \vspace{0.5cm} 
+	
+
+
+                \scalebox{0.8}{
+                \begin{tabular}{ l l | r r r | r r r | r r r }
+                \multicolumn{5}{l}{\bf  Concentration on the Task at Hand } \\
+                \hline
+                Genre & & \multicolumn{3}{c |}{Puzzle} & \multicolumn{3}{c |}{Strategy} & \multicolumn{3}{c}{Duelling} \\
+                &  & DM & G & M & DM & G & M & DM & G & M \\
+                \hline
+                        \multirow{3}{*}{Puzzle} & DM     &   &  0.850521  &  0.999071  &  0.999982  &  0.999604  &  0.997884  &  0.996656  &  0.613771  &  0.999993  \\
+                        & G    &  0.850521  &   &  0.435262  &  0.712829  &  0.997884  &  0.999604  &  0.444399  &  0.999793  &  0.985030  \\
+                        & M    &  0.999071  &  0.435262  &   &  1.000000  &  0.954467  &  0.912784  &  1.000000  &  0.243183  &  0.989254  \\
+                        \hline
+                        \multirow{3}{*}{Strategy} & DM    &  0.999982  &  0.712829  &  1.000000  &   &  0.970396  &  0.933881  &  0.999982  &  0.350459  &  0.997884  \\
+                        & G    &  0.999604  &  0.997884  &  0.954467  &  0.970396  &   &  1.000000  &  0.894718  &  0.928710  &  1.000000  \\
+                        & M    &  0.997884  &  0.999604  &  0.912784  &  0.933881  &  1.000000  &   &  0.827872  &  0.964498  &  0.999982  \\
+                        \hline
+                        \multirow{3}{*}{Duelling} & DM    &  0.996656  &  0.444399  &  1.000000  &  0.999982  &  0.894718  &  0.827872  &   &  0.081952  &  0.933881  \\
+                        & G    &  0.613771  &  0.999793  &  0.243183  &  0.350459  &  0.928710  &  0.964498  &  0.081952  &   &  0.728875  \\
+                        & M    &  0.999993  &  0.985030  &  0.989254  &  0.997884  &  1.000000  &  0.999982  &  0.933881  &  0.728875  &   \\
+                \hline
+                        \multicolumn{11}{l}{  Error: Between; Within; Pooled MSE = 13.300, df = 100.63 } \\
+                \hline
+                \multicolumn{11}{l}{DM - Direct manipulation, G - Gestural, M - Mixed} \\ 
+                \multicolumn{11}{l}{\emph{{\footnotesize * denotes a significant result at a 95\% confidence level ($\alpha$ = 0.05).}}} \\ 
+                \end{tabular}} \vspace{0.5cm} 
+                
+                
+  \begin{center}
+    \includegraphics [scale=0.4]{ig5.png} \\
+    Concentration on the Task at Hand: Cell mean plot
+    \end{center} \vspace{0.5cm} 
+	 
+	 
+                \scalebox{0.8}{
+                \begin{tabular}{ l l | r r r | r r r | r r r }
+                \multicolumn{5}{l}{\bf  Sense of Control } \\
+                \hline
+                Genre & & \multicolumn{3}{c |}{Puzzle} & \multicolumn{3}{c |}{Strategy} & \multicolumn{3}{c}{Duelling} \\
+                &  & DM & G & M & DM & G & M & DM & G & M \\
+                \hline
+                        \multirow{3}{*}{Puzzle} & DM     &   &  0.156260  &  1.000000  &  0.999807  &  0.986972  &  0.999996  &  0.991032  &  0.910076  &  0.999999  \\
+                        & G    &  0.156260  &   &  0.209600  &  0.178407  &  0.966073  &  0.687022  &  0.073159  &  0.997644  &  0.651448  \\
+                        & M    &  1.000000  &  0.209600  &   &  0.999236  &  0.994032  &  1.000000  &  0.981625  &  0.942670  &  1.000000  \\
+                        \hline
+                        \multirow{3}{*}{Strategy} & DM    &  0.999807  &  0.178407  &  0.999236  &   &  0.576016  &  0.969392  &  0.999987  &  0.615103  &  0.996172  \\
+                        & G    &  0.986972  &  0.966073  &  0.994032  &  0.576016  &   &  0.995220  &  0.615103  &  0.999987  &  0.998629  \\
+                        & M    &  0.999996  &  0.687022  &  1.000000  &  0.969392  &  0.995220  &   &  0.942670  &  0.981625  &  1.000000  \\
+                        \hline
+                        \multirow{3}{*}{Duelling} & DM    &  0.991032  &  0.073159  &  0.981625  &  0.999987  &  0.615103  &  0.942670  &   &  0.096567  &  0.833036  \\
+                        & G    &  0.910076  &  0.997644  &  0.942670  &  0.615103  &  0.999987  &  0.981625  &  0.096567  &   &  0.894454  \\
+                        & M    &  0.999999  &  0.651448  &  1.000000  &  0.996172  &  0.998629  &  1.000000  &  0.833036  &  0.894454  &   \\
+                \hline
+                        \multicolumn{11}{l}{  Error: Between; Within; Pooled MSE = 11.300, df = 82.059 } \\
+                \hline
+                \multicolumn{11}{l}{DM - Direct manipulation, G - Gestural, M - Mixed} \\ 
+                \multicolumn{11}{l}{\emph{{\footnotesize * denotes a significant result at a 95\% confidence level ($\alpha$ = 0.05).}}} \\ 
+                \end{tabular}} \vspace{0.5cm} 
+                
+                
+  \begin{center}
+    \includegraphics [scale=0.4]{ig5.png} \\
+    Sense of Control: Cell mean plot
+    \end{center} \vspace{0.5cm} 
+	
+
+
+                \scalebox{0.8}{
+                \begin{tabular}{ l l | r r r | r r r | r r r }
+                \multicolumn{5}{l}{\bf  Loss of Self-Consciousness } \\
+                \hline
+                Genre & & \multicolumn{3}{c |}{Puzzle} & \multicolumn{3}{c |}{Strategy} & \multicolumn{3}{c}{Duelling} \\
+                &  & DM & G & M & DM & G & M & DM & G & M \\
+                \hline
+                        \multirow{3}{*}{Puzzle} & DM     &   &  0.575353  &  1.000000  &  0.480828  &  0.988243  &  0.657736  &  1.000000  &  1.000000  &  0.999963  \\
+                        & G    &  0.575353  &   &  0.537515  &  0.999729  &  0.999729 & 0.030127*  &  0.837733  &  0.815617  &  0.569390  \\
+                        & M    &  1.000000  &  0.537515  &   &  0.452000  &  0.984363  &  0.686339  &  1.000000  &  1.000000  &  0.999983  \\
+                        \hline
+                        \multirow{3}{*}{Strategy} & DM    &  0.480828  &  0.999729  &  0.452000  &   &  0.871502 & 0.000233*  &  0.480828  &  0.452000  &  0.230124  \\
+                        & G    &  0.988243  &  0.999729  &  0.984363  &  0.871502  &  & 0.016831*  &  0.988243  &  0.984363  &  0.894897  \\
+                        & M    &  0.657736 & 0.030127*  &  0.686339 & 0.000233* & 0.016831*  &   &  0.657736  &  0.686339  &  0.894897  \\
+                        \hline
+                        \multirow{3}{*}{Duelling} & DM    &  1.000000  &  0.837733  &  1.000000  &  0.480828  &  0.988243  &  0.657736  &   &  1.000000  &  0.999753  \\
+                        & G    &  1.000000  &  0.815617  &  1.000000  &  0.452000  &  0.984363  &  0.686339  &  1.000000  &   &  0.999888  \\
+                        & M    &  0.999963  &  0.569390  &  0.999983  &  0.230124  &  0.894897  &  0.894897  &  0.999753  &  0.999888  &   \\
+                \hline
+                        \multicolumn{11}{l}{  Error: Between; Within; Pooled MSE = 17.422, df = 82.800 } \\
+                \hline
+                \multicolumn{11}{l}{DM - Direct manipulation, G - Gestural, M - Mixed} \\ 
+                \multicolumn{11}{l}{\emph{{\footnotesize * denotes a significant result at a 95\% confidence level ($\alpha$ = 0.05).}}} \\ 
+                \end{tabular}} \vspace{0.5cm}
+
+  \begin{center}
+    \includegraphics [scale=0.4]{ig7.png} \\
+    Loss of Self-Consciousness: Cell mean plot
+    \end{center} \vspace{0.5cm}
+	
+               
+                \scalebox{0.8}{
+                \begin{tabular}{ l l | r r r | r r r | r r r }
+                \multicolumn{5}{l}{\bf  Transformation of Time } \\
+                \hline
+                Genre & & \multicolumn{3}{c |}{Puzzle} & \multicolumn{3}{c |}{Strategy} & \multicolumn{3}{c}{Duelling} \\
+                &  & DM & G & M & DM & G & M & DM & G & M \\
+                \hline
+                        \multirow{3}{*}{Puzzle} & DM     &   &  0.999993  &  0.948404  &  1.000000  &  0.994639  &  0.158720  &  0.945887  &  1.000000  &  1.000000  \\
+                        & G    &  0.999993  &   &  0.993688  &  0.999987  &  0.999723  &  0.282980  &  0.841962  &  1.000000  &  1.000000  \\
+                        & M    &  0.948404  &  0.993688  &   &  0.973679  &  1.000000  &  0.737052  &  0.392091  &  0.997641  &  0.992255  \\
+                        \hline
+                        \multirow{3}{*}{Strategy} & DM    &  1.000000  &  0.999987  &  0.973679  &   &  0.961020 & 0.025650*  &  0.965962  &  0.999996  &  1.000000  \\
+                        & G    &  0.994639  &  0.999723  &  1.000000  &  0.961020  &   &  0.371420  &  0.484334  &  0.999501  &  0.997641  \\
+                        & M    &  0.158720  &  0.282980  &  0.737052 & 0.025650*  &  0.371420  &  & 0.004822*  &  0.258860  &  0.194716  \\
+                        \hline
+                        \multirow{3}{*}{Duelling} & DM    &  0.945887  &  0.841962  &  0.392091  &  0.965962  &  0.484334 & 0.004822*  &   &  0.677086  &  0.783729  \\
+                        & G    &  1.000000  &  1.000000  &  0.997641  &  0.999996  &  0.999501  &  0.258860  &  0.677086  &   &  1.000000  \\
+                        & M    &  1.000000  &  1.000000  &  0.992255  &  1.000000  &  0.997641  &  0.194716  &  0.783729  &  1.000000  &   \\
+                \hline
+                        \multicolumn{11}{l}{  Error: Between; Within; Pooled MSE = 14.722, df = 88.291 } \\
+                \hline
+                \multicolumn{11}{l}{DM - Direct manipulation, G - Gestural, M - Mixed} \\ 
+                \multicolumn{11}{l}{\emph{{\footnotesize * denotes a significant result at a 95\% confidence level ($\alpha$ = 0.05).}}} \\ 
+                \end{tabular}} \vspace{0.5cm}
+                
+  \begin{center}
+    \includegraphics [scale=0.4]{ig8.png} \\
+    Transformation of Time: Cell mean plot
+    \end{center} \vspace{0.5cm}
+	
+	
+                \scalebox{0.8}{
+                \begin{tabular}{ l l | r r r | r r r | r r r }
+                \multicolumn{5}{l}{\bf  Autotelic Experience } \\
+                \hline
+                Genre & & \multicolumn{3}{c |}{Puzzle} & \multicolumn{3}{c |}{Strategy} & \multicolumn{3}{c}{Duelling} \\
+                &  & DM & G & M & DM & G & M & DM & G & M \\
+                \hline
+                        \multirow{3}{*}{Puzzle} & DM     &   &  0.492065  &  0.976725  &  0.996510  &  0.528253 & 0.010712*  &  1.000000  &  0.774791  &  0.937475  \\
+                        & G    &  0.492065  &   &  0.983392  &  0.997617  &  0.999940  &  0.444092  &  0.820797  &  1.000000  &  0.999998  \\
+                        & M    &  0.976725  &  0.983392  &   &  1.000000  &  0.948262  &  0.100395  &  0.996510  &  0.995031  &  0.999940  \\
+                        \hline
+                        \multirow{3}{*}{Strategy} & DM    &  0.996510  &  0.997617  &  1.000000  &   &  0.783253 & 0.006637*  &  0.996510  &  0.995031  &  0.999940  \\
+                        & G    &  0.528253  &  0.999940  &  0.948262  &  0.783253  &   &  0.384045  &  0.528253  &  0.999987  &  0.997617  \\
+                        & M   & 0.010712*  &  0.444092  &  0.100395 & 0.006637*  &  0.384045  &  & 0.010712*  &  0.499824  &  0.271660  \\
+                        \hline
+                        \multirow{3}{*}{Duelling} & DM    &  1.000000  &  0.820797  &  0.996510  &  0.996510  &  0.528253 & 0.010712*  &   &  0.418945  &  0.750615  \\
+                        & G    &  0.774791  &  1.000000  &  0.995031  &  0.995031  &  0.999987  &  0.499824  &  0.418945  &   &  0.999883  \\
+                        & M    &  0.937475  &  0.999998  &  0.999940  &  0.999940  &  0.997617  &  0.271660  &  0.750615  &  0.999883  &   \\
+                \hline
+                        \multicolumn{11}{l}{  Error: Between; Within; Pooled MSE = 18.648, df = 78.186 } \\
+                \hline
+                \multicolumn{11}{l}{DM - Direct manipulation, G - Gestural, M - Mixed} \\ 
+                \multicolumn{11}{l}{\emph{{\footnotesize * denotes a significant result at a 95\% confidence level ($\alpha$ = 0.05).}}} \\ 
+                \end{tabular}} \vspace{0.5cm}
+                
+                
+          \begin{center}
+            \includegraphics [scale=0.4]{ig9.png} \\
+            Autotelic Experience: Cell mean plot
+          \end{center} \vspace{0.5cm}
+        
+\newpage
+\subsubsection{Interaction effect: \emph{Interface*Group}}
+
+\scalebox{0.8}{
+                \begin{tabular}{ l l | r r r | r r r | r r r }
+                \multicolumn{5}{l}{\bf  Challenge-Skill Balance } \\
+                \hline
+                Genre & & \multicolumn{3}{c |}{Puzzle} & \multicolumn{3}{c |}{Strategy} & \multicolumn{3}{c}{Duelling} \\
+                &  & DM & G & M & DM & G & M & DM & G & M \\
+                \hline
+                        \multirow{3}{*}{Puzzle} & DM     &  & 0.001410*  &  0.073441  &  1.000000  &  0.550692  &  0.589540  &  0.999876 & 0.001951* & 0.000915*  \\
+                        & G   & 0.001410*  &   &  0.923010 & 0.010582*  &  0.804371  &  0.772556  &  0.065448  &  0.999449  &  0.994700  \\
+                        & M    &  0.073441  &  0.923010  &   &  0.192342  &  0.999876  &  0.999727  &  0.550692  &  0.738693  &  0.589540  \\
+                        \hline
+                        \multirow{3}{*}{Strategy} & DM    &  1.000000 & 0.010582*  &  0.192342  &   &  0.220025  &  0.251707  &  0.999449 & 0.001332* & 0.000632*  \\
+                        & G    &  0.550692  &  0.804371  &  0.999876  &  0.220025  &   &  1.000000  &  0.860821  &  0.400057  &  0.270118  \\
+                        & M    &  0.589540  &  0.772556  &  0.999727  &  0.251707  &  1.000000  &   &  0.885127  &  0.365108  &  0.242218  \\
+                        \hline
+                        \multirow{3}{*}{Duelling} & DM    &  0.999876  &  0.065448  &  0.550692  &  0.999449  &  0.860821  &  0.885127  &  & 0.000908* & 0.000405*  \\
+                        & G   & 0.001951*  &  0.999449  &  0.738693 & 0.001332*  &  0.400057  &  0.365108 & 0.000908*  &   &  0.999999  \\
+                        & M   & 0.000915*  &  0.994700  &  0.589540 & 0.000632*  &  0.270118  &  0.242218 & 0.000405*  &  0.999999  &   \\
+                \hline
+                        \multicolumn{11}{l}{  Error: Between; Within; Pooled MSE = 10.256, df = 89.300 } \\
+                \hline
+                \multicolumn{11}{l}{DM - Direct manipulation, G - Gestural, M - Mixed} \\ 
+                \multicolumn{11}{l}{\emph{{\footnotesize * denotes a significant result at a 95\% confidence level ($\alpha$ = 0.05).}}} \\ 
+                \end{tabular}} \vspace{0.5cm}
+
+
+
+          \begin{center}
+            \includegraphics [scale=0.4]{igr1.png} \\
+        Challenge-Skill Balance: Cell mean plot
+          \end{center} \vspace{0.5cm}
+          
+       \scalebox{0.8}{
+                \begin{tabular}{ l l | r r r | r r r | r r r }
+                \multicolumn{5}{l}{\bf  Merging of Action and Awareness } \\
+                \hline
+                Genre & & \multicolumn{3}{c |}{Puzzle} & \multicolumn{3}{c |}{Strategy} & \multicolumn{3}{c}{Duelling} \\
+                &  & DM & G & M & DM & G & M & DM & G & M \\
+                \hline
+                        \multirow{3}{*}{Puzzle} & DM     &   &  0.219195  &  0.068070  &  1.000000  &  0.731314  &  0.997937  &  0.999414  &  0.427308  &  0.262606  \\
+                        & G    &  0.219195  &   &  0.999871  &  0.695217  &  0.999999  &  0.939109  &  0.903059  &  1.000000  &  0.999946  \\
+                        & M    &  0.068070  &  0.999871  &   &  0.427308  &  0.998862  &  0.765733  &  0.695217  &  1.000000  &  1.000000  \\
+                        \hline
+                        \multirow{3}{*}{Strategy} & DM    &  1.000000  &  0.695217  &  0.427308  &   &  0.611501  &  0.999148  &  0.999981  &  0.580610  &  0.391191  \\
+                        & G    &  0.731314  &  0.999999  &  0.998862  &  0.611501  &   &  0.942941  &  0.974118  &  0.999946  &  0.997937  \\
+                        & M    &  0.997937  &  0.939109  &  0.765733  &  0.999148  &  0.942941  &   &  1.000000  &  0.880870  &  0.731314  \\
+                        \hline
+                        \multirow{3}{*}{Duelling} & DM    &  0.999414  &  0.903059  &  0.695217  &  0.999981  &  0.974118  &  1.000000  &   &  0.562018  &  0.329186  \\
+                        & G    &  0.427308  &  1.000000  &  1.000000  &  0.580610  &  0.999946  &  0.880870  &  0.562018  &   &  0.999990  \\
+                        & M    &  0.262606  &  0.999946  &  1.000000  &  0.391191  &  0.997937  &  0.731314  &  0.329186  &  0.999990  &   \\
+                \hline
+                        \multicolumn{11}{l}{  Error: Between; Within; Pooled MSE = 10.115, df = 83.085 } \\
+                \hline
+                \multicolumn{11}{l}{DM - Direct manipulation, G - Gestural, M - Mixed} \\ 
+                \multicolumn{11}{l}{\emph{{\footnotesize * denotes a significant result at a 95\% confidence level ($\alpha$ = 0.05).}}} \\ 
+                \end{tabular}} \vspace{0.5cm}
+
+
+
+          \begin{center}
+            \includegraphics [scale=0.4]{igr2.png} \\
+        Merging of Action and Awareness: Cell mean plot
+          \end{center} \vspace{0.5cm}
+
+\scalebox{0.8}{
+                \begin{tabular}{ l l | r r r | r r r | r r r }
+                \multicolumn{5}{l}{\bf  Clear Goals } \\
+                \hline
+                Genre & & \multicolumn{3}{c |}{Puzzle} & \multicolumn{3}{c |}{Strategy} & \multicolumn{3}{c}{Duelling} \\
+                &  & DM & G & M & DM & G & M & DM & G & M \\
+                \hline
+                        \multirow{3}{*}{Puzzle} & DM     &  & 0.000855* & 0.004454*  &  0.947441  &  0.296323  &  0.150919  &  0.895625 & 0.009769* & 0.026932*  \\
+                        & G   & 0.000855*  &   &  0.999876  &  0.393231  &  0.977970  &  0.998312  &  0.501836  &  0.999999  &  1.000000  \\
+                        & M   & 0.004454*  &  0.999876  &   &  0.652699  &  0.999057  &  0.999995  &  0.758465  &  0.999057  &  0.999995  \\
+                        \hline
+                        \multirow{3}{*}{Strategy} & DM    &  0.947441  &  0.393231  &  0.652699  &   &  0.836915  &  0.569355  &  1.000000  &  0.240400  &  0.428405  \\
+                        & G    &  0.296323  &  0.977970  &  0.999057  &  0.836915  &   &  0.999962  &  0.984313  &  0.915488  &  0.984313  \\
+                        & M    &  0.150919  &  0.998312  &  0.999995  &  0.569355  &  0.999962  &   &  0.915488  &  0.984313  &  0.999057  \\
+                        \hline
+                        \multirow{3}{*}{Duelling} & DM    &  0.895625  &  0.501836  &  0.758465  &  1.000000  &  0.984313  &  0.915488  &   &  0.071049  &  0.194563  \\
+                        & G   & 0.009769*  &  0.999999  &  0.999057  &  0.240400  &  0.915488  &  0.984313  &  0.071049  &   &  0.999962  \\
+                        & M   & 0.026932*  &  1.000000  &  0.999995  &  0.428405  &  0.984313  &  0.999057  &  0.194563  &  0.999962  &   \\
+                \hline
+                        \multicolumn{11}{l}{  Error: Between; Within; Pooled MSE = 10.667, df = 80.578 } \\
+                \hline
+                \multicolumn{11}{l}{DM - Direct manipulation, G - Gestural, M - Mixed} \\ 
+                \multicolumn{11}{l}{\emph{{\footnotesize * denotes a significant result at a 95\% confidence level ($\alpha$ = 0.05).}}} \\ 
+                \end{tabular}} \vspace{0.5cm}
+
+
+
+          \begin{center}
+            \includegraphics [scale=0.4]{igr3.png} \\
+        Clear Goals: Cell mean plot
+          \end{center} \vspace{0.5cm}
+
+
+
+\scalebox{0.8}{
+                \begin{tabular}{ l l | r r r | r r r | r r r }
+                \multicolumn{5}{l}{\bf  Unambiguous Feedback } \\
+                \hline
+                Genre & & \multicolumn{3}{c |}{Puzzle} & \multicolumn{3}{c |}{Strategy} & \multicolumn{3}{c}{Duelling} \\
+                &  & DM & G & M & DM & G & M & DM & G & M \\
+                \hline
+                        \multirow{3}{*}{Puzzle} & DM     &   &  0.115204  &  0.385606  &  1.000000  &  0.587720  &  0.587720  &  0.912301  &  0.106377  &  0.705055  \\
+                        & G    &  0.115204  &   &  0.999514  &  0.160014  &  0.999845  &  0.999845  &  0.970262  &  0.999977  &  0.998656  \\
+                        & M    &  0.385606  &  0.999514  &   &  0.429608  &  1.000000  &  1.000000  &  0.999659  &  0.989960  &  1.000000  \\
+                        \hline
+                        \multirow{3}{*}{Strategy} & DM    &  1.000000  &  0.160014  &  0.429608  &   &  0.238615  &  0.238615  &  0.809040  &  0.058412  &  0.547553  \\
+                        & G    &  0.587720  &  0.999845  &  1.000000  &  0.238615  &   &  1.000000  &  0.999659  &  0.989960  &  1.000000  \\
+                        & M    &  0.587720  &  0.999845  &  1.000000  &  0.238615  &  1.000000  &   &  0.999659  &  0.989960  &  1.000000  \\
+                        \hline
+                        \multirow{3}{*}{Duelling} & DM    &  0.912301  &  0.970262  &  0.999659  &  0.809040  &  0.999659  &  0.999659  &   &  0.699209  &  0.999926  \\
+                        & G    &  0.106377  &  0.999977  &  0.989960  &  0.058412  &  0.989960  &  0.989960  &  0.699209  &   &  0.929454  \\
+                        & M    &  0.705055  &  0.998656  &  1.000000  &  0.547553  &  1.000000  &  1.000000  &  0.999926  &  0.929454  &   \\
+                \hline
+                        \multicolumn{11}{l}{  Error: Between; Within; Pooled MSE = 9.6370, df = 95.455 } \\
+                \hline
+                \multicolumn{11}{l}{DM - Direct manipulation, G - Gestural, M - Mixed} \\ 
+                \multicolumn{11}{l}{\emph{{\footnotesize * denotes a significant result at a 95\% confidence level ($\alpha$ = 0.05).}}} \\ 
+                \end{tabular}} \vspace{0.5cm}
+
+
+
+          \begin{center}
+            \includegraphics [scale=0.4]{igr4.png} \\
+        Unambiguous Feedback: Cell mean plot
+          \end{center} \vspace{0.5cm}
+          
+\scalebox{0.8}{
+                \begin{tabular}{ l l | r r r | r r r | r r r }
+                \multicolumn{5}{l}{\bf  Concentration on the Task at Hand } \\
+                \hline
+                Genre & & \multicolumn{3}{c |}{Puzzle} & \multicolumn{3}{c |}{Strategy} & \multicolumn{3}{c}{Duelling} \\
+                &  & DM & G & M & DM & G & M & DM & G & M \\
+                \hline
+                        \multirow{3}{*}{Puzzle} & DM     &   &  0.435262  &  1.000000  &  0.999899  &  0.989254  &  0.996656  &  0.998728  &  0.989254  &  1.000000  \\
+                        & G    &  0.435262  &   &  0.400196  &  0.267801  &  0.985030  &  0.964498  &  0.178498  &  0.985030  &  0.412069  \\
+                        & M    &  1.000000  &  0.400196  &   &  0.999955  &  0.985030  &  0.994925  &  0.999262  &  0.985030  &  1.000000  \\
+                        \hline
+                        \multirow{3}{*}{Strategy} & DM    &  0.999899  &  0.267801  &  0.999955  &   &  0.793870  &  0.875239  &  1.000000  &  0.874518  &  1.000000  \\
+                        & G    &  0.989254  &  0.985030  &  0.985030  &  0.793870  &   &  1.000000  &  0.773544  &  1.000000  &  0.954467  \\
+                        & M    &  0.996656  &  0.964498  &  0.994925  &  0.875239  &  1.000000  &   &  0.852215  &  1.000000  &  0.979618  \\
+                        \hline
+                        \multirow{3}{*}{Duelling} & DM    &  0.998728  &  0.178498  &  0.999262  &  1.000000  &  0.773544  &  0.852215  &   &  0.657811  &  0.999893  \\
+                        & G    &  0.989254  &  0.985030  &  0.985030  &  0.874518  &  1.000000  &  1.000000  &  0.657811  &   &  0.916928  \\
+                        & M    &  1.000000  &  0.412069  &  1.000000  &  1.000000  &  0.954467  &  0.979618  &  0.999893  &  0.916928  &   \\
+                \hline
+                        \multicolumn{11}{l}{  Error: Between; Within; Pooled MSE = 13.300, df = 100.63 } \\
+                \hline
+                \multicolumn{11}{l}{DM - Direct manipulation, G - Gestural, M - Mixed} \\ 
+                \multicolumn{11}{l}{\emph{{\footnotesize * denotes a significant result at a 95\% confidence level ($\alpha$ = 0.05).}}} \\ 
+                \end{tabular}} \vspace{0.5cm}
+
+
+
+          \begin{center}
+            \includegraphics [scale=0.4]{igr5.png} \\
+        Concentration on the Task at Hand: Cell mean plot
+          \end{center} \vspace{0.5cm}
+
+
+\scalebox{0.8}{
+                \begin{tabular}{ l l | r r r | r r r | r r r }
+                \multicolumn{5}{l}{\bf  Sense of Control } \\
+                \hline
+                Genre & & \multicolumn{3}{c |}{Puzzle} & \multicolumn{3}{c |}{Strategy} & \multicolumn{3}{c}{Duelling} \\
+                &  & DM & G & M & DM & G & M & DM & G & M \\
+                \hline
+                        \multirow{3}{*}{Puzzle} & DM     &  & 0.039190*  &  0.979364  &  0.927585  &  0.815385  &  0.615103  &  1.000000  &  0.095950  &  0.999609  \\
+                        & G   & 0.039190*  &   &  0.392543  &  0.942670  &  0.986972  &  0.999236  &  0.158671  &  0.999987  &  0.578317  \\
+                        & M    &  0.979364  &  0.392543  &   &  0.999913  &  0.997644  &  0.974738  &  0.986972  &  0.468555  &  1.000000  \\
+                        \hline
+                        \multirow{3}{*}{Strategy} & DM    &  0.927585  &  0.942670  &  0.999913  &   &  0.999993  &  0.997396  &  0.867568  &  0.785966  &  0.998629  \\
+                        & G    &  0.815385  &  0.986972  &  0.997644  &  0.999993  &   &  0.999972  &  0.721512  &  0.910076  &  0.986972  \\
+                        & M    &  0.615103  &  0.999236  &  0.974738  &  0.997396  &  0.999972  &   &  0.504734  &  0.981625  &  0.927585  \\
+                        \hline
+                        \multirow{3}{*}{Duelling} & DM    &  1.000000  &  0.158671  &  0.986972  &  0.867568  &  0.721512  &  0.504734  &  & 0.004790*  &  0.986654  \\
+                        & G    &  0.095950  &  0.999987  &  0.468555  &  0.785966  &  0.910076  &  0.981625 & 0.004790*  &   &  0.081376  \\
+                        & M    &  0.999609  &  0.578317  &  1.000000  &  0.998629  &  0.986972  &  0.927585  &  0.986654  &  0.081376  &   \\
+                \hline
+                        \multicolumn{11}{l}{  Error: Between; Within; Pooled MSE = 11.300, df = 82.059 } \\
+                \hline
+                \multicolumn{11}{l}{DM - Direct manipulation, G - Gestural, M - Mixed} \\ 
+                \multicolumn{11}{l}{\emph{{\footnotesize * denotes a significant result at a 95\% confidence level ($\alpha$ = 0.05).}}} \\ 
+                \end{tabular}} \vspace{0.5cm}
+
+
+
+          \begin{center}
+            \includegraphics [scale=0.4]{igr6.png} \\
+        Sense of Control: Cell mean plot
+          \end{center} \vspace{0.5cm}
+
+\scalebox{0.8}{
+                \begin{tabular}{ l l | r r r | r r r | r r r }
+                \multicolumn{5}{l}{\bf  Loss of Self-Consciousness } \\
+                \hline
+                Genre & & \multicolumn{3}{c |}{Puzzle} & \multicolumn{3}{c |}{Strategy} & \multicolumn{3}{c}{Duelling} \\
+                &  & DM & G & M & DM & G & M & DM & G & M \\
+                \hline
+                        \multirow{3}{*}{Puzzle} & DM     &   &  0.997037  &  0.426844  &  0.657736  &  0.999199  &  0.086526  &  0.999999  &  0.999923  &  0.657736  \\
+                        & G    &  0.997037  &   &  0.894187  &  0.948731  &  1.000000  &  0.318717  &  0.999993  &  1.000000  &  0.948731  \\
+                        & M    &  0.426844  &  0.894187  &   &  1.000000  &  0.979549  &  0.937607  &  0.877426  &  0.948731  &  1.000000  \\
+                        \hline
+                        \multirow{3}{*}{Strategy} & DM    &  0.657736  &  0.948731  &  1.000000  &   &  0.846225  &  0.871502  &  0.815617  &  0.910742  &  1.000000  \\
+                        & G    &  0.999199  &  1.000000  &  0.979549  &  0.846225  &   &  0.089924  &  0.999983  &  1.000000  &  0.958390  \\
+                        & M    &  0.086526  &  0.318717  &  0.937607  &  0.871502  &  0.089924  &   &  0.159815  &  0.250575  &  0.966669  \\
+                        \hline
+                        \multirow{3}{*}{Duelling} & DM    &  0.999999  &  0.999993  &  0.877426  &  0.815617  &  0.999983  &  0.159815  &   &  0.999999  &  0.537515  \\
+                        & G    &  0.999923  &  1.000000  &  0.948731  &  0.910742  &  1.000000  &  0.250575  &  0.999999  &   &  0.722399  \\
+                        & M    &  0.657736  &  0.948731  &  1.000000  &  1.000000  &  0.958390  &  0.966669  &  0.537515  &  0.722399  &   \\
+                \hline
+                        \multicolumn{11}{l}{  Error: Between; Within; Pooled MSE = 17.422, df = 82.800 } \\
+                \hline
+                \multicolumn{11}{l}{DM - Direct manipulation, G - Gestural, M - Mixed} \\ 
+                \multicolumn{11}{l}{\emph{{\footnotesize * denotes a significant result at a 95\% confidence level ($\alpha$ = 0.05).}}} \\ 
+                \end{tabular}} \vspace{0.5cm}
+
+
+
+          \begin{center}
+            \includegraphics [scale=0.4]{igr7.png} \\
+        Loss of Self-Consciousness: Cell mean plot
+          \end{center} \vspace{0.5cm}
+\scalebox{0.8}{
+                \begin{tabular}{ l l | r r r | r r r | r r r }
+                \multicolumn{5}{l}{\bf  Transformation of Time } \\
+                \hline
+                Genre & & \multicolumn{3}{c |}{Puzzle} & \multicolumn{3}{c |}{Strategy} & \multicolumn{3}{c}{Duelling} \\
+                &  & DM & G & M & DM & G & M & DM & G & M \\
+                \hline
+                        \multirow{3}{*}{Puzzle} & DM     &   &  0.815305  &  0.948404  &  0.956755  &  0.979996 & 0.042998*  &  0.999856  &  0.979996  &  0.818120  \\
+                        & G    &  0.815305  &   &  0.999993  &  1.000000  &  1.000000  &  0.581046  &  0.676752  &  1.000000  &  0.999999  \\
+                        & M    &  0.948404  &  0.999993  &   &  1.000000  &  1.000000  &  0.392091  &  0.841962  &  1.000000  &  0.999723  \\
+                        \hline
+                        \multirow{3}{*}{Strategy} & DM    &  0.956755  &  1.000000  &  1.000000  &   &  1.000000  &  0.246087  &  0.737052  &  1.000000  &  0.999987  \\
+                        & G    &  0.979996  &  1.000000  &  1.000000  &  1.000000  &   &  0.172815  &  0.818120  &  1.000000  &  0.999856  \\
+                        & M   & 0.042998*  &  0.581046  &  0.392091  &  0.246087  &  0.172815  &  & 0.008976*  &  0.422052  &  0.765501  \\
+                        \hline
+                        \multirow{3}{*}{Duelling} & DM    &  0.999856  &  0.676752  &  0.841962  &  0.737052  &  0.818120 & 0.008976*  &   &  0.599703  &  0.219657  \\
+                        & G    &  0.979996  &  1.000000  &  1.000000  &  1.000000  &  1.000000  &  0.422052  &  0.599703  &   &  0.999329  \\
+                        & M    &  0.818120  &  0.999999  &  0.999723  &  0.999987  &  0.999856  &  0.765501  &  0.219657  &  0.999329  &   \\
+                \hline
+                        \multicolumn{11}{l}{  Error: Between; Within; Pooled MSE = 14.722, df = 88.291 } \\
+                \hline
+                \multicolumn{11}{l}{DM - Direct manipulation, G - Gestural, M - Mixed} \\ 
+                \multicolumn{11}{l}{\emph{{\footnotesize * denotes a significant result at a 95\% confidence level ($\alpha$ = 0.05).}}} \\ 
+                \end{tabular}} \vspace{0.5cm}
+
+
+
+          \begin{center}
+            \includegraphics [scale=0.4]{igr8.png} \\
+        Transformation of Time: Cell mean plot
+          \end{center} \vspace{0.5cm}
+
+
+
+\scalebox{0.8}{
+                \begin{tabular}{ l l | r r r | r r r | r r r }
+                \multicolumn{5}{l}{\bf  Autotelic Experience } \\
+                \hline
+                Genre & & \multicolumn{3}{c |}{Puzzle} & \multicolumn{3}{c |}{Strategy} & \multicolumn{3}{c}{Duelling} \\
+                &  & DM & G & M & DM & G & M & DM & G & M \\
+                \hline
+                        \multirow{3}{*}{Puzzle} & DM     &  & 0.030455*  &  0.165052  &  0.999999  &  0.750029  &  0.444092  &  0.999940  &  1.000000  &  0.999632  \\
+                        & G   & 0.030455*  &   &  0.998988  &  0.365053  &  0.995031  &  0.999987  &  0.081621  &  0.231134  &  0.585550  \\
+                        & M    &  0.165052  &  0.998988  &   &  0.697668  &  0.999995  &  1.000000  &  0.250866  &  0.528253  &  0.879701  \\
+                        \hline
+                        \multirow{3}{*}{Strategy} & DM    &  0.999999  &  0.365053  &  0.697668  &   &  0.605801  &  0.233392  &  0.998434  &  0.999999  &  0.999995  \\
+                        & G    &  0.750029  &  0.995031  &  0.999995  &  0.605801  &   &  0.999479  &  0.444092  &  0.750029  &  0.972756  \\
+                        & M    &  0.444092  &  0.999987  &  1.000000  &  0.233392  &  0.999479  &   &  0.194865  &  0.444092  &  0.820797  \\
+                        \hline
+                        \multirow{3}{*}{Duelling} & DM    &  0.999940  &  0.081621  &  0.250866  &  0.998434  &  0.444092  &  0.194865  &   &  0.999479  &  0.891110  \\
+                        & G    &  1.000000  &  0.231134  &  0.528253  &  0.999999  &  0.750029  &  0.444092  &  0.999479  &   &  0.996918  \\
+                        & M    &  0.999632  &  0.585550  &  0.879701  &  0.999995  &  0.972756  &  0.820797  &  0.891110  &  0.996918  &   \\
+                \hline
+                        \multicolumn{11}{l}{  Error: Between; Within; Pooled MSE = 18.648, df = 78.186 } \\
+                \hline
+                \multicolumn{11}{l}{DM - Direct manipulation, G - Gestural, M - Mixed} \\ 
+                \multicolumn{11}{l}{\emph{{\footnotesize * denotes a significant result at a 95\% confidence level ($\alpha$ = 0.05).}}} \\ 
+                \end{tabular}} \vspace{0.5cm}
+
+
+
+          \begin{center}
+            \includegraphics [scale=0.4]{igr9.png} \\
+        Autotelic Experience: Cell mean plot
+          \end{center} \vspace{0.5cm}
+
+
+
+
+

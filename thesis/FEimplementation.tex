@@ -1,0 +1,86 @@
+\section{Implementation}
+
+\subsection{Introduction}
+As the success of the gesture recognition unit is highly dependant on the quality of the data provided by the feature extraction module, three different techniques were implemented in order to determine the type of extraction that would be used. These include parabolic and circular least squares regression as well as an approach that uses changes in direction to determine feature segmentation. These are discussed in more detail below.
+
+\subsection{Parabolic least squares regression} 
+The first method attempted was parabolic ordinary least squares regression. In this case, a set of linear equations is solved in order to obtain the parameters \emph{a}, \emph{b} and \emph{c} for the following equation: $y = a + bx + cx^2$. This equation is then used to describe a feature and its requisite information. The set of linear equations, as described by \citet{eFun10}, where $x_i$ and $y_i$ refer to the \emph{x} and \emph{y} coordinates of each data point, \emph{n} to the number of data points, and \emph{a}, \emph{b} and \emph{c} the parameters for the equation of a parabola, is shown below:
+\begin{eqnarray*}
+	\sum_{i=1}^n y_i & = & a \sum_{i=1}^n 1 + b \sum_{i=1}^n x_i + c \sum_{i=1}^n x_i^2 \\
+	\sum_{i=1}^n x_i y_i & = & a \sum_{i=1}^n x_i + b \sum_{i=1}^n x_i^2 + c \sum_{i=1}^n x_i^3 \\
+	\sum_{i=1}^n x_i^2 y_i & = & a \sum_{i=1}^n x_i^2 + b \sum_{i=1}^n x_i^3 + c \sum_{i=1}^n x_i^4
+\end{eqnarray*}
+These equations are solved so that \emph{a}, \emph{b} and \emph{c} can be calculated~\citep{eFun10}. Since in order to calculate all three parameters, various combinations of summated data points are used, the regression can be calculated incrementally for each new data point. That is, recalculation is not necessary when adding new data. This is done by storing the values for each summation combination. When a new data point is inserted, its values are added to the current summation value for each combination. Thus the addition of a data point is accomplished by updating the summation values and then simply inserting these into the regression equations in order to obtain the new \emph{a}, \emph{b} and \emph{c} values.
+
+In order to determine whether a new feature should be started, a rolling error value, with a windows size of 5 points, is kept. The size of the window was chosen as a compromise between the robustness of the measure (that is, a single outlier should not cause a new feature to be started) and the distortion caused at the end of each feature due to erroneous values being included. That is, when using a rolling error, a number of points have to have a large enough error for the overall value to be sufficient to end the feature. If the size of the window is too large, this can cause distortions in the feature description. This value is updated with the error associated with each new touch point. The error for each touch point is calculated as follows, where ($x_i$, $y_i$) is the current touch point:
+\begin{eqnarray*}
+	y_{new} & = & c + bx_{i} + ax_{i}^2 \\
+	y_{error} & = & y_{i} - y_{new}
+\end{eqnarray*}
+When this error exceeds 5, the feature is ended and a new one started. This involves calculating the information required for each feature and resetting the summation values. The value of 5 was selected through testing the system to determine a value that would maximise the length of a feature, while minimising erroneous data at the feature's end. This value was found to be the most appropriate.
+
+\subsubsection{Limitations}
+One issue related to the use of parabolic fitting, is the inability to recognise vertical lines due to the nature of the function. That is, vertical lines produce parameter values that tend towards infinity. In order to compensate for this, these values are set to \texttt{FLT\_MAX}. However, this does not adequately address the problem, resulting in features being ended too early due to widely different results caused by these inaccurate parameter values. In addition, the shape of a parabola may not be appropriate for describing all features. This leads to premature feature termination, which increases the number of features within a gesture. 
+
+In order to compensate for this, a more robust model, that of a circle, is attempted.
+
+\subsection{Circular least squares regression}
+Unlike parabolic regression, a circular model allows for vertical features to be more easily and accurately described. In order to perform a regression to fit data to the equation of a circle ($R^2 = (x - x_c)^2 + (y - y_c)^2$), the following steps are performed~\citep{Bull06}. Coordinates are first transformed from (\emph{x}, \emph{y}) to (\emph{u}, \emph{v}) coordinates as follows:
+\begin{eqnarray*}
+	u_i & = & x_i - \bar{x} \\
+	v_i & = & y_i - \bar{y} \\
+	\mbox{where} \\
+	\bar{x} = \frac{1}{n} \sum_{i=1}^n x_i & \mbox{and} & \bar{y} = \frac{1}{n} \sum_{i=1}^n y_i
+\end{eqnarray*}
+The circle to be fitted has centre ($u_c$, $v_c$), with radius \emph{R}. For the purpose of the regression, $\alpha$ is set to equal $R^2$. The linear equations to be solved to determine the centre point are:
+\begin{eqnarray*}
+	u_c \sum_{i=1}^n u_i^2 + v_c \sum_{i=1}^n u_i v_i & = & \frac{1}{2}\left(\sum_{i=1}^n u_i^3 + \sum_{i=1}^n u_i v_i^2 \right)  \\
+	u_c \sum_{i=1}^n u_i v_i + v_c \sum_{i=1}^n v_i^2 & = & \frac{1}{2}\left(\sum_{i=1}^n v_i^3 + \sum_{i=1}^n v_i u_i^2 \right)	
+\end{eqnarray*}
+$\alpha$ is determined as follows:
+\begin{eqnarray*}
+	\alpha = u_c^2 + v_c^2 + \frac{\sum\limits^{n}_{i=1} u_i^2 + \sum\limits^{n}_{i=1} v_i^2}{n}	
+\end{eqnarray*}
+Thus, once the regression has been completed, the centre point in (\emph{x}, \emph{y}) coordinates and the radius, \emph{R}, can be calculated as shown below:
+\begin{eqnarray*}
+		(x_c, y_c) & = & (u_c, v_c) + (\bar{x}, \bar{y}) \\
+		R & = & \sqrt{\alpha}
+\end{eqnarray*}
+
+As described in the parabolic least squares section, due to the fact that solving these equations relies on summated values, they can be calculated incrementally for each new touch point, thus avoiding recalculation when adding values. $\bar{x}$ and $\bar{y}$ are calculated anew for each touch point, however. This was done by dividing the summated values for $x$ and $y$ by $n$. Once again a rolling error with a windows size of 5 is used in order to determine whether to start a new feature. However, due to the fact that the circular regression is far more sensitive to slight deviations, the error bound was set to 15, rather than 5.
+
+\subsubsection{Limitations}
+Circular regression proved to be far more sensitive to small deviations than the parabolic regression. This meant that the parameter values could changed greatly with the inclusion of one or two outliers. Thus the error bound had to be increased. However, this also meant that the end of each feature contained more erroneous points than in the parabolic version. Attempts were made to handle this by setting the end point of the feature to an earlier position, so that these erroneous points were included in the next feature, rather than the previous one. However, while this did improve the results, the sensitive nature of the regression decreases the robustness of this implementation.
+
+\subsection{Direction-based segmentation}
+As very little descriptive information is required from each feature, the third method uses changes in direction as a segmentation technique, with each feature being interpreted as a straight-line. This is done by calculating the change in \emph{x} and \emph{y} between the current touch point and the one immediately preceding it. These values are then used to determine in which direction, of eight, the difference lies. Figure~\ref{quad} illustrates the possible eight directions.
+
+\begin{figure}
+  \begin{center}
+    \includegraphics [scale=0.2]{quadrants.pdf}
+
+  \end{center}
+  \caption{Demonstration of the eight possible directions used for segmentation. The black lines deliminate the boundaries of each direction with the red numbers indicating the assigned values in each condition.}
+  \label{quad}
+\end{figure}
+
+Two values are stored in order to record the current direction in \emph{x} and \emph{y}. Both the \emph{x} and \emph{y} variables can take on one of three values; 1, 0 or -1, depending on the current direction. The possible combinations are shown in Figure~\ref{quad}. In order to better capture horizontal or vertical lines, if the distance between two points in one direction is between 10 and -10, the segment is considered to lie along one of the axes.
+
+When a new direction value is calculated, it is compared against the previous direction values. If the values are the same, the touch point is set as the current end point of the feature. If the values differ and the length of the current feature is greater than 100 pixels, the current feature is ended, and a new one started. The distance check was added so that outliers do not cause very short (and thus non-informative) features to be created.
+
+A number of other attempts were made to help counteract the effect of outliers. One of these techniques is to extend the previous feature. When the end of a feature is found, the parameters of this feature are checked against those of the previous feature. If they are found to be similar enough, these two features are combined. This is done by checking the angle made by the line connecting the start and end points of the previous feature with the angle formed by the line from the current feature's start point to the point immediately preceding the most recent divergent touch point. If the absolute difference between these angles is less than 20 degrees, the previous feature is extended. Figure~\ref{extend} illustrates this concept. If the difference is greater than 20 degrees, however, the current feature is ended and a new one started with the most recent direction as the current direction.
+
+\begin{figure}
+  \begin{center}
+    \includegraphics [scale=0.3]{extend.pdf}
+
+  \end{center}
+  \caption{Illustration of the technique used to combine similar sequential features. The touch points are shown in black. The red dots illustrate the starting points of the two respective features. \emph{a} and \emph{b} are the angles between each feature (red line) and the positive \emph{x}-axis. If the difference between \emph{a} and \emph{b} is less than 20 degrees, they will be combined into one feature.}
+  \label{extend}
+\end{figure}
+
+This technique allows for a simplification in the feature extraction process. In addition, due to the limited number of possible features, it provides a more robust approach, as well as simplifying the computation needed within the gesture engines.
+
+\subsubsection{Limitations}
+Due to the course-grained approach described above, this feature extraction technique is unable to differentiate between subtle changes in direction. This means that gestures have to be composed of well-defined lines and curves. The same problem is present when considering small gestures as the features are not large enough to be consistently recognised. Thus, the use of this method places limitations on the range of possible gestures.
+

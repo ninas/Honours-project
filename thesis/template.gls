@@ -1,0 +1,229 @@
+\glossarysection[\glossarytoctitle]{\glossarytitle}\glossarypreamble
+\begin{theglossary}\glossaryheader
+\glsgroupheading{A}\relax \glsresetentrylist %
+\glossaryentryfield{c2:afford}{\glsnamefont{Affordance}}{Features of the object or interface that suggest how it should be interacted with and what effect this interaction will have}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}}}%
+\glossaryentryfield{c4:ANOVA}{\glsnamefont{ANOVA}}{Analysis of Variance. Statistical test used to partition the observed variance into its various sources when considering more than two possible sources (or groups)}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}}}%
+\glossaryentryfield{c2:autoT}{\glsnamefont{Autotelic Experience}}{One of the dimensions used to describe flow. This describes an experience that is intrinsically rewarding and not simply a means to an end}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}}}\glsgroupskip
+\glsgroupheading{B}\relax \glsresetentrylist %
+\glossaryentryfield{c5:between}{\glsnamefont{Between-subjects design}}{The use of distinct and mutually exclusive groups where each group either possesses or is exposed to only one experimental condition}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}}}%
+\glossaryentryfield{c2:biman}{\glsnamefont{Bimanual interaction}}{The use of both hands when interacting with a device}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}}}\glsgroupskip
+\glsgroupheading{C}\relax \glsresetentrylist %
+\glossaryentryfield{c2:chal}{\glsnamefont{Challenge-Skill Balance}}{One of the dimensions used to describe flow. An appropriate balance between the difficulty presented by a task and the ability or perceived ability of an individual to complete this task}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}}}%
+\glossaryentryfield{c2:cGoals}{\glsnamefont{Clear Goals}}{One of the dimensions used to describe flow. A clarity of intention, aided by goals being set prior to beginning an activity}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}}}%
+\glossaryentryfield{c2:concen}{\glsnamefont{Concentration on the Task at Hand}}{One of the dimensions used to describe flow. A state where one has a single-minded focus on the task at hand, while ignoring any potential distractions}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}}}%
+\glossaryentryfield{consVal}{\glsnamefont{Construct validity}}{The degree to which a test relates to other variables within the same theoretical framework consistently and as expected}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}\delimN 
+		\setentrycounter{page}\glsnumberformat{13}}}%
+\glossaryentryfield{c5:contrE}{\glsnamefont{Contrast effect}}{Caveat associated with the use of a repeated measures design. This describes a condition where the response to the second or third condition in an experiment is altered because the two conditions are contrasted with each other}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}}}%
+\glossaryentryfield{c5:counterB}{\glsnamefont{Counterbalancing}}{A method of controlling for order effects in a repeated measures design by either testing all possible combinations or randomising the order in which experimental conditions are completed}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}}}%
+\glossaryentryfield{c4:curve}{\glsnamefont{Curve fitting}}{The construction of a curve or function that best describes or approximates a set of points}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}}}\glsgroupskip
+\glsgroupheading{D}\relax \glsresetentrylist %
+\glossaryentryfield{c5:demandC}{\glsnamefont{Demand characteristics}}{Any feature of the experiment that may inform participants as to the purpose of the study}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}}}%
+\glossaryentryfield{c4:dimenRed}{\glsnamefont{Dimensionality reduction}}{The process of decreasing the number of random variables to be evaluated}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}}}%
+\glossaryentryfield{c2:dm}{\glsnamefont{Direct manipulation}}{An interface design philosophy which encourages graphical, manual and incremental interactions over more complex, abstract ones. It is characterised by a perpetual representation of the objects of interest to the user; labelled buttons or physical actions instead of complex syntax; and reversible, incremental operations that provide immediate visual feedback as to their effect}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}}}%
+\glossaryentryfield{c2:direct}{\glsnamefont{Direct-touch}}{Directly touching or interacting with the object one wishes to manipulate}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}}}%
+\glossaryentryfield{c2:discr}{\glsnamefont{Discriminant validity}}{Measures the degree to which scores on a measure are not related to scores on a second conceptually unrelated measure. This is considered an assessment of construct validity}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}}}%
+\glossaryentryfield{c5:disordinal}{\glsnamefont{Disordinal interaction}}{This describes an interaction that has simple effects that lie in opposite directions. See also: Interaction (statistics)}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}}}%
+\glossaryentryfield{c5:doublB}{\glsnamefont{Double-blind study}}{Experimental design where neither the experimenter nor participants are aware of which experimental conditions the participants have been assigned to}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}}}\glsgroupskip
+\glsgroupheading{E}\relax \glsresetentrylist %
+\glossaryentryfield{c5:ecolo}{\glsnamefont{Ecological validity}}{Refers to how closely the experimental conditions approximate real-life situations and thus the degree to which the findings can be generalised outside of an experimental setting}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}}}%
+\glossaryentryfield{emg}{\glsnamefont{EMG}}{Electromyography}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}\delimN 
+		\setentrycounter{page}\glsnumberformat{14\delimN 15}}}%
+\glossaryentryfield{c5:exprB}{\glsnamefont{Experimenter bias}}{Also termed experimenter expectancy. Any intentional or unintentional influence the experimenter exerts on participants in order to confirm the hypothesis under investigation}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}}}\glsgroupskip
+\glsgroupheading{F}\relax \glsresetentrylist %
+\glossaryentryfield{faceVal}{\glsnamefont{Face validity}}{Whether on first examination a test appears to be a reasonable measure of some construct}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}\delimN 
+		\setentrycounter{page}\glsnumberformat{12}}}%
+\glossaryentryfield{c5:fatig}{\glsnamefont{Fatigue effect}}{Caveat associated with the use of a repeated measures design. This describes a deterioration in performance as the research participant becomes tired, bored or distracted}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}}}%
+\glossaryentryfield{c4:feature}{\glsnamefont{Feature}}{A higher-level description of some fundamental unit relevant to computationally solving a specific problem. Often used to describe data is such a way so as to provide dimensionality reduction}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}}}%
+\glossaryentryfield{c4:featDet}{\glsnamefont{Feature detection}}{The process of locating areas or elements of interest within an image}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}}}%
+\glossaryentryfield{c4:featureEx}{\glsnamefont{Feature extraction}}{A broad topic concerning the process of locating, segmenting and describing features}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}}}%
+\glossaryentryfield{c4:featSeg}{\glsnamefont{Feature segmentation}}{Process associated with partitioning data into a number of segments or features}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}}}%
+\glossaryentryfield{c5:fisher}{\glsnamefont{Fisher LSD test}}{Fisher Least Significant Difference test. Provides post-hoc testing on the results of an ANOVA by performing pairwise comparisons of the means}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}}}\glsgroupskip
+\glsgroupheading{G}\relax \glsresetentrylist %
+\glossaryentryfield{c2:gest}{\glsnamefont{Gesture}}{Symbolic movements used to relay scope and commands. Gestures generally serve two purposes: they are used to draw attention to some point or area and to manipulate or act upon an object}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}}}%
+\glossaryentryfield{c4:gestRec}{\glsnamefont{Gesture recognition}}{The use of mathematical algorithms in order to interpret human gestures}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}}}%
+\glossaryentryfield{c5:green}{\glsnamefont{Greenhouse-Geisser correction}}{Correction used when assumptions of sphericity are violated for repeated measures ANOVAs. In order to produce more accurate significance values, the degrees of freedom of the ANOVA are adjusted. See also: Mauchly's sphericity test, ANOVA, MANOVA, Repeated measures}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}}}%
+\glossaryentryfield{grouped}{\glsnamefont{Group}}{When three or more blocks of the same colour have at least one face touching, they are considered to be grouped together}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}\delimN 
+		\setentrycounter{page}\glsnumberformat{18}\delimN 
+		\setentrycounter{page}\glsnumberformat{22}}}\glsgroupskip
+\glsgroupheading{H}\relax \glsresetentrylist %
+\glossaryentryfield{hawth}{\glsnamefont{Hawthorne effect}}{See Reactivity}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}}}\glsgroupskip
+\glsgroupheading{I}\relax \glsresetentrylist %
+\glossaryentryfield{c2:immer}{\glsnamefont{Immersion}}{A psychological state mediated by the perceived distance between the user and the technological system they are interacting with}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}}}%
+\glossaryentryfield{c2:indirect}{\glsnamefont{Indirect-touch}}{The use of a pointing device to control and manipulate objects onscreen}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}\delimN 
+		\setentrycounter{page}\glsnumberformat{6}}}%
+\glossaryentryfield{c4:interac}{\glsnamefont{Interaction (statistics)}}{Used to describe a situation where two or more independent variables act on the dependent variable(s) in a non-additive manner. That is the effect of one or more independent variables depends on the level of another}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}}}%
+\glossaryentryfield{intCon}{\glsnamefont{Internal consistency}}{Refers to the correlations between different items within the same test. This is used to refer to whether all items in the same test or sub-scale measure the same construct}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}\delimN 
+		\setentrycounter{page}\glsnumberformat{11\delimR 13}}}%
+\glossaryentryfield{c4:inter}{\glsnamefont{Interpolation}}{The use of existing data points to determine a function, or similar, which passes through all the given data points. That is, a means of defining a function that takes on specific values at certain points. This function can then be used to define the values of missing points}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}}}%
+\glossaryentryfield{c4:int}{\glsnamefont{Interval measure}}{A rank-order scale where the distance between every element and those adjacent to it is equal}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}}}%
+\glossaryentryfield{c3:ios}{\glsnamefont{iOS}}{The mobile operating system developed by Apple for use on the iPhone, iPod Touch, Apple TV and the iPad}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}}}%
+\glossaryentryfield{itc-sopi}{\glsnamefont{ITC-SOPI}}{Independent Television Commission's Sense of Presence Inventory}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}\delimN 
+		\setentrycounter{page}\glsnumberformat{13}\delimN 
+		\setentrycounter{page}\glsnumberformat{15}}}%
+\glossaryentryfield{itq}{\glsnamefont{ITQ}}{Immersive Tendencies Questionnaire}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}\delimN 
+		\setentrycounter{page}\glsnumberformat{11}\delimN 
+		\setentrycounter{page}\glsnumberformat{13}\delimN 
+		\setentrycounter{page}\glsnumberformat{15}}}\glsgroupskip
+\glsgroupheading{K}\relax \glsresetentrylist %
+\glossaryentryfield{c4:krippen}{\glsnamefont{Krippendorff's alpha}}{Measure of inter-rater reliability used to determine the level of agreement between a set of coders on a number of variables}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}}}\glsgroupskip
+\glsgroupheading{L}\relax \glsresetentrylist %
+\glossaryentryfield{c4:leastSq}{\glsnamefont{Least squares}}{Determines the approximate relationship between two or more variables by minimising the sum of squared distances between each data point and the constructed trend line. See also: Ordinary least squares, Total least squares}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}}}%
+\glossaryentryfield{c5:likert}{\glsnamefont{Likert scale}}{A rating scale where individuals rate their level of agreement with a statement}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}}}%
+\glossaryentryfield{c4:lineBe}{\glsnamefont{Line of best fit}}{See Trend line}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}}}%
+\glossaryentryfield{c4:linRe}{\glsnamefont{Linear regression}}{Any approach that models the relationship between an independent variable and one or more dependent variables. See also: Non-linear regression, Least squares}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}}}%
+\glossaryentryfield{c2:lSelf}{\glsnamefont{Loss of Self-Consciousness}}{One of the dimensions used to describe flow. Concern for the self and other everyday issues disappears due to total concentration on the task at hand}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}}}\glsgroupskip
+\glsgroupheading{M}\relax \glsresetentrylist %
+\glossaryentryfield{c4:Main}{\glsnamefont{Main effect (statistics)}}{Effect of an independent variable on a dependent variable. If there are other independent variables present in the design, these are averaged across}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}}}%
+\glossaryentryfield{c5:MANOVA}{\glsnamefont{MANOVA}}{Multivariate Analysis of Variance. Generalisation of the univariate ANOVA. Used to analyse effects in studies containing more than one dependent variable. See also: ANOVA}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}}}%
+\glossaryentryfield{c5:Mauch}{\glsnamefont{Mauchly's sphericity test}}{Used as a test of the sphericity of data in repeated measures designs. Sphericity refers to the equality of the variances between different levels of the repeated measures independent variable. Sphericity is an assumption of a repeated measures ANOVA and thus deviations may cause invalid results. See also: ANOVA, MANOVA, Repeated measures}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}}}%
+\glossaryentryfield{c2:merge}{\glsnamefont{Merging of Action and Awareness}}{One of the dimensions used to describe flow. This refers to a state of deep immersion where an individual feels at one with their actions}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}}}%
+\glossaryentryfield{c2:multitouch}{\glsnamefont{Multi-touch}}{The ability to simultaneously control two or more input points or touches on a touch-device}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}\delimN 
+		\setentrycounter{page}\glsnumberformat{5}}}%
+\glossaryentryfield{c5:multiCon}{\glsnamefont{Multivariate contrast analysis}}{This is a procedure that provides a linear combination of two or more factor level means, that is, it allows one to collapse these means into one dimension, in order to compare specific elements of an experimental design}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}}}%
+\glossaryentryfield{c4:multiva}{\glsnamefont{Multivariate regression}}{Regression performed in order to fit a trend line to more than one dependent variable. See also: Total least squares}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}}}\glsgroupskip
+\glsgroupheading{N}\relax \glsresetentrylist %
+\glossaryentryfield{c4:nominal}{\glsnamefont{Nominal measure}}{A level of measurement where elements are classified into distinct categories which cannot be logically ranked or manipulated mathematically}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}}}%
+\glossaryentryfield{c4:nonLin}{\glsnamefont{Non-linear regression}}{Regression where data is modelled by a non-linear function that depends on more than one independent variable. See also: Linear regression}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}}}%
+\glossaryentryfield{c4:nonparRe}{\glsnamefont{Non-parametric regression}}{A method that derives the relationship between two or more variables as well as the model used to describe this relationship from the data available. See also: Parametric regression}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}}}\glsgroupskip
+\glsgroupheading{O}\relax \glsresetentrylist %
+\glossaryentryfield{c2:occlu}{\glsnamefont{Occlusion}}{This refers to hiding or partial obstructing the view of an object while interacting with it}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}}}%
+\glossaryentryfield{c3:oglES}{\glsnamefont{OpenGL ES}}{OpenGL for Embedded Systems. This is a subset of OpenGL specifically designed for use with PDAs, mobile phones and other such embedded systems}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}}}%
+\glossaryentryfield{c5:order}{\glsnamefont{Order effect}}{Caveat associated with the use of a repeated measures design. The dependent variable is affected by the order in which conditions are presented}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}}}%
+\glossaryentryfield{c5:ordinal}{\glsnamefont{Ordinal interaction}}{This describes an interaction that has simple effects that lie in the same direction. See also: Interaction (statistics)}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}}}%
+\glossaryentryfield{c4:orleastSq}{\glsnamefont{Ordinary least squares}}{Least squares procedure where the vertical offsets between each point and the trend line are minimised. Thus the trend line is fitted based on only the dependent variable. See also: Least squares, Total least squares}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}}}%
+\glossaryentryfield{c3:ortho}{\glsnamefont{Orthographic projection}}{A means of representing a three-dimensional object in two dimensions using projection lines that are orthogonal to the projection plane}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}}}\glsgroupskip
+\glsgroupheading{P}\relax \glsresetentrylist %
+\glossaryentryfield{c4:parRe}{\glsnamefont{Parametric regression}}{A method that attempts to describe the relationship between two or more variables according to a specified model. This model may take the form of an equation or polynomial}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}}}%
+\glossaryentryfield{pq}{\glsnamefont{PQ}}{Presence Questionnaire}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}}}%
+\glossaryentryfield{c5:practice}{\glsnamefont{Practice effect}}{Caveat associated with the use of a repeated measures design. This describes a condition where performance on a task improves as a result of repeated practice with the task}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}}}%
+\glossaryentryfield{c2:pres}{\glsnamefont{Presence}}{A psychological state where a user believes that the environment presented to him or her through some medium is reality}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}}}\glsgroupskip
+\glsgroupheading{Q}\relax \glsresetentrylist %
+\glossaryentryfield{c5:quota}{\glsnamefont{Quota sampling}}{The non-probabilistic selection of participants based on specific subject characteristics deemed important to the topic under investigation}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}}}\glsgroupskip
+\glsgroupheading{R}\relax \glsresetentrylist %
+\glossaryentryfield{react}{\glsnamefont{Reactivity}}{Phenomenon that occurs when participants alter their behaviour or performance as a result of the knowledge that they are being observed. Also known as the Hawthorne effect}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}\delimN 
+		\setentrycounter{page}\glsnumberformat{13}}}%
+\glossaryentryfield{c4:regress}{\glsnamefont{Regression}}{Statistical technique used to ascertain the relationship between two or more variables. This is done through the construction of a trend line or line of best fit}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}}}%
+\glossaryentryfield{relia}{\glsnamefont{Reliability}}{The degree to which a test generates consistent results both across time and with other equivalent tests}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}\delimN 
+		\setentrycounter{page}\glsnumberformat{11\delimN 12}\delimN 
+		\setentrycounter{page}\glsnumberformat{14}}}%
+\glossaryentryfield{c5:repeated}{\glsnamefont{Repeated measures design}}{Also known as a Within-subjects design. The use of a single group exposed to multiple experimental conditions in order to assess their effect on the dependent variable(s)}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}}}\glsgroupskip
+\glsgroupheading{S}\relax \glsresetentrylist %
+\glossaryentryfield{c2:senseC}{\glsnamefont{Sense of Control}}{One of the dimensions used to describe flow. A feeling of total mastery over one's environment and actions}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}}}%
+\glossaryentryfield{shape}{\glsnamefont{Shape}}{This refers to the larger arrangement of all blocks visible on the screen}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}\delimN 
+		\setentrycounter{page}\glsnumberformat{17\delimR 19}\delimN 
+		\setentrycounter{page}\glsnumberformat{21\delimR 23}}}%
+\glossaryentryfield{c5:singB}{\glsnamefont{Single-blind study}}{Experimental design where participants are unaware of which experimental condition they have been assigned to. However, the experimenter has full knowledge of this information}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}}}%
+\glossaryentryfield{c4:smooth}{\glsnamefont{Smoothing}}{In the context of curve fitting, smoothing describes the process of determining a function that approximates the most important points or features of the data}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}}}%
+\glossaryentryfield{c4:spline}{\glsnamefont{Splines}}{Used to define curves, or more complex shapes, in a piecewise manner through the use of polynomials of low degree}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}}}%
+\glossaryentryfield{c3:surfN}{\glsnamefont{Surface normal}}{Vector perpendicular to the flat surface}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}}}%
+\glossaryentryfield{sus}{\glsnamefont{SUS}}{Slater, Usoh and Steed questionnaire. Used to assess presence}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}\delimN 
+		\setentrycounter{page}\glsnumberformat{12}\delimN 
+		\setentrycounter{page}\glsnumberformat{15}}}\glsgroupskip
+\glsgroupheading{T}\relax \glsresetentrylist %
+\glossaryentryfield{c4:totleastSq}{\glsnamefont{Total least squares}}{Also known as geometric least squares. Least squares procedure where the perpendicular offsets between each point and the trend line are minimised. Thus the trend line is fitted based on both the dependent and independent variables. See also: Least squares, Ordinary least squares, Multivariate regression}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}}}%
+\glossaryentryfield{c2:transT}{\glsnamefont{Transformation of Time}}{One of the dimensions used to describe flow. This describes a perceived distortion in the normal passage of time}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}}}%
+\glossaryentryfield{c4:trend}{\glsnamefont{Trend line}}{Line or other function used to describe the relationship between two or more variables. Constructed through the use of regression}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}}}%
+\glossaryentryfield{c4:tukey}{\glsnamefont{Tukey's HSD test}}{Tukey's Honestly Significant Difference Test. Used to determine which means are significantly different from each other through the use of multiple pairwise comparisons}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}}}\glsgroupskip
+\glsgroupheading{U}\relax \glsresetentrylist %
+\glossaryentryfield{c2:feed}{\glsnamefont{Unambiguous Feedback}}{One of the dimensions used to describe flow. This refers to feedback that provides a clear awareness of how well one is progressing towards one's goals}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}}}%
+\glossaryentryfield{c2:uni}{\glsnamefont{Unimanual interaction}}{The use of one hand only}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}}}\glsgroupskip
+\glsgroupheading{V}\relax \glsresetentrylist %
+\glossaryentryfield{valid}{\glsnamefont{Validity}}{The degree to which a test measures what it purports to measure across a range of different situations}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}\delimN 
+		\setentrycounter{page}\glsnumberformat{11\delimN 12}\delimN 
+		\setentrycounter{page}\glsnumberformat{15}}}%
+\glossaryentryfield{c3:verteN}{\glsnamefont{Vertex normal}}{Normalised average of the surface normals of all faces that contain the vertex}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}}}\glsgroupskip
+\glsgroupheading{W}\relax \glsresetentrylist %
+\glossaryentryfield{c5:wilks}{\glsnamefont{Wilks' lambda distribution}}{Multivariate generalisation of the \emph {F}-distribution. Used by the MANOVA procedure in order to determine significance values. See also: MANOVA}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}}}%
+\glossaryentryfield{c5:within}{\glsnamefont{Within-subjects design}}{See Repeated measures}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{vi}}}%
+\end{theglossary}\glossarypostamble

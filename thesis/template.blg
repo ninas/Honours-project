@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+The top-level auxiliary file: template.aux
+The style file: acmtrans.bst
+Database file #1: template.bib
+Warning--empty publisher in Ermi05
+Warning--empty address in Ermi05
+Warning--empty address in Huan95
+Warning--empty address in Niel04
+You've used 67 entries,
+            2969 wiz_defined-function locations,
+            1132 strings with 16732 characters,
+and the built_in function-call counts, 50346 in all, are:
+= -- 4403
+> -- 3445
+< -- 3
++ -- 1038
+- -- 1188
+* -- 4336
+:= -- 8915
+add.period$ -- 295
+call.type$ -- 67
+change.case$ -- 480
+chr.to.int$ -- 66
+cite$ -- 71
+duplicate$ -- 1575
+empty$ -- 3140
+format.name$ -- 1364
+if$ -- 9706
+int.to.chr$ -- 2
+int.to.str$ -- 0
+missing$ -- 93
+newline$ -- 339
+num.names$ -- 668
+pop$ -- 472
+preamble$ -- 1
+purify$ -- 890
+quote$ -- 0
+skip$ -- 1599
+stack$ -- 0
+substring$ -- 2737
+swap$ -- 570
+text.length$ -- 3
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 1216
+warning$ -- 4
+while$ -- 695
+width$ -- 0
+write$ -- 965
+(There were 4 warnings)

@@ -1,0 +1,388 @@
+\chapter{Feature extraction evaluation results}
+\label{anovaFullRobust}
+\parindent 0cm
+\section{Parabolic regression}
+
+\subsection{\emph{Z} gesture}
+
+	
+
+	\begin{tabular*}{0.75\textwidth}{@{\extracolsep{\fill}} l r r r r r }
+	\multicolumn{6}{l}{\bf Univariate Analysis of Variance} \\
+	\hline	
+	 Effect & SS & df & MS & F & \emph{p} \\
+	\hline
+	Intercept & 4657.729 & 1 & 4657.729 & 5043.171 & $<$ 0.000001* \\
+	Sample & 19.206 & 2 & 9.603 & 10.398 & 0.000057* \\
+	Feature number & 283.873 & 2 & 141.937 & 153.682 & $<$ 0.000001* \\
+	Error & 147.771 & 160 & 0.924 & & \\
+	\hline
+	\multicolumn{6}{l}{\emph{{\small * denotes a significant result at a 95\% confidence level ($\alpha$ = 0.05).}}} \\ 
+
+	\end{tabular*} \vspace{0.5cm}
+	
+
+	
+
+	\begin{tabular*}{0.6\textwidth}{ l l p{2cm} p{2cm} p{2cm} }
+	\multicolumn{5}{l}{\bf Tukey HSD test} \\
+	\hline	
+	 & Group & Small & Control & \multicolumn{1}{p{2cm}}{Random divergence}  \\
+	\hline
+	& Small & & 0.998108 & 0.011347* \\
+	& Control & 0.998108 &  & 0.006701* \\
+	& \multicolumn{1}{p{2cm}}{Random divergence} & 0.011347* & 0.006701* & \\
+	\hline
+	\multicolumn{2}{l}{Group means} & 5.3556 & 5.3667 & 5.9 \\
+	\multicolumn{5}{l}{Error: Between MS = 0.92357, df = 160.00} \\
+	\hline
+	\multicolumn{5}{l}{\emph{{\small * denotes a significant result at a 95\% confidence level ($\alpha$ = 0.05).}}} \\ 
+
+	\end{tabular*}
+	\vspace{0.5cm}
+
+\subsection{\emph{Circle} gesture}
+
+	
+
+	\begin{tabular*}{0.75\textwidth}{@{\extracolsep{\fill}} l r r r r r }
+	\multicolumn{6}{l}{\bf Univariate Analysis of Variance} \\
+	\hline	
+	 Effect & SS & df & MS & F & \emph{p} \\
+	\hline
+	Intercept & 4234.05 & 1 & 4234.050 & 5997.238 & $<$ 0.000001* \\
+	Sample & 16.900 & 2 & 8.450 & 11.969 & 0.000013* \\
+	Feature number & 1082.500 & 2 & 541.250 & 766.643 & $<$ 0.000001* \\
+	Error & 123.550 & 175 & 0.706  & & \\
+	\hline
+	\multicolumn{6}{l}{\emph{{\small * denotes a significant result at a 95\% confidence level ($\alpha$ = 0.05).}}} \\ 
+
+	\end{tabular*}
+	\vspace{0.5cm}
+
+	\begin{tabular*}{0.6\textwidth}{ l l p{2cm} p{2cm} p{2cm} }
+	\multicolumn{5}{l}{\bf Tukey HSD test} \\
+	\hline	
+	 & Group & Small & Control & \multicolumn{1}{p{2cm}}{Random divergence}  \\
+	\hline
+	& Small & & 0.000086* & 0.000086* \\
+	& Control &  0.000086* & & 1.000000  \\
+	& \multicolumn{1}{p{2cm}}{Random divergence} &  0.000086* & 1.000000 & \\
+	\hline
+	\multicolumn{2}{l}{Group means} & 4.4167 & 5.0667 & 5.0667  \\
+	\multicolumn{5}{l}{Error: Between MS = 0.706, df = 175.00} \\
+	\hline
+	\multicolumn{5}{l}{\emph{{\small * denotes a significant result at a 95\% confidence level ($\alpha$ = 0.05).}}} \\ 
+
+	\end{tabular*}
+	
+
+\subsection{\emph{U} gesture}
+
+	
+
+	\begin{tabular*}{0.75\textwidth}{@{\extracolsep{\fill}} l r r r r r }
+	\multicolumn{6}{l}{\bf Univariate Analysis of Variance} \\
+	\hline	
+	 Effect & SS & df & MS & F & \emph{p} \\
+	\hline
+	Intercept & 4606.645 & 1 & 4606.645 & 1086.091 & $<$ 0.000001* \\
+	Sample & 46.660 & 2 & 23.330 & 5.500 & 0.004797*  \\
+	Feature number & 197.660 & 3 & 65.887 & 15.534  & $<$ 0.000001* \\
+	Error & 767.710 & 181 & 4.241 & & \\
+	\hline
+	\multicolumn{6}{l}{\emph{{\small * denotes a significant result at a 95\% confidence level ($\alpha$ = 0.05).}}} \\ 
+
+	\end{tabular*}\vspace{0.5cm}
+
+	\begin{tabular*}{0.6\textwidth}{ l l p{2cm} p{2cm} p{2cm} }
+	\multicolumn{5}{l}{\bf Tukey HSD test} \\
+	\hline	
+	 & Group & Small & Control & \multicolumn{1}{p{2cm}}{Random divergence}  \\
+	\hline
+	& Small & & 0.000537* & 0.000023*  \\
+	& Control &   0.000537* & & 0.248016 \\
+	& \multicolumn{1}{p{2cm}}{Random divergence} &   0.000023* & 0.248016 & \\
+	\hline
+	\multicolumn{2}{l}{Group means} & 7.0476 & 5.5600 & 5.0143 \\
+	\multicolumn{5}{l}{Error: Between MS = 4.2415, df = 181.00} \\
+	\hline
+	\multicolumn{5}{l}{\emph{{\small * denotes a significant result at a 95\% confidence level ($\alpha$ = 0.05).}}} \\ 
+
+	\end{tabular*}
+	
+\section{Circular regression}
+
+\subsection{\emph{Z} gesture}
+
+
+
+	\begin{tabular*}{0.75\textwidth}{@{\extracolsep{\fill}} l r r r r r }
+	\multicolumn{6}{l}{\bf Univariate Analysis of Variance} \\
+	\hline	
+	 Effect & SS & df & MS & F & \emph{p} \\
+	\hline
+	Intercept & 4866.811 & 1 & 4866.811 & 2161.471 & $<$ 0.000001* \\
+	Sample & 2.282 & 2 & 1.141 & 0.507 & 0.603396  \\
+	Feature number & 133.666 & 2 & 66.833 & 29.682 & $<$ 0.000001* \\
+	Error & 349.001 & 155 & 2.252  & & \\
+	\hline
+	\multicolumn{6}{l}{\emph{{\small * denotes a significant result at a 95\% confidence level ($\alpha$ = 0.05).}}} \\ 
+
+	\end{tabular*}
+	\vspace{0.5cm}
+\newpage
+\subsubsection{Additional testing: First feature only}
+\vspace{0.5cm}
+	
+
+	\begin{tabular*}{0.75\textwidth}{@{\extracolsep{\fill}} l r r r r r }
+	\multicolumn{6}{l}{\bf Univariate Analysis of Variance} \\
+	\hline	
+	 Effect & SS & df & MS & F & \emph{p} \\
+	\hline
+	Intercept & 1664.267 & 1 & 1664.267 & 1287.153 & $<$ 0.000001* \\
+	Sample & 80.033 & 2 & 40.017 & 30.949 & $<$ 0.000001* \\
+	Error & 73.700 & 57 & 1.293  & & \\
+	\hline
+	\multicolumn{6}{l}{\emph{{\small * denotes a significant result at a 95\% confidence level ($\alpha$ = 0.05).}}} \\ 
+
+	\end{tabular*}
+	\vspace{0.5cm}
+
+	\begin{tabular*}{0.6\textwidth}{ l l p{2cm} p{2cm} p{2cm} }
+	\multicolumn{5}{l}{\bf Tukey HSD test} \\
+	\hline	
+	 & Group & Small & Control & \multicolumn{1}{p{2cm}}{Random divergence}  \\
+	\hline
+	& Small & & 0.000119* & 0.000119*  \\
+	& Control & 0.000119* & & 1.000000  \\
+	& \multicolumn{1}{p{2cm}}{Random divergence} & 0.000119* & 1.000000 & \\
+	\hline
+	\multicolumn{2}{l}{Group means} & 6.9000 & 4.4500 & 4.4500  \\
+	\multicolumn{5}{l}{Error: Between MS = 1.2930, df = 57.000} \\
+	\hline
+	\multicolumn{5}{l}{\emph{{\small * denotes a significant result at a 95\% confidence level ($\alpha$ = 0.05).}}} \\ 
+
+	\end{tabular*}
+	
+\subsection{\emph{Circle} gesture}
+
+
+
+	\begin{tabular*}{0.75\textwidth}{@{\extracolsep{\fill}} l r r r r r }
+	\multicolumn{6}{l}{\bf Univariate Analysis of Variance} \\
+	\hline	
+	 Effect & SS & df & MS & F & \emph{p} \\
+	\hline
+	Intercept & 1175.335 & 1 & 1175.335 & 354.6819 & $<$ 0.000001* \\
+	Sample & 29.283 & 2 & 14.642 & 4.4184 & 0.013792* \\
+	Feature number & 437.703 & 3 & 145.901 & 44.0287 & $<$ 0.000001* \\
+	Error & 460.614 & 139 & 3.314 & & \\
+	\hline
+	\multicolumn{6}{l}{\emph{{\small * denotes a significant result at a 95\% confidence level ($\alpha$ = 0.05).}}} \\ 
+
+	\end{tabular*}
+	\vspace{0.5cm}
+
+	\begin{tabular*}{0.6\textwidth}{ l l p{2cm} p{2cm} p{2cm} }
+	\multicolumn{5}{l}{\bf Tukey HSD test} \\
+	\hline	
+	 & Group & Small & Control & \multicolumn{1}{p{2cm}}{Random divergence}  \\
+	\hline
+	& Small & & 0.000022* & 0.000022* \\
+	& Control &  0.000022* & & 0.333543  \\
+	& \multicolumn{1}{p{2cm}}{Random divergence} &  0.000022* & 0.333543 & \\
+	\hline
+	\multicolumn{2}{l}{Group means} & 7.6364 & 4.3273 & 4.7941  \\
+	\multicolumn{5}{l}{Error: Between MS =  3.3138, df = 139.00} \\
+	\hline
+	\multicolumn{5}{l}{\emph{{\small * denotes a significant result at a 95\% confidence level ($\alpha$ = 0.05).}}} \\ 
+
+	\end{tabular*}
+	
+
+\subsection{\emph{U} gesture}
+
+	
+
+	\begin{tabular*}{0.75\textwidth}{@{\extracolsep{\fill}} l r r r r r }
+	\multicolumn{6}{l}{\bf Univariate Analysis of Variance} \\
+	\hline	
+	 Effect & SS & df & MS & F & \emph{p} \\
+	\hline
+	Intercept & 264.56 & 1 & 264.56 & 372.59 & $<$ 0.000001* \\
+	Sample & 0.8405 & 2 & 0.84050 & 0.64117 & 0.424727  \\
+	Feature number & 31.2050 & 3 & 31.20500 & 23.80444 & 0.000003* \\
+ 	Error & 173.0375 & 132 & 1.31089 & & \\
+	\hline
+	\multicolumn{6}{l}{\emph{{\small * denotes a significant result at a 95\% confidence level ($\alpha$ = 0.05).}}} \\ 
+
+	\end{tabular*}
+	
+\subsubsection{Additional testing: First feature only}
+	\vspace{0.5cm}
+
+	\begin{tabular*}{0.75\textwidth}{@{\extracolsep{\fill}} l r r r r r }
+	\multicolumn{6}{l}{\bf Univariate Analysis of Variance} \\
+	\hline	
+	 Effect & SS & df & MS & F & \emph{p} \\
+	\hline
+	Intercept & 2343.750 & 1 & 2343.750 & 5031.780 & $<$ 0.000001* \\
+	Sample & 24.700 & 2 & 12.350 & 26.514 & $<$ 0.000001* \\
+	Error & 26.550 & 57 & 0.466 & & \\
+	\hline
+	\multicolumn{6}{l}{\emph{{\small * denotes a significant result at a 95\% confidence level ($\alpha$ = 0.05).}}} \\ 
+
+	\end{tabular*}
+	\vspace{0.5cm}
+
+	\begin{tabular*}{0.6\textwidth}{ l l p{2cm} p{2cm} p{2cm} }
+	\multicolumn{5}{l}{\bf Tukey HSD test} \\
+	\hline	
+	 & Group & Small & Control & \multicolumn{1}{p{2cm}}{Random divergence}  \\
+	\hline
+	& Small & & 0.000119* & 0.000119*  \\
+	& Control &   0.000119* & & 0.625879 \\
+	& \multicolumn{1}{p{2cm}}{Random divergence} &   0.000119* & 0.625879 & \\
+	\hline
+	\multicolumn{2}{l}{Group means} & 5.3500 & 6.8000 & 6.6000 \\
+	\multicolumn{5}{l}{Error: Between MS = 0.46579, df = 57.000} \\
+	\hline
+	\multicolumn{5}{l}{\emph{{\small * denotes a significant result at a 95\% confidence level ($\alpha$ = 0.05).}}} \\ 
+
+	\end{tabular*}
+	
+	
+
+
+\section{Direction-based segmentation}
+
+\subsection{\emph{Z} gesture}
+
+
+
+	\begin{tabular*}{0.75\textwidth}{@{\extracolsep{\fill}} l r r r r r }
+	\multicolumn{6}{l}{\bf Univariate Analysis of Variance} \\
+	\hline	
+	 Effect & SS & df & MS & F & \emph{p} \\
+	\hline
+	Intercept & 5117.257 & 1 & 5117.257 & 8398.266 & $<$ 0.000001* \\
+	Sample & 2.059 & 2 & 1.029 & 1.689 & 0.187924  \\
+	Feature number & 310.837 & 2 & 155.419 & 255.068 & $<$ 0.000001* \\
+	Error & 96.882 & 159 & 0.609 & & \\
+	\hline
+	\multicolumn{6}{l}{\emph{{\small * denotes a significant result at a 95\% confidence level ($\alpha$ = 0.05).}}} \\ 
+
+	\end{tabular*}
+	
+\subsubsection{Additional testing: First feature only}
+\vspace{0.5cm}
+	
+
+	\begin{tabular*}{0.75\textwidth}{@{\extracolsep{\fill}} l r r r r r }
+	\multicolumn{6}{l}{\bf Univariate Analysis of Variance} \\
+	\hline	
+	 Effect & SS & df & MS & F & \emph{p} \\
+	\hline
+	Intercept & 1480.067 & 1 & 1480.067 & 3800.171 & $<$ 0.000001* \\
+	Sample & 5.733 & 2 & 2.867 & 7.360 & 0.001434* \\
+	Error & 22.200 & 57 & 0.389  & & \\
+	\hline
+	\multicolumn{6}{l}{\emph{{\small * denotes a significant result at a 95\% confidence level ($\alpha$ = 0.05).}}} \\ 
+
+	\end{tabular*}
+	\vspace{0.5cm}
+	
+	
+	
+	
+
+	\begin{tabular*}{0.6\textwidth}{ l l p{2cm} p{2cm} p{2cm} }
+	\multicolumn{5}{l}{\bf Tukey HSD test} \\
+	\hline	
+	 & Group & Small & Control & \multicolumn{1}{p{2cm}}{Random divergence}  \\
+	\hline
+	& Small & & 0.009938* & 0.002336*  \\
+	& Control &  0.009938* & & 0.868449  \\
+	& \multicolumn{1}{p{2cm}}{Random divergence} & 0.002336* & 0.868449 & \\
+	\hline
+	\multicolumn{2}{l}{Group means} & 5.4000 & 4.8000 & 4.7000  \\
+	\multicolumn{5}{l}{Error: Between MS = 0.38947, df = 57.000} \\
+	\hline
+	\multicolumn{5}{l}{\emph{{\small * denotes a significant result at a 95\% confidence level ($\alpha$ = 0.05).}}} \\ 
+
+	\end{tabular*}
+	
+
+\subsection{\emph{Circle} gesture}
+
+
+	\begin{tabular*}{0.75\textwidth}{@{\extracolsep{\fill}} l r r r r r }
+	\multicolumn{6}{l}{\bf Univariate Analysis of Variance} \\
+	\hline	
+	 Effect & SS & df & MS & F & \emph{p} \\
+	\hline
+	Intercept & 4363.194 & 1 & 4363.194 & 3990.604 & $<$ 0.000001* \\
+	Sample & 249.403 & 2 & 124.701 & 114.053 & $<$ 0.000001* \\
+	Feature number & 178.189 & 3 & 178.189 & 162.973 & $<$ 0.000001* \\
+	Error & 126.831 & 116 & 1.093 & & \\
+	\hline
+	\multicolumn{6}{l}{\emph{{\small * denotes a significant result at a 95\% confidence level ($\alpha$ = 0.05).}}} \\ 
+
+	\end{tabular*}
+	\vspace{0.5cm}
+
+	\begin{tabular*}{0.6\textwidth}{ l l p{2cm} p{2cm} p{2cm} }
+	\multicolumn{5}{l}{\bf Tukey HSD test} \\
+	\hline	
+	 & Group & Small & Control & \multicolumn{1}{p{2cm}}{Random divergence}  \\
+	\hline
+	& Small & & 0.000113* & 0.000113* \\
+	& Control &  0.000113* & & 0.675982  \\
+	& \multicolumn{1}{p{2cm}}{Random divergence} &  0.000113* & 0.675982 & \\
+	\hline
+	\multicolumn{2}{l}{Group means} & 4.0000 & 6.9487 & 7.1463  \\
+	\multicolumn{5}{l}{Error: Between MS =  1.0934, df = 116.00} \\
+	\hline
+	\multicolumn{5}{l}{\emph{{\small * denotes a significant result at a 95\% confidence level ($\alpha$ = 0.05).}}} \\ 
+
+	\end{tabular*}
+	
+\subsection{\emph{U} gesture}
+
+	
+
+	\begin{tabular*}{0.75\textwidth}{@{\extracolsep{\fill}} l r r r r r }
+	\multicolumn{6}{l}{\bf Univariate Analysis of Variance} \\
+	\hline	
+	 Effect & SS & df & MS & F & \emph{p} \\
+	\hline
+	Intercept & 3286.533 & 1 & 3286.533 & 3604.518 & $<$ 0.000001* \\
+	Sample & 62.067 & 2 & 31.033 & 34.036 & $<$ 0.000001* \\
+	Feature number & 93.633 & 3 & 93.633 & 102.693 & $<$ 0.000001* \\
+ 	Error & 105.767 & 116 & 0.912 & & \\
+	\hline
+	\multicolumn{6}{l}{\emph{{\small * denotes a significant result at a 95\% confidence level ($\alpha$ = 0.05).}}} \\ 
+
+	\end{tabular*}
+	\vspace{0.5cm}
+
+	\begin{tabular*}{0.6\textwidth}{ l l p{2cm} p{2cm} p{2cm} }
+	\multicolumn{5}{l}{\bf Tukey HSD test} \\
+	\hline	
+	 & Group & Small & Control & \multicolumn{1}{p{2cm}}{Random divergence}  \\
+	\hline
+	& Small & & 0.000120* & 0.000113*   \\
+	& Control &  0.000120* & & 0.004006* \\
+	& \multicolumn{1}{p{2cm}}{Random divergence} &  0.000113* & 0.004006* & \\
+	\hline
+	\multicolumn{2}{l}{Group means} & 4.3000 & 5.3500 & 6.0500 \\
+	\multicolumn{5}{l}{Error: Between MS = 0.91178, df = 116.00} \\
+	\hline
+	\multicolumn{5}{l}{\emph{{\small * denotes a significant result at a 95\% confidence level ($\alpha$ = 0.05).}}} \\ 
+
+	\end{tabular*}
+	
+
+\parindent 1cm

@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1395.8867"
+   height="911.42859"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.47 r22583"
+   sodipodi:docname="overview.svg">
+  <defs
+     id="defs4">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective10" />
+    <inkscape:perspective
+       id="perspective3602"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3632"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3654"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3678"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3678-0"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3741"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3788"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3862"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3884"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3914"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3945"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="-171.42857"
+     inkscape:cy="465.71432"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1643"
+     inkscape:window-height="961"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-34.999999,-86.647906)">
+    <rect
+       style="fill:#dedede;stroke:#000000;stroke-width:10.28205299000000039;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:0.98689958000000000;stroke-dasharray:none;stroke-dashoffset:0;fill-opacity:1"
+       id="rect2818"
+       width="251.14651"
+       height="901.14655"
+       x="829.42676"
+       y="91.788933"
+       ry="65.325951" />
+    <rect
+       style="fill:#dedede;stroke:#000000;stroke-width:9.29747294999999951;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:0.98689958000000000;stroke-dasharray:none;stroke-dashoffset:0;fill-opacity:1"
+       id="rect3616"
+       width="640.70251"
+       height="429.27396"
+       x="39.648743"
+       y="287.72522"
+       ry="53.206749" />
+    <rect
+       style="fill:#66ae66;fill-opacity:1;stroke:#000000;stroke-width:10.50468730999999956;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:0.98689958000000000;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3618"
+       width="639.4953"
+       height="122.35246"
+       x="40.252342"
+       y="95.47168"
+       ry="44.103779" />
+    <rect
+       style="fill:#b76ad6;fill-opacity:1;stroke:#000000;stroke-width:9.66577911000000078;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:0.98689958000000000;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3620"
+       width="271.76279"
+       height="297.47708"
+       x="74.118889"
+       y="396.48077"
+       ry="63.957569" />
+    <rect
+       style="fill:#527fda;fill-opacity:1;stroke:#000000;stroke-width:9.66577911000000078;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:0.98689958000000000;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3620-9"
+       width="271.76279"
+       height="297.47708"
+       x="376.69003"
+       y="396.48077"
+       ry="63.957569" />
+    <rect
+       style="fill:#66ae66;stroke:#000000;stroke-width:10;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:0.98689958000000000;stroke-dasharray:none;stroke-dashoffset:0;fill-opacity:1"
+       id="rect3668"
+       width="202.85715"
+       height="231.42857"
+       x="855.71429"
+       y="217.79076"
+       ry="63.957569" />
+    <rect
+       style="fill:#527fda;stroke:#000000;stroke-width:10;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:0.98689958000000000;stroke-dasharray:none;stroke-dashoffset:0;fill-opacity:1"
+       id="rect3668-9"
+       width="202.85715"
+       height="231.42857"
+       x="855.71399"
+       y="477.50504"
+       ry="63.957569" />
+    <rect
+       style="fill:#b76ad6;stroke:#000000;stroke-width:10;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:0.98689958000000000;stroke-dasharray:none;stroke-dashoffset:0;fill-opacity:1"
+       id="rect3668-2"
+       width="202.85715"
+       height="231.42857"
+       x="855.71399"
+       y="740.93359"
+       ry="63.957569" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3701"
+       style="font-size:48px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Franklin Gothic Medium;-inkscape-font-specification:'Franklin Gothic Medium,'"
+       transform="translate(11.714286,-280)"><flowRegion
+         id="flowRegion3703"><rect
+           id="rect3705"
+           width="442.85715"
+           height="68.571426"
+           x="140"
+           y="403.79074"
+           style="font-size:48px" /></flowRegion><flowPara
+         id="flowPara3707">Feature extraction</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3717"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Franklin Gothic Medium;-inkscape-font-specification:'Franklin Gothic Medium,'"
+       transform="translate(16,-134)"><flowRegion
+         id="flowRegion3719"><rect
+           id="rect3721"
+           width="485.71429"
+           height="65.714287"
+           x="100"
+           y="440.93362"
+           style="font-size:40px" /></flowRegion><flowPara
+         id="flowPara3723">Gesture recognition engine</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3725"
+       style="font-size:48px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Franklin Gothic Medium;-inkscape-font-specification:'Franklin Gothic Medium,'"
+       transform="translate(-10.285714,-183.71429)"><flowRegion
+         id="flowRegion3727"><rect
+           id="rect3729"
+           width="194.28571"
+           height="211.42854"
+           x="120"
+           y="626.64789"
+           style="font-size:48px" /></flowRegion><flowPara
+         id="flowPara3731">Hidden Markov Model</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3725-4"
+       style="font-size:48px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Franklin Gothic Medium;-inkscape-font-specification:'Franklin Gothic Medium,'"
+       transform="translate(277.67299,-183.71455)"><flowRegion
+         id="flowRegion3727-6"><rect
+           id="rect3729-1"
+           width="225.71428"
+           height="211.42853"
+           x="120"
+           y="626.64789"
+           style="font-size:48px" /></flowRegion><flowPara
+         id="flowPara3731-7">Simple gesture recogniser</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3764"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Franklin Gothic Medium;-inkscape-font-specification:'Franklin Gothic Medium,'"
+       transform="translate(-76,20)"><flowRegion
+         id="flowRegion3766"><rect
+           id="rect3768"
+           width="162.85715"
+           height="62.857143"
+           x="948.57141"
+           y="103.79076"
+           style="font-size:40px" /></flowRegion><flowPara
+         id="flowPara3770">Games</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3772"
+       style="font-size:48px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Franklin Gothic Medium;-inkscape-font-specification:'Franklin Gothic Medium,'"
+       transform="translate(-70,20)"><flowRegion
+         id="flowRegion3774"><rect
+           id="rect3776"
+           width="154.28572"
+           height="88.571426"
+           x="948.57141"
+           y="269.50504"
+           style="font-size:48px" /></flowRegion><flowPara
+         id="flowPara3778">Puzzle</flowPara></flowRoot>    <flowRoot
+       transform="translate(-78.89118,270.3966)"
+       xml:space="preserve"
+       id="flowRoot3772-0"
+       style="font-size:48px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Franklin Gothic Medium;-inkscape-font-specification:'Franklin Gothic Medium,'"><flowRegion
+         id="flowRegion3774-0"><rect
+           id="rect3776-2"
+           width="174.28577"
+           height="97.142868"
+           x="948.57141"
+           y="269.50504"
+           style="font-size:48px" /></flowRegion><flowPara
+         id="flowPara3778-3">Strategy</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3811"
+       style="font-size:48px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Franklin Gothic Medium;-inkscape-font-specification:'Franklin Gothic Medium,'"><flowRegion
+         id="flowRegion3813"><rect
+           id="rect3815"
+           width="197.14282"
+           height="188.57143"
+           x="948.57141"
+           y="760.93359"
+           style="font-size:48px" /></flowRegion><flowPara
+         id="flowPara3817">Fighting / dueling</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3819"
+       style="font-size:45px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Franklin Gothic Medium;-inkscape-font-specification:'Franklin Gothic Medium,'"
+       transform="translate(-88,36)"><flowRegion
+         id="flowRegion3821"><rect
+           id="rect3823"
+           width="185.71426"
+           height="182.85716"
+           x="951.42859"
+           y="755.2193"
+           style="font-size:45px" /></flowRegion><flowPara
+         id="flowPara3825">Fighting/dueling</flowPara></flowRoot>    <path
+       style="color:#000000;fill:none;stroke:#000000;stroke-width:10;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:0.98689958;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m 354.28571,219.50504 0,65.71429"
+       id="path3827" />
+    <path
+       style="color:#000000;fill:none;stroke:#000000;stroke-width:10;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:0.98689958;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m 682.85714,508.07647 142.85715,0"
+       id="path3829" />
+    <rect
+       style="fill:#b76ad6;stroke:#000000;stroke-width:7.54748058000000022;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:0.98689958000000000;stroke-dasharray:none;stroke-dashoffset:0;fill-opacity:1"
+       id="rect3852"
+       width="53.881092"
+       height="45.309662"
+       x="1144.4879"
+       y="765.42163"
+       ry="11.866817" />
+    <rect
+       style="fill:#66ae66;stroke:#000000;stroke-width:7.54748058000000022;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:0.98689958000000000;stroke-dasharray:none;stroke-dashoffset:0;fill-opacity:1"
+       id="rect3852-8"
+       width="53.881092"
+       height="45.309662"
+       x="1144.4878"
+       y="839.99304"
+       ry="11.866817" />
+    <rect
+       style="fill:#527fda;stroke:#000000;stroke-width:7.54748058000000022;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:0.98689958000000000;stroke-dasharray:none;stroke-dashoffset:0;fill-opacity:1"
+       id="rect3852-8-2"
+       width="53.881092"
+       height="45.309662"
+       x="1144.4878"
+       y="912.85022"
+       ry="11.866817" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3898"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Franklin Gothic Medium;-inkscape-font-specification:'Franklin Gothic Medium,'"
+       transform="translate(4,-2)"><flowRegion
+         id="flowRegion3900"><rect
+           id="rect3902"
+           width="225.71431"
+           height="65.714256"
+           x="1211.4286"
+           y="760.93359"
+           style="font-size:40px;text-align:start;text-anchor:start" /></flowRegion><flowPara
+         id="flowPara3904">Daniel Wood</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3898-6"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Franklin Gothic Medium;-inkscape-font-specification:'Franklin Gothic Medium,'"
+       transform="translate(3.9995312,71.846224)"><flowRegion
+         id="flowRegion3900-9"><rect
+           id="rect3902-3"
+           width="225.71431"
+           height="65.714256"
+           x="1211.4286"
+           y="760.93359"
+           style="font-size:40px;text-align:start;text-anchor:start" /></flowRegion><flowPara
+         id="flowPara3904-6">Nina Schiff</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3898-6-3"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Franklin Gothic Medium;-inkscape-font-specification:'Franklin Gothic Medium,'"
+       transform="translate(3.9998125,146.35655)"><flowRegion
+         id="flowRegion3900-9-5"><rect
+           id="rect3902-3-9"
+           width="225.71431"
+           height="65.714256"
+           x="1211.4286"
+           y="760.93359"
+           style="font-size:40px;text-align:start;text-anchor:start" /></flowRegion><flowPara
+         id="flowPara3904-6-6">Pierre Benz</flowPara></flowRoot>    <rect
+       style="fill:#66ae66;fill-opacity:1;stroke:#000000;stroke-width:10;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:0.98689958000000000;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3968"
+       width="445.71429"
+       height="228.57143"
+       x="146.71428"
+       y="769.50507"
+       ry="63.957569" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3970"
+       style="font-size:48;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Franklin Gothic Medium;-inkscape-font-specification:'Franklin Gothic Medium,'"
+       transform="translate(34.999999,86.647906)"><flowRegion
+         id="flowRegion3972"><rect
+           id="rect3974"
+           width="305.71429"
+           height="142.85715"
+           x="180"
+           y="731.42859"
+           style="font-size:48" /></flowRegion><flowPara
+         id="flowPara3976">Experimental design</flowPara></flowRoot>  </g>
+</svg>
